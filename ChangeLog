@@ -1,41 +1,49 @@
-2011-11-28 Tim Marston <tim@ed.am>
+2011-11-28  Tim Marston <tim@ed.am>
 
 	* version.sh: updated to 2.9.1
 
-2011-11-15 Felix Natter <fnatter@gmx.net>
+2011-11-15  Felix Natter <fnatter@gmx.net>
 
 	* configure.ac: clean up, remove checks for BSD curses
 
-2011-11-07 Felix Natter <fnatter@gmx.net>
+2011-11-07  Felix Natter <fnatter@gmx.net>
 
 	* configure-w32.in: support NLS (gettext) on MinGW
 
-2011-11-02 Tim Marston <edam@waxworlds.org>
+2011-11-02  Tim Marston <edam@waxworlds.org>
 
 	* INSTALL, configure-w32: updated windows build system and
 	  documentation
 
-2011-10-31 Tim Marston <edam@waxworlds.org>
+2011-10-31  Tim Marston <edam@waxworlds.org>
 
 	* version.sh: updated to 2.9
 
-2011-10-30 Tim Marston <edam@waxworlds.org>
+2011-10-30  Tim Marston <edam@waxworlds.org>
 
 	* configur.bat: fixed windows build to use libiconv
 
-2011-10-13 Tim Marston <edam@waxworlds.org>
+2011-10-13  Tim Marston <edam@waxworlds.org>
 
 	* autogen.sh: extra checks for installed software
 	* configure.ac: release in tar.xz format (as well as tar.gz)
 
-2011-09-11 Felix Natter <fnatter@gmx.net>
+2011-09-11  Felix Natter <fnatter@gmx.net>
 
 	* tools/typcombine: tell about new courses in "More lessons..."
 
-2011-07-23 Felix Natter <fnatter@gmx.net>
+2011-07-23  Felix Natter <fnatter@gmx.net>
 
 	* tools/ktouchOLD2typ.pl: include the old ktouch 1.6 script as a
 	  simple way of creating gtypist lessons. Works with utf-8.
+
+2011-06-30  Felix Natter <fnatter@gmx.net>
+
+	* src/*.[ch]: compile with libncursesw, use utf-8 as primary charset
+	* tools/ktouch2typ.pl: add support for ktouch 1.6 XML lessons (utf-8)
+	  and convert them (lessons/*.ktouch.typ)
+	* tools/tt2typ.pl: add support for tipptrainer 0.6.0 and convert
+	  german tipptrainer lesson to lessons/ttde.typ (utf-8)
 
 2011-04-08  Tim marston <edam@waxworlds.org>
 
