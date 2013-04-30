@@ -3,8 +3,11 @@
 	* c.typ, q.typ, v.typ: corrected various typos, thanks to Chris
 	Jones <cjns1989@gmail.com> for reporting.
 
-2011-10-27  Gökçen Eraslan <gokcen@pardus.org.tr>
+2013-03-30  Rob Day <rkd@rkd.me.uk>
 
+	* q.typ: Q1: introduces e,i and not g,h; fix space issue
+
+2011-10-27  Gökçen Eraslan <gokcen@pardus.org.tr>
 	* kttr.typ: new turkish lesson converted from ktouch
 
 2011-09-30  Tim Marston <edam@waxworlds.org>
