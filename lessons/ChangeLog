@@ -1,3 +1,9 @@
+2013-06-01 Felix Natter <fnatter@gmx.net>
+
+	* update kt*.typ with new ktouch2typ.pl as reported by
+	  Alexei Matveev <alexei.matveev@gmail.com>
+	  (see ../ChangeLog for script changes)
+
 2013-04-30  Tim Marston <tim@ed.am>
 
 	* c.typ, q.typ, v.typ: corrected various typos, thanks to Chris
@@ -8,6 +14,7 @@
 	* q.typ: Q1: introduces e,i and not g,h; fix space issue
 
 2011-10-27  Gökçen Eraslan <gokcen@pardus.org.tr>
+
 	* kttr.typ: new turkish lesson converted from ktouch
 
 2011-09-30  Tim Marston <edam@waxworlds.org>

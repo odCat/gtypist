@@ -1,9 +1,11 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/hungarian.ktouch.xml
-# on Do 23. Jun 19:51:55 CEST 2011
+# on Sa 1. Jun 12:32:31 CEST 2013
 # ktouch title: Magyar gépírótanfolyam
-# ktouch comment: Csak a csüggedésünket el ne veszítsük
+# ktouch comment: Magyar gépírásra tanít - első, próbaverzió
+# 
+#  Csak a csüggedésünket el ne veszítsük
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -748,3 +750,236 @@ D:**** ```` ~~~~ **** ```` ~~~~ **** ```` ~~~~
  :``**~~ ``**~~ ``**~~ ``**~~ ``**~~ ``**~~
 G:E_LESSON40
 
+*:S_LESSON41
+K:12:MENU
+B:                         Lesson 41: Ez-az
+*:LESSON41_D1
+I:(1)
+D:^^^^ #### &&&& ^^^^ #### &&&& ^^^^ #### &&&&
+ :&&&& #### ^^^^ &&&& #### ^^^^ &&&& #### ^^^^
+ :##&&^^ ##&&^^ ##&&^^ ##&&^^ ##&&^^ ##&&^^
+G:E_LESSON41
+
+*:S_LESSON42
+K:12:MENU
+B:                         Lesson 42: Ez-az
+*:LESSON42_D1
+I:(1)
+D:<<<< >>>> ;;;; <<<< >>>> ;;;; <<<< >>>> ;;;;
+ :;;;; >>>> <<<< ;;;; >>>> <<<< ;;;; >>>> <<<<
+ :<<;;>> <<;;>> <<;;>> <<;;>> <<;;>> <<;;>>
+G:E_LESSON42
+
+
+# jump-table
+*:E_LESSON1
+Q: Do you want to continue to lesson 2 [Y/N] ?
+N:MENU
+G:S_LESSON2
+*:E_LESSON2
+Q: Do you want to continue to lesson 3 [Y/N] ?
+N:MENU
+G:S_LESSON3
+*:E_LESSON3
+Q: Do you want to continue to lesson 4 [Y/N] ?
+N:MENU
+G:S_LESSON4
+*:E_LESSON4
+Q: Do you want to continue to lesson 5 [Y/N] ?
+N:MENU
+G:S_LESSON5
+*:E_LESSON5
+Q: Do you want to continue to lesson 6 [Y/N] ?
+N:MENU
+G:S_LESSON6
+*:E_LESSON6
+Q: Do you want to continue to lesson 7 [Y/N] ?
+N:MENU
+G:S_LESSON7
+*:E_LESSON7
+Q: Do you want to continue to lesson 8 [Y/N] ?
+N:MENU
+G:S_LESSON8
+*:E_LESSON8
+Q: Do you want to continue to lesson 9 [Y/N] ?
+N:MENU
+G:S_LESSON9
+*:E_LESSON9
+Q: Do you want to continue to lesson 10 [Y/N] ?
+N:MENU
+G:S_LESSON10
+*:E_LESSON10
+Q: Do you want to continue to lesson 11 [Y/N] ?
+N:MENU
+G:S_LESSON11
+*:E_LESSON11
+Q: Do you want to continue to lesson 12 [Y/N] ?
+N:MENU
+G:S_LESSON12
+*:E_LESSON12
+Q: Do you want to continue to lesson 13 [Y/N] ?
+N:MENU
+G:S_LESSON13
+*:E_LESSON13
+Q: Do you want to continue to lesson 14 [Y/N] ?
+N:MENU
+G:S_LESSON14
+*:E_LESSON14
+Q: Do you want to continue to lesson 15 [Y/N] ?
+N:MENU
+G:S_LESSON15
+*:E_LESSON15
+Q: Do you want to continue to lesson 16 [Y/N] ?
+N:MENU
+G:S_LESSON16
+*:E_LESSON16
+Q: Do you want to continue to lesson 17 [Y/N] ?
+N:MENU
+G:S_LESSON17
+*:E_LESSON17
+Q: Do you want to continue to lesson 18 [Y/N] ?
+N:MENU
+G:S_LESSON18
+*:E_LESSON18
+Q: Do you want to continue to lesson 19 [Y/N] ?
+N:MENU
+G:S_LESSON19
+*:E_LESSON19
+Q: Do you want to continue to lesson 20 [Y/N] ?
+N:MENU
+G:S_LESSON20
+*:E_LESSON20
+Q: Do you want to continue to lesson 21 [Y/N] ?
+N:MENU
+G:S_LESSON21
+*:E_LESSON21
+Q: Do you want to continue to lesson 22 [Y/N] ?
+N:MENU
+G:S_LESSON22
+*:E_LESSON22
+Q: Do you want to continue to lesson 23 [Y/N] ?
+N:MENU
+G:S_LESSON23
+*:E_LESSON23
+Q: Do you want to continue to lesson 24 [Y/N] ?
+N:MENU
+G:S_LESSON24
+*:E_LESSON24
+Q: Do you want to continue to lesson 25 [Y/N] ?
+N:MENU
+G:S_LESSON25
+*:E_LESSON25
+Q: Do you want to continue to lesson 26 [Y/N] ?
+N:MENU
+G:S_LESSON26
+*:E_LESSON26
+Q: Do you want to continue to lesson 27 [Y/N] ?
+N:MENU
+G:S_LESSON27
+*:E_LESSON27
+Q: Do you want to continue to lesson 28 [Y/N] ?
+N:MENU
+G:S_LESSON28
+*:E_LESSON28
+Q: Do you want to continue to lesson 29 [Y/N] ?
+N:MENU
+G:S_LESSON29
+*:E_LESSON29
+Q: Do you want to continue to lesson 30 [Y/N] ?
+N:MENU
+G:S_LESSON30
+*:E_LESSON30
+Q: Do you want to continue to lesson 31 [Y/N] ?
+N:MENU
+G:S_LESSON31
+*:E_LESSON31
+Q: Do you want to continue to lesson 32 [Y/N] ?
+N:MENU
+G:S_LESSON32
+*:E_LESSON32
+Q: Do you want to continue to lesson 33 [Y/N] ?
+N:MENU
+G:S_LESSON33
+*:E_LESSON33
+Q: Do you want to continue to lesson 34 [Y/N] ?
+N:MENU
+G:S_LESSON34
+*:E_LESSON34
+Q: Do you want to continue to lesson 35 [Y/N] ?
+N:MENU
+G:S_LESSON35
+*:E_LESSON35
+Q: Do you want to continue to lesson 36 [Y/N] ?
+N:MENU
+G:S_LESSON36
+*:E_LESSON36
+Q: Do you want to continue to lesson 37 [Y/N] ?
+N:MENU
+G:S_LESSON37
+*:E_LESSON37
+Q: Do you want to continue to lesson 38 [Y/N] ?
+N:MENU
+G:S_LESSON38
+*:E_LESSON38
+Q: Do you want to continue to lesson 39 [Y/N] ?
+N:MENU
+G:S_LESSON39
+*:E_LESSON39
+Q: Do you want to continue to lesson 40 [Y/N] ?
+N:MENU
+G:S_LESSON40
+*:E_LESSON40
+Q: Do you want to continue to lesson 41 [Y/N] ?
+N:MENU
+G:S_LESSON41
+*:E_LESSON41
+Q: Do you want to continue to lesson 42 [Y/N] ?
+N:MENU
+G:S_LESSON42
+*:E_LESSON42
+G:MENU
+
+*:MENU
+M: "ktouch lesson: Magyar gépírótanfolyam"
+ :S_LESSON1 "f, j"
+ :S_LESSON2 "k, d"
+ :S_LESSON3 "s, l"
+ :S_LESSON4 "a, é"
+ :S_LESSON5 "-"
+ :S_LESSON6 "Ez-az"
+ :S_LESSON7 "Ez-az"
+ :S_LESSON8 "Ez-az"
+ :S_LESSON9 "Ez-az"
+ :S_LESSON10 "Ez-az"
+ :S_LESSON11 "Ez-az"
+ :S_LESSON12 "Ez-az"
+ :S_LESSON13 "Ez-az"
+ :S_LESSON14 "Ez-az"
+ :S_LESSON15 "Ez-az"
+ :S_LESSON16 "Ez-az"
+ :S_LESSON17 "Ez-az"
+ :S_LESSON18 "Ez-az"
+ :S_LESSON19 "Ez-az"
+ :S_LESSON20 "Ez-az"
+ :S_LESSON21 "Ez-az"
+ :S_LESSON22 "Ez-az"
+ :S_LESSON23 "Ez-az"
+ :S_LESSON24 "Ez-az"
+ :S_LESSON25 "Ez-az"
+ :S_LESSON26 "Ez-az"
+ :S_LESSON27 "Ez-az"
+ :S_LESSON28 "Ez-az"
+ :S_LESSON29 "Ez-az"
+ :S_LESSON30 "Ez-az"
+ :S_LESSON31 "Ez-az"
+ :S_LESSON32 "Ez-az"
+ :S_LESSON33 "Ez-az"
+ :S_LESSON34 "Ez-az"
+ :S_LESSON35 "Ez-az"
+ :S_LESSON36 "Ez-az"
+ :S_LESSON37 "Ez-az"
+ :S_LESSON38 "Ez-az"
+ :S_LESSON39 "Ez-az"
+ :S_LESSON40 "Ez-az"
+ :S_LESSON41 "Ez-az"
+ :S_LESSON42 "Ez-az"

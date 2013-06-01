@@ -1,9 +1,10 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/dvorak_es.ktouch.xml
-# on Do 23. Jun 19:51:54 CEST 2011
+# on Sa 1. Jun 12:32:30 CEST 2013
 # ktouch title: Dvorak Español
-# ktouch comment: http://djelibeibi.unex.es/
+# ktouch comment: Ignacio Fernández Galván, 2005
+# http://djelibeibi.unex.es/
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with

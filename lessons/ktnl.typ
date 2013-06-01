@@ -1,9 +1,13 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/nederlands.ktouch.xml
-# on Do 23. Jun 19:51:55 CEST 2011
+# on Sa 1. Jun 12:32:31 CEST 2013
 # ktouch title: Nederlands (auto-genereerd)
-# ktouch comment: Håvard Frøiland.
+# ktouch comment: Typecursus door tijs@vandenbogaard.org
+# Thu Dec 18 21:33:14 CET 2003
+# 
+# Willekeurige data gegenereerd met het perl script
+# van Steinar Theigmann & Håvard Frøiland.
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
