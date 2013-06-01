@@ -519,7 +519,7 @@ D:over over over; gave gave gave; have have have;
 I:(4) Paragraph Practice
 *:_V_R_L58
 S:You will surely make good if you give more time to
- :your daily work here.  You must make ever effort
+ :your daily work here.  You must make every effort
  :to make good.
  :
  :You will improve your skill every day if you
@@ -918,7 +918,7 @@ D:How much?  How many?  How soon?  How early?  How fast?
  :Where is Sam?  Where is Paul?  What is Zeke fixing?
  :
  :Can Max swim?  Can he dance?  Can he play tennis?
- :Can he dance?  Deos he swim?  Do you like tennis?
+ :Can he dance?  Does he swim?  Do you like tennis?
 
 I:(6)
 *:_V_R_L102
@@ -1098,7 +1098,7 @@ S:On June 15, 1775, George Washington was elected
  :
  :The Declaration of Independence, a famous state
  :paper, was issued by the American Continental Congress
- :on July 4w 1776.  It was drawn up by Thomas Jefferson.
+ :on July 4, 1776.  It was drawn up by Thomas Jefferson.
  :
  :The invasion fleet consisted of 4 battleships, 15 light
  :cruisers, 6 aircraft carriers, 17 troopships, six submarines,
@@ -1164,8 +1164,8 @@ D:d3d k8k d3d k8k d3d k8k d3d k8k d3d k8k d3d k8k
 I:(6)
 *:_V_R_L125
 D:d3d k8k d3d k8k d3d k8k d3d k8k 318 813 138 813 381
- :13 lbs.  lamb roast; 38 lbs. lamb chops; 8 lbs. bananas;
- :31 lbs.  lamb chops; 83 lbs. lamb roast; 3 lbs. peaches;
+ :13 lbs. lamb roast; 38 lbs. lamb chops; 8 lbs. bananas;
+ :31 lbs. lamb chops; 83 lbs. lamb roast; 3 lbs. peaches;
  :
  :lie 3 dye 3 pie 3 dye 3 Fiji 8 Fiji 8 Fiji 8
  :18 cans grape juice; 138 cans prune juice; 4 lbs. coffee;
