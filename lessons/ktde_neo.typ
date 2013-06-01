@@ -1,9 +1,10 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/german.neo.ktouch.xml
-# on Do 23. Jun 19:51:55 CEST 2011
+# on Sa 1. Jun 12:32:29 CEST 2013
 # ktouch title: Deutsch (NEO-Schnellschreiblayout)
-# ktouch comment: Homepage: http://pebbles.schattenlauf.de/
+# ktouch comment: Created 2005 by Hanno Behrens <Hanno.Behrens@gmx.de>
+# Homepage: http://pebbles.schattenlauf.de/
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -969,7 +970,7 @@ I:(1)
 D:eceala nhnrgr ecergr nhnrgr eceala nhnrgr eceala nhnrgr ece
  :epu nmd ezu nbd eou nsd ewu nkd epu nmd ezu nbd eou nsd ewu
  :eine aber denn sein sind habe dies kann mehr sehr hier ihre
- :le Ende Gabe Kern Raum Ruhe Rang Ruhm Saal Sieg
+ :Dank Ehre Eile Ende Gabe Kern Raum Ruhe Rang Ruhm Saal Sieg
 G:E_LESSON70
 
 *:S_LESSON71

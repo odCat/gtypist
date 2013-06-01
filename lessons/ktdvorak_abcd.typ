@@ -1,9 +1,11 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/dvorak_ABCD.ktouch.xml
-# on Do 23. Jun 19:51:54 CEST 2011
+# on Sa 1. Jun 12:32:29 CEST 2013
 # ktouch title: Dvorak - ABCD
-# ktouch comment: Available at http://www.gigliwood.com/abcd/abcd.html
+# ktouch comment: This ktouch lesson taken from Dan Wood's
+# A Basic Course in Dvorac (ABCD)
+# Available at http://www.gigliwood.com/abcd/abcd.html
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -47,7 +49,7 @@ G:E_LESSON2
 
 *:S_LESSON3
 K:12:MENU
-B:                          Lesson 3: ethu
+B:                Lesson 3: Comprehensive: E, H, T, U
 *:LESSON3_D1
 I:(1)
 D:eeee hhhh tttt uuuu
@@ -84,7 +86,7 @@ G:E_LESSON4
 
 *:S_LESSON5
 K:12:MENU
-B:                       Lesson 5: comp + o n
+B:            Lesson 5: Comprehensive, including O and N
 *:LESSON5_D1
 I:(1)
 D:hone hone hone hone hoot hoot hoot hoot hunt hunt hunt hunt
@@ -130,7 +132,7 @@ G:E_LESSON6
 
 *:S_LESSON7
 K:12:MENU
-B:                       Lesson 7: comp + a s
+B:            Lesson 7: Comprehensive, including A and S
 *:LESSON7_D1
 I:(1)
 D:aaaa eeee hhhh nnnn oooo ssss tttt uuuu
@@ -217,12 +219,12 @@ I:(6)
 D:Nina and Dana hit the astonished attendee on the head in unison
  :Auntie Edith tends to hint that Edna heeds the ideas due to Satan
  :The idea that nineteen studious Dadaists assisted Einstein is asinine
- :Todd hesitated in his Datsun then hit the Honda in the side in an instantaneous THUD
+ :Todd hesitated in his Datsun then hit the Honda in the side in an instantaneous
 *:LESSON9_D7
 I:(7)
-D:The thesis that Dante dated Death is as inane as the attitude that Sade stood on Sadness
- :A destitute Sudanese assassin insists that sainthood is indeed a handout to heathenish idiots
- :A thousand nude deadheads sustained hideous headstands as studious atheists dissented and seethed
+D:The thesis that Dante dated Death is as inane as the attitude that Sade stood
+ :A destitute Sudanese assassin insists that sainthood is indeed a handout to
+ :A thousand nude deadheads sustained hideous headstands as studious atheists
 G:E_LESSON9
 
 *:S_LESSON10
@@ -243,7 +245,7 @@ G:E_LESSON10
 
 *:S_LESSON11
 K:12:MENU
-B:                       Lesson 11: comp + p g
+B:            Lesson 11: Comprehensive, including P and G
 *:LESSON11_D1
 I:(1)
 D:aaaa dddd eeee gggg hhhh iiii nnnn oooo pppp ssss tttt uuuu
@@ -294,13 +296,13 @@ D:Espionage at DuPont and Hughes is upsetting to the GOP and the Pentagon
  :Upsetting gossip at the pageant had Stephanie and Gina sidestepping opponents
 *:LESSON11_D9
 I:(9)
-D:Pat goes sightseeing at the pagoda in Shanghai despite the gunshots at its apogee
- :The passage on Pegasus and the Aegean Sea upon page eight is a poignant adaptation
- :In hindsight Stonehenge suggests the indigenous geniuses had to depend on the sun and its phases
- :Daphne Stephenson has gone to Ghana and Ethiopia and Uganda to audiotape the distinguished singing
+D:Pat goes sightseeing at the pagoda in Shanghai despite the gunshots at its
+ :The passage on Pegasus and the Aegean Sea upon page eight is a poignant
+ :In hindsight Stonehenge suggests the indigenous geniuses had to depend on the
+ :Daphne Stephenson has gone to Ghana and Ethiopia and Uganda to audiotape the
 *:LESSON11_D10
 I:(10)
-D:The Pope stood in position atop the highest point in Santiago as an aghast Angie Diego ingested peanuts
+D:The Pope stood in position atop the highest point in Santiago as an aghast
 G:E_LESSON11
 
 *:S_LESSON12
@@ -325,7 +327,7 @@ G:E_LESSON12
 
 *:S_LESSON13
 K:12:MENU
-B:                       Lesson 13: comp + . c
+B:            Lesson 13: Comprehensive, including . and C
 *:LESSON13_D1
 I:(1)
 D:aaaa cccc dddd eeee gggg hhhh iiii nnnn oooo pppp ssss tttt uuuu ....
@@ -364,10 +366,10 @@ D:Coco said coaching is a cinch...catch and toss...catch and toss....
  :The enthusiastic duchess noticed the Pontiac coupe...and decided to chase it.
 *:LESSON13_D7
 I:(7)
-D:I detect a headache...I hope it is not the Schnapps and Cocoa I had as a nightcap.
- :The accountant...the C.P.A...conceded that he had on occasion hidden cocaine in a coconut.
- :The cautious Canadian statisticians caught inconsistencies in the second spacesuit design.
- :The Ph.D. conducted the Puccini Toccata... an acoustic succession in succinct cacophonic staccato notes.
+D:I detect a headache...I hope it is not the Schnapps and Cocoa I had as a
+ :The accountant...the C.P.A...conceded that he had on occasion hidden cocaine in
+ :The cautious Canadian statisticians caught inconsistencies in the second
+ :The Ph.D. conducted the Puccini Toccata... an acoustic succession in succinct
 G:E_LESSON13
 
 *:S_LESSON14
@@ -386,7 +388,7 @@ G:E_LESSON14
 
 *:S_LESSON15
 K:12:MENU
-B:                       Lesson 15: comp + , r
+B:            Lesson 15: Comprehensive, including , and R
 *:LESSON15_D1
 I:(1)
 D:aaaa cccc dddd eeee gggg hhhh iiii nnnn oooo pppp rrrr ssss tttt uuuu ,,,, ....
@@ -410,18 +412,18 @@ I:(4)
 D:Tia Carrere stars, narrates, and is the director in this torrid adaptation.
  :Gertrude, in her aristocratic grandeur, returned the carrots at the restaurant.
  :The Enterprise surprised Picard as it crisscrossed the restricted stratosphere.
- :Ritter, a character actor, returned an uproarious retort to the irritating chairperson.
+ :Ritter, a character actor, returned an uproarious retort to the irritating
 *:LESSON15_D5
 I:(5)
-D:The rhetoric, the grandeur, and the scripture interpretation surprised the churchgoer.
- :The choreographer restrained his rather strong terpsichorean urges, and did not dance.
- :The oceanographer reports that the interior pressure is inappropriate and erroneous, and orders the radar operator to intercept the pursuer.
- :Ed Harris stars as an arrogant and treacherous paratrooper, interpreting, in error, orders to torture a geriatric instructor.
+D:The rhetoric, the grandeur, and the scripture interpretation surprised the
+ :The choreographer restrained his rather strong terpsichorean urges, and did not
+ :The oceanographer reports that the interior pressure is inappropriate and
+ :Ed Harris stars as an arrogant and treacherous paratrooper, interpreting, in
 *:LESSON15_D6
 I:(6)
-D:Though his side has surrendered, he continues to oppress and interrogate the retired grandparent.
- :The aggressor is arrested, arraigned, tried, and, appropriate to the horrors he practiced, prosecuted and incarcerated.
- :The granddaughter, a stenographer, nurtures her grandpa, and he recuperates, though his arthritis returns.
+D:Though his side has surrendered, he continues to oppress and interrogate the
+ :The aggressor is arrested, arraigned, tried, and, appropriate to the horrors he
+ :The granddaughter, a stenographer, nurtures her grandpa, and he recuperates,
  :In retrospect, that paragraph incorporated a preposterous R proportion.
 G:E_LESSON15
 
@@ -432,7 +434,7 @@ B:                           Lesson 16: 'l
 I:(1)
 D:llll '''' llll '''' llll '''' llll ''''
  :llll '''' llll '''' llll '''' llll ''''
- :"
+ :LLLL """" LLLL """" LLLL """" LLLL """"
  :aaaa llll ssss ''''
 *:LESSON16_D2
 I:(2)
@@ -443,34 +445,34 @@ G:E_LESSON16
 
 *:S_LESSON17
 K:12:MENU
-B:                       Lesson 17: comp + ' l
+B:            Lesson 17: Comprehensive, including ' and L
 *:LESSON17_D1
 I:(1)
 D:aaaa cccc dddd eeee gggg hhhh iiii llll nnnn
  :oooo pppp rrrr ssss tttt uuuu '''' ,,,, ....
- :Ellen laughed, as she collided into Allen.
+ :"Hello," Ellen laughed, as she collided into Allen.
  :In a nutshell, Clinton still had an electoral landslide.
 *:LESSON17_D2
 I:(2)
 D:The alcoholic general staged a coup d'etat in Tallahassee.
  :Lucille and Randall cleaned their plates in the candlelight.
- :is a little illogical.
+ :Leland alleged that "Gilligan's Island" is a little illogical.
  :Sinead O'Connor's latest single isn't going to appall Russell.
 *:LESSON17_D3
 I:(3)
-D:"
+D:Colonial landlords near London once said "ain't," not "isn't."
  :Caroline D'Arc is an enrollee at that college in Philadelphia.
  :Didn't she hear, Cal used lots o' laterals, in the last seconds.
  :Eileen O'Hare and Pat O'Shea still shouldn't tell Leslie O'Neill.
 *:LESSON17_D4
 I:(4)
-D:said Helen.
+D:"This little oriental elephant is a cultural sellout," said Helen.
  :The illegal planeload o' pollutants hasn't landed at Chicago's O'Hare.
  :She'll call Allison in Honolulu, not a local call, on her cellular phone.
- :"
+ :This'll enthrall the linguists...using the letter "L," one can spell
 *:LESSON17_D5
 I:(5)
-D:Allegra, an unparalleled intellectual, calculated the celestial latitudes and longitudes in her sleep.
+D:Allegra, an unparalleled intellectual, calculated the celestial latitudes and
 G:E_LESSON17
 
 *:S_LESSON18
@@ -506,19 +508,19 @@ D:aaaa cccc dddd eeee ffff gggg hhhh iiii llll nnnn
 *:LESSON19_D2
 I:(2)
 D:In Lafayette, crayfish and coffee intensify the lifestyle.
- :"
+ :"I defy you," cried Finley, "to find a falcon as feathery as Godfrey."
  :Granny Fay left Cindy a frilly, yet unfortunately frayed, taffeta dress.
  :In days of yesteryear, typography did not signify only fonts and typefaces.
 *:LESSON19_D3
 I:(3)
-D:The youthful fantasy of Goofy and Donald left Francine the fallacy that life is often funny.
- :"
- :Dreyfuss thought fondly of that hefty eyeful of San Francisco's fog, last Friday near the ferry.
- :Geoffrey's faculty lecture on crystallography and diffraction patterns is usually insufficient and faulty.
+D:The youthful fantasy of Goofy and Donald left Francine the fallacy that life is
+ :"After the fifteenth forfeiture," uttered the referee, "Stanford is,
+ :Dreyfuss thought fondly of that hefty eyeful of San Francisco's fog, last
+ :Geoffrey's faculty lecture on crystallography and diffraction patterns is
 *:LESSON19_D4
 I:(4)
-D:If you can differentiate psychotherapy and psychoanalysis, or psychiatry and psychology, you yourself are a psychologist.
- :Yesterday, as they do each payday, Sydney and Clifford playfully ran off to the fishery for frothy glasses of Henry's Draft Ale.
+D:If you can differentiate psychotherapy and psychoanalysis, or psychiatry and
+ :Yesterday, as they do each payday, Sydney and Clifford playfully ran off to the
 G:E_LESSON19
 
 *:S_LESSON20
@@ -543,7 +545,7 @@ G:E_LESSON20
 
 *:S_LESSON21
 K:12:MENU
-B:                       Lesson 21: comp + k m
+B:            Lesson 21: Comprehensive, including K and M
 *:LESSON21_D1
 I:(1)
 D:aaaa cccc dddd eeee ffff gggg hhhh iiii kkkk llll mmmm
@@ -553,19 +555,19 @@ D:aaaa cccc dddd eeee ffff gggg hhhh iiii kkkk llll mmmm
 *:LESSON21_D2
 I:(2)
 D:Kramer asked for skim milk in a melodramatic manner.
- :Maurice choked out meekly.
- :"
+ :"My kingdom for a Macintosh," Maurice choked out meekly.
+ :It's more sportsmanlike to say "checkmate" than "knockout."
  :Emmet felt homesick until Mom sent him that Hallmark Hanukkah card.
 *:LESSON21_D3
 I:(3)
 D:The makeshift cloakroom is a trademark of McKinley's decisionmaking.
- :an irksome mockery of her days in Yokohama.
- :There's not much homemade pumpkin ice cream and Smucker's hot fudge sauce remaining.
- :The filmmaker, in machinelike precision, caught the magma and smoke from the immense Mt. Krakatoa on film.
+ :Kim's nickname is "Kimono," an irksome mockery of her days in Yokohama.
+ :There's not much homemade pumpkin ice cream and Smucker's hot fudge sauce
+ :The filmmaker, in machinelike precision, caught the magma and smoke from the
 *:LESSON21_D4
 I:(4)
-D:Stock in Amtrak skyrocketed after McKeon's remark mocking spokesmen, gimmickery, and smokescreens in the marketplace.
- :From Katmandu to Oklahoma, from Stockholm to Kentucky, from Alaska to the Kremlin, Kodak film is found in many, many cameras.
+D:Stock in Amtrak skyrocketed after McKeon's remark mocking spokesmen,
+ :From Katmandu to Oklahoma, from Stockholm to Kentucky, from Alaska to the
 G:E_LESSON21
 
 *:S_LESSON22
@@ -587,7 +589,7 @@ G:E_LESSON22
 
 *:S_LESSON23
 K:12:MENU
-B:                       Lesson 23: comp + j w
+B:            Lesson 23: Comprehensive, including J and W
 *:LESSON23_D1
 I:(1)
 D:aaaa cccc dddd eeee ffff gggg hhhh iiii jjjj kkkk llll mmmm
@@ -599,7 +601,7 @@ I:(2)
 D:Jamestown, New York, that's my home town.
  :The Joshua Tree National Monument is known worldwide.
  :Jujitsu makes you use your opponent's weight against himself.
- :"
+ :"Wow," he said as his jaw dropped. "That's a jewel of a wristwatch."
 *:LESSON23_D3
 I:(3)
 D:Wanting the water to flow, Irwin twisted the faucet counterclockwise.
@@ -609,14 +611,14 @@ D:Wanting the water to flow, Irwin twisted the faucet counterclockwise.
 *:LESSON23_D4
 I:(4)
 D:I wonder if that Newsweek on the windowsill has the lowdown on Woolworths.
- :With awe, Jeremy awkwardly swallowed a whole slew of raisinettes as the John Waters film started.
- :Wynonna Judd, after a whirlwind tour of the Midwest, waited at the Waldorf Astoria for two weeks.
- :"
+ :With awe, Jeremy awkwardly swallowed a whole slew of raisinettes as the John
+ :Wynonna Judd, after a whirlwind tour of the Midwest, waited at the Waldorf
+ :"Your Majesty," wrote Marjorie, "Nothing justifies prejudice. I can rejoice
 *:LESSON23_D5
 I:(5)
-D:The newsletter whitewashed reports of wiretapping in Congresswoman Hollingsworth's jurisdiction.
- :wailed the janitor as he jettisoned the typewriter out the window.
- :The projectile majestically landed at the junction of Jefferson and Winslow streets, just jolting, not injuring, a jogging tourist.
+D:The newsletter whitewashed reports of wiretapping in Congresswoman
+ :"Hallelujah," wailed the janitor as he jettisoned the typewriter out the window.
+ :The projectile majestically landed at the junction of Jefferson and Winslow
 G:E_LESSON23
 
 *:S_LESSON24
@@ -632,7 +634,7 @@ G:E_LESSON24
 
 *:S_LESSON25
 K:12:MENU
-B:                       Lesson 25: comp + q v
+B:            Lesson 25: Comprehensive, including Q and V
 *:LESSON25_D1
 I:(1)
 D:aaaa cccc dddd eeee ffff gggg hhhh iiii jjjj kkkk llll mmmm nnnn
@@ -649,18 +651,18 @@ D:Mercury and quicksilver are quite the same.
 I:(3)
 D:According to Pravda, Vladivostok was a quiet village in its Soviet days.
  :This unique, opaque liquor does not quench your thirst, it makes you queasy.
- :David's vivid imagination and his inquisitive and inventive mind suggest a high IQ.
- :If Iraq was equipped to invade and conquer Tel Aviv, the U.S. may have quashed that pervasively.
+ :David's vivid imagination and his inquisitive and inventive mind suggest a high
+ :If Iraq was equipped to invade and conquer Tel Aviv, the U.S. may have quashed
 *:LESSON25_D4
 I:(4)
-D:We've never quantitatively proven that a quaver is equivalent to a quiver, only qualitatively.
- :This revolutionary cardiovascular technique is representative of the productivity here in Charlottesville.
- :Javier said assertively over the tranquil sounds of Vivaldi,
+D:We've never quantitatively proven that a quaver is equivalent to a quiver, only
+ :This revolutionary cardiovascular technique is representative of the
+ :"I've never had such quality hors d'oeuvres," Javier said assertively over the
  :as he looked over the picturesque headquarters of the Vancouver Civic Center.
 *:LESSON25_D5
 I:(5)
-D:Nirvana's inequivalent sequel to their provocative release, Nevermind, is inconclusive.
- :Nevertheless, this quirky yet vivacious trio has evoked a progressive sound that very well may give you a new perspective on irreverence.
+D:Nirvana's inequivalent sequel to their provocative release, Nevermind, is
+ :Nevertheless, this quirky yet vivacious trio has evoked a progressive sound
 G:E_LESSON25
 
 *:S_LESSON26
@@ -679,7 +681,7 @@ G:E_LESSON26
 
 *:S_LESSON27
 K:12:MENU
-B:                       Lesson 27: comp + ; z
+B:            Lesson 27: Comprehensive, including ; and Z
 *:LESSON27_D1
 I:(1)
 D:aaaa cccc dddd eeee ffff gggg hhhh iiii jjjj kkkk llll mmmm nnnn oooo
@@ -688,14 +690,14 @@ D:aaaa cccc dddd eeee ffff gggg hhhh iiii jjjj kkkk llll mmmm nnnn oooo
  :pppp qqqq rrrr ssss tttt uuuu vvvv wwww yyyy zzzz '''' ,,,, .... ;;;;
 *:LESSON27_D2
 I:(2)
-D:Zachary MacKenzie froze in amazement; on the radio in his Mazda he heard pizzicato stanzas of Mozart.
- :Carmen Rodriguez is a citizen of Venezuela; her former spouse, Inigo Martinez, and his new wife, Anna Vasquez, have moved to Swaziland or Tanzania.
- :The prizewinning paper on immunization against schizophrenia was delivered in Czechoslovakia; this technique was deemphasized in Switzerland.
- :A crazed gazelle was whizzing around the zoo; a quizzical giraffe guzzled down pizzas through his muzzle; another one merely grazed and dozed;
+D:Zachary MacKenzie froze in amazement; on the radio in his Mazda he heard
+ :Carmen Rodriguez is a citizen of Venezuela; her former spouse, Inigo Martinez,
+ :The prizewinning paper on immunization against schizophrenia was delivered in
+ :A crazed gazelle was whizzing around the zoo; a quizzical giraffe guzzled down
 *:LESSON27_D3
 I:(3)
-D:several chimpanzees started zigging and zagging; the reptile zone was oozing with activity;
- :several lizards hazarded the freezing waters and capsized the fish tanks; a dozen grizzlies were waltzing in the plaza.
+D:several chimpanzees started zigging and zagging; the reptile zone was oozing
+ :several lizards hazarded the freezing waters and capsized the fish tanks; a
 G:E_LESSON27
 
 *:S_LESSON28
@@ -723,16 +725,16 @@ I:(2)
 D:Heathcliff Huxtable was played by the inexorable Bill Cosby.
  :An inexhaustible supply of benzedrine merely exacerbated his disturbances.
  :Bruce Boxleitner explained to the extraterrestrial why Babylon Five was built.
- :The ambidextrous exhibitor was exhausted by the time he loaded the boxcar with hobbyhorses.
+ :The ambidextrous exhibitor was exhausted by the time he loaded the boxcar with
 *:LESSON29_D3
 I:(3)
-D:Drop those xeroxes off in the mailbox; I'll get them in the bibliography in five days maximum.
- :Mr. Balboa is pretty flexible with the textbook; it's probably excusable to fall a bit behind.
- :Why Mr. Baxter went from Bordeaux to the tableaux exhibit in Luxembourg by taxicab is inexplicable.
- :Becky found the Bronx pretty obnoxious; though there was that Caribbean restaurant that truly excelled.
+D:Drop those xeroxes off in the mailbox; I'll get them in the bibliography in
+ :Mr. Balboa is pretty flexible with the textbook; it's probably excusable to
+ :Why Mr. Baxter went from Bordeaux to the tableaux exhibit in Luxembourg by
+ :Becky found the Bronx pretty obnoxious; though there was that Caribbean
 *:LESSON29_D4
 I:(4)
-D:The executives at NBC, CBS, and ABC all found it inexcusable that the BBC was so inflexible and xenophobic.
+D:The executives at NBC, CBS, and ABC all found it inexcusable that the BBC was
 G:E_LESSON29
 
 
@@ -856,30 +858,30 @@ G:MENU
 M: "ktouch lesson: Dvorak - ABCD"
  :S_LESSON1 "uh"
  :S_LESSON2 "et"
- :S_LESSON3 "ethu"
+ :S_LESSON3 "Comprehensive: E, H, T, U"
  :S_LESSON4 "on"
- :S_LESSON5 "comp + o n"
+ :S_LESSON5 "Comprehensive, including O and N"
  :S_LESSON6 "as"
- :S_LESSON7 "comp + a s"
+ :S_LESSON7 "Comprehensive, including A and S"
  :S_LESSON8 "di"
  :S_LESSON9 "comp + d i"
  :S_LESSON10 "pg"
- :S_LESSON11 "comp + p g"
+ :S_LESSON11 "Comprehensive, including P and G"
  :S_LESSON12 ".c"
- :S_LESSON13 "comp + . c"
+ :S_LESSON13 "Comprehensive, including . and C"
  :S_LESSON14 ",r"
- :S_LESSON15 "comp + , r"
+ :S_LESSON15 "Comprehensive, including , and R"
  :S_LESSON16 "'l"
- :S_LESSON17 "comp + ' l"
+ :S_LESSON17 "Comprehensive, including ' and L"
  :S_LESSON18 "yf"
  :S_LESSON19 "comp + y f"
  :S_LESSON20 "km"
- :S_LESSON21 "comp + k m"
+ :S_LESSON21 "Comprehensive, including K and M"
  :S_LESSON22 "jw"
- :S_LESSON23 "comp + j w"
+ :S_LESSON23 "Comprehensive, including J and W"
  :S_LESSON24 "qv"
- :S_LESSON25 "comp + q v"
+ :S_LESSON25 "Comprehensive, including Q and V"
  :S_LESSON26 ";z"
- :S_LESSON27 "comp + ; z"
+ :S_LESSON27 "Comprehensive, including ; and Z"
  :S_LESSON28 "xb"
  :S_LESSON29 "comp + x b"

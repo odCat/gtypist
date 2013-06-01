@@ -1,9 +1,10 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/russian_long.ktouch.xml
-# on Do 23. Jun 19:51:56 CEST 2011
+# on Sa 1. Jun 12:32:32 CEST 2013
 # ktouch title: Russian (auto-generated)
 # ktouch comment: KTouch training file generated Tue Oct 25 12:51:40 MSD 2005 by Miha Ulanov (mulanov@mail.ru)
+#  
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -412,7 +413,7 @@ I:(7)
 D:кожура групповод шпажка подгруппа вырву угол гугу уварка углов дорогуша
  :шарж апаш фураж уварка упаковка грушовка шлаг вошка пудра пул шарж
  :вышла урок паша шарж углу полкруга кувалда укупорка купаж порука полушка
- :форшлаг
+ :выплыву кушак плуг радужка ожгу гложу полуовал выкуп вурдалак форшлаг
 *:LESSON8_D8
 I:(8)
 D:вдруг паша шкура покрышка пул полушар шкала проулок вогул уродка гладыш
@@ -790,7 +791,7 @@ I:(2)
 D:Боря Вася Вова Боря Исаак Алголь Вовка Ио Клава Эмма Жора Марк Валя
  :Уралмаш Лёша Лука Валя Фёдор Назар Вова Эдуард Вася Алёшка Даша Ксюха
  :Маруська Гоша Маруська Ирочка Ирочка Юра Лука Вовочка Вовка Адам Захар
- :ёкла Зоя Гошка Алёха Ромка Маркс Ксюша Надька Евграф Ромка
+ :Валя Фёкла Зоя Гошка Алёха Ромка Маркс Ксюша Надька Евграф Ромка
 *:LESSON16_D3
 I:(3)
 D:Колька Влас Валька Надька Макар Карл Элла Ева Наум Лазарь Аглая Майя

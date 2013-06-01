@@ -1,9 +1,9 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/finnish.ktouch.xml
-# on Do 23. Jun 19:51:55 CEST 2011
+# on Sa 1. Jun 12:32:30 CEST 2013
 # ktouch title: Finnish (auto-generated)
 # ktouch comment: KTouch training file generated March 22, 2006 by Ulla Lewman.
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -187,7 +187,7 @@ D:alfalfa calls jacks ala dc lacks class lad clack a fads alacks ads jaffa kaffa
  :asacs jackal lacks class clad ack dad slack fall alfalfas slacks laska dad
 *:LESSON4_D4
 I:(4)
-D:fad cal lad cal calla ad sad salads ska salad flack skas ca jacks laaka lakka sasal ads ad flak aka ala ac clad alacks ck jackal fall fas scads
+D:fad cal lad cal calla ad sad salads ska salad flack skas ca jacks laaka lakka
  :call calla alfalfas calf falls flak lack flak flaks casks flak lass saada jakaa
  :sala class alla akka affa adda a askas scad acks ac scad lac skas scald
  :sacs lads ascals call scad call clads kcal salsa slack ascals dads
@@ -211,9 +211,9 @@ B:                       Lesson 5: ei uusia 1
 *:LESSON5_D1
 I:(1)
 D:jaffa kaada fafa laaka lakka saada ca ja aa jj kk ss ll sala salaa lalla kalla
- :jalla falla cafca salsa jfjf jkjk fkfk dkdk kdkd kfkf djdj kjkj jl lj sf fs j f k l
+ :jalla falla cafca salsa jfjf jkjk fkfk dkdk kdkd kfkf djdj kjkj jl lj sf fs j f
  :salsaa kasa kafka safka ff jj kk dd ll ss cc aa j f k d l s c a jaffa kaffa sala
- :jj ff kk dd ll ss cc aa j f k d l s c a jf jjff kd kkdd ls llss ca ccaa casa kasa
+ :jj ff kk dd ll ss cc aa j f k d l s c a jf jjff kd kkdd ls llss ca ccaa casa
 *:LESSON5_D2
 I:(2)
 D:falla afa adda cjcj jcjc fccf cckk ddcc ccdd cdcd akka dada lask kask aaaa
@@ -228,9 +228,9 @@ D:jaffa kaada fafa laaka lakka saada ca ja aa jj kk ss ll sala salaa lalla kalla
  :jaffa kaada fafa laaka lakka saada ca ja aa jj kk ss ll sala salaa lalla kalla
 *:LESSON5_D4
 I:(4)
-D:jalla falla cafca salsa jfjf jkjk fkfk dkdk kdkd kfkf djdj kjkj jl lj sf fs j f k l
+D:jalla falla cafca salsa jfjf jkjk fkfk dkdk kdkd kfkf djdj kjkj jl lj sf fs j f
  :salsaa kasa kafka safka ff jj kk dd ll ss cc aa j f k d l s c a jaffa kaffa sala
- :jj ff kk dd ll ss cc aa j f k d l s c a jf jjff kd kkdd ls llss ca ccaa casa kasa
+ :jj ff kk dd ll ss cc aa j f k d l s c a jf jjff kd kkdd ls llss ca ccaa casa
  :falla afa adda cjcj jcjc fccf cckk ddcc ccdd cdcd akka dada lask kask aaaa
 *:LESSON5_D5
 I:(5)
@@ -300,8 +300,8 @@ K:12:MENU
 B:                           Lesson 7: iv
 *:LESSON7_D1
 I:(1)
-D:i i i v v v iv iv vi vi iivv vvii viii iiiv vivi ivvi viiv iiii iiii vvvv vvvv ivvv viii
- :i i i v v v ivi ivi viv vivi iviv vvii ivvv iivv iiiv vivi iviv ivvi iivv iiii vvvv
+D:i i i v v v iv iv vi vi iivv vvii viii iiiv vivi ivvi viiv iiii iiii vvvv vvvv
+ :i i i v v v ivi ivi viv vivi iviv vvii ivvv iivv iiiv vivi iviv ivvi iivv iiii
  :saita saidat laiva cicada kissa viat knits stilt ails kills flail tail
  :canvass vatsa kiln tina askis tic silti liilat assails avials ninja lila
 *:LESSON7_D2
@@ -388,9 +388,9 @@ D:sametti ne semifinaali sementti kani viila vie me astemitta alas sinivalas tie
  :netti lasi laasti femma miina maine kisa fifa diiva kina siisti kiiski minne
 *:LESSON8_D8
 I:(8)
-D:maine meni natina niin fiini ivata neiti kelsi kassi siviili sivellin etsin kaista
- :ilkivalta seitti ivata laasti lantti kantti kanttiini kaste maistella maksaa maksa
- :kide diiva me te ne se iva kiva kiivailla miete asiakas vaadin kaadin kiiski menin
+D:maine meni natina niin fiini ivata neiti kelsi kassi siviili sivellin etsin
+ :ilkivalta seitti ivata laasti lantti kantti kanttiini kaste maistella maksaa
+ :kide diiva me te ne se iva kiva kiivailla miete asiakas vaadin kaadin kiiski
 G:E_LESSON8
 
 *:S_LESSON9
@@ -454,7 +454,7 @@ D:desilitra metrimitta mittari kreemi lammas hammas hammasharja riihi
  :eriste risteilee ristiriita rahi rahti ritarilinna kide kirmata karmiva kaari
 *:LESSON10_D6
 I:(6)
-D:ralli rilli laari laastari kaahari kiire kiirii kierre mielle marjastaa tarkastaa
+D:ralli rilli laari laastari kaahari kiire kiirii kierre mielle marjastaa
  :tarha eristin helistin kiristin arka jalka firma liiteri hiiri saari naali maili
  :misteli riivin rihveli ristiriita risa kitarisa kasari kattila haili halata aari
  :hehtaari hilse hatara hairahtaa leiri iiris eriste haistaa lehti lahti kaksi
@@ -517,7 +517,7 @@ K:12:MENU
 B:                           Lesson 12: bp
 *:LESSON12_D1
 I:(1)
-D:b b b b p p p p bb pp pb bp bppp pbbb bbpp ppbb bbbp bbbp pbbb b b b b p p p p pp pp pp bb bb bb bob pop pappa pippa bibbi babba baba papa
+D:b b b b p p p p bb pp pb bp bppp pbbb bbpp ppbb bbbp bbbp pbbb b b b b p p p p
  :bio boi pio poi abba baab appa paap ebbe eppe eeep eeeb bbpp bbpp
  :posti pois paisti pata poika appi apila oppilas pilari pila repale passi
  :biologi baari barbaari berberi baskeri bataatti biopassi bistro albatrossi
@@ -555,7 +555,7 @@ K:12:MENU
 B:                       Lesson 13: ei uusia 3
 *:LESSON13_D1
 I:(1)
-D:jaffa fafa ca ja jakaa sala faarao kaftaani laiva aasi lapsi lopettaa aivan lasta pasta vasta kasta paperi berberi baskeri sivellin reitti peitto keitto
+D:jaffa fafa ca ja jakaa sala faarao kaftaani laiva aasi lapsi lopettaa aivan
  :katso lapanen gogo herra korppi kapalo sana kisa kissa risa rissa
  :lasi lapsi mesi meri vesi pesi keski kaski maski matsi neiti veitsi kaadin
  :keitto peitto pasta vasta vaaksa bataatti potaatti tomaatti persilja pari
@@ -607,7 +607,7 @@ D:mukava sauna nauha nuha tunne aukko saukko tukos duuri kuuri tulos
  :etanoli nuoli nuolla nuori nuotti nuotta vuosi vuoto kuona kuori kuuri kuu
 *:LESSON14_D4
 I:(4)
-D:kustannus uudistus suu queen mexx ex exhale examinia texmex xerox on kopio qu xavier kexi on suomeksi keksi ennen vanhaan kirjoitettiin ks x
+D:kustannus uudistus suu queen mexx ex exhale examinia texmex xerox on kopio qu
  :silloin suksi olisi ollut suxi q on vieras kirjain samoin kuin x tarvitse q ja
  :x merkin kun kirjoitat ranskaa englantia tai ruotsia maukas muovailuvaha
  :vahva suomalainen tuo tuomari juo huokailu huokaus huomata huuhaa on
@@ -621,7 +621,7 @@ D:kumma juttu huhuilu huilu kumi kumina ruutana rauta hauta hautua
 I:(6)
 D:paalu valuutta valas huuma hauras hurja huima huoli huopa huveta
  :huono gulakki kustavilainen tuoli fuuga duuma quixotic on vieras sana
- :quiche on ranskalainen piiras quiet on hiljainen quid on slangisana ja tarkoittaa puntaa quintet on suomeksi kvintetti xylophone on tietenkin ksylofoni xenophobia tai xenofobia tarkoittaa vieraiden maiden tai
+ :quiche on ranskalainen piiras quiet on hiljainen quid on slangisana ja
  :muukalaisten pelkoa outo on usein kummallinen juttu tuuli uusi kuusi
 G:E_LESSON14
 
@@ -636,7 +636,7 @@ D:å å å å åå åå åå åååå åååå å å åå åå åå åå å åå
  :ä ä ä ä ää ää ää ääää ääää wääw äåäå åääå åäää ååää ääää ääää wwwä
 *:LESSON15_D2
 I:(2)
-D:ä hän me te he tämä tuo se nämä nuo ne ovat kaikki pronomineja
+D:sää tämä tällä hämärä häntä minä sinä hän me te he tämä tuo se nämä nuo ne ovat
  :häät häätää häärätä häiritä häkki näkkileipä levätä kerätä kehrätä kerätä
  :kerä rääkätä ääri kääriä kärki härkä häkä jäkälä mätäs mässätä määrä
  :määränpää pää päättää päivä väri sääri sääli säilä eräs eristää erä kerä
@@ -750,10 +750,10 @@ K:12:MENU
 B:                    Lesson 18: piste ja pilkku
 *:LESSON18_D1
 I:(1)
-D:. . . . . . . . .  , , , , . , . , .. ,, .. ,, .,., ., ., ,. ,. ,. . . . . . . . ... ... ... , , , ,, ,, ,, .... ...
- :Muista käyttää pistettä aina lauseen lopuksi. Pisteen jälkeen on aina välilyönti. Lause alkaa aina isolla alkukirjaimella. Lause on yksi asia. Kirjoitan sinulle nyt muutaman esimerkin. Ulla ui. Uiminen on Ullasta hauskaa. Ainolla on aurinkoinen hymy. Aamu alkaa aamiaisella.Minä olen viisas kissa. Minä olen Sisu. Sano aa. Sano a. Sano apina.
+D:. . . . . . . . .  , , , , . , . , .. ,, .. ,, .,., ., ., ,. ,. ,. . . . . . .
+ :Muista käyttää pistettä aina lauseen lopuksi. Pisteen jälkeen on aina
  :Aasi ui. Susi ui. Sisu ui.  Ullakon ovessa oli lappu. Alisa luki lapun
- :Runoissa käytetään välimerkkinä usein pilkkua. Seuraava runo on kopioitu Salaisesta aapisesta.
+ :Runoissa käytetään välimerkkinä usein pilkkua. Seuraava runo on kopioitu
 *:LESSON18_D2
 I:(2)
 D:Joutsenen hoito
@@ -781,7 +781,7 @@ D:jousenen, niin joutsenen.
 *:LESSON18_D6
 I:(6)
 D:joutsenen, niin joutsenen.
- :Nyt olet harjoitellut kaikki kirjoituksen merkit, niin isot kuin pienetkin kirjaimet. Vielä voit harjoitella numerot ja muut merkit. Opettajasi varmaankin seuraavaksi neuvoo sinua käyttämään @-merkkiä ja tavuviivaa. Samalla on hyvä opetella jokin tekstinkäsittelyohjelma. Onnea kirjoitustaidollesi ja voitkin pyytää nyt opettajaltasi todistus kymmensormisjärjestelmän osaamisesta.
+ :Nyt olet harjoitellut kaikki kirjoituksen merkit, niin isot kuin pienetkin
 G:E_LESSON18
 
 

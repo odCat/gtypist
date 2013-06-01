@@ -1,9 +1,23 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/nederlands_junior.ktouch.xml
-# on Do 23. Jun 19:51:55 CEST 2011
+# on Sa 1. Jun 12:32:31 CEST 2013
 # ktouch title: Nederlands Junior (nederlands voor kinderen)
-# ktouch comment: bepalingen van de GNU General Public License versie 2 of recenter.
+# ktouch comment: KTouch oefenbestand voor kinderen
+# 
+# De woordkeuze werd gebaseerd op het
+# Perl Script geschreven door Steinar Theigmann & Håvard Frøiland.
+# 
+# Kenmerken van dit oefenbestand zijn :
+#                           1. Een zeer geleidelijke overgang van het 
+#                              ene niveau naar het andere, vooral in het
+#                              begin.
+#                           2. Een grote nadruk op het ritme
+#                           3. Herhaling
+# 
+# Copyright 2004 by Marc Heyvaert (marc_heyvaert AT yahoo DOT com)
+# Dit document is een onderdeel van het KTouch programma en valt onder de 
+# bepalingen van de GNU General Public License versie 2 of recenter.
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -257,13 +271,13 @@ B:                          Lesson 11: b c
 I:(1)
 D:och och ach ach och ach och ach bar bar och bar ach bar och bar
  :bier bier baar bier baar baar bier baar boer boer bier baar boer bar beer
- :beer beer beer achter achter achter er staat een beer achter je er staat een beer achter je
- :blaas blaas blaas blaas ballon ballon ballon blaas die ballon op blaas die ballon op
+ :beer beer beer achter achter achter er staat een beer achter je er staat een
+ :blaas blaas blaas blaas ballon ballon ballon blaas die ballon op blaas die
 *:LESSON11_D2
 I:(2)
-D:lachen lachen lachen ooit al een lachende beer gezien ooit al een lachende beer gezien
- :boek boek boel boel boek een saaie boel een saai boek een saaie boel een saai boek
- :broek broek broek gescheurd gescheurd zijn broek is gescheurd zijn broek is gescheurd
+D:lachen lachen lachen ooit al een lachende beer gezien ooit al een lachende beer
+ :boek boek boel boel boek een saaie boel een saai boek een saaie boel een saai
+ :broek broek broek gescheurd gescheurd zijn broek is gescheurd zijn broek is
 G:E_LESSON11
 
 *:S_LESSON12
@@ -272,8 +286,8 @@ B:                          Lesson 12: x w
 *:LESSON12_D1
 I:(1)
 D:xxx www xxx www xxx www xxx www water water water wacht wacht wacht
- :water wat water wat wat wonder wonder wat een wonder dat water wat een wonder dat water
- :leeuw leeuw lynx lynx de leeuw is de koning onder de dieren de lynx is geen katje
+ :water wat water wat wat wonder wonder wat een wonder dat water wat een wonder
+ :leeuw leeuw lynx lynx de leeuw is de koning onder de dieren de lynx is geen
  :wist jij dit al wie wijst er naar die lynx wist willywat hij wou doen
 *:LESSON12_D2
 I:(2)
@@ -309,7 +323,7 @@ D:Morgen ga ik vast terug. Jij toch ook?
  :Hallo! Hier! Kijk maar naar boven! Zie je mij dan niet?
 *:LESSON14_D3
 I:(3)
-D:"
+D:En toen zei ze: "Ik sta hier." Maar hij hoorde haar niet. Toen riep ze: "Moet
  :Het is nooit te laat. Rennen maar!
  :Deze kerel heb ik nog nooit gezien! Jij wel?
 G:E_LESSON14
@@ -327,7 +341,7 @@ D:De laatste tijd hebben wij jou hier niet veel meer gezien!
 I:(2)
 D:We brachten met de klas een bezoekje aan de dierentuin.
  :Welke jas is van jou?
- :In de dierentuin hebben we heel wat dieren gezien: een paar leeuwen, een tijger, heel wat apen en zelfs een lynx!
+ :In de dierentuin hebben we heel wat dieren gezien: een paar leeuwen, een
  :Op de zeedijk waren heel wat kinderen met kleine wagentjes aan het rondrijden.
 *:LESSON15_D3
 I:(3)
@@ -337,7 +351,7 @@ D:Het water van de zee was zeer koud.
  :Pas op! Straks trap je nog in die plas!
 *:LESSON15_D4
 I:(4)
-D:Moeten wij nog ver stappen? Ik ben moe, mijn ogen vallen dicht en ik zou graag gaan slapen.
+D:Moeten wij nog ver stappen? Ik ben moe, mijn ogen vallen dicht en ik zou graag
 G:E_LESSON15
 
 *:S_LESSON16
@@ -348,11 +362,11 @@ I:(1)
 D:1 2 3 123 4 5 6 456 7 8 9 789 120 130 140 150 230 395 382 456
  :1 + 2 = 3; 1+2=3; 44+23=67; 41+60=102; Oei! Dat is fout! Het moet 101 zijn.
  :De tafel van 8: 1x8=8; 2x8=16; 3x8=24; enz.
- :Op een computer wordt het maalteken vaak met een '*' aangeduid i.p.v. met een 'x'!
+ :Op een computer wordt het maalteken vaak met een '*' aangeduid i.p.v. met een
 *:LESSON16_D2
 I:(2)
 D:Dus 4x7 is hetzelfde als 4*7...en dat is natuurlijk gelijk aan 28!
- :Op een klavier vind je ook geen teken voor 'gedeeld door'! Wij vervangen dat door een schuine streep: '/' dus.
+ :Op een klavier vind je ook geen teken voor 'gedeeld door'! Wij vervangen dat
  :35/7=5 of 35 / 7 = 5 indien je wat meer ruimte tussen je cijfers wil!
  :Het minteken is natuurlijk een gewoon liggend streepje, '-' dus.
 *:LESSON16_D3

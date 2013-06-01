@@ -1,3 +1,8 @@
+2013-06-01 Felix Natter <fnatter@gmx.net>
+	* update kt*.typ with new ktouch2typ.pl as reported by
+	  Alexei Matveev <alexei.matveev@gmail.com>
+	  (see ../ChangeLog for script changes)
+
 2013-03-30 Rob Day <rkd@rkd.me.uk>
 	* q.typ: Q1: introduces e,i and not g,h; fix space issue
 
