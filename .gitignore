@@ -57,8 +57,12 @@ tools/gtypist-mode.elc
 # ignore dist builds
 *.gz
 *.bz2
+*.xz
+*.7z
 *.gz.sig
 *.bz2.sig
+*.xz.sig
+*.7z.sig
 *.directive
 *.directive.asc
 
