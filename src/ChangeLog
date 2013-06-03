@@ -1,8 +1,8 @@
 2013-06-01  Felix Natter <fnatter@gmx.net>
 
-	* Avoid that Alt+<anything> is treated as ESC, which could lead
-	  to accidentally aborting a lesson
-	  reported by Chris Jones <cjns1989@gmail.com>
+	* utf8.c: Avoid that Alt+<anything> is treated as ESC, which could
+	  lead to accidentally aborting a lesson reported by Chris Jones
+	  <cjns1989@gmail.com>.
 
 2012-07-08  Felix Natter <fnatter@gmx.net>
 

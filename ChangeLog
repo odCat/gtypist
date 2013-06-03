@@ -1,4 +1,8 @@
-2013-06-01 Felix Natter <fnatter@gmx.net>
+2013-06-03  Tim Marston <tim@ed.am>
+
+	* version.sh: updated to 2.9.3
+
+2013-06-01  Felix Natter <fnatter@gmx.net>
 
 	* fix ktouch2typ.pl according to bug report from
 	  Alexei Matveev <alexei.matveev@gmail.com>:
