@@ -6,13 +6,13 @@ See the `ChangeLog' (top-level and in some subdirectories) and
 
 version 2.9.3 - June 2013
 	- fix for Alt+some key being treated as ESCAPE and clearing drills
-      (reported by Chris Jones <cjns1989@gmail.com>)
-	- updates to the ktouch lesson import script, based on a patch submitted by
-      Alexei Matveev <alexei.matveev@gmail.com>)
-	- updates to lessons imported from ktouch (fixes issue with lines over 80
-      characters causing errors, amongst other things)
-	- fix errors in lessons, thanks to Rob Day <rkd@rkd.me.uk> and Chris Jones
-      <cjns1989@gmail.com>
+	  (reported by Chris Jones <cjns1989@gmail.com>)
+	- updates to the ktouch lesson import script, based on a patch
+	  submitted by Alexei Matveev <alexei.matveev@gmail.com>)
+	- updates to lessons imported from ktouch (fixes issue with lines over
+	  80 characters causing errors, amongst other things)
+	- fix some errors in lessons, thanks to Rob Day <rkd@rkd.me.uk> and
+	  Chris Jones <cjns1989@gmail.com>
 
 version 2.9.2 - December 2012
 	- fix collison between unicode 0x107 (c with accent) and KEY_BACKSPACE
