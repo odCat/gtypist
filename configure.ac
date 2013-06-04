@@ -4,6 +4,7 @@ AC_INIT([GNU Typist], [esyscmd(./version.sh)], [bug-gtypist@gnu.org], [gtypist])
 AM_INIT_AUTOMAKE([1.8.2 gnu dist-xz])
 AC_CONFIG_SRCDIR([src/gtypist.c])
 AM_CONFIG_HEADER([config.h])
+AC_USE_SYSTEM_EXTENSIONS
 
 # Checks for programs
 
@@ -20,24 +21,10 @@ AC_PROG_YACC
 
 ALL_LINGUAS="cs de es eu fi fr nl pl ru tr zh_CN zh_TW"
 
-# Checks for libraries.
-AC_CHECK_LIB(ncursesw, add_wch, HAVE_LIBNCURSESW=1)
-
 # Checks for header files.
+
 AC_HEADER_STDC
 AC_CHECK_HEADERS([unistd.h alloca.h argz.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdio_ext.h stdlib.h string.h strings.h sys/param.h unistd.h])
-
-AC_CHECK_HEADER(ncursesw/ncurses.h, HAVE_NCURSESW_H=1)
-
-# sanity check for libncursesw: 
-if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
-   LIBS="-lncursesw $LIBS"
-else
-   echo -e "Error:  both library and header files for the ncursesw library\n"\
-   	"are required to build this package.  See INSTALL file for"\
-	"further information. On Debian/Ubuntu you need to install libncursesw5-dev."
-   exit 1;
-fi
 
 # Checks for typedefs, structures, and compiler characteristics.
 
@@ -57,9 +44,22 @@ AC_TYPE_SIGNAL
 AC_FUNC_STRTOD
 AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify dcgettext getcwd getwd mempcpy memset munmap nl_langinfo setlocale stpcpy strcasecmp strchr strcspn strdup strstr strtoul])
 
+# check for libncursesw
+
+AC_CHECK_HEADER(ncursesw/ncurses.h, HAVE_NCURSESW_H=1)
+AC_CHECK_LIB(ncursesw, add_wch, HAVE_LIBNCURSESW=1)
+if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
+   LIBS="-lncursesw $LIBS"
+else
+   echo -e "Error:  both library and header files for the ncursesw library\n"\
+   	"are required to build this package.  See INSTALL file for"\
+	"further information. On Debian/Ubuntu you need to install libncursesw5-dev."
+   exit 1;
+fi
+
 # Internationalization macros
 
-AM_GNU_GETTEXT_VERSION(0.12.1)
+AM_GNU_GETTEXT_VERSION([0.18.2])
 AM_GNU_GETTEXT
 
 # Manual page generation
