@@ -1,3 +1,7 @@
+2013-06-04  Tim Marston <tim@ed.am>
+
+	* gtypist.es.text: fixed warning about unknown FASE value.
+
 2012-12-17  Tim Marston <tim@ed.am>
 
 	* gtypist.texi, gtypist.cs.text, gtypist.es.texi: Changed the
