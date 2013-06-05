@@ -20,7 +20,9 @@
 #ifndef UTF8_H
 #define UTF8_H
 
+#ifndef _XOPEN_SOURCE_EXTENDED
 #define _XOPEN_SOURCE_EXTENDED
+#endif
 
 #include <wchar.h>
 
