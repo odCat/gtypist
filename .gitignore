@@ -21,7 +21,6 @@ conf*
 !configur.bat.in
 !configure.ac
 ABOUT-NLS
-COPYING
 INSTALL
 autom4te.cache
 depcomp
