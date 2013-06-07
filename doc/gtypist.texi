@@ -112,8 +112,8 @@ You can obtain GNU Typist from a friend or from the Internet:
 GNU Typist is an interactive typing tutor program. It uses an input
 file to create a series of typing tutorials, drills, and speed
 tests. It is intended to be used on raw terminals without graphics. It
-has been compiled and used in GNU/Linux and Unix (OpenBSD, AIX,
-Solaris) and also in Windows.
+has been compiled and used on GNU/Linux and Unix (OpenBSD, AIX,
+Solaris) and also on Windows.
 
 The program reads lessons written in an easy-to-learn scripting
 language. It is distributed with several complete and good
@@ -318,10 +318,12 @@ Long QWERTY course in English
 QWERTY touch typing in English
 @item v.typ
 Yet Another QWERTY in English
-@item w.typ
+@item u.typ
 QWERTY Review in English
 @item d.typ
 Dvorak touch typing in English
+@item c.typ
+Colemak touch typing in English
 @item m.typ
 Typing drills in English
 @item s.typ
@@ -330,19 +332,19 @@ Speed drills in English
 Calculator keypad in English
 @item gtypist.typ
 Compendium of all previous lessons in English
-@item esp.typ
-QWERTY course in Spanish
 @item cs.typ
 Lessons in Czech
+@item esp.typ
+QWERTY course in Spanish
 @item ru.typ
 Lessons in Russian
 @item kt*.typ
 These lessons are the standard lessons from
-@uref{http://ktouch.sourceforge.net/, Ktouch 1.6},
-which have been converted to
-gtypist's file format using @file{tools/ktouch2typ.pl}.
+@uref{http://ktouch.sourceforge.net/, Ktouch 1.6}, which have been
+converted to gtypist's file format with the included script,
+@file{tools/ktouch2typ.pl}.
 
-The files are called
+The files are:
 @file{ktbg.typ} (@file{bulgarian.ktouch.xml}),
 @file{ktbg_long.typ} (@file{bulgarian_long.ktouch.xml}),
 @file{ktde.typ} (@file{german.ktouch.xml}),
