@@ -1,20 +1,32 @@
+2013-06-01  Felix Natter <fnatter@gmx.net>
+
+	* update kt*.typ with new ktouch2typ.pl as reported by
+	  Alexei Matveev <alexei.matveev@gmail.com>
+	  (see ../ChangeLog for script changes)
+
+2013-04-30  Tim Marston <tim@ed.am>
+
+	* c.typ, q.typ, v.typ: corrected various typos, thanks to Chris
+	Jones <cjns1989@gmail.com> for reporting.
+
 2013-03-30 Rob Day <rkd@rkd.me.uk>
+
 	* q.typ: Q1: introduces e,i and not g,h; fix space issue
 
 2011-10-27 Gökçen Eraslan <gokcen@pardus.org.tr>
 
 	* kttr.typ: new turkish lesson converted from ktouch
 
-2011-09-30 Tim Marston <edam@waxworlds.org>
+2011-09-30  Tim Marston <edam@waxworlds.org>
 
 	* c.typ: added Colemak typing lessons.
 
-2011-09-07 Tim Marston <edam@waxworlds.org>
+2011-09-07  Tim Marston <edam@waxworlds.org>
 
 	* esp.typ: fixed some typos ("tr àèìòù áéíóú"), thanks to MAbeeTT
 	  <MAbeeTT@gmail.com> for reporting.
 
-2011-08-14 Felix Natter <fnatter@gmx.net>
+2011-08-14  Felix Natter <fnatter@gmx.net>
 
 	* ktde.typ: remove "Grundstellung" from drill text (from
 	  german.ktouch.xml)
@@ -23,10 +35,16 @@
 	  explanations => ktde2.typ is not generated from
 	  german3.ktouch.xml!!
 
-2011-08-07 Felix Natter <fnatter@gmx.net>
+2011-08-07  Felix Natter <fnatter@gmx.net>
 
 	* kt*.typ: convert and rename lessons from ktouch 1.6
 	* ttde.typ: converted from tipptrainer 0.6.0
+
+2011-07-03  Felix Natter <fnatter@gmx.net>
+
+	* lessons/cs.typ: convert cs.typ (Czech) from iso8859-2 to utf-8
+	* lessons/esp.typ: convert esp.typ (Spanish) from iso8859-1 to utf-8
+	* lessons/ru.typ: convert ru.typ (Russian) from KOI8-R to utf-8
 
 2011-03-03  Tim Marston <edam@waxworlds.org>
 

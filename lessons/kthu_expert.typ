@@ -1,9 +1,10 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/hungarian_expert.ktouch.xml
-# on Do 23. Jun 19:51:55 CEST 2011
+# on Sa 1. Jun 12:32:31 CEST 2013
 # ktouch title: Hungarian (auto-generated)
-# ktouch comment: Håvard Frøiland.
+# ktouch comment: KTouch training file generated Tue Aug 30 23:23:54 2005.
+# Perl Script written by Steinar Theigmann & Håvard Frøiland.
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -334,7 +335,7 @@ D:éjjelente lennének le kettejét lenn kétletted kevesen efelett kétlené
  :kilencévente kevesli evettel e afelé kétleni kellettek levet fentit kétlenék
 *:LESSON7_D3
 I:(3)
-D:kétlettétek teljét idefel eleinket keveslene kilencvenévenként teneked kétlettétek
+D:kétlettétek teljét idefel eleinket keveslene kilencvenévenként teneked
  :nincsen telente tiveletek kelleténél nejét elé fenn vice tv keveslitek
  :tivéletek nejeit vala kivannak lennének ellent kétletted ne ketté cselekedettel
  :kellenek rétese tivéletek eleiket kellenek félévente kellene nejét elsejét
@@ -399,7 +400,7 @@ D:héthetente hajdan emiatt m emiatt hathetenként hatvanan mellénk majdan
 I:(5)
 D:keveslenem mellet mettlachi miatti alkalmasint rekviemje kilenchetenként
  :miattad mindevvel élelemen amellett melléje mindenekfelett ama elemien
- :hatévenként havit melléje sejtelemen lm kéthetente félhetente mellette mentelemen
+ :hatévenként havit melléje sejtelemen lm kéthetente félhetente mellette
  :kilencvenhatfelé amint hivatva mettlachi ha emide ah imitt makettja hathetenként
 *:LESSON8_D6
 I:(6)
@@ -437,7 +438,7 @@ D:fiatokat citromleven holott lovasit rajtatok traktorosa kertesit rokonléleken
 *:LESSON9_D3
 I:(3)
 D:dartscal csakhamar amonnan fennhordja idestova veremen cariessel sokhavonként
- :odalennék klorofillal harmincévenként ifjaitokat ellenére fiaitokat hatvanhavonta
+ :odalennék klorofillal harmincévenként ifjaitokat ellenére fiaitokat
  :ikeren mostanra raviolija minderre krakélere férfiakat hétrét kertiek
  :monetarista teheren mindenhonnan kéthavonként timiattatok cseredet akkorra
 *:LESSON9_D4
@@ -527,7 +528,7 @@ B:                           Lesson 11: bp
 *:LESSON11_D1
 I:(1)
 D:polaroid legesleghamarábbit legesleglentebb sipogjanak leglassabbikat
- :camembert hetvennaponként beh legeslegbátrabbikat ropi pamfletja legeslegkevesebbet
+ :camembert hetvennaponként beh legeslegbátrabbikat ropi pamfletja
  :bent bele legeslegderekabbikat továbbá alább verébfiakat lassabbakat
  :emerébb távolabb akképp stampedlije legesleglentebbit bátoron lopdossa
 *:LESSON11_D2
@@ -545,14 +546,14 @@ D:elibétek hatpercenként alattomban pedofil pá legtávolabb placebo borit
 *:LESSON11_D4
 I:(4)
 D:hamarább prorektora idébb patogén legeslegkeletebbieket blindre bátrabbat
- :legeslegkeletebbieket bárhonnét paskolja néhanapján tbc almába legeslegkeletebbieket
+ :legeslegkeletebbieket bárhonnét paskolja néhanapján tbc almába
  :implicite meglepetve pianissimo pamlagja amodább keletebbit legkevesebbet
  :tibenneteket holocénban lassabbodjanak némiképp beleértve almában dédapát
 *:LESSON11_D5
 I:(5)
 D:ab nobilisan legkeletebbit legeslegbeljebbre kalaplevéve legeslegfeljebb
  :régebb legbátrabbakat párásodik partvonalit pallérja kebelen permeabilitása
- :bármeddig hamarabbiakat elibe sipogtak permeábilisan balfenéken mbar legeslegtovább
+ :bármeddig hamarabbiakat elibe sipogtak permeábilisan balfenéken mbar
  :meglepetve háromnaponként párásodjanak énelébem régebb kompléja teelédbe
 *:LESSON11_D6
 I:(6)
@@ -564,8 +565,8 @@ D:elibéd nemrégiben legfeljebbre párásodjanak verbálisan legjobbakat
 I:(7)
 D:borsot provinciálisan elibéd mielibénk legeslegbeljebbit kempingel
  :arrébb legeslegbeljebbit baronesse baromon régebben világéletetekben
- :legesleghamarábbiakat kismértékben kisebbet idább borsot bátrabbat lentebbieket piff
- :krapekja legkevesebbet leghamarabbiakat milliárdpercenként bentit legtávolabbiakat
+ :legesleghamarábbiakat kismértékben kisebbet idább borsot bátrabbat lentebbieket
+ :krapekja legkevesebbet leghamarabbiakat milliárdpercenként bentit
 *:LESSON11_D8
 I:(8)
 D:blindre legeslegkorábban édesapát befelé nemhiába inkább speciel monopoláris
@@ -586,10 +587,10 @@ I:(2)
 D:legeslegalulra musicallel ablativussal utánig leghátulra orvul alhatnékjuk
  :mániákusan voltukat dédapjukat cirrussal orvul cumulonimbussal flottul
  :legaljukat joule legaljukat alattuk uralomon tanárurakat multipoláris tudtul
- :hidegmegmunkálás multikulturális megvoltunk legalul cumulonimbussal utánunk apjukom
+ :hidegmegmunkálás multikulturális megvoltunk legalul cumulonimbussal utánunk
 *:LESSON12_D3
 I:(3)
-D:nimbostratussal cirrocumulussá apámuram utol kutacskája fulminsavon nimbostratussá
+D:nimbostratussal cirrocumulussá apámuram utol kutacskája fulminsavon
  :legalulra uramfia után nálunknál utánuk purgál delirium streptococcussá
  :hátulját fondue árusit barbitursavon dauerja melegmegmunkálás cukrosit
  :apámuram alattunk fiamuram leghátul miattunk apjukom aljukat ugarja alul
@@ -602,15 +603,15 @@ D:kutacskái idusán csurig coccussal paukol csurig cum utánuk quattrocento
 *:LESSON12_D5
 I:(5)
 D:utolját virágburokon q u bundermajomon korláttalanul pitbull uradalomon
- :legesleghátuljukat dauerja turini hátuljukat melegmegmunkálás kukucs uramfia cirrussá
+ :legesleghátuljukat dauerja turini hátuljukat melegmegmunkálás kukucs uramfia
  :juhhal dugig alájuk legesleghátuljukat legesleghátul hátuljukat rajtuk
- :megvoltunk nimbussá kupeckodjanak irántunk bajbajutottakat általunk kurjantgasson
+ :megvoltunk nimbussá kupeckodjanak irántunk bajbajutottakat általunk
 *:LESSON12_D6
 I:(6)
 D:purparléja paukol alájuk turini undorit pitbull rajtunk coccussal orvul
  :kukucs jutalomon csurom rájuk stratussá idusán paralitikusan kurjantgasson
  :undorit hátulra pfuj cumulussá aprajukat magburokon accusativussal juhhal
- :barbitursavon vanillincukoron unalomon ihatnékjuk opussal maradéktalanul alhatnékjuk
+ :barbitursavon vanillincukoron unalomon ihatnékjuk opussal maradéktalanul
 *:LESSON12_D7
 I:(7)
 D:gaussal pocsékul aluliakat hátul alhatnékjuk miirántunk interruptussal
@@ -620,7 +621,7 @@ D:gaussal pocsékul aluliakat hátul alhatnékjuk miirántunk interruptussal
 *:LESSON12_D8
 I:(8)
 D:ultima apjukat accusativussal parancsuralomon fuvolások lukacska purgálja
- :cs nubukja eljuthatott hidegmegmunkálás légiutas
+ :rajtuk általunk hurrá kukucs nubukja eljuthatott hidegmegmunkálás légiutas
 G:E_LESSON12
 
 *:S_LESSON13
@@ -637,7 +638,7 @@ I:(2)
 D:hónukat hátulról lóttunk jóvátetted amabból legutóbbit jóvoltát jóvoltukat
  :hínarasokat drótkapocson odaátról milliópercenként pedofília hármójukat
  :amattól almától savtalanít lótva csaó alól quattrocentóban íratik jókorákat
- :góóóóóóóóóóóóóóóóóól légifuvardíj ólomon góóóóóóóóóóóóóóóól magánosítása olcsóbbodik
+ :góóóóóóóóóóóóóóóóóól légifuvardíj ólomon góóóóóóóóóóóóóóóól magánosítása
 *:LESSON13_D3
 I:(3)
 D:akkortájtól ohó alóluk távolból góóóóóóóóóóól pótlékja lótunk millióhavonként
@@ -648,25 +649,25 @@ D:akkortájtól ohó alóluk távolból góóóóóóóóóóól pótlékja lót
 I:(4)
 D:taposómalomon utójáig pótlólag rósejbnije írel jóvoltunkat alólunk pentódája
  :órása lóttál bíráimat góóóóóóóóóól legutóbbit savtalanítja placebója
- :hidratálódása legeslegalulról hidratálódása pentóda távolról manírja borsóféregen
- :góóóóóóóóóóóóóóóóóóóóól fogadóteremen hajóvonták góóóóóóóóól góól lótnának futólag almáról
+ :hidratálódása legeslegalulról hidratálódása pentóda távolról manírja
+ :góóóóóóóóóóóóóóóóóóóóól fogadóteremen hajóvonták góóóóóóóóól góól lótnának
 *:LESSON13_D5
 I:(5)
 D:hónaljit billióóránként ától utólag ekkortól savtalanít lótnunk kísértettel
- :jóvoltából tartópeceken góóóóóóóóóóóól jól góóóóóóóóóóóóól góóóóóóól feloldódhatott
- :góóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóól magánosítása tartóhorogon órása lóttak trillióévenként góóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóól
- :lótnál utóbbit telkesítése ólit tialólatok jókorák mindattól góóóóóóóóóóóóóóóóóóóóóóóóóóóóóól
+ :jóvoltából tartópeceken góóóóóóóóóóóól jól góóóóóóóóóóóóól góóóóóóól
+ :góóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóóól magánosítása tartóhorogon órása lóttak
+ :lótnál utóbbit telkesítése ólit tialólatok jókorák mindattól
 *:LESSON13_D6
 I:(6)
 D:légiósbetegség millióévente énrólam hólepte pedofíliája sodorítja mócsingja
- :góóóóóóóóóóóóóóóóóóóól hónunkat kurírja kívántatik utóbb mindabból óránként kéntelenít
+ :góóóóóóóóóóóóóóóóóóóól hónunkat kurírja kívántatik utóbb mindabból óránként
  :legeslegkorábbról prímje lóttunk bíránkat hajóhídit róluk mostantól nefrológia
  :ólomon góóóóóóóóóóóóóóóóóóóóóól pentóda dó billióévenként góóóóóóóóóóóól
 *:LESSON13_D7
 I:(7)
 D:jóvátennél góóóóóóóóóóóóóóóóóóóóóóóól mondhatnók pulóvere belevalóbb jóvátenni
  :jóvoltomat rugódjanak jóvoltomat hatóránként legeslegalulról alóla kreatívan
- :trillióévente millióhavonta í góóóóóóóóóóóól millióhavonta góóóóóóóóóóóóóóóóóóóóól
+ :trillióévente millióhavonta í góóóóóóóóóóóól millióhavonta
  :jóvátetted olcsóbbodjanak lívek improduktívan hohó jóvátette magánforrásból
 *:LESSON13_D8
 I:(8)
@@ -692,9 +693,9 @@ D:mindhárman reggelente lótnia hétévente unionista igeneven legeslegkorábba
 *:LESSON14_D3
 I:(3)
 D:sehonnaiak kellenek predestinál lentieket mintha csirátlan vonalit énalám
- :mócsinggal almanacht borsóféregen mindhiába tanárurakat netán bátoron virágcsokoron
- :nimbostratussal harminckilencfelé donora nemrég tanulóteremen utánunk olvasóteremen
- :idefenn fenomének idefenn segedelemen pácienset annalessel konform harminckétfelé
+ :mócsinggal almanacht borsóféregen mindhiába tanárurakat netán bátoron
+ :nimbostratussal harminckilencfelé donora nemrég tanulóteremen utánunk
+ :idefenn fenomének idefenn segedelemen pácienset annalessel konform
 *:LESSON14_D4
 I:(4)
 D:mindenfelé kintre ehetnékje legeslegfentebbieket sipákoljon sokóránként
@@ -721,7 +722,7 @@ D:legfentebbre hetente hajdanta fuvalomon engem védelemen levélnek mindenhová
  :kendere megvolna hatévente alélhatatlan milliárdpercenként hetvenfelé
 *:LESSON14_D8
 I:(8)
-D:keveslenéd harmincévesforma énnálam nahát hátravannak nékem kalandora lentebbieket
+D:keveslenéd harmincévesforma énnálam nahát hátravannak nékem kalandora
  :holtomiglan csirátlan mellékneven hasmánt tenéked mindig lennék kontingentál
 G:E_LESSON14
 
@@ -737,9 +738,9 @@ D:jáspiskövön elfövöd pördít kölönce elfövi kifövöd mögöttetek ben
 *:LESSON15_D2
 I:(2)
 D:rubintkövön örven ötcentis elektroncsövön bérjövedelemen ötvenháromfelé
- :legeslegföntebbieket ötvenkilencfelé sötétell felfövöd mögétek turmixa tönkrementél
+ :legeslegföntebbieket ötvenkilencfelé sötétell felfövöd mögétek turmixa
  :pöcökje röptét timfölden fölöttieket fölöttetek legföntebbit boltkövön
- :tönkretennék fövik öccseit markeráramkör öcséidet lenövöd mixere öcsök malomkövön
+ :tönkretennék fövik öccseit markeráramkör öcséidet lenövöd mixere öcsök
 *:LESSON15_D3
 I:(3)
 D:mögöttetek bergmanncsövön tönkremennem ötvenetfelé ötvennaponként körötte
@@ -763,7 +764,7 @@ I:(6)
 D:mimögénk betölthetett tönkretenned sötétellte mixere föntieket felnövök
  :elnövitek tövit fölibéje öcsénket mellénövök legeslegföljebbit elölit
  :karöltve rövidtávon énmögöttem létrejönnél körbeirt önmagukat tönkremennénk
- :benövitek gödörön ránövök fölibétek legeslegelöl öcsédéket felfövi feketejövedelemen
+ :benövitek gödörön ránövök fölibétek legeslegelöl öcsédéket felfövi
 *:LESSON15_D7
 I:(7)
 D:tönkrementem növöm önnönmagukat öven öccseidet örömrepesve legeslegföntebb
@@ -846,7 +847,7 @@ D:legbelül õelõlük odalenniük külsõleg kívülre aggófüvön kifõniük 
 I:(3)
 D:fölfõnünk lenõttünk tüdejét körbenõttünk ühüm mitõlünk megnövünk legvégül
  :felõlük függelemen elnövünk mielõttünk körülit körülnõjetek körülnõttem
- :fölnõttünk erdejüket tüdejét elõttünk átfövünk tönkretettük mindenüvé legeslegfölül
+ :fölnõttünk erdejüket tüdejét elõttünk átfövünk tönkretettük mindenüvé
  :mellõlünk mögülieket õmögöttük körülnövünk mögül ránõttük felfõjük legkívülieket
 *:LESSON17_D4
 I:(4)
@@ -862,7 +863,7 @@ D:feléjük mögülük ránõnünk belülre különben fölülrõl megfõjük fe
  :ígérgetjük fölöttünk pördítjük körülnõjetek kéntelenítsük tenélküled odalettünk
 *:LESSON17_D6
 I:(6)
-D:költögetjük végignõttünk mibennünk nõttünk nõnünk mellettük kellettünk körülnövik
+D:költögetjük végignõttünk mibennünk nõttünk nõnünk mellettük kellettünk
  :elfõjük tücsökön kétlenünk ellenükre nélküled elfõttünk jóvátettünk
  :mögöttük legeslegkívülieket fõttünk odanõttük körülnõjed kellünk odalenniük
  :fõjük õfeléjük legeslegbelül végignövünk odanõjük tikörülöttetek tönkretenniük
@@ -883,7 +884,7 @@ K:12:MENU
 B:                          Lesson 18: úy
 *:LESSON18_D1
 I:(1)
-D:világcsúfját nyilván nyolcvanhetenként ahelyett egybefõni egybefõje nagynénédéket
+D:világcsúfját nyilván nyolcvanhetenként ahelyett egybefõni egybefõje
  :útit legmélyét nagybátyjaikat bátyjait túlnövi display toronyiránt
  :túlnõj málhanyeregen túlfõje soktrilliónyit nyélit akármelyeket túlfõne
  :harangtoronyon egyfelõl nyugatabbra lyukacskája egybenõném mindenhogyan hogymint
@@ -907,7 +908,7 @@ D:melyet évkönyven versenylovon újfundlandi éppolyat mihelyettünk tönkrete
  :gyapját egybefõni gyakorlótanárjelölten túlnõjétek enyéimet body hatannyian
 *:LESSON18_D5
 I:(5)
-D:gyakorlótanárjelölten különágy nyálit negyedrét figyelemen tölgyen egyhangúlag túlfõnöm
+D:gyakorlótanárjelölten különágy nyálit negyedrét figyelemen tölgyen egyhangúlag
  :anyjukom telephelyet kilencvennégyfelé ugyanekkor ugyaneddig félselyemen
  :hányasa ugyanannyiunkat amelyiküket körútit gyermekláncfüvön nagybátyáitokat
  :agyit egyfelé nyolcvanévente nagybátyádékat amily negyvennaponként
@@ -926,7 +927,7 @@ D:enyhén gy együtt nagyritkán némelyikünket csekélylenünk negyedjére
 *:LESSON18_D8
 I:(8)
 D:akárhogyan egybefõjek évkönyven folyton királyfiakat aknatoronyon dédnagyanyát
- :ugyanebbõl gyárit negyvenkilencfelé túlfõnél nagynénémet átkelõhelyet pillanatnyilag
+ :ugyanebbõl gyárit negyvenkilencfelé túlfõnél nagynénémet átkelõhelyet
 G:E_LESSON18
 
 *:S_LESSON19
@@ -934,8 +935,8 @@ K:12:MENU
 B:                          Lesson 19: zû
 *:LESSON19_D1
 I:(1)
-D:szuperhatalomon tizenegyfelé véghezvinném hatszázan mindezét összenõném keresztirányban
- :közzétegyetek körömszakadtig beszédközben karamellizációja összenövöd paternalizmus
+D:szuperhatalomon tizenegyfelé véghezvinném hatszázan mindezét összenõném
+ :közzétegyetek körömszakadtig beszédközben karamellizációja összenövöd
  :stratusszá megleszel szatyorja háromszólamúság szerintit vezetékneven visszanõni
  :egészségügyen koszekánsot negyvenedszeri tizenkilencfelé huszadjára elõnyöshez
 *:LESSON19_D2
@@ -947,7 +948,7 @@ D:szügyen ezóta monetarizmus észreveszitek mindezeket bluesszá pároztak
 *:LESSON19_D3
 I:(3)
 D:meggörbülthez útközben õrizetté visszanõnél legeslegészakabbra észrevesszük
- :televényföldhez égövhez magánszorgalomból legharcrakészebbet sertéssülthez szélesbítjük
+ :televényföldhez égövhez magánszorgalomból legharcrakészebbet sertéssülthez
  :megkövülthez dédszüleinket záróizomon szétfõvén mindezért mázit széjjelfõdd
  :szeretteimet malacsülthez szédülthez szûkkörûen mozivászonon szabadstílusú
 *:LESSON19_D4
@@ -955,29 +956,29 @@ I:(4)
 D:liposzómája négyszöghez veszteg légzek kockáz pfujozzák szülõanyja terjengõshez
  :észrevesznek keresztülnõvén leghasznothajtóbbikat közénk leghosszabbikat
  :kilégzel pödrötthez ugyanazóta hozzánõnie mindezen szögen tiköztetek
- :szégyenlõsködik végzettel hatszázfelé végezetté számolókönyvhez hozzánõjél pipaszutyokon
+ :szégyenlõsködik végzettel hatszázfelé végezetté számolókönyvhez hozzánõjél
 *:LESSON19_D5
 I:(5)
-D:kartonvászonon összenõném leszen keresztülnõjön dz többször visszanõttünk szakácskönyvhez
+D:kartonvászonon összenõném leszen keresztülnõjön dz többször visszanõttünk
  :keresztülnõttelek véghezvitt tiköztetek kevésszer hozzánõnöd mûvit szerencsefiát
  :szûkkörûen kényszerit bõszhez uzsgyi széjjelfövünk orosztankönyven szemeregjen
  :szerelékje nimbostratusszá monetarizmusa húszhavonként sziromon széjjelfõnöm
 *:LESSON19_D6
 I:(6)
 D:szétfõnöm összenõttünk fatörzshez nyilvánosházit visszafele ötvenedszeri
- :oroszosítsa színtérit exitusszal összegyûjtötthez feltûnhetett leszel németkönyvhez
- :elemzéseképpen visszanõni vértezetté rohasztja gyászfátyolon érzettel kokszosítják
- :visszanõtted szemszögen azokat tõkeerõshez szárazfölden visszájáról közelebbieket
+ :oroszosítsa színtérit exitusszal összegyûjtötthez feltûnhetett leszel
+ :elemzéseképpen visszanõni vértezetté rohasztja gyászfátyolon érzettel
+ :visszanõtted szemszögen azokat tõkeerõshez szárazfölden visszájáról
 *:LESSON19_D7
 I:(7)
-D:azonképpen visszanövöm hozzájárulhatott tönkretesz skanzene számat miniatürizálja
+D:azonképpen visszanövöm hozzájárulhatott tönkretesz skanzene számat
  :szájit záróizomon keresztülnõni vázlatkönyven hetvenedszerre tehozzádig
  :összenõdd környezetté visszanõnétek megesz szülõföldhez ezzé végignõsz
- :konszignálja porszenet legeslegszörnyebbiket nyûnél kazánkövön szexttel századszorra
+ :konszignálja porszenet legeslegszörnyebbiket nyûnél kazánkövön szexttel
 *:LESSON19_D8
 I:(8)
 D:közém káderoz térdeplõhelyzet szurokja émelygõshez legészakabbiakat
- :disznónyíró lebasz akármennyiszer bronzot felépülthez fuzzy leghaladószellemûbbet
+ :disznónyíró lebasz akármennyiszer bronzot felépülthez fuzzy
 G:E_LESSON19
 
 *:S_LESSON20
@@ -993,12 +994,12 @@ D:zh-vá olykor-olykor dag-má km-rel mm-et q-val disc-jockey-vá h-vá
 I:(2)
 D:kultúr- tsz-szel csinn-bumm gloire-ral lx-szal nyolc-kilencnaponta ki-ki
  :û-vé comtesse-szé l-t fondue-vé sz-t ha-rá dkg-mal empire-ral egy-kéthavonként
- :nyolc-kilencnaponként nyakra-fõre km-t rad-ná disc-jockey-val cal-val griff-féle sans-culotte-tal
+ :nyolc-kilencnaponként nyakra-fõre km-t rad-ná disc-jockey-val cal-val
  :törik-szakad közbe-közbe fireg-forog szõröstül-bõröstül cg-má dg-má ü-vel
 *:LESSON20_D3
 I:(3)
 D:mg-má kézzel-lábbal három-négynaponként öt-hathavonta nyolc-kilencnaponként
- :gouache-sal éhen-szomjan kilenc-tízhavonként már-már baronesse-szé három-négyhavonként
+ :gouache-sal éhen-szomjan kilenc-tízhavonként már-már baronesse-szé
  :ml-ré sz-szé s-má öt-hathetenként nyolc-kilencévenként sz-szel icit-picit
  :hinta-palintát ny-t körbe-körbe véges-végig girbén-görbén kg-mal jóban-rosszban
 *:LESSON20_D4
@@ -1006,19 +1007,19 @@ I:(4)
 D:fireg-forog on-line-nal pót- szja-val gmk-vá r-t curie-vé û-vé spray-vel
  :paff-féle griff-féle mm-ré kultúr- e-vé video- két-háromhavonként többé-kevésbé
  :l-lel s-sel ny-nyé comtesse-szé cal-val csicsíja-babája s-má alig-alig
- :firegtek-forogtak gy-vé s-t dkg-mal treff-féle zh-val miss-szel õ-vel sans-culotte-tá
+ :firegtek-forogtak gy-vé s-t dkg-mal treff-féle zh-val miss-szel õ-vel
 *:LESSON20_D5
 I:(5)
 D:dl-t öt-hathetenként mm-et empire-ral lm-né cl-ré ln-né dzs-vel diktum-faktum
  :d-vé hét-nyolcévente négy-ötnaponként s-sel öt-hatévente diktum-faktum
- :egy-kéthavonként cosec-sal u-vá csínját-bínját cos-szá s-má diribre-darabra kilenc-tíznaponként
+ :egy-kéthavonként cosec-sal u-vá csínját-bínját cos-szá s-má diribre-darabra
  :kézzel-lábbal már-már gironde-dá szegrõl-végre nyolc-kilencévenként tél-túl
 *:LESSON20_D6
 I:(6)
-D:oeuvre-rel e-vel sz-szel s-sé empire-rá ingó-bingót ripegett-ropogott két-háromévente
+D:oeuvre-rel e-vel sz-szel s-sé empire-rá ingó-bingót ripegett-ropogott
  :lg-sal három-négyhavonta ripegnek-ropognak más-más egy-kéthavonként
  :gyógy- mikro- ty-vé kurtán-furcsán spray-vé egy-kéthetenként vitae-vel
- :sülve-fõve öt-hatnaponta tól-ig-gá kinek-kinek guillotine-nal z-vel iciukie-picike
+ :sülve-fõve öt-hatnaponta tól-ig-gá kinek-kinek guillotine-nal z-vel
 *:LESSON20_D7
 I:(7)
 D:gauss-szá öt-hathavonta stroke-kal s-sé nm-t cs-vel csára-hajszra síttak-ríttak
@@ -1028,7 +1029,7 @@ D:gauss-szá öt-hathavonta stroke-kal s-sé nm-t cs-vel csára-hajszra síttak-
 *:LESSON20_D8
 I:(8)
 D:é-vé cm-t tyúkom-búkom szõröstül-bõröstül ész-szerû j-vel négy-ötnaponként
- :menet-jövet négy-ötnaponta ty-vel kézen-közön reggel-este éhen-szomjan rissz-rossz
+ :menet-jövet négy-ötnaponta ty-vel kézen-közön reggel-este éhen-szomjan
 G:E_LESSON20
 
 *:S_LESSON21
@@ -1120,7 +1121,7 @@ I:(6)
 D:Baltimore-ral Bézier-vé Bordeaux Adobe Caracassá Apollinaire-rel Csecsenfölden
  :Corneille Anonymusszá Dickensszé Broadway ABC Apache-vel Dürrenmattá BBC
  :Bush-sal Babits-csal Airessé Dürrenmatt-tal Babits-csal Corneille-jé
- :Anonymussal Appalache-csé Angelessel Apollinaire Dunaferrel Comeniussá Dunaferr-ré
+ :Anonymussal Appalache-csé Angelessel Apollinaire Dunaferrel Comeniussá
 *:LESSON22_D7
 I:(7)
 D:Catullusszal Disney Batthyány Dickenssé Balzaccal Cervantessel Bonaparte
@@ -1150,7 +1151,7 @@ D:Ikarussal Hadrianussá Hoffmann-ná Flaubert-et Hoffmann-nal GIF Hunspell-lé
  :EEG Gaulle Ikarusszá Fayette-té Hoffmann-ná Fermat-vá Hunspell-lé
 *:LESSON23_D3
 I:(3)
-D:Glasgow-val Hadrianusszá CGI Falstaffal Hoffmannal Faraday BCG CGI-vel Illinoisszá
+D:Glasgow-val Hadrianusszá CGI Falstaffal Hoffmannal Faraday BCG CGI-vel
  :Ikarusszá Ganzcá Hadrianusszal Horatiusszá Faraday Galápagosszal GB-tá
  :BCG-vé Gyulay Flaubert-et Horatiusszal Horatiusszá Gyõrött GB Galápagossal
  :Hilzinger Fermat FBI-já Grazcal Hoffmanná Hermann-nál Illinoissá Goldman
@@ -1165,7 +1166,7 @@ I:(5)
 D:Glasgow-val Hampshire Francisco- CIA GB-tal EEG-vel Gyõrött kHz-cel Fontaine-nel
  :Hadrianussal I Flaubert-rel Holmessal Hadrianussal Galápagosszá Fourier Goldman
  :GB Ganzcá I GB-tá Falstaffal Greenwichhel Geiger Hadrianussá Fayette-tel
- :Falstaff-fal CGI-vel Ft-tá Hermannál Hunspellé Hz Hunspell-lel Fayette Galápagossal
+ :Falstaff-fal CGI-vel Ft-tá Hermannál Hunspellé Hz Hunspell-lel Fayette
 *:LESSON23_D6
 I:(6)
 D:Holop Ikarussal Ikarusszá Flaubert-ré Illinoisszal Ganzzal Grimm-mé
@@ -1192,7 +1193,7 @@ I:(1)
 D:Macintosh-sal Maxwell-lel MDF-fel Mac Los FM-mé Mercedessel Mlle Matolcsy
  :Lagrange hL-t BM hL Lagosszal Janusszal Mrd Marseille-jé Möbiusszal Julianusszá
  :Leibnizcel Manná Mandrake-ké Kirchhoffal Manche Manná KFKI-vá Gay-Lussackal
- :Keatsszel La Mannak Laplace-szá Lucullusszá Mercedessé J-lal KDE-vel Marseillaise
+ :Keatsszel La Mannak Laplace-szá Lucullusszá Mercedessé J-lal KDE-vel
 *:LESSON24_D2
 I:(2)
 D:Julianussá Lucullusszá Joyce-szal Lagrange-zsal MDF Lucullusszá Lagosszá
@@ -1203,14 +1204,14 @@ D:Julianussá Lucullusszá Joyce-szal Lagrange-zsal MDF Lucullusszá Lagosszá
 I:(3)
 D:Lagossá Madáchhá Matolcsy Janussal Marino- Manche-sá Mrd Kölcsey Mauritiussá
  :MEK-ké Malthussal Madáchhá Livingstone BM Mona Malájfölden EKG Melbourne-t
- :Gay-Lussaccal Manet Manet-vá Myspellé Malthussal ECDL-lé J-lal MDF-fé Gay-Lussaccal
+ :Gay-Lussaccal Manet Manet-vá Myspellé Malthussal ECDL-lé J-lal MDF-fé
  :IBM-mel Laplace-szal Macintosh-ot KGB-vé Karinthy MB-tá J-lá Maxwell-lel
 *:LESSON24_D4
 I:(4)
 D:Manet MEK-kel Mann-nál FÁK Kováchcsá Joyce-szal IBM Janus-szal Kaposvárott
- :Marseille-jel Mezõfölden LIII KFKI-val LE-vé Melbourne Lebesgue Matolcsy Massachusettssé
+ :Marseille-jel Mezõfölden LIII KFKI-val LE-vé Melbourne Lebesgue Matolcsy
  :Jamessel ECDL Kováchhal FÁK-kal Maupassant KDE-vel Marseille-jé Mann-ná
- :Marseillaise Melbourne-nel Madáchhal Marshallá Mindszenty Mariotte IBM Gay-Lussackal
+ :Marseillaise Melbourne-nel Madáchhal Marshallá Mindszenty Mariotte IBM
 *:LESSON24_D5
 I:(5)
 D:Marseille-jé KDE-vel Kaposvárott Myspellel Manná GM-mé BM Julianusszal Mayer
@@ -1220,7 +1221,7 @@ D:Marseille-jé KDE-vel Kaposvárott Myspellel Manná GM-mé BM Julianusszal May
 *:LESSON24_D6
 I:(6)
 D:Linzzel Lavoisier-val Malthussal Melbourne-nel MHz Marshallal Julianusszal
- :Livingstone-ná Marinói Lappföldhez Mannal Mannál Kiss-sé Linzcel MHz-cel Marseille-t
+ :Livingstone-ná Marinói Lappföldhez Mannal Mannál Kiss-sé Linzcel MHz-cel
  :Maine Malájfölden Mona Larousse Leone Marshall-lá Mann-ná MEK-kel
  :Monte Komensky Manet BME-vel Janeirói Macintosh-sá Joyce Manche FÁK
 *:LESSON24_D7
@@ -1228,7 +1229,7 @@ I:(7)
 D:Maxwell-lel Montaigne ÉK KFKI-val Lagrange-zsal Malthusszal Janus-szal kJ
  :Lucullussal IBM-mel Mannal Mauritiussal Mariotte Mylord Linzzé Montesquieu
  :Louvre-ral Manche-sá MÉH IBM-mel Montesquieu Mrd MEK-ké FÁK-kal GM-mel
- :Mauritiussal ECDL-lé Manná Madáchcsá Myspellé J-lal Lagossal Möbiussá Mercedesszé
+ :Mauritiussal ECDL-lé Manná Madáchcsá Myspellé J-lal Lagossal Möbiussá
 *:LESSON24_D8
 I:(8)
 D:hL-et Liviussal Möbiussá FÁK Gay-Lussaccá BME hL-ré Mac Macintosh-sá
@@ -1412,7 +1413,7 @@ D:XLV RMDSZ-szel LXI LXVIII SZTE-vé HOGYAN-ot Wilde Záchcsal ENSZ
 *:LESSON28_D4
 I:(4)
 D:XIV LXXXVI MLSZ-szel MSZMP-vel XCVII HOGYAN-ná LXXXV XCV KISZ XCVII
- :Weierstrass-szal TeX-hel XL-lel ÁNTSZ-szel XXX Zsolnay Windows-zá Wellsszel Yucatán-szigetekit
+ :Weierstrass-szal TeX-hel XL-lel ÁNTSZ-szel XXX Zsolnay Windows-zá Wellsszel
  :LaTeX-hel XXIX RMDSZ-szel XXIX XXXL kW-tá SZDSZ-szel XX GYIK-kal XVI TXT-vel
  :Zichy GYIK-kal W-tal IBUSZ-szal XXXIX XXI Weierstrass-szá WC XVI XXL-lé
 *:LESSON28_D5

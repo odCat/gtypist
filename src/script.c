@@ -331,7 +331,7 @@ do_exit( FILE *script )
   }
   else
   {
-      printf(convertUTF8ToCurrentEncoding(_("Happy Typing!\n\n")));
+      printf("%s", convertUTF8ToCurrentEncoding(_("Happy Typing!\n\n")));
   }
   exit( 0 );
 }

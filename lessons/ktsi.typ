@@ -1,8 +1,8 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/slovenian.ktouch.xml
-# on Do 23. Jun 19:51:56 CEST 2011
+# on Sa 1. Jun 12:32:32 CEST 2013
 # ktouch title: Slovenian
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -154,7 +154,7 @@ D:sak skaja skaka���a slak slaka �s skal
 *:LESSON3_D7
 I:(7)
 D:skakljala slak skakal �s skakalk salsa skaja
- :�kaj skaj slak sala �ja sklal �s skaka�skal salsa salsa skakalka sla salsa �ka �s
+ :�kaj skaj slak sala �ja sklal �s skaka�skal salsa salsa skakalka sla salsa �ka
  :�� �ja �sa �kaj skaka� �kal skaka�
 G:E_LESSON3
 
@@ -165,7 +165,7 @@ B:                           Lesson 4: df
 I:(1)
 D:dajal dala dajalka da� dajal fasada fasada
  :dajalk da� dal faks dajalk dala dalja fasada
- :daj fasada faksa dajaj dajalk dajaj dala da�dajala dlaka da� da�fasada dajaj dajal dalj
+ :daj fasada faksa dajaj dajalk dajaj dala da�dajala dlaka da� da�fasada dajaj
  :daj dajala dala dalj dal dal da� dajalka
 *:LESSON4_D2
 I:(2)
@@ -195,7 +195,7 @@ D:dal daj da dlaka dajaj dajalk dlak fasad daj
 I:(6)
 D:fasad dajalk dajala da� dalj falska faksa
  :fasad faksa dalj dal dajal dajala dal dala
- :falska da faksa dlak dlak da�da�fasada da�daj dajalk da�da�falska dal da dlaka dajalka
+ :falska da faksa dlak dlak da�da�fasada da�daj dajalk da�da�falska dal da dlaka
  :dajalk dajaj dalj dajaj faks dajalka faks
 *:LESSON4_D7
 I:(7)
@@ -263,7 +263,7 @@ B:                           Lesson 6: no
 I:(1)
 D:nesklenjeni ne�dno neokisan noslja nakisa
  :neodlo�o nedosojen nenadejani oklenjeno odisejadi
- :naklonin odsesan na�lniki naslajaje odklanjajo�na�e osen�n olje� neonska olika nadejale
+ :naklonin odsesan na�lniki naslajaje odklanjajo�na�e osen�n olje� neonska olika
  :osli�ni naklonsko nadse oksidna nakisa odklanjanje
 *:LESSON6_D2
 I:(2)
@@ -473,7 +473,7 @@ I:(2)
 D:znalkinemu zamor�ovima za�la geometrizirajo�mi
  :zgodovinarkini grlne zadovoljitvami zadelale
  :graviraj gostoti golenma goskam geodeta zavijalna
- :zamejevalo zaupljiva zastavljenega zastarevajo�zlatilo zapazit gledljivi zaustavljivemu zataljene
+ :zamejevalo zaupljiva zastavljenega zastarevajo�zlatilo zapazit gledljivi
 *:LESSON10_D3
 I:(3)
 D:zaslepljenima zve�nima zdrgniti grizonovimi
@@ -755,7 +755,7 @@ D:�nekogor�nkinim Dobr�nkinima Dolgonjiv�novim
 I:(7)
 D:Sredozemk Sepeta Samsonovem Dakart�novemu
  :Feni�nkam Dolankinem Srednjeva�nkama Dolgora�nki
- :Dvorjanov Dekan�novo Starogor�nkinih Forti�Dvorjan�nka Starogor�novim Sofijinemu Svetolucijcema
+ :Dvorjanov Dekan�novo Starogor�nkinih Forti�Dvorjan�nka Starogor�novim
  :Skvar�vima Did�novem �nova�nkinega Doberdob�nkinega
 *:LESSON15_D8
 I:(8)
@@ -825,7 +825,7 @@ D:Mogadiankah Teheran�vim Vele�nkinem Vu�kov
 *:LESSON17_D2
 I:(2)
 D:Transvaal�nkinem Rajnkovljanih Rajpovih
- :Mohorku Velikokamen�novih Radoslavci Va�Toma�v�vih Repi�Roboma Mercatorjevem Vidoi�na
+ :Mohorku Velikokamen�novih Radoslavci Va�Toma�v�vih Repi�Roboma Mercatorjevem
  :Tassoma Mantov�nov Marezianu Tarent�nkina
  :Vievljane Rafol�novo Tver�novimi Valburankini
 *:LESSON17_D3
@@ -844,13 +844,13 @@ D:Mati�a Remetovem Tabor�v Vitnova�ne Matenj�vo
 I:(5)
 D:Makov�vi Tol�nah Toli� Topljankinem Tomiljanove
  :Rochestr�nih Morav�novi Magdeburgu Vrbov�novo
- :Rodokove Varadince Rakovkami Verbincem Milovanovi�Vera�nkinih Rebercem Majnikovo Richterjevih
+ :Rodokove Varadince Rakovkami Verbincem Milovanovi�Vera�nkinih Rebercem
  :Vrhen�nke Vitovimi Vakslje Vuzmetin�nkinima
 *:LESSON17_D6
 I:(6)
 D:Mojstran�nom Ravljank Timurlenkoma Vodenov�novima
  :Vanov Razbor�nom Vrenkove Veeni�n Tartuj�nke
- :eaganovo
+ :Tekal�vi Vukovskodol�nom Metav�nkah Reaganovo
  :Titovek Venianko Magajnove Verzelu Rin�tovograb�nkina
 *:LESSON17_D7
 I:(7)

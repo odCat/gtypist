@@ -1,9 +1,11 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/german.ktouch.xml
-# on So 14. Aug 11:08:04 CEST 2011
+# on Sa 1. Jun 12:32:29 CEST 2013
 # ktouch title: Deutsch (Kurs in 9 Teilen)
-# ktouch comment: Beinhaltet recht lange Level, keine Sonderzeichen oder Zahlen
+# ktouch comment: Deutsche Trainings-Datei für KTouch, Autor unbekannt
+# 
+# Beinhaltet recht lange Level, keine Sonderzeichen oder Zahlen
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with

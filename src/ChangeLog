@@ -1,50 +1,59 @@
-2012-08-03 Felix Natter <fnatter@gmx.net>
+2013-06-01  Felix Natter <fnatter@gmx.net>
+
+	* utf8.c: Avoid that Alt+<anything> is treated as ESC, which could
+	  lead to accidentally aborting a lesson reported by Chris Jones
+	  <cjns1989@gmail.com>.
+
+2012-08-03  Felix Natter <fnatter@gmx.net>
+
 	* rename --expert to --no-welcome-screen
 
-2012-07-21 Felix Natter <fnatter@gmx.net>
+2012-07-21  Felix Natter <fnatter@gmx.net>
+
 	* gtypist.[ch], infoview.c: don't show beginner screen when --expert is given,
 	when the user presses 'D'/'d' in beginner screen: write option "expert"
 	into config file.
 
-2012-07-08 Felix Natter <fnatter@gmx.net>
+2012-07-08  Felix Natter <fnatter@gmx.net>
 
 	* gtypist.c, utf8.[ch]: Avoid collision between 0x107 unicode char
 	  (c with accent) and KEY_BACKSPACE by honoring the return value
 	  of get_wch() (Reported by Kalthor <kalthor@interia.pl>)
 
-2012-02-11 Felix Natter <fnatter@gmx.net>
+2012-02-11  Felix Natter <fnatter@gmx.net>
+
 	* infoview.c: reduce flicker by clearing lines incrementally on a
 	  scrolling event
 
-2012-02-10 Tim Marston <tim@ed.am>
+2012-02-10  Tim Marston <tim@ed.am>
 
 	* speedbox.c: rewrote code to display end-of-lesson speed and
 	  information and pulled it out in to a new file.
 
-2012-02-10 Felix Natter <fnatter@gmx.net>
+2012-02-10  Felix Natter <fnatter@gmx.net>
 
 	* banner.c/h: put banner() in its own file so that it can be used
 	  in infoview.c
 	* infoview.c: display banner at top, use banner colors for scrollbar
 
-2011-11-05 Felix Natter <fnatter@gmx.net>
+2011-11-05  Felix Natter <fnatter@gmx.net>
 
 	* utf8.c use MultiByteToWideChar() also in utf8len() on minGW
 	  (this fixes problems with ru.typ on minGW)
 
-2011-11-04 Felix Natter <fnatter@gmx.net>
+2011-11-04  Felix Natter <fnatter@gmx.net>
 
 	* utf8.c: use MultiByteToWideChar() in widen() on Windows. This will
 	  convert to two-byte wchar_t which is what minGW + PDCurses support
 
-2011-10-30 Tim Marston <edam@waxworlds.org>
+2011-10-30  Tim Marston <edam@waxworlds.org>
 
 	* gtypist.c, utf8.c/h, cursmenu.c: get_widech() uses ints to avoid
 	  using wint_t, which is broken on Windows. Also, simplified reading
 	  characters so that get_widech() is always used. It also now
 	  handles windows newline characters for us.
 
-2011-10-26 Felix Natter <fnatter@gmx.net>
+2011-10-26  Felix Natter <fnatter@gmx.net>
 
 	* gtypist.c, utf8.c/h: add get_widech() wrapper which
 	  calls getch() or get_wch() depending on whether it's a UTF8
@@ -54,21 +63,21 @@
           beginning in the case of conversion errors (and not in the middle
 	  of typing)
 
-2011-10-24 Felix Natter <fnatter@gmx.net>
+2011-10-24  Felix Natter <fnatter@gmx.net>
 
 	* gtypist.c, utf8.c/h: use convertFromUTF8() instead of widen()
 	  for Y/N and R/N/E. add towideupper() and iswideupper() helper
 	  functions that do they right thing depending on whether it's
 	  a UTF8 terminal or an 8bit-terminal
 
-2011-10-22 Felix Natter <fnatter@gmx.net>
+2011-10-22  Felix Natter <fnatter@gmx.net>
 
 	* *.c, *.h: make gtypist run on non-utf8 locales with
 	  international lessons
 	* gtypist.c: add RETURN_CHARACTER (unicode symbol to designate
 	  newlines that must be typed)
 
-2011-10-14 Tim Marston <edam@waxworlds.org>
+2011-10-14  Tim Marston <edam@waxworlds.org>
 
 	* gtypist.c, cursmenu.c, script.h: minor fixes to get gtypist to
 	  build under MinGW
@@ -76,13 +85,13 @@
 	  corrupts the stack! Currently we don't beep on error on windows, as
 	  sending ASCII_BELL to the terminal just pauses and does no "bell".
 
-2011-08-07 Felix Natter <fnatter@gmx.net>
+2011-08-07  Felix Natter <fnatter@gmx.net>
 
 	* utf8.c: new wchar_t* widen(char*) helper function
 	* gtypist.c: widen the YN and RNE strings, but their usage isn't yet
 	  fixed
 
-2011-07-08 Felix Natter <fnatter@gmx.net>
+2011-07-08  Felix Natter <fnatter@gmx.net>
 
 	* utf8.c, utf8.h: use proper #define before #include for cchar_t
 	  (needed for wide character output)

@@ -22,7 +22,6 @@ conf*
 !configur.bat.in
 !configure.ac
 ABOUT-NLS
-COPYING
 INSTALL
 autom4te.cache
 depcomp
@@ -60,8 +59,12 @@ src/cmdline.h
 # ignore dist builds
 *.gz
 *.bz2
+*.xz
+*.7z
 *.gz.sig
 *.bz2.sig
+*.xz.sig
+*.7z.sig
 *.directive
 *.directive.asc
 

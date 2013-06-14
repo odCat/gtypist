@@ -263,7 +263,28 @@ int get_widech(int* c)
         ch = 0x0A;
 #endif
 
+#ifndef HAVE_PDCURSES /* this fix is not necessary for the Windows port */
+    /* Avoid that Alt+<anything> is treated as ESC, which could lead
+       to accidentally aborting a lesson */
+    if (ch == 27) /* ASCII_ESC */
+    {
+        /* undo the halfdelay() from getch_fl() */
+        cbreak();
+        /* switch to non-blocking mode */
+        nodelay(stdscr, TRUE);
+        int ch2;
+	if (get_wch(&ch2) != -1)
+        {
+            /* this is NOT escape because curses sends another key */
+            ch = ch2;
+        }
+        /* switch to blocking mode */
+        nodelay(stdscr, FALSE);
+    }
+#endif
+
     *c = ch;
+
     return OK;
 }
 

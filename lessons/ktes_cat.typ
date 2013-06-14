@@ -1,9 +1,10 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/catalan.ktouch.xml
-# on Do 23. Jun 19:51:54 CEST 2011
+# on Sa 1. Jun 12:32:30 CEST 2013
 # ktouch title: Catalan (auto-generated)
-# ktouch comment: Håvard Frøiland.
+# ktouch comment: KTouch training file generated Sat Aug 23 21:40:00 2003
+# Perl Script written by Steinar Theigmann & Håvard Frøiland.
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with

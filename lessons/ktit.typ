@@ -1,9 +1,10 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/italian.ktouch.xml
-# on Do 23. Jun 19:51:55 CEST 2011
+# on Sa 1. Jun 12:32:31 CEST 2013
 # ktouch title: Italien (auto-generated)
-# ktouch comment: Håvard Frøiland.
+# ktouch comment: KTouch training file generated Tue Jul 27 13:27:52 2004
+# Perl Script written by Steinar Theigmann & Håvard Frøiland.
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -507,7 +508,7 @@ D:spietata incolpiate abbassassero importo pernotto panca apportante piani
 I:(6)
 D:soppesammo spandono tarpavano pescammo applicato insipido provaste operanti
  :compilano precorri approfittasse stampasse platino copertoni possessiva
- :prevenendo annebbiamo appronto salverebbe acerbo provassero benderei appesantitosi
+ :prevenendo annebbiamo appronto salverebbe acerbo provassero benderei
  :sporcavo appiana aprile abolissero praticano ripenso comprassi specificate
 *:LESSON10_D7
 I:(7)
@@ -589,7 +590,7 @@ D:processino svanito infila grondaia strutturalmente salparono risanerei
  :aggirando accontentantesi bastonino sparlano allungavano inventare energie
 *:LESSON12_D3
 I:(3)
-D:integrava appaiandomi numero abbrunato rientrai introitate sembrando allungeremmo
+D:integrava appaiandomi numero abbrunato rientrai introitate sembrando
  :conservino ostentassi appianereste ammutinavo accechino aspettandovi alternatici
  :distinguere coronasti sgraneremo cucinano prenoterai rinnegavo affrontavano
  :accanirebbero sgranchito notavamo destando esteriormente rinnovati condenso
@@ -636,7 +637,7 @@ D:affrancare incrementato schiena accigliato sfasciavi speculaste scrollate
 I:(2)
 D:cigolerai baciato avvicinerebbero tipiche confessati scuro insacca parolacce
  :scartaste affumicassimo accendesti causiate arricchitoti corrodere chiesero
- :o asciugatoti chiamiamo contagiose competa
+ :recuperano consultati incatenino asciugatoti chiamiamo contagiose competa
  :consultava scrostasse cessino circolavo schiarii masticato incorsi accedeva
 *:LESSON13_D3
 I:(3)

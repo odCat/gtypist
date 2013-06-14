@@ -545,7 +545,7 @@ D:On the horse, Adana dined in haste on toast and dates.
 
 I:(4)
 *:_C_R_C15_4
-D:An onion heats, stuned, a stout nose.  As does she?  As do I?
+D:An onion heats, stunned, a stout nose.  As does she?  As do I?
  :Do I send hands to douse teeth?  Are their suedes hoisted ahead?
 
 I:(5)

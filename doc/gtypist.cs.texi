@@ -11,23 +11,16 @@ Toto je manuál pro GNU Typist (verze @value{VERSION}, @value{UPDATED}),
 program určený k výuce psaní na klávesnici pro několik
 jazyků a různé klávesové rozložení.
 
-Copyright @copyright{} 1998, 1999, 2000, 2001, 2002
-Free Software Foundation, Inc.
+Copyright @copyright{} 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2008,
+2011, 2012 Free Software Foundation, Inc.
 
 @quotation
-Dáváme povolení ke kopírování, distribuci a/nebo provádění
-změn v tomto dokumentu pod podmínkami GNU Free Documentation
-License verze 1.2 nebo jakékoliv pozdější verze publikované
-Nadací pro svobodný software (Free Software Foundation); text
-neobsahuje žádnou Invariant Section, Front Cover text je
-,,GNU Manuál'' a Back-Cover Text je uveden v (a) níže.
-Kopie licence je přiložena v sekci nazvané ,,GNU Free
-Docuemntation License''.
-
-(a) Back Cover Text FSF je: ,,Máte svobodu kopírovat
-a modifikovat tento GNU manuál stejně jako GNU software.
-Výtěžek z kopií publikovaných Nadací pro svobodný software
-jsou použity na vývoj GNU.''
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled
+``GNU Free Documentation License''.
 @end quotation
 @end copying
 

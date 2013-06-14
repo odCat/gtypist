@@ -1,9 +1,18 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/danish.ktouch.xml
-# on Do 23. Jun 19:51:54 CEST 2011
+# on Sa 1. Jun 12:32:29 CEST 2013
 # ktouch title: Danish (complete course)
-# ktouch comment: Program udviklet af Håvard Frøiland
+# ktouch comment: Træningsfil udviklet af
+# Gunther Strube,  gstrube@tiscali.dk og
+# Anja Lysholm, anjal@danbbs.dk, April-Juli 2002
+# 
+# Baseret på:
+#  "Lær maskinskrivning i Folke- og Ungdomsskolen"
+#     Kamma Jensen & Jytte Møller
+#     ISBN 87-17-02200-2
+# 
+# Program udviklet af Håvard Frøiland
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -793,7 +802,7 @@ D:den 7. og 8. november, den 9. og 10. december
 *:LESSON21_D4
 I:(4)
 D:vej fået god hos atter begyndte finde give næste morgen
- :rgen
+ :vej fået god hos atter begyndte finde give næste morgen
  :inden kl. luften nogen hjemme hvide høre idet lang sidder
  :inden kl. luften nogen hjemme hvide høre idet lang sidder
 *:LESSON21_D5

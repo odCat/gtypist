@@ -1,9 +1,10 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/french.ktouch.xml
-# on Do 23. Jun 19:51:55 CEST 2011
+# on Sa 1. Jun 12:32:30 CEST 2013
 # ktouch title: French (auto-generated)
-# ktouch comment: Program written by Håvard Frøiland
+# ktouch comment: Trainingfile generated Mon Oct  1 08:14:15 2001
+# Program written by Håvard Frøiland
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -847,7 +848,7 @@ I:(3)
 D:Kuenning Dorval Kent Desjardins Decelles Dorval
  :Doyon Dick Dick King Drouin Kent Denis Domey
  :Domey Dorval Dumoulin Kuenning Doyon Doyon
- :n Doris Desjardins
+ :Dorval Denise Domey Khan Doris Desjardins
 *:LESSON17_D4
 I:(4)
 D:King Kent Desjardins Dominique Doyon Dumoulin

@@ -1,9 +1,10 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/norwegian.ktouch.xml
-# on Do 23. Jun 19:51:56 CEST 2011
+# on Sa 1. Jun 12:32:31 CEST 2013
 # ktouch title: Norwegian (auto-generated)
-# ktouch comment: Program written by Håvard Frøiland
+# ktouch comment: Trainingfile genereated Mon Oct  1 07:36:58 2001
+# Program written by Håvard Frøiland
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://ktouch.sourceforge.net
+# ktouch can be found at http://edu.kde.org/applications/school/ktouch
 # If you have suggestions about these lessons,
 # please send mail to haavard@users.sourceforge.net
 # (or whoever is the current ktouch maintainer), with
@@ -857,7 +858,7 @@ D:Asterix Ararat Almas Arntzen Alverstraumen
 *:LESSON17_D5
 I:(5)
 D:Aremarks Ankara Acem Asles Azorenes Azerbajdsjans
- :s Akaias Atlanta
+ :Andesfjellenes Austefjordens Akaias Atlanta
  :Andesplatåets Øysvoll Aurdalsdammen Øylo Atlasfjella
  :Aslak Øverlands Andesfjellas Adventdalens
 *:LESSON17_D6
