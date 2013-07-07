@@ -20,8 +20,10 @@ AM_CPPFLAGS = -I../intl \
 
 # build cmdline.{c,h} from cmdline.ggo
 
-cmdline.c: cmdline.ggo
+cmdline.c cmdline.h: cmdline.ggo
 	gengetopt < $<
+
+gtypist.c: cmdline.h
 
 # GEN_MAN is a shell command that generates the man page
 
