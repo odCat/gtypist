@@ -59,8 +59,6 @@
 
 /* VERSION and PACKAGE defined in config.h */
 
-char *COPYRIGHT;
-
 char* locale_encoding; /* current locale's encoding */
 int isUTF8Locale; /* does the current locale have a UTF-8 encoding? */
 
@@ -1611,14 +1609,6 @@ int main( int argc, char **argv )
       strcasecmp(locale_encoding, "UTF8") == 0;
   /* printf("encoding is %s, UTF8=%d\n", locale_encoding, isUTF8Locale); */
 
-  COPYRIGHT=
-    _("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
-      "Copyright (C) 2003, 2004, 2008, 2011, 2012 GNU Typist Development Team.\n"
-      "This program comes with ABSOLUTELY NO WARRANTY; for details\n"
-      "please see the file 'COPYING' supplied with the source code.\n"
-      "This is free software, and you are welcome to redistribute it\n"
-      "under certain conditions; again, see 'COPYING' for details.\n"
-      "This program is released under the GNU General Public License.");
   /* this string is displayed in the mode-line when in a tutorial */
   MODE_TUTORIAL=_(" Tutorial ");
   /* this string is displayed in the mode-line when in a query */
