@@ -60,7 +60,7 @@ fi
 # Internationalization macros
 
 AM_GNU_GETTEXT_VERSION([0.18.2])
-AM_GNU_GETTEXT
+AM_GNU_GETTEXT(external)
 
 # Manual page generation
 
@@ -74,5 +74,5 @@ AM_PATH_LISPDIR
 # Generate files
 
 AC_CONFIG_FILES([lessons/Makefile tools/Makefile doc/Makefile src/Makefile
-		Makefile intl/Makefile po/Makefile.in m4/Makefile])
+		Makefile po/Makefile.in m4/Makefile])
 AC_OUTPUT
