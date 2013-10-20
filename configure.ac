@@ -57,6 +57,10 @@ else
    exit 1;
 fi
 
+# iconv
+
+AM_ICONV
+
 # Internationalization macros
 
 AM_GNU_GETTEXT_VERSION([0.18.2])
