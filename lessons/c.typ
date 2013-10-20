@@ -240,7 +240,7 @@ T:			General Instructions
  :The F-key and the U-key should be pressed only by the second finger of the left
  :or right hand.
 
-I:(1) P and L
+I:(1) F and U
 *:_C_R_C7_1
 D:urn file hound flora pupil feast upper fade spud fern spurn froth huh foal
  :dune sniff rerun furor tune fresh hush shaft lure left fuss usher

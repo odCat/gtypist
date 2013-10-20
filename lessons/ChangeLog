@@ -1,3 +1,8 @@
+2013-10-20  Tim Marston  <tim@ed.am>
+
+	* c.typ: fixed header for F+U Colemak lesson, thanks to patch
+	supplied by Ashley Whetter <ashley@awhetter.co.uk>
+
 2013-06-01  Felix Natter <fnatter@gmx.net>
 
 	* update kt*.typ with new ktouch2typ.pl as reported by
