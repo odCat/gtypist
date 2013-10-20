@@ -20,6 +20,7 @@ conf*
 !conf_dos.bat.in
 !configur.bat.in
 !configure.ac
+compile
 ABOUT-NLS
 INSTALL
 autom4te.cache
