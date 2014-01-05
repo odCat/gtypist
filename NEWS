@@ -4,6 +4,11 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
+version 2.9.4
+  - fix for Colemak lesson, thanks to Ashley Whetter <ashley@awhetter.co.uk>
+  - libintl is now an extrenal requirement
+  - other minor fixes
+
 version 2.9.3 - June 2013
   - fix for Alt+some key being treated as ESCAPE and clearing drills
     (reported by Chris Jones <cjns1989@gmail.com>)
