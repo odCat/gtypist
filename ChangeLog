@@ -1,3 +1,7 @@
+2014-01-27  Felix Natter <fnatter@gmx.net>
+
+	* configure.ac: added check for libtinfo
+
 2013-10-20  Tim Marston  <tim@ed.am>
 
 	* configure.ac, src/Makefile.am: fix --disable-nls on platforms

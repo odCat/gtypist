@@ -7,7 +7,8 @@ See the `ChangeLog' (top-level and in some subdirectories) and
 version 2.9.4
   - fix for Colemak lesson, thanks to Ashley Whetter <ashley@awhetter.co.uk>
   - libintl is now an extrenal requirement
-  - other minor fixes
+  - libtinfo is now linked against, as required
+  - minor documentation fixes
 
 version 2.9.3 - June 2013
   - fix for Alt+some key being treated as ESCAPE and clearing drills
