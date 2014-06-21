@@ -46,7 +46,7 @@ T:			Welcome to the Colemak Course
  :familiar with using a QWERTY keyboard layout.  Despite this, it appears that
  :the Colemak keyboard is as fast as, if not faster than, the Dvorak keyboard.
  :
- :For information about the Colemak kyboard layout, see <http://colemak.com/>.
+ :For information about the Colemak keyboard layout, see <http://colemak.com/>.
 
 T:			General Instructions
  :
