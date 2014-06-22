@@ -1,3 +1,8 @@
+2014-06-22  Tim Marston  <tim@ed.am>
+
+	* gtypist.c: lesson timing in do_drill() and do_speedtest() is now
+	one to millisecond (not second) resolution
+
 2013-06-01  Felix Natter <fnatter@gmx.net>
 
 	* utf8.c: Avoid that Alt+<anything> is treated as ESC, which could

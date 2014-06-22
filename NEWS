@@ -4,9 +4,12 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
+UNRELEASED
+  - improved CPM/WPM calculations
+
 version 2.9.4 - February 2014
   - fix for Colemak lesson, thanks to Ashley Whetter <ashley@awhetter.co.uk>
-  - libintl is now an extrenal requirement
+  - libintl is now an external requirement
   - libtinfo is now linked against, as required
   - minor documentation fixes
 
