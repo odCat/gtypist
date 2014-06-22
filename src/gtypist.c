@@ -197,7 +197,7 @@ static bool user_is_always_sure = FALSE;
 
 static int getch_fl( int cursor_char );
 static bool wait_user (FILE *script, char *message, char *mode );
-static void display_speed( int total_chars, long elapsed_time, int errcount );
+static void display_speed( int total_chars, double elapsed_time, int errcount );
 static void do_keybind( FILE *script, char *line );
 static void do_tutorial( FILE *script, char *line );
 static void do_instruction( FILE *script, char *line );
@@ -412,7 +412,7 @@ static bool wait_user (FILE *script, char *message, char *mode)
 /*
   display speed and accuracy from a drill or speed test
 */
-static void display_speed( int total_chars, long elapsed_time, int errcount ) {
+static void display_speed( int total_chars, double elapsed_time, int errcount ) {
   double	test_time;			/* time in minutes */
   double	cpm, adjusted_cpm;		/* speeds in CPM */
   char		message[MAX_WIN_LINE];		/* buffer */
@@ -423,7 +423,7 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   char		*raw_speed_str, *adj_speed_str, *best_speed_str;
 
   /* calculate the speeds */
-  test_time = (double)elapsed_time / (double)60.0;
+  test_time = elapsed_time / 60.0;
   if( elapsed_time > 0 )
     {
       /* calculate speed values */
@@ -624,13 +624,14 @@ do_drill( FILE *script, char *line ) {
   int	lines_count = 0;	 /* measures drill length */
   int	rc;			 /* curses char typed */
   wchar_t  *widep, *wideData;
-  long	start_time=0, end_time;	 /* timing variables */
+  double start_time=0, end_time; /* timing variables */
   char	message[MAX_WIN_LINE];	 /* message buffer */
   char	drill_type;		 /* note of the drill type */
   int	chars_typed;		 /* count of chars typed */
   int	chars_in_the_line_typed;
   bool  seek_done = FALSE;       /* was there a seek_label before exit? */
   int	error_sync;		 /* error resync state */
+  struct timeval tv;
 
   /* note the drill type to see if we need to make the user repeat */
   drill_type = SCR_COMMAND( line );
@@ -701,7 +702,10 @@ do_drill( FILE *script, char *line ) {
 
           /* start timer on first char entered */
           if ( chars_typed == 0 )
-            start_time = (long)time( NULL );
+            {
+              gettimeofday(&tv, NULL);
+              start_time = tv.tv_sec + tv.tv_usec / 1000000.0;
+            }
           chars_typed++;
           error_sync--;
 
@@ -824,7 +828,8 @@ do_drill( FILE *script, char *line ) {
       if ( rc != ASCII_ESC )
         {
           /* display timings */
-          end_time = (long)time( NULL );
+          gettimeofday(&tv, NULL);
+          end_time = tv.tv_sec + tv.tv_usec / 1000000.0;
           if ( ! cl_notimer )
             {
               display_speed( chars_typed, end_time - start_time,
@@ -903,12 +908,13 @@ do_speedtest( FILE *script, char *line ) {
   int	lines_count = 0;	 /* measures exercise length */
   int	rc;			 /* curses char typed */
   wchar_t  *widep, *wideData;
-  long	start_time=0, end_time;	 /* timing variables */
+  double start_time=0, end_time; /* timing variables */
   char	message[MAX_WIN_LINE];	 /* message buffer */
   char	drill_type;		 /* note of the drill type */
   int	chars_typed;		 /* count of chars typed */
   bool  seek_done = FALSE;       /* was there a seek_label before exit? */
   int	error_sync;		 /* error resync state */
+  struct timeval tv;
 
   /* note the drill type to see if we need to make the user repeat */
   drill_type = SCR_COMMAND( line );
@@ -982,7 +988,10 @@ do_speedtest( FILE *script, char *line ) {
 
           /* start timer on first char entered */
           if ( chars_typed == 0 )
-            start_time = (long)time( NULL );
+            {
+              gettimeofday(&tv, NULL);
+              start_time = tv.tv_sec + tv.tv_usec / 1000000.0;
+            }
           chars_typed++;
           error_sync--;
 
@@ -1098,7 +1107,8 @@ do_speedtest( FILE *script, char *line ) {
       if ( rc != ASCII_ESC )
         {
           /* display timings */
-          end_time = (long)time( NULL );
+          gettimeofday(&tv, NULL);
+          end_time = tv.tv_sec + tv.tv_usec / 1000000.0;
           display_speed( chars_typed, end_time - start_time,
                          errors );
 
