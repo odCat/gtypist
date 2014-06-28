@@ -19,7 +19,7 @@ option "silent"         s "don't beep on errors"
     flag off
 option "quiet"          q "same as --silent"
 	flag off #alias="silent"
-option "start-label"    l "start the lesson at label"
+option "start-label"    l "start the lesson at the given label"
     string typestr="LABEL"
 option "word-processor" w "try to mimic word processors"
     flag off
