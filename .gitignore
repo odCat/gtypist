@@ -27,6 +27,7 @@ autom4te.cache
 depcomp
 elisp-comp
 install-sh
+compile
 missing
 mkinstalldirs
 stamp-h1
