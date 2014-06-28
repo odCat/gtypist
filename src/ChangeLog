@@ -1,3 +1,11 @@
+2014-06-24  Tim Marston  <tim@ed.am>
+
+	* gtypist.c: added get_bestlog_filename(); get_config_filename()
+	now works on windows; fetch HOME dir once, at startup; don't
+	create config file if it doesn't exist
+	* infoview.c: removed attempt to parse the config file (since we
+	don't actually need to)
+
 2013-06-01  Felix Natter <fnatter@gmx.net>
 
 	* utf8.c: Avoid that Alt+<anything> is treated as ESC, which could

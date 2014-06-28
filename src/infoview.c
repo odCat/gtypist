@@ -98,44 +98,18 @@ void draw_scrollbar(int x2, int y1, int y2,
 
 void remember_no_welcome_screen_option()
 {
-    // enable no_welcome_screen option in command line options config file!
-    char* cfg_file_path = get_config_file_path();
-    FILE* gtypistrc = fopen(cfg_file_path, "a+");
+    // append no-welcome-screen option to config file; since the presence of
+    // this option would be hard to detect accurately (without proper config
+    // file parsing) we assume that the option is not already present, which is
+    // OK because if it had been present we wouldn't have shown the infoview in
+    // the first place
+    FILE* gtypistrc = fopen(get_config_filename(), "a");
     if (gtypistrc == NULL)
-    {
-        fatal_error( _("Error reading/writing config file!"), NULL );
+	{
+        fatal_error( _("error writing config file!"), NULL );
     }
-    int no_welcome_screen_option_found = FALSE;
-    size_t len = 0;
-    char* line = NULL;
-
-    while (getline(&line, &len, gtypistrc) != -1)
-    {
-        /* remove control chars (newline, CR) at end of line */
-        int idx = len;
-        while (idx >= 0 && line[idx] < 0x20)
-        {
-            line[idx] = '\0';
-            idx--;
-        }
-
-        if (strcmp(line, "no-welcome-screen") == 0)
-        {
-            no_welcome_screen_option_found = TRUE;
-        }
-    }
-    if (!no_welcome_screen_option_found) 
-    {
-        /* append "no-welcome-screen" option */
-        fprintf(gtypistrc, "no-welcome-screen\n");
-    }
+	fprintf(gtypistrc, "no-welcome-screen\n");
     fclose(gtypistrc);
-    if (line)
-    {
-        free(line);
-        line = NULL;
-    }
-    free(cfg_file_path);
 }
 
 int do_beginner_infoview()

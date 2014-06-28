@@ -105,8 +105,10 @@ wchar_t *RNE;
 
 #ifdef MINGW
 #define BESTLOG_FILENAME    "gtypist-bestlog"
+#define CONFIG_FILENAME     "gtypistrc"
 #else
 #define BESTLOG_FILENAME    ".gtypist-bestlog"
+#define CONFIG_FILENAME     ".gtypistrc"
 #endif
 
 
@@ -142,7 +144,7 @@ static bool	global_on_failure_label_persistent = FALSE;
 
 static char 	*global_script_filename = NULL;
 
-static char	*global_home_env = NULL;
+static char	*global_home_dir = NULL;
 
 /* a global area for associating function keys with labels */
 #define NFKEYS			12		/* num of function keys */
@@ -184,7 +186,7 @@ static bool get_best_speed( const char *script_filename,
 			    const char *excersise_label, double *adjusted_cpm );
 static void put_best_speed( const char *script_filename,
 			    const char *excersise_label, double adjusted_cpm );
-void get_bestlog_filename( char *filename );
+const char *get_bestlog_filename();
 
 void bind_F12 (const char *label)
 {
@@ -1476,16 +1478,6 @@ parse_file( FILE *script, char *label ) {
     }
 }
 
-static int
-file_exists(const char* filepath)
-{
-    FILE* f = fopen(filepath, "r");
-    int exists = (f != NULL);
-    if (f != NULL)
-        fclose(f);
-    return exists;
-}
-
 /*
   Parse command line arguments and config file
 */
@@ -1496,29 +1488,20 @@ parse_cmdline_and_config( int argc, char **argv )
     if( cmdline_parser( argc, argv, &cl_args ) != 0 )
 	exit( 1 );
 
-    // parse config file
-    struct cmdline_parser_params params;
-    cmdline_parser_params_init( &params );
-    params.initialize = 0;
-    params.check_required = 0;
+    // check for existance of config file
+    const char *filename = get_config_filename();
+    FILE *cfile = fopen( filename, "r" );
+    if( cfile != NULL ) {
+	fclose( cfile );
 
-    char* config_file_path = get_config_file_path();
-    // make sure that config file exists
-    if (!file_exists(config_file_path))
-    {
-        FILE* f = fopen(config_file_path, "w");
-        if (f == NULL)
-        {
-            fatal_error( _("Error writing config file!"), NULL );
-        }
-        else
-        {
-            fclose(f);
-        }
+	// parse config file
+	struct cmdline_parser_params params;
+	cmdline_parser_params_init( &params );
+	params.initialize = 0;
+	params.check_required = 0;
+	if( cmdline_parser_config_file( filename, &cl_args, &params ) != 0 )
+	    exit( 1 );
     }
-    if( cmdline_parser_config_file( config_file_path, &cl_args, &params ) != 0 )
-        exit( 1 );
-    free(config_file_path);
 
     // check there is at most one script specified
     if( cl_args.inputs_num > 1 ) {
@@ -1693,6 +1676,20 @@ int main( int argc, char **argv )
       exit( 1 );
     }
 
+  /* check for user home directory */
+#ifdef MINGW
+  char *home_env = "APPDATA";
+#else
+  char *home_env = "HOME";
+#endif
+  global_home_dir = getenv( home_env );
+  if( !global_home_dir || !strlen( global_home_dir ) )
+    {
+      fprintf( stderr, _("%s: %s environment variable not set\n"), \
+	  argv0, home_env );
+      exit( 1 );
+    }
+
   /* parse command line argments and config file */
   parse_cmdline_and_config( argc, argv );
 
@@ -1744,19 +1741,6 @@ int main( int argc, char **argv )
 
   /* reset global_error_max */
   global_error_max = cl_args.max_error_arg;
-
-  /* check for user home directory */
-#ifdef MINGW
-  global_home_env = "APPDATA";
-#else
-  global_home_env = "HOME";
-#endif
-  if( !getenv( global_home_env ) || !strlen( getenv( global_home_env ) ) )
-    {
-      fprintf( stderr, _("%s: %s environment variable not set\n"), \
-	  argv0, global_home_env );
-      exit( 1 );
-    }
 
   /* prepare for curses stuff, and set up a signal handler
      to undo curses if we get interrupted */
@@ -1840,7 +1824,6 @@ bool get_best_speed( const char *script_filename,
 		     const char *excersise_label, double *adjusted_cpm )
 {
   FILE *blfile;				/* bestlog file */
-  char *filename;			/* bestlog filename */
   char *search;				/* string to match in bestlog */
   char line[FILENAME_MAX];		/* single line from bestlog */
   int search_len;			/* length of search string */
@@ -1849,21 +1832,10 @@ bool get_best_speed( const char *script_filename,
   char *fixed_script_filename;		/* fixed-up script filename */
   char *p;
 
-  /* calculate filename */
-  filename = (char *)malloc( strlen( getenv( global_home_env ) ) +
-                             strlen( BESTLOG_FILENAME ) + 2 );
-  if( filename == NULL )
-    {
-       perror( "malloc" );
-       fatal_error( _( "internal error: malloc" ), NULL );
-    }
-  sprintf( filename, "%s/%s", getenv( global_home_env ), BESTLOG_FILENAME );
-
   /* open best speeds file */
-  blfile = fopen( filename, "r" );
+  blfile = fopen( get_bestlog_filename(), "r" );
   if( blfile == NULL )
     {
-      free( filename );
       return FALSE;
     }
 
@@ -1910,7 +1882,6 @@ bool get_best_speed( const char *script_filename,
 
   /* cleanup and return */
   free( search );
-  free( filename );
   free( fixed_script_filename );
   fclose( blfile );
   return found;
@@ -1920,22 +1891,11 @@ void put_best_speed( const char *script_filename,
 		     const char *excersise_label, double adjusted_cpm )
 {
   FILE *blfile;				/* bestlog file */
-  char *filename;			/* bestlog filename */
   char *fixed_script_filename;		/* fixed-up script filename */
   char *p;
 
-  /* calculate filename */
-  filename = (char *)malloc( strlen( getenv( global_home_env ) ) +
-                             strlen( BESTLOG_FILENAME ) + 2 );
-  if( filename == NULL )
-    {
-       perror( "malloc" );
-       fatal_error( _( "internal error: malloc" ), NULL );
-    }
-  sprintf( filename, "%s/%s", getenv( global_home_env ), BESTLOG_FILENAME );
-
   /* open best speeds files */
-  blfile = fopen( filename, "a" );
+  blfile = fopen( get_bestlog_filename(), "a" );
   if( blfile == NULL )
     {
        perror( "fopen" );
@@ -1968,17 +1928,48 @@ void put_best_speed( const char *script_filename,
 	   adjusted_cpm );
 
   /* cleanup */
-  free( filename );
   free( fixed_script_filename );
   fclose( blfile );
 }
 
-/* TODO: fix on windows! */
-char* get_config_file_path()
+const char *get_config_filename()
 {
-    char* config_file_path = malloc(1024);
-    sprintf(config_file_path, "%s/.gtypistrc", getenv("HOME"));
-    return config_file_path;
+    static char *filename = NULL;
+
+    if( filename == NULL )
+    {
+	// calculate file name
+	filename = (char *)malloc(
+	    strlen( global_home_dir ) + strlen( CONFIG_FILENAME ) + 2 );
+	if( filename == NULL )
+	{
+	    perror( "malloc" );
+	    fatal_error( _( "internal error: malloc" ), NULL );
+	}
+	sprintf( filename, "%s/%s", global_home_dir, CONFIG_FILENAME );
+    }
+
+    return filename;
+}
+
+const char *get_bestlog_filename()
+{
+    static char *filename = NULL;
+
+    if( filename == NULL )
+    {
+	// calculate file name
+	filename = (char *)malloc(
+	    strlen( global_home_dir ) + strlen( BESTLOG_FILENAME ) + 2 );
+	if( filename == NULL )
+	{
+	    perror( "malloc" );
+	    fatal_error( _( "internal error: malloc" ), NULL );
+	}
+	sprintf( filename, "%s/%s", global_home_dir, BESTLOG_FILENAME );
+    }
+
+    return filename;
 }
 
 
