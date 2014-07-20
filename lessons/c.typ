@@ -587,20 +587,21 @@ D:of or on one only or other our out over own people said same see she
  :years you your
 
 T:We now concentrate on words amongst the top one thousand most frequently used
- :that can be types using only the HOME row.
+ :that are 4 letters or more and that can be types using only the HOME row.
 
 I:(3)
 *:_C_R_C16_3
-D:notes enter other these there their another sentence three Indian
- :start those state earth order stand horse short north heard nothing
- :inside strong stars street stood reason interest instruments train
+D:that this other there said their then these than side does three read
+ :hand here need near earth head stand state tree hard start don't north
+ :ease those idea hear horse soon door short area order heard interest
+ :road rain note star rest done stood street test stead heat tire distant
 
 I:(4)
 *:_C_R_C16_4
-D:third raised store distance heart instead either nation stone dress
- :straight statement seeds desert history strange trade rather entered
- :interesting sense string stream addition sister radio death determine
- :stretched details entire ahead shoes northern triangle doesn't
+D:east heart reason ride store train root raise third hair either sand
+ :sense nation dress stone iron trade seed tone rise sent noon radio
+ :rather thin enter send rose dead desert shoe nine noise shine nose
+ :death season sister seat shore sheet share station instant dear teeth
 
 G:_C_E_C16
 

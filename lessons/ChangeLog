@@ -1,3 +1,9 @@
+2014-07-20  Tim Marston  <tim@ed.am>
+
+	* c.typ: (re)generated ords ion the top 1000 most frequently used
+	that can be typed using the home row, as the previous one included
+	non-home row keys.
+
 2014-07-19  Tim Marston  <tim@ed.am>
 
 	* q.typ: fixed errant r before it was introduced, thanks to Olu
