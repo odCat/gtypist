@@ -186,7 +186,7 @@ D:Ed had a shed.  His shed had dishes.  He had shade.
 
 I:(4)
 *:_Q_R_L16
-D:Odd ideas are like odd seeds.  Odd seeds die as do odd deeds.
+D:Odd ideas die like odd seeds.  Odd seeds die as do odd deeds.
  :Dad has odd ideas.  Dad sees a soda as a sad dose.  A soda
  :aids Sis.  So I see a soda is added.  Sis does like a soda.
 
