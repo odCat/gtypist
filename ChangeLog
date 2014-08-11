@@ -1,3 +1,7 @@
+2014-08-11  Tim Marston  <tim@ed.am>
+
+	* version.sh, NEWS: updated for 2.9.5
+
 2014-01-27  Felix Natter <fnatter@gmx.net>
 
 	* configure.ac: added check for libtinfo

@@ -4,8 +4,11 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
-UNRELEASED
-  - improved CPM/WPM calculations
+version 2.9.5 - August 2014
+  - improved CPM/WPM calculation precision
+  - fix for Colemak lesson, thanks to Ashley Whetter <ashley@awhetter.co.uk>
+  - fix for Q series, thanks to Olu Niyi-Awosusi <o.niyiawosusi@gmail.com>
+  - fix for Colemak lesson (updated top 1000 most frequently used words)
 
 version 2.9.4 - February 2014
   - fix for Colemak lesson, thanks to Ashley Whetter <ashley@awhetter.co.uk>
