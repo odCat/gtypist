@@ -27,6 +27,7 @@
 #include <ctype.h>
 #include <signal.h>
 #include <sys/param.h>
+#include <sys/time.h>
 
 #ifdef HAVE_PDCURSES
 #include <curses.h>

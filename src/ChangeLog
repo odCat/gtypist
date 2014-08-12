@@ -1,3 +1,7 @@
+2014-08-12  Tim Marston  <tim@ed.am>
+
+	* gtypist.c: #include sys/time.h (for gettimeofday() and timeval)
+
 2014-06-22  Tim Marston  <tim@ed.am>
 
 	* gtypist.c: lesson timing in do_drill() and do_speedtest() is now
