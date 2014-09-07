@@ -52,10 +52,17 @@ if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
    LIBS="-lncursesw $LIBS"
 else
    echo -e "Error:  both library and header files for the ncursesw library\n"\
-   	"are required to build this package.  See INSTALL file for"\
-	"further information. On Debian/Ubuntu you need to install libncursesw5-dev."
+       "are required to build this package.  See INSTALL file for"\
+       "further information. On Debian/Ubuntu you need to install libncursesw5-dev."
    exit 1;
 fi
+AC_SEARCH_LIBS(cbreak, tinfo, [],
+  [AC_MSG_ERROR([Can't find cbreak() in -lncursesw or -ltinfo])])
+
+
+# iconv
+
+AM_ICONV
 
 # Internationalization macros
 

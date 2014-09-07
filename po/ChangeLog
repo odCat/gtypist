@@ -1,3 +1,8 @@
+2014-07-20  Tim Marston  <tim@ed.am>
+
+	* zh_CN.po: updated, thanks to Wei Mingzhi
+	<whistler_wmz@users.sf.net>
+
 2013-06-04  Tim Marston <tim@ed.am>
 
 	* Makevars: updated for gettext 0.18.2

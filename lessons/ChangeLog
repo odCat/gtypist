@@ -1,3 +1,23 @@
+2014-07-20  Tim Marston  <tim@ed.am>
+
+	* c.typ: (re)generated words in the top 1000 most frequently used
+	that can be typed using the home row, as it previously included
+	non-home row keys.
+
+2014-07-19  Tim Marston  <tim@ed.am>
+
+	* q.typ: fixed errant r before it was introduced, thanks to Olu
+	Niyi-Awosusi <o.niyiawosusi@gmail.com>.
+
+2014-06-10  Tim Marston  <tim@ed.am>
+
+	* c.typ: typo, reported by Ashley Whetter <ashley@awhetter.co.uk>
+
+2013-10-20  Tim Marston  <tim@ed.am>
+
+	* c.typ: fixed header for F+U Colemak lesson, thanks to patch
+	supplied by Ashley Whetter <ashley@awhetter.co.uk>
+
 2013-06-01  Felix Natter <fnatter@gmx.net>
 
 	* update kt*.typ with new ktouch2typ.pl as reported by

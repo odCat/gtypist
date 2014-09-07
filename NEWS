@@ -4,6 +4,20 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
+version 2.9.5 - August 2014
+  - improved CPM/WPM calculation precision
+  - fix for Colemak lesson, thanks to Ashley Whetter <ashley@awhetter.co.uk>
+  - fix for Q series, thanks to Olu Niyi-Awosusi <o.niyiawosusi@gmail.com>
+  - fix for Colemak lesson (updated top 1000 most frequently used words)
+  - updated simplified Chinese translation, thanks to Wei Mingzhi
+    <whistler_wmz@users.sf.net>
+
+version 2.9.4 - February 2014
+  - fix for Colemak lesson, thanks to Ashley Whetter <ashley@awhetter.co.uk>
+  - libintl is now an external requirement
+  - libtinfo is now linked against, as required
+  - minor documentation fixes
+
 version 2.9.3 - June 2013
   - fix for Alt+some key being treated as ESCAPE and clearing drills
     (reported by Chris Jones <cjns1989@gmail.com>)

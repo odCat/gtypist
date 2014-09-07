@@ -1,3 +1,7 @@
+2014-08-12  Tim Marston  <tim@ed.am>
+
+	* gtypist.c: #include sys/time.h (for gettimeofday() and timeval)
+
 2014-06-24  Tim Marston  <tim@ed.am>
 
 	* gtypist.c: added get_bestlog_filename(); get_config_filename()
@@ -5,6 +9,11 @@
 	create config file if it doesn't exist
 	* infoview.c: removed attempt to parse the config file (since we
 	don't actually need to)
+
+2014-06-22  Tim Marston  <tim@ed.am>
+
+	* gtypist.c: lesson timing in do_drill() and do_speedtest() is now
+	done to millisecond (not second) resolution
 
 2013-06-01  Felix Natter <fnatter@gmx.net>
 

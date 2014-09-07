@@ -18,55 +18,57 @@ msgstr ""
 msgid "internal error: strdup"
 msgstr "внутренняя ошибка: strdup"
 
-#: src/gtypist.c:380
+#: src/gtypist.c:380 src/gtypist.c:507
 msgid "invalid key binding"
 msgstr "неправильное назначение клавиши"
 
-#: src/gtypist.c:382
+#: src/gtypist.c:382 src/gtypist.c:509
 msgid "invalid function key number"
 msgstr "неправильный номер функциональной клавиши"
 
-#: src/gtypist.c:420 src/gtypist.c:527 src/gtypist.c:814
+#: src/gtypist.c:420 src/gtypist.c:527 src/gtypist.c:814 src/gtypist.c:547
+#: src/gtypist.c:655 src/gtypist.c:946
 msgid "data exceeds screen length"
 msgstr "данные выходят за пределы экрана"
 
-#: src/gtypist.c:463
+#: src/gtypist.c:463 src/gtypist.c:590
 msgid "instructions are limited to two lines"
 msgstr "указания к уроку ограничены двумя строками"
 
-#: src/gtypist.c:722 src/gtypist.c:993 src/script.c:313
+#: src/gtypist.c:722 src/gtypist.c:993 src/script.c:313 src/gtypist.c:853
+#: src/gtypist.c:1129
 msgid "internal error: fseek"
 msgstr "внутренняя ошибка в функции fseek"
 
-#: src/gtypist.c:1315
+#: src/gtypist.c:1315 src/gtypist.c:1451
 #, no-c-format
 msgid "'*' must immediately follow '%'"
 msgstr "звёздочка `*' должна немедленно следовать за процентом `%'"
 
-#: src/gtypist.c:1318 src/gtypist.c:1321
+#: src/gtypist.c:1318 src/gtypist.c:1321 src/gtypist.c:1454 src/gtypist.c:1457
 #, no-c-format
 msgid "missing '%'"
 msgstr "отсутствует процент `%'"
 
-#: src/gtypist.c:1325
+#: src/gtypist.c:1325 src/gtypist.c:1461
 #, no-c-format
 msgid "'%' must immediately follow value"
 msgstr "процент `%' должен сразу следовать за значением"
 
-#: src/gtypist.c:1334
+#: src/gtypist.c:1334 src/gtypist.c:1470
 msgid "overflow in do_error_max_set"
 msgstr "переполнение в функции do_error_max_set"
 
-#: src/gtypist.c:1354
+#: src/gtypist.c:1354 src/gtypist.c:1490
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "Неправильная величина для команды \"E:\" (вне допустимого диапазона)"
 
-#: src/gtypist.c:1409 src/script.c:307
+#: src/gtypist.c:1409 src/script.c:307 src/gtypist.c:1545
 #, c-format
 msgid "label '%s' not found"
 msgstr "метка `%s' не найдена"
 
-#: src/gtypist.c:1475
+#: src/gtypist.c:1475 src/gtypist.c:1611
 msgid "unknown command"
 msgstr "неизвестная команда"
 
@@ -74,22 +76,22 @@ msgstr "неизвестная команда"
 msgid "Error writing config file!"
 msgstr ""
 
-#: src/gtypist.c:1527
+#: src/gtypist.c:1527 src/gtypist.c:1941 src/gtypist.c:1948
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Попробуйте `%s --help' для более подробной информации.\n"
 
-#: src/gtypist.c:1533
+#: src/gtypist.c:1533 src/gtypist.c:1829
 #, c-format
 msgid "%s: invalid error-max value\n"
 msgstr "%s: неправильная максимально допустимая величина ошибки\n"
 
-#: src/gtypist.c:1539
+#: src/gtypist.c:1539 src/gtypist.c:1845
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: неправильная величина периода мерцания курсора\n"
 
-#: src/gtypist.c:1549
+#: src/gtypist.c:1549 src/gtypist.c:1856
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: неправильная величина цвета\n"
@@ -118,77 +120,79 @@ msgstr ""
 "на некоторых условиях;  снова, смотрите файл 'COPYING' для подробностей.\n"
 "Эта программа выпущена на условиях общей общественной лицензии GNU."
 
-#: src/gtypist.c:1649
+#: src/gtypist.c:1649 src/gtypist.c:2031
 msgid " Tutorial "
 msgstr " Указания "
 
-#: src/gtypist.c:1651
+#: src/gtypist.c:1651 src/gtypist.c:2033
 msgid "  Query   "
 msgstr "  Вопрос  "
 
-#: src/gtypist.c:1653
+#: src/gtypist.c:1653 src/gtypist.c:2035
 msgid "  Drill   "
 msgstr "Упражнение"
 
-#: src/gtypist.c:1655
+#: src/gtypist.c:1655 src/gtypist.c:2037
 msgid "Speed test"
 msgstr "   Тест   "
 
-#: src/gtypist.c:1657
+#: src/gtypist.c:1657 src/gtypist.c:2039
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr " Нажмите ВВОД или ПРОБЕЛ чтобы продолжить, ESC для возврата в меню "
 
-#: src/gtypist.c:1660
+#: src/gtypist.c:1660 src/gtypist.c:2042
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr " У вас слишком много ошибок.  Нужно добиться %.1f%%. "
 
-#: src/gtypist.c:1664
+#: src/gtypist.c:1664 src/gtypist.c:2046
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr " Вы завалили этот тест, так что вам нужно обратно к %s. "
 
-#: src/gtypist.c:1668
+#: src/gtypist.c:1668 src/gtypist.c:2050
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr ""
 " Нажмите `П' для повторения, `С' для следующего упражнения, или `В' для "
 "выхода"
 
-#: src/gtypist.c:1672
+#: src/gtypist.c:1672 src/gtypist.c:2054
 msgid " Press R to repeat or E to exit "
 msgstr " Нажмите `П' для повторения, или `В' для выхода "
 
-#: src/gtypist.c:1675
+#: src/gtypist.c:1675 src/gtypist.c:2057
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr " Вы уверены, что хотите покинуть этот урок?  [Д/Н] "
 
-#: src/gtypist.c:1679
+#: src/gtypist.c:1679 src/gtypist.c:2061
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr " Извините, gtypist настроен на запрет пропуска упражнений. "
 
-#: src/gtypist.c:1684
+#: src/gtypist.c:1684 src/gtypist.c:2097
 msgid "Y/N"
 msgstr "Д/Н"
 
-#: src/gtypist.c:1694
+#: src/gtypist.c:1694 src/gtypist.c:2107
 msgid "R/N/E"
 msgstr "П/С/В"
 
-#: src/gtypist.c:1751
+#: src/gtypist.c:1751 src/gtypist.c:2170
 msgid "can't find or open file"
 msgstr "не удаётся найти или открыть файл"
 
-#: src/gtypist.c:1766
+#: src/gtypist.c:1766 src/gtypist.c:2185
 #, c-format
 msgid "%s: %s environment variable not set\n"
 msgstr ""
 
-#: src/gtypist.c:1818
+#: src/gtypist.c:1818 src/gtypist.c:2237
 msgid "Loading the script..."
 msgstr "Загружаем сценарий..."
 
 #: src/gtypist.c:1868 src/gtypist.c:1885 src/gtypist.c:1901 src/gtypist.c:1943
 #: src/gtypist.c:1960 src/script.c:142 src/script.c:166 src/script.c:256
+#: src/gtypist.c:2278 src/gtypist.c:2295 src/gtypist.c:2311 src/gtypist.c:2353
+#: src/gtypist.c:2370
 msgid "internal error: malloc"
 msgstr "внутренняя ошибка в функции malloc"
 
@@ -365,143 +369,254 @@ msgstr ""
 msgid "|new personal best"
 msgstr ""
 
-#~ msgid ""
-#~ "default maximum error percentage (default 3.0); valid values are between "
-#~ "0.0 and 100.0"
-#~ msgstr ""
-#~ "значение по умолчанию для максимального допустимого процента ошибок (3.0 "
-#~ "по умолчанию); допустимы значения от 0.0 до 100.0"
+#: src/gtypist.c:1730
+msgid ""
+"default maximum error percentage (default 3.0); valid values are between 0.0 "
+"and 100.0"
+msgstr ""
+"значение по умолчанию для максимального допустимого процента ошибок (3.0 по "
+"умолчанию); допустимы значения от 0.0 до 100.0"
 
-#~ msgid "turn off WPM timer in drills"
-#~ msgstr "выключить измерение WPM в упражнениях"
+#: src/gtypist.c:1732
+msgid "turn off WPM timer in drills"
+msgstr "выключить измерение WPM в упражнениях"
 
-#~ msgid "use the terminal's hardware cursor"
-#~ msgstr "использовать \"физический\" курсор терминала"
+#: src/gtypist.c:1733
+msgid "use the terminal's hardware cursor"
+msgstr "использовать \"физический\" курсор терминала"
 
-#~ msgid ""
-#~ "cursor flash period P*.1 sec (default 10); valid  values are between 0 "
-#~ "and 512; this is ignored if -t is specified"
-#~ msgstr ""
-#~ "период мерцания курсора в десятых секунды (10 по умолчанию); допустимы "
-#~ "значения между 0 и 512; аргумент игнорируется, если указан параметр -t"
+#: src/gtypist.c:1734
+msgid ""
+"cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
+"512; this is ignored if -t is specified"
+msgstr ""
+"период мерцания курсора в десятых секунды (10 по умолчанию); допустимы "
+"значения между 0 и 512; аргумент игнорируется, если указан параметр -t"
 
-#~ msgid "set initial display colours where available"
-#~ msgstr "установить цвета терминала, если доступно"
+#: src/gtypist.c:1736
+msgid "set initial display colours where available"
+msgstr "установить цвета терминала, если доступно"
 
-#~ msgid "don't beep on errors"
-#~ msgstr "не пищать при ошибках"
+#: src/gtypist.c:1737
+msgid "don't beep on errors"
+msgstr "не пищать при ошибках"
 
-#~ msgid "same as -s, --silent"
-#~ msgstr "то же самое, что и -s, --silent"
+#: src/gtypist.c:1738
+msgid "same as -s, --silent"
+msgstr "то же самое, что и -s, --silent"
 
-#~ msgid "start the lesson at label 'L'"
-#~ msgstr "начать урок с метки 'L'"
+#: src/gtypist.c:1739
+msgid "start the lesson at label 'L'"
+msgstr "начать урок с метки 'L'"
 
-#~ msgid "try to mimic word processors"
-#~ msgstr "попробовать подражать текстовым редакторам"
+#: src/gtypist.c:1740
+msgid "try to mimic word processors"
+msgstr "попробовать подражать текстовым редакторам"
 
-#~ msgid "forbid the user to skip exercises"
-#~ msgstr "запретить пользователю пропускать упражнения"
+#: src/gtypist.c:1741
+msgid "forbid the user to skip exercises"
+msgstr "запретить пользователю пропускать упражнения"
 
-#~ msgid "highlight errors with reverse video"
-#~ msgstr "подсвечивать ошибки инвертированным цветом"
+#: src/gtypist.c:1742
+msgid "highlight errors with reverse video"
+msgstr "подсвечивать ошибки инвертированным цветом"
 
-#~ msgid "print this message"
-#~ msgstr "вывести это сообщение"
+#: src/gtypist.c:1743
+msgid "print this message"
+msgstr "вывести это сообщение"
 
-#~ msgid "output version information and exit"
-#~ msgstr "вывести информацию о выпуске и закончить выполнение"
+#: src/gtypist.c:1744
+msgid "output version information and exit"
+msgstr "вывести информацию о выпуске и закончить выполнение"
 
-#~ msgid "do not ask confirmation questions"
-#~ msgstr "не спрашивать вопросов подтверждения"
+#: src/gtypist.c:1745
+msgid "do not ask confirmation questions"
+msgstr "не спрашивать вопросов подтверждения"
 
-#~ msgid ""
-#~ "set top banner colours (background, foreground, package and version "
-#~ "respectively)"
-#~ msgstr ""
-#~ "установить цвета верхней строчки (задний фон, передний фон, название "
-#~ "пакета и номер версии соответственно"
+#: src/gtypist.c:1746
+msgid ""
+"set top banner colours (background, foreground, package and version "
+"respectively)"
+msgstr ""
+"установить цвета верхней строчки (задний фон, передний фон, название пакета "
+"и номер версии соответственно"
 
-#~ msgid ""
-#~ "`gtypist' is a typing tutor with several lessons for different keyboards "
-#~ "and languages.  New lessons can be written by the user easily.\n"
-#~ "\n"
-#~ msgstr ""
-#~ "`gtypist' является программой обучения слепой печати с несколькими "
-#~ "уроками для различных клавиатур и языков.  Новые уроки могут быть с "
-#~ "лёгкостью написаны пользователем.\n"
-#~ "\n"
+#: src/gtypist.c:1752
+#, c-format
+msgid ""
+"`gtypist' is a typing tutor with several lessons for different keyboards and "
+"languages.  New lessons can be written by the user easily.\n"
+"\n"
+msgstr ""
+"`gtypist' является программой обучения слепой печати с несколькими уроками "
+"для различных клавиатур и языков.  Новые уроки могут быть с лёгкостью "
+"написаны пользователем.\n"
+"\n"
 
-#~ msgid "Usage"
-#~ msgstr "Использование"
+#: src/gtypist.c:1756
+msgid "Usage"
+msgstr "Использование"
 
+#: src/gtypist.c:1756
 #, fuzzy
-#~ msgid "options"
-#~ msgstr "Параметры"
+msgid "options"
+msgstr "Параметры"
 
-#~ msgid "script-file"
-#~ msgstr "файл-сценария"
+#: src/gtypist.c:1756
+msgid "script-file"
+msgstr "файл-сценария"
 
-#~ msgid "Options"
-#~ msgstr "Параметры"
+#: src/gtypist.c:1757
+msgid "Options"
+msgstr "Параметры"
 
-#~ msgid ""
-#~ "\n"
-#~ "If not supplied, script-file defaults to '%s/%s'.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Если не предоставлено, файл-сценария ставится по умолчанию как `%s/%s'.\n"
+#: src/gtypist.c:1764
+#, c-format
+msgid ""
+"\n"
+"If not supplied, script-file defaults to '%s/%s'.\n"
+msgstr ""
+"\n"
+"Если не предоставлено, файл-сценария ставится по умолчанию как `%s/%s'.\n"
 
-#~ msgid ""
-#~ "The path $GTYPIST_PATH is searched for script files.\n"
-#~ "\n"
-#~ msgstr ""
-#~ "В путях из переменной окружения $GTYPIST_PATH ведётся поиск файлов "
-#~ "сценариев.\n"
-#~ "\n"
+#: src/gtypist.c:1766
+#, c-format
+msgid ""
+"The path $GTYPIST_PATH is searched for script files.\n"
+"\n"
+msgstr ""
+"В путях из переменной окружения $GTYPIST_PATH ведётся поиск файлов "
+"сценариев.\n"
+"\n"
 
-#~ msgid "Examples"
-#~ msgstr "Примеры"
+#: src/gtypist.c:1768
+msgid "Examples"
+msgstr "Примеры"
 
-#~ msgid "To run the default lesson in english `gtypist.typ'"
-#~ msgstr "Для запуска урока по умолчанию на английском `gtypist.typ'"
+#: src/gtypist.c:1770
+msgid "To run the default lesson in english `gtypist.typ'"
+msgstr "Для запуска урока по умолчанию на английском `gtypist.typ'"
 
-#~ msgid "To run the lesson in spanish"
-#~ msgstr "Чтобы запустить урок на испанском"
+#: src/gtypist.c:1772
+msgid "To run the lesson in spanish"
+msgstr "Чтобы запустить урок на испанском"
 
-#~ msgid ""
-#~ "To instruct gtypist to look for lesson `bar.typ' in a non standard "
-#~ "directory"
-#~ msgstr ""
-#~ "Чтобы заставить gtypist найти урок `bar.typ' в нестандартном каталоге"
+#: src/gtypist.c:1774
+msgid ""
+"To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
+msgstr "Чтобы заставить gtypist найти урок `bar.typ' в нестандартном каталоге"
 
-#~ msgid ""
-#~ "To run the lesson in the file `test.typ' of directory `temp', starting at "
-#~ "label `TEST1', using the terminal's cursor, and run silently"
-#~ msgstr ""
-#~ "Чтобы запустить урок в файле `test.typ' каталога `temp', начиная с метки "
-#~ "`TEST1', используя курсор терминала, и не пищать"
+#: src/gtypist.c:1777
+msgid ""
+"To run the lesson in the file `test.typ' of directory `temp', starting at "
+"label `TEST1', using the terminal's cursor, and run silently"
+msgstr ""
+"Чтобы запустить урок в файле `test.typ' каталога `temp', начиная с метки "
+"`TEST1', используя курсор терминала, и не пищать"
 
-#~ msgid "Report bugs to bug-gtypist@gnu.org"
-#~ msgstr ""
-#~ "Сообщайте об ошибках по адресу bug-gtypist@gnu.org (лучше на английском "
-#~ "языке)"
+#: src/gtypist.c:1780
+msgid "Report bugs to bug-gtypist@gnu.org"
+msgstr ""
+"Сообщайте об ошибках по адресу bug-gtypist@gnu.org (лучше на английском "
+"языке)"
 
-#~ msgid "%s:  argument format is incorrect\n"
-#~ msgstr "%s:  формат параметра неверен\n"
+#: src/gtypist.c:1866
+#, c-format
+msgid "%s:  argument format is incorrect\n"
+msgstr "%s:  формат параметра неверен\n"
 
-#~ msgid "%s:  incorrect colour values\n"
-#~ msgstr "%s:  неверные величины цветов\n"
+#: src/gtypist.c:1876
+#, c-format
+msgid "%s:  incorrect colour values\n"
+msgstr "%s:  неверные величины цветов\n"
 
+#: src/gtypist.c:1885 src/gtypist.c:1898
+#, fuzzy, c-format
+msgid "%s: invalid scoring mode"
+msgstr "%s: неправильная величина цвета\n"
+
+#: src/gtypist.c:1911
+#, c-format
+msgid "%s: internal error: malloc\n"
+msgstr "%s: внутренняя ошибка: malloc\n"
+
+#: src/gtypist.c:1932
+msgid "Written by Simon Baldwin"
+msgstr "Написано by Simon Baldwin"
+
+#: src/gtypist.c:295
+msgid "internal error in strdup"
+msgstr "внутренняя ошибка в функции strdup"
+
+#: src/gtypist.c:1729
+msgid "track personal best typing speeds"
+msgstr ""
+
+#: src/gtypist.c:1748
+msgid "set scoring mode (words per minute or characters per minute)"
+msgstr ""
+
+#: src/gtypist.c:2023
 #, fuzzy
-#~ msgid "%s: invalid scoring mode"
-#~ msgstr "%s: неправильная величина цвета\n"
+msgid ""
+"Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
+"Copyright (C) 2003, 2004, 2008, 2011 GNU Typist Development Team.\n"
+"This program comes with ABSOLUTELY NO WARRANTY; for details\n"
+"please see the file 'COPYING' supplied with the source code.\n"
+"This is free software, and you are welcome to redistribute it\n"
+"under certain conditions; again, see 'COPYING' for details.\n"
+"This program is released under the GNU General Public License."
+msgstr ""
+"Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
+"Copyright (C) 2003, 2004, 2008 GNU Typist Development Team.\n"
+"На эту программу не предоставляется СОВЕРШЕННО НИКАКИХ ГАРАНТИЙ;  за\n"
+"подробностями смотрите файл `COPYING' предоставленный вместе с исходным "
+"кодом.\n"
+"Это свободное программное обеспечение, и приветствуется его распространение\n"
+"на некоторых условиях;  снова, смотрите файл 'COPYING' для подробностей.\n"
+"Эта программа выпущена на условиях общей общественной лицензии GNU."
 
-#~ msgid "%s: internal error: malloc\n"
-#~ msgstr "%s: внутренняя ошибка: malloc\n"
+#: src/gtypist.c:2066
+#, c-format
+msgid " Raw speed      = %6.2f wpm "
+msgstr " Средняя скорость %6.2f WPM "
 
-#~ msgid "Written by Simon Baldwin"
-#~ msgstr "Написано by Simon Baldwin"
+#: src/gtypist.c:2068
+#, fuzzy, c-format
+msgid " Raw speed      = %6.2f cpm "
+msgstr " Raw speed      = %6.2f cpm "
 
-#~ msgid "internal error in strdup"
-#~ msgstr "внутренняя ошибка в функции strdup"
+#: src/gtypist.c:2073
+#, c-format
+msgid " Adjusted speed = %6.2f wpm "
+msgstr " С учётом ошибок: %6.2f WPM "
+
+#: src/gtypist.c:2075
+#, fuzzy, c-format
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " Adjusted speed = %6.2f cpm "
+
+#: src/gtypist.c:2080
+#, c-format
+msgid "            with %.1f%% errors "
+msgstr "            было %.1f%% ошибок "
+
+#: src/gtypist.c:2085
+#, fuzzy, c-format
+msgid " Personal best  = %6.2f wpm "
+msgstr " Средняя скорость %6.2f WPM "
+
+#: src/gtypist.c:2087
+#, fuzzy, c-format
+msgid " Personal best  = %6.2f cpm "
+msgstr " Raw speed      = %6.2f cpm "
+
+#: src/gtypist.c:2092
+#, fuzzy
+msgid "           new personal best "
+msgstr "            было %.1f%% ошибок "
+
+#: src/gtypist.c:2362
+#, fuzzy
+msgid " internal error: fopen"
+msgstr "внутренняя ошибка в функции fseek"
