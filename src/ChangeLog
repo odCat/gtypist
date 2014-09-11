@@ -1,3 +1,8 @@
+2014-09-11 Alain Ducoulombier <alain.ducoulombier@gmail.com>
+
+	* gtypist.c: take corrections into account when computing speedtest
+	error rate
+
 2014-08-12  Tim Marston  <tim@ed.am>
 
 	* gtypist.c: #include sys/time.h (for gettimeofday() and timeval)

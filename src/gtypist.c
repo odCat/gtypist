@@ -779,6 +779,9 @@ do_drill( FILE *script, char *line ) {
 static void
 do_speedtest( FILE *script, char *line ) {
   int	errors = 0;		 /* error count */
+  int	*errors_buf;		 /* error localization buffer */
+  int	errors_pos;		 /* error localization position */
+  int	err_idx;		 /* errors counter */
   int	linenum;		 /* line counter */
   char	*data = NULL;		 /* data string */
   int	lines_count = 0;	 /* measures exercise length */
@@ -800,6 +803,11 @@ do_speedtest( FILE *script, char *line ) {
 
   wideData = convertFromUTF8(data);
   int numChars = wcslen(wideData);
+
+  /* allocate errors buffer to record error position */
+  errors_buf = (int*)malloc( numChars * sizeof(int));
+  if ( errors_buf == NULL )
+	fatal_error( _("internal error: malloc"), line );
 
   /*
     fprintf(F, "convresult=%d\n", convresult);
@@ -857,8 +865,8 @@ do_speedtest( FILE *script, char *line ) {
       for ( widep = wideData; *widep == ASCII_SPACE && *widep != ASCII_NULL; widep++ )
         wideaddch(*widep);
 
-      for ( chars_typed = 0, errors = 0, error_sync = 0;
-            *widep != ASCII_NULL; widep++ )
+      for ( chars_typed = 0, errors_pos = 0, memset(errors_buf, 0, numChars * sizeof(int)),  error_sync = 0;
+            *widep != ASCII_NULL; widep++, errors_pos++ )
         {
           rc = getch_fl( (*widep != ASCII_NL) ? *widep : RETURN_CHARACTER );
 
@@ -879,8 +887,13 @@ do_speedtest( FILE *script, char *line ) {
               if ( widep > wideData && *(widep-1) != ASCII_NL && *(widep-1) != ASCII_TAB ) {
                 /* back up one character */
                 ADDCH( ASCII_BS ); widep--;
+                /* Clear the error associated with the faulty character */
+                errors_buf[--errors_pos] = 0;
               }
+              /* Do not account the backspace as a char typed as it could artificially lower the errors rate */
+              chars_typed--;
               widep--;		/* defeat widep++ coming up */
+              errors_pos--;	/* defeat errors_pos++ coming up */
               continue;
             }
 
@@ -908,6 +921,7 @@ do_speedtest( FILE *script, char *line ) {
               if ( error_sync >= 0 && widep > wideData && rc == *(widep-1) )
                 {
                   widep--;
+                  errors_pos--;
                   continue;
                 }
 
@@ -916,7 +930,7 @@ do_speedtest( FILE *script, char *line ) {
               if ( ! cl_args.silent_flag ) {
                 do_bell();
               }
-              errors++;
+              errors_buf[errors_pos] = 1;
               error_sync = 1;
 
               /* try to sync with typist ahead */
@@ -943,6 +957,7 @@ do_speedtest( FILE *script, char *line ) {
                           && *(widep+1) != ASCII_NULL )
                     {
                       widep++; 
+                      errors_pos++;
                       wideaddch(*widep);
                     }
                 }
@@ -953,6 +968,7 @@ do_speedtest( FILE *script, char *line ) {
                           && *(widep+1) != ASCII_NULL )
                     {
                       widep++;
+                      errors_pos++;
                       wideaddch(*widep);
                       if ( *widep == ASCII_NL )
                         {
@@ -965,8 +981,10 @@ do_speedtest( FILE *script, char *line ) {
                         && *(widep+2) == ASCII_NL )
                 {
                   widep++; 
+                  errors_pos++;
                   wideaddch(*widep);
                   widep++;
+                  errors_pos++;
                   wideaddch(*widep);
                   linenum++;
                   move( linenum, 0 );
@@ -982,6 +1000,11 @@ do_speedtest( FILE *script, char *line ) {
       /* skip timings and don't check error-pct if exit was through ESC */
       if ( rc != ASCII_ESC )
         {
+          /* Count all the errors made during the speed_test */
+          errors = 0;
+          for ( err_idx = 0; err_idx < numChars; err_idx++)
+              errors += errors_buf[err_idx];
+
           /* display timings */
           gettimeofday(&tv, NULL);
           end_time = tv.tv_sec + tv.tv_usec / 1000000.0;
@@ -1035,6 +1058,7 @@ do_speedtest( FILE *script, char *line ) {
   /* free the malloced memory */
   free( data );
   free( wideData );
+  free( errors_buf );
 
   /* reset global_error_max */
   if (!global_error_max_persistent)
