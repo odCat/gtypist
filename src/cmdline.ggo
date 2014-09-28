@@ -27,6 +27,8 @@ option "no-skip"        k "forbid the user to skip exercises"
     flag off
 option "show-errors"    i "highlight errors with reverse video"
     flag off
+option "sync-ahead"     a "try to sync ahead (i.e. h_s if you type hs)"
+    flag off
 option "always-sure"    S "do not ask confirmation questions"
     flag off
 option "banner-colors"  - "set top banner colours: (F)oreground, (B)ackground, (P)ackage and (V)ersion"
