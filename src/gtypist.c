@@ -1633,8 +1633,10 @@ int main( int argc, char **argv )
   if ( *argv0 == '/' ) argv0++;
 
   /* Internationalization */
-#if defined(ENABLE_NLS) && defined(LC_ALL)
+#if defined(LC_ALL)
   setlocale (LC_ALL, "");
+#endif
+#if defined(ENABLE_NLS) && defined(LC_ALL)
   bindtextdomain (PACKAGE, LOCALEDIR);
   /* make gettext always return strings as UTF-8
      => this makes programming easier because now _all_ strings
