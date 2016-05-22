@@ -1,3 +1,8 @@
+2016-05-22 clutton <clutton@zoho.com>
+
+	* gtypist.c: allow --disable-nls while still using (UTF-8-)locale
+	  (run setlocale even if !defined(ENABLE_NLS))
+
 2014-09-11 Alain Ducoulombier <alain.ducoulombier@gmail.com>
 
 	* gtypist.c: take corrections into account when computing speedtest
