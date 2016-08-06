@@ -12,7 +12,7 @@ gtypist_SOURCES = gtypist.c cursmenu.c script.c error.c getopt.c getopt1.c		\
 	infoview.c speedbox.c banner.c cmdline.c cursmenu.h error.h getopt.h		\
 	gettext.h gtypist.h script.h utf8.c utf8.h infoview.h speedbox.h banner.h	\
 	cmdline.h cmdline.ggo
-gtypist_LDADD = @LIBINTL@ # TODO: do we need @LIBICONV@ here?
+gtypist_LDADD = @LIBINTL@ @LIBICONV@
 
 AM_CPPFLAGS = -I../intl \
   -DDATADIR=\"$(pkgdatadir)\" \
