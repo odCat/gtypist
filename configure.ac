@@ -5,6 +5,7 @@ AM_INIT_AUTOMAKE([1.8.2 gnu dist-xz])
 AC_CONFIG_SRCDIR([src/gtypist.c])
 AM_CONFIG_HEADER([config.h])
 AC_USE_SYSTEM_EXTENSIONS
+AC_CANONICAL_HOST
 
 # Checks for programs
 
@@ -45,17 +46,30 @@ AC_FUNC_STRTOD
 AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify dcgettext getcwd getwd mempcpy memset munmap nl_langinfo setlocale stpcpy strcasecmp strchr strcspn strdup strstr strtoul])
 
 # check for libncursesw
+case $host_os in
+  *bsd* | darwin*)
+    AC_DEFINE([OS_BSD], [1], [OS BSD's curses includes ncursesw])
+    # check for courses.h
+    AC_CHECK_HEADER(curses.h, [], [AC_MSG_ERROR(
+      [curses.h header is missing: See INSTALL file for further information])])
+    # check for libncursesw
+    AC_CHECK_LIB(ncursesw, add_wch, [], [AC_MSG_ERROR(
+      [ncursesw library is missing: See INSTALL file for further information])])
+    ;;
+  *)
+    AC_CHECK_HEADER(ncursesw/ncurses.h, HAVE_NCURSESW_H=1)
+    AC_CHECK_LIB(ncursesw, add_wch, HAVE_LIBNCURSESW=1)
+    if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
+       LIBS="-lncursesw $LIBS"
+    else
+       echo -e "Error:  both library and header files for the ncursesw library\n"\
+           "are required to build this package.  See INSTALL file for"\
+           "further information. On Debian/Ubuntu you need to install libncursesw5-dev."
+       exit 1;
+    fi
+    ;;
+esac
 
-AC_CHECK_HEADER(ncursesw/ncurses.h, HAVE_NCURSESW_H=1)
-AC_CHECK_LIB(ncursesw, add_wch, HAVE_LIBNCURSESW=1)
-if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
-   LIBS="-lncursesw $LIBS"
-else
-   echo -e "Error:  both library and header files for the ncursesw library\n"\
-       "are required to build this package.  See INSTALL file for"\
-       "further information. On Debian/Ubuntu you need to install libncursesw5-dev."
-   exit 1;
-fi
 AC_SEARCH_LIBS(cbreak, tinfo, [],
   [AC_MSG_ERROR([Can't find cbreak() in -lncursesw or -ltinfo])])
 

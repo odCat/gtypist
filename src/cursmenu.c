@@ -21,7 +21,7 @@
 #include "cursmenu.h"
 #include "script.h"
 
-#ifdef HAVE_PDCURSES
+#if defined(HAVE_PDCURSES) || defined(OS_BSD)
 #include <curses.h>
 #else
 #include <ncursesw/ncurses.h>

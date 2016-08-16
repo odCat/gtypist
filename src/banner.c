@@ -18,14 +18,14 @@
  */
 //	Header for some interface details.
 
-#include <malloc.h>
+#include <stdlib.h>
 #include "banner.h"
 #include "utf8.h"
 #include "config.h"
 #include "gtypist.h"
 #include "script.h"
 
-#ifdef HAVE_PDCURSES
+#if defined(HAVE_PDCURSES) || defined(OS_BSD)
 #include <curses.h>
 #else
 #include <ncursesw/ncurses.h>
