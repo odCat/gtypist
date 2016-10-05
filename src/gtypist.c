@@ -638,12 +638,15 @@ do_drill( FILE *script, char *line ) {
               errors++;
               error_sync = 1;
 
-              /* try to sync with typist ahead */
-              if ( rc == *(widep+1) )
-                {
-                  ungetch( rc );
-                  error_sync++;
-                }
+              /* try to sync with typist ahead? */
+              if (cl_args.sync_ahead_flag)
+              {
+                  if ( rc == *(widep+1) )
+                  {
+                      ungetch( rc );
+                      error_sync++;
+                  }
+              }
             }
 
           /* move screen location if newline */

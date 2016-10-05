@@ -64,15 +64,17 @@ struct gengetopt_args_info
   const char *silent_help; /**< @brief don't beep on errors help description.  */
   int quiet_flag;	/**< @brief same as --silent (default=off).  */
   const char *quiet_help; /**< @brief same as --silent help description.  */
-  char * start_label_arg;	/**< @brief start the lesson at label.  */
-  char * start_label_orig;	/**< @brief start the lesson at label original value given at command line.  */
-  const char *start_label_help; /**< @brief start the lesson at label help description.  */
+  char * start_label_arg;	/**< @brief start the lesson at the given label.  */
+  char * start_label_orig;	/**< @brief start the lesson at the given label original value given at command line.  */
+  const char *start_label_help; /**< @brief start the lesson at the given label help description.  */
   int word_processor_flag;	/**< @brief try to mimic word processors (default=off).  */
   const char *word_processor_help; /**< @brief try to mimic word processors help description.  */
   int no_skip_flag;	/**< @brief forbid the user to skip exercises (default=off).  */
   const char *no_skip_help; /**< @brief forbid the user to skip exercises help description.  */
   int show_errors_flag;	/**< @brief highlight errors with reverse video (default=off).  */
   const char *show_errors_help; /**< @brief highlight errors with reverse video help description.  */
+  int sync_ahead_flag;	/**< @brief try to sync ahead (i.e. h_s if you type hs) (default=on).  */
+  const char *sync_ahead_help; /**< @brief try to sync ahead (i.e. h_s if you type hs) help description.  */
   int always_sure_flag;	/**< @brief do not ask confirmation questions (default=off).  */
   const char *always_sure_help; /**< @brief do not ask confirmation questions help description.  */
   char * banner_colors_arg;	/**< @brief set top banner colours: (F)oreground, (B)ackground, (P)ackage and (V)ersion (default='6,0,5,1').  */
@@ -98,6 +100,7 @@ struct gengetopt_args_info
   unsigned int word_processor_given ;	/**< @brief Whether word-processor was given.  */
   unsigned int no_skip_given ;	/**< @brief Whether no-skip was given.  */
   unsigned int show_errors_given ;	/**< @brief Whether show-errors was given.  */
+  unsigned int sync_ahead_given ;	/**< @brief Whether sync-ahead was given.  */
   unsigned int always_sure_given ;	/**< @brief Whether always-sure was given.  */
   unsigned int banner_colors_given ;	/**< @brief Whether banner-colors was given.  */
   unsigned int scoring_given ;	/**< @brief Whether scoring was given.  */
