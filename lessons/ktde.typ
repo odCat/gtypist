@@ -358,7 +358,7 @@ I:(5)
 D:verfiel immer mehr, verlief immer mild, verriet heute immer mehr,
  :vieles ist gefilmt, vielerlei merkt er, er vermittelte mir alles,
  :vermittle es heute, sie verliert heute, höre jetzt aufmerksam zu,
- :hier malt er emsig, du vermittelst das, sie ist hier vökkig fremd
+ :hier malt er emsig, du vermittelst das, sie ist hier völlig fremd
 *:LESSON7_D6
 I:(6)
 D:merke dir dies gut, verkaufe das heute, verleihe das alles heute,
