@@ -962,7 +962,7 @@ D:jjj j7j jjj j7j jjj j7j jjj
 *:_T_R_L160
 D:jjj j7u jjj 7um jjj u7m jjj
  :777 map 777 jug 777 rum 777
- :Is flight number 377 for Florida a 707, a 727 or a 747?
+ :Is flight number 377 for Florida a 727, a 737 or a 747?
  :It is a 727 with 4 stops.  With all those stops it takes almost 7 hours.
 
 I:Use your K-finger for the 8-key.

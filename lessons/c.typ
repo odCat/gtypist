@@ -334,10 +334,10 @@ B:                             Lesson C10
 
 T:			General Instructions
  :
- :The M-key and the V-key should be pressed only by the first finger of the left
+ :The V-key and the M-key should be pressed only by the first finger of the left
  :or right hand.
 
-I:(1) M and V
+I:(1) V and M
 *:_C_R_C10_1
 D:envy mount vivid made motor navel moose lever madly levy muddy dive trump
  :raven harem vain nomad view month hover lemon naval imply valet
@@ -783,7 +783,7 @@ M: UP=_EXIT "The C series contains the following 17 lessons"
  :_C_S_C7  "Lesson C7     F and U"
  :_C_S_C8  "Lesson C8     W and Y"
  :_C_S_C9  "Lesson C9     G and J"
- :_C_S_C10 "Lesson C10    M and V"
+ :_C_S_C10 "Lesson C10    V and M"
  :_C_S_C11 "Lesson C11    B and K"
  :_C_S_C12 "Lesson C12    Q and C"
  :_C_S_C13 "Lesson C13    Z and X"
