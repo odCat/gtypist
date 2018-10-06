@@ -516,7 +516,7 @@ D:aiqy bjrz aiqy bjrz aiqy bjrz aiqy bjrz aiqy bjrz aiqy bjrz
 *:LESSON13_D3
 I:(3)
 D:et koncept er en slags kladde, som skrives, hvis man ikke
- :er helt sikker på den endelige udforming af et skriftligt
+ :er helt sikker på den endelige udformning af et skriftligt
  :arbejde - kommer man til at skrive forkert, kan man bare
  :strege ud og derefter skrive videre - konceptet betragtes
 *:LESSON13_D4
