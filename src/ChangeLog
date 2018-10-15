@@ -1,3 +1,7 @@
+2018-09-15 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* error.c, error.h, gtypist.c, gtypist.h: Fix indentation
+
 2016-05-22 clutton <clutton@zoho.com>
 
 	* gtypist.c: allow --disable-nls while still using (UTF-8-)locale
