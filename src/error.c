@@ -18,6 +18,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #include "config.h"
 #include "error.h"
 #include "script.h"
@@ -49,7 +50,7 @@ void fatal_error (const char *message, const char *line)
   
   /* print out the error message and stop */
   fprintf( stderr, "%s: %s %d: %s", argv0, _("line"), global_line_counter,
-	   message );
+          message );
   if ( line != NULL )
     fprintf( stderr, ":\n%s\n", line );
   else

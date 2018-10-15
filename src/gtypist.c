@@ -80,8 +80,8 @@ char *MODE_DRILL;
 char *MODE_SPEEDTEST;
 
 /* yes/no responses and miscellanea */
-#define	QUERY_Y			'Y'
-#define	QUERY_N			'N'
+#define	QUERY_Y		    	'Y'
+#define	QUERY_N	    		'N'
 #define	DRILL_CH_ERR		'^'
 #define	DRILL_NL_ERR		'^'
 char *WAIT_MESSAGE;
@@ -125,13 +125,13 @@ static short	colour_array[] = {
 #endif
 
 /* command line and config file options */
-static struct gengetopt_args_info cl_args;      /* program options */
+static struct gengetopt_args_info cl_args;  /* program options */
 static int	cl_fgcolour = 7;		/* fg colour */
 static int	cl_bgcolour = 0;		/* bg colour */
-static int	cl_banner_bg_colour = 0;	/* banner bg colorr */
-static int	cl_banner_fg_colour = 6;	/* banner fg colour */
-static int	cl_prog_name_colour = 5;	/* program name colour */
-static int 	cl_prog_version_colour = 1;     /* program version colour */
+static int	cl_banner_bg_colour = 0;    /* banner bg colorr */
+static int	cl_banner_fg_colour = 6;    /* banner fg colour */
+static int	cl_prog_name_colour = 5;    /* program name colour */
+static int 	cl_prog_version_colour = 1; /* program version colour */
 
 /* a few global variables */
 static bool	global_resp_flag = TRUE;
@@ -165,7 +165,8 @@ static bool user_is_always_sure = FALSE;
 
 static int getch_fl( int cursor_char );
 static bool wait_user (FILE *script, char *message, char *mode );
-static void display_speed( int total_chars, double elapsed_time, int errcount );
+static void display_speed( int total_chars, double elapsed_time,
+                          int errcount );
 static void do_keybind( FILE *script, char *line );
 static void do_tutorial( FILE *script, char *line );
 static void do_instruction( FILE *script, char *line );
@@ -184,9 +185,9 @@ static void catcher( int signal );
 static FILE *open_script( const char *filename );
 static void do_bell();
 static bool get_best_speed( const char *script_filename,
-			    const char *excersise_label, double *adjusted_cpm );
+                    const char *excersise_label, double *adjusted_cpm );
 static void put_best_speed( const char *script_filename,
-			    const char *excersise_label, double adjusted_cpm );
+                    const char *excersise_label, double adjusted_cpm );
 const char *get_bestlog_filename();
 
 void bind_F12 (const char *label)
@@ -301,12 +302,12 @@ static bool wait_user (FILE *script, char *message, char *mode)
     {
       // Return to the last F12-binded location
       if( fkey_bindings[ 11 ] && *( fkey_bindings[ 11 ] ) )
-	{
+      {
           seek_label( script, fkey_bindings[ 11 ], NULL );
           seek_done = TRUE;
-	}
+      }
       else
-	do_exit( script );
+          do_exit( script );
       break;
     }
   } while (resp != ASCII_NL && resp != ASCII_SPACE && resp != ASCII_ESC);
@@ -343,7 +344,7 @@ static void display_speed( int total_chars, double elapsed_time, int errcount ) 
 
       /* remove errors in adjusted speed */
       if( adjusted_cpm < 0.01 )
-	adjusted_cpm = 0;
+        adjusted_cpm = 0;
     }
   else
     /* unmeasurable elapsed time - use big numbers */
@@ -352,12 +353,12 @@ static void display_speed( int total_chars, double elapsed_time, int errcount ) 
   /* obtain (and update?) a personal best speed */
   if( cl_args.personal_best_flag )
     {
-      had_best_speed =
-	get_best_speed( global_script_filename, __last_label, &best_cpm );
+      had_best_speed = get_best_speed(
+                        global_script_filename, __last_label, &best_cpm );
       new_best_speed = ( !had_best_speed || adjusted_cpm > best_cpm ) &&
-	!is_error_too_high( total_chars, errcount );
+                        !is_error_too_high( total_chars, errcount );
       if( new_best_speed )
-	put_best_speed( global_script_filename, __last_label, adjusted_cpm );
+          put_best_speed( global_script_filename, __last_label, adjusted_cpm );
     }
 
   /* draw speed box */
@@ -369,8 +370,8 @@ static void display_speed( int total_chars, double elapsed_time, int errcount ) 
 /*
   bind a function key to a label
 */
-static void
-do_keybind( FILE *script, char *line ) {
+static void do_keybind( FILE *script, char *line )
+{
   int	fkey;				/* function key number */
   char	*label;				/* associated label */
 
@@ -405,10 +406,10 @@ do_keybind( FILE *script, char *line ) {
 /*
   print the given text onto the screen
 */
-static void
-do_tutorial( FILE *script, char *line ) {
+static void do_tutorial( FILE *script, char *line )
+{
   int	linenum;		/* line counter */
-  bool  seek_done = FALSE;      /* was there a seek_label before exit? */
+  bool  seek_done = FALSE;  /* was there a seek_label before exit? */
 
   /* start at the top of the screen, and clear it */
   linenum = T_TOP_LINE;
@@ -418,7 +419,7 @@ do_tutorial( FILE *script, char *line ) {
   do
     {
       if ( linenum >= LINES - 1 )
-	fatal_error( _("data exceeds screen length"), line );
+        fatal_error( _("data exceeds screen length"), line );
       move( linenum, 0 );
       /* ADDSTR( SCR_DATA( line )); */
       wideaddstr(SCR_DATA( line ));
@@ -443,9 +444,8 @@ do_tutorial( FILE *script, char *line ) {
 /*
   print up a line, at most two, usually followed by a drill or a speed test
 */
-static void
-do_instruction( FILE *script, char *line ) {
-
+static void do_instruction( FILE *script, char *line )
+{
   /* move to the instruction line and output the first bit */
   move( I_TOP_LINE, 0 ); clrtobot();
   ADDSTR( SCR_DATA( line ));
@@ -907,7 +907,7 @@ do_speedtest( FILE *script, char *line ) {
 
           /* check that the character was correct */
           if ( rc == *widep || ( cl_args.word_processor_flag &&
-				 rc == ASCII_SPACE && *widep == ASCII_NL ))
+               rc == ASCII_SPACE && *widep == ASCII_NL ))
           { /* character is correct */
             if (*widep == ASCII_NL)
             {
@@ -1034,7 +1034,7 @@ do_speedtest( FILE *script, char *line ) {
                           global_on_failure_label->label);
                   /* reset value unless persistent */
                   if (!global_on_failure_label_persistent)
-                    global_on_failure_label = NULL;
+                      global_on_failure_label = NULL;
                   wait_user (script, message, MODE_SPEEDTEST);
                   seek_done = TRUE;
                   break;
@@ -1106,10 +1106,10 @@ do_goto( FILE *script, char *line, bool flag )
       /* remove trailing whitespace from line */
       line_iterator = line + strlen(line) - 1;
       while (line_iterator != line && isspace(*line_iterator))
-	{
-	  *line_iterator = '\0';
-	  --line_iterator;
-	}
+      {
+        *line_iterator = '\0';
+        --line_iterator;
+      }
 
       seek_label( script, SCR_DATA( line ), line );
     }
@@ -1323,7 +1323,7 @@ do_error_max_set( FILE *script, char *line )
   while (data != SCR_DATA(line) && !star && (isspace( *data ) || *data == '*'))
     {
       if (*data == '*')
-	star = TRUE;
+        star = TRUE;
       *data = '\0';
       --data;
     }
@@ -1478,42 +1478,42 @@ parse_file( FILE *script, char *label ) {
 
   /* just handle lines until the end of the file */
   while( ! feof( script ))
+  {
+    command = SCR_COMMAND( line );
+    switch( command )
     {
-      command = SCR_COMMAND( line );
-      switch( command )
-	{
-	case C_TUTORIAL:
-	  do_tutorial( script, line ); break;
-	case C_INSTRUCTION:
-	  do_instruction( script, line ); break;
-	case C_CLEAR:	do_clear( script, line ); break;
-	case C_GOTO:	do_goto( script, line, TRUE ); break;
-	case C_EXIT:	do_exit( script ); break;
-	case C_QUERY:	do_query( script, line ); break;
-	case C_YGOTO:	do_goto( script, line, global_resp_flag );
-	  break;
-	case C_NGOTO:	do_goto( script, line, !global_resp_flag );
-	  break;
-	case C_DRILL:
-	case C_DRILL_PRACTICE_ONLY:
-	  do_drill( script, line ); break;
-	case C_SPEEDTEST:
-	case C_SPEEDTEST_PRACTICE_ONLY:
-	  do_speedtest( script, line ); break;
-	case C_KEYBIND:	do_keybind( script, line ); break;
+      case C_TUTORIAL:
+        do_tutorial( script, line ); break;
+      case C_INSTRUCTION:
+        do_instruction( script, line ); break;
+      case C_CLEAR:	do_clear( script, line ); break;
+      case C_GOTO:	do_goto( script, line, TRUE ); break;
+      case C_EXIT:	do_exit( script ); break;
+      case C_QUERY:	do_query( script, line ); break;
+      case C_YGOTO:	do_goto( script, line, global_resp_flag );
+        break;
+      case C_NGOTO:	do_goto( script, line, !global_resp_flag );
+        break;
+      case C_DRILL:
+      case C_DRILL_PRACTICE_ONLY:
+        do_drill( script, line ); break;
+      case C_SPEEDTEST:
+      case C_SPEEDTEST_PRACTICE_ONLY:
+        do_speedtest( script, line ); break;
+      case C_KEYBIND:	do_keybind( script, line ); break;
 
-	case C_LABEL:
-	   __update_last_label (SCR_DATA (line));
-	   get_script_line (script, line);
-	   break;
-	case C_ERROR_MAX_SET: do_error_max_set( script, line ); break;
-	case C_ON_FAILURE_SET: do_on_failure_label_set( script, line ); break;
-	case C_MENU: do_menu (script, line); break;
-	default:
-	  fatal_error( _("unknown command"), line );
-	  break;
-	}
+      case C_LABEL:
+         __update_last_label (SCR_DATA (line));
+         get_script_line (script, line);
+         break;
+      case C_ERROR_MAX_SET: do_error_max_set( script, line ); break;
+      case C_ON_FAILURE_SET: do_on_failure_label_set( script, line ); break;
+      case C_MENU: do_menu (script, line); break;
+      default:
+        fatal_error( _("unknown command"), line );
+        break;
     }
+  }
 }
 
 /*

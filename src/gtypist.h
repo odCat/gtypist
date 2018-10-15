@@ -16,12 +16,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 //	Header for some interface details.
 #ifndef GTYPIST_H
 #define GTYPIST_H
 
 /* some screen postions */
-#define	MESSAGE_LINE		(LINES - 1)
+#define	MESSAGE_LINE	(LINES - 1)
 #define B_TOP_LINE		0
 #define T_TOP_LINE		(B_TOP_LINE + 1)
 #define I_TOP_LINE		(T_TOP_LINE)
