@@ -36,6 +36,7 @@
 #include "banner.h"
 #include "gtypist.h"
 #include "cmdline.h"
+#include "error.h"
 
 #include "gettext.h"
 #define _(String) gettext (String)

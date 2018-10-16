@@ -46,6 +46,7 @@
 #include <langinfo.h>
 #endif
 
+#include "banner.h"
 #include "cursmenu.h"
 #include "script.h"
 #include "error.h"
@@ -54,6 +55,7 @@
 #include "infoview.h"
 #include "speedbox.h"
 #include "cmdline.h"
+#include "script.h"
 
 #include "gettext.h"
 #define _(String) gettext (String)

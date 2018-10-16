@@ -19,6 +19,7 @@
 
 #include "config.h"
 #include "utf8.h"
+#include "error.h"
 
 #if defined(HAVE_PDCURSES) || defined(OS_BSD)
 #include <curses.h>

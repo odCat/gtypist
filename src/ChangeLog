@@ -1,3 +1,8 @@
+2018-06-16 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* banner.c, cursmenu.c, gtypist.c, infoview.c, script.c,
+	script.h, utf8.c: Fix implicit declaration errors
+
 2018-09-15 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* error.c, error.h, gtypist.c, gtypist.h: Fix indentation

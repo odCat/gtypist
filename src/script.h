@@ -19,22 +19,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #ifndef SCRIPT_H
 #define SCRIPT_H
 
 #include <stdio.h>
 
 /* things to help parse the input file */
-#define	SCR_COMMAND(X)		(X[0])
+#define	SCR_COMMAND(X)	(X[0])
 #define	SCR_SEP(X)		(X[1])
 #define	SCR_DATA(X)		(&X[2])
 #define	C_COMMENT		'#'
-#define	C_ALT_COMMENT		'!'
+#define	C_ALT_COMMENT	'!'
 #define	C_SEP			':'
 #define	C_CONT			' '
 #define	C_LABEL			'*'
 #define	C_TUTORIAL		'T'
-#define	C_INSTRUCTION		'I'
+#define	C_INSTRUCTION	'I'
 #define	C_CLEAR			'B'
 #define	C_GOTO			'G'
 #define	C_EXIT			'X'
@@ -73,7 +74,7 @@ extern char *__last_label;
 void __update_last_label (const char *);
 
 /* a global area for label indexing - singly linked lists, hashed */
-#define	NLHASH			32		/* num hash lists */
+#define	NLHASH			32	/* num hash lists */
 struct label_entry {
   char		*label;			/* label string */
   long		offset;			/* offset into file */
@@ -89,6 +90,7 @@ extern char *buffer_command( FILE *script, char *line );
 extern void seek_label( FILE *script, char *label, char *ref_line );
 extern int hash_label( char *label );
 extern void do_exit( FILE *script );
+void check_script_file_with_current_encoding( FILE *script );
 
 
 extern void bind_F12 (const char *);	// Defined in gtypist.c

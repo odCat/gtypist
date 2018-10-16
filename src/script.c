@@ -18,6 +18,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #include "config.h"
 #include "script.h"
 
@@ -227,15 +228,15 @@ void get_script_line( FILE *script, char *line )
       if (numChars == -1)
         fatal_error( _("Invalid multibyte sequence (wrong encoding?)"), line);
       if ( numChars < MIN_SCR_LINE )
-	fatal_error( _("data shortage"), line );
+        fatal_error( _("data shortage"), line );
       if ( SCR_SEP( line ) != C_SEP )
-	fatal_error( _("missing ':'"), line );
+        fatal_error( _("missing ':'"), line );
       if ( SCR_COMMAND( line ) != C_LABEL 
-	   && SCR_COMMAND( line ) != C_GOTO 
-	   && SCR_COMMAND( line ) != C_YGOTO
-	   && SCR_COMMAND( line ) != C_NGOTO
+           && SCR_COMMAND( line ) != C_GOTO 
+           && SCR_COMMAND( line ) != C_YGOTO
+           && SCR_COMMAND( line ) != C_NGOTO
            && utf8len(SCR_DATA( line )) > COLS )
-	fatal_error( _("line too long for screen"), line );
+        fatal_error( _("line too long for screen"), line );
     }
 }
 
