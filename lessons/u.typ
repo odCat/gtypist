@@ -642,6 +642,6 @@ M: UP=_EXIT "The U series contains the following 13 lessons"
  :_U_S_U11 "Lesson U11    Drill on sion-tion Combinations"
  :_U_S_U12 "Lesson U12    Drill on ter, ther, tor, ture, ster, der"
  :_U_S_U13 "Lesson U13    Drill on qu, ch, wh, dw, sw, tw, de, des, dis, ex,"
- :_U_S_U13 "Lesson U13    self, tran, cial, cious, ology, ship, tive"
+ :_U_S_U13 "              self, tran, cial, cious, ology, ship, tive"
 *:_U_EXIT
 #------------------------------------------------------------------------------

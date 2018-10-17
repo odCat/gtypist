@@ -1,3 +1,7 @@
+2018-09-17 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* u.typ: implemented a workaround for bug #45116, no submitter
+
 2018-09-07 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* ktdk.typ: fix a word, thanks to
