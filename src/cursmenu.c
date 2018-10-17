@@ -190,15 +190,14 @@ char *do_menu (FILE *script, char *line)
 
   data = buffer_command (script, line);
 
-  /* data has a trailing '\n' => num_items = num_newlines - 1 
-     (plus one item for UP or EXIT) */
+  /* Count lines */
   i = 0; j = 0;
   while (data[i] != '\0')
   {
     if (data[i++] == '\n')
       j++;
   }
-//  num_items = j;
+  /* and substrat one for title */
   num_items = j - 1;
 
   i = 0;
@@ -215,14 +214,14 @@ char *do_menu (FILE *script, char *line)
       i++;
     data[i] = 0;
     if (strcmp (up, "_exit") == 0 ||
-	strcmp (up, "_EXIT") == 0)
+        strcmp (up, "_EXIT") == 0)
       up = NULL;
 
     has_up_label = 1;
   }
 
   /* get title */
-  while (data[i] != '"') /* find opening " */
+  while (data[i] != '"') /* find opening quote mark */
     i++;
   i++;
   title = data + i;
@@ -321,130 +320,127 @@ char *do_menu (FILE *script, char *line)
 
   // The prompt at the bottom of the screen
   mvwideaddstr (LINES - 1, 0,
-		_(
-"Use arrowed keys to move around, "
-"SPACE or RETURN to select and ESCAPE to go back")
-		);
+		_( "Use arrowed keys to move around, "
+        "SPACE or RETURN to select and ESCAPE to go back" ));
   
   do
     {
       /* (re)display the menu */
       for (i = 0; i < columns; i++)
-	{
-	  /* write 1 column */
-	  for (j = 0; j < real_items_per_column &&
-		 (idx = i * real_items_per_column + j + start_idx)
-		 <= end_idx; 
-	       j++)
-	    {
-	      if (idx == cur_choice)
-		wattrset (stdscr, A_REVERSE);
-	      else
-		wattroff (stdscr, A_REVERSE);
-	      /* the formula for start_x:
-		 i=0: 1*spacing + 0*max_width
-		 i=1: 2*spacing + 1*max_width
-		 i=2: 3*spacing + 2*max_width
-		 i=3: 4*spacing + 3*max_width
-		 => (i+1)*spacing + i*max_width */
-	      mvwideaddstr (start_y + j,
-			 (i + 1) * spacing + i * max_width,
-			 descriptions[idx]);
-	      for (k = max_width - utf8len (descriptions[idx]); k > 0; k--)
-		waddch (stdscr, ' ');
-	    }
-	}
+      {
+        /* write 1 column */
+        for (j = 0; j < real_items_per_column &&
+         (idx = i * real_items_per_column + j + start_idx)
+         <= end_idx; j++)
+        {
+          if (idx == cur_choice)
+            wattrset (stdscr, A_REVERSE);
+          else
+            wattroff (stdscr, A_REVERSE);
+          /* the formula for start_x:
+          i=0: 1*spacing + 0*max_width
+          i=1: 2*spacing + 1*max_width
+          i=2: 3*spacing + 2*max_width
+          i=3: 4*spacing + 3*max_width
+          => (i+1)*spacing + i*max_width */
+          mvwideaddstr (start_y + j,
+                        (i + 1) * spacing + i * max_width,
+          descriptions[idx]);
+          for (k = max_width - utf8len (descriptions[idx]); k > 0; k--)
+            waddch (stdscr, ' ');
+        }
+      }
 
       wattroff (stdscr, A_REVERSE);
 
       get_widech( &ch );
       switch (ch)
-	{
-	case KEY_UP:
-	case 'K':
-	case 'k':
-	  cur_choice = max (0, cur_choice - 1);
-	  if (cur_choice < start_idx) {
-	    start_idx--; end_idx--;
-	  }
-	  break;
-	case KEY_DOWN:
-	case 'J':
-	case 'j':
-	  cur_choice = min (cur_choice + 1, num_items - 1);
-	  if (cur_choice > end_idx) {
-	    start_idx++; end_idx++;
-	  }
-	  break;
+      {
+        case KEY_UP:
+        case 'K':
+        case 'k':
+          cur_choice = max (0, cur_choice - 1);
+          if (cur_choice < start_idx) {
+            start_idx--; end_idx--;
+          }
+          break;
+        case KEY_DOWN:
+        case 'J':
+        case 'j':
+          cur_choice = min (cur_choice + 1, num_items - 1);
+          if (cur_choice > end_idx) {
+            start_idx++; end_idx++;
+          }
+          break;
 
-	case KEY_PPAGE:
-	  k = start_idx;
-	  start_idx = max (0, start_idx - items_per_page);
-	  end_idx += start_idx - k;
-	  cur_choice += start_idx - k;
-	  break;
-	case KEY_NPAGE:
-	  k = end_idx;
-	  end_idx = min (end_idx + items_per_page, num_items - 1);
-	  start_idx += end_idx - k;
-	  cur_choice += end_idx - k;
-	  break;
+        case KEY_PPAGE:
+          k = start_idx;
+          start_idx = max (0, start_idx - items_per_page);
+          end_idx += start_idx - k;
+          cur_choice += start_idx - k;
+          break;
+        case KEY_NPAGE:
+          k = end_idx;
+          end_idx = min (end_idx + items_per_page, num_items - 1);
+          start_idx += end_idx - k;
+          cur_choice += end_idx - k;
+          break;
 
-	case KEY_RIGHT:
-	case 'l':
-	case 'L':
-	  if (cur_choice + real_items_per_column < end_idx)
-	     cur_choice += real_items_per_column;
-	  else
-	  {
-	     k = end_idx;
-	     end_idx = min (end_idx + items_per_page, num_items - 1);
-	     start_idx += end_idx - k;
-	     if (end_idx - k)
-	        cur_choice += end_idx - k;
-	     else
-		cur_choice = num_items - 1;
-	  }
+        case KEY_RIGHT:
+        case 'l':
+        case 'L':
+          if (cur_choice + real_items_per_column < end_idx)
+             cur_choice += real_items_per_column;
+          else
+          {
+             k = end_idx;
+             end_idx = min (end_idx + items_per_page, num_items - 1);
+             start_idx += end_idx - k;
+             if (end_idx - k)
+                cur_choice += end_idx - k;
+             else
+                cur_choice = num_items - 1;
+          }
 
-	  break;
+          break;
 
-	case ASCII_NL:
-	case ASCII_SPACE:
-	  ch = KEY_ENTER;
-	case KEY_ENTER:
-	  break;
+        case ASCII_NL:
+        case ASCII_SPACE:
+          ch = KEY_ENTER;
+        case KEY_ENTER:
+          break;
 
-	case KEY_LEFT:
-	case 'h':
-	case 'H':
-	  if (cur_choice - real_items_per_column >= start_idx)
-	     cur_choice -= real_items_per_column;
-	  else
-	  {
-	     k = start_idx;
-	     start_idx = max (0, start_idx - items_per_page);
-	     end_idx += start_idx - k;
-	     if (start_idx - k)
-	        cur_choice += start_idx - k;
-	     else
-		cur_choice = 0;
-	  }
-	  break;
-	  
-	case KEY_CANCEL: // anyone knows where is this key on a PC keyboard?
-	case ASCII_ESC:
-	case 'q':
-	case 'Q':
-	  if (has_up_label)
+        case KEY_LEFT:
+        case 'h':
+        case 'H':
+          if (cur_choice - real_items_per_column >= start_idx)
+             cur_choice -= real_items_per_column;
+          else
+          {
+             k = start_idx;
+             start_idx = max (0, start_idx - items_per_page);
+             end_idx += start_idx - k;
+             if (start_idx - k)
+                cur_choice += start_idx - k;
+             else
+                cur_choice = 0;
+          }
+          break;
+          
+        case KEY_CANCEL: // anyone knows where is this key on a PC keyboard?
+        case ASCII_ESC:
+        case 'q':
+        case 'Q':
+          if (has_up_label)
              seek_label (script, up, NULL);
-	  else
-	     prepare_to_go_back (script);
-	  goto cleanup;
+          else
+             prepare_to_go_back (script);
+          goto cleanup;
 
-	default:
-	  // printf ("libncurses think that it's key \\%o\n", ch);
-	  break;
-	}
+        default:
+          // printf ("libncurses think that it's key \\%o\n", ch);
+          break;
+      }
       
     } while (ch != KEY_ENTER);
 

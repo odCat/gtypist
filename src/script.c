@@ -254,11 +254,11 @@ char *buffer_command( FILE *script, char *line ) {
 			       strlen(SCR_DATA( line )) +
 			       strlen(STRING_NL) + 1 );
       if ( data == NULL )
-	fatal_error( _("internal error: malloc"), line );
+        fatal_error( _("internal error: malloc"), line );
       
       /* store the data in the allocated area */
       if ( total_chars == 0 )
-	strcpy( data, "" );
+        strcpy( data, "" );
       strcat( data, SCR_DATA( line ) );
       strcat( data, STRING_NL );
       total_chars = strlen( data );

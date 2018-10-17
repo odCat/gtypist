@@ -1,4 +1,8 @@
-2018-06-16 Mihai Gătejescu <gus666xe@gmail.com>
+2018-09-17 Mihai Gătejescu <gus666xe@gmial.com>
+
+	* cursmenu.c, script.c: Indentation changes
+
+2018-09-16 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* banner.c, cursmenu.c, gtypist.c, infoview.c, script.c,
 	script.h, utf8.c: Fix implicit declaration errors
