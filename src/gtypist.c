@@ -214,8 +214,8 @@ void bind_F12 (const char *label)
   char mistyping indications.  And to complicate things, some
   xterms seem not make the cursor invisible either.
 */
-static int
-getch_fl( int cursor_char )
+static
+int getch_fl( int cursor_char )
 {
   int	y, x;				/* saved cursor posn */
   int	return_char;			/* return value */
@@ -283,7 +283,8 @@ getch_fl( int cursor_char )
   wait for a nod from the user before continuing. In MODE_TUTORIAL only, TRUE is
   returned if the user pressed escape to indicate that seek_label was called
 */
-static bool wait_user (FILE *script, char *message, char *mode)
+static
+bool wait_user (FILE *script, char *message, char *mode)
 {
   int	resp;			/* response character */
   bool	seek_done = FALSE;	/* was seek_label called? */
@@ -324,7 +325,9 @@ static bool wait_user (FILE *script, char *message, char *mode)
 /*
   calculate and display speed and accuracy from a drill or speed test
 */
-static void display_speed( int total_chars, double elapsed_time, int errcount ) {
+static
+void display_speed( int total_chars, double elapsed_time, int errcount )
+{
   double	test_time;			/* time in minutes */
   double	cpm, adjusted_cpm;		/* speeds in CPM */
   bool		had_best_speed = FALSE;		/* already had a p.best? */
@@ -372,7 +375,8 @@ static void display_speed( int total_chars, double elapsed_time, int errcount ) 
 /*
   bind a function key to a label
 */
-static void do_keybind( FILE *script, char *line )
+static
+void do_keybind( FILE *script, char *line )
 {
   int	fkey;				/* function key number */
   char	*label;				/* associated label */
@@ -408,7 +412,8 @@ static void do_keybind( FILE *script, char *line )
 /*
   print the given text onto the screen
 */
-static void do_tutorial( FILE *script, char *line )
+static
+void do_tutorial( FILE *script, char *line )
 {
   int	linenum;		/* line counter */
   bool  seek_done = FALSE;  /* was there a seek_label before exit? */
@@ -446,7 +451,8 @@ static void do_tutorial( FILE *script, char *line )
 /*
   print up a line, at most two, usually followed by a drill or a speed test
 */
-static void do_instruction( FILE *script, char *line )
+static
+void do_instruction( FILE *script, char *line )
 {
   /* move to the instruction line and output the first bit */
   move( I_TOP_LINE, 0 ); clrtobot();
@@ -471,8 +477,9 @@ static void do_instruction( FILE *script, char *line )
   Calculate whether a drill's error rate is too high, keeping in mind
   rounding of output to a single decimal place.
 */
-static int
-is_error_too_high( int chars_typed, int errors ) {
+static
+int is_error_too_high( int chars_typed, int errors )
+{
   /* (double)100.0*(double)errcount / (double)total_chars ) */
   double err_max, err;
   char buf[BUFSIZ];
@@ -492,8 +499,9 @@ is_error_too_high( int chars_typed, int errors ) {
 /*
   execute a typing drill
 */
-static void
-do_drill( FILE *script, char *line ) {
+static
+void do_drill( FILE *script, char *line )
+{
 
   int	errors = 0;		 /* error count */
   int	linenum;		 /* line counter */
@@ -781,8 +789,9 @@ do_drill( FILE *script, char *line ) {
 /*
   execute a timed speed test
 */
-static void
-do_speedtest( FILE *script, char *line ) {
+static
+void do_speedtest( FILE *script, char *line )
+{
   int	errors = 0;		 /* error count */
   int	*errors_buf;		 /* error localization buffer */
   int	errors_pos;		 /* error localization position */
@@ -1081,7 +1090,8 @@ do_speedtest( FILE *script, char *line ) {
 /*
  * clear the complete screen, maybe leaving a header behind
  */
-static void do_clear (FILE *script, char *line)
+static
+void do_clear (FILE *script, char *line)
 {
   /* clear the complete screen */
   move( B_TOP_LINE , 0 ); clrtobot();
@@ -1097,8 +1107,8 @@ static void do_clear (FILE *script, char *line)
 /*
   go to a label - the flag is used to implement conditional goto's
 */
-static void
-do_goto( FILE *script, char *line, bool flag )
+static
+void do_goto( FILE *script, char *line, bool flag )
 {
   char *line_iterator;
 
@@ -1124,8 +1134,8 @@ do_goto( FILE *script, char *line, bool flag )
   (this is used at the end of an exercise (drill/speedtest))
   The second argument is FALSE if skipping a lesson isn't allowed (--no-skip).
 */
-static char
-do_query_repeat ( FILE *script, bool allow_next )
+static
+char do_query_repeat ( FILE *script, bool allow_next )
 {
   int resp;
 
@@ -1185,8 +1195,8 @@ do_query_repeat ( FILE *script, bool allow_next )
   returns the value instead) and doesn't accept Fkeys.
   This is used to let the user confirm (E)xit.
 */
-static bool
-do_query_simple ( char *text )
+static
+bool do_query_simple ( char *text )
 {
   int resp;
 
@@ -1227,8 +1237,8 @@ do_query_simple ( char *text )
   get a Y/N response from the user: returns true if we just got the
   expected Y/N, false if exit was by a function key
 */
-static bool
-do_query( FILE *script, char *line )
+static
+bool do_query( FILE *script, char *line )
 {
   int	resp;			/* response character */
   int	fkey;			/* function key iterator */
@@ -1308,8 +1318,8 @@ do_query( FILE *script, char *line )
   execute a E:-command: either "E: <value>%" (only applies to the next drill)
   or "E: <value>%*" (applies until the next E:-command)
 */
-static void
-do_error_max_set( FILE *script, char *line )
+static
+void do_error_max_set( FILE *script, char *line )
 {
   char copy_of_line[MAX_SCR_LINE];
   char *data;
@@ -1400,8 +1410,8 @@ do_error_max_set( FILE *script, char *line )
 /*
 
 */
-static void
-do_on_failure_label_set( FILE *script, char *line )
+static
+void do_on_failure_label_set( FILE *script, char *line )
 {
   char copy_of_line[MAX_SCR_LINE];
   char *line_iterator;
@@ -1458,9 +1468,9 @@ do_on_failure_label_set( FILE *script, char *line )
 /*
   execute the directives in the script file
 */
-static void
-parse_file( FILE *script, char *label ) {
-
+static
+void parse_file( FILE *script, char *label )
+{
   char	line[MAX_SCR_LINE];		/* line buffer */
   char	command;			/* current command */
 
@@ -1521,8 +1531,8 @@ parse_file( FILE *script, char *label ) {
 /*
   Parse command line arguments and config file
 */
-static void
-parse_cmdline_and_config( int argc, char **argv )
+static
+void parse_cmdline_and_config( int argc, char **argv )
 {
     // parse command line
     if( cmdline_parser( argc, argv, &cl_args ) != 0 )
@@ -1588,9 +1598,9 @@ parse_cmdline_and_config( int argc, char **argv )
 /*
   signal handler to stop curses stuff on intr
 */
-static void
-catcher( int signal ) {
-
+static
+void catcher( int signal )
+{
   /* unravel colours and curses, clean up and exit */
   if ( cl_args.colours_given && has_colors() )
     wbkgdset( stdscr, 0 );
