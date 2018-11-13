@@ -379,6 +379,8 @@ Lessons in Czech
 QWERTY course in Spanish
 @item ru.typ
 Lessons in Russian
+@item p.typ
+Special characters course for programmers
 @item kt*.typ
 These lessons are the standard lessons from
 @uref{http://ktouch.sourceforge.net/, Ktouch 1.6}, which have been

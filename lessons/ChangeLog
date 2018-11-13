@@ -1,3 +1,8 @@
+2018-11-13 Mihai Gatejescu <gus666xe@gmail.com>
+
+	* p.typ: Add special character lesson for programmers,
+	thanks to Danial Long Sockwell <daniel@codesections.com>
+
 2018-09-17 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* u.typ: implemented a workaround for bug #45116, no submitter
