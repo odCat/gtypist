@@ -155,6 +155,8 @@ int do_beginner_infoview()
         "more information about the source and the author of the lessons. If you want\n"
         "to write your own lessons, look at the gtypist manual, it's really simple!\n"
         "\n"
+        "Check the new special character course for programmers in \"More lessons...\".\n"
+        "\n"
         "If you have any questions about GNU Typist, please write to the gtypist\n"
         "mailing list at <bug-gtypist@gnu.org>."
     );
