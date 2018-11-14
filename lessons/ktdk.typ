@@ -870,7 +870,7 @@ D:abcdefghijklmnopqrstuvwxyzæøå,.-
 I:(2)
 D:Hvis du vil udvide dit ordforråd, må du slå alle de
  :ord, du ikke kender, op i en fremmedordbog, efterhånden
- :som du støder på dem, skrifteligt eller mundtligt.
+ :som du støder på dem, skriftligt eller mundtligt.
  :Jo flere ord du kender, desto lettere er det at læse
 *:LESSON23_D3
 I:(3)
@@ -916,12 +916,12 @@ D:abcdefghijklmnopqrstuvwxyzæøå,.-
 I:(2)
 D:hvert imidlertid nede penge sent bag blade fleste gård
  :hvert imidlertid nede penge sent bag blade fleste gård
- :For millioener af år siden var jorden dækket af varme,
+ :For millioner af år siden var jorden dækket af varme,
  :lavvandede have. I disse have levede utallige smådyr.
 *:LESSON24_D3
 I:(3)
 D:Når de døde, sank de ned på havbunden, hvor de efter-
- :hånden dannede et slamlignede lag. Dette slamlag blev
+ :hånden dannede et slamlignende lag. Dette slamlag blev
  :tykkere og tykkere og blev senere dækket af et tykt
  :lag mudder, som langsomt omdannedes til en porøs sten-
 *:LESSON24_D4
@@ -1412,7 +1412,7 @@ D:Syntetiske farver og plasticmaling har gjort det nemt for
  :mets vægge. Familiens medlemmer har fundet en ny fælles in-
 *:LESSON37_D2
 I:(2)
-D:teresse. Farvehandlerens butik bugner med materialerm, som
+D:teresse. Farvehandlerens butik bugner med materialer, som
  :kan live op og skabe humør. Der er mode i farver. Når en
  :modeskaber i Paris bestemmer, at nu skal kvinderne gå i
  :beige og grønt, så sidder farvefabrikanterne ved hans fød-
@@ -1566,7 +1566,7 @@ I:(2)
 D:struktur og funktion, kaldes økologi, der som selvstændig
  :videnskab er relativ ung. Dens forskningsprogram er først
  :blevet klart formuleret i det tyvende århundrede. Det har
- :dog altid været således, at jægere, diskere, kvægavlere og
+ :dog altid været således, at jægere, fiskere, kvægavlere og
 *:LESSON42_D3
 I:(3)
 D:agerdyrkere som en ganske naturlig ting har arbejdet ud fra
@@ -1694,7 +1694,7 @@ I:(3)
 D:mer. Man ved ikke meget om, hvordan det opkvikkende stof på-
  :virker vort nervesystem, og man må derfor indtil videre nøj-
  :es med at konstatere en vis positiv virkning på evnen til at
- :lære og ril at få ideer. Koffein i mindre portioner er uska-
+ :lære og til at få ideer. Koffein i mindre portioner er uska-
 *:LESSON46_D4
 I:(4)
 D:deligt, men ved en dosis på over ti gram, der svarer til om-
@@ -1778,7 +1778,7 @@ I:(3)
 D:halset, besat med kniplinger. Håret, der var sat op på hove-
  :det, skærmede hun imod solen med sin sorte silkeparasol. Når
  :varmen blev helt uudholdelig, åbnede hun de høje knapstøvler
- :en ganske lille smule. Frokosten belv indtaget i det grønne.
+ :en ganske lille smule. Frokosten blev indtaget i det grønne.
 *:LESSON49_D4
 I:(4)
 D:Den var medbragt hjemmefra, omhyggeligt pakket ind i en sko-
@@ -1804,13 +1804,14 @@ D:i timen, men denne hastighed bliver der kun tale om, når det
 *:LESSON50_D3
 I:(3)
 D:ke til det. Dovendyret er også vanskeligt at få øje på, for-
- :di der er grønt som de blade, det hænger imellem. Ikke fordi
+ :di det er grønt som de blade, det hænger imellem. Ikke fordi
  :det har en grøn pels, for det er der ingen dyr, der har, men
  :fordi det som det eneste dyr har alger i håret. Hvert enkelt
 *:LESSON50_D4
 I:(4)
 D:hår er forsynet med riller på langs og på tværs, og i dem er
  :det muligt for algerne at gro. Det sker dog ikke i en zoolo-
+ :gisk have.
 G:E_LESSON50
 
 
