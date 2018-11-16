@@ -191,7 +191,7 @@ gtypist will keep track of your personal best typing speeds and tell
 you when you've beaten them. Best typing speeds are saved in a
 ``bestlog'' in the user's home directory.
 
-@item -e, --error-max
+@item -e, --max-error
 Specifies the default maximum error percentage.  The default value is
 3.0 and it must be between 0.0 and 100.0. There is a corresponding
 script file command (@pxref{Script file commands}) which only
@@ -636,7 +636,7 @@ This command is used to set the highest error-rate permitted for the
 next drill (@code{E:<value>%}) or for all following drills until the
 next @code{E:} (@code{E:<value>%*}).
 
-If @option{--error-max/-e} is specified then this command will only
+If @option{--max-error/-e} is specified then this command will only
 have an effect if it is @emph{stricter} than the value specified on
 the command-line.
 

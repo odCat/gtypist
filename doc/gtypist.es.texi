@@ -207,7 +207,7 @@ admite en DOS):
 
 @table @code
 
-@item -e, --error-max
+@item -e, --max-error
 Especifica el porcentaje de error máximo.  El valor predeterminado es
 3.0 y debe estar entre 0.0 y 100.0.  Existe un comando de fichero de
 script (@pxref{Sintaxis de las lecciones}) que sólo sobre-escribe esto si
@@ -602,7 +602,7 @@ para el siguiente entrenamiento (@code{E:<value>%}) o para todas las
 prácticas posteriores hasta la siguiente @code{E:}
 (@code{E:<value>%*}).
 
-Si se especifica @option{--error-max/-e}, entonces este comando sólo
+Si se especifica @option{--max-error/-e}, entonces este comando sólo
 surte efecto si es --------> @emph{stricter} que el valor especificado
 en la línea de comandos.
 

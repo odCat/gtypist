@@ -1386,9 +1386,9 @@ void do_error_max_set( FILE *script, char *line )
        if (*tail != '\0')
        fatal_error( _("can't parse value"), tail );*/
     /*
-      If --error-max is specified (but *not* if the default value is used),
+      If --max-error is specified (but *not* if the default value is used),
       an E:-command will only be applied if its level is more
-      difficult (smaller) than the one specified via --error-max/-e
+      difficult (smaller) than the one specified via --max-error/-e
     */
     if (cl_args.max_error_given) {
       if (temp_value < cl_args.max_error_arg)

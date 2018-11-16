@@ -228,7 +228,7 @@ nejsou v DOSu podporovány).
 
 @table @code
 
-@item -e, --error-max
+@item -e, --max-error
 Udává maximální procento chybovosti při zadávání textu.
 Defaultní hodnota je 3,0. Musí být mezi 0,0 a 100,0.
 Existuje i příkaz skriptovacího jazyka
@@ -569,7 +569,7 @@ chyb dovoleného pro úspěšné absolvování následující lekce
 (E:<value>%) či pro všechny lekce až do dalšího výskytu E
 (E:<value>%*).
 
-Pokud je nastaveno @option{--error-max/-e}, tak bute tento
+Pokud je nastaveno @option{--max-error/-e}, tak bute tento
 příkaz platit pouze tehdy, pokud je @emph{přísnější} 
 než hodnota specifikovaná na příkazové řádce.
 
