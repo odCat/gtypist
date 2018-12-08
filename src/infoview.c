@@ -128,7 +128,7 @@ int do_beginner_infoview()
         "(in particular, the manual describes how to resize GTypist's window).\n"
         "\n"
         "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
-        "using gtypist, or ESCAPE to use gtypist and never show this dialog again.\n"
+        "using gtypist, or 'D' to use gtypist and never show this dialog again.\n"
         "\n"
         "There are two types of typing exercises: \"drills\" and \"speed tests\". In a\n"
         "\"drill\", gtypist displays text in every other line on the screen and waits\n"
