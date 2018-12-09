@@ -20,7 +20,7 @@ AC_PROG_YACC
 
 # Set of available languages.
 
-ALL_LINGUAS="cs de es eu fi fr nl pl ru tr zh_CN zh_TW"
+ALL_LINGUAS="cs de es eu fi fr nl pl ro ru tr zh_CN zh_TW"
 
 # Checks for header files.
 
