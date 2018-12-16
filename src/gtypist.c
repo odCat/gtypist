@@ -1438,28 +1438,26 @@ void do_on_failure_label_set( FILE *script, char *line )
   /* check for special value "NULL" */
   if (strcmp(SCR_DATA(line), "NULL") == 0)
     global_on_failure_label = NULL;
-  else
+  else {
+    /* find the right hash list for the label */
+    i = hash_label( SCR_DATA(line) );
+
+    /* search the linked list for the label */
+    for ( global_on_failure_label = global_label_list[i];
+    global_on_failure_label != NULL;
+    global_on_failure_label = global_on_failure_label->next )
+    
+    /* see if this is our label */
+    if ( strcmp( global_on_failure_label->label, SCR_DATA(line) ) == 0 )
+      break;
+
+    /* see if the label was not found in the file */
+    if ( global_on_failure_label == NULL )
     {
-      /* find the right hash list for the label */
-      i = hash_label( SCR_DATA(line) );
-
-      /* search the linked list for the label */
-      for ( global_on_failure_label = global_label_list[i];
-	    global_on_failure_label != NULL;
-	    global_on_failure_label = global_on_failure_label->next )
-	{
-	  /* see if this is our label */
-	  if ( strcmp( global_on_failure_label->label, SCR_DATA(line) ) == 0 )
-	    break;
-	}
-
-      /* see if the label was not found in the file */
-      if ( global_on_failure_label == NULL )
-	{
-	  sprintf( message, _("label '%s' not found"), SCR_DATA(line) );
-	  fatal_error( message, copy_of_line );
-	}
+      sprintf( message, _("label '%s' not found"), SCR_DATA(line) );
+      fatal_error( message, copy_of_line );
     }
+  }
 
   /* get the next command */
   get_script_line( script, line );
@@ -1476,16 +1474,14 @@ void parse_file( FILE *script, char *label )
 
   /* if label given then start running there */
   if ( label != NULL )
-    {
-      /* find the label we want to start at */
-      seek_label( script, label, NULL );
-    }
-  else
-    {
-      /* start at the very beginning (a very good place to start) */
-      rewind( script );
-      global_line_counter = 0;
-    }
+  {
+    /* find the label we want to start at */
+    seek_label( script, label, NULL );
+  } else {
+    /* start at the very beginning (a very good place to start) */
+    rewind( script );
+    global_line_counter = 0;
+  }
   get_script_line( script, line );
 
   /* just handle lines until the end of the file */
@@ -1534,65 +1530,69 @@ void parse_file( FILE *script, char *label )
 static
 void parse_cmdline_and_config( int argc, char **argv )
 {
-    // parse command line
-    if( cmdline_parser( argc, argv, &cl_args ) != 0 )
-	exit( 1 );
+  // parse command line
+  if( cmdline_parser( argc, argv, &cl_args ) != 0 )
+    exit( 1 );
 
-    // check for existance of config file
-    const char *filename = get_config_filename();
-    FILE *cfile = fopen( filename, "r" );
-    if( cfile != NULL ) {
-	fclose( cfile );
+  // check for existance of config file
+  const char *filename = get_config_filename();
+  FILE *cfile = fopen( filename, "r" );
+  if( cfile != NULL )
+  {
+    fclose( cfile );
 
-	// parse config file
-	struct cmdline_parser_params params;
-	cmdline_parser_params_init( &params );
-	params.initialize = 0;
-	params.check_required = 0;
-	if( cmdline_parser_config_file( filename, &cl_args, &params ) != 0 )
-	    exit( 1 );
-    }
+    // parse config file
+    struct cmdline_parser_params params;
+    cmdline_parser_params_init( &params );
+    params.initialize = 0;
+    params.check_required = 0;
+    if( cmdline_parser_config_file( filename, &cl_args, &params ) != 0 )
+        exit( 1 );
+  }
 
-    // check there is at most one script specified
-    if( cl_args.inputs_num > 1 ) {
-      fprintf( stderr, _( "Try '%s --help' for more information.\n" ), argv0 );
-      exit( 1 );
-    }
+  // check there is at most one script specified
+  if( cl_args.inputs_num > 1 )
+  {
+    fprintf( stderr, _( "Try '%s --help' for more information.\n" ), argv0 );
+    exit( 1 );
+  }
 
-    // check max-error is valid
-    if( cl_args.max_error_arg <= 0 || cl_args.max_error_arg > 100 ) {
-	fprintf( stderr, _( "%s: invalid error-max value\n" ), argv0 );
-	exit( 1 );
-    }
+  // check max-error is valid
+  if( cl_args.max_error_arg <= 0 || cl_args.max_error_arg > 100 )
+  {
+    fprintf( stderr, _( "%s: invalid error-max value\n" ), argv0 );
+    exit( 1 );
+  }
 
-    // check curs-flash is valid
-    if( cl_args.curs_flash_arg < 0 || cl_args.curs_flash_arg > 512 ) {
-	fprintf( stderr, _( "%s: invalid curs-flash value\n" ), argv0 );
-	exit( 1 );
-    }
+  // check curs-flash is valid
+  if( cl_args.curs_flash_arg < 0 || cl_args.curs_flash_arg > 512 )
+  {
+    fprintf( stderr, _( "%s: invalid curs-flash value\n" ), argv0 );
+    exit( 1 );
+  }
 
-    // parse and check colours
-    if( sscanf( cl_args.colours_arg, "%d,%d",
-		&cl_fgcolour, &cl_bgcolour ) != 2 ||
-	cl_fgcolour < 0 || cl_fgcolour >= NUM_COLOURS ||
-	cl_bgcolour < 0 || cl_bgcolour >= NUM_COLOURS )
-    {
-	fprintf( stderr, _( "%s: invalid colours value\n" ), argv0 );
-	exit( 1 );
-    }
+  // parse and check colours
+  if( sscanf( cl_args.colours_arg, "%d,%d",
+      &cl_fgcolour, &cl_bgcolour ) != 2 ||
+      cl_fgcolour < 0 || cl_fgcolour >= NUM_COLOURS ||
+      cl_bgcolour < 0 || cl_bgcolour >= NUM_COLOURS )
+  {
+    fprintf( stderr, _( "%s: invalid colours value\n" ), argv0 );
+    exit( 1 );
+  }
 
-    // parse and check banner-colors
-    if( sscanf( cl_args.banner_colors_arg, "%d,%d,%d,%d",
-		&cl_banner_fg_colour, &cl_banner_bg_colour,
-		&cl_prog_name_colour, &cl_prog_version_colour) != 4 ||
-	cl_banner_bg_colour < 0 || cl_banner_bg_colour >= NUM_COLOURS ||
-	cl_banner_fg_colour < 0 || cl_banner_bg_colour >= NUM_COLOURS ||
-	cl_prog_version_colour < 0 || cl_prog_version_colour >= NUM_COLOURS ||
-	cl_prog_name_colour < 0 || cl_prog_name_colour >= NUM_COLOURS )
-    {
-	fprintf( stderr, _( "%s: invalid banner-colours value\n" ), optarg );
-	exit( 1 );
-    }
+  // parse and check banner-colors
+  if( sscanf( cl_args.banner_colors_arg, "%d,%d,%d,%d",
+      &cl_banner_fg_colour, &cl_banner_bg_colour,
+      &cl_prog_name_colour, &cl_prog_version_colour) != 4 ||
+      cl_banner_bg_colour < 0 || cl_banner_bg_colour >= NUM_COLOURS ||
+      cl_banner_fg_colour < 0 || cl_banner_bg_colour >= NUM_COLOURS ||
+      cl_prog_version_colour < 0 || cl_prog_version_colour >= NUM_COLOURS ||
+      cl_prog_name_colour < 0 || cl_prog_name_colour >= NUM_COLOURS )
+  {
+    fprintf( stderr, _( "%s: invalid banner-colours value\n" ), optarg );
+    exit( 1 );
+  }
 }
 
 /*
@@ -1636,7 +1636,7 @@ FILE *open_script( const char *filename )
 */
 int main( int argc, char **argv )
 {
-  WINDOW	*scr;			/* curses window */
+  WINDOW	*scr;		  	/* curses window */
   FILE	*script;			/* script file handle */
   char	*p, filepath[FILENAME_MAX];	/* file paths */
   char	script_file[FILENAME_MAX];	/* more file paths */
@@ -1708,12 +1708,12 @@ int main( int argc, char **argv )
      translated because they are read from the script-file. */
   YN = convertFromUTF8(_("Y/N"));
   if (wcslen(YN) != 3 || YN[1] != '/' || !iswideupper(YN[0]) || !iswideupper(YN[2]))
-    {
-      fprintf( stderr,
-	       "%s: i18n problem: invalid value for msgid \"Y/N\" (3 uppercase UTF-8 chars?): %ls\n",
-	       argv0, YN );
-      exit( 1 );
-    }
+  {
+    fprintf( stderr,
+       "%s: i18n problem: invalid value for msgid \"Y/N\" (3 uppercase UTF-8 chars?): %ls\n",
+       argv0, YN );
+    exit( 1 );
+  }
   /* this is used to translate the keys for Repeat/Next/Exit
      queries. Must be three uppercase letters separated by slashes. */
   RNE = convertFromUTF8(_("R/N/E"));
@@ -1721,12 +1721,12 @@ int main( int argc, char **argv )
       !iswideupper(RNE[0]) || RNE[1] != '/' ||
       !iswideupper(RNE[2]) || RNE[3] != '/' ||
       !iswideupper(RNE[4]))
-    {
-      fprintf( stderr,
-	       "%s: i18n problem: invalid value for msgid \"R/N/E\" (5 uppercase UTF-8 chars?): %ls\n",
-	       argv0, RNE );
-      exit( 1 );
-    }
+  {
+    fprintf( stderr,
+       "%s: i18n problem: invalid value for msgid \"R/N/E\" (5 uppercase UTF-8 chars?): %ls\n",
+       argv0, RNE );
+    exit( 1 );
+  }
 
   /* check for user home directory */
 #ifdef MINGW
@@ -1737,8 +1737,7 @@ int main( int argc, char **argv )
   global_home_dir = getenv( home_env );
   if( !global_home_dir || !strlen( global_home_dir ) )
     {
-      fprintf( stderr, _("%s: %s environment variable not set\n"), \
-	  argv0, home_env );
+      fprintf( stderr, _("%s: %s environment variable not set\n"), argv0, home_env );
       exit( 1 );
     }
 
@@ -1747,49 +1746,47 @@ int main( int argc, char **argv )
 
   /* figure out what script file to use */
   if ( cl_args.inputs_num == 1 )
-    {
-      /* try and open scipr file from command line */
-      strcpy( script_file, cl_args.inputs[ 0 ] );
-      script = open_script( script_file );
+  {
+    /* try and open scipr file from command line */
+    strcpy( script_file, cl_args.inputs[ 0 ] );
+    script = open_script( script_file );
 
-      /* we failed, so check for script in GTYPIST_PATH */
-      if( !script && getenv( "GTYPIST_PATH" ) )
-        {
-          for( p = strtok( getenv( "GTYPIST_PATH" ), ":" );
-	       p != NULL; p = strtok( NULL, ":" ) )
-	    {
-	      strcpy( filepath, p );
-	      strcat( filepath, "/" );
-	      strcat( filepath, script_file );
-	      script = open_script( filepath );
-	      if( script )
-		break;
-	    }
-	}
-
-      /* we failed, so try to find script in DATADIR */
-      if( !script )
-        {
-          strcpy( filepath, DATADIR );
-          strcat( filepath, "/" );
-          strcat( filepath, script_file );
-          script = open_script( filepath );
-	}
-    }
-  else
+    /* we failed, so check for script in GTYPIST_PATH */
+    if( !script && getenv( "GTYPIST_PATH" ) )
     {
-      /* open default script */
-      sprintf( script_file, "%s/%s", DATADIR, DEFAULT_SCRIPT );
-      script = open_script( script_file );
+      for ( p = strtok( getenv( "GTYPIST_PATH" ), ":" );
+            p != NULL; p = strtok( NULL, ":" ) )
+      {
+        strcpy( filepath, p );
+        strcat( filepath, "/" );
+        strcat( filepath, script_file );
+        script = open_script( filepath );
+        if( script )
+          break;
+      }
     }
+
+    /* we failed, so try to find script in DATADIR */
+    if( !script )
+    {
+        strcpy( filepath, DATADIR );
+        strcat( filepath, "/" );
+        strcat( filepath, script_file );
+        script = open_script( filepath );
+    }
+  } else {
+    /* open default script */
+    sprintf( script_file, "%s/%s", DATADIR, DEFAULT_SCRIPT );
+    script = open_script( script_file );
+  }
 
   /* check to make sure we open a script */
   if( !script )
-    {
-      fprintf( stderr, "%s: %s %s\n",
-	       argv0, _("can't find or open file"), script_file );
-      exit( 1 );
-    }
+  {
+    fprintf( stderr, "%s: %s %s\n",
+       argv0, _("can't find or open file"), script_file );
+    exit( 1 );
+  }
 
   /* reset global_error_max */
   global_error_max = cl_args.max_error_arg;
@@ -1818,25 +1815,25 @@ int main( int argc, char **argv )
   /* set up colour pairs if possible */
   if (has_colors ())
   {
-     start_color ();
+    start_color ();
 
-     init_pair (C_NORMAL,
-		 colour_array [cl_fgcolour],
-		 colour_array [cl_bgcolour]);
-     wbkgdset (stdscr, COLOR_PAIR (C_NORMAL));
+    init_pair (C_NORMAL,
+    colour_array [cl_fgcolour],
+    colour_array [cl_bgcolour]);
+    wbkgdset (stdscr, COLOR_PAIR (C_NORMAL));
 
-     init_pair (C_BANNER,
-		     colour_array [cl_banner_fg_colour],
-		     colour_array [cl_banner_bg_colour]);
-     init_pair (C_PROG_NAME,
-		     colour_array [cl_banner_fg_colour],
-		     colour_array [cl_prog_name_colour]);
-     init_pair (C_PROG_VERSION,
-		     colour_array [cl_banner_fg_colour],
-		     colour_array [cl_prog_version_colour]);
-     init_pair (C_MENU_TITLE,
-		     colour_array [cl_fgcolour],
-		     colour_array [cl_bgcolour]);
+    init_pair (C_BANNER,
+       colour_array [cl_banner_fg_colour],
+       colour_array [cl_banner_bg_colour]);
+    init_pair (C_PROG_NAME,
+       colour_array [cl_banner_fg_colour],
+       colour_array [cl_prog_name_colour]);
+    init_pair (C_PROG_VERSION,
+       colour_array [cl_banner_fg_colour],
+       colour_array [cl_prog_version_colour]);
+    init_pair (C_MENU_TITLE,
+       colour_array [cl_fgcolour],
+       colour_array [cl_bgcolour]);
   }
 
   /* put up the top line banner */
@@ -1845,11 +1842,11 @@ int main( int argc, char **argv )
 
   if (!cl_args.no_welcome_screen_flag)
   {
-      if (!do_beginner_infoview())
-      {
-          do_exit(script);
-          return 0;
-      }
+    if (!do_beginner_infoview())
+    {
+      do_exit(script);
+      return 0;
+    }
   }
 
   check_script_file_with_current_encoding(script);
@@ -1875,11 +1872,11 @@ void do_bell() {
 bool get_best_speed( const char *script_filename,
 		     const char *excersise_label, double *adjusted_cpm )
 {
-  FILE *blfile;				/* bestlog file */
-  char *search;				/* string to match in bestlog */
+  FILE *blfile;       				/* bestlog file */
+  char *search;			        	/* string to match in bestlog */
   char line[FILENAME_MAX];		/* single line from bestlog */
-  int search_len;			/* length of search string */
-  bool found = FALSE;			/* did we find it? */
+  int search_len;		        	/* length of search string */
+  bool found = FALSE;		    	/* did we find it? */
   int a;
   char *fixed_script_filename;		/* fixed-up script filename */
   char *p;
@@ -1887,50 +1884,50 @@ bool get_best_speed( const char *script_filename,
   /* open best speeds file */
   blfile = fopen( get_bestlog_filename(), "r" );
   if( blfile == NULL )
-    {
-      return FALSE;
-    }
+  {
+    return FALSE;
+  }
 
   /* fix-up script filename */
   fixed_script_filename = strdup( script_filename );
   if( fixed_script_filename == NULL )
-    {
-       perror( "malloc" );
-       fatal_error( _( "internal error: malloc" ), NULL );
-    }
+  {
+    perror( "malloc" );
+    fatal_error( _( "internal error: malloc" ), NULL );
+  }
   p = fixed_script_filename;
   while( *p != '\0' )
-    {
-      if( *p == ' ' )
-	*p = '+';
-      p++;
-    }
+  {
+    if( *p == ' ' )
+      *p = '+';
+    p++;
+  }
 
   /* construct search string */
   search_len = strlen( script_filename ) + strlen( excersise_label ) + 3;
   search = (char *)malloc( search_len + 1 );
   if( search == NULL )
-    {
-       perror( "malloc" );
-       fatal_error( _( "internal error: malloc" ), NULL );
-    }
+  {
+    perror( "malloc" );
+    fatal_error( _( "internal error: malloc" ), NULL );
+  }
   sprintf( search, " %s:%s ", fixed_script_filename, excersise_label );
 
   /* search for lines that match and use data from the last one */
   while( fgets( line, FILENAME_MAX, blfile ) )
-    {
-      /* check that there are at least 19 chars (yyyy-mm-dd hh:mm:ss) */
-      for( a = 0; a < 19; a++ )
-	if( line[ a ] == '\0' )
-	  continue;
+  {
+    /* check that there are at least 19 chars (yyyy-mm-dd hh:mm:ss) */
+    for( a = 0; a < 19; a++ )
+      if( line[ a ] == '\0' )
+        continue;
 
-      /* look for search string and try to obtain a speed */
-      if( !strncmp( search, line + 19, search_len ) &&
-	  sscanf( line + 19 + search_len, "%lg", adjusted_cpm ) == 1 )
-	{
-	  found = TRUE;
-	}
+    /* look for search string and try to obtain a speed */
+    if( !strncmp( search, line + 19, search_len ) &&
+        sscanf( line + 19 + search_len, "%lg", adjusted_cpm ) == 1 )
+    {
+      found = TRUE;
     }
+  }
 
   /* cleanup and return */
   free( search );
@@ -1942,32 +1939,32 @@ bool get_best_speed( const char *script_filename,
 void put_best_speed( const char *script_filename,
 		     const char *excersise_label, double adjusted_cpm )
 {
-  FILE *blfile;				/* bestlog file */
+  FILE *blfile;		            		/* bestlog file */
   char *fixed_script_filename;		/* fixed-up script filename */
   char *p;
 
   /* open best speeds files */
   blfile = fopen( get_bestlog_filename(), "a" );
   if( blfile == NULL )
-    {
-       perror( "fopen" );
-       fatal_error( _("internal error: fopen" ), NULL );
-    }
+  {
+    perror( "fopen" );
+    fatal_error( _("internal error: fopen" ), NULL );
+  }
 
   /* fix-up script filename */
   fixed_script_filename = strdup( script_filename );
   if( fixed_script_filename == NULL )
-    {
-       perror( "malloc" );
-       fatal_error( _( "internal error: malloc" ), NULL );
-    }
+  {
+    perror( "malloc" );
+    fatal_error( _( "internal error: malloc" ), NULL );
+  }
   p = fixed_script_filename;
   while( *p != '\0' )
-    {
-      if( *p == ' ' )
-	*p = '+';
-      p++;
-    }
+  {
+    if( *p == ' ' )
+      *p = '+';
+    p++;
+  }
 
   /* get time */
   time_t nowts = time( NULL );
@@ -1986,42 +1983,42 @@ void put_best_speed( const char *script_filename,
 
 const char *get_config_filename()
 {
-    static char *filename = NULL;
+  static char *filename = NULL;
 
+  if( filename == NULL )
+  {
+    // calculate file name
+    filename = (char *)malloc(
+        strlen( global_home_dir ) + strlen( CONFIG_FILENAME ) + 2 );
     if( filename == NULL )
     {
-	// calculate file name
-	filename = (char *)malloc(
-	    strlen( global_home_dir ) + strlen( CONFIG_FILENAME ) + 2 );
-	if( filename == NULL )
-	{
-	    perror( "malloc" );
-	    fatal_error( _( "internal error: malloc" ), NULL );
-	}
-	sprintf( filename, "%s/%s", global_home_dir, CONFIG_FILENAME );
+      perror( "malloc" );
+      fatal_error( _( "internal error: malloc" ), NULL );
     }
+    sprintf( filename, "%s/%s", global_home_dir, CONFIG_FILENAME );
+  }
 
-    return filename;
+  return filename;
 }
 
 const char *get_bestlog_filename()
 {
-    static char *filename = NULL;
+  static char *filename = NULL;
 
+  if( filename == NULL )
+  {
+    // calculate file name
+    filename = (char *)malloc(
+        strlen( global_home_dir ) + strlen( BESTLOG_FILENAME ) + 2 );
     if( filename == NULL )
     {
-	// calculate file name
-	filename = (char *)malloc(
-	    strlen( global_home_dir ) + strlen( BESTLOG_FILENAME ) + 2 );
-	if( filename == NULL )
-	{
-	    perror( "malloc" );
-	    fatal_error( _( "internal error: malloc" ), NULL );
-	}
-	sprintf( filename, "%s/%s", global_home_dir, BESTLOG_FILENAME );
+        perror( "malloc" );
+        fatal_error( _( "internal error: malloc" ), NULL );
     }
+    sprintf( filename, "%s/%s", global_home_dir, BESTLOG_FILENAME );
+  }
 
-    return filename;
+  return filename;
 }
 
 

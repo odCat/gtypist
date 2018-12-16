@@ -59,7 +59,7 @@ wchar_t* widen(const char* text)
 
   if (convresult != numChars)
   {
-      fatal_error(_("couldn't convert UTF-8 to wide characters"), "?");
+    fatal_error(_("couldn't convert UTF-8 to wide characters"), "?");
   }
 
   return wideText;
@@ -67,89 +67,89 @@ wchar_t* widen(const char* text)
 
 char* convertUTF8ToCurrentEncoding(const char* UTF8Input)
 {
-    iconv_t cd = iconv_open(locale_encoding, "UTF-8");
-    if (cd == (iconv_t) -1)
-    {
-        endwin();
-        printf("Error in iconv_open()\n");
-    }
-    size_t inleft = strlen(UTF8Input);
-    char* inptr = (char*)UTF8Input;
-    size_t outleft = inleft;
-    char* outptr = (char*)malloc(outleft + 1);
-    char* outptr_orig = outptr;
-    size_t nconv = iconv(cd, &inptr, &inleft, &outptr, &outleft);
-
-    /*
+  iconv_t cd = iconv_open(locale_encoding, "UTF-8");
+  if (cd == (iconv_t) -1)
+  {
     endwin();
-    printf("inleft=%d, outleft=%d, nconv=%d\n", inleft, outleft, nconv);
-    */
-    /* TODO: catch EILSEQ?? => no, all errors should lead to termination of gtypist! */
+    printf("Error in iconv_open()\n");
+  }
+  size_t inleft = strlen(UTF8Input);
+  char* inptr = (char*)UTF8Input;
+  size_t outleft = inleft;
+  char* outptr = (char*)malloc(outleft + 1);
+  char* outptr_orig = outptr;
+  size_t nconv = iconv(cd, &inptr, &inleft, &outptr, &outleft);
 
-    if (nconv == (size_t) -1)
-    {
-        int err = errno;
-        char buffer[2048];
-        sprintf(buffer, "iconv() failed on '%s': %s\n"
-                "You should probably use a UTF-8 locale for the selected lesson!\n",
-                UTF8Input,
-                strerror(err));
-        fatal_error(_(buffer), "?");
-    }
+  /*
+  endwin();
+  printf("inleft=%d, outleft=%d, nconv=%d\n", inleft, outleft, nconv);
+  */
+  /* TODO: catch EILSEQ?? => no, all errors should lead to termination of gtypist! */
 
-    iconv_close(cd);
-    int numberChars = strlen(UTF8Input) - outleft;
-    outptr_orig[numberChars] = '\0';
-    return outptr_orig;
+  if (nconv == (size_t) -1)
+  {
+    int err = errno;
+    char buffer[2048];
+    sprintf(buffer, "iconv() failed on '%s': %s\n"
+            "You should probably use a UTF-8 locale for the selected lesson!\n",
+            UTF8Input,
+            strerror(err));
+    fatal_error(_(buffer), "?");
+  }
+
+  iconv_close(cd);
+  int numberChars = strlen(UTF8Input) - outleft;
+  outptr_orig[numberChars] = '\0';
+  return outptr_orig;
 }
 
 wchar_t* convertFromUTF8(const char* UTF8Text)
 {
-    if (isUTF8Locale)
+  if (isUTF8Locale)
+  {
+    return widen(UTF8Text);
+  }
+  else
+  {
+    char* textWithCurrentEncoding = convertUTF8ToCurrentEncoding(UTF8Text);
+    int numChars = strlen(textWithCurrentEncoding);
+    wchar_t* wrappedAs_wchar_t = (wchar_t*)malloc((numChars+1) * sizeof(wchar_t));
+    int i;
+    for (i = 0; i < numChars; i++)
     {
-        return widen(UTF8Text);
+        wrappedAs_wchar_t[i] = (unsigned char)textWithCurrentEncoding[i];
     }
-    else
-    {
-        char* textWithCurrentEncoding = convertUTF8ToCurrentEncoding(UTF8Text);
-        int numChars = strlen(textWithCurrentEncoding);
-        wchar_t* wrappedAs_wchar_t = (wchar_t*)malloc((numChars+1) * sizeof(wchar_t));
-        int i;
-        for (i = 0; i < numChars; i++)
-        {
-            wrappedAs_wchar_t[i] = (unsigned char)textWithCurrentEncoding[i];
-        }
-        wrappedAs_wchar_t[numChars] = L'\0';
-        free(textWithCurrentEncoding);
-        return wrappedAs_wchar_t;
-    }
+    wrappedAs_wchar_t[numChars] = L'\0';
+    free(textWithCurrentEncoding);
+    return wrappedAs_wchar_t;
+  }
 }
 
 void mvwideaddstr(int y, int x, const char* UTF8Text)
 {
-    move(y,x);
-    wideaddstr(UTF8Text);
+  move(y,x);
+  wideaddstr(UTF8Text);
 }
 
 void wideaddstr(const char* UTF8Text)
 {
-    if (isUTF8Locale)
-    {
-        addstr(UTF8Text);
-    }
-    else
-    {
-        char* textWithCurrentEncoding = convertUTF8ToCurrentEncoding(UTF8Text);
-        addstr(textWithCurrentEncoding);
-        free(textWithCurrentEncoding);
-    }
+  if (isUTF8Locale)
+  {
+    addstr(UTF8Text);
+  }
+  else
+  {
+    char* textWithCurrentEncoding = convertUTF8ToCurrentEncoding(UTF8Text);
+    addstr(textWithCurrentEncoding);
+    free(textWithCurrentEncoding);
+  }
 }
 
 void wideaddstr_rev(const char* UTF8Text)
 {
-    attron(A_REVERSE);
-    wideaddstr(UTF8Text);
-    attroff(A_REVERSE);
+  attron(A_REVERSE);
+  wideaddstr(UTF8Text);
+  attroff(A_REVERSE);
 }
 
 void wideaddch(wchar_t c)
@@ -160,8 +160,8 @@ void wideaddch(wchar_t c)
 
   if (!isUTF8Locale)
   {
-      addch(c);
-      return;
+    addch(c);
+    return;
   }
 
   wc[0] = c;
@@ -170,7 +170,7 @@ void wideaddch(wchar_t c)
   result = setcchar(&c2, wc, 0, 0, NULL);
   if (result != OK)
   {
-      fatal_error(_("error in setcchar()"), "?");
+    fatal_error(_("error in setcchar()"), "?");
   }
   add_wch(&c2);
 }
@@ -184,109 +184,101 @@ void wideaddch_rev(wchar_t c)
 
 int utf8len(const char* UTF8Text)
 {
-    if (isUTF8Locale)
-    {
+  if (isUTF8Locale)
+  {
 #ifdef MINGW
-        return MultiByteToWideChar(CP_UTF8, 0, UTF8Text, -1, NULL, NULL) - 1;
+    return MultiByteToWideChar(CP_UTF8, 0, UTF8Text, -1, NULL, NULL) - 1;
 #else
-        return mbstowcs(NULL, UTF8Text, 0);
+    return mbstowcs(NULL, UTF8Text, 0);
 #endif
-    }
-    else
-    {
-        /* the behavior of mbstowcs depends on LC_CTYPE!  That's why
-           we cannot use mbstowcs() for non-utf8 locales */
-        char* textWithCurrentEncoding = convertUTF8ToCurrentEncoding(UTF8Text);
-        int len = strlen(textWithCurrentEncoding);
-        free(textWithCurrentEncoding);
-        return len;
-    }
+  } else {
+    /* the behavior of mbstowcs depends on LC_CTYPE!  That's why
+       we cannot use mbstowcs() for non-utf8 locales */
+    char* textWithCurrentEncoding = convertUTF8ToCurrentEncoding(UTF8Text);
+    int len = strlen(textWithCurrentEncoding);
+    free(textWithCurrentEncoding);
+    return len;
+  }
 }
 
 int iswideupper(wchar_t c)
 {
-    if (isUTF8Locale)
-    {
-        return iswupper(c);
-    }
-    else
-    {
-        return isupper(c);
-    }
+  if (isUTF8Locale)
+  {
+    return iswupper(c);
+  } else {
+    return isupper(c);
+  }
 }
 
 wchar_t towideupper(wchar_t c)
 {
-    if (isUTF8Locale)
-    {
-        return towupper(c);
-    }
-    else
-    {
-        return toupper(c);
-    }
+  if (isUTF8Locale)
+  {
+    return towupper(c);
+  } else {
+    return toupper(c);
+  }
 }
 
 int get_widech(int* c)
 {
-    int ch;
+  int ch;
 
-    if (isUTF8Locale)
+  if (isUTF8Locale)
+  {
+    int retcode = get_wch( &ch );
+    if( retcode == ERR )
+      return ERR;
+    /* 
+       ncurses' KEY_BACKSPACE (0x107) collides with polish "c with
+       acute (0x107) => we need to encode KEY_BACKSPACE!
+    */
+    if (retcode == KEY_CODE_YES && ch == KEY_BACKSPACE)
     {
-        int retcode = get_wch( &ch );
-        if( retcode == ERR )
-	    return ERR;
-        /* 
-           ncurses' KEY_BACKSPACE (0x107) collides with polish "c with
-           acute (0x107) => we need to encode KEY_BACKSPACE!
-        */
-        if (retcode == KEY_CODE_YES && ch == KEY_BACKSPACE)
-        {
-            ch = GTYPIST_KEY_BACKSPACE;
-        }
+        ch = GTYPIST_KEY_BACKSPACE;
+    }
             
 
 #ifdef MINGW
-	// MinGW defines wint_t as a short int, for compatibility with Windows.
-	ch = ch & 0x0ffff;
+    // MinGW defines wint_t as a short int, for compatibility with Windows.
+    ch = ch & 0x0ffff;
 #endif
-    }
-    else
-    {
-        ch = getch();
-        if( ch == ERR )
-	    return ERR;
-    }
+  } else {
+    ch = getch();
+    if( ch == ERR )
+    return ERR;
+  }
 
 #ifdef HAVE_PDCURSES
-    // make sure PDCurses returns recognisable newline characters
-    if( ch == 0x0D || ch == PADENTER)
-        ch = 0x0A;
+  // make sure PDCurses returns recognisable newline characters
+  if( ch == 0x0D || ch == PADENTER)
+      ch = 0x0A;
 #endif
 
 #ifndef HAVE_PDCURSES /* this fix is not necessary for the Windows port */
-    /* Avoid that Alt+<anything> is treated as ESC, which could lead
-       to accidentally aborting a lesson */
-    if (ch == 27) /* ASCII_ESC */
-    {
-        /* undo the halfdelay() from getch_fl() */
-        cbreak();
-        /* switch to non-blocking mode */
-        nodelay(stdscr, TRUE);
-        int ch2;
-	if (get_wch(&ch2) != -1)
-        {
-            /* this is NOT escape because curses sends another key */
-            ch = ch2;
-        }
-        /* switch to blocking mode */
-        nodelay(stdscr, FALSE);
-    }
+  /* Avoid that Alt+<anything> is treated as ESC, which could lead
+     to accidentally aborting a lesson */
+  if (ch == 27) /* ASCII_ESC */
+  {
+    /* undo the halfdelay() from getch_fl() */
+    cbreak();
+    /* switch to non-blocking mode */
+    nodelay(stdscr, TRUE);
+    int ch2;
+    if (get_wch(&ch2) != -1)
+      {
+          /* this is NOT escape because curses sends another key */
+          ch = ch2;
+      }
+      /* switch to blocking mode */
+      nodelay(stdscr, FALSE);
+  }
 #endif
 
-    *c = ch;
+  *c = ch;
 
-    return OK;
+  return OK;
 }
 
 /*
@@ -294,4 +286,3 @@ int get_widech(int* c)
   tab-width: 8
   End:
 */
-

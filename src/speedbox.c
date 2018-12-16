@@ -105,11 +105,12 @@ void do_speed_box( int total_chars, int error_chars,
   sprintf( buffer, SPEED_PCT_ERROR,
            (double)100.0 * (double)error_chars / (double)total_chars );
   messages[ num_messages++ ] = strdup( buffer );
-  if( had_best_speed ) {
-      if( scoring_cpm )
-		  sprintf( buffer, SPEED_BEST_CPM, best_cpm );
-      else
-		  sprintf( buffer, SPEED_BEST_WPM, best_cpm / (double)5.0 );
+  if( had_best_speed )
+  {
+    if( scoring_cpm )
+    sprintf( buffer, SPEED_BEST_CPM, best_cpm );
+    else
+    sprintf( buffer, SPEED_BEST_WPM, best_cpm / (double)5.0 );
 	  messages[ num_messages++ ] = strdup( buffer );
   }
   if( new_best_speed )

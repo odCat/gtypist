@@ -61,10 +61,10 @@ void __update_last_label (const char *label)
 /*
   label hashing function - returns an index for the lists
 */
-int 
-hash_label( char *label ) {
+int hash_label( char *label )
+{
   char	*p;				/* pointer through string */
-  int	csum = 0;			/* sum of characters */
+  int	csum = 0;		/* sum of characters */
   
   /* hash by summing the characters and taking modulo of the
      number of hash lists defined */
@@ -75,15 +75,14 @@ hash_label( char *label ) {
 
 static int line_is_empty (const char *line)
 {
-   while (*line)
-   {
-      if (!isspace (*line))
-         return 0;
+  while (*line)
+  {
+    if (!isspace (*line))
+       return 0;
+    line ++;
+  }
 
-      line ++;
-   }
-
-   return 1;
+  return 1;
 }
 
 /*
@@ -92,16 +91,16 @@ static int line_is_empty (const char *line)
 */
 void check_script_file_with_current_encoding( FILE *script )
 {
-    char line[MAX_SCR_LINE];
+  char line[MAX_SCR_LINE];
 
+  get_script_line( script, line );
+  while (! feof( script ))
+  {
+    wchar_t* lineConverted = convertFromUTF8(line);
+    free(lineConverted);
+    /* get the next script line */
     get_script_line( script, line );
-    while (! feof( script ))
-    {
-        wchar_t* lineConverted = convertFromUTF8(line);
-        free(lineConverted);
-        /* get the next script line */
-        get_script_line( script, line );
-    }
+  }
 }
 
 /*
@@ -122,80 +121,79 @@ void build_label_index( FILE *script ) {
 
   /* initialize the hash lists */
   for ( hash = 0; hash < NLHASH; hash++ )
-    {
-      global_label_list[ hash ] = NULL;
-      list_tail[ hash ] = NULL;
-    }
+  {
+    global_label_list[ hash ] = NULL;
+    list_tail[ hash ] = NULL;
+  }
 
   /* read until we get to eof */
   get_script_line( script, line );
   while (! feof( script ))
+  {
+    /* see if this is a label line */
+    if ( SCR_COMMAND( line ) == C_LABEL )
     {
 
-      /* see if this is a label line */
-      if ( SCR_COMMAND( line ) == C_LABEL )
-	{
+      /* note this label's position in the table;
+         first, create a new list entry */
+      new_label = malloc( sizeof(struct label_entry) );
+      if ( new_label == NULL )
+        fatal_error( _("internal error: malloc"), line );
 
-	  /* note this label's position in the table;
-	     first, create a new list entry */
-	  new_label = malloc( sizeof(struct label_entry) );
-	  if ( new_label == NULL )
-	    fatal_error( _("internal error: malloc"), line );
+      /* remove trailing whitespace from line */
+      line_iterator = line + strlen(line) - 1;
+      while (line_iterator != line && isspace(*line_iterator))
+      {
+        *line_iterator = '\0';
+        --line_iterator;
+      }
 
-	  /* remove trailing whitespace from line */
-	  line_iterator = line + strlen(line) - 1;
-	  while (line_iterator != line && isspace(*line_iterator))
-	    {
-	      *line_iterator = '\0';
-	      --line_iterator;
-	    }
+      /* check for spaces in the label (these are banned since 2.9 so that
+         spaces can be used as field separators in the bestlog) */
+      line_iterator = SCR_DATA( line );
+      while( *line_iterator != '\0' )
+      {
+        if( *line_iterator == ' ' )
+          fatal_error( _("label contains space"), line );
+        ++line_iterator;
+      }
 
-	  /* check for spaces in the label (these are banned since 2.9 so that
-	     spaces can be used as field separators in the bestlog) */
-	  line_iterator = SCR_DATA( line );
-	  while( *line_iterator != '\0' )
-	    {
-	      if( *line_iterator == ' ' )
-		fatal_error( _("label contains space"), line );
-	      ++line_iterator;
-	    }
+      /* make some space for the label string */
+      new_label->label =
+        malloc( strlen( SCR_DATA( line )) + 1 );
+      if ( new_label->label == NULL )
+        fatal_error( _("internal error: malloc"), line );
 
-	  /* make some space for the label string */
-	  new_label->label =
-	    malloc( strlen( SCR_DATA( line )) + 1 );
-	  if ( new_label->label == NULL )
-	    fatal_error( _("internal error: malloc"), line );
+      /* copy the data into the new structure */
+      strcpy( new_label->label, SCR_DATA( line ));
+      new_label->offset = ftell( script );
+      new_label->line_count = global_line_counter;
+      new_label->next = NULL;
 
-	  /* copy the data into the new structure */
-	  strcpy( new_label->label, SCR_DATA( line ));
-	  new_label->offset = ftell( script );
-	  new_label->line_count = global_line_counter;
-	  new_label->next = NULL;
+      /* find the right hash list for the label */
+      hash = hash_label( SCR_DATA( line ));
 
-	  /* find the right hash list for the label */
-	  hash = hash_label( SCR_DATA( line ));
+      /* search the linked list for the label, to
+         see if it's already there - nice to check */
+      for ( check_label = global_label_list[ hash ];
+      check_label != NULL;
+      check_label = check_label->next )
+      {
+        if ( strcmp( check_label->label, SCR_DATA( line )) == 0 )
+          fatal_error( _("label redefinition"), line );
+      }
 
-	  /* search the linked list for the label, to
-	     see if it's already there - nice to check */
-	  for ( check_label = global_label_list[ hash ];
-		check_label != NULL;
-		check_label = check_label->next )
-	    {
-	      if ( strcmp( check_label->label, SCR_DATA( line )) == 0 )
-		fatal_error( _("label redefinition"), line );
-	    }
-
-	  /* link everything together */
-	  if ( list_tail[ hash ] == NULL )
-	    global_label_list[ hash ] = new_label;
-	  else
-	    list_tail[ hash ]->next = new_label;
-	  list_tail[ hash ] = new_label;
-	}
-
-      /* get the next script line */
-      get_script_line( script, line );
+      /* link everything together */
+      if ( list_tail[ hash ] == NULL )
+        global_label_list[ hash ] = new_label;
+      else
+        list_tail[ hash ]->next = new_label;
+      list_tail[ hash ] = new_label;
     }
+
+    /* get the next script line */
+    get_script_line( script, line );
+  }
 }
 
 /*
@@ -211,61 +209,62 @@ void get_script_line( FILE *script, char *line )
 	   (line_is_empty (line) ||
 	    SCR_COMMAND (line) == C_COMMENT ||
 	    SCR_COMMAND (line) == C_ALT_COMMENT)) 
-    {
-      fgets(line, MAX_SCR_LINE, script);
-      global_line_counter++;
-    }
+  {
+    fgets(line, MAX_SCR_LINE, script);
+    global_line_counter++;
+  }
 
   /* if a line was read then check it */
   if ( ! feof( script )) 
-    {
-      /* Get rid of trailing spaces and newline */
-      while( *line && isspace( line[strlen( line )-1] ) )
-        line [strlen (line) - 1] = ASCII_NULL;
+  {
+    /* Get rid of trailing spaces and newline */
+    while( *line && isspace( line[strlen( line )-1] ) )
+      line [strlen (line) - 1] = ASCII_NULL;
 
-      // input is UTF-8 !!
-      int numChars = utf8len(line);
-      if (numChars == -1)
-        fatal_error( _("Invalid multibyte sequence (wrong encoding?)"), line);
-      if ( numChars < MIN_SCR_LINE )
-        fatal_error( _("data shortage"), line );
-      if ( SCR_SEP( line ) != C_SEP )
-        fatal_error( _("missing ':'"), line );
-      if ( SCR_COMMAND( line ) != C_LABEL 
-           && SCR_COMMAND( line ) != C_GOTO 
-           && SCR_COMMAND( line ) != C_YGOTO
-           && SCR_COMMAND( line ) != C_NGOTO
-           && utf8len(SCR_DATA( line )) > COLS )
-        fatal_error( _("line too long for screen"), line );
-    }
+    // input is UTF-8 !!
+    int numChars = utf8len(line);
+    if (numChars == -1)
+      fatal_error( _("Invalid multibyte sequence (wrong encoding?)"), line);
+    if ( numChars < MIN_SCR_LINE )
+      fatal_error( _("data shortage"), line );
+    if ( SCR_SEP( line ) != C_SEP )
+      fatal_error( _("missing ':'"), line );
+    if ( SCR_COMMAND( line ) != C_LABEL 
+         && SCR_COMMAND( line ) != C_GOTO 
+         && SCR_COMMAND( line ) != C_YGOTO
+         && SCR_COMMAND( line ) != C_NGOTO
+         && utf8len(SCR_DATA( line )) > COLS )
+      fatal_error( _("line too long for screen"), line );
+  }
 }
 
 /*
   buffer up the complete data from a command; used for [Dd], [Pp] and M
 */
-char *buffer_command( FILE *script, char *line ) {
+char *buffer_command( FILE *script, char *line )
+{
   int	total_chars = 0;		/* character counter */
   char	*data = NULL;			/* data string */
 
   /* get the complete exercise into a single string */
   do 
-    {
-      data = (char*)realloc( data, (data ? strlen( data ) : 0) +
-			       strlen(SCR_DATA( line )) +
-			       strlen(STRING_NL) + 1 );
-      if ( data == NULL )
-        fatal_error( _("internal error: malloc"), line );
-      
-      /* store the data in the allocated area */
-      if ( total_chars == 0 )
-        strcpy( data, "" );
-      strcat( data, SCR_DATA( line ) );
-      strcat( data, STRING_NL );
-      total_chars = strlen( data );
-      
-      /* and get the next script line */
-      get_script_line( script, line );
-    } 
+  {
+    data = (char*)realloc( data, (data ? strlen( data ) : 0) +
+           strlen(SCR_DATA( line )) +
+           strlen(STRING_NL) + 1 );
+    if ( data == NULL )
+      fatal_error( _("internal error: malloc"), line );
+    
+    /* store the data in the allocated area */
+    if ( total_chars == 0 )
+      strcpy( data, "" );
+    strcat( data, SCR_DATA( line ) );
+    strcat( data, STRING_NL );
+    total_chars = strlen( data );
+    
+    /* and get the next script line */
+    get_script_line( script, line );
+  } 
   while ( SCR_COMMAND( line ) == C_CONT && ! feof( script ));
 
   /* return our (malloced) data */
@@ -278,14 +277,14 @@ char *buffer_command( FILE *script, char *line ) {
 
   It also updates __last_label for the returns into menu from lessons.
 */
-void 
-seek_label( FILE *script, char *label, char *ref_line ) {
+void seek_label( FILE *script, char *label, char *ref_line )
+{
   struct label_entry	*check_label;	/* pointer through list */
-  int	hash;				/* hash index */
-  char	err[MAX_SCR_LINE];		/* error message string */
+  int	hash;                 				/* hash index */
+  char	err[MAX_SCR_LINE];      		/* error message string */
 
   if (!label)
-     do_exit (script);
+    do_exit (script);
   
   __update_last_label (label);
 		  
@@ -295,19 +294,18 @@ seek_label( FILE *script, char *label, char *ref_line ) {
   /* search the linked list for the label */
   for ( check_label = global_label_list[ hash ]; check_label != NULL;
 	check_label = check_label->next ) 
-    {
-      
-      /* see if this is our label */
-      if ( strcmp( check_label->label, label ) == 0 )
-	break;
-    }
+  {
+    /* see if this is our label */
+    if ( strcmp( check_label->label, label ) == 0 )
+      break;
+  }
 
   /* see if the label was not found in the file */
   if ( check_label == NULL ) 
-    {
-      sprintf( err, _("label '%s' not found"), label );
-      fatal_error( err, ref_line );
-    }
+  {
+    sprintf( err, _("label '%s' not found"), label );
+    fatal_error( err, ref_line );
+  }
 
   /* move to the label position in the file */
   if ( fseek( script, check_label->offset, SEEK_SET ) == -1 )
@@ -318,8 +316,7 @@ seek_label( FILE *script, char *label, char *ref_line ) {
 /*
   exit from the program (implied on eof)
 */
-void 
-do_exit( FILE *script ) 
+void do_exit( FILE *script ) 
 {
   /* close up all files, reset the screen stuff, and exit */
   fclose( script );

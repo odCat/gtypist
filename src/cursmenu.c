@@ -47,9 +47,9 @@ extern int isUTF8Locale;
 // working
 typedef struct _MenuNode
 {
-   char *label;
-   int line;
-   struct _MenuNode *next;
+  char *label;
+  int line;
+  struct _MenuNode *next;
 }
 MenuNode;
 
@@ -58,116 +58,116 @@ static MenuNode *start_node = NULL, *last_node = NULL;
 
 static MenuNode *node_new ()
 {
-   MenuNode *mn = (MenuNode *) calloc (1, sizeof (MenuNode));
-   if (!mn)
-   {
-      perror ("calloc");
-      fatal_error ("internal error: calloc", NULL);
-   }
+  MenuNode *mn = (MenuNode *) calloc (1, sizeof (MenuNode));
+  if (!mn)
+  {
+    perror ("calloc");
+    fatal_error ("internal error: calloc", NULL);
+  }
 
-   return mn;
+ return mn;
 }
 
 static void node_delete (MenuNode *mn)
 {
-   if (mn -> label)
-      free (mn -> label);
+  if (mn -> label)
+    free (mn -> label);
 
-   free (mn);
+  free (mn);
 }
 
 static void append_menu_history (const char *label)
 {
-   if (!label)
-      label = "";
+  if (!label)
+    label = "";
 
-   // First check if we've already been here
-   if (start_node)
-   {
-      MenuNode *mn = start_node;
-      do
+  // First check if we've already been here
+  if (start_node)
+  {
+    MenuNode *mn = start_node;
+    do
+    {
+      if (global_line_counter == (mn -> line))
       {
-	 if (global_line_counter == (mn -> line))
-	 {
-	    if (mn == last_node)
-	       return;
+        if (mn == last_node)
+           return;
 
-	    // Go to the (same) old place
-	    last_node = mn;
+        // Go to the (same) old place
+        last_node = mn;
 
-	    mn = (mn -> next);
-	    while (mn)
-	    {
-	       MenuNode *t = (mn -> next);
-	       node_delete (mn);
-	       mn = t;
-	    }
+        mn = (mn -> next);
+        while (mn)
+        {
+           MenuNode *t = (mn -> next);
+           node_delete (mn);
+           mn = t;
+        }
 
-	    (last_node -> next) = NULL;
+        (last_node -> next) = NULL;
 
-	    return;
-	 }
-	 
-	 mn = (mn -> next);
+        return;
       }
-      while (mn);
-   }
-   
-   // Ok, append it to the history
-   if (!last_node)
-      start_node = last_node = node_new ();
-   else
-   {
-      (last_node -> next) = node_new ();
-      last_node = (last_node -> next);
-   }
- 
-   (last_node -> label) = strdup (label);
-   if (!(last_node -> label))
-   {
-      perror ("strdup");
-      fatal_error ("internal error: strdup", NULL);
-   }
 
-   (last_node -> line) = global_line_counter;
+      mn = (mn -> next);
+  }
+    while (mn);
+  }
+
+  // Ok, append it to the history
+  if (!last_node)
+    start_node = last_node = node_new ();
+  else
+  {
+    (last_node -> next) = node_new ();
+    last_node = (last_node -> next);
+  }
+
+  (last_node -> label) = strdup (label);
+  if (!(last_node -> label))
+  {
+    perror ("strdup");
+    fatal_error ("internal error: strdup", NULL);
+  }
+
+  (last_node -> line) = global_line_counter;
 }
 
 // Set the position of the script to the preceeding to the last_label,
 // remove the last position of the history.
 static void prepare_to_go_back (FILE *script)
 {
-   MenuNode *mn = start_node;
+  MenuNode *mn = start_node;
 
-   if (!start_node)
-      do_exit (script);	// No way back
+  if (!start_node)
+    do_exit (script);	// No way back
 
-   if (!(start_node -> next))
-      do_exit (script);	// No way back too
+  if (!(start_node -> next))
+    do_exit (script);	// No way back too
 
-   // Get the previous node
-   while ((mn -> next) != last_node)
-      mn = (mn -> next);
+  // Get the previous node
+  while ((mn -> next) != last_node)
+    mn = (mn -> next);
 
-   if (!*(start_node -> next -> label))
-      do_exit (script);
+  if (!*(start_node -> next -> label))
+    do_exit (script);
 
-   node_delete (last_node);
-   (mn -> next) = NULL;
-   last_node = mn;
+  node_delete (last_node);
+  (mn -> next) = NULL;
+  last_node = mn;
 
-   if (!strcmp ((mn -> label), ""))
-   {
-      global_line_counter = 0;
-      rewind (script);
-   }
-   else
-      seek_label (script, (mn -> label), NULL);
-   
-   if (mn == start_node)
-   {
-      node_delete (start_node);
-      start_node = last_node = NULL;
-   }
+  if (!strcmp ((mn -> label), ""))
+  {
+    global_line_counter = 0;
+    rewind (script);
+  }
+  else
+    seek_label (script, (mn -> label), NULL);
+
+  if (mn == start_node)
+  {
+    node_delete (start_node);
+    start_node = last_node = NULL;
+  }
 }
 
 /* TODO: check terminal setup/reset */
@@ -324,125 +324,124 @@ char *do_menu (FILE *script, char *line)
         "SPACE or RETURN to select and ESCAPE to go back" ));
   
   do
+  {
+    /* (re)display the menu */
+    for (i = 0; i < columns; i++)
     {
-      /* (re)display the menu */
-      for (i = 0; i < columns; i++)
+      /* write 1 column */
+      for (j = 0; j < real_items_per_column &&
+       (idx = i * real_items_per_column + j + start_idx)
+       <= end_idx; j++)
       {
-        /* write 1 column */
-        for (j = 0; j < real_items_per_column &&
-         (idx = i * real_items_per_column + j + start_idx)
-         <= end_idx; j++)
-        {
-          if (idx == cur_choice)
-            wattrset (stdscr, A_REVERSE);
-          else
-            wattroff (stdscr, A_REVERSE);
-          /* the formula for start_x:
-          i=0: 1*spacing + 0*max_width
-          i=1: 2*spacing + 1*max_width
-          i=2: 3*spacing + 2*max_width
-          i=3: 4*spacing + 3*max_width
-          => (i+1)*spacing + i*max_width */
-          mvwideaddstr (start_y + j,
-                        (i + 1) * spacing + i * max_width,
-          descriptions[idx]);
-          for (k = max_width - utf8len (descriptions[idx]); k > 0; k--)
-            waddch (stdscr, ' ');
+        if (idx == cur_choice)
+          wattrset (stdscr, A_REVERSE);
+        else
+          wattroff (stdscr, A_REVERSE);
+        /* the formula for start_x:
+           i=0: 1*spacing + 0*max_width
+           i=1: 2*spacing + 1*max_width
+           i=2: 3*spacing + 2*max_width
+           i=3: 4*spacing + 3*max_width
+           => (i+1)*spacing + i*max_width */
+        mvwideaddstr (start_y + j,
+                     (i + 1) * spacing + i * max_width,
+        descriptions[idx]);
+        for (k = max_width - utf8len (descriptions[idx]); k > 0; k--)
+          waddch (stdscr, ' ');
+      }
+    }
+
+    wattroff (stdscr, A_REVERSE);
+
+    get_widech( &ch );
+    switch (ch)
+    {
+      case KEY_UP:
+      case 'K':
+      case 'k':
+        cur_choice = max (0, cur_choice - 1);
+        if (cur_choice < start_idx) {
+          start_idx--; end_idx--;
         }
-      }
+        break;
+      case KEY_DOWN:
+      case 'J':
+      case 'j':
+        cur_choice = min (cur_choice + 1, num_items - 1);
+        if (cur_choice > end_idx) {
+          start_idx++; end_idx++;
+        }
+        break;
 
-      wattroff (stdscr, A_REVERSE);
+      case KEY_PPAGE:
+        k = start_idx;
+        start_idx = max (0, start_idx - items_per_page);
+        end_idx += start_idx - k;
+        cur_choice += start_idx - k;
+        break;
+      case KEY_NPAGE:
+        k = end_idx;
+        end_idx = min (end_idx + items_per_page, num_items - 1);
+        start_idx += end_idx - k;
+        cur_choice += end_idx - k;
+        break;
 
-      get_widech( &ch );
-      switch (ch)
-      {
-        case KEY_UP:
-        case 'K':
-        case 'k':
-          cur_choice = max (0, cur_choice - 1);
-          if (cur_choice < start_idx) {
-            start_idx--; end_idx--;
-          }
-          break;
-        case KEY_DOWN:
-        case 'J':
-        case 'j':
-          cur_choice = min (cur_choice + 1, num_items - 1);
-          if (cur_choice > end_idx) {
-            start_idx++; end_idx++;
-          }
-          break;
+      case KEY_RIGHT:
+      case 'l':
+      case 'L':
+        if (cur_choice + real_items_per_column < end_idx)
+           cur_choice += real_items_per_column;
+        else
+        {
+           k = end_idx;
+           end_idx = min (end_idx + items_per_page, num_items - 1);
+           start_idx += end_idx - k;
+           if (end_idx - k)
+              cur_choice += end_idx - k;
+           else
+              cur_choice = num_items - 1;
+        }
+        break;
 
-        case KEY_PPAGE:
-          k = start_idx;
-          start_idx = max (0, start_idx - items_per_page);
-          end_idx += start_idx - k;
-          cur_choice += start_idx - k;
-          break;
-        case KEY_NPAGE:
-          k = end_idx;
-          end_idx = min (end_idx + items_per_page, num_items - 1);
-          start_idx += end_idx - k;
-          cur_choice += end_idx - k;
-          break;
+      case ASCII_NL:
+      case ASCII_SPACE:
+        ch = KEY_ENTER;
+      case KEY_ENTER:
+        break;
 
-        case KEY_RIGHT:
-        case 'l':
-        case 'L':
-          if (cur_choice + real_items_per_column < end_idx)
-             cur_choice += real_items_per_column;
-          else
-          {
-             k = end_idx;
-             end_idx = min (end_idx + items_per_page, num_items - 1);
-             start_idx += end_idx - k;
-             if (end_idx - k)
-                cur_choice += end_idx - k;
-             else
-                cur_choice = num_items - 1;
-          }
+      case KEY_LEFT:
+      case 'h':
+      case 'H':
+        if (cur_choice - real_items_per_column >= start_idx)
+           cur_choice -= real_items_per_column;
+        else
+        {
+           k = start_idx;
+           start_idx = max (0, start_idx - items_per_page);
+           end_idx += start_idx - k;
+           if (start_idx - k)
+              cur_choice += start_idx - k;
+           else
+              cur_choice = 0;
+        }
+        break;
+        
+      case KEY_CANCEL: // anyone knows where is this key on a PC keyboard?
+      case ASCII_ESC:
+      case 'q':
+      case 'Q':
+        if (has_up_label)
+           seek_label (script, up, NULL);
+        else
+           prepare_to_go_back (script);
+        goto cleanup;
 
-          break;
-
-        case ASCII_NL:
-        case ASCII_SPACE:
-          ch = KEY_ENTER;
-        case KEY_ENTER:
-          break;
-
-        case KEY_LEFT:
-        case 'h':
-        case 'H':
-          if (cur_choice - real_items_per_column >= start_idx)
-             cur_choice -= real_items_per_column;
-          else
-          {
-             k = start_idx;
-             start_idx = max (0, start_idx - items_per_page);
-             end_idx += start_idx - k;
-             if (start_idx - k)
-                cur_choice += start_idx - k;
-             else
-                cur_choice = 0;
-          }
-          break;
-          
-        case KEY_CANCEL: // anyone knows where is this key on a PC keyboard?
-        case ASCII_ESC:
-        case 'q':
-        case 'Q':
-          if (has_up_label)
-             seek_label (script, up, NULL);
-          else
-             prepare_to_go_back (script);
-          goto cleanup;
-
-        default:
-          // printf ("libncurses think that it's key \\%o\n", ch);
-          break;
-      }
-      
-    } while (ch != KEY_ENTER);
+      default:
+        // printf ("libncurses think that it's key \\%o\n", ch);
+        break;
+    }
+    
+  } while (ch != KEY_ENTER);
 
   wattroff (stdscr, A_REVERSE);
   if (labels[cur_choice] != NULL)
