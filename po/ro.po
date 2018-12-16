@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtypist 2.10dev\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2018-12-10 00:12+0200\n"
+"POT-Creation-Date: 2018-12-16 23:36+0200\n"
 "PO-Revision-Date: 2018-10-31 11:46+0200\n"
 "Last-Translator: Mihai Gătejescu <gus666xe@gmail.com>\n"
 "Language-Team: Romanian\n"
@@ -38,13 +38,13 @@ msgstr "datele depășesc lungimea ecranului"
 msgid "instructions are limited to two lines"
 msgstr "instrucțiunile sunt limitate la două linii"
 
-#: src/gtypist.c:741 src/gtypist.c:1041 src/script.c:314
+#: src/gtypist.c:741 src/gtypist.c:1041 src/script.c:312
 msgid "internal error: fseek"
 msgstr "eroare internă: fseek"
 
-#: src/gtypist.c:824 src/gtypist.c:1899 src/gtypist.c:1915 src/gtypist.c:1962
-#: src/gtypist.c:1999 src/gtypist.c:2019 src/script.c:143 src/script.c:167
-#: src/script.c:257
+#: src/gtypist.c:824 src/gtypist.c:1896 src/gtypist.c:1912 src/gtypist.c:1959
+#: src/gtypist.c:1996 src/gtypist.c:2016 src/script.c:141 src/script.c:165
+#: src/script.c:256
 msgid "internal error: malloc"
 msgstr "eroare internă: malloc"
 
@@ -71,21 +71,21 @@ msgstr "depășire în do_error_max_set"
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "Valoare invalidă pentru \"E:\" (în afara domeniului)"
 
-#: src/gtypist.c:1459 src/script.c:308
+#: src/gtypist.c:1457 src/script.c:306
 #, c-format
 msgid "label '%s' not found"
 msgstr "eticheta '%s' nu a fost găsită"
 
-#: src/gtypist.c:1525
+#: src/gtypist.c:1521
 msgid "unknown command"
 msgstr "comandă necunoscută"
 
-#: src/gtypist.c:1558
+#: src/gtypist.c:1556
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Încearcă '%s --help' pentru mai multe informații\n"
 
-#: src/gtypist.c:1564
+#: src/gtypist.c:1563
 #, c-format
 msgid "%s: invalid error-max value\n"
 msgstr "%s: valoare error-max invalidă\n"
@@ -124,8 +124,7 @@ msgstr "Test viteză"
 #: src/gtypist.c:1682
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr ""
-" Apasă ENTER sau SPAȚIU pentru a continua, ESC pentru a te întoarce la "
-"meniul principal "
+" Apasă ENTER sau SPAȚIU pentru a continua, ESC pentru a te întoarce la meniu "
 
 #: src/gtypist.c:1685
 #, c-format
@@ -167,15 +166,15 @@ msgstr "R/N/I"
 msgid "%s: %s environment variable not set\n"
 msgstr "%s: variabila de mediu %s not set\n"
 
-#: src/gtypist.c:1790
+#: src/gtypist.c:1787
 msgid "can't find or open file"
 msgstr "nu se popate găsi sau deschide fișierul"
 
-#: src/gtypist.c:1844
+#: src/gtypist.c:1841
 msgid "Loading the script..."
 msgstr "Se încarcă scriptul..."
 
-#: src/gtypist.c:1954
+#: src/gtypist.c:1951
 msgid "internal error: fopen"
 msgstr "eroare internă: fopen"
 
@@ -184,38 +183,38 @@ msgid ""
 "Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go "
 "back"
 msgstr ""
-"Folosește săgețile să te miști, SPAȚIU sau ENTER pentru a selecta și  ESC "
+"Folosește săgețile să te miști, SPAȚIU sau ENTER pentru a selecta și ESC "
 "pentru a te întoarce"
 
 #: src/error.c:52
 msgid "line"
 msgstr "linie"
 
-#: src/script.c:159
+#: src/script.c:157
 msgid "label contains space"
 msgstr "eticheta conține spațiu"
 
-#: src/script.c:185
+#: src/script.c:183
 msgid "label redefinition"
 msgstr "redefinire etichetă"
 
-#: src/script.c:229
+#: src/script.c:227
 msgid "Invalid multibyte sequence (wrong encoding?)"
 msgstr "Secvență multioctet invalidă (codificare greșită?)"
 
-#: src/script.c:231
+#: src/script.c:229
 msgid "data shortage"
 msgstr "lipsă de date"
 
-#: src/script.c:233
+#: src/script.c:231
 msgid "missing ':'"
 msgstr "':' lipsă"
 
-#: src/script.c:239
+#: src/script.c:237
 msgid "line too long for screen"
 msgstr "linie prea lungă pentru ecran"
 
-#: src/script.c:331 src/script.c:335
+#: src/script.c:328 src/script.c:332
 #, c-format
 msgid ""
 "Happy Typing!\n"
@@ -340,7 +339,7 @@ msgstr ""
 "Dacă aveți întrebări despre GNU Typist, vă rugăm să scrieți către lista\n"
 "de discuții <bug-gtypist@gnu.org>."
 
-#: src/infoview.c:270
+#: src/infoview.c:269
 msgid ""
 "Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"
 msgstr ""
