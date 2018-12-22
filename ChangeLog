@@ -1,3 +1,7 @@
+2018-12-22  Felix Natter <fnatter@gmx.net>
+	* fix some English translatable strings (i.e. "error-max")
+	  and rephrase welcome message
+
 2014-08-11  Tim Marston  <tim@ed.am>
 
 	* version.sh, NEWS: updated for 2.9.5

@@ -1560,7 +1560,7 @@ void parse_cmdline_and_config( int argc, char **argv )
   // check max-error is valid
   if( cl_args.max_error_arg <= 0 || cl_args.max_error_arg > 100 )
   {
-    fprintf( stderr, _( "%s: invalid error-max value\n" ), argv0 );
+    fprintf( stderr, _( "%s: invalid max-error value\n" ), argv0 );
     exit( 1 );
   }
 

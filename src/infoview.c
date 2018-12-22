@@ -117,18 +117,17 @@ int do_beginner_infoview()
 {
   const char* constMsg =
   /* TRANSLATORS: This message must not exceed 76 characters (UTF-8 code
-     points, actually) wide or it will display incorrectly on an 80-character
+     points, actually) or it will display incorrectly on an 80-character
      wide terminal. */
-  _(  "Welcome to GNU Typist!\n"
+      _(  "Welcome to GNU Typist!\n"
       "\n"
       // 23456789012345678901234567890123456789012345678901234567890123456789012345
       "This message is meant to get you started using gtypist. Please read the\n"
       "manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist\")\n"
       "for more in-depth information!\n"
-      "(in particular, the manual describes how to resize GTypist's window).\n"
       "\n"
       "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
-      "using gtypist, or 'D' to use gtypist and never show this dialog again.\n"
+        "using gtypist, or 'D' to use gtypist and never show this dialog again.\n"
       "\n"
       "There are two types of typing exercises: \"drills\" and \"speed tests\". In a\n"
       "\"drill\", gtypist displays text in every other line on the screen and waits\n"
@@ -142,23 +141,26 @@ int do_beginner_infoview()
       "command-line option.\n"
       "\n"
       "On most X11-based terminal emulators you can use Ctrl--/Ctrl-+ to resize the\n"
-      "terminal window. On Windows, change the properties of the terminal window by\n"
-      "clicking on the top left corner of the window and choosing 'Properties'.\n"
+      "terminal window. For Mac OS X, Command--/Command-+ serve this purpose.\n"
+      "On Windows, change the properties of the terminal window by clicking on\n"
+      "the top left corner of the window and choosing 'Properties'.\n"
       "\n"
       "Several typing courses are available from the main menu. As well as the\n"
       "\"QWERTY\" courses, lessons are also available for other keyboard layouts,\n"
       "such as Dvorak and Colemak, and numeric keypads. There are also other\n"
-      "lessons, besides the ones available on the main menu. To see a list of the\n"
-      "other lessons, select \"More lessons...\" from the main menu. To use one\n"
-      "of these other lessons, run gtypist with the name of the lesson file as a\n"
-      "command-line argument. See the comments at the top of each .typ file for\n"
-      "more information about the source and the author of the lessons. If you want\n"
-      "to write your own lessons, look at the gtypist manual, it's really simple!\n"
-      "\n"
-      "Check the new special character course for programmers in \"More lessons...\".\n"
+      "lessons, besides the ones available on the main menu (such as the new\n"
+      "lesson for programmers). To see a list of the other lessons, select\n"
+      "\"More lessons...\" from the main menu.\n"
+      "To use one of these other lessons, run gtypist with the name of the lesson\n"
+      "file (including .typ) as a command-line argument. See the comments at the\n"
+      "top of each file for more information about the source and the au7thor of\n"
+      "the lessons. If you want to write your own lessons, look at gtypist's\n"
+      "manual, it's really simple!\n"
       "\n"
       "If you have any questions about GNU Typist, please write to the gtypist\n"
       "mailing list at <bug-gtypist@gnu.org>."
+      "\n\n"
+      "Happy Typing!"
   );
 
   char* msg; 
@@ -210,7 +212,7 @@ int do_beginner_infoview()
   lastLine = (numMsgLines < height - 3) ? (numMsgLines - 1) : (height - 3);
 
   clear();
-  banner("Beginner screen");
+  banner(_("Welcome screen"));
   draw_frame(xOffset, yOffset, xOffset + width, yOffset + height - 1);
 
   ch = 0x00;
