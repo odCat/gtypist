@@ -1,13 +1,13 @@
 # Polish messages for gtypist.
 # This file is distributed under the same license as the gtypist package.
-# Jakub Bogusz <qboosh@pld-linux.org>, 2002-2011.
+# Jakub Bogusz <qboosh@pld-linux.org>, 2002-2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gtypist 2.9\n"
+"Project-Id-Version: gtypist 2.10dev\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2018-12-22 21:54+0100\n"
-"PO-Revision-Date: 2012-02-06 17:35+0000\n"
+"POT-Creation-Date: 2018-12-22 23:55+0200\n"
+"PO-Revision-Date: 2019-01-03 17:35+0000\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "Language: pl\n"
@@ -83,9 +83,9 @@ msgid "Try '%s --help' for more information.\n"
 msgstr "Polecenie '%s --help' poda więcej informacji.\n"
 
 #: src/gtypist.c:1563
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid max-error value\n"
-msgstr "%s: błędna wartość error-max\n"
+msgstr "%s: błędna wartość max-error\n"
 
 #: src/gtypist.c:1570
 #, c-format
@@ -98,9 +98,9 @@ msgid "%s: invalid colours value\n"
 msgstr "%s: błędna wartość kolorów\n"
 
 #: src/gtypist.c:1593
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid banner-colours value\n"
-msgstr "%s: błędna wartość kolorów\n"
+msgstr "%s: błędna wartość banner-colours\n"
 
 #: src/gtypist.c:1674
 msgid " Tutorial "
@@ -228,7 +228,7 @@ msgstr "błąd w setcchar()"
 
 #: src/infoview.c:110
 msgid "error writing config file!"
-msgstr ""
+msgstr "błąd zapisu pliku konfiguracyjnego!"
 
 #. TRANSLATORS: This message must not exceed 76 characters (UTF-8 code
 #. points, actually) or it will display incorrectly on an 80-character
@@ -283,15 +283,63 @@ msgid ""
 "\n"
 "Happy Typing!"
 msgstr ""
+"GNU Typist wita!\n"
+"\n"
+"Ten komunikat oznacza początek przygody z gtypistem. Proszę przeczytać\n"
+"podręcznik (pod http://www.gnu.org/software/gtypist/doc/ lub napisać\n"
+"\"info gtypist\"), aby uzyskać bardziej szczegółowe informacje.\n"
+"\n"
+"Klawisze ze strzałkami lub PgUp/PgDn pozwalają przewijać to okno, SPACJA/\n"
+"ENTER uruchomić gtypista, a \"D\" - uruchomić gtypista bez pokazywania\n"
+"więcej razy tego okna.\n"
+"\n"
+"Są dwa rodzaje zadań: \"ćwiczenia\" i \"testy szybkości\". W \"ćwiczeniach"
+"\"\n"
+"gtypist wyświetla tekst w co drugiej linii ekranu i czeka, aż użytkownik\n"
+"poprawnie wpisze dokładnie ten sam tekst w wierszach pomiędzy. W \"teście\n"
+"szybkości\" gtypist wyświetla tekst na ekranie i czeka, aż użytkownik\n"
+"poprawnie wpisze dokładnie ten sam tekst na górze.\n"
+"\n"
+"W obu rodzajach zadań trzeba powtarzać test, jeśli procent błędów jest\n"
+"większy od maksymalnego. Domyślnie jest to 3%, ale jeśli to zbyt trudne,\n"
+"można tę wartość zmienić, uruchamiając gtypista z opcję linii poleceń\n"
+"\"-e <maksproc>\".\n"
+"\n"
+"W większości emulatorów terminali opartych na X11 można użyć Ctrl--/Ctrl-+,\n"
+"aby zmienić rozmiar okna terminala. Pod Mac OS X, można to robić\n"
+"kombinacjami Command--/Command-+. Pod Windows, właściwości okna można\n"
+"zmienić klikając w lewym górnym rogu okna i wybierając \"Właściwości\".\n"
+"\n"
+"Z poziomu głównego menu dostępne jest kilka kursów pisania. Oprócz kursów\n"
+"\"QUERTY\", dostępne są także lekcje dla innych układów klawiatury, takich "
+"jak\n"
+"Dvoraka lub Colemaka, oraz klawiatur numerycznych. Oprócz lekcji dostępnych\n"
+"z głównego menu, są dostępne także inne (np. dla programistów). Aby "
+"zobaczyć\n"
+"listę pozostałych lekcji, należy z głównego menu wybrać \"Więcej lekcji..."
+"\".\n"
+"Aby użyć jednej z pozostałych lekcji, należy uruchomić gtypista z nazwą\n"
+"pliku lekcji (włączając .typ) jako argumentem linii poleceń. Informacje o\n"
+"źródle i autorze lekcji można znaleźć na początku pliku. Aby stworzyć "
+"własne\n"
+"lekcje, proszę spojrzeć do podręcznika, to naprawdę proste!\n"
+"\n"
+"W przypadku pytań dotyczących GNU Typista, można napisać na listę "
+"dyskusyjną\n"
+"gtypista pod adresem <bug-gtypist@gnu.org>.\n"
+"\n"
+"Wesołego pisania!"
 
 #: src/infoview.c:215
 msgid "Welcome screen"
-msgstr ""
+msgstr "Ekrain powitalny"
 
 #: src/infoview.c:271
 msgid ""
 "Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"
 msgstr ""
+"Proszę nacisnąć SPACJĘ, ENTER lub ESCAPE, aby uruchomić gtypista albo 'D' "
+"aby wyłączyć to okno"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
@@ -347,211 +395,3 @@ msgstr "Własny rekord|= %7.2f zn/min"
 #: src/speedbox.c:91
 msgid "|new personal best"
 msgstr "|nowy własny rekord"
-
-#, fuzzy
-#~ msgid "Happy Typing!"
-#~ msgstr ""
-#~ "Miłego pisania!\n"
-#~ "\n"
-
-#~ msgid ""
-#~ "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
-#~ "Copyright (C) 2003, 2004, 2008, 2011, 2012 GNU Typist Development Team.\n"
-#~ "This program comes with ABSOLUTELY NO WARRANTY; for details\n"
-#~ "please see the file 'COPYING' supplied with the source code.\n"
-#~ "This is free software, and you are welcome to redistribute it\n"
-#~ "under certain conditions; again, see 'COPYING' for details.\n"
-#~ "This program is released under the GNU General Public License."
-#~ msgstr ""
-#~ "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
-#~ "Copyright (C) 2003, 2004, 2008, 2011, 2012 GNU Typist Development Team.\n"
-#~ "Ten program jest udostępniony BEZ ŻADNEJ GWARANCJI; szczegóły\n"
-#~ "znajdują się w pliku 'COPYING' dołączonym do kodu źródłowego.\n"
-#~ "To oprogramowanie jest wolnodostępne i można je rozpowszechniać\n"
-#~ "pod pewnymi warunkami - szczegóły w pliku 'COPYING'.\n"
-#~ "Ten program jest wydany na Powszechnej Licencji Publicznej GNU."
-
-#~ msgid "track personal best typing speeds"
-#~ msgstr "śledzenie własnych rekordów szybkości pisania"
-
-#~ msgid ""
-#~ "default maximum error percentage (default 3.0); valid values are between "
-#~ "0.0 and 100.0"
-#~ msgstr ""
-#~ "domyślny maksymalny procent błędów (domyślnie 3.0); poprawne wartości "
-#~ "pomiędzy 0.0 a 100.0"
-
-#~ msgid "turn off WPM timer in drills"
-#~ msgstr "wyłączenie stopera słów/min na czas ćwiczeń"
-
-#~ msgid "use the terminal's hardware cursor"
-#~ msgstr "użycie sprzętowego kursora terminala"
-
-#~ msgid ""
-#~ "cursor flash period P*.1 sec (default 10); valid  values are between 0 "
-#~ "and 512; this is ignored if -t is specified"
-#~ msgstr ""
-#~ "okres migania kursora P*.1 sek (domyślnie 10); poprawne wartości od 0 do "
-#~ "512; ignorowane, jeśli podano -t"
-
-#~ msgid "set initial display colours where available"
-#~ msgstr "ustawienie początkowych kolorów ekranu, jeśli są dostępne"
-
-#~ msgid "don't beep on errors"
-#~ msgstr "wyłączenie pisków przy błędach"
-
-#~ msgid "same as -s, --silent"
-#~ msgstr "to samo co -s, --silent"
-
-#~ msgid "start the lesson at label 'L'"
-#~ msgstr "rozpoczęcie lekcji od etykiety 'L'"
-
-#~ msgid "try to mimic word processors"
-#~ msgstr "próba naśladowania procesorów tekstu"
-
-#~ msgid "forbid the user to skip exercises"
-#~ msgstr "nie zezwalanie na pomijanie ćwiczeń"
-
-#~ msgid "highlight errors with reverse video"
-#~ msgstr "podświetlanie błędów odwróconymi kolorami"
-
-#~ msgid "print this message"
-#~ msgstr "wyświetlenie tego komunikatu"
-
-#~ msgid "output version information and exit"
-#~ msgstr "wypisanie informacji o wersji i zakończenie pracy"
-
-#~ msgid "do not ask confirmation questions"
-#~ msgstr "nie żądanie potwierdzeń"
-
-#~ msgid ""
-#~ "set top banner colours (background, foreground, package and version "
-#~ "respectively)"
-#~ msgstr "ustawienie kolorów górnych nagłówków (tło, tekst, pakiet i wersja)"
-
-#~ msgid "set scoring mode (words per minute or characters per minute)"
-#~ msgstr "ustawienie trybu punktacji (słowa na minutę lub znaki na minutę)"
-
-#~ msgid ""
-#~ "`gtypist' is a typing tutor with several lessons for different keyboards "
-#~ "and languages.  New lessons can be written by the user easily.\n"
-#~ "\n"
-#~ msgstr ""
-#~ "`gtypist' jest programem do nauki pisania z różnymi lekcjami dla różnych\n"
-#~ "klawiatur i języków. Nowe lekcje mogą być łatwo dopisane przez "
-#~ "użytkownika.\n"
-#~ "\n"
-
-#~ msgid "Usage"
-#~ msgstr "Składnia"
-
-#~ msgid "options"
-#~ msgstr "opcje"
-
-#~ msgid "script-file"
-#~ msgstr "plik-skryptu"
-
-#~ msgid "Options"
-#~ msgstr "Opcje"
-
-#~ msgid ""
-#~ "\n"
-#~ "If not supplied, script-file defaults to '%s/%s'.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Jeśli nie podano, przyjmowany jest plik-skryptu '%s/%s'.\n"
-
-#~ msgid ""
-#~ "The path $GTYPIST_PATH is searched for script files.\n"
-#~ "\n"
-#~ msgstr ""
-#~ "Pliki skryptu są szukane w katalogu $GTYPIST_PATH.\n"
-#~ "\n"
-
-#~ msgid "Examples"
-#~ msgstr "Przykłady"
-
-#~ msgid "To run the default lesson in english `gtypist.typ'"
-#~ msgstr "Aby uruchomić domyślną lekcję po angielsku `gtypist.typ'"
-
-#~ msgid "To run the lesson in spanish"
-#~ msgstr "Aby uruchomić lekcję po hiszpańsku"
-
-#~ msgid ""
-#~ "To instruct gtypist to look for lesson `bar.typ' in a non standard "
-#~ "directory"
-#~ msgstr ""
-#~ "Aby powiadomić gtypista, by szukał lekcji `bar.typ' w niestandardowym "
-#~ "katalogu"
-
-#~ msgid ""
-#~ "To run the lesson in the file `test.typ' of directory `temp', starting at "
-#~ "label `TEST1', using the terminal's cursor, and run silently"
-#~ msgstr ""
-#~ "Aby uruchomić lekcję z pliku `test.typ' w katalogu `temp', zaczynając\n"
-#~ "od etykiety `TEST1', używając kursora terminala, bez pisków"
-
-#~ msgid "Report bugs to bug-gtypist@gnu.org"
-#~ msgstr "Błędy proszę zgłaszać na bug-gtypist@gnu.org"
-
-#~ msgid "%s:  argument format is incorrect\n"
-#~ msgstr "%s: błędny format argumentu\n"
-
-#~ msgid "%s:  incorrect colour values\n"
-#~ msgstr "%s: błędne wartości kolorów\n"
-
-#~ msgid "%s: invalid scoring mode"
-#~ msgstr "%s: błędny tryb punktacji"
-
-#~ msgid "%s: internal error: malloc\n"
-#~ msgstr "%s: błąd wewnętrzny: malloc\n"
-
-#~ msgid "Written by Simon Baldwin"
-#~ msgstr "Napisane przez Simona Baldwina"
-
-#~ msgid "internal error in strdup"
-#~ msgstr "błąd wewnętrzny w strdup"
-
-#~ msgid ""
-#~ "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
-#~ "Copyright (C) 2003, 2004, 2008, 2011 GNU Typist Development Team.\n"
-#~ "This program comes with ABSOLUTELY NO WARRANTY; for details\n"
-#~ "please see the file 'COPYING' supplied with the source code.\n"
-#~ "This is free software, and you are welcome to redistribute it\n"
-#~ "under certain conditions; again, see 'COPYING' for details.\n"
-#~ "This program is released under the GNU General Public License."
-#~ msgstr ""
-#~ "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
-#~ "Copyright (C) 2003, 2004, 2008, 2011 GNU Typist Development Team.\n"
-#~ "Ten program jest udostępniony BEZ ŻADNEJ GWARANCJI; szczegóły\n"
-#~ "znajdują się w pliku 'COPYING' dołączonym do kodu źródłowego.\n"
-#~ "To oprogramowanie jest wolnodostępne i można je rozpowszechniać\n"
-#~ "pod pewnymi warunkami - szczegóły w pliku 'COPYING'.\n"
-#~ "Ten program jest wydany na Powszechnej Licencji Publicznej GNU."
-
-#~ msgid " Raw speed      = %6.2f wpm "
-#~ msgstr " Sama szybkość       = %6.2f sł/min "
-
-#~ msgid " Raw speed      = %6.2f cpm "
-#~ msgstr " Sama szybkość       = %6.2f zn/min "
-
-#~ msgid " Adjusted speed = %6.2f wpm "
-#~ msgstr " Szybkość z poprawką = %6.2f sł/min "
-
-#~ msgid " Adjusted speed = %6.2f cpm "
-#~ msgstr " Szybkość z poprawką = %6.2f zn/min "
-
-#~ msgid "            with %.1f%% errors "
-#~ msgstr "                   %.1f%% błędów "
-
-#~ msgid " Personal best  = %6.2f wpm "
-#~ msgstr " Własny rekord       = %6.2f sł/min "
-
-#~ msgid " Personal best  = %6.2f cpm "
-#~ msgstr " Własny rekord       = %6.2f zn/min "
-
-#~ msgid "           new personal best "
-#~ msgstr "                 nowy własny rekord "
-
-#~ msgid " internal error: fopen"
-#~ msgstr " błąd wewnętrzny: fopen"
