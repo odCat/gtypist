@@ -583,7 +583,8 @@ void do_drill( FILE *script, char *line )
               rc = getch_fl (chars_in_the_line_typed >= COLS ? *(widep + 1) :
                              (*widep == ASCII_TAB ? ASCII_TAB : ASCII_SPACE));
             }
-          while ( rc == GTYPIST_KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL );
+          while ( rc == GTYPIST_KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL
+                  || rc == KEY_RESIZE ); /* ignore terminal resize event */
 
           /* start timer on first char entered */
           if ( chars_typed == 0 )
@@ -879,10 +880,16 @@ void do_speedtest( FILE *script, char *line )
       for ( widep = wideData; *widep == ASCII_SPACE && *widep != ASCII_NULL; widep++ )
         wideaddch(*widep);
 
-      for ( chars_typed = 0, errors_pos = 0, memset(errors_buf, 0, numChars * sizeof(int)),  error_sync = 0;
+      for ( chars_typed = 0, errors_pos = 0, memset(errors_buf, 0,
+            numChars * sizeof(int)),  error_sync = 0;
             *widep != ASCII_NULL; widep++, errors_pos++ )
         {
-          rc = getch_fl( (*widep != ASCII_NL) ? *widep : RETURN_CHARACTER );
+
+          do
+          {
+            rc = getch_fl( (*widep != ASCII_NL) ? *widep : RETURN_CHARACTER );
+          }
+          while (rc == KEY_RESIZE); /* ignore terminal resize event */
 
           /* start timer on first char entered */
           if ( chars_typed == 0 )
