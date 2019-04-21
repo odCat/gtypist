@@ -79,30 +79,30 @@ S:It is hard to believe, but 230 minus 220 times one half equals 5!
 
 I:(6) And try our first bit of code
 S:# Hello world in Python 2
- :print "Hello World!"
+ :print "Hello, World!"
  :
  :
  :# Hello world in Python 3
- :print("Hello world!")
+ :print("Hello, world!")
  : 
  :
  :# Hello world in Ruby
- :puts "Hello World!"
+ :puts "Hello, World!"
  : 
  :
  :;;; Hello world in Emacs Lisp
  :(defun hello-world()
  :  "Display the string hello world."
  :  (interactive)
- :  (message "Hello World!"))
+ :  (message "Hello, World!"))
  :
  :
  :" Hello world in Vim script
- ::echom "Hello World!"
+ ::echom "Hello, World!"
  :
  :
  :# Hello world in SQL
- :SELECT 'Hello World!';
+ :SELECT 'Hello, World!';
  :
  :
  :% Hello world in MATLAB
@@ -141,7 +141,7 @@ S:What is your name?  I hope it's "Bob": I've always liked the name "Bob".
 
 I:(6) And now a bit more "Hello world" coding
 S:// Hello world in JavaScript
- :console.log("Hello World!");
+ :console.log("Hello, World!");
  :
  :
  :// Hello world in Swift
@@ -149,15 +149,15 @@ S:// Hello world in JavaScript
  :
  :
  :# Hello world in Lua
- :print "Hello World!"
+ :print "Hello, World!"
  :
  :
  :# Hello world in Perl 6
- :say 'Hello World!';
+ :say 'Hello, World!';
  :
  :
  :// Hello world in TypeScript 
- :alert('Hello World!');
+ :alert('Hello, World!');
  :
  :
  :'Hello world in Visual Basic .NET
@@ -166,7 +166,7 @@ S:// Hello world in JavaScript
  :Class HelloWorld
  :
  :    Public Shared Sub Main()
- :        WriteLine("Hello, world!")
+ :        WriteLine("Hello, World!")
  :    End Sub
  :
  :End Class
@@ -321,7 +321,7 @@ I:(5) Try some coding
 S:/* Hello world in C, K&R style */
  :main()
  :{
- :  puts("Hello world!");
+ :  puts("Hello, World!");
  :  return 0;
  :}
  :
@@ -330,7 +330,7 @@ S:/* Hello world in C, K&R style */
  :
  :main()
  :{
- :    cout << "Hello World!" << endl;
+ :    cout << "Hello, World!" << endl;
  :    return 0;
  :}
  :
@@ -347,7 +347,7 @@ S:/* Hello world in C, K&R style */
  :
  :<?php
  :  // Hello world in PHP
- :  echo 'Hello World!';
+ :  echo 'Hello, World!';
  :?>
  :
  :
@@ -357,7 +357,7 @@ S:/* Hello world in C, K&R style */
  :{$APPTYPE CONSOLE}
  :
  :Begin
- :  WriteLn('Hello World');
+ :  WriteLn('Hello, World!');
  :End.
 
 Q:Do you want to continue to lesson P7 [Y/N] ? 
