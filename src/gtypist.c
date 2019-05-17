@@ -625,7 +625,6 @@ void do_drill( FILE *script, char *line )
               wideaddch(rc);
               ++chars_in_the_line_typed;
             } else {
-              after_newline = true;  
               wideaddch(RETURN_CHARACTER);
               chars_in_the_line_typed = 0;
             }
@@ -670,6 +669,7 @@ void do_drill( FILE *script, char *line )
         /* move screen location if newline */
         if ( *widep == ASCII_NL )
         {
+          after_newline = true;  
           ++linenum; ++linenum;
           move( linenum, 0 );
         }
@@ -678,32 +678,32 @@ void do_drill( FILE *script, char *line )
         if ( cl_args.word_processor_flag )
         {
           if ( rc == ASCII_SPACE )
+          {
+            while ( *(widep+1) == ASCII_SPACE
+                    && *(widep+1) != ASCII_NULL )
             {
-              while ( *(widep+1) == ASCII_SPACE
-                      && *(widep+1) != ASCII_NULL )
-                {
-                  ++widep;
-                  wideaddch(*widep);
-                  ++chars_in_the_line_typed;
-                }
+              ++widep;
+              wideaddch(*widep);
+              ++chars_in_the_line_typed;
             }
+          }
           else if ( rc == ASCII_NL )
+          {
+            while ( ( *(widep+1) == ASCII_SPACE
+                      || *(widep+1) == ASCII_NL )
+                      && *(widep+1) != ASCII_NULL )
             {
-              while ( ( *(widep+1) == ASCII_SPACE
-                        || *(widep+1) == ASCII_NL )
-                        && *(widep+1) != ASCII_NULL )
-                {
-                  ++widep;
-                  wideaddch(*widep);
-                  ++chars_in_the_line_typed;
-                  if ( *widep == ASCII_NL ) {
-                    ++linenum; ++linenum;
-                    move( linenum, 0 );
-                    chars_in_the_line_typed = 0;
-                  }
-                }
+              ++widep;
+              wideaddch(*widep);
+              ++chars_in_the_line_typed;
+              if ( *widep == ASCII_NL )
+              {
+                ++linenum; ++linenum;
+                move( linenum, 0 );
+                chars_in_the_line_typed = 0;
+              }
             }
-          else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
+          } else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
                     && *(widep+2) == ASCII_NL )
             {
               ++widep;
@@ -723,45 +723,45 @@ void do_drill( FILE *script, char *line )
 
       /* skip timings and don't check error-pct if exit was through ESC */
       if ( rc != ASCII_ESC )
+      {
+        /* display timings */
+        gettimeofday(&tv, NULL);
+        end_time = tv.tv_sec + tv.tv_usec / 1000000.0;
+        if ( ! cl_args.notimer_flag )
         {
-          /* display timings */
-          gettimeofday(&tv, NULL);
-          end_time = tv.tv_sec + tv.tv_usec / 1000000.0;
-          if ( ! cl_args.notimer_flag )
-            {
-              display_speed( chars_typed, end_time - start_time,
-                             errors );
-            }
-
-          /* check whether the error-percentage is too high (unless in d:) */
-          if (drill_type != C_DRILL_PRACTICE_ONLY &&
-              is_error_too_high(chars_typed, errors))
-            {
-              sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-              wait_user (script, message, MODE_DRILL);
-
-              /* check for F-command */
-              if (global_on_failure_label != NULL)
-                {
-                  /* move to the label position in the file */
-                  if (fseek(script, global_on_failure_label->offset, SEEK_SET )
-                      == -1)
-                    fatal_error( _("internal error: fseek"), NULL );
-                  global_line_counter = global_on_failure_label->line_count;
-                  /* tell the user about the misery :) */
-                  sprintf(message,SKIPBACK_VIA_F_MSG,
-                          global_on_failure_label->label);
-                  /* reset value unless persistent */
-                  if (!global_on_failure_label_persistent)
-                    global_on_failure_label = NULL;
-                  wait_user (script, message, MODE_DRILL);
-                  seek_done = TRUE;
-                  break;
-                }
-
-              continue;
-            }
+          display_speed( chars_typed, end_time - start_time,
+                         errors );
         }
+
+        /* check whether the error-percentage is too high (unless in d:) */
+        if (drill_type != C_DRILL_PRACTICE_ONLY &&
+            is_error_too_high(chars_typed, errors))
+        {
+          sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
+          wait_user (script, message, MODE_DRILL);
+
+          /* check for F-command */
+          if (global_on_failure_label != NULL)
+          {
+            /* move to the label position in the file */
+            if (fseek(script, global_on_failure_label->offset, SEEK_SET )
+                == -1)
+              fatal_error( _("internal error: fseek"), NULL );
+            global_line_counter = global_on_failure_label->line_count;
+            /* tell the user about the misery :) */
+            sprintf(message,SKIPBACK_VIA_F_MSG,
+                    global_on_failure_label->label);
+            /* reset value unless persistent */
+            if (!global_on_failure_label_persistent)
+              global_on_failure_label = NULL;
+            wait_user (script, message, MODE_DRILL);
+            seek_done = TRUE;
+            break;
+          }
+
+          continue;
+        }
+      }
 
       /* ask the user whether he/she wants to repeat or exit */
       if ( rc == ASCII_ESC && cl_args.no_skip_flag ) /* honor --no-skip */
@@ -982,35 +982,33 @@ void do_speedtest( FILE *script, char *line )
 
         /* perform any other word processor like adjustments */
         if ( cl_args.word_processor_flag )
+        {
+          if ( rc == ASCII_SPACE )
           {
-            if ( rc == ASCII_SPACE )
+            while ( *(widep+1) == ASCII_SPACE
+                    && *(widep+1) != ASCII_NULL )
+            {
+              ++widep; 
+              ++errors_pos;
+              wideaddch(*widep);
+            }
+          } else if ( rc == ASCII_NL )
+            {
+              while ( ( *(widep+1) == ASCII_SPACE
+                        || *(widep+1) == ASCII_NL )
+                      && *(widep+1) != ASCII_NULL )
               {
-                while ( *(widep+1) == ASCII_SPACE
-                        && *(widep+1) != ASCII_NULL )
-                  {
-                    ++widep; 
-                    ++errors_pos;
-                    wideaddch(*widep);
-                  }
+                widep++;
+                errors_pos++;
+                wideaddch(*widep);
+                if ( *widep == ASCII_NL )
+                {
+                  linenum++;
+                  move( linenum, 0 );
+                }
               }
-            else if ( rc == ASCII_NL )
-              {
-                while ( ( *(widep+1) == ASCII_SPACE
-                          || *(widep+1) == ASCII_NL )
-                        && *(widep+1) != ASCII_NULL )
-                  {
-                    widep++;
-                    errors_pos++;
-                    wideaddch(*widep);
-                    if ( *widep == ASCII_NL )
-                      {
-                        linenum++;
-                        move( linenum, 0 );
-                      }
-                  }
-              }
-            else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
-                      && *(widep+2) == ASCII_NL )
+            } else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
+                    && *(widep+2) == ASCII_NL )
               {
                 widep++; 
                 errors_pos++;
@@ -1021,7 +1019,7 @@ void do_speedtest( FILE *script, char *line )
                 linenum++;
                 move( linenum, 0 );
               }
-          }
+        }
       }
 
 
@@ -1031,54 +1029,55 @@ void do_speedtest( FILE *script, char *line )
 
       /* skip timings and don't check error-pct if exit was through ESC */
       if ( rc != ASCII_ESC )
+      {
+        /* Count all the errors made during the speed_test */
+        errors = 0;
+        for ( err_idx = 0; err_idx < numChars; err_idx++)
+            errors += errors_buf[err_idx];
+
+        /* display timings */
+        gettimeofday(&tv, NULL);
+        end_time = tv.tv_sec + tv.tv_usec / 1000000.0;
+        display_speed( chars_typed, end_time - start_time,
+                       errors );
+
+        /* check whether the error-percentage is too high (unless in s:) */
+        if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&
+            is_error_too_high(chars_typed, errors))
         {
-          /* Count all the errors made during the speed_test */
-          errors = 0;
-          for ( err_idx = 0; err_idx < numChars; err_idx++)
-              errors += errors_buf[err_idx];
+          sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
+          wait_user (script, message, MODE_SPEEDTEST);
 
-          /* display timings */
-          gettimeofday(&tv, NULL);
-          end_time = tv.tv_sec + tv.tv_usec / 1000000.0;
-          display_speed( chars_typed, end_time - start_time,
-                         errors );
+          /* check for F-command */
+          if (global_on_failure_label != NULL)
+          {
+            /* move to the label position in the file */
+            if (fseek(script, global_on_failure_label->offset, SEEK_SET )
+                == -1)
+              fatal_error( _("internal error: fseek"), NULL );
+            global_line_counter = global_on_failure_label->line_count;
+            /* tell the user about the misery :) */
+            sprintf(message,SKIPBACK_VIA_F_MSG,
+                    global_on_failure_label->label);
+            /* reset value unless persistent */
+            if (!global_on_failure_label_persistent)
+                global_on_failure_label = NULL;
+            wait_user (script, message, MODE_SPEEDTEST);
+            seek_done = TRUE;
+            break;
+          }
 
-          /* check whether the error-percentage is too high (unless in s:) */
-          if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&
-              is_error_too_high(chars_typed, errors))
-            {
-              sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-              wait_user (script, message, MODE_SPEEDTEST);
-
-              /* check for F-command */
-              if (global_on_failure_label != NULL)
-                {
-                  /* move to the label position in the file */
-                  if (fseek(script, global_on_failure_label->offset, SEEK_SET )
-                      == -1)
-                    fatal_error( _("internal error: fseek"), NULL );
-                  global_line_counter = global_on_failure_label->line_count;
-                  /* tell the user about the misery :) */
-                  sprintf(message,SKIPBACK_VIA_F_MSG,
-                          global_on_failure_label->label);
-                  /* reset value unless persistent */
-                  if (!global_on_failure_label_persistent)
-                      global_on_failure_label = NULL;
-                  wait_user (script, message, MODE_SPEEDTEST);
-                  seek_done = TRUE;
-                  break;
-                }
-
-              continue;
-            }
+          continue;
         }
+      }
 
       /* ask the user whether he/she wants to repeat or exit */
       if ( rc == ASCII_ESC && cl_args.no_skip_flag ) /* honor --no-skip */
         rc = do_query_repeat (script, FALSE);
       else
         rc = do_query_repeat (script, TRUE);
-      if (rc == 'E') {
+      if (rc == 'E')
+      {
         seek_done = TRUE;
         break;
       }
