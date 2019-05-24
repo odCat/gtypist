@@ -800,7 +800,6 @@ void do_speedtest( FILE *script, char *line )
   int	errors = 0;		 /* error count */
   int	*errors_buf;	 /* error localization buffer */
   int	errors_pos;		 /* error localization position */
-  int	err_idx;		   /* errors counter */
   int	linenum;		   /* line counter */
   char	*data = NULL;		 /* data string */
   int	lines_count = 0;	 /* measures exercise length */
@@ -1029,7 +1028,7 @@ void do_speedtest( FILE *script, char *line )
       {
         /* Count all the errors made during the speed_test */
         errors = 0;
-        for ( err_idx = 0; err_idx < numChars; err_idx++)
+        for (int err_idx = 0; err_idx < numChars; err_idx++)
             errors += errors_buf[err_idx];
 
         /* display timings */
