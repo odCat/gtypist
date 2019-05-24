@@ -572,7 +572,7 @@ void do_drill( FILE *script, char *line )
       for ( widep = wideData; *widep == ASCII_SPACE && *widep != ASCII_NULL; ++widep )
         wideaddch(*widep);
 
-      _Bool after_newline = false;
+      bool after_newline = FALSE;
       for ( chars_typed = 0,
             errors = 0,
             error_sync = 0,
@@ -585,7 +585,7 @@ void do_drill( FILE *script, char *line )
             wideaddch(*widep);
             continue;
           } else
-            after_newline = false;
+            after_newline = FALSE;
 
           do
           {
@@ -666,7 +666,7 @@ void do_drill( FILE *script, char *line )
           /* move screen location if newline */
           if ( *widep == ASCII_NL )
           {
-            after_newline = true;  
+            after_newline = TRUE;
             ++linenum; ++linenum;
             move( linenum, 0 );
           }
@@ -881,18 +881,18 @@ void do_speedtest( FILE *script, char *line )
       for ( widep = wideData; *widep == ASCII_SPACE && *widep != ASCII_NULL; ++widep )
         wideaddch(*widep);
 
-      _Bool after_newline = false;
+      bool after_newline = FALSE;
       for ( chars_typed = 0, errors_pos = 0, memset(errors_buf, 0,
             numChars * sizeof(int)),  error_sync = 0;
             *widep != ASCII_NULL; ++widep, ++errors_pos )
       {
         /* Jump over whitespaces at the beggining of the lines */
-        if (after_newline == true && (*widep == ASCII_SPACE || *widep == ASCII_TAB))
+        if (after_newline == TRUE && (*widep == ASCII_SPACE || *widep == ASCII_TAB))
         {
           wideaddch(*widep);
           continue;
         } else
-          after_newline = false;
+          after_newline = FALSE;
 
         do
         {
@@ -972,7 +972,7 @@ void do_speedtest( FILE *script, char *line )
         /* move screen location if newline */
         if ( *widep == ASCII_NL )
         {
-          after_newline = true;
+          after_newline = TRUE;
           ++linenum;
           move( linenum, 0 );
         }
