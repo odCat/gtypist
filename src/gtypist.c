@@ -510,13 +510,13 @@ void do_drill( FILE *script, char *line )
   int	rc;			           /* curses char typed */
   wchar_t  *widep, *wideData;
   double start_time=0, end_time; /* timing variables */
+  struct timeval tv;      /* temp timeval used to compute timing variables */
   char	message[MAX_WIN_LINE];	 /* message buffer */
   char	drill_type;		    /* note of the drill type */
   int	chars_typed;		    /* count of chars typed */
   int	chars_in_the_line_typed;
   bool  seek_done = FALSE;       /* was there a seek_label before exit? */
   int	error_sync;		      /* error resync state */
-  struct timeval tv;
 
   /* note the drill type to see if we need to make the user repeat */
   drill_type = SCR_COMMAND( line );
@@ -806,12 +806,12 @@ void do_speedtest( FILE *script, char *line )
   int	rc;			       /* curses char typed */
   wchar_t  *widep, *wideData;
   double start_time=0, end_time; /* timing variables */
+  struct timeval tv;     /* temp timeval used to compute timing variables */
   char	message[MAX_WIN_LINE];	 /* message buffer */
   char	drill_type;	  	 /* note of the drill type */
   int	chars_typed;	  	 /* count of chars typed */
   bool  seek_done = FALSE;       /* was there a seek_label before exit? */
   int	error_sync;		     /* error resync state */
-  struct timeval tv;
 
   /* note the drill type to see if we need to make the user repeat */
   drill_type = SCR_COMMAND( line );
@@ -920,7 +920,8 @@ void do_speedtest( FILE *script, char *line )
             /* Clear the error associated with the faulty character */
             errors_buf[--errors_pos] = 0;
           }
-          /* Do not account the backspace as a char typed as it could artificially lower the errors rate */
+          /* Do not account the backspace as a char typed as it could artificially
+             increase the errors rate */
           chars_typed--;
           widep--;		/* defeat widep++ coming up */
           errors_pos--;	/* defeat errors_pos++ coming up */
