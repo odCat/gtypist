@@ -547,234 +547,231 @@ void do_drill( FILE *script, char *line )
 
   while (1)
   {
-
-    /* display drill pattern */
-    linenum = DP_TOP_LINE;
-    move( linenum, 0 ); clrtobot();
-    for ( widep = wideData; *widep != ASCII_NULL; ++widep )
-    {
-      if ( *widep != ASCII_NL )
-        wideaddch(*widep);
-      else
+      /* display drill pattern */
+      linenum = DP_TOP_LINE;
+      move( linenum, 0 ); clrtobot();
+      for ( widep = wideData; *widep != ASCII_NULL; ++widep )
       {
-          /* emit return character */
-          wideaddch(RETURN_CHARACTER);
-
-          /* newline - move down the screen */
-          ++linenum; ++linenum;	/* alternate lines */
-          move( linenum, 0 );
-      }
-    }
-    move( MESSAGE_LINE, COLS - utf8len( MODE_DRILL ) - 2 );
-    ADDSTR_REV( MODE_DRILL );
-
-    /* run the drill */
-    linenum = DP_TOP_LINE + 1;
-    move( linenum, 0 );
-    for ( widep = wideData; *widep == ASCII_SPACE && *widep != ASCII_NULL; ++widep )
-      wideaddch(*widep);
-
-    _Bool after_newline = false;
-    for ( chars_typed = 0,
-          errors = 0,
-          error_sync = 0,
-          chars_in_the_line_typed = 0;
-          *widep != ASCII_NULL; widep++ )
-    {
-        /* Jump over whitespaces at the beginning of lines */
-        if (after_newline && (*widep == ASCII_SPACE || *widep == ASCII_TAB))
-        {
+        if ( *widep != ASCII_NL )
           wideaddch(*widep);
-          continue;
-        } else
-          after_newline = false;
+        else {
+            /* emit return character */
+            wideaddch(RETURN_CHARACTER);
 
-        do
-        {
-            rc = getch_fl (chars_in_the_line_typed >= COLS ? *(widep + 1) :
-                          (*widep == ASCII_TAB ? ASCII_TAB : ASCII_SPACE));
+            /* newline - move down the screen */
+            ++linenum; ++linenum;	/* alternate lines */
+            move( linenum, 0 );
         }
-        while ( rc == GTYPIST_KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL
-                || rc == KEY_RESIZE ); /* ignore terminal resize event */
+      }
+      move( MESSAGE_LINE, COLS - utf8len( MODE_DRILL ) - 2 );
+      ADDSTR_REV( MODE_DRILL );
 
-        /* start timer on first char entered */
-        if ( chars_typed == 0 )
-        {
-          gettimeofday(&tv, NULL);
-          start_time = tv.tv_sec + tv.tv_usec / 1000000.0;
-        }
-        chars_typed++;
-        error_sync--;
+      /* run the drill */
+      linenum = DP_TOP_LINE + 1;
+      move( linenum, 0 );
+      for ( widep = wideData; *widep == ASCII_SPACE && *widep != ASCII_NULL; ++widep )
+        wideaddch(*widep);
 
-        /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
-           (this is handled outside the for loop) */
-        if ( rc == ASCII_ESC )
-          break;
-
-        /* check that the character was correct */
-        if ( rc == *widep || ( cl_args.word_processor_flag &&
-             rc == ASCII_SPACE && *widep == ASCII_NL ))
-        {
-          if (cl_args.word_processor_flag && rc == ASCII_SPACE &&
-              *widep == ASCII_NL)
+      _Bool after_newline = false;
+      for ( chars_typed = 0,
+            errors = 0,
+            error_sync = 0,
             chars_in_the_line_typed = 0;
-          else
+            *widep != ASCII_NULL; widep++ )
+      {
+          /* Jump over whitespaces at the beginning of lines */
+          if (after_newline && (*widep == ASCII_SPACE || *widep == ASCII_TAB))
           {
-            if (rc != ASCII_NL)
-            {
-              wideaddch(rc);
-              ++chars_in_the_line_typed;
-            } else {
-              wideaddch(RETURN_CHARACTER);
-              chars_in_the_line_typed = 0;
-            }
+            wideaddch(*widep);
+            continue;
+          } else
+            after_newline = false;
+
+          do
+          {
+              rc = getch_fl (chars_in_the_line_typed >= COLS ? *(widep + 1) :
+                            (*widep == ASCII_TAB ? ASCII_TAB : ASCII_SPACE));
           }
-        } else {
-            /* try to sync with typist behind */
-            if ( error_sync >= 0 && widep > wideData && rc == *(widep-1) )
-            {
-              --widep;
-              continue;
-            }
+          while ( rc == GTYPIST_KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL
+                  || rc == KEY_RESIZE ); /* ignore terminal resize event */
 
-            if (chars_in_the_line_typed < COLS)
-            {
-              wideaddch_rev( *widep == ASCII_NL ? DRILL_NL_ERR :
-                             (*widep == ASCII_TAB ?  ASCII_TAB :
-                             (cl_args.show_errors_flag ? rc : DRILL_CH_ERR)));
-              ++chars_in_the_line_typed;
-            }
-
-            if (*widep == ASCII_NL)
-              chars_in_the_line_typed = 0;
-
-            if ( ! cl_args.silent_flag )
-            {
-              do_bell();
-            }
-            ++errors;
-            error_sync = 1;
-
-            /* try to sync with typist ahead? */
-            if (cl_args.sync_ahead_flag)
-            {
-                if ( rc == *(widep+1) )
-                {
-                    ungetch( rc );
-                    ++error_sync;
-                }
-            }
-        }
-
-        /* move screen location if newline */
-        if ( *widep == ASCII_NL )
-        {
-          after_newline = true;  
-          ++linenum; ++linenum;
-          move( linenum, 0 );
-        }
-
-        /* perform any other word processor like adjustments */
-        if ( cl_args.word_processor_flag )
-        {
-          if ( rc == ASCII_SPACE )
+          /* start timer on first char entered */
+          if ( chars_typed == 0 )
           {
-            while ( *(widep+1) == ASCII_SPACE
-                    && *(widep+1) != ASCII_NULL )
-            {
-              ++widep;
-              wideaddch(*widep);
-              ++chars_in_the_line_typed;
-            }
+            gettimeofday(&tv, NULL);
+            start_time = tv.tv_sec + tv.tv_usec / 1000000.0;
           }
-          else if ( rc == ASCII_NL )
+          ++chars_typed;
+          --error_sync;
+
+          /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
+             (this is handled outside the for loop) */
+          if ( rc == ASCII_ESC )
+            break;
+
+          /* check that the character was correct */
+          if ( rc == *widep || ( cl_args.word_processor_flag &&
+               rc == ASCII_SPACE && *widep == ASCII_NL ))
           {
-            while ( ( *(widep+1) == ASCII_SPACE
-                      || *(widep+1) == ASCII_NL )
-                      && *(widep+1) != ASCII_NULL )
-            {
-              ++widep;
-              wideaddch(*widep);
-              ++chars_in_the_line_typed;
-              if ( *widep == ASCII_NL )
+            if (cl_args.word_processor_flag && rc == ASCII_SPACE &&
+                *widep == ASCII_NL)
+              chars_in_the_line_typed = 0;
+            else {
+              if (rc != ASCII_NL)
               {
+                wideaddch(rc);
+                ++chars_in_the_line_typed;
+              } else {
+                wideaddch(RETURN_CHARACTER);
+                chars_in_the_line_typed = 0;
+              }
+            }
+          } else {
+              /* try to sync with typist behind */
+              if ( error_sync >= 0 && widep > wideData && rc == *(widep-1) )
+              {
+                --widep;
+                continue;
+              }
+
+              if (chars_in_the_line_typed < COLS)
+              {
+                wideaddch_rev( *widep == ASCII_NL ? DRILL_NL_ERR :
+                               (*widep == ASCII_TAB ?  ASCII_TAB :
+                               (cl_args.show_errors_flag ? rc : DRILL_CH_ERR)));
+                ++chars_in_the_line_typed;
+              }
+
+              if (*widep == ASCII_NL)
+                chars_in_the_line_typed = 0;
+
+              if ( ! cl_args.silent_flag )
+              {
+                do_bell();
+              }
+              ++errors;
+              error_sync = 1;
+
+              /* try to sync with typist ahead? */
+              if (cl_args.sync_ahead_flag)
+              {
+                  if ( rc == *(widep+1) )
+                  {
+                      ungetch( rc );
+                      ++error_sync;
+                  }
+              }
+          }
+
+          /* move screen location if newline */
+          if ( *widep == ASCII_NL )
+          {
+            after_newline = true;  
+            ++linenum; ++linenum;
+            move( linenum, 0 );
+          }
+
+          /* perform any other word processor like adjustments */
+          if ( cl_args.word_processor_flag )
+          {
+            if ( rc == ASCII_SPACE )
+            {
+              while ( *(widep+1) == ASCII_SPACE
+                      && *(widep+1) != ASCII_NULL )
+              {
+                ++widep;
+                wideaddch(*widep);
+                ++chars_in_the_line_typed;
+              }
+            }
+            else if ( rc == ASCII_NL )
+            {
+              while ( ( *(widep+1) == ASCII_SPACE
+                        || *(widep+1) == ASCII_NL )
+                        && *(widep+1) != ASCII_NULL )
+              {
+                ++widep;
+                wideaddch(*widep);
+                ++chars_in_the_line_typed;
+                if ( *widep == ASCII_NL )
+                {
+                  ++linenum; ++linenum;
+                  move( linenum, 0 );
+                  chars_in_the_line_typed = 0;
+                }
+              }
+            } else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
+                      && *(widep+2) == ASCII_NL )
+              {
+                ++widep;
+                wideaddch(*widep);
+                ++widep;
+                wideaddch(*widep);
                 ++linenum; ++linenum;
                 move( linenum, 0 );
                 chars_in_the_line_typed = 0;
               }
-            }
-          } else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
-                    && *(widep+2) == ASCII_NL )
-            {
-              ++widep;
-              wideaddch(*widep);
-              ++widep;
-              wideaddch(*widep);
-              ++linenum; ++linenum;
-              move( linenum, 0 );
-              chars_in_the_line_typed = 0;
-            }
-        }
-      }
-
-      /* ESC not at the beginning of the lesson: "give up" */
-      if ( rc == ASCII_ESC && chars_typed != 1)
-        continue; /* repeat */
-
-      /* skip timings and don't check error-pct if exit was through ESC */
-      if ( rc != ASCII_ESC )
-      {
-        /* display timings */
-        gettimeofday(&tv, NULL);
-        end_time = tv.tv_sec + tv.tv_usec / 1000000.0;
-        if ( ! cl_args.notimer_flag )
-        {
-          display_speed( chars_typed, end_time - start_time,
-                         errors );
+          }
         }
 
-        /* check whether the error-percentage is too high (unless in d:) */
-        if (drill_type != C_DRILL_PRACTICE_ONLY &&
-            is_error_too_high(chars_typed, errors))
-        {
-          sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-          wait_user (script, message, MODE_DRILL);
+        /* ESC not at the beginning of the lesson: "give up" */
+        if ( rc == ASCII_ESC && chars_typed != 1)
+          continue; /* repeat */
 
-          /* check for F-command */
-          if (global_on_failure_label != NULL)
+        /* skip timings and don't check error-pct if exit was through ESC */
+        if ( rc != ASCII_ESC )
+        {
+          /* display timings */
+          gettimeofday(&tv, NULL);
+          end_time = tv.tv_sec + tv.tv_usec / 1000000.0;
+          if ( ! cl_args.notimer_flag )
           {
-            /* move to the label position in the file */
-            if (fseek(script, global_on_failure_label->offset, SEEK_SET )
-                == -1)
-              fatal_error( _("internal error: fseek"), NULL );
-            global_line_counter = global_on_failure_label->line_count;
-            /* tell the user about the misery :) */
-            sprintf(message,SKIPBACK_VIA_F_MSG,
-                    global_on_failure_label->label);
-            /* reset value unless persistent */
-            if (!global_on_failure_label_persistent)
-              global_on_failure_label = NULL;
-            wait_user (script, message, MODE_DRILL);
-            seek_done = TRUE;
-            break;
+            display_speed( chars_typed, end_time - start_time,
+                           errors );
           }
 
-          continue;
-        }
-      }
+          /* check whether the error-percentage is too high (unless in d:) */
+          if (drill_type != C_DRILL_PRACTICE_ONLY &&
+              is_error_too_high(chars_typed, errors))
+          {
+            sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
+            wait_user (script, message, MODE_DRILL);
 
-      /* ask the user whether he/she wants to repeat or exit */
-      if ( rc == ASCII_ESC && cl_args.no_skip_flag ) /* honor --no-skip */
-        rc = do_query_repeat (script, FALSE);
-      else
-        rc = do_query_repeat (script, TRUE);
-      if (rc == 'E')
-      {
-        seek_done = TRUE;
-        break;
-      }
-      if (rc == 'N')
-        break;
+            /* check for F-command */
+            if (global_on_failure_label != NULL)
+            {
+              /* move to the label position in the file */
+              if (fseek(script, global_on_failure_label->offset, SEEK_SET )
+                  == -1)
+                fatal_error( _("internal error: fseek"), NULL );
+              global_line_counter = global_on_failure_label->line_count;
+              /* tell the user about the misery :) */
+              sprintf(message,SKIPBACK_VIA_F_MSG,
+                      global_on_failure_label->label);
+              /* reset value unless persistent */
+              if (!global_on_failure_label_persistent)
+                global_on_failure_label = NULL;
+              wait_user (script, message, MODE_DRILL);
+              seek_done = TRUE;
+              break;
+            }
+
+            continue;
+          }
+        }
+
+        /* ask the user whether he/she wants to repeat or exit */
+        if ( rc == ASCII_ESC && cl_args.no_skip_flag ) /* honor --no-skip */
+          rc = do_query_repeat (script, FALSE);
+        else
+          rc = do_query_repeat (script, TRUE);
+        if (rc == 'E')
+        {
+          seek_done = TRUE;
+          break;
+        }
+        if (rc == 'N')
+          break;
   }
 
   /* free the malloced memory */
@@ -843,22 +840,22 @@ void do_speedtest( FILE *script, char *line )
   /* count the lines in this exercise, and check the result
      against the screen length */
   for ( widep = wideData, lines_count = 0; *widep != ASCII_NULL; ++widep )
-    {
-      if ( *widep == ASCII_NL)
-        ++lines_count;
-    }
+  {
+    if ( *widep == ASCII_NL)
+      ++lines_count;
+  }
   if ( DP_TOP_LINE + lines_count > LINES )
     fatal_error( _("data exceeds screen length"), line );
 
   /* if the last command was a tutorial, ensure we have
      the complete screen */
   if ( global_prior_command == C_TUTORIAL )
-    {
-      move( T_TOP_LINE, 0 ); clrtobot();
-    }
+  {
+    move( T_TOP_LINE, 0 ); clrtobot();
+  }
 
   while (1)
-    {
+  {
       /* display speed test pattern */
       linenum = DP_TOP_LINE;
       move( linenum, 0 ); clrtobot();
@@ -916,20 +913,20 @@ void do_speedtest( FILE *script, char *line )
         /* check for delete keys if not at line start or
            speed test start */
         if ( rc == GTYPIST_KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL )
-          {
-            /* just ignore deletes where it's impossible or hard */
-            if ( widep > wideData && *(widep-1) != ASCII_NL && *(widep-1) != ASCII_TAB ) {
-              /* back up one character */
-              ADDCH( ASCII_BS ); --widep;
-              /* Clear the error associated with the faulty character */
-              errors_buf[--errors_pos] = 0;
-            }
-            /* Do not account the backspace as a char typed as it could artificially lower the errors rate */
-            chars_typed--;
-            widep--;		/* defeat widep++ coming up */
-            errors_pos--;	/* defeat errors_pos++ coming up */
-            continue;
+        {
+          /* just ignore deletes where it's impossible or hard */
+          if ( widep > wideData && *(widep-1) != ASCII_NL && *(widep-1) != ASCII_TAB ) {
+            /* back up one character */
+            ADDCH( ASCII_BS ); --widep;
+            /* Clear the error associated with the faulty character */
+            errors_buf[--errors_pos] = 0;
           }
+          /* Do not account the backspace as a char typed as it could artificially lower the errors rate */
+          chars_typed--;
+          widep--;		/* defeat widep++ coming up */
+          errors_pos--;	/* defeat errors_pos++ coming up */
+          continue;
+        }
 
         /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
            (this is handled outside the for loop) */
@@ -996,7 +993,7 @@ void do_speedtest( FILE *script, char *line )
             {
               while ( ( *(widep+1) == ASCII_SPACE
                         || *(widep+1) == ASCII_NL )
-                      && *(widep+1) != ASCII_NULL )
+                        && *(widep+1) != ASCII_NULL )
               {
                 widep++;
                 errors_pos++;
@@ -1008,7 +1005,7 @@ void do_speedtest( FILE *script, char *line )
                 }
               }
             } else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
-                    && *(widep+2) == ASCII_NL )
+                        && *(widep+2) == ASCII_NL )
               {
                 widep++; 
                 errors_pos++;
@@ -1084,7 +1081,7 @@ void do_speedtest( FILE *script, char *line )
       if (rc == 'N')
         break;
 
-    }
+  }
 
   /* free the malloced memory */
   free( data );
