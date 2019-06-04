@@ -30,8 +30,8 @@ M: "The P series contains the following 11 lessons"
  :BACKTICK "Lesson P7	` ~"
  :PIPE "Lesson P8	\ |"
  :PRACTICE_1 "Lesson P9	Practice 1"
- :PRACTICE_2 "Lesson P10	Practice 2"
- :PRACTICE_3 "Lesson P11	Practice 3"
+ :PRACTICE_2 "Lesson P10 Practice 2"
+ :PRACTICE_3 "Lesson P11 Practice 3"
 
 
 # Lesson P1—Special Characters Review
