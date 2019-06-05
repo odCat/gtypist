@@ -21,17 +21,17 @@
 *:MENU
 B:Special characters course
 M: "The P series contains the following 11 lessons"
- :SPECIAL_NUMS_REVIEW "Lesson P1	Review ! @ # $ % ^ & * ( ) _"
- :OTHER_PRIOR_SPECIAL_CHAR "Lesson P2	Review ? / " ' :"
- :PLUS_EQUAL "Lesson P3	+ - _ ="
- :ANGLE_BRACKETS "Lesson P4	> <"
- :BRACES "Lesson P5	} {"
- :SQUARE_BRACKETS "Lesson P6	] ["
- :BACKTICK "Lesson P7	` ~"
- :PIPE "Lesson P8	\ |"
- :PRACTICE_1 "Lesson P9	Practice 1"
- :PRACTICE_2 "Lesson P10 Practice 2"
- :PRACTICE_3 "Lesson P11 Practice 3"
+ :SPECIAL_NUMS_REVIEW "Lesson P1 Review ! @ # $ % ^ & * ( ) _"
+ :OTHER_PRIOR_SPECIAL_CHAR "Lesson P2 Review ? / " ' :"
+ :PLUS_EQUAL "Lesson P3        + - _ ="
+ :ANGLE_BRACKETS "Lesson P4        > <"
+ :BRACES "Lesson P5        } {"
+ :SQUARE_BRACKETS "Lesson P6        ] ["
+ :BACKTICK "Lesson P7   ` ~"
+ :PIPE "Lesson P8   \ |"
+ :PRACTICE_1 "Practice 1 (Python, C++, C)"
+ :PRACTICE_2 "Practice 2 (C)"
+ :PRACTICE_3 "Practice 3 (JavaScript)"
 
 
 # Lesson P1—Special Characters Review
