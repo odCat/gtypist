@@ -1,6 +1,11 @@
+2019-06-05 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* p.typ: Change the title of the practice lessons to mention
+	the programming languages the lessons use
+
 2019-06-04 Mihai Gătejescu <gus666xe@gmail.com>
 
-	* p.typ: Replace tabs with spaces in menu, to display consistently
+	* p.typ: Replace tabs with spaces in menu, to display it consistently
 
 2019-04-21 Mihai Gătejescu <gus666xe@gmail.com>
 	

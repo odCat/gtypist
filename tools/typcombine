@@ -149,7 +149,7 @@ END	{
   printf(" : ktde.typ          -  German lessons I from KTouch 1.6\n");
   printf(" : ktde2.typ         -  German lessons II from KTouch 1.6\n");
   printf(" : ktde_neo.typ      -  German lessons with NEO layout from KTouch 1.6\n");
-  printf(" :  (see http://pebbles.schattenlauf.de/layout.php?language=de\n");
+  printf(" :  (see http://pebbles.schattenlauf.de/layout.php?language=de)\n");
   printf(" : ktde_number.typ   -  German number keypad lessons from KTouch 1.6\n");
   printf(" : ktdk.typ          -  Danish lessons I from KTouch 1.6\n");
   printf(" : ktdk2.typ         -  Danish lessons II from KTouch 1.6\n");
