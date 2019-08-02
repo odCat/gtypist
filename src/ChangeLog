@@ -1,3 +1,10 @@
+2019-07-02 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* banner.c, banner.h, cursmenu.c, cursmenu.h, error.c,
+	error.h, gtypist.c, gtypist.h, infoview.c, infoview.h,
+	script.c, script.h, speedbox.c, speedbox.h, utf8.c,
+	utf8.h: Update copyright notice years
+
 2019-05-24 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* gtypist.c: Jumping over whitespaces at the begining of lines
