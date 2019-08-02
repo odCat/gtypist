@@ -1,4 +1,16 @@
-2018-09-17 Mihai Gătejescu <gus666xe@gmial.com>
+2019-05-24 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* gtypist.c: Jumping over whitespaces at the begining of lines
+	Improv readability and switch to pre-increment operator in
+	the do_speedtest() and do_drill functions
+
+2019-02-03 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* gtypist.c: Fix window resize bug (#55338)
+	by making a check for the KEY_RESIZE value, which is
+	read on terminal resize event
+
+2018-09-17 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* cursmenu.c, script.c: Indentation changes
 
