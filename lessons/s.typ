@@ -409,6 +409,54 @@ S:But mercy is above this scepter'd sway,--
  :Which if thou follow, this strict court of Venice
  :Must needs give sentence 'gainst the merchant there.
 
+I:The Tempest, Act III, Scene I (Before Prospero's cell)
+*:_SR_L40
+S:There be some sports are painful, and their labour
+ :Delight in them sets off: some kinds of baseness
+ :Are nobly undergone, and most poor matters
+ :Point to rich ends. This my mean task
+ :Would be as heavy to me as odious, but
+ :The mistress which I serve quickens what's dead,
+ :And makes my labours pleasures: O, she is
+ :Ten times more gentle than her father's crabbed.
+ :And he's composed of harshness. I must remove
+ :Some thousands of these logs, and pile them up,
+ :Upon a sore injunction: my sweet mistress
+ :Weeps when she sees me work, and says, such baseness
+ :Had never like executor. I forget:
+ :But these sweet thoughts do even refresh my labours,
+ :Most busy lest, when I do it.
+
+I:The Tempest, Act IV, Scene I (Before Prospero's cell)
+S:You do look, my son, in a moved sort,
+ :As if you were dismay'd: be cheerful, sir.
+ :Our revels now are ended. These our actors,
+ :As I foretold you, were all spirits, and
+ :Are melted into air, into thin air:
+ :And, like the baseless fabric of this vision,
+ :The cloud-capp'd towers, the gorgeous palaces,
+ :The solemn temples, the great globe itself,
+ :Yea, all which it inherit, shall dissolve,
+ :And, like this insubstantial pageant faded,
+ :Leave not a rack behind. We are such stuff
+ :As dreams are made on; and our little life
+ :Is rounded with a sleep. Sir, I am vex'd;
+ :Bear with my weakness; my old brain is troubled:
+ :Be not disturb'd with my infirmity:
+ :If you be pleased, retire into my cell,
+ :And there repose: a turn or two I'll walk,
+ :To still my beating mind.
+
+I:The Tempest, Act V, Scene I (Before Prospero's cell)
+S:But this rough magic
+ :I here abjure; and, when I have required
+ :Some heavenly music,-which even now I do,-
+ :To work mine end upon their senses, that
+ :This airy charm is for, I'll break my staff,
+ :Bury it certain fathoms in the earth,
+ :And deeper than did ever plummet sound
+ :I'll drown my book.
+
 G:_S_E_S4
 
 #------------------------------------------------------------------------------
