@@ -450,7 +450,7 @@ S:You do look, my son, in a moved sort,
 I:The Tempest, Act V, Scene I (Before Prospero's cell)
 S:But this rough magic
  :I here abjure; and, when I have required
- :Some heavenly music,-which even now I do,-
+ :Some heavenly music,--which even now I do,--
  :To work mine end upon their senses, that
  :This airy charm is for, I'll break my staff,
  :Bury it certain fathoms in the earth,
