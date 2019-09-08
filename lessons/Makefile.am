@@ -6,6 +6,7 @@ pkgdata_DATA =  gtypist.typ \
 		m.typ \
 		n.typ \
 		p.typ \
+		ro_special.typ \
 		q.typ \
 		r.typ \
 		s.typ \

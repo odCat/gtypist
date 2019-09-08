@@ -141,6 +141,7 @@ END	{
   printf(" :\n");
   printf(" : cs.typ            -  Czech lessons\n");
   printf(" : esp.typ           -  Spanish lessons\n");
+  printf(" : ro_special.typ    -  Romanian diacritic characters lessons\n");
   printf(" : ru.typ            -  Russian lessons\n");
   printf(" : p.typ             -  Special characters for programming\n");
   printf(" : ttde.typ          -  German lessons from tipptrainer 0.6.0\n");
