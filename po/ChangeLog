@@ -1,3 +1,7 @@
+2019-09-11  Mihai Gătejescu <gus666xe@gmail.com>
+
+	* ro.po: Remove a fuzzy string
+
 2019-09-08  Mihai Gătejescu <gus666xe@gmail.com>
 
 	* en.po: add default file for starting new translations
@@ -42,7 +46,7 @@
 
 2011-08-11  Felix Natter <fnatter@gmx.net>
 
-        * de.po: finish German translation
+	* de.po: finish German translation
 	* *.po: update from potfile, convert to utf-8 (except for eu.po)
 
 2009-02-03  Paul Goins  <general@vultaire.net>

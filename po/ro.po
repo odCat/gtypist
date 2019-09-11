@@ -403,9 +403,3 @@ msgstr "Cel mai bun scor personal|= %7.2f cpm"
 #: src/speedbox.c:92
 msgid "|new personal best"
 msgstr "|nou cel mai bun scor personal"
-
-#, fuzzy
-#~ msgid "Happy Typing!"
-#~ msgstr ""
-#~ "Tastare Plăcută!\n"
-#~ "\n"
