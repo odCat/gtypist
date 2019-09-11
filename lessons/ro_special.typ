@@ -207,7 +207,6 @@ D:țâ mț oț țâ mț oț
 B:      Lecția 9: Ț
 
 I:(1)
-                      
 *:_RO_R_L24
 D:Ța Ți Țț Ța Ți Țț
  :Țu Țt Țu Țț Țu Țț
@@ -219,12 +218,15 @@ D:Ța Ți Țț Ța Ți Țț
 B:      Lecția 10
 
 *:_RO_S_RO25
-T:
- :În această lecție ți se vor da să tastezi câteva poezii de Eminescu. Gradul
- :de dificultate este mai crescut. Ai răbdare și fi atent.
+T:                          INTRODUCERE EXERCIȚII
+ :
+ :În această lecție ți se vor da să tastezi câteva fragmente din opera lui
+ :Mihai Eminescu.
+ :
+ :Gradul de dificultate este mai crescut. Ai răbdare și fi atent.
 
-I:REVEDERE (1/3)
 *:_RO_S_RO26
+I:REVEDERE (1/3)
 S:- Codrule, codruțule,
  :Ce mai faci, drăguțule,
  :Că de când nu ne-am văzut
@@ -232,8 +234,8 @@ S:- Codrule, codruțule,
  :Și de când m-am depărtat
  :Multă lume am îmblat.
 
-I:REVEDERE (2/3)
 *:_RO_S_RO27
+I:REVEDERE (2/3)
 S:- Ia, eu fac ce fac de mult,
  :Iarna viscolu-l ascult,
  :Crengile-mi rupându-le,
@@ -252,8 +254,8 @@ S:- Ia, eu fac ce fac de mult,
  :Tu din tânăr precum ești
  :Tot mereu întinerești.
 
-I:REVEDERE (3/3)
 *:_RO_S_RO28
+I:REVEDERE (3/3)
 S:- Ce mi-i vremea, când de veacuri
  :Stele-mi scânteie pe lacuri,
  :Că de-i vremea rea sau bună,
@@ -269,8 +271,8 @@ S:- Ce mi-i vremea, când de veacuri
  :Luna și cu soarele,
  :Codrul cu izvoarele.
 
-I:SCRISOAREA III (fragment)
 *:_RO_S_RO29
+I:SCRISOAREA III (fragment)
 S:La un semn deschisă-i calea și s-apropie de cort
  :Un bătrân atât de simplu, după vorbă, după port.
  :- Tu ești Mircea?
@@ -285,8 +287,8 @@ S:La un semn deschisă-i calea și s-apropie de cort
  :Să ne dai un semn și nouă de mila măriei-tale...
  :Bucuroși le-om duce toate, de e pace, de-i război.
 
-I:LUCEAFÁRUL (fragment) (1/2)
 *:_RO_S_RO30
+I:LUCEAFÁRUL (fragment) (1/2)
 S:A fost odată ca-n povești,
  : A fost ca niciodată,
  :Din rude mari împărătești,
@@ -307,8 +309,8 @@ S:A fost odată ca-n povești,
  :Pe mișcătoareale cărări
  : Corăbii negre duce.
 
-I:LUCEAFÁRUL (fragment) (1/2)
 *:_RO_S_RO31
+I:LUCEAFÁRUL (fragment) (2/2)
 S:Îl vede azi, îl vede mâni,
  : Astfel dorința-i gata;
  :El iar, privind de săptămâni,
@@ -324,8 +326,8 @@ S:Îl vede azi, îl vede mâni,
  :Spre umbra negrului castel
  : Când ea o să-i apară.
 
-I:ȘI DACĂ...
 *:_RO_S_RO32
+I:ȘI DACĂ...
 S:Și dacă ramuri bat în geam
  : Și se cutremur plopii,
  :E ca în minte să te am
@@ -341,8 +343,8 @@ S:Și dacă ramuri bat în geam
  :E ca aminte să-mi aduc
  : De tine-ntotdeauna.
 
-I:GLOSSĂ (fragment)
 *:_RO_S_RO33
+I:GLOSSĂ (fragment)
 S:Tu rămâi la toate rece,
  :De te-ndeamnă, de te cheamă;
  :Ce e val, ca valul trece,
@@ -352,8 +354,8 @@ S:Tu rămâi la toate rece,
  :Toate-s vechi și nouă toate:
  :Vreme trece, vreme vine.
 
-I:PESTE VÂRFURI
 *:_RO_S_RO34
+I:PESTE VÂRFURI
 S:Peste vârfuri trece luna,
  :Codru-și bate frunza lin,
  :Dintre ramuri de arin
@@ -369,8 +371,8 @@ S:Peste vârfuri trece luna,
  :Mai suna-vei dulce corn,
  :Pentru mine vre odată?
 
-I:SOMNOROASE PĂSĂRELE
 *:_RO_S_RO35
+I:SOMNOROASE PĂSĂRELE
 S:Somnoroase păsărele
  :Pe la cuiburi se adună,
  :Se ascund în rămurele -
@@ -391,8 +393,8 @@ S:Somnoroase păsărele
  :Totu-i vis și armonie -
  : Noapte bună!
 
-I:CE TE LEGENI...
 *:_RO_S_RO36
+I:CE TE LEGENI...
 S:- Ce te legeni, codrule,
  :Fără ploaie, fără vânt,
  :Cu crengile la pământ?
@@ -419,8 +421,8 @@ S:- Ce te legeni, codrule,
  :Și cu doru-mi singurel,
  :De mă-ngân numai cu el!
 
-I:LA MIJLOC DE CODRU...
 *:_RO_S_RO37
+I:LA MIJLOC DE CODRU...
 S:La mijloc de codru des
  :Toate păsările ies,
  :Din huceag de aluniș,
@@ -435,8 +437,8 @@ S:La mijloc de codru des
  :Și de zbor de rândunele
  :Și de chipul dragei mele.
 
-I:LA STEAUA
 *:_RO_S_RO38
+I:LA STEAUA
 S:La steaua care-a răsărit
  :E-o cale-atât de lungă,
  :Că mii de ani i-au trebuit
@@ -457,8 +459,8 @@ S:La steaua care-a răsărit
  :Lumina stinsului amor
  :Ne urmărește încă.
 
-I:CU PENETUL CA SIDEFUL
 *:_RO_S_RO39
+I:CU PENETUL CA SIDEFUL
 S:Cu penetul ca sideful
  :Strălucește-o porumbiță,
  :Cu căpșorul sub aripă,

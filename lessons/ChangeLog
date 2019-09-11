@@ -1,3 +1,7 @@
+2019-09-11 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* ro_special.typ: Move INFORMATION tag after the LABEL tag
+
 2019-09-06 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* ro_special.typ: Add new Romanian diacritic characters lesson
