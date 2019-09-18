@@ -222,7 +222,7 @@ Version 2.2a:
     at a line's end are skipped.
   - Fixed drills so that delete does not actually insert an error,
     but is now just ignored.
-  - Corrected backspace key detection on RedHat Linux 5.2.
+  - Corrected backspace key detection on Red Hat GNU/Linux 5.2.
 
 Version 2.2:
   - Removed the C++ version of the program.  Apart from my elderly
@@ -238,8 +238,8 @@ Version 2.2:
   - Updated typv1tov2 and typcombine to use these new features,
     and output improved menus that use the function keys for direct
     access to lessons, and repeat-this-exercise queries.
-  - The typist binary is now statically linked for Linux, to try
-    to enhance its portability as a binary.  The build system is
+  - The typist binary is now statically linked for GNU/Linux, to
+    try to enhance its portability as a binary.  The build system is
     now RedHat 5.2, and the program is now an incredible 700kB
     as a static binary.
   - All of these enhancements got finished up after I had completed
