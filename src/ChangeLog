@@ -1,3 +1,10 @@
+2019-09-28 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* gtypist.c: Fix the exit action from a menu; now exiting
+	the menu or jumping to a label provided work properly.
+	This was done by setting the line pointer with the
+	get_script_line() function after the user leaves the menu.
+	
 2019-07-02 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* banner.c, banner.h, cursmenu.c, cursmenu.h, error.c,

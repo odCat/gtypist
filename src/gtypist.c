@@ -1533,6 +1533,7 @@ void parse_file( FILE *script, char *label )
       case C_ON_FAILURE_SET: do_on_failure_label_set( script, line ); break;
       case C_MENU:
          do_menu (script, line);
+         get_script_line (script, line);
          break;
       default:
         fatal_error( _("unknown command"), line ); break;
