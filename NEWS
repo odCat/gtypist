@@ -211,7 +211,7 @@ Version 2.2b:
     behaviour is enabled.
   - Moved the binary to typist_bin, and created a typist shell script
     wrapper to try to cope with TYPIST_PATH not set, and the variations
-    in the location of the terminfo database between RedHat 5.2 and
+    in the location of the terminfo database between Red Hat 5.2 and
     other platforms.
   - Again, why not look at 'Jtypist'.
 
@@ -240,7 +240,7 @@ Version 2.2:
     access to lessons, and repeat-this-exercise queries.
   - The typist binary is now statically linked for GNU/Linux, to
     try to enhance its portability as a binary.  The build system is
-    now RedHat 5.2, and the program is now an incredible 700kB
+    now Red Hat 5.2, and the program is now an incredible 700kB
     as a static binary.
   - All of these enhancements got finished up after I had completed
     the Java version, 'Jtypist'.  If you can, I'd heartily recommend
