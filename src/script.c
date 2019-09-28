@@ -281,12 +281,11 @@ char *buffer_command( FILE *script, char *line )
 */
 void seek_label( FILE *script, char *label, char *ref_line )
 {
-  struct label_entry	*check_label;	/* pointer through list */
-  int	hash;                 				/* hash index */
-  char	err[MAX_SCR_LINE];      		/* error message string */
+  struct label_entry *check_label;      /* pointer through list */
+  int    hash;                 			/* hash index */
+  char   err[MAX_SCR_LINE];             /* error message string */
 
-  if (!label)
-    do_exit (script);
+  if (!label) do_exit (script);
   
   __update_last_label (label);
 		  
@@ -328,9 +327,7 @@ void do_exit( FILE *script )
   if (isUTF8Locale)
   {
       printf(_("Happy Typing!\n\n"));
-  }
-  else
-  {
+  } else {
       printf("%s", convertUTF8ToCurrentEncoding(_("Happy Typing!\n\n")));
   }
   exit( 0 );

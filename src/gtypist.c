@@ -1485,7 +1485,7 @@ static
 void parse_file( FILE *script, char *label )
 {
   char	line[MAX_SCR_LINE];		/* line buffer */
-  char	command;			/* current command */
+  char	command;          /* current command */
 
   /* if label given then start running there */
   if ( label != NULL )
@@ -1531,10 +1531,11 @@ void parse_file( FILE *script, char *label )
          break;
       case C_ERROR_MAX_SET: do_error_max_set( script, line ); break;
       case C_ON_FAILURE_SET: do_on_failure_label_set( script, line ); break;
-      case C_MENU: do_menu (script, line); break;
+      case C_MENU:
+         do_menu (script, line);
+         break;
       default:
-        fatal_error( _("unknown command"), line );
-        break;
+        fatal_error( _("unknown command"), line ); break;
     }
   }
 }
