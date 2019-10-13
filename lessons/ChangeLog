@@ -1,3 +1,7 @@
+2019-10-13 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* Makefile.am: Add copyright and license noitices
+
 2019-09-11 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* ro_special.typ: Move INFORMATION tag after the LABEL tag
