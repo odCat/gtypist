@@ -1,11 +1,12 @@
 2019-10-14 Mihai Gătejescu <gus666xe@gmail.com>
 
-	* d.typ: Update the licenses
+	* d.typ: Update the notices
+	* demo.typ: Update the notices
 
 2019-10-13 Mihai Gătejescu <gus666xe@gmail.com>
 
-	* c.typ, cs.typ: Update the licenses
-	* Makefile.am: Add copyright and license noitices
+	* c.typ, cs.typ: Update the notices
+	* Makefile.am: Add copyright and license notices
 
 2019-09-11 Mihai Gătejescu <gus666xe@gmail.com>
 
