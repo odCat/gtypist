@@ -1,34 +1,36 @@
 #! /usr/bin/gtypist
 #
-#	Russian touch typing course for GNU Typist.
+# Russian touch typing course for GNU Typist.
 #	
-#	Copyright (C) 2003  Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
+#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019
+#               Dimitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 #
-#	This program is free software: you can redistribute it and/or modify
-#	it under the terms of the GNU General Public License as published by
-#	the Free Software Foundation, either version 3 of the License, or
-#	(at your option) any later version.
+# GNU Typist is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-#	This program is distributed in the hope that it will be useful,
-#	but WITHOUT ANY WARRANTY; without even the implied warranty of
-#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#	GNU General Public License for more details.
+# GNU Typist is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-#	You should have received a copy of the GNU General Public License
-#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# You should have received a copy of the GNU General Public License
+# along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.
 #
 
 #
-#	Original of this file uses KOI8-R encoding.  If you're using different
-#	encoding in your terminal, you have to convert the file appropriately.
-#	For example, to convert this file to DOS CP866, you may do it with the
-#	following command (if you have `iconv' utility which is installed along
-#	with the GNU C Library):
+# Original of this file uses KOI8-R encoding.  If you're using different
+# encoding in your terminal, you have to convert the file appropriately.
+# For example, to convert this file to DOS CP866, you may do it with the
+# following command (if you have `iconv' utility which is installed along
+# with the GNU C Library):
 #
-#	iconv -f KOI8-R -t CP866 /usr/share/gtypist/ru.typ > ru_CP866.typ
+# iconv -f KOI8-R -t CP866 /usr/share/gtypist/ru.typ > ru_CP866.typ
 #
-#	If this file is in /usr/share/gtypist this will create CP866-encoded
-#	`ru_CP866.typ' script file in current directory.
+# If this file is in /usr/share/gtypist this will create CP866-encoded
+# `ru_CP866.typ' script file in current directory.
 #
 
 B: Добро пожаловать!
