@@ -1,3 +1,10 @@
+2019-10-23 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* gtyipst.c: Update the copyright and license notices
+	by replacing "GNU Typist Development Team" with the names
+	of the developers and replacing "this program" with "GNU
+	Typist".
+
 2019-09-28 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* gtypist.c: Fix the exit action from a menu; now exiting
