@@ -1,3 +1,9 @@
+2019-10-27 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* banner.c, banner.h, cursmenu.c, cursmenu.h, error.c, error.h,
+	infoview.c, infoview.h, script.c, script.h, speedbox.c, speedbox.h,
+	utf8.c, utf8.h: Update the notices
+
 2019-10-24 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* gtypist.h: Update the notices
