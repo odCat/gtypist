@@ -702,15 +702,16 @@ D:tux. tex. exakt. explosion. exorbitant. mexiko. exempel. ex
 *:LESSON14_D4
 I:(4)
 D:in luxemburg, sagt er. felix lebt nicht am existenzminimum.
- :linux linux linux linux linux linux linux linux linux linux
- :tux tux tux tux tux tux tux tux tux tux tux tux tux tux tux
- :taxi fahren ist toll. linus begann mit linux als student.
+ :linux kernel linux kernel linux kernel linux kernel linux
+ :tux tux tux tux tux tux tux tux tux tux tux tux tux tux taxi
+ :fahren ist toll. linus begann mit linux kernel als student.
 *:LESSON14_D5
 I:(5)
 D:auch heute arbeiten viele studenten an der entwicklung von
- :software, die unter linux laufen soll. exakt nach dem start
- :blieb der wagen stehen. der fahrer schloss erstmal alle
- :fenster. er war programmierer, doch er kannte linux nicht.
+ :software, die unter dem linux kernel laufen soll. exakt
+ ::nach dem start blieb der wagen stehen. der fahrer schloss
+ :erstmal alle fenster. er war programmierer, doch er kannte
+ :den linux kernel nicht.
 *:LESSON14_D6
 I:(6)
 D:nach der explosion war der saal leer. kafka las erstmal die
@@ -1008,15 +1009,15 @@ G:E_LESSON19
 
 *:S_LESSON20
 K:12:MENU
-B:                  Lesson 20: Linux - meine Freude
+B:                  Lesson 20: GNU/Linux - meine Freude
 T:
- : Linux meine Freude:
- : ein kleiner Bericht über den Umstieg auf Linux.
+ : GNU Linux meine Freude:
+ : ein kleiner Bericht über den Umstieg auf GNU Linux.
  : Erste Textübung. Achte am Ende der Zeilen auf
  : den rechtzeitigen Umbruch.
 *:LESSON20_D1
 I:(1)
-D:Linux - meine Freude
+D:GNU Linux - meine Freude
  :Es war ein ganz normaler Tag. Alles war wie immer. Ich kam
  :aus der Schule und setzte mich an den PC. Homepage verwal-
  :ten, Schülerdaten aktualisieren, Unterricht vorbereiten,
@@ -1029,7 +1030,7 @@ D:nebenbei ein paar MIDI-Files bearbeiten und E-Mail lesen.
 *:LESSON20_D3
 I:(3)
 D:nicht einmal sehr lange Mail reingekommen war, stand für
- :mich der Umstieg fest. Linux musste her. Ich wusste nicht,
+ :mich der Umstieg fest. GNU Linux musste her. Ich wusste nicht,
  :was da auf mich zukommen würde, doch das war mir egal. Es
  :konnte nur noch besser werden. Kostenlose Software, gute
 *:LESSON20_D4
@@ -1049,7 +1050,7 @@ I:(6)
 D:erkunden hatte, störte mich das weniger.
  :Eine vernünftige Mailkonfiguration habe ich erst Wochen
  :später eingerichtet, doch für den Anfang tat es Netscape.
- :Inzwischen arbeite ich seit 10 Monaten mit Linux, und ich
+ :Inzwischen arbeite ich seit 10 Monaten mit GNU Linux, und ich
 *:LESSON20_D7
 I:(7)
 D:habe keinen Tag davon bereut. Ich habe wieder angefangen,
@@ -1242,7 +1243,7 @@ D:<><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 I:(2)
 D:Die Zeichen < und > werden als Operatoren benutzt.
  :< ist der Eingabeoperator und > ist der Ausgabeoperator.
- :Mit ls > dateiname kann ich unter Linux eine Dateiliste
+ :Mit ls > dateiname kann ich unter GNU Linux eine Dateiliste
  :mit allen Dateien des akuellen Verzeichnisses anlegen.
 *:LESSON24_D3
 I:(3)
@@ -1435,7 +1436,7 @@ D:ein && bedeutet logisches UND.
  :Der Slash / wird häufig als Zeichen für die Division ver-
 *:LESSON28_D4
 I:(4)
-D:wendet. Unter LINUX ist es ein wesentliches Zeichen für
+D:wendet. Unter GNU/Linux ist es ein wesentliches Zeichen für
  :die Organisation der Verzeichnisstruktur. So ist / (root)
  :das Wurzelverzeichnis, von dem aus in Unterverseichnisse
  :verzweigt wird. /boot, /root, /opt, /usr, /var, /tmp,
@@ -1669,11 +1670,11 @@ I:(2)
 D:felnd auf Felix und man sah seinen Augen an, dass da nicht
  :nur Zweifel sondern auch besseres Wissen in dieser Frage
  :lag. "Äh, ich dachte ja,", kam Felix zögerlich mit der
- :Sprache raus, "wenn ich schon Linux auf dem Schulnetz fah-
+ :Sprache raus, "wenn ich schon GNU/Linux auf dem Schulnetz fah-
 *:LESSON33_D3
 I:(3)
 D:re, dann sollen auch die Schüler die Möglichkeit haben,
- :mit Linux zu arbeiten." Rainer sah immer noch skeptisch
+ :mit GNU/Linux zu arbeiten." Rainer sah immer noch skeptisch
  :aus. "Dann bist Du aber erst einmal der Einzige, der das
  :benutzen und den Schülern verständlich machen kann."
 *:LESSON33_D4
@@ -2182,7 +2183,7 @@ M: "tipptrainer 0.6.0 lessons"
  :S_LESSON17 "Lesson 17: Die Buchstaben "ä" und "ü""
  :S_LESSON18 "Lesson 18: Das "ß" (sprich: "Ess-zet")"
  :S_LESSON19 "Lesson 19: GROSSSCHREIBUNG"
- :S_LESSON20 "Lesson 20: Linux - meine Freude"
+ :S_LESSON20 "Lesson 20: GNU/Linux - meine Freude"
  :S_LESSON21 "Lesson 21: Das Internet"
  :S_LESSON22 "Lesson 22: Lesung"
  :S_LESSON23 "Lesson 23: Gedicht"
