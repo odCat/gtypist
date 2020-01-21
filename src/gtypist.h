@@ -2,7 +2,7 @@
  * GNU Typist  - interactive typing tutor program for UNIX systems
  *
  * Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2015,
- *               2016, 2017, 2018, 2019
+ *               2016, 2017, 2018, 2019, 2020
  *               Hynek Hanke, Paul Goins, Felix Natter, Tim Marston,
  *               Mihai Gătejescu
  *

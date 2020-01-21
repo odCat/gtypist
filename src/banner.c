@@ -1,7 +1,7 @@
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
  *
- * Copyright (C) 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019
+ * Copyright (C) 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
  *               Felix Natter, clutton, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
