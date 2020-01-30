@@ -1,6 +1,6 @@
 # Romanian special letters course for GNU Typist
 #
-# Copyright (C) 2018, 2019 Mihai Gătejescu
+# Copyright (C) 2018, 2019, 2020 Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

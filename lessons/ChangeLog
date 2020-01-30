@@ -1,3 +1,10 @@
+2020-01-30 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* c.typ, cs.typ, d.typ, demo.typ, m.typ, n.typ, p.typ,
+	q.typ, r.typ, ro_special.typ, ru.typ, s.typ, t.typ,
+	tinydemo.typ, u.typ, v.typ:
+	Update copyright years
+
 2019-12-03 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* ttde.typ: Fix inapproppriate Linux references

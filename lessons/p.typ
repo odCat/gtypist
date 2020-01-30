@@ -1,6 +1,6 @@
 # GNU Typist - improved typing tutor program for UNIX systems
 #
-# Copyright (C) 2018, 2019 Daniel Long Sockwell, Mihai Gătejescu
+# Copyright (C) 2018, 2019, 2020  Daniel Long Sockwell, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
