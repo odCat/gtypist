@@ -39,7 +39,7 @@ BEGIN 	{
   scount = 0;
   type = "I";
 # use "-" here since that's what you get when you run
-# awk against stdin, at least on Linux
+# awk against stdin, at least on GNU/Linux
   cur_filename = "-";
   cur_series = "";
 
