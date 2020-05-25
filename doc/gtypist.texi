@@ -332,7 +332,7 @@ this can be achieved by:
 
 @table @code
 
-@item Linux/UNIX (GNOME/KDE/...)
+@item GNU/Linux and UNIX (GNOME/KDE/...)
 Hit @kbd{@key{Ctrl} -} (reduce) or @kbd{@key{Ctrl} +} (extend).
 
 @item Mac OS X
