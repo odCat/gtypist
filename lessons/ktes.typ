@@ -526,7 +526,7 @@ D:Mocteto Pablo Asia Andorra Aries Escorpio
 *:LESSON15_D4
 I:(4)
 D:Paco Valdepeñas Eusebio Cibeles Bruselas
- :Javier Eusebio Lladras Sonia Linux Vivar
+ :Javier Eusebio Lladras Sonia GNU Linux Vivar
  :Emilio EBCDIC Lorenzo Compostela jergalS
  :Alfredo Delia Tbytes CCITT Irene Filadelfia
 *:LESSON15_D5
