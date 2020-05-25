@@ -1,4 +1,8 @@
-2018-11-16 Mihai Gătejescu <gus666xe@gmail.com
+2020-05-26 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* gtypist.texi: Fix inapproppriate Linux reference
+
+2018-11-16 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* gtypist.texi, gtypist.cs.texi, gtypist.es.texi: Change
 	--error-max to --max-error (#43911), reported by

@@ -1,3 +1,7 @@
+2020-05-25 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* ktes.typ, ktfr2.typ: Fix inapproppriate Linux references
+
 2020-01-30 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* c.typ, cs.typ, d.typ, demo.typ, m.typ, n.typ, p.typ,

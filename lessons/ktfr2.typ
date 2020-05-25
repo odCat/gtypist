@@ -693,7 +693,7 @@ D:montez lisez zodiaque demandez sentez excès
  :ajoutez exemple suivez soumettez renseignez
 *:LESSON14_D3
 I:(3)
-D:linux proximité excuses nouveaux exposition
+D:exact proximité excuses nouveaux exposition
  :zébu sauvez devriez complexe extraordinaire
  :consultez relancez connexion zone existante
  :explosif obtenez disposez xylophone examens
