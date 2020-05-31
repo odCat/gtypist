@@ -3,6 +3,7 @@
 # converts from ktouch's OLD .ktouch (<<1.6) to gtypist's .typ-file
 # send comments and suggestions to bug-gtypist@gnu.org
 
+# Author: Felix Natter <fnatter@gmx.net> 2011
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
 # as published by the Free Software Foundation, either version 3

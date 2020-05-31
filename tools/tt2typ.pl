@@ -3,6 +3,7 @@
 # converts tipptrainer-0.3.3-lessons to gtypist's .typ-file
 # send comments and suggestions to bug-gtypist@gnu.org
 
+# Author: Felix Natter <fnatter@gmx.net> 2001-2011
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
 # as published by the Free Software Foundation, either version 3

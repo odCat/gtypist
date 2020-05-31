@@ -1,5 +1,6 @@
 #!/usr/bin/perl -w
 
+# Author: Felix Natter <fnatter@gmx.net> 2001-2013
 # converts from ktouch's .ktouch.xml to gtypist's .typ-file
 # send comments and suggestions to bug-gtypist@gnu.org
 
