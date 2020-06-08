@@ -459,39 +459,43 @@ K:12:MENU
 B:                         Lesson 25: Ez-az
 *:LESSON25_D1
 I:(1)
-D:Azon a napon, amikor a Linuxot valaki más
- :jobban tudja szolgálni -- az FSF egy termé-
- :szetes alternatíva --, félreállok. Nem gon-
- :dolom, hogy emiatt valakinek aggódni kel-
+D:Volt idő amikor az ember teljes életet tudott élni
+ :számítógép nélkül. Sokan azt hiszik ez ma már lehetetlen,
+ :mert a számítógép annyira hétköznapjaink eszközeivé vált.
+ :Arról beszélnek, hogy ma információs társadalomban élünk,
 *:LESSON25_D2
 I:(2)
-D:lene, és nem is gondolom, hogy ez a közel-
- :jövőben bekövetkezik. Szeretek a Linuxszal
- :foglalkozni, még ha ez egy kis munkával
- :jár is, és még senkitől sem kaptam panaszt.
+D:és nem látják, hogy sokan élnek -- többek között vidéken --
+ :úgy, hogy sosem láttak még számítógépet és mégis boldogak.
+ :Civilizációnak és fejlődésnek titulálják a technika
+ :és a tudomány által létrehozott eszközöket, miközben
 *:LESSON25_D3
 I:(3)
-D:Csak néhány, majdhogynem szégyenlős emlé-
- :keztetőt arról, hogy egy foltot elfelejtet-
- :tem, vagy nem vettem figyelembe, de eddig
- :semmi negatívot.
+D:nem vesszük észre, hogy mekkor tömegű hulladék termeléssel
+ :jár mindez. Ez a hulladék pedig nem is akármilyen.
+ :Évezredek alatt sem tünnek el az életünkből, és csak
+ :gyűlnek meg gyűlnek. Nagy szemétlerakok épülnek, majd
 *:LESSON25_D4
 I:(4)
-D:Ne vegyétek úgy a fentieket, hogy azon a
- :napon, amikor valaki ellenkezik, abbahagyom
- :elég keményfejű vagyok. Lasu, aki ezt a vállam
- :felett olvassa, megjegyezte, hogy a FAfejű
+D:beföldelik őket, és újabbakat nyitnak. Unokáinknak már
+ :nem lesz egy talpalattnyi helye sem szemét nélkül.
+ :Az ember egy olyan állatfaj amely hiába látja szörnyű
+ :jövőjét, ahhoz, hogy cselekvésig eljusson át kell
 *:LESSON25_D5
 I:(5)
-D:közelebb van az igazsághoz egy kis mocsko-
- :lódáshoz. Ha nem lennék az, abbahagytam volna
- :a Linux fejlesztését, amikor a comp.os.minix-en
- :nevetségessé tettek. Csak arra gondoltam, hogy
+D:élnie szörnyű bukását, tévedését.
+ :Milyen szép lehet egy nap amikor nem egy szobában vagy
+ :irádában töltöm számítógép előtt az időmet, hanem
+ :felmegyek egy hegyre, és az erdőben sétálok. Hallgatom
 *:LESSON25_D6
 I:(6)
-D:bár a Linux eddig az én gyermekem volt, nem
- :akarok útban lenni, ha az emberek jobbat
- :szeretnének csinálni.
+D:amint csiripelnek a madarak, érzem a fák és a leveleik
+ :illatát. Látom amint a nap megvilágítja a közelben
+ :lévő tisztást, és aranyba borítja az ott növő növényeket.
+ :Érzem a lábaimban az izmok enyhe fáradságát, a tüdömben
+*:LESSON25_D7
+I:(7)
+D:a friss levegő be és kiáramlását.
 G:E_LESSON25
 
 *:S_LESSON26
@@ -499,43 +503,32 @@ K:12:MENU
 B:                         Lesson 26: Ez-az
 *:LESSON26_D1
 I:(1)
-D:Volt idő amikor az ember teljes életet tudott élni
- :számítógép nélkül. Sokan azt hiszik ez ma már lehetetlen,
- :mert a számítógép annyira hétköznapjaink eszközeivé vált.
- :Arról beszélnek, hogy ma információs társadalomban élünk,
+D:A harmadrangú külvárosi kávéházban - ahová egy
+ :időben jártam - kezdettől fogva feltűnt nekem a
+ :sebész. Állandóan fekete, zöldre kopott, de tiszta
+ :szalonkabátot viselt. Sápadt arcához különösen illett
 *:LESSON26_D2
 I:(2)
-D:és nem látják, hogy sokan élnek -- többek között vidéken --
- :úgy, hogy sosem láttak még számítógépet és mégis boldogak.
- :Civilizációnak és fejlődésnek titulálják a technika
- :és a tudomány által létrehozott eszközöket, miközben
+D:a kuszált, őszbe vegyülő gesztenyeszín bajsza és nagy,
+ :mély fekvésű, fekete szemei. Ezekben a szemekben -
+ :mintha mindig könnyesek lettek volna - valami éjszakás,
+ :bohém csillogás volt. Csendesen, csaknem suttogva
 *:LESSON26_D3
 I:(3)
-D:nem vesszük észre, hogy mekkor tömegű hulladék termeléssel
- :jár mindez. Ez a hulladék pedig nem is akármilyen.
- :Évezredek alatt sem tünnek el az életünkből, és csak
- :gyűlnek meg gyűlnek. Nagy szemétlerakok épülnek, majd
+D:beszélt, amint az orvosok szoktak a konzíliumokon.
+ :A leglényegtelenebb beszélgetéseknél is, amelyeket a
+ :kávéházi vendégekkel az újságok tartalma felől
+ :folytatott, mélyen belenézett annak a szemébe, akivel
 *:LESSON26_D4
 I:(4)
-D:beföldelik őket, és újabbakat nyitnak. Unokáinknak már
- :nem lesz egy talpalattnyi helye sem szemét nélkül.
- :Az ember egy olyan állatfaj amely hiába látja szörnyű
- :jövőjét, ahhoz, hogy cselekvésig eljusson át kell
+D:beszélt. Mintha nagyon érdekelte volna őt az illető.
+ :A véleményét mindig olyan tökéletes, értelmes
+ :mondatokban mondta el, mintha a betegének adná ki
+ :rendeléseit. Ennek a kopott embernek nemes eleganciája
 *:LESSON26_D5
 I:(5)
-D:élnie szörnyű bukását, tévedését.
- :Milyen szép lehet egy nap amikor nem egy szobában vagy
- :irádában töltöm számítógép előtt az időmet, hanem
- :felmegyek egy hegyre, és az erdőben sétálok. Hallgatom
-*:LESSON26_D6
-I:(6)
-D:amint csiripelnek a madarak, érzem a fák és a leveleik
- :illatát. Látom amint a nap megvilágítja a közelben
- :lévő tisztást, és aranyba borítja az ott növő növényeket.
- :Érzem a lábaimban az izmok enyhe fáradságát, a tüdömben
-*:LESSON26_D7
-I:(7)
-D:a friss levegő be és kiáramlását.
+D:olyanféleképpen hatott rám, mint a fakó, de igen finom
+ :bársonyszövetek, amelyeket ódon f?nemesi kastélyokban láttam.
 G:E_LESSON26
 
 *:S_LESSON27
@@ -543,32 +536,22 @@ K:12:MENU
 B:                         Lesson 27: Ez-az
 *:LESSON27_D1
 I:(1)
-D:A harmadrangú külvárosi kávéházban - ahová egy
- :időben jártam - kezdettől fogva feltűnt nekem a
- :sebész. Állandóan fekete, zöldre kopott, de tiszta
- :szalonkabátot viselt. Sápadt arcához különösen illett
+D:Egyszer meghallotta, amikor egy orvosi lapot kértem.
+ :Megszólított. Dícsérte az orvosi foglalkozást,
+ :kérdezősködött az egyetemről. Elbeszélgettünk,
+ :és eközben nagy tudást árult el. Különösen feltűnt
 *:LESSON27_D2
 I:(2)
-D:a kuszált, őszbe vegyülő gesztenyeszín bajsza és nagy,
- :mély fekvésű, fekete szemei. Ezekben a szemekben -
- :mintha mindig könnyesek lettek volna - valami éjszakás,
- :bohém csillogás volt. Csendesen, csaknem suttogva
+D:néhány pszichofizikai dolog, amelyet sehol se
+ :olvastam. Nagyon lebilincselt az az éles elméjű és
+ :fantáziára hajló aprólékossága, amellyel igen
+ :jelentéktelen dolgokról is nagy érdekl?déssel
 *:LESSON27_D3
 I:(3)
-D:beszélt, amint az orvosok szoktak a konzíliumokon.
- :A leglényegtelenebb beszélgetéseknél is, amelyeket a
- :kávéházi vendégekkel az újságok tartalma felől
- :folytatott, mélyen belenézett annak a szemébe, akivel
-*:LESSON27_D4
-I:(4)
-D:beszélt. Mintha nagyon érdekelte volna őt az illető.
- :A véleményét mindig olyan tökéletes, értelmes
- :mondatokban mondta el, mintha a betegének adná ki
- :rendeléseit. Ennek a kopott embernek nemes eleganciája
-*:LESSON27_D5
-I:(5)
-D:olyanféleképpen hatott rám, mint a fakó, de igen finom
- :bársonyszövetek, amelyeket ódon f?nemesi kastélyokban láttam.
+D:beszélt. Bámultam, hogy mennyire számolni tud a
+ :körülményekkel, menyire megalkuszik az élettel,
+ :és hogy mennyire jól érzi magát benne. De hamarosan
+ :elbúcsúztunk a délutáni feketekávé után.
 G:E_LESSON27
 
 *:S_LESSON28
@@ -576,22 +559,14 @@ K:12:MENU
 B:                         Lesson 28: Ez-az
 *:LESSON28_D1
 I:(1)
-D:Egyszer meghallotta, amikor egy orvosi lapot kértem.
- :Megszólított. Dícsérte az orvosi foglalkozást,
- :kérdezősködött az egyetemről. Elbeszélgettünk,
- :és eközben nagy tudást árult el. Különösen feltűnt
+D:4444 7777 4444 7777 4444 7777 4444 7777 4444 7777
+ :4477 4477 4477 4477 4477 4477 4477 4477 4477 4477
+ :7744 7744 7744 7744 7744 7744 7744 7744 7744 7744
+ :7474 7474 7474 7474 7474 7474 7474 7474 7474 7474
 *:LESSON28_D2
 I:(2)
-D:néhány pszichofizikai dolog, amelyet sehol se
- :olvastam. Nagyon lebilincselt az az éles elméjű és
- :fantáziára hajló aprólékossága, amellyel igen
- :jelentéktelen dolgokról is nagy érdekl?déssel
-*:LESSON28_D3
-I:(3)
-D:beszélt. Bámultam, hogy mennyire számolni tud a
- :körülményekkel, menyire megalkuszik az élettel,
- :és hogy mennyire jól érzi magát benne. De hamarosan
- :elbúcsúztunk a délutáni feketekávé után.
+D:4747 4747 4747 4747 4747 4747 4747 4747 4747 4747
+ :47 74 47 74 47 74 47 74 47 74 47 74 47 74 47 74
 G:E_LESSON28
 
 *:S_LESSON29
@@ -599,14 +574,15 @@ K:12:MENU
 B:                         Lesson 29: Ez-az
 *:LESSON29_D1
 I:(1)
-D:4444 7777 4444 7777 4444 7777 4444 7777 4444 7777
- :4477 4477 4477 4477 4477 4477 4477 4477 4477 4477
- :7744 7744 7744 7744 7744 7744 7744 7744 7744 7744
- :7474 7474 7474 7474 7474 7474 7474 7474 7474 7474
+D:3333 8888 3333 8888 3333 8888 3333 8888 3333 8888
+ :3388 3388 3388 3388 3388 3388 3388 3388 3388 3388
+ :8833 8833 8833 8833 8833 8833 8833 8833 8833 8833
+ :8383 8383 8383 8383 8383 8383 8383 8383 8383 8383
 *:LESSON29_D2
 I:(2)
-D:4747 4747 4747 4747 4747 4747 4747 4747 4747 4747
- :47 74 47 74 47 74 47 74 47 74 47 74 47 74 47 74
+D:3838 3838 3838 3838 3838 3838 3838 3838 3838 3838
+ :38 83 38 83 38 83 38 83 38 83 38 83 38 83 38 83
+ :4378 3487 4378 3487 4378 3487 4378 3487 4378 3487
 G:E_LESSON29
 
 *:S_LESSON30
@@ -614,15 +590,15 @@ K:12:MENU
 B:                         Lesson 30: Ez-az
 *:LESSON30_D1
 I:(1)
-D:3333 8888 3333 8888 3333 8888 3333 8888 3333 8888
- :3388 3388 3388 3388 3388 3388 3388 3388 3388 3388
- :8833 8833 8833 8833 8833 8833 8833 8833 8833 8833
- :8383 8383 8383 8383 8383 8383 8383 8383 8383 8383
+D:2222 9999 2222 9999 2222 9999 2222 9999 2222 9999
+ :9999 2222 9999 2222 9999 2222 9999 2222 9999 2222
+ :2299 2299 2299 2299 2299 2299 2299 2299 2299 2299
+ :9922 9922 9922 9922 9922 9922 9922 9922 9922 9922
 *:LESSON30_D2
 I:(2)
-D:3838 3838 3838 3838 3838 3838 3838 3838 3838 3838
- :38 83 38 83 38 83 38 83 38 83 38 83 38 83 38 83
- :4378 3487 4378 3487 4378 3487 4378 3487 4378 3487
+D:9229 2992 9229 2992 9229 2992 9229 2992 9229 2992
+ :432789 234789 987432 432789 234789 987432 987432
+ :2748293 2748293 2748293 2748293 2748293 2748293
 G:E_LESSON30
 
 *:S_LESSON31
@@ -630,15 +606,13 @@ K:12:MENU
 B:                         Lesson 31: Ez-az
 *:LESSON31_D1
 I:(1)
-D:2222 9999 2222 9999 2222 9999 2222 9999 2222 9999
- :9999 2222 9999 2222 9999 2222 9999 2222 9999 2222
- :2299 2299 2299 2299 2299 2299 2299 2299 2299 2299
- :9922 9922 9922 9922 9922 9922 9922 9922 9922 9922
+D:1111 0000 1111 0000 1111 0000 1111 0000 1111
+ :0000 1111 0000 1111 0000 1111 0000 1111 0000
+ :1100 1100 1100 1100 1100 1100 1100 1100 1100
+ :0011 0011 0011 0011 0011 0011 0011 0011 0011
 *:LESSON31_D2
 I:(2)
-D:9229 2992 9229 2992 9229 2992 9229 2992 9229 2992
- :432789 234789 987432 432789 234789 987432 987432
- :2748293 2748293 2748293 2748293 2748293 2748293
+D:01234789 01234789 01234789 01234789 01234789
 G:E_LESSON31
 
 *:S_LESSON32
@@ -646,13 +620,15 @@ K:12:MENU
 B:                         Lesson 32: Ez-az
 *:LESSON32_D1
 I:(1)
-D:1111 0000 1111 0000 1111 0000 1111 0000 1111
- :0000 1111 0000 1111 0000 1111 0000 1111 0000
- :1100 1100 1100 1100 1100 1100 1100 1100 1100
- :0011 0011 0011 0011 0011 0011 0011 0011 0011
+D:5555 7777 5555 7777 5555 7777 5555 7777 5555
+ :7777 5555 7777 5555 7777 5555 7777 5555 7777
+ :5577 7755 5577 7755 5577 7755 5577 7755 5577
+ :55 77 55 77 55 77 55 77 55 77 55 77 55 77 55
 *:LESSON32_D2
 I:(2)
-D:01234789 01234789 01234789 01234789 01234789
+D:0123456789 0123456789 0123456789 0123456789
+ :9876543210 9876543210 9876543210 9876543210
+ :2004.05.23 1998.07.31 1516.11.25 1848.02.15
 G:E_LESSON32
 
 *:S_LESSON33
@@ -660,15 +636,13 @@ K:12:MENU
 B:                         Lesson 33: Ez-az
 *:LESSON33_D1
 I:(1)
-D:5555 7777 5555 7777 5555 7777 5555 7777 5555
- :7777 5555 7777 5555 7777 5555 7777 5555 7777
- :5577 7755 5577 7755 5577 7755 5577 7755 5577
- :55 77 55 77 55 77 55 77 55 77 55 77 55 77 55
+D:!!!! ==== !!!! ==== !!!! ==== !!!! ==== !!!!
+ :==== !!!! ==== !!!! ==== !!!! ==== !!!! ====
+ :!!== !!== !!== !!== !!== !!== !!== !!== !!==
+ :==!! ==!! ==!! ==!! ==!! ==!! ==!! ==!! ==!!
 *:LESSON33_D2
 I:(2)
-D:0123456789 0123456789 0123456789 0123456789
- :9876543210 9876543210 9876543210 9876543210
- :2004.05.23 1998.07.31 1516.11.25 1848.02.15
+D:!=!= !=!= !=!= !=!= !=!= !=!= !=!= !=!= !=!=
 G:E_LESSON33
 
 *:S_LESSON34
@@ -676,13 +650,13 @@ K:12:MENU
 B:                         Lesson 34: Ez-az
 *:LESSON34_D1
 I:(1)
-D:!!!! ==== !!!! ==== !!!! ==== !!!! ==== !!!!
- :==== !!!! ==== !!!! ==== !!!! ==== !!!! ====
- :!!== !!== !!== !!== !!== !!== !!== !!== !!==
- :==!! ==!! ==!! ==!! ==!! ==!! ==!! ==!! ==!!
+D:++++ (((( ++++ (((( ++++ (((( ++++ (((( ++++
+ :(((( ++++ (((( ++++ (((( ++++ (((( ++++ ((((
+ :++(( ++(( ++(( ++(( ++(( ++(( ++(( ++(( ++((
+ :((++ ((++ ((++ ((++ ((++ ((++ ((++ ((++ ((++
 *:LESSON34_D2
 I:(2)
-D:!=!= !=!= !=!= !=!= !=!= !=!= !=!= !=!= !=!=
+D:(+(+ +(+( (+(+ +(+( (+(+ +(+( (+(+ +(+( (+(+
 G:E_LESSON34
 
 *:S_LESSON35
@@ -690,13 +664,10 @@ K:12:MENU
 B:                         Lesson 35: Ez-az
 *:LESSON35_D1
 I:(1)
-D:++++ (((( ++++ (((( ++++ (((( ++++ (((( ++++
- :(((( ++++ (((( ++++ (((( ++++ (((( ++++ ((((
- :++(( ++(( ++(( ++(( ++(( ++(( ++(( ++(( ++((
- :((++ ((++ ((++ ((++ ((++ ((++ ((++ ((++ ((++
-*:LESSON35_D2
-I:(2)
-D:(+(+ +(+( (+(+ +(+( (+(+ +(+( (+(+ +(+( (+(+
+D:"""" )))) """" )))) """" )))) """" )))) """"
+ :)))) """" )))) """" )))) """" )))) """" ))))
+ :"")) "")) "")) "")) "")) "")) "")) "")) ""))
+ :))"" ))"" ))"" ))"" ))"" ))"" ))"" ))"" ))""
 G:E_LESSON35
 
 *:S_LESSON36
@@ -704,10 +675,9 @@ K:12:MENU
 B:                         Lesson 36: Ez-az
 *:LESSON36_D1
 I:(1)
-D:"""" )))) """" )))) """" )))) """" )))) """"
- :)))) """" )))) """" )))) """" )))) """" ))))
- :"")) "")) "")) "")) "")) "")) "")) "")) ""))
- :))"" ))"" ))"" ))"" ))"" ))"" ))"" ))"" ))""
+D:'''' %%%% //// '''' %%%% //// '''' %%%% ////
+ ://// %%%% '''' //// %%%% '''' //// %%%% ''''
+ :/%1/ /%1/ /%1/ /%1/ /%1/ /%1/ /%1/ /%1/ /%1/
 G:E_LESSON36
 
 *:S_LESSON37
@@ -715,9 +685,9 @@ K:12:MENU
 B:                         Lesson 37: Ez-az
 *:LESSON37_D1
 I:(1)
-D:'''' %%%% //// '''' %%%% //// '''' %%%% ////
- ://// %%%% '''' //// %%%% '''' //// %%%% ''''
- :/%1/ /%1/ /%1/ /%1/ /%1/ /%1/ /%1/ /%1/ /%1/
+D:[[[[ ]]]] $$$$ [[[[ ]]]] $$$$ [[[[ ]]]] $$$$
+ :]]]] [[[[ $$$$ ]]]] [[[[ $$$$ ]]]] [[[[ $$$$
+ :[[$$]] [[$$]] [[$$]] [[$$]] [[$$]] [[$$]]
 G:E_LESSON37
 
 *:S_LESSON38
@@ -725,9 +695,9 @@ K:12:MENU
 B:                         Lesson 38: Ez-az
 *:LESSON38_D1
 I:(1)
-D:[[[[ ]]]] $$$$ [[[[ ]]]] $$$$ [[[[ ]]]] $$$$
- :]]]] [[[[ $$$$ ]]]] [[[[ $$$$ ]]]] [[[[ $$$$
- :[[$$]] [[$$]] [[$$]] [[$$]] [[$$]] [[$$]]
+D:@@@@ {{{{ }}}} @@@@ {{{{ }}}} @@@@ {{{{ }}}}
+ :{{{{ }}}} @@@@ {{{{ }}}} @@@@ {{{{ }}}} @@@@
+ :{{@@}} {{@@}} {{@@}} {{@@}} {{@@}} {{@@}}
 G:E_LESSON38
 
 *:S_LESSON39
@@ -735,9 +705,9 @@ K:12:MENU
 B:                         Lesson 39: Ez-az
 *:LESSON39_D1
 I:(1)
-D:@@@@ {{{{ }}}} @@@@ {{{{ }}}} @@@@ {{{{ }}}}
- :{{{{ }}}} @@@@ {{{{ }}}} @@@@ {{{{ }}}} @@@@
- :{{@@}} {{@@}} {{@@}} {{@@}} {{@@}} {{@@}}
+D:**** ```` ~~~~ **** ```` ~~~~ **** ```` ~~~~
+ :```` **** ~~~~ ```` **** ~~~~ ```` **** ~~~~
+ :``**~~ ``**~~ ``**~~ ``**~~ ``**~~ ``**~~
 G:E_LESSON39
 
 *:S_LESSON40
@@ -745,9 +715,9 @@ K:12:MENU
 B:                         Lesson 40: Ez-az
 *:LESSON40_D1
 I:(1)
-D:**** ```` ~~~~ **** ```` ~~~~ **** ```` ~~~~
- :```` **** ~~~~ ```` **** ~~~~ ```` **** ~~~~
- :``**~~ ``**~~ ``**~~ ``**~~ ``**~~ ``**~~
+D:^^^^ #### &&&& ^^^^ #### &&&& ^^^^ #### &&&&
+ :&&&& #### ^^^^ &&&& #### ^^^^ &&&& #### ^^^^
+ :##&&^^ ##&&^^ ##&&^^ ##&&^^ ##&&^^ ##&&^^
 G:E_LESSON40
 
 *:S_LESSON41
@@ -755,20 +725,10 @@ K:12:MENU
 B:                         Lesson 41: Ez-az
 *:LESSON41_D1
 I:(1)
-D:^^^^ #### &&&& ^^^^ #### &&&& ^^^^ #### &&&&
- :&&&& #### ^^^^ &&&& #### ^^^^ &&&& #### ^^^^
- :##&&^^ ##&&^^ ##&&^^ ##&&^^ ##&&^^ ##&&^^
-G:E_LESSON41
-
-*:S_LESSON42
-K:12:MENU
-B:                         Lesson 42: Ez-az
-*:LESSON42_D1
-I:(1)
 D:<<<< >>>> ;;;; <<<< >>>> ;;;; <<<< >>>> ;;;;
  :;;;; >>>> <<<< ;;;; >>>> <<<< ;;;; >>>> <<<<
  :<<;;>> <<;;>> <<;;>> <<;;>> <<;;>> <<;;>>
-G:E_LESSON42
+G:E_LESSON41
 
 
 # jump-table
@@ -933,11 +893,7 @@ Q: Do you want to continue to lesson 41 [Y/N] ?
 N:MENU
 G:S_LESSON41
 *:E_LESSON41
-Q: Do you want to continue to lesson 42 [Y/N] ?
 N:MENU
-G:S_LESSON42
-*:E_LESSON42
-G:MENU
 
 *:MENU
 M: "ktouch lesson: Magyar gépírótanfolyam"
@@ -982,4 +938,3 @@ M: "ktouch lesson: Magyar gépírótanfolyam"
  :S_LESSON39 "Ez-az"
  :S_LESSON40 "Ez-az"
  :S_LESSON41 "Ez-az"
- :S_LESSON42 "Ez-az"

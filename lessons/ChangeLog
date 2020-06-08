@@ -1,5 +1,11 @@
 2020-06-08 Mihai Gătejescu <gus666xe@gmail.com>
 
+	* kthu.typ: Remove Linux reference and fix the menu.
+	Unfortunately I was not able to find the citation, so I
+	decided to remove the whole lesson
+
+2020-06-08 Mihai Gătejescu <gus666xe@gmail.com>
+
 	* ktpl.typ: Remove linux reference
 
 2020-05-25 Mihai Gătejescu <gus666xe@gmail.com>
