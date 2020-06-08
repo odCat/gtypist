@@ -329,7 +329,7 @@ D:cc; c;; xxs xsx sxx sxx cck ckc kck ckk xxd dxx dxd xdx xdd
  :,s, s,s ss, .;; .;. ;.; ;.. ;;. ,aa ,a, a,a ,,a aa, a,, .f.
 *:LESSON9_D4
 I:(4)
-D:wakacje ewaluacja rycina pomoc kolacja moc policja noc linux
+D:wakacje ewaluacja rycina pomoc kolacja moc policja noc
  :racja horacy gorąc wariacje kolaudacja locja całka cofka
  :wariacja oracja rotacje borowiec nic lokacja mocarstwo jajco
  :kac kicuś turcy car acan bic nicam monarcha pacan ociec acta
