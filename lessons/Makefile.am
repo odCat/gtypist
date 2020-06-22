@@ -1,4 +1,3 @@
-## Process this file with automake to produce Makefile.in
 ## This file is part of GNU Typist
 ##
 ## Copyright (C) 2001, 2002, 2003 Simon Baldwin (simonb@sco.com)
@@ -18,6 +17,8 @@
 ##
 ## You should have received a copy of the GNU General Public License
 ## along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.
+
+## Process this file with automake to produce Makefile.in
 
 pkgdata_DATA =  gtypist.typ \
 		c.typ \
