@@ -497,7 +497,7 @@ M: "Lecțiile disponibile sunt următoarele"
 *:_RO_EMINESCU_MENU
 B:                      Poezii de Mihai Eminescu
 M: "Lecțiile disponibile sunt următoarele"
- :_RO_S_RO25 "Introducere"
+ :_RO_S_RO11 "Introducere"
  :_RO_S_RO26 "Revedere"
  :_RO_S_RO29 "Scrisoarea III"
  :_RO_S_RO30 "Luceafărul"

@@ -1,3 +1,7 @@
+2020-06-24 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* ro_special.tpy: Change the jump link to avoid a crash
+
 2020-06-08 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* kthu.typ: Remove Linux reference and fix the menu.
