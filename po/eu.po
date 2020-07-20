@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.7\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2019-09-28 21:38+0300\n"
+"POT-Creation-Date: 2019-11-04 15:53+0200\n"
 "PO-Revision-Date: 2012-02-06 17:15+0000\n"
 "Last-Translator: David García-Abad\n"
 "Language-Team: Basque\n"
@@ -15,166 +15,166 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/gtypist.c:207 src/script.c:59
+#: src/gtypist.c:208 src/script.c:60
 msgid "internal error: strdup"
 msgstr "barne errorea: strdup"
 
-#: src/gtypist.c:389
+#: src/gtypist.c:390
 msgid "invalid key binding"
 msgstr "teklen asoziazio ez zuzena"
 
-#: src/gtypist.c:391
+#: src/gtypist.c:392
 msgid "invalid function key number"
 msgstr "funtzio teklaren zenbaki okerra"
 
-#: src/gtypist.c:430 src/gtypist.c:540 src/gtypist.c:848
+#: src/gtypist.c:431 src/gtypist.c:541 src/gtypist.c:849
 msgid "data exceeds screen length"
 msgstr "datuek pantailaren luzera gainditzen dute"
 
-#: src/gtypist.c:473
+#: src/gtypist.c:474
 msgid "instructions are limited to two lines"
 msgstr "instrukzioak bi lerrotara mugatuta daude"
 
-#: src/gtypist.c:747 src/gtypist.c:1055 src/script.c:313
+#: src/gtypist.c:748 src/gtypist.c:1056 src/script.c:314
 msgid "internal error: fseek"
 msgstr "barne errorea: 'fseek'"
 
-#: src/gtypist.c:829 src/gtypist.c:1912 src/gtypist.c:1928 src/gtypist.c:1975
-#: src/gtypist.c:2012 src/gtypist.c:2032 src/script.c:143 src/script.c:167
-#: src/script.c:258
+#: src/gtypist.c:830 src/gtypist.c:1914 src/gtypist.c:1930 src/gtypist.c:1977
+#: src/gtypist.c:2014 src/gtypist.c:2034 src/script.c:144 src/script.c:168
+#: src/script.c:259
 msgid "internal error: malloc"
 msgstr "barne errorea 'malloc' -en"
 
-#: src/gtypist.c:1380
+#: src/gtypist.c:1381
 #, no-c-format
 msgid "'*' must immediately follow '%'"
 msgstr "'*'  '% (r)en ostean etorri behar da'"
 
-#: src/gtypist.c:1383 src/gtypist.c:1386
+#: src/gtypist.c:1384 src/gtypist.c:1387
 #, no-c-format
 msgid "missing '%'"
 msgstr "'%' falta da"
 
-#: src/gtypist.c:1390
+#: src/gtypist.c:1391
 #, no-c-format
 msgid "'%' must immediately follow value"
 msgstr "'%' balorearen ostean etorri behar da"
 
-#: src/gtypist.c:1399
+#: src/gtypist.c:1400
 msgid "overflow in do_error_max_set"
 msgstr "'do_error_max_set' -en gainezkatzea"
 
-#: src/gtypist.c:1419
+#: src/gtypist.c:1420
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "\"E:\" rako balio okerra (tartetik kanpo)"
 
-#: src/gtypist.c:1472 src/script.c:307
+#: src/gtypist.c:1473 src/script.c:308
 #, c-format
 msgid "label '%s' not found"
 msgstr "'%s' etiketa ez aurkitua"
 
-#: src/gtypist.c:1538
+#: src/gtypist.c:1540
 msgid "unknown command"
 msgstr "agindu ezezaguna"
 
-#: src/gtypist.c:1572
+#: src/gtypist.c:1574
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Saiatu '%s --help' erabiliz informazio gehiago eskuratzeko.\n"
 
-#: src/gtypist.c:1579
+#: src/gtypist.c:1581
 #, fuzzy, c-format
 msgid "%s: invalid max-error value\n"
 msgstr "%s: 'error-max' -en balore okerra\n"
 
-#: src/gtypist.c:1586
+#: src/gtypist.c:1588
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: 'curs-flash' -en balore okerra\n"
 
-#: src/gtypist.c:1596
+#: src/gtypist.c:1598
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: kolorearen balore okerra\n"
 
-#: src/gtypist.c:1609
+#: src/gtypist.c:1611
 #, fuzzy, c-format
 msgid "%s: invalid banner-colours value\n"
 msgstr "%s: kolorearen balore okerra\n"
 
-#: src/gtypist.c:1690
+#: src/gtypist.c:1692
 msgid " Tutorial "
 msgstr "Tutoriala"
 
-#: src/gtypist.c:1692
+#: src/gtypist.c:1694
 msgid "  Query   "
 msgstr "Galdeketa"
 
-#: src/gtypist.c:1694
+#: src/gtypist.c:1696
 msgid "  Drill   "
 msgstr "Errutina"
 
-#: src/gtypist.c:1696
+#: src/gtypist.c:1698
 msgid "Speed test"
 msgstr "Abiadura testa"
 
-#: src/gtypist.c:1698
+#: src/gtypist.c:1700
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr ""
 "Pulse 'RETURN' o 'SPACE' para continuar, 'ESC' para volver al menu 'RETURN' "
 "edo 'SPACE'  sakatu jarraitzeko, 'ESC' menura bueltatzeko"
 
-#: src/gtypist.c:1701
+#: src/gtypist.c:1703
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr "Zure akatsen tasa altuegia da. %.1f%% lortu behar duzu."
 
-#: src/gtypist.c:1705
+#: src/gtypist.c:1707
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr "Proba honetan huts egin duzu; beraz, '%s' ra joan behar zara berriro."
 
-#: src/gtypist.c:1709
+#: src/gtypist.c:1711
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr ""
 "Sakatu 'R' errepikatzeko, 'N' hurrengo ariketa egiteko  edo 'E' irteteko"
 
-#: src/gtypist.c:1713
+#: src/gtypist.c:1715
 msgid " Press R to repeat or E to exit "
 msgstr "Sakatu 'R' errepikatzeko edo 'E' bukatzeko"
 
-#: src/gtypist.c:1716
+#: src/gtypist.c:1718
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr "Ziur zaude ikasgai hau bukatu nahi izateaz? [Y/N] "
 
-#: src/gtypist.c:1720
+#: src/gtypist.c:1722
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr ""
 "Sentitzen dut, baina 'gtypist' ikasgaiei jaramonik ez egitea ez onartzeko "
 "konfiguratuta dago."
 
-#: src/gtypist.c:1725
+#: src/gtypist.c:1727
 msgid "Y/N"
 msgstr "Y/N"
 
-#: src/gtypist.c:1735
+#: src/gtypist.c:1737
 msgid "R/N/E"
 msgstr "R/N/E"
 
-#: src/gtypist.c:1756
+#: src/gtypist.c:1758
 #, c-format
 msgid "%s: %s environment variable not set\n"
 msgstr ""
 
-#: src/gtypist.c:1803
+#: src/gtypist.c:1805
 msgid "can't find or open file"
 msgstr "artxiboa ezin izan da aurkitu edo ireki"
 
-#: src/gtypist.c:1857
+#: src/gtypist.c:1859
 msgid "Loading the script..."
 msgstr " 'script'-a kargatzen..."
 
-#: src/gtypist.c:1967
+#: src/gtypist.c:1969
 msgid "internal error: fopen"
 msgstr "barne errorea: 'fopen'"
 
@@ -186,35 +186,35 @@ msgstr ""
 "Erabili gezidun teklak mugitzeko, 'SPACE'  edo 'RETURN ' selekzionatzeko eta "
 "'ESCAPE' atzera bueltatzeko"
 
-#: src/error.c:54
+#: src/error.c:55
 msgid "line"
 msgstr "lerroa"
 
-#: src/script.c:159
+#: src/script.c:160
 msgid "label contains space"
 msgstr ""
 
-#: src/script.c:185
+#: src/script.c:186
 msgid "label redefinition"
 msgstr "etiketaren berdefinizioa"
 
-#: src/script.c:229
+#: src/script.c:230
 msgid "Invalid multibyte sequence (wrong encoding?)"
 msgstr ""
 
-#: src/script.c:231
+#: src/script.c:232
 msgid "data shortage"
 msgstr "datu gutxiegi"
 
-#: src/script.c:233
+#: src/script.c:234
 msgid "missing ':'"
 msgstr "':' falta da"
 
-#: src/script.c:239
+#: src/script.c:240
 msgid "line too long for screen"
 msgstr "lerroa luzeegia da pantailan sartzeko"
 
-#: src/script.c:329 src/script.c:331
+#: src/script.c:330 src/script.c:332
 #, c-format
 msgid ""
 "Happy Typing!\n"
