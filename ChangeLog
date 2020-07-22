@@ -1,8 +1,13 @@
-2019-09-18  Mihai Gătejescu <gus666xe@gmail.com
+2020-07-22  Mihai Gătejescu <gus666xe@gmail.com>
+
+	* INSTALL, README: Add copyright and license notices
+
+2019-09-18  Mihai Gătejescu <gus666xe@gmail.com>
 
 	* NEWS: Change Linux to GNU/Linux
 
 2018-12-22  Felix Natter <fnatter@gmx.net>
+
 	* fix some English translatable strings (i.e. "error-max")
 	  and rephrase welcome message
 
