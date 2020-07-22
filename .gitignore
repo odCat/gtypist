@@ -23,7 +23,6 @@ conf*
 !configure.ac
 compile
 ABOUT-NLS
-INSTALL
 autom4te.cache
 depcomp
 elisp-comp
