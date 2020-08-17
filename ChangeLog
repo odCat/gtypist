@@ -1,6 +1,7 @@
 2020-08-17  Mihai Gătejescu <gus666xe@gmail.com>
 
-	* typefortune, autogensh.sh: Add/Update copyright notice
+	* typefortune, autogensh.sh, configure-w32.in:
+	Add/Update copyright notice
 
 2020-07-22  Mihai Gătejescu <gus666xe@gmail.com>
 
