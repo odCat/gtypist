@@ -2,6 +2,7 @@
 
 	* typefortune, autogensh.sh, configure-w32.in:
 	Add/Update copyright notice
+	* .gitignore: Add INSTALL back
 
 2020-07-22  Mihai Gătejescu <gus666xe@gmail.com>
 
