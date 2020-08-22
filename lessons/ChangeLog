@@ -1,3 +1,14 @@
+2020-08-22 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* ktbg.typ, ktbg_long.typ, ktde.typ, ktde2.typ, ktde_new.typ,
+	ktde_number.typ, ktdk.typ, ktde2.typ, ktdvorak.typ,
+	ktdvorak_abcd.typ, ktdvorak_es.typ, kten.typ, ktes.typ,
+	ktes_cat.typ, ktfi.typ, ktfi_kids.typ, ktfr.typ, ktfr2.typ,
+	kthu.typ, kthu_expect.typ, ktit.typ, ktnl.typ,
+	ktnl_junior.typ, ktno.typ, ktpl.typ, ktru.typ,
+	ktru_long.typ, ktru_slava.typ, ktsi.typ, kttr.typ:
+	Add copyright notice
+
 2020-06-24 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* ro_special.tpy: Change the jump link to avoid a crash

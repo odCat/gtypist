@@ -1,3 +1,22 @@
+# GNU Typist - improved typing tutor program for UNIX systems
+#
+# Copyright (C) 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               Felix Natter, Mihai Gătejescu
+#
+# GNU Typist is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# GNU Typist is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.
+#
+
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/italian.ktouch.xml
 # on Sa 1. Jun 12:32:31 CEST 2013
 # ktouch title: Italien (auto-generated)
