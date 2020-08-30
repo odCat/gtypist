@@ -1,3 +1,9 @@
+GNU Typist - Typing Tutor
+
+Copyright (C) 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018,
+              2019, 2020 Tim Marson, Felix Natter, Mihai Gătejescu
+See the end of the file for license conditions.
+
 Notes on how to build it from git
 =================================
 
@@ -110,3 +116,20 @@ settings, you can simply `make uninstall' (you may need to be root, or
 use 'sudo').  If not, and if you have not used a '--prefix' option
 with the configure script, then you should find gtypist installed in
 /usr/local where you can delete the files manually.
+
+
+  This file is a part of GNU Typist
+ 
+  GNU Typist is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+ 
+  GNU Typist is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.
+

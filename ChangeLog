@@ -1,3 +1,7 @@
+2020-08-30  Mihai Gătejescu <gus666xe@gmail.com>
+
+	* README.git: Add copyright and license notice
+
 2020-08-17  Mihai Gătejescu <gus666xe@gmail.com>
 
 	* typefortune, autogensh.sh, configure-w32.in, INSTALL.in:
