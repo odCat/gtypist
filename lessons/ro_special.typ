@@ -311,7 +311,7 @@ S:A fost odată ca-n povești,
  : Corăbii negre duce.
 
 *:_RO_S_RO31
-I:LUCEAFÁRUL (fragment) (2/2)
+I:LUCEAFĂRUL (fragment) (2/2)
 S:Îl vede azi, îl vede mâni,
  : Astfel dorința-i gata;
  :El iar, privind de săptămâni,
