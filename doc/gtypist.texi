@@ -1,4 +1,4 @@
-^\input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texi"-*-
+\input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texi"-*-
 @setfilename gtypist.info
 @settitle GNU Typist Manual
 @documentlanguage en
