@@ -394,7 +394,7 @@ S:The lawyer consulted the complainant.
 I:(4)
 *:_U_R_L50
 S:     Character shows itself in a man's conduct.  Deeds speak
- :louder than words.  Words sometimes confuse as issue where
+ :louder than words.  Words sometimes confuse an issue where
  :deeds clarify it.  The test of a man's sincerity is not what
  :he says but what he does.  Consider this well and you will
  :never be confused in estimating a man's worth.
