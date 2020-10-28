@@ -1,4 +1,7 @@
-msgid ""
+# German translations for GNU Typist package.
+# Copyright (C) 2011 Felix Natter
+# This file is distributed under the same license as the GNU Typist package.
+#
 msgstr ""
 "Project-Id-Version: GNU Typist 2.10\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
