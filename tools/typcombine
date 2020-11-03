@@ -206,7 +206,7 @@ END	{
   printf(" :manual can also be found here:\n");
   printf(" :    http://www.gnu.org/software/gtypist/doc/\n");
   printf(" :\n");
-  printf(" :If you have comments, questons, suggestions or bug-reports,\n");
+  printf(" :If you have comments, questions, suggestions or bug-reports,\n");
   printf(" :please write to bug-gtypist@gnu.org.\n");
   printf("G:__SERIESMENU\n");
 
