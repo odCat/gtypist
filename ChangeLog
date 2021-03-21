@@ -1,3 +1,7 @@
+2021-03-21  Mihai Gătejescu <gus666xe@gmail.com>
+
+    * typefortune.1: Add notices
+
 2020-10-28  Mihai Gătejescu <gus666xe@gmail.com>
 
 	* configure.ac, TODO: Add notices
@@ -16,7 +20,7 @@
 
 2020-08-17  Mihai Gătejescu <gus666xe@gmail.com>
 
-	* typefortune, autogensh.sh, configure-w32.in, INSTALL.in:
+	* typefortune, autogen.sh, configure-w32.in, INSTALL.in:
 	Add/Update copyright notice
 	* .gitignore: Add INSTALL back
 
