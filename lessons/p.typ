@@ -1,6 +1,7 @@
 # GNU Typist - improved typing tutor program for UNIX systems
 #
 # Copyright (C) 2018, 2019, 2020  Daniel Long Sockwell, Mihai Gătejescu
+# Copyright (C) 2021 Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -43,7 +44,7 @@ T:In the P series of lessons we work on special characters with an
  :We will start by reviewing the special characters that share keys with
  :the numerals on a standard US QWERTY keyboard: ! @ # $ % ^ & * ( ).  If
  :you would like additional practice with these keys, please refer to the
- :T series of lessons in Gtypist.
+ :T series of lessons in GNU Typist.
 
 I:(1) Warm up
 D:The quick brown fox jumps over the lazy dog.
@@ -80,14 +81,11 @@ I:(6) And try our first bit of code
 S:# Hello world in Python 2
  :print "Hello, World!"
  :
- :
  :# Hello world in Python 3
- :print("Hello, world!")
- : 
+ :print("Hello, World!")
  :
  :# Hello world in Ruby
  :puts "Hello, World!"
- : 
  :
  :;;; Hello world in Emacs Lisp
  :(defun hello-world()
@@ -95,17 +93,15 @@ S:# Hello world in Python 2
  :  (interactive)
  :  (message "Hello, World!"))
  :
- :
  :" Hello world in Vim script
  ::echom "Hello, World!"
- :
  :
  :# Hello world in SQL
  :SELECT 'Hello, World!';
  :
- :
  :% Hello world in MATLAB
  :disp('Hello World!');
+
 Q:Do you want to continue to lesson P2 [Y/N] ? 
 N:MENU
 
@@ -142,22 +138,17 @@ I:(6) And now a bit more "Hello world" coding
 S:// Hello world in JavaScript
  :console.log("Hello, World!");
  :
- :
  :// Hello world in Swift
  :println("Hello, World!")
- :
  :
  :# Hello world in Lua
  :print "Hello, World!"
  :
- :
  :# Hello world in Perl 6
  :say 'Hello, World!';
  :
- :
  :// Hello world in TypeScript 
  :alert('Hello, World!');
- :
  :
  :'Hello world in Visual Basic .NET
  :Imports System.Console
@@ -218,16 +209,13 @@ S:int first_number = 7;
  :int second_number = 40;
  :int third_number = first_number + second_number - first_number;
  :
- :
  :1 + 2 + 8 + 12 - 74 = -51
- :
  :
  :for (let i = 0; i !== arr.length; i++)
  :
  :let a = 'string';
  :let b = 'string';
  :if (a === b) console.log('"a" and "b" are equal'); 
- :
  :
  :if ((10 / 10) === 5 % 4) console.log('Yep, that is how math works');
 
@@ -272,24 +260,19 @@ S:<!DOCTYPE html>
  :  <meta name="description" content="...">
  :</head>
  :<body>
- :
  :  <header>
  :    <!-- site-wide header -->
  :    <h1>Example <!-- site name --></h1>
  :  </header>
- :
  :  <main>
  :    <!-- this page's main content -->
  :  </main>
- :
  :  <nav>
  :    <!-- site-wide navigation -->
  :  </nav>
- :
  :  <footer>
  :    <!-- site-wide footer -->
  :  </footer>
- :
  :</body>
  :</html>
 Q:Do you want to continue to lesson P5 [Y/N] ? 
@@ -333,7 +316,6 @@ S:/* Hello world in C, K&R style */
  :    return 0;
  :}
  :
- :
  :// Hello world in C#
  :class HelloWorld
  :{
@@ -343,12 +325,10 @@ S:/* Hello world in C, K&R style */
  :    }
  :}
  :
- :
  :<?php
  :  // Hello world in PHP
  :  echo 'Hello, World!';
  :?>
- :
  :
  :// Hello world in Delphi
  :Program Hello_World;
@@ -370,30 +350,32 @@ B:Lesson P6
 I:(1) Review 
 D:;;;; ;';' ;p;p ;-;- ;";" ;/;/ ;?;? ;:;: ;_;_
  :;;PP ;p-/ :;:; ;;;; _P?p "PP" p-p; P/P? --??
+
 I:(2) Use your ;-finger for the [-key
 D:;;;; [[[[ ;[;[ ;;[[ [[;; [;[;
  :[[[[ [;[; ['[' [p[p [-[- [/[/
  :[[[[ [:[: ["[" [P[P [_[_ [?[?
+
 I:(3) Use your ;-finger for the ]-key
 D:;;;; ]]]] ;];] ;;]] ]];; ];];
  :]]]] ];]; ]']' ]p]p ]-]- ]/]/
  :]]]] ]:]: ]"]" ]P]P ]_]_ ]?]?
+
 I:(4) Practice the ] and [ keys 
 D:;[]; ];[; ;;][ ];;[ [];; ][;;
  :[;'] [p-] [-/] [:"] [P_] [_?]
+
 I:(5) Try some sentences
 S:Hello [name]!  How are you this [time_of_day]?
- :
  :I'm [current_feeling], thanks for asking.  Are you also [current_feeling]?
- :
  :And how about [spouse]? [Is he/Is she/Are they] doing well?
- :
  :How about those [local_sports_team], eh?
+
 I:(6) The [- and ]-keys are frequently used when working with arrays 
 S:int array[10];
  :int array_one[];
  :double array_two[];
- :int array_three[ 20 ];
+ :int array_three[20];
  :
  :// a multidimensional array in JavaScript
  :let arr = [
@@ -403,7 +385,6 @@ S:int array[10];
  :  [D1, D2, D3, D4, D5],
  :  [E1, E2, E3, E4, E5],
  :];
-
 
 Q:Do you want to continue to lesson P7 [Y/N] ? 
 N:MENU
@@ -416,15 +397,15 @@ I:(1) Review
 D:}]}] {{}} [[]] "[]" ;;{{ ??}} ;;''
  :--++ [++] {==} '??' //;; :--: {__}
 
-I:(2) Press the ` key with the a finger
+I:(2) Press the ` key with the a finger.  ATTENTION: '1' is one
 D:aaaa ```` aa`` ``aa `aa` a``a
  :qq`` `qq` ``11 z``a `qq` `zz`
 
-I:(3) Press the ~ key with the a finger
+I:(3) Press the ~ key with the a finger.  ATTENTION: '1' is one
 D:aaaa ~~~~ aa~~ ~~aa ~aa~ a~~a
  :qq~~ ~qq~ ~~11 z~~a ~qq~ ~zz~
 
-I:(4) Practice the ~ and ` keys
+I:(4) Practice the ~ and ` keys.  ATTENTION: '1' is one
 D:~~`` `~~` `!!` ``QQ zz`` ~~11
  :``~~ ~``~ ~!!~ ~~ZZ qq~~ ``11
  :`~~` `ZZ` QQ~~ aa~~ `11` ~!!~
@@ -456,8 +437,7 @@ S:let greeting = 'Hello';
  :
  :sudo chown `id -u` /somedir 
 
-
-Q:Do you want to continue to lesson P8 [Y/N] ? 
+Q:Do you want to continue to lesson P8 [Y/N] ?
 N:MENU
 
 
@@ -467,7 +447,6 @@ B:Lesson P8
 I:(1) Review 
 D:2030 5946 1411 4062 8077 8786 2534 9640
  :@)#) %($^ !$!! $)^@ *)&& *&*^ @%#$ (^$)
- :
  :<;;> "//" {''} [+-] `qq` ({[< >]}) -_~~
 
 I:(2) Use your ; finger for the \ key
@@ -498,7 +477,6 @@ S:ls | more
  :ps -efH | more
  :ps -ef | grep chrome
 
-
 I:(6) Try some writing some regular expressions
 S:// match a valid phone number
  :/^\(*\d{3}\)*( |-)*\d{3}( |-)*\d{4}$/
@@ -526,7 +504,7 @@ N:MENU
 # Lesson P9—Practice with Simple Programs
 *:PRACTICE_1
 B:Lesson P9
-I:(1) Practice with simple programs.  Try a palindrome finder in Python
+I:(1/9) Practice with simple programs.  Try a palindrome finder in Python
 S:# function to check string is 
  :# palindrome or not 
  :def isPalindrome(str):
@@ -535,7 +513,7 @@ S:# function to check string is
  :            return False
  :    return True
 
-I:(2) Try the same code in JavaScript
+I:(2/9) Try the same code in JavaScript
 S:// function to check if a string is a palindrome
  :function isPalindrome(str) {
  :  for (let i = 0; i < str.length; i += 1) {
@@ -544,22 +522,19 @@ S:// function to check if a string is a palindrome
  :  return true;
  :}
 
-I:(3) Try the same problem in C++ 
+I:(3/9) Try the same problem in C++
 S:bool IsPalindrome(const char* psz)
  :{
  :    int i = 0;
  :    int j;
  :
- :    if ((psz == NULL) || (psz[0] == '\0'))
- :    {
+ :    if ((psz == NULL) || (psz[0] == '\0')) {
  :        return false;
  :    }
  :
  :    j = strlen(psz) - 1;
- :    while (i < j)
- :    {
- :        if (psz[i] != psz[j])
- :        {
+ :    while (i < j) {
+ :        if (psz[i] != psz[j]) {
  :            return false;
  :        }
  :        i++;
@@ -569,7 +544,7 @@ S:bool IsPalindrome(const char* psz)
  :    return true;
  :}
 
-I:(4) Try the same problem in C, using functions and pointers (part 1)
+I:(4/9) Try the same problem in C, using functions and pointers (part 1)
 S:#include <stdio.h>
  : 
  :int is_palindrome(char*);
@@ -588,7 +563,7 @@ S:#include <stdio.h>
  : 
  :   result = is_palindrome(string);
  : 
- :   if ( result == 1 )
+ :   if (result == 1)
  :      printf("\"%s\" is a palindrome string.\n", string);
  :   else
  :      printf("\"%s\" isn't a palindrome string.\n", string); 
@@ -596,7 +571,7 @@ S:#include <stdio.h>
  :   return 0;
  :}
 
-I:(5) Try the same problem in C, continued
+I:(5/9) Try the same problem in C, continued
 S:int is_palindrome(char *string)
  :{
  :   int check, length;
@@ -612,13 +587,13 @@ S:int is_palindrome(char *string)
  : 
  :   free(reverse);
  : 
- :   if ( check == 0 )
+ :   if (check == 0)
  :      return 1;
  :   else
  :      return 0;
  :}
 
-I:(6) Try the same problem in C, continued
+I:(6/9) Try the same problem in C, continued
 S:int string_length(char *string)
  :{
  :   int length = 0;  
@@ -631,8 +606,9 @@ S:int string_length(char *string)
  : 
  :   return length;
  :}
- : 
- :void copy_string(char *target, char *source)
+
+I:(7/9) Try the same problem in C, continued
+S:void copy_string(char *target, char *source)
  :{
  :   while(*source)
  :   {
@@ -643,22 +619,20 @@ S:int string_length(char *string)
  :   *target = '\0';
  :}
 
-I:(7) Try the same problem in C, continued
+I:(8/9) Try the same problem in C, continued
 S:void reverse_string(char *string) 
  :{
  :   int length, c;
  :   char *begin, *end, temp;
  : 
  :   length = string_length(string);
- : 
  :   begin = string;
  :   end = string;
  : 
- :   for ( c = 0 ; c < ( length - 1 ) ; c++ )
+ :   for (c = 0; c < (length - 1); c++)
  :       end++;
  : 
- :   for ( c = 0 ; c < length/2 ; c++ ) 
- :   {        
+ :   for (c = 0; c < length/2; c++) {
  :      temp = *end;
  :      *end = *begin;
  :      *begin = temp;
@@ -667,18 +641,18 @@ S:void reverse_string(char *string)
  :      end--;
  :   }
  :}
- : 
- :int compare_string(char *first, char *second)
+
+I:(9/9) Try the same problem in C, continued
+S:int compare_string(char *first, char *second)
  :{
- :   while(*first==*second)
- :   {
- :      if ( *first == '\0' || *second == '\0' )
+ :   while(*first==*second) {
+ :      if (*first == '\0' || *second == '\0')
  :         break;
- : 
  :      first++;
  :      second++;
  :   }
- :   if ( *first == '\0' && *second == '\0' )
+ :
+ :   if (*first == '\0' && *second == '\0')
  :      return 0;
  :   else
  :      return -1;
@@ -691,7 +665,7 @@ N:MENU
 # Lesson P10—Practice with Doug Lea's malloc
 *:PRACTICE_2
 B:Lesson P10
-I:(1) Try this excerpt from Doug Lea's malloc, written in C
+I:(1/7) Try this excerpt from Doug Lea's malloc, written in C
 S:/* ------------------------ system deallocation -------------------------- */
  :
  :/* Unmap and unlink any mmapped segments that don't contain used chunks */
@@ -716,7 +690,9 @@ S:/* ------------------------ system deallocation -------------------------- */
  :          m->dv = 0;
  :          m->dvsize = 0;
  :        }
- :        else {
+
+I:(2/7) Doug Lea's malloc, continued
+S:        else {
  :          unlink_large_chunk(m, tp);
  :        }
  :        if (CALL_MUNMAP(base, size) == 0) {
@@ -731,7 +707,8 @@ S:/* ------------------------ system deallocation -------------------------- */
  :        }
  :      }
  :    }
-I:(2) Doug Lea's malloc, continued
+
+I:(3/7) Doug Lea's malloc, continued
 S:    if (NO_SEGMENT_TRAVERSAL) /* scan only first segment */
  :      break;
  :    pred = sp;
@@ -742,8 +719,9 @@ S:    if (NO_SEGMENT_TRAVERSAL) /* scan only first segment */
  :                       (size_t) nsegs : (size_t) MAX_RELEASE_CHECK_RATE);
  :  return released;
  :}
- :
- :static int sys_trim(mstate m, size_t pad) {
+
+I:(4/7) Doug Lea's malloc, continued
+S:static int sys_trim(mstate m, size_t pad) {
  :  size_t released = 0;
  :  ensure_initialization();
  :  if (pad < MAX_REQUEST && is_initialized(m)) {
@@ -755,8 +733,9 @@ S:    if (NO_SEGMENT_TRAVERSAL) /* scan only first segment */
  :      size_t extra = ((m->topsize - pad + (unit - SIZE_T_ONE)) / unit -
  :                      SIZE_T_ONE) * unit;
  :      msegmentptr sp = segment_holding(m, (char*)m->top);
- :
- :      if (!is_extern_segment(sp)) {
+
+I:(5/7) Doug Lea's malloc, continued
+S:      if (!is_extern_segment(sp)) {
  :        if (is_mmapped_segment(sp)) {
  :          if (HAVE_MMAP &&
  :              sp->size >= extra &&
@@ -770,7 +749,8 @@ S:    if (NO_SEGMENT_TRAVERSAL) /* scan only first segment */
  :            }
  :          }
  :        }
-I:(3) Doug Lea's malloc, continued
+
+I:(6/7) Doug Lea's malloc, continued
 S:        else if (HAVE_MORECORE) {
  :          if (extra >= HALF_MAX_SIZE_T) /* Avoid wrapping negative */
  :            extra = (HALF_MAX_SIZE_T) + SIZE_T_ONE - unit;
@@ -788,8 +768,9 @@ S:        else if (HAVE_MORECORE) {
  :          RELEASE_MALLOC_GLOBAL_LOCK();
  :        }
  :      }
- :
- :      if (released != 0) {
+
+I:(7/7) Doug Lea's malloc, continued
+S:      if (released != 0) {
  :        sp->size -= released;
  :        m->footprint -= released;
  :        init_top(m, m->top, m->topsize - released);
@@ -816,7 +797,7 @@ N:MENU
 # Lesson P11—Practice with the Super Tiny Compiler
 *:PRACTICE_3
 B:Lesson P11 — final lesson
-I:(1) Type Jamie Kyle's Super Tiny Compiler (CC BY 4.0 License)
+I:(1/14) Type Jamie Kyle's Super Tiny Compiler (CC BY 4.0 License)
 S:'use strict'
  :function tokenizer(input) {
  :  let current = 0;
@@ -839,7 +820,9 @@ S:'use strict'
  :      current++;
  :      continue;
  :    }
- :    let WHITESPACE = /\s/;
+
+I:(2/14) Super Tiny Compiler, continued
+S:    let WHITESPACE = /\s/;
  :    if (WHITESPACE.test(char)) {
  :      current++;
  :      continue;
@@ -854,7 +837,8 @@ S:'use strict'
  :      tokens.push({ type: 'number', value });
  :      continue;
  :    }
-I:(2) Super Tiny Compiler, continued
+
+I:(3/14) Super Tiny Compiler, continued
 S:    if (char === '"') {
  :      let value = '';
  :      char = input[++current];
@@ -866,7 +850,9 @@ S:    if (char === '"') {
  :      tokens.push({ type: 'string', value });
  :      continue;
  :    }
- :    let LETTERS = /[a-z]/i;
+
+I:(4/14) Super Tiny Compiler, continued
+S:    let LETTERS = /[a-z]/i;
  :    if (LETTERS.test(char)) {
  :      let value = '';
  :      while (LETTERS.test(char)) {
@@ -876,12 +862,13 @@ S:    if (char === '"') {
  :      tokens.push({ type: 'name', value });
  :      continue;
  :    }
- :    throw new TypeError('I dont know what this character is: ' + char);
+ :    throw new TypeError("I don\'t know what this character is: " + char);
  :  }
  :  return tokens;
  :}
- :
- :function parser(tokens) {
+
+I:(5/14) Super Tiny Compiler, continued
+S:function parser(tokens) {
  :  let current = 0;
  :  function walk() {
  :    let token = tokens[current];
@@ -892,7 +879,8 @@ S:    if (char === '"') {
  :        value: token.value,
  :      };
  :    }
-I:(3) Super Tiny Compiler, continued
+
+I:(6/14) Super Tiny Compiler, continued
 S:    if (token.type === 'string') {
  :      current++;
  :      return {
@@ -910,7 +898,9 @@ S:    if (token.type === 'string') {
  :        name: token.value,
  :        params: [],
  :      };
- :      token = tokens[++current];
+
+I:(7/14) Super Tiny Compiler, continued
+S:      token = tokens[++current];
  :      while (
  :        (token.type !== 'paren') ||
  :        (token.type === 'paren' && token.value !== ')')
@@ -932,7 +922,8 @@ S:    if (token.type === 'string') {
  :  }
  :  return ast;
  :}
-I:(4) Super Tiny Compiler, continued
+
+I:(8/14) Super Tiny Compiler, continued
 S:function traverser(ast, visitor) {
  :  function traverseArray(array, parent) {
  :    array.forEach(child => {
@@ -944,7 +935,9 @@ S:function traverser(ast, visitor) {
  :    if (methods && methods.enter) {
  :      methods.enter(node, parent);
  :    }
- :    switch (node.type) {
+
+I:(9/14) Super Tiny Compiler, continued
+S:    switch (node.type) {
  :      case 'Program':
  :        traverseArray(node.body, node);
  :        break;
@@ -963,7 +956,8 @@ S:function traverser(ast, visitor) {
  :  }
  :  traverseNode(ast, null);
  :}
-I:(5) Super Tiny Compiler, continued
+
+I:(10/14) Super Tiny Compiler, continued
 S:function transformer(ast) {
  :  let newAst = {
  :    type: 'Program',
@@ -987,7 +981,8 @@ S:function transformer(ast) {
  :        });
  :      },
  :    },
-I:(6) Super Tiny Compiler, continued
+
+I:(11/14) Super Tiny Compiler, continued
 S:    CallExpression: {
  :      enter(node, parent) {
  :        let expression = {
@@ -1011,7 +1006,8 @@ S:    CallExpression: {
  :  });
  :  return newAst;
  :}
-I:(7) Super Tiny Compiler, continued
+
+I:(12/14) Super Tiny Compiler, continued
 S:function codeGenerator(node) {
  :  switch (node.type) {
  :    case 'Program':
@@ -1030,7 +1026,9 @@ S:function codeGenerator(node) {
  :          .join(', ') +
  :        ')'
  :      );
- :    case 'Identifier':
+
+I:(13/14) Super Tiny Compiler, continued
+S:    case 'Identifier':
  :      return node.name;
  :    case 'NumberLiteral':
  :      return node.value;
@@ -1040,10 +1038,11 @@ S:function codeGenerator(node) {
  :      throw new TypeError(node.type);
  :  }
  :}
-I:(8) Super Tiny Compiler, continued
+
+I:(14/14) Super Tiny Compiler, continued
 S:function compiler(input) {
  :  let tokens = tokenizer(input);
- :  let ast    = parser(tokens);
+ :  let ast = parser(tokens);
  :  let newAst = transformer(ast);
  :  let output = codeGenerator(newAst);
  :  return output;
