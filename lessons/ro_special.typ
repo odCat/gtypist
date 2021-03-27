@@ -1,6 +1,6 @@
 # Romanian special letters course for GNU Typist
 #
-# Copyright (C) 2018, 2019, 2020 Mihai Gătejescu
+# Copyright (C) 2018, 2019, 2020, 2021 Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -39,6 +39,7 @@ T:
  :
  :GNU Typist oferă astfel de lecții în limba engleză.
 
+
 #------------------------------------------------------------------------------
 # Lesson RO2
 #------------------------------------------------------------------------------
@@ -70,6 +71,7 @@ I:(5)
 D:ău ăp jă ău ăp jă
  :aă ăd ăg aă ăd ăg
 
+
 #------------------------------------------------------------------------------
 # Lesson RO3
 #------------------------------------------------------------------------------
@@ -80,6 +82,7 @@ I:(1)
 *:_RO_R_L6
 D:Ăi Ăl Ăa Ăi Ăl Ăa
  :Ăș Ăs Ăă Ăș Ăs Ăă
+
 
 #------------------------------------------------------------------------------
 # Lesson RO4
@@ -106,6 +109,7 @@ I:(4)
 *:_RO_R_L10
 D:gâ âi vâ gâ âi vâ
 
+
 #------------------------------------------------------------------------------
 # Lesson RO5
 #------------------------------------------------------------------------------
@@ -122,6 +126,7 @@ I:(2)
 D:îi eî în îi eî în
  :îi îl în îi îl în
 
+
 #------------------------------------------------------------------------------
 # Lesson RO6
 #------------------------------------------------------------------------------
@@ -131,6 +136,7 @@ B:      Lecția 5: Î
 I:(1)
 *:_RO_R_L13
 D:Îm În Îî Îm În Îî
+
 
 #------------------------------------------------------------------------------
 # Lesson RO7
@@ -158,6 +164,7 @@ I:(4)
 D:ăș șu șs ăș șu și
  :sș îș sș îș sș îș
 
+
 #------------------------------------------------------------------------------
 # Lesson RO8
 #------------------------------------------------------------------------------
@@ -173,6 +180,7 @@ I:(2)
 *:_RO_R_L19
 D:Și Șo Șș Și Șo Șș
  :Și Șt Șs Și Șt Șs
+
 
 #------------------------------------------------------------------------------
 # Lesson RO9
@@ -212,13 +220,76 @@ I:(1)
 D:Ța Ți Țț Ța Ți Țț
  :Țu Țt Țu Țț Țu Țț
 
+Q:Doriti să treceți la următoarea lecție [Y/N] ?
+N:_RO_MENU
+
+
 #------------------------------------------------------------------------------
 # Lesson RO11
 #------------------------------------------------------------------------------
-*:_RO_S_RO11
-B:      Lecția 10
+*:_RO_COMMON_WORDS
+B:      Lecția 10: Cuvinte folosite des
 
-*:_RO_S_RO25
+I:(1/7)
+*:_RO_R_L25
+S:îi această împotriva În după dacă și că în așa fără făcut cât măcar
+ :toată Și până văzut niște încă două există atât Dacă muncă câteva
+ :Să mulți mă bună arată către angajați însă stânga totuși puțin însă
+ :măsură dă își facă să-i mână urmă măsuri față adică vă toți socială
+
+I:(2/7)
+*:_RO_R_L26
+S:sănătate poți deși Ghiță dată țară criză Păi înseamnă piața știu
+ :mulți și-a angajații masă rând justiției României făcute Însă
+ :niște totuși să-și lângă român vină față privată luptă instituții
+ :creșterea piață privește contribuțiilor formă forță curând mâna
+
+I:(3/7)
+*:_RO_R_L27
+S:Așa adevărat rămâne problemă urlă ieșit multă tabără nouă legătură
+ :românească știe întâmplă publică înțeles alții dreptă rămas același
+ :rău Mă presă atâta altă modificări investiții fața plătiți Lazăr
+ :stă știu noștri câțiva pătură plătesc justiția ești clasă educație
+
+I:(4/7)
+*:_RO_R_L28
+S:zonă văd împreună președinte întâmplat cealaltă forțe aceeași său
+ :găsit lucrează contează înțeleg adresă afară câștigat schimbă țară
+ :pături reală București creștere spună săraci explică luăm acasă pună
+ :protecție știm simplă arătat îmi liberă rămân știe deocamdată să-l
+
+I:(5/7)
+*:_RO_R_L29
+S:să-l ușor încearcă Adică bază și-au Că poziții critică neapărat și
+ :totală cheamă diverși apără analiză atacă discută poartă oferă ați
+ :locală șeful răspuns susținut iată ține Până funcționari afaceriști
+ :joacă deși același viața infrastructură crește poți scăzut țări îți
+
+I:(6/7)
+*:_RO_R_L30
+S:plânge realități violență discuția bătălia condițiile influență
+ :diverși mică clară importantă vorbă lună alți ieftină modă măsură
+ :ăștia națională informații Timișoara aibă albă întreg europeană săi
+ :uităm pământ așadar dură treabă mărit uiți vorbește relația spațiul
+
+I:(7/7)
+*:_RO_R_L31
+S:măriri relația supremă funcționează puține învățat având întrebat
+ :să-mi noștri lăsat mediatică jumătate casă capăt număr băgat bogați
+ :vârf minimă fața votează strânse întrebarea puțin situația vorbește
+ :vadă păcat lecții găsi același știre știri șef legături meargă stâlp
+
+Q:Doriti să treceți la următoarea lecție [Y/N] ?
+N:_RO_MENU
+
+
+#------------------------------------------------------------------------------
+# Lesson RO12
+#------------------------------------------------------------------------------
+*:_RO_S_RO12
+B:      Lecția 11
+
+*:_RO_S_EM01
 T:                          INTRODUCERE EXERCIȚII
  :
  :În această lecție ți se vor da să tastezi câteva fragmente din opera lui
@@ -226,7 +297,8 @@ T:                          INTRODUCERE EXERCIȚII
  :
  :Gradul de dificultate este mai crescut. Ai răbdare și fi atent.
 
-*:_RO_S_RO26
+*:_RO_S_EM02
+B:
 I:REVEDERE (1/3)
 S:- Codrule, codruțule,
  :Ce mai faci, drăguțule,
@@ -235,7 +307,8 @@ S:- Codrule, codruțule,
  :Și de când m-am depărtat
  :Multă lume am îmblat.
 
-*:_RO_S_RO27
+*:_RO_S_EM03
+B:
 I:REVEDERE (2/3)
 S:- Ia, eu fac ce fac de mult,
  :Iarna viscolu-l ascult,
@@ -255,7 +328,8 @@ S:- Ia, eu fac ce fac de mult,
  :Tu din tânăr precum ești
  :Tot mereu întinerești.
 
-*:_RO_S_RO28
+*:_RO_S_EM04
+B:
 I:REVEDERE (3/3)
 S:- Ce mi-i vremea, când de veacuri
  :Stele-mi scânteie pe lacuri,
@@ -272,7 +346,8 @@ S:- Ce mi-i vremea, când de veacuri
  :Luna și cu soarele,
  :Codrul cu izvoarele.
 
-*:_RO_S_RO29
+*:_RO_S_EM05
+B:
 I:SCRISOAREA III (fragment)
 S:La un semn deschisă-i calea și s-apropie de cort
  :Un bătrân atât de simplu, după vorbă, după port.
@@ -288,7 +363,8 @@ S:La un semn deschisă-i calea și s-apropie de cort
  :Să ne dai un semn și nouă de mila măriei-tale...
  :Bucuroși le-om duce toate, de e pace, de-i război.
 
-*:_RO_S_RO30
+*:_RO_S_EM06
+B:
 I:LUCEAFÁRUL (fragment) (1/2)
 S:A fost odată ca-n povești,
  : A fost ca niciodată,
@@ -310,7 +386,8 @@ S:A fost odată ca-n povești,
  :Pe mișcătoareale cărări
  : Corăbii negre duce.
 
-*:_RO_S_RO31
+*:_RO_S_EM07
+B:
 I:LUCEAFĂRUL (fragment) (2/2)
 S:Îl vede azi, îl vede mâni,
  : Astfel dorința-i gata;
@@ -327,7 +404,8 @@ S:Îl vede azi, îl vede mâni,
  :Spre umbra negrului castel
  : Când ea o să-i apară.
 
-*:_RO_S_RO32
+*:_RO_S_EM08
+B:
 I:ȘI DACĂ...
 S:Și dacă ramuri bat în geam
  : Și se cutremur plopii,
@@ -344,7 +422,8 @@ S:Și dacă ramuri bat în geam
  :E ca aminte să-mi aduc
  : De tine-ntotdeauna.
 
-*:_RO_S_RO33
+*:_RO_S_EM09
+B:
 I:GLOSSĂ (fragment)
 S:Tu rămâi la toate rece,
  :De te-ndeamnă, de te cheamă;
@@ -355,7 +434,8 @@ S:Tu rămâi la toate rece,
  :Toate-s vechi și nouă toate:
  :Vreme trece, vreme vine.
 
-*:_RO_S_RO34
+*:_RO_S_EM10
+B:
 I:PESTE VÂRFURI
 S:Peste vârfuri trece luna,
  :Codru-și bate frunza lin,
@@ -372,7 +452,8 @@ S:Peste vârfuri trece luna,
  :Mai suna-vei dulce corn,
  :Pentru mine vre odată?
 
-*:_RO_S_RO35
+*:_RO_S_EM11
+B:
 I:SOMNOROASE PĂSĂRELE
 S:Somnoroase păsărele
  :Pe la cuiburi se adună,
@@ -394,7 +475,8 @@ S:Somnoroase păsărele
  :Totu-i vis și armonie -
  : Noapte bună!
 
-*:_RO_S_RO36
+*:_RO_S_EM12
+B:
 I:CE TE LEGENI...
 S:- Ce te legeni, codrule,
  :Fără ploaie, fără vânt,
@@ -422,7 +504,8 @@ S:- Ce te legeni, codrule,
  :Și cu doru-mi singurel,
  :De mă-ngân numai cu el!
 
-*:_RO_S_RO37
+*:_RO_S_EM13
+B:
 I:LA MIJLOC DE CODRU...
 S:La mijloc de codru des
  :Toate păsările ies,
@@ -438,7 +521,8 @@ S:La mijloc de codru des
  :Și de zbor de rândunele
  :Și de chipul dragei mele.
 
-*:_RO_S_RO38
+*:_RO_S_EM14
+B:
 I:LA STEAUA
 S:La steaua care-a răsărit
  :E-o cale-atât de lungă,
@@ -460,7 +544,8 @@ S:La steaua care-a răsărit
  :Lumina stinsului amor
  :Ne urmărește încă.
 
-*:_RO_S_RO39
+*:_RO_S_EM15
+B:
 I:CU PENETUL CA SIDEFUL
 S:Cu penetul ca sideful
  :Strălucește-o porumbiță,
@@ -478,18 +563,20 @@ S:Cu penetul ca sideful
 #------------------------------------------------------------------------------
 *:_RO_MENU
 B:                      Caracterele speciale din limba română
-M: "Lecțiile disponibile sunt următoarele"
- :_RO_S_RO1  "Introducere"
- :_RO_S_RO2  "Lecția 1: ă"
- :_RO_S_RO3  "Lecția 2: Ă"
- :_RO_S_RO4  "Lectia 3: ă"
- :_RO_S_RO5  "Lecția 4: î"
- :_RO_S_RO6  "Lecția 5: Î"
- :_RO_S_RO7  "Lecția 6: ș"
- :_RO_S_RO8  "Lecția 7: Ș"
- :_RO_S_RO9  "Lecția 8: ț"
- :_RO_S_RO10 "Lecția 9: Ț"
- :_RO_EMINESCU_MENU "Lecția 10: Poezii Eminescu"
+M: "Lecțiile disponibile sunt următoarele:"
+ :_RO_S_RO1         "Introducere"
+ :_RO_S_RO2         "Lecția 1: ă"
+ :_RO_S_RO3         "Lecția 2: Ă"
+ :_RO_S_RO4         "Lectia 3: ă"
+ :_RO_S_RO5         "Lecția 4: î"
+ :_RO_S_RO6         "Lecția 5: Î"
+ :_RO_S_RO7         "Lecția 6: ș"
+ :_RO_S_RO8         "Lecția 7: Ș"
+ :_RO_S_RO9         "Lecția 8: ț"
+ :_RO_S_RO10        "Lecția 9: Ț"
+ :_RO_COMMON_WORDS  "Lecția 10: Cuvinte utilizate des"
+ :_RO_EMINESCU_MENU "Lecția 11: Poezii Eminescu"
+
 
 #------------------------------------------------------------------------------
 # Lesson series RO Special menu
@@ -497,15 +584,15 @@ M: "Lecțiile disponibile sunt următoarele"
 *:_RO_EMINESCU_MENU
 B:                      Poezii de Mihai Eminescu
 M: "Lecțiile disponibile sunt următoarele"
- :_RO_S_RO11 "Introducere"
- :_RO_S_RO26 "Revedere"
- :_RO_S_RO29 "Scrisoarea III"
- :_RO_S_RO30 "Luceafărul"
- :_RO_S_RO32 "Și dacă..."
- :_RO_S_RO33 "Glossă"
- :_RO_S_RO34 "Peste vârfuri"
- :_RO_S_RO35 "Somnoroase păsărele"
- :_RO_S_RO36 "Ce te legeni..."
- :_RO_S_RO37 "La mijloc de codru..."
- :_RO_S_RO38 "La steaua"
- :_RO_S_RO39 "Cu penetul ca sideful"
+ :_RO_S_RO12 "Introducere"
+ :_RO_S_EM02 "Revedere"
+ :_RO_S_EM05 "Scrisoarea III"
+ :_RO_S_EM06 "Luceafărul"
+ :_RO_S_EM08 "Și dacă..."
+ :_RO_S_EM09 "Glossă"
+ :_RO_S_EM10 "Peste vârfuri"
+ :_RO_S_EM11 "Somnoroase păsărele"
+ :_RO_S_EM12 "Ce te legeni..."
+ :_RO_S_EM13 "La mijloc de codru..."
+ :_RO_S_EM14 "La steaua"
+ :_RO_S_EM15 "Cu penetul ca sideful"

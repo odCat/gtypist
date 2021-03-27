@@ -1,4 +1,10 @@
-2021-13-25 Mihai Gătejescu <gus666xe@gmail.com>
+2021-03-27 Mihai Gătejescu <gus666xe@gmail.com>
+
+    * ro_special: Add common words lesson. Fix links
+    names and spacing. Add new copyright year. Use banner
+    as workaround for the nested menu.
+
+2021-03-25 Mihai Gătejescu <gus666xe@gmail.com>
 
     * p.typ: Update formatting. Break down lesson into
     smaller pieces. Remove empty lines and extra spaces
