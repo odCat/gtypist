@@ -3,10 +3,11 @@
  *
  * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003
  * 				 Simon Baldwin (simonb@sco.com)
- * Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2015,
- *               2016, 2017, 2018, 2019, 2020
+ * Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2016,
+ *               2017, 2018, 2019, 2020
  *               Hynek Hanke, Dmitry Rutsky, Paul Goins, Felix Natter,
  *               Tim Marston, clutton, Mihai Gătejescu
+ * Copyright (C) 2021 Felix Natter, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -68,7 +69,7 @@ int hash_label( char *label )
 {
   char	*p;				/* pointer through string */
   int	csum = 0;		/* sum of characters */
-  
+
   /* hash by summing the characters and taking modulo of the
      number of hash lists defined */
   for ( p = label; *p != ASCII_NULL; p++ )
@@ -208,17 +209,17 @@ void get_script_line( FILE *script, char *line )
   /* get lines until not empty/comment, or eof found */
   fgets(line, MAX_SCR_LINE, script);
   global_line_counter++;
-  while (! feof (script) && 
+  while (! feof (script) &&
 	   (line_is_empty (line) ||
 	    SCR_COMMAND (line) == C_COMMENT ||
-	    SCR_COMMAND (line) == C_ALT_COMMENT)) 
+	    SCR_COMMAND (line) == C_ALT_COMMENT))
   {
     fgets(line, MAX_SCR_LINE, script);
     global_line_counter++;
   }
 
   /* if a line was read then check it */
-  if ( ! feof( script )) 
+  if ( ! feof( script ))
   {
     /* Get rid of trailing spaces and newline */
     while( *line && isspace( line[strlen( line )-1] ) )
@@ -232,8 +233,8 @@ void get_script_line( FILE *script, char *line )
       fatal_error( _("data shortage"), line );
     if ( SCR_SEP( line ) != C_SEP )
       fatal_error( _("missing ':'"), line );
-    if ( SCR_COMMAND( line ) != C_LABEL 
-         && SCR_COMMAND( line ) != C_GOTO 
+    if ( SCR_COMMAND( line ) != C_LABEL
+         && SCR_COMMAND( line ) != C_GOTO
          && SCR_COMMAND( line ) != C_YGOTO
          && SCR_COMMAND( line ) != C_NGOTO
          && utf8len(SCR_DATA( line )) > COLS )
@@ -250,24 +251,24 @@ char *buffer_command( FILE *script, char *line )
   char	*data = NULL;			/* data string */
 
   /* get the complete exercise into a single string */
-  do 
+  do
   {
     data = (char*)realloc( data, (data ? strlen( data ) : 0) +
            strlen(SCR_DATA( line )) +
            strlen(STRING_NL) + 1 );
     if ( data == NULL )
       fatal_error( _("internal error: malloc"), line );
-    
+
     /* store the data in the allocated area */
     if ( total_chars == 0 )
       strcpy( data, "" );
     strcat( data, SCR_DATA( line ) );
     strcat( data, STRING_NL );
     total_chars = strlen( data );
-    
+
     /* and get the next script line */
     get_script_line( script, line );
-  } 
+  }
   while ( SCR_COMMAND( line ) == C_CONT && ! feof( script ));
 
   /* return our (malloced) data */
@@ -287,15 +288,15 @@ void seek_label( FILE *script, char *label, char *ref_line )
   char   err[MAX_SCR_LINE];             /* error message string */
 
   if (!label) do_exit (script);
-  
+
   __update_last_label (label);
-		  
+
   /* find the right hash list for the label */
   hash = hash_label( label );
-  
+
   /* search the linked list for the label */
   for ( check_label = global_label_list[ hash ]; check_label != NULL;
-	check_label = check_label->next ) 
+	check_label = check_label->next )
   {
     /* see if this is our label */
     if ( strcmp( check_label->label, label ) == 0 )
@@ -303,7 +304,7 @@ void seek_label( FILE *script, char *label, char *ref_line )
   }
 
   /* see if the label was not found in the file */
-  if ( check_label == NULL ) 
+  if ( check_label == NULL )
   {
     sprintf( err, _("label '%s' not found"), label );
     fatal_error( err, ref_line );
@@ -318,7 +319,7 @@ void seek_label( FILE *script, char *label, char *ref_line )
 /*
   exit from the program (implied on eof)
 */
-void do_exit( FILE *script ) 
+void do_exit( FILE *script )
 {
   /* close up all files, reset the screen stuff, and exit */
   fclose( script );

@@ -1,10 +1,11 @@
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
  *
- * Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2015,
- *               2016, 2017, 2018, 2019, 2020
+ * Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2016,
+ *               2017, 2018, 2019, 2020
  *               Hynek Hanke, Paul Goins, Felix Natter, Tim Marston,
  *               Mihai Gătejescu
+ * Copyright (C) 2021 Felix Natter, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +25,7 @@
 #ifndef GTYPIST_H
 #define GTYPIST_H
 
-/* some screen postions */
+/* some screen positions */
 #define	MESSAGE_LINE	(LINES - 1)
 #define B_TOP_LINE		0
 #define T_TOP_LINE		(B_TOP_LINE + 1)

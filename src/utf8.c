@@ -1,8 +1,9 @@
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
  *
- * Copyright (C) 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019
+ * Copyright (C) 2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019
  *               2020 Felix Natter, Tim Marston, clutton, Mihai Gătejescu
+ * Copyright (C) 2021 Felix Natter, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -167,7 +168,7 @@ void wideaddch(wchar_t c)
 
   wc[0] = c;
   wc[1] = L'\0';
-  
+
   result = setcchar(&c2, wc, 0, 0, NULL);
   if (result != OK)
   {
@@ -231,7 +232,7 @@ int get_widech(int* c)
     int retcode = get_wch( &ch );
     if( retcode == ERR )
       return ERR;
-    /* 
+    /*
        ncurses' KEY_BACKSPACE (0x107) collides with polish "c with
        acute (0x107) => we need to encode KEY_BACKSPACE!
     */
@@ -239,7 +240,7 @@ int get_widech(int* c)
     {
         ch = GTYPIST_KEY_BACKSPACE;
     }
-            
+
 
 #ifdef MINGW
     // MinGW defines wint_t as a short int, for compatibility with Windows.

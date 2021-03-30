@@ -1,8 +1,9 @@
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
  *
- * Copyright (C) 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+ * Copyright (C) 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
  *               Felix Natter, Tim Marston, clutton, Mihai Gătejescu
+ * Copyright (C) 2021 Felix Natter, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -86,11 +87,11 @@ void draw_scrollbar(int x2, int y1, int y2,
   int scrollBarOffset =
       (int)(firstLine/(float)maxFirstLine * maxOffset + 0.5);
   int y, scrollBarPosition;
-  
+
   attron (COLOR_PAIR (C_BANNER));
   for (y = y1 + 1, scrollBarPosition = 1; y < y2; y++, scrollBarPosition++)
   {
-    mvaddch(y, x2, 
+    mvaddch(y, x2,
             (scrollBarPosition >= scrollBarOffset &&
              scrollBarPosition - scrollBarOffset <= scrollBarHeight)
             ? /*ACS_CKBOARD*/ ASCII_SPACE|A_REVERSE : ASCII_SPACE);
@@ -164,7 +165,7 @@ int do_beginner_infoview()
       "Happy Typing!"
   );
 
-  char* msg; 
+  char* msg;
   char** msgLines;
   char* token;
   int numUsableLines, numMsgLines, i, j;
@@ -259,7 +260,7 @@ int do_beginner_infoview()
         break;
       }
     }
-      
+
     for (i = firstLine; i <= lastLine; i++)
     {
       move(yOffset + 1 + (i-firstLine), xOffset + 1);

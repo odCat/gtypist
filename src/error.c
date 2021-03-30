@@ -1,12 +1,13 @@
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
- * 
- * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  
+ *
+ * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003
  * 				 Simon Baldwin (simonb@sco.com)
- * Copyright (C) 2003, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015,
+ * Copyright (C) 2003, 2008, 2009, 2010, 2011, 2012, 2013, 2014
  *               2016, 2017, 2018, 2019, 2020
  *               Hynek Hanke, Paul Goind, Felix Natter, Tim Marston,
  *               Mihai Gătejescu
+ * Copyright (C) 2021 Felix Natter, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -42,7 +43,7 @@ char *argv0 = NULL;
 /*
   handle fatal errors (pretty much any error) by dropping out
   of curses etc, and printing a complaint
-  message that is already translated to the appropriate language 
+  message that is already translated to the appropriate language
 */
 void fatal_error (const char *message, const char *line)
 {
@@ -50,7 +51,7 @@ void fatal_error (const char *message, const char *line)
   /* if ( cl_colour && has_colors() ) */
   wbkgdset( stdscr, 0 );
   clear(); refresh(); endwin();
-  
+
   /* print out the error message and stop */
   fprintf( stderr, "%s: %s %d: %s", argv0, _("line"), global_line_counter,
           message );

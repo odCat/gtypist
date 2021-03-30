@@ -1,3 +1,10 @@
+2021-03-29 Mihai Gătejescu <gus666xe@gmail.com>
+
+    * banner.c, banner.h, cursmenu.c, cursmenu.h, error.c, error.h,
+    gtypist.c, gtypist.h, infoview.c, infoview.h, script.c, script.h,
+    speedbox.c, speedbox.h, utf8.c, utf8.h, Makefile.am:
+    Update years in notices
+
 2020-01-21 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* banner.c, banner.h, cursmenu.c, cursmenu.h, error.c, error.h,
@@ -27,7 +34,7 @@
 	the menu or jumping to a label provided work properly.
 	This was done by setting the line pointer with the
 	get_script_line() function after the user leaves the menu.
-	
+
 2019-07-02 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* banner.c, banner.h, cursmenu.c, cursmenu.h, error.c,
@@ -247,16 +254,16 @@
                 Felix Natter, Paul Goins, Tim Marston, Mihai Gătejescu
 
   This file is a part of GNU Typist
- 
+
   GNU Typist is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
   (at your option) any later version.
- 
+
   GNU Typist is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
- 
+
   You should have received a copy of the GNU General Public License
   along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.

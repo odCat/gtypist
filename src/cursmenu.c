@@ -1,9 +1,10 @@
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
- * 
- * Copyright (C) 2003, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015,
+ *
+ * Copyright (C) 2003, 2008, 2009, 2010, 2011, 2012, 2013, 2014,
  *               2016, 2017, 2018, 2019, 2020
  *               Hynek Hanke, Paul Goins, Mihai Gătejescu
+ * Copyright (C) 2021 Felix Natter, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -186,7 +187,7 @@ char *do_menu (FILE *script, char *line)
   const int MENU_HEIGHT_MAX = LINES - 6;
 
   append_menu_history (__last_label);
-  
+
   // Bind our former F12 key to the current menu
   bind_F12 (__last_label);
 
@@ -263,11 +264,11 @@ char *do_menu (FILE *script, char *line)
        so we have to find the _last_ " */
     while (data[i] != '\n')
       i++;
-    while (data[i] != '"') 
+    while (data[i] != '"')
       i--;
     data[i] = 0; /* terminate description */
   }
-      
+
   /* get the longest description */
   max_width = 0;
   for (i = 0; i < num_items; i++)
@@ -296,7 +297,7 @@ char *do_menu (FILE *script, char *line)
   spacing = (COLS - columns * max_width) / (columns + 1);
 
   /* compute items/page (for scrolling) */
-  items_per_page = min (num_items, columns * 
+  items_per_page = min (num_items, columns *
 			min (MENU_HEIGHT_MAX, items_first_column));
 
   /* find # of visible items in column */
@@ -324,7 +325,7 @@ char *do_menu (FILE *script, char *line)
   mvwideaddstr (LINES - 1, 0,
 		_( "Use arrowed keys to move around, "
         "SPACE or RETURN to select and ESCAPE to go back" ));
-  
+
   do
   {
     /* (re)display the menu */
@@ -427,7 +428,7 @@ char *do_menu (FILE *script, char *line)
               cur_choice = 0;
         }
         break;
-        
+
       case KEY_CANCEL: // anyone knows where is this key on a PC keyboard?
       case ASCII_ESC:
       case 'q':
@@ -442,7 +443,7 @@ char *do_menu (FILE *script, char *line)
         // printf ("libncurses think that it's key \\%o\n", ch);
         break;
     }
-    
+
   } while (ch != KEY_ENTER);
 
   wattroff (stdscr, A_REVERSE);

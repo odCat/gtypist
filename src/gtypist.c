@@ -3,10 +3,11 @@
  *
  * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003
  *               Simon Baldwin (simonb@sco.com)
- * Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2015,
- *               2016, 2017, 2018, 2019, 2020
+ * Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2016,
+ *               2017, 2018, 2019, 2020
  *               Hynek Hanke, Dmitry Rutsky, Paul Goins, Tim Marston,
  *               Felix Natter, clutton, Mihai Gătejescu
+ * Copyright (C) 2021 Felix Natter, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -70,7 +71,7 @@ int isUTF8Locale; /* does the current locale have a UTF-8 encoding? */
 /* character to be display to represent "enter key" */
 /* TODO: this requires beginner mode!
 #define RETURN_CHARACTER 0x000023CE */
-#define RETURN_CHARACTER 0x00000020 
+#define RETURN_CHARACTER 0x00000020
 
 /* a definition of a boolean type */
 #ifndef bool
@@ -132,7 +133,7 @@ static short	colour_array[] = {
 static struct gengetopt_args_info cl_args;  /* program options */
 static int	cl_fgcolour = 7;		/* fg colour */
 static int	cl_bgcolour = 0;		/* bg colour */
-static int	cl_banner_bg_colour = 0;    /* banner bg colorr */
+static int	cl_banner_bg_colour = 0;    /* banner bg colour */
 static int	cl_banner_fg_colour = 6;    /* banner fg colour */
 static int	cl_prog_name_colour = 5;    /* program name colour */
 static int 	cl_prog_version_colour = 1; /* program version colour */
@@ -141,7 +142,7 @@ static int 	cl_prog_version_colour = 1; /* program version colour */
 static bool	global_resp_flag = TRUE;
 static char	global_prior_command = C_CONT;
 
-static float	global_error_max = -1.0;
+static float	global_error_max = -1.0f;
 static bool	global_error_max_persistent = FALSE;
 
 static struct	label_entry *global_on_failure_label = NULL;
@@ -190,8 +191,8 @@ static FILE *open_script( const char *filename );
 static void do_bell();
 static bool get_best_speed( const char *script_filename,
                     const char *excersise_label, double *adjusted_cpm );
-static void put_best_speed( const char *script_filename,
-                    const char *excersise_label, double adjusted_cpm );
+static void put_best_speed(const char *script_filename,
+                           const char *exercise_label, double adjusted_cpm );
 const char *get_bestlog_filename();
 
 void bind_F12 (const char *label)
@@ -260,7 +261,7 @@ int getch_fl( int cursor_char )
           }
         else
           {
-            cbreak(); 
+            cbreak();
             get_widech(&return_char);
           }
         move( y, x );
@@ -888,7 +889,7 @@ void do_speedtest( FILE *script, char *line )
             numChars * sizeof(int)),  error_sync = 0;
             *widep != ASCII_NULL; ++widep, ++errors_pos )
       {
-        /* Jump over whitespaces at the beggining of the lines */
+        /* Jump over whitespaces at the beginning of the lines */
         if (after_newline == TRUE && (*widep == ASCII_SPACE || *widep == ASCII_TAB))
         {
           wideaddch(*widep);
@@ -987,7 +988,7 @@ void do_speedtest( FILE *script, char *line )
             while ( *(widep+1) == ASCII_SPACE
                     && *(widep+1) != ASCII_NULL )
             {
-              ++widep; 
+              ++widep;
               ++errors_pos;
               wideaddch(*widep);
             }
@@ -1009,7 +1010,7 @@ void do_speedtest( FILE *script, char *line )
             } else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
                         && *(widep+2) == ASCII_NL )
               {
-                widep++; 
+                widep++;
                 errors_pos++;
                 wideaddch(*widep);
                 widep++;
@@ -1171,31 +1172,31 @@ char do_query_repeat ( FILE *script, bool allow_next )
       resp = getch_fl( ASCII_NULL );
 
       if (towideupper (resp) == 'R' ||
-	  towideupper (resp) == RNE [0]) {
-	resp = 'R';
-	break;
+          towideupper (resp) == RNE[0]) {
+        resp = 'R';
+        break;
       }
       if (allow_next && (towideupper (resp) == 'N' ||
-			 towideupper (resp) == RNE [2])) {
-	resp = 'N';
-	break;
+          towideupper (resp) == RNE [2])) {
+        resp = 'N';
+        break;
       }
-      if (towideupper (resp) == 'E' || towideupper (resp) == RNE [4]) {
-	if (do_query_simple (CONFIRM_EXIT_LESSON_MSG))
-	  {
-	    seek_label (script, fkey_bindings [11], NULL);
-	    resp = 'E';
-	    break;
-	  }
-	/* redisplay the prompt */
-	move( MESSAGE_LINE, 0 ); clrtoeol();
-	move( MESSAGE_LINE, COLS - utf8len( MODE_QUERY ) - 2 );
-	ADDSTR_REV( MODE_QUERY );
-	move( MESSAGE_LINE, 0 );
-	if (allow_next)
-	  ADDSTR_REV( REPEAT_NEXT_EXIT_MSG );
-	else
-	  ADDSTR_REV( REPEAT_EXIT_MSG );
+      if (towideupper (resp) == 'E' || towideupper (resp) == RNE[4]) {
+        if (do_query_simple (CONFIRM_EXIT_LESSON_MSG))
+          {
+            seek_label (script, fkey_bindings [11], NULL);
+            resp = 'E';
+            break;
+          }
+        /* redisplay the prompt */
+        move( MESSAGE_LINE, 0 ); clrtoeol();
+        move( MESSAGE_LINE, COLS - utf8len( MODE_QUERY ) - 2 );
+        ADDSTR_REV( MODE_QUERY );
+        move( MESSAGE_LINE, 0 );
+        if (allow_next)
+          ADDSTR_REV( REPEAT_NEXT_EXIT_MSG );
+        else
+          ADDSTR_REV( REPEAT_EXIT_MSG );
       }
     }
 
@@ -1273,51 +1274,51 @@ bool do_query( FILE *script, char *line )
       resp = getch_fl( ASCII_NULL );
 
       /* translate pseudo Fkeys into real ones if applicable
-	 The pseudo keys are defined in array pfkeys and are also:
-	 F1 - 1, F2 - 2, F3 - 3,.... F10 - 0, F11 - A, F12 - S */
+         The pseudo keys are defined in array pfkeys and are also:
+         F1 - 1, F2 - 2, F3 - 3,.... F10 - 0, F11 - A, F12 - S */
       for ( fkey = 1; fkey <= NFKEYS; fkey++ )
-	{
-	  if ( resp == pfkeys[ fkey - 1 ] || (fkey<11 && resp == (fkey+'0'))
-	       || (fkey==10 && (resp =='0'))
-	       || (fkey==11 && (resp =='a' || resp=='A'))
-	       || (fkey==12 && (resp =='s' || resp=='S')))
-	    {
-	      resp = KEY_F( fkey );
-	      break;
-	    }
-	}
+        {
+          if ( resp == pfkeys[ fkey - 1 ] || (fkey<11 && resp == (fkey+'0'))
+               || (fkey==10 && (resp =='0'))
+               || (fkey==11 && (resp =='a' || resp=='A'))
+               || (fkey==12 && (resp =='s' || resp=='S')))
+            {
+              resp = KEY_F( fkey );
+              break;
+            }
+        }
 
       /* search the key bindings for a matching key */
       for ( fkey = 1; fkey <= NFKEYS; fkey++ )
-	{
-	  if ( resp == KEY_F( fkey )
-	       && fkey_bindings[ fkey - 1 ] != NULL )
-	    {
-	      seek_label( script, fkey_bindings[ fkey - 1 ],
-			  NULL );
-	      break;
-	    }
-	}
+        {
+          if ( resp == KEY_F( fkey )
+               && fkey_bindings[ fkey - 1 ] != NULL )
+            {
+              seek_label( script, fkey_bindings[ fkey - 1 ],
+                  NULL );
+              break;
+            }
+        }
       if ( fkey <= NFKEYS ) {
-	ret_code = FALSE;
-	break;
+        ret_code = FALSE;
+        break;
       }
 
       /* no FKEY binding - check for Y or N */
-      if ( towideupper( resp ) == QUERY_Y ||
-	   towideupper( resp ) == YN[0] )
-	{
-	  ret_code = TRUE;
-	  global_resp_flag = TRUE;
-	  break;
-	}
+      if (towideupper( resp ) == QUERY_Y ||
+            towideupper( resp ) == YN[0] )
+        {
+          ret_code = TRUE;
+          global_resp_flag = TRUE;
+          break;
+        }
       if ( towideupper( resp ) == QUERY_N ||
-	   towideupper( resp ) == YN[2] )
-	{
-	  ret_code = TRUE;
-	  global_resp_flag = FALSE;
-	  break;
-	}
+           towideupper( resp ) == YN[2] )
+        {
+          ret_code = TRUE;
+          global_resp_flag = FALSE;
+          break;
+        }
     }
 
   /* clear out the message line */
@@ -1408,9 +1409,9 @@ void do_error_max_set( FILE *script, char *line )
     */
     if (cl_args.max_error_given) {
       if (temp_value < cl_args.max_error_arg)
-	global_error_max = temp_value;
+        global_error_max = temp_value;
       else
-	global_error_max = cl_args.max_error_arg;
+        global_error_max = cl_args.max_error_arg;
     } else
       global_error_max = temp_value;
   }
@@ -1441,10 +1442,10 @@ void do_on_failure_label_set( FILE *script, char *line )
   /* remove trailing whitespace (and '*') */
   line_iterator = line + strlen( line ) - 1;
   while (line_iterator != line && !star &&
-	 (isspace( *line_iterator ) || *line_iterator == '*'))
+         (isspace( *line_iterator ) || *line_iterator == '*'))
     {
       if (*line_iterator == '*')
-	star = TRUE;
+        star = TRUE;
       *line_iterator = '\0';
       --line_iterator;
     }
@@ -1459,18 +1460,18 @@ void do_on_failure_label_set( FILE *script, char *line )
     i = hash_label( SCR_DATA(line) );
 
     /* search the linked list for the label */
-    for ( global_on_failure_label = global_label_list[i];
-    global_on_failure_label != NULL;
-    global_on_failure_label = global_on_failure_label->next )
-    
-    /* see if this is our label */
-    if ( strcmp( global_on_failure_label->label, SCR_DATA(line) ) == 0 )
-      break;
+    for (global_on_failure_label = global_label_list[i];
+         global_on_failure_label != NULL;
+         global_on_failure_label = global_on_failure_label->next)
+
+        /* see if this is our label */
+        if (strcmp(global_on_failure_label->label, SCR_DATA(line)) == 0)
+          break;
 
     /* see if the label was not found in the file */
     if ( global_on_failure_label == NULL )
     {
-      sprintf( message, _("label '%s' not found"), SCR_DATA(line) );
+      sprintf(message, _("label '%s' not found"), SCR_DATA(line));
       fatal_error( message, copy_of_line );
     }
   }
@@ -1675,7 +1676,7 @@ int main( int argc, char **argv )
      => this makes programming easier because now _all_ strings
      (from gettext and from script file) are encoded as UTF8!
    */
-  bind_textdomain_codeset(PACKAGE, "utf-8"); 
+  bind_textdomain_codeset(PACKAGE, "utf-8");
   textdomain (PACKAGE);
 #endif
 
@@ -1954,8 +1955,8 @@ bool get_best_speed( const char *script_filename,
   return found;
 }
 
-void put_best_speed( const char *script_filename,
-		     const char *excersise_label, double adjusted_cpm )
+void put_best_speed(const char *script_filename,
+                    const char *exercise_label, double adjusted_cpm )
 {
   FILE *blfile;		            		/* bestlog file */
   char *fixed_script_filename;		/* fixed-up script filename */
@@ -1989,10 +1990,10 @@ void put_best_speed( const char *script_filename,
   struct tm *now = localtime( &nowts );
 
   /* append new score */
-  fprintf( blfile, "%04d-%02d-%02d %02d:%02d:%02d %s:%s %g\n",
+  fprintf(blfile, "%04d-%02d-%02d %02d:%02d:%02d %s:%s %g\n",
 	   now->tm_year + 1900, now->tm_mon + 1, now->tm_mday, now->tm_hour,
-	   now->tm_min, now->tm_sec, fixed_script_filename, excersise_label,
-	   adjusted_cpm );
+          now->tm_min, now->tm_sec, fixed_script_filename, exercise_label,
+          adjusted_cpm );
 
   /* cleanup */
   free( fixed_script_filename );
