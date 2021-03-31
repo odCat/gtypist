@@ -4,8 +4,9 @@
 
 # Copyright (C) 2001, 2002, 2003 Simon Baldwin (simonb@sco.com)
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
-#               2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018,
+#               2011, 2012, 2013, 2014, 2016, 2017, 2018,
 #               2019, 2020 Felix Natter, Paul Goins
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 
 # Author: Felix Natter <fnatter@gmx.net>
 
@@ -59,7 +60,7 @@ if ($drill_type eq "D:" || $drill_type eq "d:") {
 
 if (!defined($ARGV[0]) || !(-d $ARGV[0])) {
     die "You must specify a data-subdirectory of tipptrainer " .
-	"as the 1st argument.\n" . 
+	"as the 1st argument.\n" .
 	"For example: 'tt2typ.pl ~/tipptrainer-0.3.3/data/german/'.\n" .
         "(you probably want data/german because the english lessons are incomplete)\n";
 }
@@ -78,7 +79,7 @@ print "creating $typfilename...\n";
 my @lesson_names = read_lesson_index("$datadir/lektion.index");
 
 my $TYPFILE = undef;
-open(TYPFILE, ">$typfilename") || 
+open(TYPFILE, ">$typfilename") ||
     die "Couldn't open $typfilename for writing: $!";
 print TYPFILE "# created by tt2typ.pl from $datadir\n";
 print TYPFILE "# on " . `date`;
@@ -104,7 +105,7 @@ while (-f "$datadir/lektion.$lesson_counter")
 	chomp($line);
 	print TYPFILE " : $line\n";
     }
-    close(TTFILE) || 
+    close(TTFILE) ||
 	die "Couldn't close $datadir/lektion.a$lesson_counter: $!";
 
     convert_lesson($lesson_counter, "$datadir/lektion.$lesson_counter",
@@ -147,7 +148,7 @@ sub convert_lesson($$*)
     my $drill_counter = 1;
     my $line_counter = 0;
     my $line = undef;
-    open(TTFILE, $lesson_file) || 
+    open(TTFILE, $lesson_file) ||
 	die "Couldn't open $lesson_file for reading: $!";
     while (defined($line = <TTFILE>))
     {

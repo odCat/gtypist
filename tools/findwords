@@ -2,8 +2,9 @@
 
 # Copyright (C) 2002, 2003 Simon Baldwin (simonb@sco.com)
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
-#               2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018,
-#               2019, 2020 Felix Natter
+#               2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019
+#               2020 Felix Natter
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 
 # Author: Michael Opdenacker <michaelo@gnu.org> 2002-08-05
 
@@ -33,14 +34,14 @@ case "$1" in
 	echo "This is a simple script to help you find words"
 	echo "which contain only specified letters and/or have"
 	echo "some special combination of letters in them."
-	echo 
+	echo
 	echo "You can use '.' to match all the letters"
 	;;
    ".")
 	aspell dump master | grep -v [\'] | grep "$2"
 	;;
    *)
-	aspell dump master | grep -w ^[${1}]* | grep -v [\'] | grep "$2" 
+	aspell dump master | grep -w ^[${1}]* | grep -v [\'] | grep "$2"
 	;;
 esac
 

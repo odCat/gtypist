@@ -4,8 +4,9 @@
 
 # Copyright (C) 2001, 2002, 2003 Simon Baldwin (simonb@sco.com)
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
-#               2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018,
-#               2019, 2020 Felix Natter, 
+#               2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019
+#               2020 Felix Natter
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 
 # Author: Felix Natter <fnatter@gmx.net>
 
@@ -63,7 +64,7 @@ if ($#ARGV != 0)
 }
 
 my $ktouchfilename = shift(@ARGV);
-if ($ktouchfilename !~ /^.*\.ktouch\.xml$/ || ! (-f $ktouchfilename)) { 
+if ($ktouchfilename !~ /^.*\.ktouch\.xml$/ || ! (-f $ktouchfilename)) {
     die "Invalid ktouch lesson filename: $ktouchfilename.\n";
 }
 
@@ -87,7 +88,7 @@ my $handler = KTouchParser->new();
 
 my $parser = XML::Parser::PerlSAX->new(Handler => $handler);
 
-$parser->parse(Source => { 
+$parser->parse(Source => {
     'SystemId' => $ktouchfilename,
     'Encoding' => 'utf-8'
                });
@@ -136,7 +137,7 @@ sub writeLesson($$)
 	} else {
 	    print TYPFILE " :$line\n";
 	}
-        
+
 	++$lineCounter;
 	if ($lineCounter == $lines_per_drill) {
 	    $lineCounter = 0;
@@ -161,7 +162,7 @@ sub start_element {
     if ($current_element eq 'Levels')
     {
         # start of lessons, write out header
-        print TYPFILE "# created by ktouch2typ.pl from " . 
+        print TYPFILE "# created by ktouch2typ.pl from " .
             getAbsoluteFilename($ktouchfilename) . "\n# on " . `date`;
         my $FileTitle = $converter->convert($tagContent{'Title'});
         my $FileComment = $converter->convert($tagContent{'Comment'});
@@ -242,12 +243,12 @@ sub characters {
 
     return '' unless $text;
 
-    # do not collect characters that are outside the element: 
+    # do not collect characters that are outside the element:
     # <Level>
     #   <LevelComment>2 und Anführungszeichen</LevelComment>XXX
     # </Level>
     # do not collect XXX
-    return if $inside_element == 0; 
+    return if $inside_element == 0;
 
     #printf "text='$text'";
 

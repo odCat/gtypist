@@ -1,9 +1,9 @@
 2021-03-29 Mihai Gătejescu <gus666xe@gmail.com>
 
-    * banner.c, banner.h, cursmenu.c, cursmenu.h, error.c, error.h,
-    gtypist.c, gtypist.h, infoview.c, infoview.h, script.c, script.h,
-    speedbox.c, speedbox.h, utf8.c, utf8.h, Makefile.am:
-    Update years in notices
+	* banner.c, banner.h, cursmenu.c, cursmenu.h, error.c, error.h,
+	gtypist.c, gtypist.h, infoview.c, infoview.h, script.c, script.h,
+	speedbox.c, speedbox.h, utf8.c, utf8.h, Makefile.am:
+	Update years in notices
 
 2020-01-21 Mihai Gătejescu <gus666xe@gmail.com>
 

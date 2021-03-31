@@ -2,8 +2,9 @@
 
 ;; Copyright (C) 2001, 2002, 2003 Simon Baldwin (simonb@sco.com)
 ;; Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
-;;               2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018,
-;;               2019, 2020 Felix Natter, Paul Goins
+;;               2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019
+;;               2020 Felix Natter, Paul Goins
+;; Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 
 ;; Author: Felix Natter <fnatter@gmx.net>
 ;; Created: June 30th 2001
@@ -27,14 +28,14 @@
  ;;; Commentary / README
 
 ;; This is a major-mode for editing gtypist script-files (*.typ)
-;; 
+;;
 ;; ----- Installing
 ;; add the following to ~/.emacs (adapt path and remove comments !)
 ;; (autoload 'gtypist-mode "~/elisp/gtypist-mode")
 ;; or put this file in load-path and use this:
 ;; (autoload 'gtypist-mode "gtypist-mode")
 ;; *and* put this in ~/.emacs:
-;; (setq auto-mode-alist       
+;; (setq auto-mode-alist
 ;;      (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
 ;; If you want to, you can then byte-compile this using M-x byte-compile-file
 
@@ -150,7 +151,7 @@ It's really only useful for font-locking."
       (setq result (string-match "^[DdSs]:$" temp))
       (set-match-data match-data))
     result))
-    
+
 
 ;; TODO: why do some font-lock faces (i.e. font-lock-warning-face)
 ;; need to be quoted ?
@@ -167,10 +168,10 @@ It's really only useful for font-locking."
    (cons "^[#!].*" 'font-lock-comment-face)
 
    (list "^\\(X\\):" 1 'font-lock-warning-face)
-   
+
    ;; command_chars as keywords
-   (cons "^\\([A-Za-z]\\):" 1) 
-   
+   (cons "^\\([A-Za-z]\\):" 1)
+
    ;; labels: definitions of labels and references to labels
    (list "^\\*:\\(.*\\)" 1 'font-lock-variable-name-face)
    ;; note: cannot use font-lock-constant-face because it isn't supported by
@@ -209,7 +210,7 @@ available). Use C-u prefix to get S:, and C-u C-u to get d:."
   (interactive "P")
   (let ((fortune-lines)
 	(drill-type
-	 (cond 
+	 (cond
 	  ((null prefix)
 	   "D:") ;; no prefix
 	  ((numberp prefix)
@@ -226,7 +227,7 @@ available). Use C-u prefix to get S:, and C-u C-u to get d:."
     ;; check whether last line is an "author-line"
     (when (string-match "^[\t ]*-- \\(.+\\)[ \t]*" (car (last fortune-lines)))
 	;; add I:...
-      (insert "I:" (match-string 
+      (insert "I:" (match-string
 		    1 (car (last fortune-lines))) ?\n)
       ;; ... and remove "author-line"
       (setcdr (last fortune-lines 2) nil))
@@ -269,7 +270,7 @@ available). Use C-u prefix to get S:, and C-u C-u to get d:."
 (defun gtypist-mode-insert-banner(text)
   "Insert B:-command with centered content
 \(66 columns because \"gtypist <version>\" is in the right corner)"
-  (interactive "sEnter text for banner: ")  
+  (interactive "sEnter text for banner: ")
   (if (string-equal text "")
       (message "Canceled."))
   ;; this functionality is needed in gtypist-mode-fortune-to-lesson
