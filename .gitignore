@@ -1,6 +1,7 @@
 # Ignore temp files
 *~
 *#
+.*.swp
 
 # Ignore object files
 *.o
@@ -72,3 +73,7 @@ src/cmdline.h
 
 # ignore personal TODO files
 TODO-personal-*
+
+# ignore IntelliJ project specific settings folder
+.idea
+

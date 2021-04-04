@@ -1,3 +1,12 @@
+2021-04-04  Mihai Gătejescu <gus666xe@gmail.com>
+
+    * .gitignore: Ignore IntelliJ folder
+    * AUTHORS: Update maintainer
+    * autogen.sh, configure.ac, configure-w32.in, INSTALL.in,
+    Makefile.am, NEWS, QUESTIONS, README, README.git, THANKS,
+    TODO, typefortune: Update copyright
+    * version.sh: Remove beta from version
+
 2021-03-21  Mihai Gătejescu <gus666xe@gmail.com>
 
     * typefortune.1: Add notices
@@ -878,16 +887,16 @@
                 Rob Leslie, Paul Goins, Tim Marston, Mihai Gătejescu
 
   This file is a part of GNU Typist
- 
+
   GNU Typist is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
   (at your option) any later version.
- 
+
   GNU Typist is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
- 
+
   You should have received a copy of the GNU General Public License
   along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.

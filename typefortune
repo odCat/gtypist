@@ -1,21 +1,22 @@
 #!/usr/bin/perl -w
 
 # generate a .typ file and call gtypist to run this file
-# 
+#
 # Copyright (C) 2002 Yuusuke Mita <neiklotrrj@yahoo.com>,
 #                    Stefan Troeger <stefan@troeger.st>
 # Copyright (C) 2011-2020 Felix Natter <fnatter@gmx.net>
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
 # as published by the Free Software Foundation, either version 3
 # of the License, or (at your option) any later version.
-# 
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -47,7 +48,7 @@ if (!getopts ("dslhn:o:", \%opts) || $opts{h}) {
     print "-l: use fortune -l\n";
     print "-n <count>: practice <count> fortunes (default=1)\n";
     print "-o <gtypist_options>: pass options to gtypist\n";
-    print "See the gtypist manual (info gtypist or info '(gtypist)') " . 
+    print "See the gtypist manual (info gtypist or info '(gtypist)') " .
 	"for details.\n";
     if ($opts{h}) {
 	exit 0;
@@ -102,7 +103,7 @@ my @lines;
 my ($typfile, $typfilename);
 
 eval {
-  ($typfile, $typfilename) = 
+  ($typfile, $typfilename) =
       tempfile("typefortune.XXXXXX", DIR => "/tmp", UNLINK => 1);
 };
 if ($@) {
@@ -132,11 +133,11 @@ for ($i = 0; $i < $count; $i++)
     }
 
     print $typfile "I:fortune ". ($i + 1) . "/" . $count . "\n";
- 
+
     # print lines
     for ($j = 0; $j <= $#lines; $j++)
     {
-	if ($j == 0) { 
+	if ($j == 0) {
 	    print $typfile "$exercise_type";
 	} else {
 	    print $typfile " :";
@@ -150,7 +151,7 @@ print $typfile getBanner("Practice complete");
 print $typfile "T:\n :\n :\n : Congratulations: " .
     "you successfully completed the $count " .
     "fortune lessons !\n";
-print $typfile "*:END\nX:\n";    
+print $typfile "*:END\nX:\n";
 close($typfile) || die "Couldn't close $typfilename: $!";
 
 # call gtypist

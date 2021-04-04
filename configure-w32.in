@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Copyright (C) 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018,
+# Copyright (C) 2011, 2012, 2013, 2014, 2016, 2017, 2018,
 #               2019, 2020 Tim Marston, Felix Natter
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 
 # This file if a part of GNU Typist
 

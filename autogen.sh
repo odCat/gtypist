@@ -3,10 +3,11 @@
 
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003
 #               Simon Baldwin (simonb@sco.com)
-# Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2015,
-#               2016, 2017, 2018, 2019, 2020
+# Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2016,
+#               2017, 2018, 2019, 2020
 #               Michael Opdenacker, Hynek Hanke, Dmitry Rutsky, Paul Goins,
 #               Tim Marston, Felix Natter
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 
 # This file if a part of GNU Typist
 
@@ -164,7 +165,7 @@ if [ $? != 0 ]; then
 	"\nif you don't know how to resolve this."
     exit 1
 fi
-    
+
 
 if test -z "$*"; then
     echo

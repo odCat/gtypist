@@ -1,10 +1,11 @@
 # Autoconf script for GNU Typist
 # Process this file with autoconf to produce a configure script.
 
-# Copyright (C) 2008, 2009, 2011, 2012, 2013, 2014, 2015,
-#               2016, 2017, 2018, 2019, 2020
+# Copyright (C) 2008, 2009, 2011, 2012, 2013, 2014, 2016,
+#               2017, 2018, 2019, 2020
 #               Felix Natter, Paul Goins, Tim Marston,
 #               clutton, Mihai Gătejescu
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # This file is a part of GNU Typist
 #

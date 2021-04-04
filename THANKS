@@ -4,7 +4,7 @@ GNU Typist was originally written by Simon Baldwin. More details can
 be found in the section "History of GNU Typist" in the GNU Typist
 Manual. This manual can be found with info after the program is
 installed, or before installing at directory `doc'.
- 
+
 Many people have further contributed to GNU Typist by reporting
 problems, suggesting various improvements, or submitting actual
 code. Here is a list of these people. Help us keep it complete and
@@ -20,7 +20,7 @@ exempt of errors.
 * OLS3 <ols3@www.tnc.edu.tw> for the Traditional Chinese translation.
 
 * Martin Pitt <martin@piware.de> for a patch to ignore trailing
-  spaces in lesson file lines. 
+  spaces in lesson file lines.
 
 * Stefan Troeger <stefan@troeger.st> for typefortune fixes.
 
@@ -42,17 +42,17 @@ exempt of errors.
 
 * Kimmo K. I. Surakka <kusti@iki.fi> for Native Language Support in
   Finnish.
- 
+
 * Felix Natter <fnatter@gmx.net> for bringing new features, lots of
   fixes and improvements to the code and documentation, improving and
   converting lessons from other typing tutors, extending tool
   capabilities by lesson syntax enhancements, implementing a gtypist
-  lesson file mode for Emacs, etc. See ChangeLog for details! 
+  lesson file mode for Emacs, etc. See ChangeLog for details!
 
 * Michael Opdenacker <michaelo@gnu.org> for administrating CVS, the
   mailing-list, GNU Savannah, etc., writing and improving
   documentation, testing and discussing tool features.
- 
+
 * Christian "naddy" Weisgerber <naddy@openbsd.org> for reporting
   errors and contributing various fixes on po/*.po, Makefile.am,
   and aclocal.m4.
@@ -99,22 +99,23 @@ exempt of errors.
 
   Copyright (C) 2001, 2002, 2003 Simon Baldwin (simonb@sco.com)
 
-  Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2015,
-                2016, 2017, 2018, 2019, 2020
+  Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2016,
+                2017, 2018, 2019, 2020
                 Michael Opdenacker, Paul Goins, Tim Marston,
                 Felix Natter, Mihai Gătejescu
+Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 
   This file is a part of GNU Typist
- 
+
   GNU Typist is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
   (at your option) any later version.
- 
+
   GNU Typist is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
- 
+
   You should have received a copy of the GNU General Public License
   along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.

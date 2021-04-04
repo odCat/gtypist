@@ -1,9 +1,10 @@
-Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2015,
-              2016, 2017, 2018, 2019, 2020
+Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2016,
+              2017, 2018, 2019, 2020
               Michael Opdenacker, Paul Goins, Tim Marston
+Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 See the end of the file for license conditions.
 
-Questions asked by Brave GNU World 
+Questions asked by Brave GNU World
 ----------------------------------
 
  * What is it?
@@ -24,13 +25,13 @@ Questions asked by Brave GNU World
    is it released. I won't discuss all the interests of Free Software,
    but here are the major ones I see for this tool...
 
-   - For individuals: 
+   - For individuals:
 
      o The program is freely available, and is already
        installed in some GNU systems (such as Debian GNU / Linux)
 
      o The program is been made by people using it, or according to the
-       needs expressed by users. 
+       needs expressed by users.
 
      o They can participate in improving the tool quality, by reporting bugs
        and even propose improvements to the source code.
@@ -40,7 +41,7 @@ Questions asked by Brave GNU World
      o They can rely on the availability of this software, as nobody
        can restrict their freedom to use it for their educational
        programs.
-       
+
        Freeware typing programs are available at the moment, but their
        owners can discontinue their distribution or their support
        without any notice. You can't base your educational programs on
@@ -51,7 +52,7 @@ Questions asked by Brave GNU World
        one somebody else's good will.
 
        Using Free Software gives you freedom to modify the programs
-       according to your needs, or pay someone to do that. 
+       according to your needs, or pay someone to do that.
 
      o Teachers will be able to rely on the course library delivered
        with the software. As the lesson file format is simple, they
@@ -130,7 +131,7 @@ Questions asked by Brave GNU World
    - All the contributions to be added to the source tarball
      (typically lesson files) must thus be released with the same
      license and copyright.
-   
+
  * Standard documents to read in this context?
 
    - Nothing yet.
@@ -140,7 +141,7 @@ Questions asked by Brave GNU World
    - Nothing yet.
 
  * Answer to a question I forgot?
- 
+
    - Who shall I send my comments to?
 
      Your comments are all welcome! Please, send them to
