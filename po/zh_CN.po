@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.6\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2020-10-28 21:02+0200\n"
+"POT-Creation-Date: 2021-04-04 03:49+0300\n"
 "PO-Revision-Date: 2012-02-06 17:40+0000\n"
 "Last-Translator: Wei Mingzhi <whistler@openoffice.org>\n"
 "Language-Team: Simplified Chinese\n"
@@ -16,201 +16,201 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/gtypist.c:208 src/script.c:60
+#: src/gtypist.c:209 src/script.c:61
 msgid "internal error: strdup"
 msgstr "内部错误: strdup"
 
-#: src/gtypist.c:390
+#: src/gtypist.c:391
 msgid "invalid key binding"
 msgstr "无效的按键绑定"
 
-#: src/gtypist.c:392
+#: src/gtypist.c:393
 msgid "invalid function key number"
 msgstr "无效的功能键编号"
 
-#: src/gtypist.c:431 src/gtypist.c:541 src/gtypist.c:849
+#: src/gtypist.c:432 src/gtypist.c:542 src/gtypist.c:850
 msgid "data exceeds screen length"
 msgstr "数据超出屏幕宽度"
 
-#: src/gtypist.c:474
+#: src/gtypist.c:475
 msgid "instructions are limited to two lines"
 msgstr "指令只限二行"
 
-#: src/gtypist.c:748 src/gtypist.c:1056 src/script.c:314
+#: src/gtypist.c:749 src/gtypist.c:1057 src/script.c:315
 msgid "internal error: fseek"
 msgstr "内部错误: fseek"
 
-#: src/gtypist.c:830 src/gtypist.c:1914 src/gtypist.c:1930 src/gtypist.c:1977
-#: src/gtypist.c:2014 src/gtypist.c:2034 src/script.c:144 src/script.c:168
-#: src/script.c:259
+#: src/gtypist.c:831 src/gtypist.c:1915 src/gtypist.c:1931 src/gtypist.c:1978
+#: src/gtypist.c:2015 src/gtypist.c:2035 src/script.c:145 src/script.c:169
+#: src/script.c:260
 msgid "internal error: malloc"
 msgstr "内部错误: malloc"
 
-#: src/gtypist.c:1381
+#: src/gtypist.c:1382
 #, no-c-format
 msgid "'*' must immediately follow '%'"
 msgstr "'*' 必须立即接着 '%'"
 
-#: src/gtypist.c:1384 src/gtypist.c:1387
+#: src/gtypist.c:1385 src/gtypist.c:1388
 #, no-c-format
 msgid "missing '%'"
 msgstr "缺少 '%'"
 
-#: src/gtypist.c:1391
+#: src/gtypist.c:1392
 #, no-c-format
 msgid "'%' must immediately follow value"
 msgstr "'%' 必须立即接着值"
 
-#: src/gtypist.c:1400
+#: src/gtypist.c:1401
 msgid "overflow in do_error_max_set"
 msgstr "在 do_error_max_set 中溢出"
 
-#: src/gtypist.c:1420
+#: src/gtypist.c:1421
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "\"E:\" 的值无效 (超出范围)"
 
-#: src/gtypist.c:1473 src/script.c:308
+#: src/gtypist.c:1474 src/script.c:309
 #, c-format
 msgid "label '%s' not found"
 msgstr "标签 '%s' 没找到"
 
-#: src/gtypist.c:1540
+#: src/gtypist.c:1541
 msgid "unknown command"
 msgstr "未知的命令"
 
-#: src/gtypist.c:1574
+#: src/gtypist.c:1575
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "打 '%s --help' 可得到更多的信息.\n"
 
-#: src/gtypist.c:1581
+#: src/gtypist.c:1582
 #, fuzzy, c-format
 msgid "%s: invalid max-error value\n"
 msgstr "%s: 无效的 error-max 值\n"
 
-#: src/gtypist.c:1588
+#: src/gtypist.c:1589
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: 无效的 curs-flash 值\n"
 
-#: src/gtypist.c:1598
+#: src/gtypist.c:1599
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: 不正确的颜色值\n"
 
-#: src/gtypist.c:1611
+#: src/gtypist.c:1612
 #, fuzzy, c-format
 msgid "%s: invalid banner-colours value\n"
 msgstr "%s: 不正确的颜色值\n"
 
-#: src/gtypist.c:1692
+#: src/gtypist.c:1693
 msgid " Tutorial "
 msgstr "   教程   "
 
-#: src/gtypist.c:1694
+#: src/gtypist.c:1695
 msgid "  Query   "
 msgstr "   查询   "
 
-#: src/gtypist.c:1696
+#: src/gtypist.c:1697
 msgid "  Drill   "
 msgstr "   操练   "
 
-#: src/gtypist.c:1698
+#: src/gtypist.c:1699
 msgid "Speed test"
 msgstr "速度测验"
 
-#: src/gtypist.c:1700
+#: src/gtypist.c:1701
 #, fuzzy
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr " 按回车键或空格键继续。ESC 键返回至菜单。"
 
-#: src/gtypist.c:1703
+#: src/gtypist.c:1704
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr "您的错误率太高了. 您必须达到 %.1f%%."
 
-#: src/gtypist.c:1707
+#: src/gtypist.c:1708
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr "您没有通过此次测验, 所以您必须回到 %s"
 
-#: src/gtypist.c:1711
+#: src/gtypist.c:1712
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr "按 R 重复一次, 按 N 进入下一个练习或按 E 退出"
 
-#: src/gtypist.c:1715
+#: src/gtypist.c:1716
 msgid " Press R to repeat or E to exit "
 msgstr "按 R 重复一次或按 E 退出"
 
-#: src/gtypist.c:1718
+#: src/gtypist.c:1719
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr "您确定要退出此课程吗? [Y/N]"
 
-#: src/gtypist.c:1722
+#: src/gtypist.c:1723
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr "抱歉, gtypist 目前设定为禁止跳过课程。"
 
-#: src/gtypist.c:1727
+#: src/gtypist.c:1728
 msgid "Y/N"
 msgstr "Y/N"
 
-#: src/gtypist.c:1737
+#: src/gtypist.c:1738
 msgid "R/N/E"
 msgstr "R/N/E"
 
-#: src/gtypist.c:1758
+#: src/gtypist.c:1759
 #, c-format
 msgid "%s: %s environment variable not set\n"
 msgstr "%s: %s 环境变量未设置\n"
 
-#: src/gtypist.c:1805
+#: src/gtypist.c:1806
 msgid "can't find or open file"
 msgstr "找不到或无法打开文件"
 
-#: src/gtypist.c:1859
+#: src/gtypist.c:1860
 msgid "Loading the script..."
 msgstr "正在调入脚本文件"
 
-#: src/gtypist.c:1969
+#: src/gtypist.c:1970
 #, fuzzy
 msgid "internal error: fopen"
 msgstr "内部错误: fopen"
 
-#: src/cursmenu.c:325
+#: src/cursmenu.c:326
 msgid ""
 "Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go "
 "back"
 msgstr "使用光标键移动，空格键或回车键选择，ESC 键后退"
 
-#: src/error.c:55
+#: src/error.c:56
 msgid "line"
 msgstr "行"
 
-#: src/script.c:160
+#: src/script.c:161
 msgid "label contains space"
 msgstr "标签包含空格"
 
-#: src/script.c:186
+#: src/script.c:187
 msgid "label redefinition"
 msgstr "标签重定义"
 
-#: src/script.c:230
+#: src/script.c:231
 msgid "Invalid multibyte sequence (wrong encoding?)"
 msgstr "非法的多字节序列 (错误的字符编码?)"
 
-#: src/script.c:232
+#: src/script.c:233
 msgid "data shortage"
 msgstr "数据不足"
 
-#: src/script.c:234
+#: src/script.c:235
 msgid "missing ':'"
 msgstr "缺少 ':'"
 
-#: src/script.c:240
+#: src/script.c:241
 msgid "line too long for screen"
 msgstr "行长度超过屏幕可容纳宽度"
 
-#: src/script.c:330 src/script.c:332
+#: src/script.c:331 src/script.c:333
 #, c-format
 msgid ""
 "Happy Typing!\n"
@@ -219,22 +219,22 @@ msgstr ""
 "祝您打字愉快!\n"
 "\n"
 
-#: src/utf8.c:63
+#: src/utf8.c:64
 msgid "couldn't convert UTF-8 to wide characters"
 msgstr "无法将 UTF-8 转换为宽字符"
 
-#: src/utf8.c:174
+#: src/utf8.c:175
 msgid "error in setcchar()"
 msgstr "setcchar() 错误"
 
-#: src/infoview.c:111
+#: src/infoview.c:112
 msgid "error writing config file!"
 msgstr ""
 
 #. TRANSLATORS: This message must not exceed 76 characters (UTF-8 code
 #. points, actually) or it will display incorrectly on an 80-character
 #. wide terminal.
-#: src/infoview.c:123
+#: src/infoview.c:124
 #, fuzzy
 msgid ""
 "Welcome to GNU Typist!\n"
@@ -314,67 +314,67 @@ msgstr ""
 "如果您对 GNU Typist 有任何问题，欢迎在 gtypist 邮件列表发信询问。\n"
 "邮件列表地址为 <bug-gtypist@gnu.org> (请使用英文发信)。"
 
-#: src/infoview.c:216
+#: src/infoview.c:217
 msgid "Welcome screen"
 msgstr ""
 
-#: src/infoview.c:272
+#: src/infoview.c:273
 msgid ""
 "Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"
 msgstr ""
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
-#: src/speedbox.c:71
+#: src/speedbox.c:72
 #, c-format
 msgid "Raw speed|= %6.2f wpm"
 msgstr "原始速度|= %6.2f 字/分"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
-#: src/speedbox.c:74
+#: src/speedbox.c:75
 #, c-format
 msgid "Raw speed|= %7.2f cpm"
 msgstr "原始速度|= %7.2f 字符/分"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
-#: src/speedbox.c:77
+#: src/speedbox.c:78
 #, c-format
 msgid "Adjusted speed|= %6.2f wpm"
 msgstr "已调整速度|= %6.2f 字/分"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
-#: src/speedbox.c:80
+#: src/speedbox.c:81
 #, c-format
 msgid "Adjusted speed|= %7.2f cpm"
 msgstr "已调整速度|= %7.2f 字符/分"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
-#: src/speedbox.c:83
+#: src/speedbox.c:84
 #, c-format
 msgid "|with %.1f%% errors"
 msgstr "|有   %.1f%%  的错误"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
-#: src/speedbox.c:86
+#: src/speedbox.c:87
 #, c-format
 msgid "Personal best|= %6.2f wpm"
 msgstr ""
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
-#: src/speedbox.c:89
+#: src/speedbox.c:90
 #, c-format
 msgid "Personal best|= %7.2f cpm"
 msgstr "个人最佳成绩|= %7.2f 字符/分"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
-#: src/speedbox.c:92
+#: src/speedbox.c:93
 msgid "|new personal best"
 msgstr ""
 
