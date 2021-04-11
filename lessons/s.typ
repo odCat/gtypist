@@ -2,8 +2,9 @@
 #
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Paul Goins, Tim Marston, Mihai Gătejescu
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -218,6 +219,10 @@ I:Louis Pasteur
 S:When I approach a child, he inspires in me two sentiments:  tenderness
  :for what he is, and respect for what he may become.
 
+I:E. Joseph Crossman
+*:_S_R_L27
+S:The best bridge between despair and hope is a good night's sleep.
+
 G:_S_E_S2
 
 #------------------------------------------------------------------------------
@@ -227,13 +232,13 @@ G:_S_E_S2
 *:_S_S_S3
 B:                             Lesson S3
 
-*:_S_R_L27
+*:_S_R_L28
 T:
  :In this lesson you will be given several excerpts from the classics.
  :Take your time and type them carefully.
 
 I:A Christmas Carol, Stave One, Marley's Ghost
-*:_S_R_L28
+*:_S_R_L29
 S:Now, it is a fact, that there was nothing at all par-
  :ticular about the knocker on the door, except that it
  :was very large.  It is also a fact, that Scrooge had
@@ -252,7 +257,7 @@ S:Now, it is a fact, that there was nothing at all par-
  :ley's face.
 
 I:Gulliver's Travels, Chapter One, A Voyage to Lilliput
-*:_S_R_L29
+*:_S_R_L30
 S:When I awaked it was just daylight.  I attempted to rise, but I
  :found my arms and legs were strongly fastened on each side to
  :the ground; and my hair, which was long and thick, tied to the
@@ -270,7 +275,7 @@ S:When I awaked it was just daylight.  I attempted to rise, but I
  :conjectured) following the first.
 
 I:Treasure Island, Chapter IV, "The Sea Chest", by Stevenson.
-*:_S_R_L30
+*:_S_R_L31
 S:I lost no time, of course, in telling my mother all that
  :I knew, and perhaps should have told her long before,
  :and we saw ourselves at once in a difficult and dangerous
@@ -287,7 +292,7 @@ S:I lost no time, of course, in telling my mother all that
  :ticking of the clock, filled us with alarms.
 
 I:Treasure Island, Chapter IV, "The Sea Chest", by Stevenson.
-*:_S_R_L31
+*:_S_R_L32
 S:The neighborhood, to our ears, seemed haunted by
  :approaching footsteps; and what between the dead
  :body of the captain on the parlor floor, and the thought
@@ -309,14 +314,14 @@ G:_S_E_S3
 *:_S_S_S4
 B:                             Lesson S4
 
-*:_S_R_L32
+*:_S_R_L33
 T:
  :In this lesson you will be given several soliloquies from
  :Shakespeare's plays.  The spelling and punctuation are
  :quite hard.  Take your time and type them carefully.
 
 I:Romeo and Juliet, Act II, Scene II (Capulet's Garden).
-*:_S_R_L33
+*:_S_R_L34
 S:But, soft! what light through yonder window breaks?
  :It is the east, and Juliet is the sun!--
  :Arise, fair sun, and kill the envious moon,
@@ -331,7 +336,7 @@ S:But, soft! what light through yonder window breaks?
  :Her eye discourses, I will answer it.--
  :I am too bold, 'tis not to me she speaks:
 
-*:_S_R_L34
+*:_S_R_L35
 S:Two of the fairest stars in all the heaven,
  :Having some business, do entreat her eyes
  :To twinkle in their spheres till they return.
@@ -345,7 +350,7 @@ S:Two of the fairest stars in all the heaven,
  :That I might touch that cheek!
 
 I:Julius Caesar, Act III, Scene II (The Forum).
-*:_S_R_L35
+*:_S_R_L36
 S:Friends, Romans, countrymen, lend me your ears;
  :I come to bury Caesar, not to praise him.
  :The evil that men do lives after them;
@@ -362,7 +367,7 @@ S:Friends, Romans, countrymen, lend me your ears;
  :But Brutus says he was ambitious;
  :And Brutus is an honourable man.
 
-*:_S_R_L36
+*:_S_R_L37
 S:He hath brought many captives home to Rome.
  :Whose ransoms did the general coffers fill:
  :Did this in Caesar seem ambitious?
@@ -376,7 +381,7 @@ S:He hath brought many captives home to Rome.
  :Yet Brutus says he was ambitious;
  :And, sure, he is an honourable man.
 
-*:_S_R_L37
+*:_S_R_L38
 S:I speak not to disprove what Brutus spoke,
  :But here I am to speak what I do know.
  :You all did love him once,--not without cause:
@@ -387,7 +392,7 @@ S:I speak not to disprove what Brutus spoke,
  :And I must pause till it come back to me.
 
 I:The Merchant of Venice, Act IV, Scene I (A Court of Justice).
-*:_S_R_L38
+*:_S_R_L39
 S:The quality of mercy is not strain'd;
  :It droppeth as the gentle rain from heaven
  :Upon the place beneath: it is twice bless'd;
@@ -398,7 +403,7 @@ S:The quality of mercy is not strain'd;
  :The attribute to awe and majesty,
  :Wherein doth sit the dread and fear of kings;
 
-*:_S_R_L39
+*:_S_R_L40
 S:But mercy is above this scepter'd sway,--
  :It is enthroned in the heart of kings,
  :It is an attribute to God himself;
@@ -414,7 +419,7 @@ S:But mercy is above this scepter'd sway,--
  :Must needs give sentence 'gainst the merchant there.
 
 I:The Tempest, Act III, Scene I (Before Prospero's cell)
-*:_SR_L40
+*:_SR_L41
 S:There be some sports are painful, and their labour
  :Delight in them sets off: some kinds of baseness
  :Are nobly undergone, and most poor matters
@@ -467,15 +472,15 @@ G:_S_E_S4
 # Lesson series S jump tables
 #------------------------------------------------------------------------------
 *:_S_E_S1
-Q: Do you want to continue to lesson S2 [Y/N] ? 
+Q: Do you want to continue to lesson S2 [Y/N] ?
 N:_S_MENU
 G:_S_S_S2
 *:_S_E_S2
-Q: Do you want to continue to lesson S3 [Y/N] ? 
+Q: Do you want to continue to lesson S3 [Y/N] ?
 N:_S_MENU
 G:_S_S_S3
 *:_S_E_S3
-Q: Do you want to continue to lesson S4 [Y/N] ? 
+Q: Do you want to continue to lesson S4 [Y/N] ?
 N:_S_MENU
 G:_S_S_S4
 *:_S_E_S4
