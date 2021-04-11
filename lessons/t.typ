@@ -2,8 +2,9 @@
 #
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Paul Goins, Tim Marston
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -86,7 +87,7 @@ T:
  :
  :All you have to do is type in the characters that you see in the middle of
  :the screen.  If you hit the correct key, I will not do anything.  If you make
- :a mistake, I will display a large X under the letter that you got wrong and 
+ :a mistake, I will display a large X under the letter that you got wrong and
  :beep the terminal. In either event, just keep going by typing the next letter.
  :
  :When you have finished typing the line, hit the RETURN key.  To do this, extend
@@ -1098,7 +1099,7 @@ S:If we want to catch the 6:15 flight to Phoenix (which is the
  :the 6:45 flight (which makes 5 stops).
 
 I:Use the main keyboard keys.  Don't cheat and use the auxilliary keypad!
- :Try entering straight numbers: 
+ :Try entering straight numbers:
 *:_T_R_L186
 D:423 475 925 235 295 175 650
 
@@ -1387,63 +1388,63 @@ G:_T_E_T16
 # Lesson series T jump tables
 #------------------------------------------------------------------------------
 *:_T_E_T1
-Q: Do you want to continue to lesson T2 [Y/N] ? 
+Q: Do you want to continue to lesson T2 [Y/N] ?
 N:_T_MENU
 G:_T_S_T2
 *:_T_E_T2
-Q: Do you want to continue to lesson T3 [Y/N] ? 
+Q: Do you want to continue to lesson T3 [Y/N] ?
 N:_T_MENU
 G:_T_S_T3
 *:_T_E_T3
-Q: Do you want to continue to lesson T4 [Y/N] ? 
+Q: Do you want to continue to lesson T4 [Y/N] ?
 N:_T_MENU
 G:_T_S_T4
 *:_T_E_T4
-Q: Do you want to continue to lesson T5 [Y/N] ? 
+Q: Do you want to continue to lesson T5 [Y/N] ?
 N:_T_MENU
 G:_T_S_T5
 *:_T_E_T5
-Q: Do you want to continue to lesson T6 [Y/N] ? 
+Q: Do you want to continue to lesson T6 [Y/N] ?
 N:_T_MENU
 G:_T_S_T6
 *:_T_E_T6
-Q: Do you want to continue to lesson T7 [Y/N] ? 
+Q: Do you want to continue to lesson T7 [Y/N] ?
 N:_T_MENU
 G:_T_S_T7
 *:_T_E_T7
-Q: Do you want to continue to lesson T8 [Y/N] ? 
+Q: Do you want to continue to lesson T8 [Y/N] ?
 N:_T_MENU
 G:_T_S_T8
 *:_T_E_T8
-Q: Do you want to continue to lesson T9 [Y/N] ? 
+Q: Do you want to continue to lesson T9 [Y/N] ?
 N:_T_MENU
 G:_T_S_T9
 *:_T_E_T9
-Q: Do you want to continue to lesson T10 [Y/N] ? 
+Q: Do you want to continue to lesson T10 [Y/N] ?
 N:_T_MENU
 G:_T_S_T10
 *:_T_E_T10
-Q: Do you want to continue to lesson T11 [Y/N] ? 
+Q: Do you want to continue to lesson T11 [Y/N] ?
 N:_T_MENU
 G:_T_S_T11
 *:_T_E_T11
-Q: Do you want to continue to lesson T12 [Y/N] ? 
+Q: Do you want to continue to lesson T12 [Y/N] ?
 N:_T_MENU
 G:_T_S_T12
 *:_T_E_T12
-Q: Do you want to continue to lesson T13 [Y/N] ? 
+Q: Do you want to continue to lesson T13 [Y/N] ?
 N:_T_MENU
 G:_T_S_T13
 *:_T_E_T13
-Q: Do you want to continue to lesson T14 [Y/N] ? 
+Q: Do you want to continue to lesson T14 [Y/N] ?
 N:_T_MENU
 G:_T_S_T14
 *:_T_E_T14
-Q: Do you want to continue to lesson T15 [Y/N] ? 
+Q: Do you want to continue to lesson T15 [Y/N] ?
 N:_T_MENU
 G:_T_S_T15
 *:_T_E_T15
-Q: Do you want to continue to lesson T16 [Y/N] ? 
+Q: Do you want to continue to lesson T16 [Y/N] ?
 N:_T_MENU
 G:_T_S_T16
 *:_T_E_T16

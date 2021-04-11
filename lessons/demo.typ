@@ -2,8 +2,9 @@
 #
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Paul Goins, Tim Marston
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -106,7 +107,7 @@ T:Here is another example.  Experiment with delete and backspace:
  :	S:Overtype this paragraph with the same text.
  :	 :Note that capitals and punctuation are important.
  :	 :Experiment with delete and backspace keys.
- :       
+ :
 S:Overtype this paragraph with the same text.
  :Note that capitals and punctuation are important.
  :Experiment with delete and backspace keys.
@@ -141,7 +142,7 @@ T:The E command is used to set the maximum error percentage allowed for
  :Furthermore, if you use E:<value>%*, then you can use the special form
  :E: Default (or E: default) to reset the value to its the default setting.
  :Warning: Don't follow a E: by a practice-only drill (d: or s:)!
- : 
+ :
  :      E: 4%
  :      I:this drill requires 4% errors (at most)
  :      D:Cheer Up!  Things are getting worse at a slower rate.
@@ -166,7 +167,7 @@ T:The * places a label into the file.  The G command can then be used to go to
  :	T:We reached this message with a G command
 G:MY_LABEL
 T:*** You won't see this, ever
-*:MY_LABEL           
+*:MY_LABEL
 T:We reached this message with a G command
 G:MENU
 
@@ -209,7 +210,7 @@ B:Demonstration of commands and features - F
 T:The F: command sets the "on failure" label. If an F command is in effect
  :and the user fails in an exercise, he/she will skip to the label specified.
  :It is used to create a final test, like this:
- :	
+ :
  :	E: 3.0%*
  :	*:LESSON1_D1
  :	I:drill (1)
@@ -242,7 +243,7 @@ G:MENU
 
 *:DEMO_9
 T:
- : This text was used to create the main menu in this demo lesson:   
+ : This text was used to create the main menu in this demo lesson:
  :
  :	M: "Demonstration of commands and features"
  :	 :DEMO_0  "B:         (banner)"

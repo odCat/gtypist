@@ -2,8 +2,9 @@
 #
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Michael Opdenacker, Paul Goins, Tim Marston
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -1102,55 +1103,55 @@ G:_R_E_R14
 # Lesson series R jump tables
 #------------------------------------------------------------------------------
 *:_R_E_R1
-Q: Do you want to continue to lesson R2 [Y/N] ? 
+Q: Do you want to continue to lesson R2 [Y/N] ?
 N:_R_MENU
 G:_R_S_R2
 *:_R_E_R2
-Q: Do you want to continue to lesson R3 [Y/N] ? 
+Q: Do you want to continue to lesson R3 [Y/N] ?
 N:_R_MENU
 G:_R_S_R3
 *:_R_E_R3
-Q: Do you want to continue to lesson R4 [Y/N] ? 
+Q: Do you want to continue to lesson R4 [Y/N] ?
 N:_R_MENU
 G:_R_S_R4
 *:_R_E_R4
-Q: Do you want to continue to lesson R5 [Y/N] ? 
+Q: Do you want to continue to lesson R5 [Y/N] ?
 N:_R_MENU
 G:_R_S_R5
 *:_R_E_R5
-Q: Do you want to continue to lesson R6 [Y/N] ? 
+Q: Do you want to continue to lesson R6 [Y/N] ?
 N:_R_MENU
 G:_R_S_R6
 *:_R_E_R6
-Q: Do you want to continue to lesson R7 [Y/N] ? 
+Q: Do you want to continue to lesson R7 [Y/N] ?
 N:_R_MENU
 G:_R_S_R7
 *:_R_E_R7
-Q: Do you want to continue to lesson R8 [Y/N] ? 
+Q: Do you want to continue to lesson R8 [Y/N] ?
 N:_R_MENU
 G:_R_S_R8
 *:_R_E_R8
-Q: Do you want to continue to lesson R9 [Y/N] ? 
+Q: Do you want to continue to lesson R9 [Y/N] ?
 N:_R_MENU
 G:_R_S_R9
 *:_R_E_R9
-Q: Do you want to continue to lesson R10 [Y/N] ? 
+Q: Do you want to continue to lesson R10 [Y/N] ?
 N:_R_MENU
 G:_R_S_R10
 *:_R_E_R10
-Q: Do you want to continue to lesson R11 [Y/N] ? 
+Q: Do you want to continue to lesson R11 [Y/N] ?
 N:_R_MENU
 G:_R_S_R11
 *:_R_E_R11
-Q: Do you want to continue to lesson R12 [Y/N] ? 
+Q: Do you want to continue to lesson R12 [Y/N] ?
 N:_R_MENU
 G:_R_S_R12
 *:_R_E_R12
-Q: Do you want to continue to lesson R13 [Y/N] ? 
+Q: Do you want to continue to lesson R13 [Y/N] ?
 N:_R_MENU
 G:_R_S_R13
 *:_R_E_R13
-Q: Do you want to continue to lesson R14 [Y/N] ? 
+Q: Do you want to continue to lesson R14 [Y/N] ?
 N:_R_MENU
 G:_R_S_R14
 *:_R_E_R14

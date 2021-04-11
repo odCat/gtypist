@@ -2,8 +2,9 @@
 #
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Paul Goins, Tim Marston
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -1501,75 +1502,75 @@ G:_V_E_V19
 # Lesson series V jump tables
 #------------------------------------------------------------------------------
 *:_V_E_V1
-Q: Do you want to continue to lesson V2 [Y/N] ? 
+Q: Do you want to continue to lesson V2 [Y/N] ?
 N:_V_MENU
 G:_V_S_V2
 *:_V_E_V2
-Q: Do you want to continue to lesson V3 [Y/N] ? 
+Q: Do you want to continue to lesson V3 [Y/N] ?
 N:_V_MENU
 G:_V_S_V3
 *:_V_E_V3
-Q: Do you want to continue to lesson V4 [Y/N] ? 
+Q: Do you want to continue to lesson V4 [Y/N] ?
 N:_V_MENU
 G:_V_S_V4
 *:_V_E_V4
-Q: Do you want to continue to lesson V5 [Y/N] ? 
+Q: Do you want to continue to lesson V5 [Y/N] ?
 N:_V_MENU
 G:_V_S_V5
 *:_V_E_V5
-Q: Do you want to continue to lesson V6 [Y/N] ? 
+Q: Do you want to continue to lesson V6 [Y/N] ?
 N:_V_MENU
 G:_V_S_V6
 *:_V_E_V6
-Q: Do you want to continue to lesson V7 [Y/N] ? 
+Q: Do you want to continue to lesson V7 [Y/N] ?
 N:_V_MENU
 G:_V_S_V7
 *:_V_E_V7
-Q: Do you want to continue to lesson V8 [Y/N] ? 
+Q: Do you want to continue to lesson V8 [Y/N] ?
 N:_V_MENU
 G:_V_S_V8
 *:_V_E_V8
-Q: Do you want to continue to lesson V9 [Y/N] ? 
+Q: Do you want to continue to lesson V9 [Y/N] ?
 N:_V_MENU
 G:_V_S_V9
 *:_V_E_V9
-Q: Do you want to continue to lesson V10 [Y/N] ? 
+Q: Do you want to continue to lesson V10 [Y/N] ?
 N:_V_MENU
 G:_V_S_V10
 *:_V_E_V10
-Q: Do you want to continue to lesson V11 [Y/N] ? 
+Q: Do you want to continue to lesson V11 [Y/N] ?
 N:_V_MENU
 G:_V_S_V11
 *:_V_E_V11
-Q: Do you want to continue to lesson V12 [Y/N] ? 
+Q: Do you want to continue to lesson V12 [Y/N] ?
 N:_V_MENU
 G:_V_S_V12
 *:_V_E_V12
-Q: Do you want to continue to lesson V13 [Y/N] ? 
+Q: Do you want to continue to lesson V13 [Y/N] ?
 N:_V_MENU
 G:_V_S_V13
 *:_V_E_V13
-Q: Do you want to continue to lesson V14 [Y/N] ? 
+Q: Do you want to continue to lesson V14 [Y/N] ?
 N:_V_MENU
 G:_V_S_V14
 *:_V_E_V14
-Q: Do you want to continue to lesson V15 [Y/N] ? 
+Q: Do you want to continue to lesson V15 [Y/N] ?
 N:_V_MENU
 G:_V_S_V15
 *:_V_E_V15
-Q: Do you want to continue to lesson V16 [Y/N] ? 
+Q: Do you want to continue to lesson V16 [Y/N] ?
 N:_V_MENU
 G:_V_S_V16
 *:_V_E_V16
-Q: Do you want to continue to lesson V17 [Y/N] ? 
+Q: Do you want to continue to lesson V17 [Y/N] ?
 N:_V_MENU
 G:_V_S_V17
 *:_V_E_V17
-Q: Do you want to continue to lesson V18 [Y/N] ? 
+Q: Do you want to continue to lesson V18 [Y/N] ?
 N:_V_MENU
 G:_V_S_V18
 *:_V_E_V18
-Q: Do you want to continue to lesson V19 [Y/N] ? 
+Q: Do you want to continue to lesson V19 [Y/N] ?
 N:_V_MENU
 G:_V_S_V19
 *:_V_E_V19

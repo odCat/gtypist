@@ -2,8 +2,9 @@
 #
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Paul Goins, Tim Marston, Mihai Gătejescu
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -577,51 +578,51 @@ G:_U_E_U13
 # Lesson series U jump tables
 #------------------------------------------------------------------------------
 *:_U_E_U1
-Q: Do you want to continue to lesson U2 [Y/N] ? 
+Q: Do you want to continue to lesson U2 [Y/N] ?
 N:_U_MENU
 G:_U_S_U2
 *:_U_E_U2
-Q: Do you want to continue to lesson U3 [Y/N] ? 
+Q: Do you want to continue to lesson U3 [Y/N] ?
 N:_U_MENU
 G:_U_S_U3
 *:_U_E_U3
-Q: Do you want to continue to lesson U4 [Y/N] ? 
+Q: Do you want to continue to lesson U4 [Y/N] ?
 N:_U_MENU
 G:_U_S_U4
 *:_U_E_U4
-Q: Do you want to continue to lesson U5 [Y/N] ? 
+Q: Do you want to continue to lesson U5 [Y/N] ?
 N:_U_MENU
 G:_U_S_U5
 *:_U_E_U5
-Q: Do you want to continue to lesson U6 [Y/N] ? 
+Q: Do you want to continue to lesson U6 [Y/N] ?
 N:_U_MENU
 G:_U_S_U6
 *:_U_E_U6
-Q: Do you want to continue to lesson U7 [Y/N] ? 
+Q: Do you want to continue to lesson U7 [Y/N] ?
 N:_U_MENU
 G:_U_S_U7
 *:_U_E_U7
-Q: Do you want to continue to lesson U8 [Y/N] ? 
+Q: Do you want to continue to lesson U8 [Y/N] ?
 N:_U_MENU
 G:_U_S_U8
 *:_U_E_U8
-Q: Do you want to continue to lesson U9 [Y/N] ? 
+Q: Do you want to continue to lesson U9 [Y/N] ?
 N:_U_MENU
 G:_U_S_U9
 *:_U_E_U9
-Q: Do you want to continue to lesson U10 [Y/N] ? 
+Q: Do you want to continue to lesson U10 [Y/N] ?
 N:_U_MENU
 G:_U_S_U10
 *:_U_E_U10
-Q: Do you want to continue to lesson U11 [Y/N] ? 
+Q: Do you want to continue to lesson U11 [Y/N] ?
 N:_U_MENU
 G:_U_S_U11
 *:_U_E_U11
-Q: Do you want to continue to lesson U12 [Y/N] ? 
+Q: Do you want to continue to lesson U12 [Y/N] ?
 N:_U_MENU
 G:_U_S_U12
 *:_U_E_U12
-Q: Do you want to continue to lesson U13 [Y/N] ? 
+Q: Do you want to continue to lesson U13 [Y/N] ?
 N:_U_MENU
 G:_U_S_U13
 *:_U_E_U13

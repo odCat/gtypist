@@ -2,8 +2,9 @@
 #
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Rob Leslie, Paul Goins, Tim Marston
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -912,43 +913,43 @@ G:_M_E_M11
 # Lesson series M jump tables
 #------------------------------------------------------------------------------
 *:_M_E_M1
-Q: Do you want to continue to lesson M2 [Y/N] ? 
+Q: Do you want to continue to lesson M2 [Y/N] ?
 N:_M_MENU
 G:_M_S_M2
 *:_M_E_M2
-Q: Do you want to continue to lesson M3 [Y/N] ? 
+Q: Do you want to continue to lesson M3 [Y/N] ?
 N:_M_MENU
 G:_M_S_M3
 *:_M_E_M3
-Q: Do you want to continue to lesson M4 [Y/N] ? 
+Q: Do you want to continue to lesson M4 [Y/N] ?
 N:_M_MENU
 G:_M_S_M4
 *:_M_E_M4
-Q: Do you want to continue to lesson M5 [Y/N] ? 
+Q: Do you want to continue to lesson M5 [Y/N] ?
 N:_M_MENU
 G:_M_S_M5
 *:_M_E_M5
-Q: Do you want to continue to lesson M6 [Y/N] ? 
+Q: Do you want to continue to lesson M6 [Y/N] ?
 N:_M_MENU
 G:_M_S_M6
 *:_M_E_M6
-Q: Do you want to continue to lesson M7 [Y/N] ? 
+Q: Do you want to continue to lesson M7 [Y/N] ?
 N:_M_MENU
 G:_M_S_M7
 *:_M_E_M7
-Q: Do you want to continue to lesson M8 [Y/N] ? 
+Q: Do you want to continue to lesson M8 [Y/N] ?
 N:_M_MENU
 G:_M_S_M8
 *:_M_E_M8
-Q: Do you want to continue to lesson M9 [Y/N] ? 
+Q: Do you want to continue to lesson M9 [Y/N] ?
 N:_M_MENU
 G:_M_S_M9
 *:_M_E_M9
-Q: Do you want to continue to lesson M10 [Y/N] ? 
+Q: Do you want to continue to lesson M10 [Y/N] ?
 N:_M_MENU
 G:_M_S_M10
 *:_M_E_M10
-Q: Do you want to continue to lesson M11 [Y/N] ? 
+Q: Do you want to continue to lesson M11 [Y/N] ?
 N:_M_MENU
 G:_M_S_M11
 *:_M_E_M11

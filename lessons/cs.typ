@@ -2,9 +2,10 @@
 #
 # Copyright (C) 2001, 2002, 2003 Simon Baldwin (simonb@sco.com)
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Michael Opdenacker, Felix Natter, Hynek Hanke,
 #               Rob Leslie, Paul Goins
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,24 +23,24 @@
 
 T:
  :Vítáme vás v programu GNU Typist určeném k výuce správného
- :psaní na klávesnici všemi deseti prsty. 
+ :psaní na klávesnici všemi deseti prsty.
  :
- :Program je určen k výuce klávesnice QWERTY, ačkoliv jej lze 
+ :Program je určen k výuce klávesnice QWERTY, ačkoliv jej lze
  :použít i pro QWERTZ. Podrobnosti najdete v nápovědě (stisk
  :F11 v hlavním menu).
  :
- :Pokud jste ještě nikdy žádný kurz neabsolvovali, doporučujeme 
- :začít se sérií T, která vám vše důkladně vysvětlí, předvede 
- :a procvičí. Je dost pravděpodobné, že se vám budou jednotlivá 
+ :Pokud jste ještě nikdy žádný kurz neabsolvovali, doporučujeme
+ :začít se sérií T, která vám vše důkladně vysvětlí, předvede
+ :a procvičí. Je dost pravděpodobné, že se vám budou jednotlivá
  :písmenka ze začátku plést a v takovém případě můžete sérii
  :T doplňovat cvičeními ze série U. Pokročilejší lekce ze série
  :U vám také mohou pomoci s tréningem rychlosti a přesnosti.
  :Když již budete ovládat techniku psaní, doporučujeme vám
  :sérii procvičovacích testů M a rychlostních testů S.
- :Úplně nezávisle na předchozím jsme pro vás také připravili 
- :lekce ovládání numerické klávesnice, které najdete 
+ :Úplně nezávisle na předchozím jsme pro vás také připravili
+ :lekce ovládání numerické klávesnice, které najdete
  :pod písmenem N.
- :	Přejeme hodně úspěchů. 
+ :	Přejeme hodně úspěchů.
 #==============================================================================
 # Combined series file
 #==============================================================================
@@ -142,7 +143,7 @@ T:
  :not to type an extra space at the end of the line.
  :
  :If you made no mistakes on the line, I will display the next drill pattern. If
- :you did make a mistake, I will beep at you and make you do the line again. If 
+ :you did make a mistake, I will beep at you and make you do the line again. If
  :on the second try you made more than two mistakes, I will beep again and make
  :you try again, etc. Don't forget to use your right thumb for the SPACE bar.
 
@@ -574,19 +575,19 @@ G:_Q_E_Q5
 # Lekce series Q jump tables
 #------------------------------------------------------------------------------
 *:_Q_E_Q1
-Q:Do you want to continue to lesson Q2 [Y/N] ? 
+Q:Do you want to continue to lesson Q2 [Y/N] ?
 N:_Q_MENU
 G:_Q_M_Q2
 *:_Q_E_Q2
-Q:Do you want to continue to lesson Q3 [Y/N] ? 
+Q:Do you want to continue to lesson Q3 [Y/N] ?
 N:_Q_MENU
 G:_Q_M_Q3
 *:_Q_E_Q3
-Q:Do you want to continue to lesson Q4 [Y/N] ? 
+Q:Do you want to continue to lesson Q4 [Y/N] ?
 N:_Q_MENU
 G:_Q_M_Q4
 *:_Q_E_Q4
-Q:Do you want to continue to lesson Q5 [Y/N] ? 
+Q:Do you want to continue to lesson Q5 [Y/N] ?
 N:_Q_MENU
 G:_Q_M_Q5
 *:_Q_E_Q5
@@ -759,7 +760,7 @@ D:lkj fds lkj fds lkj fds lkj fds lkj fds lkj fds lkj
  :dsf klj dsf sfj ljk sfj ljk sfj ljk sfj ljk sfj ljk
  :sfj ljk sfj ljk sfj ljk sfj
 
-I:Písmeno A píšeme levým malíčkem, 
+I:Písmeno A píšeme levým malíčkem,
  :písmeno Ů malíčkem pravým.
 *:_R_R_L8
 #                                                             ../orig/r.typ:43
@@ -801,7 +802,7 @@ D:jak jsa jak jsa jak jsa jak jsa jak jsa jak jsa
  :kladů sladů klasů sklad kajak kladl sladů klasů
 
 #                                                             ../orig/r.typ:57
-I:Písmena G a H píšeme ukazováčky vychýlením 
+I:Písmena G a H píšeme ukazováčky vychýlením
  :ze základní polohy.
 *:_R_R_L11
 #                                                             ../orig/r.typ:58
@@ -845,7 +846,7 @@ D:gag hala gag hala gag hala gag hala gag hala
  :kladů halas skladů jahůdka klasů hůlka aga
 
 #                                                             ../orig/r.typ:66
-I:Písmena R a L píšeme oběma ukazováčky vychylováním 
+I:Písmena R a L píšeme oběma ukazováčky vychylováním
  :vlevo nahoru.
 *:_R_R_L14
 #                                                             ../orig/r.typ:67
@@ -897,7 +898,7 @@ D:klasů sladů halas druhu klasů sladů halas druhu
  :les lis les lis les lis les lis les lis les lis
  :jde jdi jde jdi jde jdi jde jdi jde jdi jde jdi
 
-Q:Pro pokračování stitkněte Y, N opakovat, nebo F12 konec. 
+Q:Pro pokračování stitkněte Y, N opakovat, nebo F12 konec.
 N:_R_R_L17
 
 #                                                             ../orig/r.typ:80
@@ -970,7 +971,7 @@ D:frf juj ded kik frf juj ded kik frf juj ded kik
  :skif, esej, lila, hele, skif, esej, lila, hele,
 
 #                                                            ../orig/r.typ:107
-I:Písmeno O a interpunkční znaménko tečku (.) 
+I:Písmeno O a interpunkční znaménko tečku (.)
  :píšeme pravým prsteníkem.
 *:_R_R_L23
 #                                                            ../orig/r.typ:108
@@ -1008,7 +1009,7 @@ D:osa rok kdo sok roj eso los roh hod rod oko sos
  :do dolu. do sadu. do sudu. do rohu. do lesa.
 
 #                                                            ../orig/r.typ:114
-I:Písmeno P píšeme vychýlením pravého malíčku 
+I:Písmeno P píšeme vychýlením pravého malíčku
  :na horní písmennou řadu.
 
 *:_R_R_L26
@@ -1144,7 +1145,7 @@ D:sypaly pruhy letadly. sypaly pruhy letadly. sypaly
  :tady tudy do porady. tady tudy do porady. tady tudy
 
 #                                                            ../orig/r.typ:171
-I:Písmena Ú a Q píšeme malíčky vychýlením nahoru 
+I:Písmena Ú a Q píšeme malíčky vychýlením nahoru
  :(vpravo a vlevo)
 *:_R_R_L36
 #                                                            ../orig/r.typ:175
@@ -1259,7 +1260,7 @@ D:sleva poplatku, doslov autora, verva vylodily,
  :kvalita je jakost, oprava a úprava, kvalita
 
 #                                                            ../orig/r.typ:216
-I:Písmeno M píšeme pravým ukazováčkem vychylováním 
+I:Písmeno M píšeme pravým ukazováčkem vychylováním
  :vpravo šikmo dolů.
 *:_R_R_L45
 #                                                            ../orig/r.typ:219
@@ -1575,7 +1576,7 @@ D:Za bouřky. Ve střehu. Od řepaře. Po pekaři. Ke středu.
  :S elektřinou. S předmluvou. V kultuře. Z řady.
 
 #                                                            ../orig/r.typ:348
-I:Písmeno Á píšeme pravým ukazováčkem, 
+I:Písmeno Á píšeme pravým ukazováčkem,
  :vychýleným mírně vpravo nahoru.
 *:_R_R_L70
 #                                                            ../orig/r.typ:349
@@ -1737,7 +1738,7 @@ D:Hlavní příčina závady. Hlavní příčina závady.
 
 
 #                                                            ../orig/r.typ:406
-I:Písmeno Š píšeme levým prsteníkem vychýleným 
+I:Písmeno Š píšeme levým prsteníkem vychýleným
  :kolmo vzhůru.
 *:_R_R_L83
 #                                                            ../orig/r.typ:407
@@ -1774,13 +1775,13 @@ D:všude škoda všude škoda všude škoda všude škoda všude
 I:Rychleji, pomaleji, rychleji, pomaleji...
 *:_R_R_L86
 #                                                            ../orig/r.typ:419
-D:V letošním roce. V letošním roce. V letošním roce. 
+D:V letošním roce. V letošním roce. V letošním roce.
  :Zlepšovací návrh je podán přihláškou. Zlepšovací návrh
- :Písmeno É píšeme vychýlením pravého prsteníku vpravo 
+ :Písmeno É píšeme vychýlením pravého prsteníku vpravo
  :nahoru.
 
 #                                                            ../orig/r.typ:420
-I:Písmeno É píšeme vychýlením pravého prsteníku 
+I:Písmeno É píšeme vychýlením pravého prsteníku
  :vpravo nahoru.
 *:_R_R_L87
 #                                                            ../orig/r.typ:425
@@ -1849,7 +1850,7 @@ D:Sekce vzájemné hospodářské pomoci.
  :Sekce vzájemné hospodářské pomoci.
 
 #                                                            ../orig/r.typ:459
-I:Písmeno Ě píšeme levým malíčkem, který vychylujeme 
+I:Písmeno Ě píšeme levým malíčkem, který vychylujeme
  :přímo nahoru.
 
 *:_R_R_L93
@@ -1882,7 +1883,7 @@ D:Na vědomí. Na vrcholu štěstí. Na vědomí. Na vrcholu
  :řídil se směrnicemi, sběratel věcí, řídil se
 
 #                                                            ../orig/r.typ:467
-I:Písmeno Ž píšeme levým ukazováčkem, 
+I:Písmeno Ž píšeme levým ukazováčkem,
  :který vychylujeme vpravo nahoru.
 *:_R_R_L96
 #                                                            ../orig/r.typ:470
@@ -1984,7 +1985,7 @@ D:Opožděnými dodávkovými příkazy. Opožděnými dodávkovými
  :Překročení stanovených úkolů ve výrobním odvětví.
 
 #                                                            ../orig/r.typ:517
-I:Ď, Ť, Ň: levý Shift+háček, písmeno. 
+I:Ď, Ť, Ň: levý Shift+háček, písmeno.
  :Ó - čárka (klávesa háčku), O.
 
 *:_R_R_L105
@@ -2048,14 +2049,14 @@ D:PLZEŇ, DOMAŽLICE, HORAŽĎOVICE, PIEŠŤANY, PŘEROV
  :KÚNZ, OÚNZ, ÚV KSČ, ÚV ČSTV, ÚV NF, ÚRO, ÚV SSM
 
 #                                                            ../orig/r.typ:540
-I:pravý ukazováček: ?, pravý prsteníček: :, 
+I:pravý ukazováček: ?, pravý prsteníček: :,
  :pravý malíček: !,/,(,).
 *:_R_R_L111
 #                                                            ../orig/r.typ:546
 D:k? k? ů! ů! k? k? ů! ů! k? k? ů! ů! k? k? ů! ů! k?
  :Máte zájem o spolupráci? Můžete nám vyhovět? Splníte?
  :Kam letos na dovolenou? Jaké bude počasí? Učíte se?
- :Dávejte pozor! Sledujte pozorně výklad! 
+ :Dávejte pozor! Sledujte pozorně výklad!
  :Míru zdar! Pětiletce zdar! Za trvalý mír! Světu mír!
 
 #                                                            ../orig/r.typ:547
@@ -2135,46 +2136,46 @@ G:_R_E_R12
 # Lekce series R jump tables
 #------------------------------------------------------------------------------
 *:_R_E_R1
-Q:Chcete pokračovat do lekce R2 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R2 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R2
 *:_R_E_R2
-Q:Chcete pokračovat do lekce R3 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R3 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R3
 *:_R_E_R3
-Q:Chcete pokračovat do lekce R4 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R4 [Y(ano)/N(ne)]?
 G:_R_M_R4
 *:_R_E_R4
-Q:Chcete pokračovat do lekce R5 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R5 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R5
 *:_R_E_R5
-Q:Chcete pokračovat do lekce R6 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R6 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R6
 *:_R_E_R6
-Q:Chcete pokračovat do lekce R7 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R7 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R7
 *:_R_E_R7
-Q:Chcete pokračovat do lekce R8 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R8 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R8
 *:_R_E_R8
-Q:Chcete pokračovat do lekce R9 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R9 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R9
 *:_R_E_R9
-Q:Chcete pokračovat do lekce R10 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R10 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R10
 *:_R_E_R10
-Q:Chcete pokračovat do lekce R11 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R11 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R11
 *:_R_E_R11
-Q:Chcete pokračovat do lekce R12 [Y(ano)/N(ne)]? 
+Q:Chcete pokračovat do lekce R12 [Y(ano)/N(ne)]?
 N:_R_MENU
 G:_R_M_R12
 *:_R_E_R12
@@ -2296,11 +2297,11 @@ T:			Vítejte v lekci T1.
  : dívat se dolů na prsty, když píšete. To je velmi špatný zvyk
  : a těžko se ho potom zbavuje. Když zmáčknete špatnou klávesu,
  : dám vám vědět. (Nikomu to ale neřeknu, takže žádný strach.)
- : 
+ :
  : Pokud jste byli zvyklí psát metodou ulov-a-klovni, bude pro vás
  : těžké zříci se dívání. Nebuďte překvapení, že vám psaní všemi
  : deseti prsty půjde pomaleji, než váš starý způsob. Asi bude
- : v začátcích pomalejší. Když do toho ale konečně proniknete, 
+ : v začátcích pomalejší. Když do toho ale konečně proniknete,
  : bude to podstatně rychlejší. Ušetří vám mnoho času.
  :
  : Pokud již psát všemi deseti umíte, projdete lekcemi velmi rychle.
@@ -2312,23 +2313,23 @@ T:
  :
  : Abyste mohli stisknout správnou klávesu, musíte vždy vědět, kde se
  : přesně vaše prsty nacházejí. To zajistíte tak, že budete mít pro
- : každý prst speciální místo. Takové klávesy se nazývají ,,základní 
+ : každý prst speciální místo. Takové klávesy se nazývají ,,základní
  : pozice.''
  :
  : Položte si pravý ukazováček na klávesu J. Nyní dejte pravý prostředníček
- : na klávesu K, prsteníček na L a malíček na ů. 
+ : na klávesu K, prsteníček na L a malíček na ů.
  :
- : Stejně tak umístěte i prsty vaší levé ruky na klávesy F, D, S a A. 
+ : Stejně tak umístěte i prsty vaší levé ruky na klávesy F, D, S a A.
  : Pravý ukazováček na F, prostředníček na D, prsteníček na S a malíček
  : na A. Pravý i levý palec si položte na SPACE (dlouhá klávesa) úplně
  : dole, kterou píšeme mezeru. K jejímu stisku budeme vždy používat
  : prst, který se nám hodí lépe. Nyní všechny prsty lehce nadzvedněte,
- : aby se vznášely přesně nad klávesami. Každý prst by se měl své 
+ : aby se vznášely přesně nad klávesami. Každý prst by se měl své
  : domovské klávesy dotýkat jen velmi jemně. Toto je elektronická
  : klávesnice a k náhodnému stisku klávesy není třeba moc tlaku.
- : 
+ :
  : Dobře se tuto pozici naučte. Kdykoliv se budete chystat na psaní
- : nové řádky textu, zkontrolujte, zda jsou prsty v základní pozici. 
+ : nové řádky textu, zkontrolujte, zda jsou prsty v základní pozici.
  : Poté se již na prsty nekoukejte.
 
 *:_T_R_L2
@@ -2337,7 +2338,7 @@ T:
  : Téměř všechny klávesnice mají na klávesách F a J malé výstupky,
  : které vám umožní lehce po hmatu základní pozici poznat.
  :
- : Snažte se sedět v rovně, hodně vám to ulehčí psaní. Lokty by měly 
+ : Snažte se sedět v rovně, hodně vám to ulehčí psaní. Lokty by měly
  : být pokrčené v pravém úhlu a měly by být minimálně v úrovni klávesnice.
  : Nikdy ne níže, spíše o trošku výše.
  :
@@ -2346,7 +2347,7 @@ T:
  : speciální podložky.
  :
  : Dbejte na to, abyste měli prsty pokrčeny a dotýkali se kláves směrem
- : zeshora. Oba palce musí stále být na klávese SPACE. Dotýkají se jí 
+ : zeshora. Oba palce musí stále být na klávese SPACE. Dotýkají se jí
  : nikoliv bříšky, ale vnějším bokem prvního článku. Prsty v základní
  : řadě musí dopadat na střed kláves.
  :
@@ -2363,13 +2364,13 @@ T:
  : které jste zadali špatně, udělám velké X a zapípám.
  : Jednoduše pokračujte dalším písmenem. Nesnažte se opravovat, prostě
  : jděte dál.
- : 
+ :
  : Když se dostanete na konec řádky, stiskněte ENTER. To uděláte
  : vychýlením pravého malíčku. Stiskněte klávesu a vraťte malíček
  : zpět do původní pozice. Dávejte si pozor, aby se vaše ostatní prsty
  : nehnuly za základní pozice. Dávejte si také pozor, abyste na konci
  : řádky nedělali navíc ještě mezery.
- : 
+ :
  : Když neuděláte na řádce žádnou chybu, zobrazím další řádku k procvičení.
  : Pokud uděláte chybu, pípnu a po stisku klávesy ENTER budete řádku opisovat
  : znovu. Když opět uděláte chyby, opět pípnu a nechám vás cvičení zopakovat
@@ -2520,22 +2521,22 @@ T:
  :
  : Lekce T2
  :
- : V této lekci si zopakujeme, co jste se již naučili, a přidáme další 
+ : V této lekci si zopakujeme, co jste se již naučili, a přidáme další
  : písmena E, G, H a znak tečky. Pokud jste v minulých cvičeních ještě
  : stále dělali chyby, nic se neděje. Jednou naučené budete odteď již
  : stále procvičovat.
  :
  : Kdykoliv vychýlíte prst ke stisku některé z těchto kláves, nezapomeňte
- : jej ihned vrátit zpět do základní pozice. Například pro stisk klávesy 
+ : jej ihned vrátit zpět do základní pozice. Například pro stisk klávesy
  : H zvedněte pravý ukazováček a posuňte ho mírně vlevo. Stiskněte klávesu
- : a okamžitě jej vraťte zpět na J. 
+ : a okamžitě jej vraťte zpět na J.
  :
  : Když se ztratíte a neuvědomíte si, kde jsou vaše prsty, zkuste to uhodnout.
  : Nedívejte se! Pomohou vám i výstupky na klávesách J a F. Ujistěte se vždy,
- : že ukazováčky cítíte tyto výstupky a ostatní prsty máte v řadě. Opravdu se 
+ : že ukazováčky cítíte tyto výstupky a ostatní prsty máte v řadě. Opravdu se
  : nedívejte.
  :
- : Snažte se dodat psaní plynulost. Mačkejte klávesy v pravidelných 
+ : Snažte se dodat psaní plynulost. Mačkejte klávesy v pravidelných
  : intervalech. Rychlejší prsty budou na pomalejší čekat, ale to je
  : v pořádku. V této fázi kurzu není rozhodující rychlost. Nespěchejte
  : a zaměřte se hlavně na rytmus.
@@ -2715,7 +2716,7 @@ T:Nyní se pokusíme zapojit klávesu SHIFT.
  :
  :	a.) Přehoupněte pravý malíček na klávesu SHIFT a stiskněte ji.
  :          Nesmíte při tom pohnout ukazováčkem z klávesy J. Pohnout
- :          byste neměli ani ostatními prsty. 
+ :          byste neměli ani ostatními prsty.
  :
  :	b.) Stiskněte levou rukou klávesu, ze které chcete mít velké písmeno.
  :
@@ -2758,7 +2759,7 @@ I:Za tečkou vždy následuje mezera. Zkuste tento anglický text.
 #                                                            ../orig/t.typ:193
 D:A free red jade is fake. Girls like silk.
 
-I:Vytvářet české věty je bez diakritiky zatím těžké, 
+I:Vytvářet české věty je bez diakritiky zatím těžké,
  :snad vám angličtina nevadí.
 *:_T_R_L55
 #                                                            ../orig/t.typ:195
@@ -2813,12 +2814,12 @@ T:			Levý SHIFT.
  :K napsání velkého písmena na pravé straně klávesnici použijeme levý SHIFT.
  :
  :	1.) Přesuňte svůj levý prst na SHIFT a stiskněte jej.
- :          Ostatní prsty by se neměly pohnout. Minimálně prst na F 
+ :          Ostatní prsty by se neměly pohnout. Minimálně prst na F
  :          musí zůstat na své pozici.
  :
  :	2.) Pravou rukou stiskněte písmeno, které chcete napsat velké.
  :
- :	3.) Okamžitě vraťte prst zpět na A. 
+ :	3.) Okamžitě vraťte prst zpět na A.
 
 I: Mačkáme levý SHIFT, protože píšeme písmena pravou rukou.
 *:_T_R_L62
@@ -2838,7 +2839,7 @@ I:Nezapomínejte používat PRAVÝ SHIFT pro písmena vlevo:
 D:aůa P.S. aůa I.R.A. aůa
 
 #                                                            ../orig/t.typ:225
-I:Vychýlením prstu na k dolů se stiskem levého SHIFTu píšeme otazník. 
+I:Vychýlením prstu na k dolů se stiskem levého SHIFTu píšeme otazník.
 *:_T_R_L65
 #                                                            ../orig/t.typ:226
 D:ůůů ů?ů ůůů ??? ůůů ů?ů ůůů
@@ -2944,7 +2945,7 @@ G:_T_E_T5
 *:_T_S_T6
 #                                                            ../orig/t.typ:289
 T: Lekce 6
- : 
+ :
  : V této lekci se naučíme psát diakritická písmena.
  :
  : Budete muset sahat přes celou jednu řadu, ale opět se jedná
@@ -3020,7 +3021,7 @@ I:č píšeme vychýlením prstu na D. Prsty S a F musí zůstat.
 D:ddd dčd dčd ddd ččč dčd fčf sčs ača čč ff čj čl čů
  :čača číča fíča točit spáč strýček Kačka čas český
 
-I:é píšeme vychýlením prstu na L mírně vpravo nahoru. 
+I:é píšeme vychýlením prstu na L mírně vpravo nahoru.
 *:_T_R_L93
 D:lll ééé lll é l lél lél lél ll éé ll
  :lé jé sé lé ké té lýko péro stékat réka
@@ -3056,7 +3057,7 @@ G:_T_E_T6
 # Lekce T7
 #------------------------------------------------------------------------------
 I: Lekce 7
- : 
+ :
  : Podíváme se na zbývající diakritiku a zkusíme si rychlostní testy.
  :
  : Lokty v pravém úhlu, zápěstí na stole, prsty dostatečně
@@ -3434,7 +3435,7 @@ D:vodovod vřava převod návod
 #                                                            ../orig/t.typ:419
 T:		         BACKSPACE
  :
- :Většina programů, které budete používat, vám dovolí opravovat 
+ :Většina programů, které budete používat, vám dovolí opravovat
  :chyby s použitím kláves BACKSPACE a/nebo DELETE. Tyto klávesy
  :vám dovolí vymazat znak, který jste již jednou zadali. To je
  :jednou z největších výhod počítače nad klasickým psacím strojem.
@@ -3442,9 +3443,9 @@ T:		         BACKSPACE
  :V průběhu drilových cvičení odmítám tyto klávesy akceptovat.
  :(Měli byste cvičit dokud se vám nepovede opsat text správně!)
  :Dovolím vám ale používat tyto klávesy v rychlostních testech.
- :Umažu sice bílé značky špatně zadaných písmen, ale stále je 
+ :Umažu sice bílé značky špatně zadaných písmen, ale stále je
  :budu do výsledků počítat jako chyby.
- : 
+ :
  :Klávesu BACKSPACE stiskněte vaším ů-prstem a okamžitě vraťte
  :všechny prsty do základní pozice.
 #                                                            ../orig/t.typ:420
@@ -3532,17 +3533,17 @@ D:aaa adz aaa azo aaa coz aaa
  :quiz jazz quartz zinc dozen
  :oxidize squeeze azimuth zoology
 
-T:Blížíme se do finále. 
+T:Blížíme se do finále.
  :Jistě jste si všimli, že ó nemá vlastní klávesu.
  :Musíme jej proto skládat ze stisku klávesy prodloužení a poté
- :daného písmene. Nejedná se o stejný princip jako s klávesou 
+ :daného písmene. Nejedná se o stejný princip jako s klávesou
  :SHIFT. Prodloužení nemusíme/nesmíme držet celou dobu, ale zmáčkneme
  :jej první, vrátíme prsty do základní pozice a poté zmáčkneme
  :o.
  :
  :Prodloužení píšeme vychýlením pravého malíčku prudce doprava nahoru.
  :
- :Pro napsání ó tedy vychýlíme pravý malíček doprava nahoru 
+ :Pro napsání ó tedy vychýlíme pravý malíček doprava nahoru
  :a stiskneme klávesu s háčkem.
 *:_T_R_L161
 #                                                            ../orig/t.typ:459
@@ -3692,7 +3693,7 @@ D:aaa a1a aaa 111 aaa a1a
 #                                                            ../orig/t.typ:514
 D:a1q qa1 qz1 az1 aq1 a1z
  :111 ano 111 jakost 111 ahoj 111
- :Když 11 mužů chytí každý po 11 rybách v průběhu 11 dnů, 
+ :Když 11 mužů chytí každý po 11 rybách v průběhu 11 dnů,
  :Kolik ryb chytili celkem? 11.
 
 #                                                            ../orig/t.typ:515
@@ -3702,7 +3703,7 @@ I:2ku píšeme opět prstem z A. ů-prstem opět mačkáme pravý SHIFT.
 D:sss s2s sss s2s sss s2s
 
 I:Nezapomínejte, že se musí všechny prsty vracet do původní pozice.
-*:_T_R_L182 
+*:_T_R_L182
 #                                                            ../orig/t.typ:520
 D:sss s2w sss 2xw sss w2x sss
  :222 saw 222 was 222 wet 222
@@ -3750,7 +3751,7 @@ D:Tucet je l2. Veletucet je l2 tuctů, neboli l44.
 
 *:_T_R_L189
 #                                                            ../orig/t.typ:538
-D:Jak v osmičkové tak desítkové soustavě je ll krát ll l2l. 
+D:Jak v osmičkové tak desítkové soustavě je ll krát ll l2l.
  :A 3 mínus 4 je -l. V osmičkové, je ale l2 dělitelné 3.
 
 G:_T_E_T12
@@ -3780,7 +3781,7 @@ D:jjj j7j jjj j7j jjj j7j jjj
 D:jjj j7u jjj 7um jjj u7m jjj
  :777 mapa 777 jug 777 rum 777
  :Je let 377 na Floridu stroj typu 707, 727 nebo 747?
- :Je to 727 a má 4 zastávky. Se všemi těmi zastávkami to zabere 
+ :Je to 727 a má 4 zastávky. Se všemi těmi zastávkami to zabere
  :skoro 7 hodin.
 
 #                                                            ../orig/t.typ:552
@@ -3823,7 +3824,7 @@ D:ůůů ů0p ůůů /0p ůůů 0/p ůůů
  :000 a/c 000 pup 000 já? 000
  :Pánové: Schůzka v 10:00 10 října byla odložena na 10:30.
  :Schůzka v 10:30 byla přesunuta na 11:00 do místnosti 302.
- :Místnost 302 pojme ale pouze 10 lidí. Budeme potřebovat 
+ :Místnost 302 pojme ale pouze 10 lidí. Budeme potřebovat
  :konferenční sál 20.
 
 #                                                            ../orig/t.typ:571
@@ -3839,13 +3840,13 @@ S:Zda-li víte, že o čísle 0 existuje několik celých knih.
 
 *:_T_R_L201
 #                                                            ../orig/t.typ:587
-S:Není snadné odhadnout, kolik peněz jsme mohli 
+S:Není snadné odhadnout, kolik peněz jsme mohli
  :transakcí z 14.8. ztratit. Ten den v 13:00
  :se pokazilo snad skoro všechno. Bylo to sotva
  :2 hodiny po uzavření obchodu a již se ukázalo,
  :že konkurence o všem věděla dopředu a teď nás
  :utopí. Akcie okamžitě klesly na 2800 bodů.
- :To je propad o více jak 37 procent. 
+ :To je propad o více jak 37 procent.
 
 G:_T_E_T13
 #------------------------------------------------------------------------------
@@ -3941,7 +3942,7 @@ S:1 little, 2 little, 3 little Indians,
  :7 little, 8 little, 9 little Indians,
  :10 little Indian boys.
 
-I:Co nejrychleji (ale bez chyb) přepište tento odstavec. 
+I:Co nejrychleji (ale bez chyb) přepište tento odstavec.
 *:_T_R_L218
 #                                                            ../orig/t.typ:625
 S:Jestli chceme chytit let v 6:15 do Phoenixu (ten co letí
@@ -3990,9 +3991,9 @@ G:_T_E_T14
 *:_T_R_L224
 #                                                            ../orig/t.typ:657
 T:
- :Pokud jste již prošli lekcemi od T1 do T14, můžete o sobě 
+ :Pokud jste již prošli lekcemi od T1 do T14, můžete o sobě
  :prohlašovat, že umíte psát všemi deseti prsty. Naučili jste se
- :totiž psát již všechny standardizované klávesy. Pokud chcete, 
+ :totiž psát již všechny standardizované klávesy. Pokud chcete,
  :můžete nyní začít s lekcemi ze série S, zaměřenými na rychlost.
  :(Když se setkáte s nějakým interpunkčním znaménkem, které
  :jste se ještě neučili, prostě se podívejte.)
@@ -4029,8 +4030,8 @@ T:
  :V této lekci si procvičíme ještě některé speciální symboly.
  :
  :[V české verzi tutoriálu jsem tuto sekci výrazně zredukoval,
- :protože v našem jazyce bohužel poloha těchto kláves není 
- :vůbec standardizovaná. Budete se muset naučit sami na vaše 
+ :protože v našem jazyce bohužel poloha těchto kláves není
+ :vůbec standardizovaná. Budete se muset naučit sami na vaše
  :rozložení kláves.]
 
 #                                                            ../orig/t.typ:690
@@ -4076,63 +4077,63 @@ G:_T_E_T16
 # Lekce series T jump tables
 #------------------------------------------------------------------------------
 *:_T_E_T1
-Q:Chcete pokračovat do lekce T2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T2 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T2
 *:_T_E_T2
-Q:Chcete pokračovat do lekce T3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T3 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T3
 *:_T_E_T3
-Q:Chcete pokračovat do lekce T4 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T4 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T4
 *:_T_E_T4
-Q:Chcete pokračovat do lekce T5 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T5 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T5
 *:_T_E_T5
-Q:Chcete pokračovat do lekce T6 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T6 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T6
 *:_T_E_T6
-Q:Chcete pokračovat do lekce T7 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T7 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T7
 *:_T_E_T7
-Q:Chcete pokračovat do lekce T8 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T8 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T8
 *:_T_E_T8
-Q:Chcete pokračovat do lekce T9 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T9 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T9
 *:_T_E_T9
-Q:Chcete pokračovat do lekce T10 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T10 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T10
 *:_T_E_T10
-Q:Chcete pokračovat do lekce T11 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T11 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T11
 *:_T_E_T11
-Q:Chcete pokračovat do lekce T12 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T12 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T12
 *:_T_E_T12
-Q:Chcete pokračovat do lekce T13 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T13 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T13
 *:_T_E_T13
-Q:Chcete pokračovat do lekce T14 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T14 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T14
 *:_T_E_T14
-Q:Chcete pokračovat do lekce T15 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T15 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T15
 *:_T_E_T15
-Q:Chcete pokračovat do lekce T16 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce T16 [Y(ano)/N(ne)] ?
 N:_T_MENU
 G:_T_M_T16
 *:_T_E_T16
@@ -4301,7 +4302,7 @@ I:(3)
 #                                                             ../orig/v.typ:31
 D:e e e e ded ded ded ded ded i i i i kik kik kik
  :ded kik ded kik ded kik ded kik ded kik ded kik
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - exit. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - exit.
 N:_V_R_L6
 
 #                                                             ../orig/v.typ:32
@@ -5128,7 +5129,7 @@ G:_V_E_V12
 #                                                            ../orig/v.typ:507
 T:
  :			(Z and /)
-Q:Pro pokračování stiskněte Y, F12 pro konec. 
+Q:Pro pokračování stiskněte Y, F12 pro konec.
 N:_V_R_L86
 
 #                                                            ../orig/v.typ:508
@@ -5951,75 +5952,75 @@ G:_V_E_V19
 # Lekce series V jump tables
 #------------------------------------------------------------------------------
 *:_V_E_V1
-Q:Do you want to continue to lesson V2 [Y/N] ? 
+Q:Do you want to continue to lesson V2 [Y/N] ?
 N:_V_MENU
 G:_V_M_V2
 *:_V_E_V2
-Q:Do you want to continue to lesson V3 [Y/N] ? 
+Q:Do you want to continue to lesson V3 [Y/N] ?
 N:_V_MENU
 G:_V_M_V3
 *:_V_E_V3
-Q:Do you want to continue to lesson V4 [Y/N] ? 
+Q:Do you want to continue to lesson V4 [Y/N] ?
 N:_V_MENU
 G:_V_M_V4
 *:_V_E_V4
-Q:Do you want to continue to lesson V5 [Y/N] ? 
+Q:Do you want to continue to lesson V5 [Y/N] ?
 N:_V_MENU
 G:_V_M_V5
 *:_V_E_V5
-Q:Do you want to continue to lesson V6 [Y/N] ? 
+Q:Do you want to continue to lesson V6 [Y/N] ?
 N:_V_MENU
 G:_V_M_V6
 *:_V_E_V6
-Q:Do you want to continue to lesson V7 [Y/N] ? 
+Q:Do you want to continue to lesson V7 [Y/N] ?
 N:_V_MENU
 G:_V_M_V7
 *:_V_E_V7
-Q:Do you want to continue to lesson V8 [Y/N] ? 
+Q:Do you want to continue to lesson V8 [Y/N] ?
 N:_V_MENU
 G:_V_M_V8
 *:_V_E_V8
-Q:Do you want to continue to lesson V9 [Y/N] ? 
+Q:Do you want to continue to lesson V9 [Y/N] ?
 N:_V_MENU
 G:_V_M_V9
 *:_V_E_V9
-Q:Do you want to continue to lesson V10 [Y/N] ? 
+Q:Do you want to continue to lesson V10 [Y/N] ?
 N:_V_MENU
 G:_V_M_V10
 *:_V_E_V10
-Q:Do you want to continue to lesson V11 [Y/N] ? 
+Q:Do you want to continue to lesson V11 [Y/N] ?
 N:_V_MENU
 G:_V_M_V11
 *:_V_E_V11
-Q:Do you want to continue to lesson V12 [Y/N] ? 
+Q:Do you want to continue to lesson V12 [Y/N] ?
 N:_V_MENU
 G:_V_M_V12
 *:_V_E_V12
-Q:Do you want to continue to lesson V13 [Y/N] ? 
+Q:Do you want to continue to lesson V13 [Y/N] ?
 N:_V_MENU
 G:_V_M_V13
 *:_V_E_V13
-Q:Do you want to continue to lesson V14 [Y/N] ? 
+Q:Do you want to continue to lesson V14 [Y/N] ?
 N:_V_MENU
 G:_V_M_V14
 *:_V_E_V14
-Q:Do you want to continue to lesson V15 [Y/N] ? 
+Q:Do you want to continue to lesson V15 [Y/N] ?
 N:_V_MENU
 G:_V_M_V15
 *:_V_E_V15
-Q:Do you want to continue to lesson V16 [Y/N] ? 
+Q:Do you want to continue to lesson V16 [Y/N] ?
 N:_V_MENU
 G:_V_M_V16
 *:_V_E_V16
-Q:Do you want to continue to lesson V17 [Y/N] ? 
+Q:Do you want to continue to lesson V17 [Y/N] ?
 N:_V_MENU
 G:_V_M_V17
 *:_V_E_V17
-Q:Do you want to continue to lesson V18 [Y/N] ? 
+Q:Do you want to continue to lesson V18 [Y/N] ?
 N:_V_MENU
 G:_V_M_V18
 *:_V_E_V18
-Q:Do you want to continue to lesson V19 [Y/N] ? 
+Q:Do you want to continue to lesson V19 [Y/N] ?
 N:_V_MENU
 G:_V_M_V19
 *:_V_E_V19
@@ -6152,7 +6153,7 @@ G:_U_MENU
 #                                                              ../orig/u.typ:5
 T:			Vítejte v lekci U1
  :
- :Stále nevíte jak psát všemi deseti? Začneme od začátku procvičováním 
+ :Stále nevíte jak psát všemi deseti? Začneme od začátku procvičováním
  :základní řady
 
 #                                                              ../orig/u.typ:6
@@ -6595,7 +6596,7 @@ D:Pošlete balík na adresu: Ke Komořanům 2438/5-1.
 #                                                            ../orig/u.typ:230
 I:(3)
 *:_U_R_L54
-#                                                            ../orig/u.typ:235 
+#                                                            ../orig/u.typ:235
 S:Tomovi je 17 let a Markétě 26. Markéta je tedy
  :o 9 let starší. Markéta svého bráchu Toma vozí
  :v autě do sousedního města do školy
@@ -6610,43 +6611,43 @@ G:_U_E_U11
 # Lekce series U jump tables
 #------------------------------------------------------------------------------
 *:_U_E_U1
-Q:Chcete pokračovat do lekce U2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U2 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U2
 *:_U_E_U2
-Q:Chcete pokračovat do lekce U3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U3 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U3
 *:_U_E_U3
-Q:Chcete pokračovat do lekce U4 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U4 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U4
 *:_U_E_U4
-Q:Chcete pokračovat do lekce U5 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U5 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U5
 *:_U_E_U5
-Q:Chcete pokračovat do lekce U6 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U6 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U6
 *:_U_E_U6
-Q:Chcete pokračovat do lekce U7 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U7 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U7
 *:_U_E_U7
-Q:Chcete pokračovat do lekce U8 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U8 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U8
 *:_U_E_U8
-Q:Chcete pokračovat do lekce U9 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U9 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U9
 *:_U_E_U9
-Q:Chcete pokračovat do lekce U10 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U10 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U10
 *:_U_E_U10
-Q:Chcete pokračovat do lekce U11 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce U11 [Y(ano)/N(ne)] ?
 N:_U_MENU
 G:_U_M_U11
 *:_U_E_U11
@@ -6756,7 +6757,7 @@ T:			Welcome to the Dvorak Course
  :keyboard is like learning to "play on a new surface", as a tennis player must
  :learn to adjust to grass court or hard court when she has been accustomed to
  :playing on a clay court.
-Q: Pro pokračování stiskněte Y, F12 pro konec. 
+Q: Pro pokračování stiskněte Y, F12 pro konec.
 N:_D_R_L0
 
 *:_D_R_L1
@@ -6766,7 +6767,7 @@ T:			General Instructions
  :The fingers of the left hand should be placed over the A-key, the O-key,
  :the E-key, and the U-key. Similarly, the fingers of the right hand should be
  :placed over the H-key, the T-key, the N-key, and the S-key.
-Q: Pro pokračování stiskněte Y, F12 pro konec. 
+Q: Pro pokračování stiskněte Y, F12 pro konec.
 N:_D_R_L1
 
 #                                                             ../orig/d.typ:26
@@ -6775,7 +6776,7 @@ I:(1) Home Row Exercises
 #                                                             ../orig/d.typ:28
 D:aoeu ueoa aoeui snth htns snthd uihd uihd
  :asonetuhid asonetuhid dihutenosa dihutenosa
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L2
 
 #                                                             ../orig/d.typ:29
@@ -6783,7 +6784,7 @@ I:(2)
 *:_D_R_L3
 #                                                             ../orig/d.typ:30
 D:a s o n e t u h i d a s o n e t u h i d
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L3
 
 #                                                             ../orig/d.typ:31
@@ -6791,7 +6792,7 @@ I:(3)
 *:_D_R_L4
 #                                                             ../orig/d.typ:32
 D:d i h u t e n o s a d i h u t e n o s a
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L4
 
 #                                                             ../orig/d.typ:33
@@ -6800,7 +6801,7 @@ I:(4)
 #                                                             ../orig/d.typ:35
 D:as an at ah ad aa ao ae au ai os on ot oh od oi ou oe oo oa
  :es en et eh ed ea eo ee eu ei us un ut uh ud ui uu ue uo ua
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L5
 
 #                                                             ../orig/d.typ:36
@@ -6809,7 +6810,7 @@ I:(5)
 #                                                             ../orig/d.typ:38
 D:his hat is an aid in the hot sun
  :in his sad sod hut he sat on his hen
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L6
 
 #                                                             ../orig/d.typ:39
@@ -6818,7 +6819,7 @@ I:(6)
 #                                                             ../orig/d.typ:41
 D:sue did not use his hoe and tin hat
  :dan did not see the dot on his tie as he hid his tan hat
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L7
 
 #                                                             ../orig/d.typ:42
@@ -6829,7 +6830,7 @@ D:ada add ado aha aid ann dad dan dee den did die din don dot dud
  :due dun duo eda end had has hat hen hid his hit hod hoe hot hue
  :hut ian ida inn ion its nat ned net nod not nun nut odd ode out
  :sat sit sod son sot sun tan tat tee ten tho tit toe ton too tot
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L8
 
 #                                                             ../orig/d.typ:47
@@ -6837,7 +6838,7 @@ I:(8)
 *:_D_R_L9
 #                                                             ../orig/d.typ:48
 D:i do as i do and the end is not as sad as the one sid had
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L9
 
 G:_D_E_D1
@@ -6853,7 +6854,7 @@ T:                   Learning the Shift Key
  :To integrate the shift key rhythmically in your practice, a capital letter
  :should take three beats: 1--press the shift key opposite the hand to press
  :the letter; 2--press the letter; 3--release the shift key.
-Q:Pro pokračování stiskněte Y, F12 pro konec. 
+Q:Pro pokračování stiskněte Y, F12 pro konec.
 N:_D_R_L10
 
 #                                                             ../orig/d.typ:56
@@ -6861,7 +6862,7 @@ I:(1) Review
 *:_D_R_L11
 #                                                             ../orig/d.typ:57
 D:een ent est ett hin hou ith ion oth sen tha thi tio tte thu
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L11
 
 #                                                             ../orig/d.typ:58
@@ -6870,7 +6871,7 @@ I:(2)
 #                                                             ../orig/d.typ:60
 D:Ada An Ana Ann Dad Dan Dee Ed Eta
  :Dan Nan Nat Ned Sid Sue Tad Ted Tod
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L12
 
 #                                                             ../orig/d.typ:61
@@ -6879,7 +6880,7 @@ I:(3)
 #                                                             ../orig/d.typ:63
 D:The sad tots sat on a tan seat in his neat tent and ate ten nuts
  :On his date Otis had a thin suit and no tint on his shoes
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L13
 
 #                                                             ../orig/d.typ:64
@@ -6888,7 +6889,7 @@ I:(4)
 #                                                             ../orig/d.typ:66
 D:Enos eats a thin hash diet in a hued dish as he sits on an odd seat
  :Dad does not eat suet  He had seen Sue dent his auto
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L14
 
 #                                                             ../orig/d.typ:67
@@ -6898,7 +6899,7 @@ I:(5)
 D:ad an de di ed en es ie in ne un ate dis ess eat ied ine
  :ist ite nee nes non nus ses tes tis usi ante anti ates
  :eous eats ines ions ious ists itas itis ness sion tion
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L15
 
 #                                                             ../orig/d.typ:71
@@ -6907,7 +6908,7 @@ I:(6)
 #                                                             ../orig/d.typ:73
 D:Adna Anna Anne Dana Dead Edie Edna Enid Etta Heda
  :Nate Nina Neta Nona Odie Ohio Otto Stan Tess Thad Theo
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L16
 
 #                                                             ../orig/d.typ:74
@@ -6919,7 +6920,7 @@ D:adds aids ante ants aunt dead deed dens died dies dine dins dodo
  :none noon noun nuns oats odds odes ones sane sash sate seas seed
  :sees sent sets shad shed shin shot side sine sins sons sued suns
  :tide tine tins toad tone toss tote tout tune undo unit used uses
-Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q:Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L17
 
 G:_D_E_D2
@@ -6934,14 +6935,14 @@ T:                   Home Row and the Period
  :The period is above the E-finger. Note that the end of a sentence is
  :always followed by two spaces; in abbreviations, it is followed by one
  :space.
-Q: Pro pokračování stiskněte Y, F12 pro konec. 
+Q: Pro pokračování stiskněte Y, F12 pro konec.
 #
 I:(1)
 *:_D_R_L18
 #                                                             ../orig/d.typ:91
 D:e. e.  e.  e.  a.  s.  o.  n.  e.  t.  u.  h.  i.  d.  a.  a.
  :h. u.  a.  i.  o.  n.  s.  d.  t.  e.  h.  o.  u.  i.  s.  a.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L18
 
 #                                                             ../orig/d.typ:92
@@ -6952,7 +6953,7 @@ D:anno athe atio atte ause diti enon esen enti este
  :ethe esti ette hese hous hout iate iend ines inst
  :ith itio into ndin ness nnot noth ntio onth osed
  :thei thes tion tten nest nude unti usin tand tate
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L19
 
 #                                                             ../orig/d.typ:97
@@ -6962,7 +6963,7 @@ I:(3)
 D:Adana Andie Annie Aonia Audie Denis Diana Dinah
  :Donna Duane Edith Ethan India Susan Susie Thane
  :Adana. Andie.  Annie.  Aonia.  Audie.  Denis.  Diana.  Dinah.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L20
 
 #                                                            ../orig/d.typ:101
@@ -6973,7 +6974,7 @@ D:In the house Adana dined in haste on toast and dates.
  :Sated as she had eaten she noted the sheen on the dunes
  :and the shade in the sheds. She hates to see an idiot
  :stand and shoot his tenth doe in the dense heath.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L21
 
 #                                                            ../orig/d.typ:106
@@ -6982,7 +6983,7 @@ I:(5)
 #                                                            ../orig/d.typ:108
 D:An onion heats and stuns stout noses and sends hands
  :to douse teeth and hoist suede hoods onto heads.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L22
 
 #                                                            ../orig/d.typ:109
@@ -6991,7 +6992,7 @@ I:(6)
 #                                                            ../orig/d.typ:111
 D:eates eousness eousnesses esses iates iests iness inesses
  :iousness iousnesses iohness iohnesses itions nesses ousness
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L23
 
 G:_D_E_D3
@@ -7003,7 +7004,7 @@ G:_D_E_D3
 *:_D_R_L24
 #                                                            ../orig/d.typ:116
 T:                   Upper Row and Essential Punctuation
-Q: Pro pokračování stiskněte Y, F12 pro konec. 
+Q: Pro pokračování stiskněte Y, F12 pro konec.
 N:_D_R_L24
 
 #                                                            ../orig/d.typ:117
@@ -7012,7 +7013,7 @@ I:(1)
 #                                                            ../orig/d.typ:119
 D:tctc upup hghg o,o, nrnr a/a/ slsl a?a? s-s- s--- s---- ----
  :tctc upup hghg, hfhf uyuy, nrnr, slsl, s---, s-s-, a/a/-
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L25
 
 #                                                            ../orig/d.typ:120
@@ -7021,7 +7022,7 @@ I:(2)
 #                                                            ../orig/d.typ:122
 D:tctc/ upup/ hghg/ uyuy/ hfhf/ nrnr/ slsl/ tctc/ hfhf/ hghg/
  :tctc? upup? hghg? uyuy? nrnr? slsl? hfhf? upup- hghg- tctc-
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L26
 
 #                                                            ../orig/d.typ:123
@@ -7030,7 +7031,7 @@ I:(3)
 #                                                            ../orig/d.typ:125
 D:Al el if of or up Al el if of or up
  :go la lo pa pi ye go la lo pa pi ye
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L27
 
 #                                                            ../orig/d.typ:126
@@ -7041,7 +7042,7 @@ D:Can pa go aft and lie on our old cot?
  :The shy ape put on a red hat and ran off the lot.
  :For a top fee, her act is to hop in, lie on the rug, pat her
  :pet cat, fit a fur on her ear, get her fan, and run off.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L28
 
 #                                                            ../orig/d.typ:131
@@ -7051,7 +7052,7 @@ I:(5)
 D:ago ail ale all apt arc are art cur cut dig dip dop
  :dry dug eel egg ego fag fig fin fir fly fog for fro
  :fry gag gap gas gay gin gip God goo gun hag hay hep
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L29
 
 G:_D_E_D4
@@ -7066,7 +7067,7 @@ I:(1) Review
 #                                                            ../orig/d.typ:140
 D:The left road can lead the lads and lady to good lots near
  :your land. The sale of pure gold is held at your door.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L30
 
 #                                                            ../orig/d.typ:141
@@ -7076,7 +7077,7 @@ I:(2)
 D:You held no fear of loss for a year. On each trip to your
  :shop he paid in cash for the caps, fish, cups, pans, fuel,
  :logs, peas, ales, rice and fats you sold.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L31
 
 #                                                            ../orig/d.typ:145
@@ -7085,7 +7086,7 @@ I:(3)
 #                                                            ../orig/d.typ:147
 D:It is a fact that a slap on the face can hurt. The poor
  :apes feel free to find a sure sort of life in the dale.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L32
 
 #                                                            ../orig/d.typ:148
@@ -7096,7 +7097,7 @@ D:aces acts ages ails airs also arcs call caps card cold cops
  :else errs eyes face fair fall fare fate feat feel feet fell
  :gate gets gift gigs glad goat goes gone gosh gray grey gull
  :hole hope hops huff hull ills ires last late lest lets lies
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L33
 
 #                                                            ../orig/d.typ:153
@@ -7107,7 +7108,7 @@ D:pear pert pest pets pits plop pops post pots puns puts rate real
  :ride rids ripe rips rope rote rues ruff runs runt rush rust ruts
  :span spat spin spit spot spun step stop tags tall tape taps tars
  :ugly upon ruge user yard year yeas yell yelp yips yoga yule your
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L34
 
 G:_D_E_D5
@@ -7119,7 +7120,7 @@ G:_D_E_D5
 *:_D_R_L35
 #                                                            ../orig/d.typ:162
 T:		Learning the Lower Row
-Q: Pro pokračování stiskněte Y, F12 pro konec. 
+Q: Pro pokračování stiskněte Y, F12 pro konec.
 N:_D_R_L35
 
 #                                                            ../orig/d.typ:163
@@ -7127,7 +7128,7 @@ I:(1)
 *:_D_R_L36
 #                                                            ../orig/d.typ:164
 D:a'sz oqnv ukhm uxhb a"o- oqnv ejtw a'sz uxhb ukkk ukhm a's-
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L36
 
 #                                                            ../orig/d.typ:165
@@ -7135,7 +7136,7 @@ I:(2)
 *:_D_R_L37
 #                                                            ../orig/d.typ:166
 D:uk sz-a' tw nv ej hm uk a" hb oq uk a' nv hm a" oq sz tw ej
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L37
 
 #                                                            ../orig/d.typ:167
@@ -7145,7 +7146,7 @@ I:(3)
 D:ale any are ary augh aught ave ay aye ec ece eco el er ere ery ex
  :exa exe far fer fir for ify igh ight il ile ill ily ire aze ize
  :la lly ly my ny ome or ore ough ought ould our re rec sive tive
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L38
 
 #                                                            ../orig/d.typ:171
@@ -7155,7 +7156,7 @@ I:(4)
 D:I owe him a bun, a ham, ink, a bed and a job.
  :Sam was mad at his own new ox in the bin.
  :At the zoo, the wee, bad boa in a box bit Tom, Bob and me.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L39
 
 #                                                            ../orig/d.typ:175
@@ -7166,7 +7167,7 @@ D:am ax be ma me ox oz we adz awe ban but eke eve haw hem
  :hub jab jam jaw jet jib job Joe jot jut kid kin kit man
  :mat Max nab new nub now own quo saw sox sum van vex vie
  :vow wan who win won yen you zax
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L40
 
 G:_D_E_D6
@@ -7180,7 +7181,7 @@ I:(1)
 *:_D_R_L41
 #                                                            ../orig/d.typ:184
 D:In a daze the band hums the same new tune as they zoom down the exit.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L41
 
 #                                                            ../orig/d.typ:185
@@ -7189,7 +7190,7 @@ I:(2)
 #                                                            ../orig/d.typ:187
 D:Next time, I must have a town home, with a book and a vast tome,
  :bees, oxen, hams in the oven, rows of beans, the wind and a view.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L42
 
 #                                                            ../orig/d.typ:188
@@ -7198,7 +7199,7 @@ I:(3)
 #                                                            ../orig/d.typ:190
 D:I know six men wait to put down their axes. They want to quit
  :their jobs when the job zone size is too wide.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L43
 
 #                                                            ../orig/d.typ:191
@@ -7208,7 +7209,7 @@ I:(4)
 D:ahem aims ajax akin asks atom axis bans bath beak beck been
  :hoax husk inks item jabs jade jamb Java jazz Jean jest jinx
  :knot Knox made maid mail mate mean meet mend mess mind mine
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L44
 
 #                                                            ../orig/d.typ:195
@@ -7219,7 +7220,7 @@ D:miss mist most musk must nabs news next nibs numb owed owes
  :quiz save saws seem sews skat skew skid skin some sums take
  :vend vent vest veto vise void vote wand weed week wend wins
  :whet whit whiz whom wish wont zebu zest zinc Zion zone zulu
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L45
 
 G:_D_E_D7
@@ -7233,7 +7234,7 @@ I:(1)
 *:_D_R_L46
 #                                                            ../orig/d.typ:204
 D:He asked about those zebra waits in his beans.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L46
 
 #                                                            ../orig/d.typ:205
@@ -7241,7 +7242,7 @@ I:(2)
 *:_D_R_L47
 #                                                            ../orig/d.typ:206
 D:It seems that in a month taxes on homes have taken all we saved.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L47
 
 #                                                            ../orig/d.typ:207
@@ -7250,7 +7251,7 @@ I:(3)
 #                                                            ../orig/d.typ:209
 D:John Smith makes a quiet visit to the bases in the winds and
  :weeds on the mound.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L48
 
 #                                                            ../orig/d.typ:210
@@ -7261,7 +7262,7 @@ D:ovals ovoid oxide quake queen quest quite quits quote saves seams
  :skein skink skunk sweat takes taken taxed teams teems thank think
  :thumb times towns ukase vaunt vests vises visit vista vivid vixen
  :waits wands wants wends whine white whose zebus zoned zones zulus
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L49
 
 G:_D_E_D8
@@ -7275,7 +7276,7 @@ I:(1)
 *:_D_R_L50
 #                                                            ../orig/d.typ:219
 D:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L50
 
 #                                                            ../orig/d.typ:220
@@ -7283,7 +7284,7 @@ I:Again...
 *:_D_R_L51
 #                                                            ../orig/d.typ:221
 D:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L51
 
 #                                                            ../orig/d.typ:222
@@ -7291,7 +7292,7 @@ I:(2)
 *:_D_R_L52
 #                                                            ../orig/d.typ:223
 D:gm mg fb bf pk kp yx xy cw wc .j j. rv vr ,q q, lz zl
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L52
 
 #                                                            ../orig/d.typ:224
@@ -7299,7 +7300,7 @@ I:(3)
 *:_D_R_L53
 #                                                            ../orig/d.typ:225
 D:My big boy may buy a gem at the labs by the bay.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L53
 
 #                                                            ../orig/d.typ:226
@@ -7308,7 +7309,7 @@ I:(4)
 #                                                            ../orig/d.typ:228
 D:Mort awes boys with the way he can ward off a blow, kill
  :elks and game, row a yawl, or ram awls into bars.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L54
 
 #                                                            ../orig/d.typ:229
@@ -7318,7 +7319,7 @@ I:(5)
 D:ah Al am an as at ax ba be do ed eh el go
  :ha he hi ho if in is it Jo la no ma me no
  :of oh on or ox pa pi Si so to up us we ye
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L55
 
 G:_D_E_D9
@@ -7333,7 +7334,7 @@ I:(1)
 #                                                            ../orig/d.typ:238
 D:In barns on farms chicks, boars, veals, bucks and stock might
  :enjoy and value an extra quart of water daily.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L56
 
 #                                                            ../orig/d.typ:239
@@ -7342,7 +7343,7 @@ I:(2)
 #                                                            ../orig/d.typ:241
 D:Do zebras roam the miles of bleak velds which cover parts of the
  :world while packs of brown bears and wart hogs prowl in the woods?
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L57
 
 #                                                            ../orig/d.typ:242
@@ -7353,7 +7354,7 @@ D:Some folks claim to favor poems and rhyme, others can wring equal
  :cheer and worth from words and quest and seize all books. Still
  :others amply quell their needs with vocal music and seek all
  :works on voice.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L58
 
 #                                                            ../orig/d.typ:247
@@ -7363,7 +7364,7 @@ I:(4)
 D:To begin to use wrong verbs among boors and bores may be
  :a severe error even if the whole group seems to think
  :that exact terms mean less than is normal for them.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L59
 
 #                                                            ../orig/d.typ:251
@@ -7374,7 +7375,7 @@ D:allow among avail awful Aztec azure backs balls began being belie
  :bells bills black blank bored borne bring can't chalk champ charm
  :check cheek chick chink comes Czech every evict exalt excel exert
  :exile expel exult Felix folks gable gauze gives glaze gleam globe
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L60
 
 #                                                            ../orig/d.typ:256
@@ -7385,7 +7386,7 @@ D:verge verse verve vetch vigil vigor viola virus vital vogue voile
  :vouch vowel vying walks walls wards warts whack whale wharf wheat
  :wheel whelp where which whiff while whirl whole wired wires words
  :world worth would write wrong wrote yards yokes yoks zippy zombie
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L61
 
 G:_D_E_D10
@@ -7400,7 +7401,7 @@ I:(1)
 #                                                            ../orig/d.typ:266
 D:For a meal we lack a room, milk in mugs, warm pork, veal
  :in the oven and cake.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L62
 
 #                                                            ../orig/d.typ:267
@@ -7409,7 +7410,7 @@ I:(2)
 #                                                            ../orig/d.typ:269
 D:Mike and Milt were grim, not calm, when Mort came to warn them that
  :the well worn ramp over to the mill was too wet for our mile walk.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L63
 
 #                                                            ../orig/d.typ:270
@@ -7418,7 +7419,7 @@ I:(3)
 #                                                            ../orig/d.typ:272
 D:Walt may quip and quote with zeal about too much work, but I
  :saw him melt and mourn about his love for his lost wife.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L64
 
 #                                                            ../orig/d.typ:273
@@ -7426,7 +7427,7 @@ I:(4)
 *:_D_R_L65
 #                                                            ../orig/d.typ:274
 D:The pick of wool from rams can make very soft warm garb.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L65
 
 #                                                            ../orig/d.typ:275
@@ -7435,7 +7436,7 @@ I:(5)
 #                                                            ../orig/d.typ:277
 D:For his meal the busy bird will use his bill or beak in many
  :ways to peck at or ably to pick up a worm.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L66
 
 #                                                            ../orig/d.typ:278
@@ -7444,7 +7445,7 @@ I:(6)
 #                                                            ../orig/d.typ:280
 D:Owls on the wing may move away with limp easy grace or they
  :may sit on a wire and look ever so wise.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L67
 
 #                                                            ../orig/d.typ:281
@@ -7453,7 +7454,7 @@ I:(7)
 #                                                            ../orig/d.typ:283
 D:The word or term--prop, mall, king, mark, romp, lock or link--
  :can vary in what it may mean.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L68
 
 #                                                            ../orig/d.typ:284
@@ -7464,7 +7465,7 @@ D:helm herb hock holy jeep jeer jell jerk John jolt jump jury
  :kale keel kelp kilt lack laws leak leek levy lick like lime
  :limp link live love luck lump lynx mail many mill more much
  :okra oval pack peak peck peek phew puck ramp rime skip talk
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L69
 
 #                                                            ../orig/d.typ:289
@@ -7474,7 +7475,7 @@ I:(9)
 D:puck ramp rime skip talk vail vale vary veal veer veld verb vial vice
  :volk walk ware warm warp wars wart ways weal wear well will tilt wire
  :whey whim whip whir wore work worm worn yawn yolk zany zero zinc zing
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L70
 
 G:_D_E_D11
@@ -7489,7 +7490,7 @@ I:(1)
 #                                                            ../orig/d.typ:298
 D:In barns on farms chicks, bears, veals, bucks and stock might
  :enjoy and value an extra quart of water daily.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L71
 
 #                                                            ../orig/d.typ:299
@@ -7498,7 +7499,7 @@ I:(2)
 #                                                            ../orig/d.typ:301
 D:Quick quips, awful quotes and queer talks never quite solve
  :the wants of a very small child.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L72
 
 #                                                            ../orig/d.typ:302
@@ -7507,7 +7508,7 @@ I:(3)
 #                                                            ../orig/d.typ:304
 D:Do zebras roam the miles of bleak velds which cover parts of the
  :world while packs of brown bears and wart hogs prowl in the woods?
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L73
 
 #                                                            ../orig/d.typ:305
@@ -7518,7 +7519,7 @@ D:Some folks claim to favor poems and rhyme, others can wring equal
  :cheer and worth from words and quest and seize all books. Still
  :others amply quell their needs with vocal music and seek all
  :works on voice.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L74
 
 #                                                            ../orig/d.typ:310
@@ -7527,7 +7528,7 @@ I:(5)
 #                                                            ../orig/d.typ:312
 D:The queen was given a query for which an ample reply would
  :take a quire of paper.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L75
 
 #                                                            ../orig/d.typ:313
@@ -7536,7 +7537,7 @@ I:(6)
 #                                                            ../orig/d.typ:315
 D:Six husky cooks boiled clam broth, shrimp and prawns and broiled
  :liver for seven lucky elves, then made their hasty exits.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L76
 
 #                                                            ../orig/d.typ:316
@@ -7546,7 +7547,7 @@ I:(7)
 D:At the games, Mark was so very badly hurt with many broken bones,
  :lumps on his jaws, and some glands burst. Blood oozed from a crack
  :in his wart where it had oozed for weeks. He was lucky to have lived.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L77
 
 #                                                            ../orig/d.typ:320
@@ -7555,7 +7556,7 @@ I:(8)
 #                                                            ../orig/d.typ:322
 D:To check pomp and pride, sever from all overt vices, belay all
  :forms of muck raking, and limit all hazards, will bring prime joy.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L78
 
 #                                                            ../orig/d.typ:323
@@ -7565,7 +7566,7 @@ I:(9)
 D:To begin to use wrong verbs among boors and bores may be
  :a severe error even if the whole group seems to think
  :that exact terms mean less than is normal for them.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L79
 
 #                                                            ../orig/d.typ:327
@@ -7576,7 +7577,7 @@ D:allow among avail awful Aztec azure backs balls began being belie
  :bells bills black blank bored borne bring can't chalk champ charm
  :check cheek chick chink comes Czech every evict exalt excel exert
  :exile expel exult Felix folks gable gauze gives glaze gleam globe
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L80
 
 #                                                            ../orig/d.typ:332
@@ -7587,7 +7588,7 @@ D:grams grave graze havoc hazel helix hobby jazzy jelly jerky jewel
  :joker jolly jolts jowls judge junco kapok kayak keels keeps kitty
  :knack kneel knelt knock knurl kopek kraal Krupp leave liver money
  :never Ozark pawns peaks pecks peeks phlox pirks power proms prove
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L81
 
 #                                                            ../orig/d.typ:337
@@ -7598,7 +7599,7 @@ D:quack quaff quail qualm quays quell quill quilt ramps romps rooms
  :rumps salve serve shack shark shawl shirk shock shrew shuck sieve
  :seize skiff skill skimp skirt skulk small spank speak spoke stick
  :stuck threw throw thyme vague valid value valve vapid vault venal
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L82
 
 #                                                            ../orig/d.typ:342
@@ -7609,7 +7610,7 @@ D:verge verse verve vetch vigil vigor viola virus vital vogue voile
  :vouch vowel vying walks walls wards warts whack whale wharf wheat
  :wheel whelp where which whiff while whirl whole wired wires words
  :world worth would write wrong wrote yards yokes yolks zippy zombi
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L83
 
 G:_D_E_D12
@@ -7624,7 +7625,7 @@ T:
  :The following 135 words are so frequently used that they comprise 50%
  :of all words normally typed. If you can type the next two exercises without
  :errors, half of your typed words will be correct!
-Q: Pro pokračování stiskněte Y, F12 pro konec. 
+Q: Pro pokračování stiskněte Y, F12 pro konec.
 N:_D_R_L84
 
 *:_D_R_L85
@@ -7634,7 +7635,7 @@ D:a about after all also an and another any are as at back be because
  :even first for from get good had has have he her here him his how I
  :if in into is it its just know last life like little long made make
  :many may me men more most Mr. Ms.  much must my never new no not now
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L85
 
 *:_D_R_L86
@@ -7644,13 +7645,13 @@ D:of or on one only or other our out over own people said same see she
  :these they this those through time to too two under up very was way
  :we well were what when where which while who will with work would
  :years you your
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L86
 
 *:_D_R_L87
 #                                                            ../orig/d.typ:364
 T:We now concentrate on home row words.
-Q: Pro pokračování stiskněte Y, F12 pro konec. 
+Q: Pro pokračování stiskněte Y, F12 pro konec.
 N:_D_R_L87
 
 #                                                            ../orig/d.typ:365
@@ -7659,7 +7660,7 @@ I:(1)
 #                                                            ../orig/d.typ:367
 D:The duteous dietitian hesitated at the intense nauseousness inside
  :the dishonest institution.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L88
 
 #                                                            ../orig/d.typ:368
@@ -7668,7 +7669,7 @@ I:(2)
 #                                                            ../orig/d.typ:370
 D:In addition, the unastute assassin had another unsound idea. He
  :intended to assassinate the dishonest attendant at the institute.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L89
 
 #                                                            ../orig/d.typ:371
@@ -7680,7 +7681,7 @@ D:The unintentioned noisiness and untidiness in the hostess house
  :unassisted, she did not hesitate to initiate a statute at the state
  :house. The statute stated that no attendant in an untenanted haunted
  :hostess house is to attain hostess status.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L90
 
 G:_D_E_D13
@@ -7693,7 +7694,7 @@ G:_D_E_D13
 #                                                            ../orig/d.typ:381
 T:
  :In this lesson we practice alphabetic sentences.
-Q: Pro pokračování stiskněte Y, F12 pro konec. 
+Q: Pro pokračování stiskněte Y, F12 pro konec.
 N:_D_R_L91
 
 #                                                            ../orig/d.typ:382
@@ -7701,7 +7702,7 @@ I:(1)
 *:_D_R_L92
 #                                                            ../orig/d.typ:383
 D:Sixty-five quizzical sheep kept their jaws dry in a farm bungalow.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L92
 
 #                                                            ../orig/d.typ:384
@@ -7709,7 +7710,7 @@ I:(2)
 *:_D_R_L93
 #                                                            ../orig/d.typ:385
 D:Balky Zulus find they can hoax weary men with quavery jumping.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L93
 
 #                                                            ../orig/d.typ:386
@@ -7717,7 +7718,7 @@ I:(3)
 *:_D_R_L94
 #                                                            ../orig/d.typ:387
 D:Jerome quickly began to be vexed by the powerful blizzards.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L94
 
 #                                                            ../orig/d.typ:388
@@ -7725,7 +7726,7 @@ I:(4)
 *:_D_R_L95
 #                                                            ../orig/d.typ:389
 D:Squawking gorillas could vex the brazen nymphs in a jiffy.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L95
 
 #                                                            ../orig/d.typ:390
@@ -7733,7 +7734,7 @@ I:(5)
 *:_D_R_L96
 #                                                            ../orig/d.typ:391
 D:Can Jerry's equipment file saws, ax, hoe, knives and grind adz?
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L96
 
 #                                                            ../orig/d.typ:392
@@ -7741,7 +7742,7 @@ I:(6)
 *:_D_R_L97
 #                                                            ../orig/d.typ:393
 D:Ben works at squeezing very juicy plums with flexed thumbs.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L97
 
 #                                                            ../orig/d.typ:394
@@ -7749,7 +7750,7 @@ I:(7)
 *:_D_R_L98
 #                                                            ../orig/d.typ:395
 D:The black wizard quipping jovially flexed his muscles.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L98
 
 #                                                            ../orig/d.typ:396
@@ -7757,7 +7758,7 @@ I:(8)
 *:_D_R_L99
 #                                                            ../orig/d.typ:397
 D:Will you pack my jugs of liquid veneer in five dozen boxes?
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L99
 
 #                                                            ../orig/d.typ:398
@@ -7765,7 +7766,7 @@ I:(9)
 *:_D_R_L100
 #                                                            ../orig/d.typ:399
 D:Could the wizard jinx quivering folks by magic yelps?
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L100
 
 #                                                            ../orig/d.typ:400
@@ -7773,7 +7774,7 @@ I:(10)
 *:_D_R_L101
 #                                                            ../orig/d.typ:401
 D:Brazen gazelles quickly examined the forward jeep.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L101
 
 #                                                            ../orig/d.typ:402
@@ -7781,7 +7782,7 @@ I:(11)
 *:_D_R_L102
 #                                                            ../orig/d.typ:403
 D:The brown dog quickly jumped over the lazy fox.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L102
 
 #                                                            ../orig/d.typ:404
@@ -7789,7 +7790,7 @@ I:(12)
 *:_D_R_L103
 #                                                            ../orig/d.typ:405
 D:Will the kind judge squelch the five or six brazen nymphs?
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L103
 
 #                                                            ../orig/d.typ:406
@@ -7797,7 +7798,7 @@ I:(13)
 *:_D_R_L104
 #                                                            ../orig/d.typ:407
 D:Mix zippy Kadota figs with quivering cranberry jelly.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L104
 
 #                                                            ../orig/d.typ:408
@@ -7805,7 +7806,7 @@ I:(14)
 *:_D_R_L105
 #                                                            ../orig/d.typ:409
 D:The wives quickly jerked extra big pizzas from the stand.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L105
 
 #                                                            ../orig/d.typ:410
@@ -7813,7 +7814,7 @@ I:(15)
 *:_D_R_L106
 #                                                            ../orig/d.typ:411
 D:Lisa quickly mixed the very big jar of new soap.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L106
 
 #                                                            ../orig/d.typ:412
@@ -7821,7 +7822,7 @@ I:(16)
 *:_D_R_L107
 #                                                            ../orig/d.typ:413
 D:The major will fix a quiet cozy nook for the vexed, bad Gypsy.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L107
 
 #                                                            ../orig/d.typ:414
@@ -7829,7 +7830,7 @@ I:(17)
 *:_D_R_L108
 #                                                            ../orig/d.typ:415
 D:Pairs of lazy knowing oxen came by quietly evading the jam.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L108
 
 #                                                            ../orig/d.typ:416
@@ -7849,7 +7850,7 @@ I:(20)
 *:_D_R_L110
 #                                                            ../orig/d.typ:421
 D:The brawny jaguar held fast till the quaking Zouave victim expired.
-Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec. 
+Q: Stisknutím Y můžete pokračovat, N bude cvičení opakovat, F12 - konec.
 N:_D_R_L110
 
 G:_D_E_D14
@@ -7857,55 +7858,55 @@ G:_D_E_D14
 # Lekce series D jump tables
 #------------------------------------------------------------------------------
 *:_D_E_D1
-Q: Do you want to continue to lesson D2 [Y/N] ? 
+Q: Do you want to continue to lesson D2 [Y/N] ?
 N:_D_MENU
 G:_D_M_D2
 *:_D_E_D2
-Q: Do you want to continue to lesson D3 [Y/N] ? 
+Q: Do you want to continue to lesson D3 [Y/N] ?
 N:_D_MENU
 G:_D_M_D3
 *:_D_E_D3
-Q: Do you want to continue to lesson D4 [Y/N] ? 
+Q: Do you want to continue to lesson D4 [Y/N] ?
 N:_D_MENU
 G:_D_M_D4
 *:_D_E_D4
-Q: Do you want to continue to lesson D5 [Y/N] ? 
+Q: Do you want to continue to lesson D5 [Y/N] ?
 N:_D_MENU
 G:_D_M_D5
 *:_D_E_D5
-Q: Do you want to continue to lesson D6 [Y/N] ? 
+Q: Do you want to continue to lesson D6 [Y/N] ?
 N:_D_MENU
 G:_D_M_D6
 *:_D_E_D6
-Q: Do you want to continue to lesson D7 [Y/N] ? 
+Q: Do you want to continue to lesson D7 [Y/N] ?
 N:_D_MENU
 G:_D_M_D7
 *:_D_E_D7
-Q: Do you want to continue to lesson D8 [Y/N] ? 
+Q: Do you want to continue to lesson D8 [Y/N] ?
 N:_D_MENU
 G:_D_M_D8
 *:_D_E_D8
-Q: Do you want to continue to lesson D9 [Y/N] ? 
+Q: Do you want to continue to lesson D9 [Y/N] ?
 N:_D_MENU
 G:_D_M_D9
 *:_D_E_D9
-Q: Do you want to continue to lesson D10 [Y/N] ? 
+Q: Do you want to continue to lesson D10 [Y/N] ?
 N:_D_MENU
 G:_D_M_D10
 *:_D_E_D10
-Q: Do you want to continue to lesson D11 [Y/N] ? 
+Q: Do you want to continue to lesson D11 [Y/N] ?
 N:_D_MENU
 G:_D_M_D11
 *:_D_E_D11
-Q: Do you want to continue to lesson D12 [Y/N] ? 
+Q: Do you want to continue to lesson D12 [Y/N] ?
 N:_D_MENU
 G:_D_M_D12
 *:_D_E_D12
-Q: Do you want to continue to lesson D13 [Y/N] ? 
+Q: Do you want to continue to lesson D13 [Y/N] ?
 N:_D_MENU
 G:_D_M_D13
 *:_D_E_D13
-Q: Do you want to continue to lesson D14 [Y/N] ? 
+Q: Do you want to continue to lesson D14 [Y/N] ?
 N:_D_MENU
 G:_D_M_D14
 *:_D_E_D14
@@ -8988,43 +8989,43 @@ G:_M_E_M11
 # Lekce series M jump tables
 #------------------------------------------------------------------------------
 *:_M_E_M1
-Q:Chcete pokračovat do lekce M2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M2 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M2
 *:_M_E_M2
-Q:Chcete pokračovat do lekce M3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M3 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M3
 *:_M_E_M3
-Q:Chcete pokračovat do lekce M4 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M4 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M4
 *:_M_E_M4
-Q:Chcete pokračovat do lekce M5 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M5 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M5
 *:_M_E_M5
-Q:Chcete pokračovat do lekce M6 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M6 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M6
 *:_M_E_M6
-Q:Chcete pokračovat do lekce M7 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M7 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M7
 *:_M_E_M7
-Q:Chcete pokračovat do lekce M8 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M8 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M8
 *:_M_E_M8
-Q:Chcete pokračovat do lekce M9 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M9 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M9
 *:_M_E_M9
-Q:Chcete pokračovat do lekce M10 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M10 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M10
 *:_M_E_M10
-Q:Chcete pokračovat do lekce M11 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce M11 [Y(ano)/N(ne)] ?
 N:_M_MENU
 G:_M_M_M11
 *:_M_E_M11
@@ -9134,7 +9135,7 @@ T:			Rychlostní cvičení
  :začnete, alespoň většinu písmen abecedy. Pokud nevíte,
  :jak napsat nějaký znak, budete se muset podívat. To je ale
  :velmi špatný zvyk a těžko se ho zbavuje. (Nemusíte se strachovat,
- :pokud sklápíte zrak pouze kvůli málo používaným klávesám, 
+ :pokud sklápíte zrak pouze kvůli málo používaným klávesám,
  :jako je znak dolaru.)
 
 *:_S_R_L1
@@ -9149,7 +9150,7 @@ T:			  Pravidla
  :
  :Kdykoliv uděláte chybu, zapípám a rozsvítím písmeno, které jste měli
  :zadat, v obrácených barvách (černé písmeno na bílém pozadí).
- :Můžete chybu ignorovat a pokračovat, nebo se můžete také vrátit 
+ :Můžete chybu ignorovat a pokračovat, nebo se můžete také vrátit
  :a s použitím kláves DELETE nebo BACKSPACE ji opravit, ale já
  :to budu stále počítat za chybu.
  :
@@ -9290,7 +9291,7 @@ I:Murphy
 S:Počítače jsou nespolehlivé, lidé také. Avšak počítače jsou v tom
  :mnohem důkladnější.
 
-I:Murphy 
+I:Murphy
 *:_S_R_L27
 S:Jesltiže zůstáváš klidný, zatímco ostatní ztrácejí hlavu,
  :je to neklamná známka toho, že jsi problém nepochopil.
@@ -9480,15 +9481,15 @@ G:_S_E_S4
 # Lekce series S jump tables
 #------------------------------------------------------------------------------
 *:_S_E_S1
-Q:Chcete pokračovat do lekce S2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce S2 [Y(ano)/N(ne)] ?
 N:_S_MENU
 G:_S_M_S2
 *:_S_E_S2
-Q:Chcete pokračovat do lekce S3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce S3 [Y(ano)/N(ne)] ?
 N:_S_MENU
 G:_S_M_S3
 *:_S_E_S3
-Q:Chcete pokračovat do lekce S4 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce S4 [Y(ano)/N(ne)] ?
 N:_S_MENU
 G:_S_M_S4
 *:_S_E_S4
@@ -9564,21 +9565,21 @@ G:_N_MENU
 T:
  :			Lekce numerické klávesnice
  :
- :Série lekcí N vás naučí pracovat s numerickou klávesnicí. 
+ :Série lekcí N vás naučí pracovat s numerickou klávesnicí.
  :K tomu, abyste mohli kurz absolvovat, nepotřebujete umět
- :psát deseti prsty na klasické klávesnici. Můžete tedy začít 
+ :psát deseti prsty na klasické klávesnici. Můžete tedy začít
  :přímo touto sérií.
  :
- :Když zadáváte numerické hodnoty, tak je většinou důležitější 
+ :Když zadáváte numerické hodnoty, tak je většinou důležitější
  :přesnost než rychlost. Procházejte těmito lekcemi velmi pomalu.
  :Rychlost se později dostaví sama.
  :
- :Tak jako na standardní klávesnici musíte začínat v základní 
+ :Tak jako na standardní klávesnici musíte začínat v základní
  :pozici. Umístěte první tři prsty vaší pravé ruky na klávesy
  :4, 5, 6 (ukazováček, prostředníček, prsteníček).
  :
  :Palec a váš šestý prst jsou volné. Prsty by se měly pouze lehce
- :vznášet nad klávesnicí. Mezerník mačkejte palcem či jakýmkoliv 
+ :vznášet nad klávesnicí. Mezerník mačkejte palcem či jakýmkoliv
  :jiným prstem levé ruky.
 
 #                                                             ../orig/n.typ:22
@@ -9679,7 +9680,7 @@ I:Nejprve opakování z lekce 1.
 D:444.555.666.111.6541.6541
 
 #                                                             ../orig/n.typ:71
-I:2ku píšeme prstem z klávesy 5 (prostředníček). 
+I:2ku píšeme prstem z klávesy 5 (prostředníček).
 *:_N_R_L13
 #                                                             ../orig/n.typ:72
 D:555222555.525.525.525
@@ -9932,11 +9933,11 @@ G:_N_E_N3
 # Lekce series N jump tables
 #------------------------------------------------------------------------------
 *:_N_E_N1
-Q:Chcete pokračovat do lekce N2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce N2 [Y(ano)/N(ne)] ?
 N:_N_MENU
 G:_N_M_N2
 *:_N_E_N2
-Q:Chcete pokračovat do lekce N3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokračovat do lekce N3 [Y(ano)/N(ne)] ?
 N:_N_MENU
 G:_N_M_N3
 *:_N_E_N3
@@ -9966,7 +9967,7 @@ M: UP=__SERIESMENU "Série N obsahuje tyto 3 lekce"
 G:__SERIESMENU
 #==============================================================================
 *:__MORE_LESSONS
-T:... spuštěním gtypistu s parametrem jako některým z těchto 
+T:... spuštěním gtypistu s parametrem jako některým z těchto
  :jmen souborů můžete přistupovat i k jiným sadám lekcí:
  :
  : en.typ - Anglické lekce
@@ -9992,31 +9993,31 @@ T:                     Nápověda
  :Skrz lekce a menu se můžete pohybovat s použitím Fx kláves
  :v horní řadě klávesnice. Pokud se nalézáte uvnitř nějaké lekce,
  :tak vás stisk F12 přenese do menu lekce. Zde vás stisk F12
- :přenese do výběru sérií lekcí. Pakliže zmáčknete F12 ve výběru 
+ :přenese do výběru sérií lekcí. Pakliže zmáčknete F12 ve výběru
  :lekcí, opustíte program. Na některé dotazy budete odpovídat ano/ne.
  :V takovém případě stisk Y znamená ano, stisk N znamená ne.
  :
- :Místo Fx kláves (např. pokud je váš terminál nemá) můžete použít 
+ :Místo Fx kláves (např. pokud je váš terminál nemá) můžete použít
  :i klávesy od 1 do 9 pro F1-F9, 0 pro F10 a klávesu A pro F11
  :stejně jako S pro F12.
  :
  :Příručku ke gtypistu si můžete zobrazit zadáním
  :,,info gtypist'' či ,,info (gtypist)'' na vašem
- :terminálu. Pokud pracujete pod dosem, zobrazte 
+ :terminálu. Pokud pracujete pod dosem, zobrazte
  :si soubor gtypist.html.
  :		--Pro další stranu stiskněte ENTER--
 T: 		Proč mám opačně Y/Z, co je to QWERTY?
  :
- :Česká klávesnice má bohužel jeden obrovský problém a tím je 
- :nestandardní poloha kláves Y a Z. Často se můžete setkat 
+ :Česká klávesnice má bohužel jeden obrovský problém a tím je
+ :nestandardní poloha kláves Y a Z. Často se můžete setkat
  :s tím, že klávesa Y v horní řadě bude ve skutečnosti psát
  :písmeno Z a obdobně klávesa Z v řadě dolní bude psát Y.
  :Takovým klávesnicím se říká QWERTZ (podle polohy prvních
  :šesti kláves horní řady).
- : 
+ :
  :Jelikož toto způsobuje obrovské problémy (zvlášť pokud jste
  :nuceni přepínat mezi českou a anglickou klávesnicí), zaměřuje
- :se tento kurz na klávesnici QWERTY tak, jak je mezinárodně 
+ :se tento kurz na klávesnici QWERTY tak, jak je mezinárodně
  :standardizovaná. Vřele vám doporučuji nastavit si na svém
  :systému také tuto klávesnici, pokud ji ještě nepoužíváte.
  :Není to žádný problém, prostě hledejte v nastavení klávesnice
@@ -10040,7 +10041,7 @@ T: 		Jak se s pomocí programu naučit QWERTZ
 T:			Připomínky, oznámení o chybě
  :
  :Připomínky ohledně českých lekcí a jejich funkce prosím zasílejte
- :na hanke@volny.cz. S obecnými připomínkami o programu 
+ :na hanke@volny.cz. S obecnými připomínkami o programu
  :a chybami (pokud jste si jisti, že se nejedná o chybu lekce)
  :se prosím obracejte na bug-gtypist@gnu.org.
  :

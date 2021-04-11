@@ -2,8 +2,9 @@
 #
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Paul Goins, Tim Marston
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -354,11 +355,11 @@ G:_N_E_N3
 # Lesson series N jump tables
 #------------------------------------------------------------------------------
 *:_N_E_N1
-Q: Do you want to continue to lesson N2 [Y/N] ? 
+Q: Do you want to continue to lesson N2 [Y/N] ?
 N:_N_MENU
 G:_N_S_N2
 *:_N_E_N2
-Q: Do you want to continue to lesson N3 [Y/N] ? 
+Q: Do you want to continue to lesson N3 [Y/N] ?
 N:_N_MENU
 G:_N_S_N3
 *:_N_E_N3

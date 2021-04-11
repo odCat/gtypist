@@ -2,9 +2,10 @@
 #
 # Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
-#               2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
+#               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Michael Opdenacker, Felix Natter, Dmitry Rutsky,
 #               Paul Goins, Tim Marston
+# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -448,19 +449,19 @@ G:_Q_E_Q5
 # Lesson series Q jump tables
 #------------------------------------------------------------------------------
 *:_Q_E_Q1
-Q: Do you want to continue to lesson Q2 [Y/N] ? 
+Q: Do you want to continue to lesson Q2 [Y/N] ?
 N:_Q_MENU
 G:_Q_S_Q2
 *:_Q_E_Q2
-Q: Do you want to continue to lesson Q3 [Y/N] ? 
+Q: Do you want to continue to lesson Q3 [Y/N] ?
 N:_Q_MENU
 G:_Q_S_Q3
 *:_Q_E_Q3
-Q: Do you want to continue to lesson Q4 [Y/N] ? 
+Q: Do you want to continue to lesson Q4 [Y/N] ?
 N:_Q_MENU
 G:_Q_S_Q4
 *:_Q_E_Q4
-Q: Do you want to continue to lesson Q5 [Y/N] ? 
+Q: Do you want to continue to lesson Q5 [Y/N] ?
 N:_Q_MENU
 G:_Q_S_Q5
 *:_Q_E_Q5
