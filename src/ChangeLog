@@ -1,3 +1,7 @@
+2021-05-01 Mihai Gătejescu <gus666xe@gmail.com>
+
+    * cmdline.c: Update copyright in version string
+
 2021-03-29 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* banner.c, banner.h, cursmenu.c, cursmenu.h, error.c, error.h,

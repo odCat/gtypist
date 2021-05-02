@@ -25,11 +25,18 @@
 
 #include "cmdline.h"
 
-const char *gengetopt_args_info_purpose = "GNU Typist is a typing tutor with several lessons for different keyboards and\nlanguages.  New lessons can be written by the user easily.";
+const char *gengetopt_args_info_purpose =
+"GNU Typist is a typing tutor with several lessons for different keyboards and\n"
+"languages.  New lessons can be written by the user easily.";
 
 const char *gengetopt_args_info_usage = "Usage: " CMDLINE_PARSER_PACKAGE " [OPTIONS]... [SCRIPT]...";
 
-const char *gengetopt_args_info_versiontext = "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\nCopyright (C) 2003, 2004, 2008, 2011, 2012 GNU Typist Development Team.\nThis program comes with ABSOLUTELY NO WARRANTY; for details\nplease see the file 'COPYING' supplied with the source code.\nThis is free software, and you are welcome to redistribute it\nunder certain conditions; again, see 'COPYING' for details.\nThis program is released under the GNU General Public License.\n\nWritten by Simon Baldwin";
+const char *gengetopt_args_info_versiontext =
+"Copyright (C) 2021 Felix Natter, Mihai Gătejescu\n"
+"Created by Simon Baldwin\n"
+"License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.";
 
 const char *gengetopt_args_info_description = "";
 
@@ -53,7 +60,13 @@ const char *gengetopt_args_info_help[] = {
   "      --banner-colors=F,B,P,V  set top banner colours: (F)oreground,\n                                 (B)ackground, (P)ackage and (V)ersion\n                                 (default=`6,0,5,1')",
   "      --scoring=MODE           set scoring mode; valid values are \"wpm\"\n                                 (words per minute) and \"cpm\" (characters per\n                                 minute)  (possible values=\"wpm\", \"cpm\")",
   "      --no-welcome-screen      don't show beginner tutorial message at start-up\n                                 (default=off)",
-  "\nIf not supplied, script-file defaults to the 'gtypist.typ' that came with this\nsoftware.  If you specify a script, the path $GTYPIST_PATH is searched for\nscript files.\n\nExamples:\n\nTo run the default lesson in english 'gtypist.typ':\n  gtypist\n\nTo run the lesson in spanish:\n  gtypist esp.typ\n\nTo instruct gtypist to look for lesson 'bar.typ' in a non standard directory:\n  GTYPIST_PATH=\"/home/foo\" gtypist bar.typ\n\nTo run the lesson in the file '/tmp/test.typ', starting at label 'TEST1', using\nthe terminal's cursor, and run silently:\n  gtypist -t -q -l TEST1 /temp/test.typ\n\nReport bugs to <bug-gtypist@gnu.org>.",
+  "\nIf not supplied, script-file defaults to the 'gtypist.typ' that came with this\n"
+      "software.  If you specify a script, the path $GTYPIST_PATH is searched for\n"
+      "script files.\n\nExamples:\n\nTo run the default lesson in english 'gtypist.typ':\n  gtypist\n\n"
+      "To run the lesson in spanish:\n  gtypist esp.typ\n\n"
+      "To instruct gtypist to look for lesson 'bar.typ' in a non standard directory:\n  GTYPIST_PATH=\"/home/foo\" gtypist bar.typ\n"
+      "\nTo run the lesson in the file '/tmp/test.typ', starting at label 'TEST1', using\nthe terminal's cursor, and run silently:\n"
+      "  gtypist -t -q -l TEST1 /temp/test.typ\n\nReport bugs to <bug-gtypist@gnu.org>.",
     0
 };
 
@@ -155,7 +168,7 @@ void clear_args (struct gengetopt_args_info *args_info)
   args_info->scoring_arg = scoring__NULL;
   args_info->scoring_orig = NULL;
   args_info->no_welcome_screen_flag = 0;
-  
+
 }
 
 static
@@ -182,7 +195,7 @@ void init_args_info(struct gengetopt_args_info *args_info)
   args_info->banner_colors_help = gengetopt_args_info_help[16] ;
   args_info->scoring_help = gengetopt_args_info_help[17] ;
   args_info->no_welcome_screen_help = gengetopt_args_info_help[18] ;
-  
+
 }
 
 void
@@ -193,7 +206,7 @@ cmdline_parser_print_version (void)
      CMDLINE_PARSER_VERSION);
 
   if (strlen(gengetopt_args_info_versiontext) > 0)
-    printf("\n%s\n", gengetopt_args_info_versiontext);
+    printf("%s\n", gengetopt_args_info_versiontext);
 }
 
 static void print_help_common(void) {
@@ -235,7 +248,7 @@ void
 cmdline_parser_params_init(struct cmdline_parser_params *params)
 {
   if (params)
-    { 
+    {
       params->override = 0;
       params->initialize = 1;
       params->check_required = 1;
@@ -247,9 +260,9 @@ cmdline_parser_params_init(struct cmdline_parser_params *params)
 struct cmdline_parser_params *
 cmdline_parser_params_create(void)
 {
-  struct cmdline_parser_params *params = 
+  struct cmdline_parser_params *params =
     (struct cmdline_parser_params *)malloc(sizeof(struct cmdline_parser_params));
-  cmdline_parser_params_init(params);  
+  cmdline_parser_params_init(params);
   return params;
 }
 
@@ -277,8 +290,8 @@ cmdline_parser_release (struct gengetopt_args_info *args_info)
   free_string_field (&(args_info->banner_colors_arg));
   free_string_field (&(args_info->banner_colors_orig));
   free_string_field (&(args_info->scoring_orig));
-  
-  
+
+
   for (i = 0; i < args_info->inputs_num; ++i)
     free (args_info->inputs [i]);
 
@@ -330,7 +343,7 @@ write_into_file(FILE *outfile, const char *opt, const char *arg, const char *val
   int found = -1;
   if (arg) {
     if (values) {
-      found = check_possible_values(arg, values);      
+      found = check_possible_values(arg, values);
     }
     if (found >= 0)
       fprintf(outfile, "%s=\"%s\" # %s\n", opt, arg, values[found]);
@@ -391,7 +404,7 @@ cmdline_parser_dump(FILE *outfile, struct gengetopt_args_info *args_info)
     write_into_file(outfile, "scoring", args_info->scoring_orig, cmdline_parser_scoring_values);
   if (args_info->no_welcome_screen_given)
     write_into_file(outfile, "no-welcome-screen", 0, 0 );
-  
+
 
   i = EXIT_SUCCESS;
   return i;
@@ -456,7 +469,7 @@ cmdline_parser_ext (int argc, char **argv, struct gengetopt_args_info *args_info
       cmdline_parser_free (args_info);
       exit (EXIT_FAILURE);
     }
-  
+
   return result;
 }
 
@@ -465,7 +478,7 @@ cmdline_parser2 (int argc, char **argv, struct gengetopt_args_info *args_info, i
 {
   int result;
   struct cmdline_parser_params params;
-  
+
   params.override = override;
   params.initialize = initialize;
   params.check_required = check_required;
@@ -479,7 +492,7 @@ cmdline_parser2 (int argc, char **argv, struct gengetopt_args_info *args_info, i
       cmdline_parser_free (args_info);
       exit (EXIT_FAILURE);
     }
-  
+
   return result;
 }
 
@@ -514,7 +527,7 @@ static char *package_name = 0;
  */
 static
 int update_arg(void *field, char **orig_field,
-               unsigned int *field_given, unsigned int *prev_given, 
+               unsigned int *field_given, unsigned int *prev_given,
                char *value, const char *possible_values[],
                const char *default_value,
                cmdline_parser_arg_type arg_type,
@@ -535,11 +548,11 @@ int update_arg(void *field, char **orig_field,
   if (!multiple_option && prev_given && (*prev_given || (check_ambiguity && *field_given)))
     {
       if (short_opt != '-')
-        fprintf (stderr, "%s: `--%s' (`-%c') option given more than once%s\n", 
+        fprintf (stderr, "%s: `--%s' (`-%c') option given more than once%s\n",
                package_name, long_opt, short_opt,
                (additional_error ? additional_error : ""));
       else
-        fprintf (stderr, "%s: `--%s' option given more than once%s\n", 
+        fprintf (stderr, "%s: `--%s' option given more than once%s\n",
                package_name, long_opt,
                (additional_error ? additional_error : ""));
       return 1; /* failure */
@@ -548,16 +561,16 @@ int update_arg(void *field, char **orig_field,
   if (possible_values && (found = check_possible_values((value ? value : default_value), possible_values)) < 0)
     {
       if (short_opt != '-')
-        fprintf (stderr, "%s: %s argument, \"%s\", for option `--%s' (`-%c')%s\n", 
+        fprintf (stderr, "%s: %s argument, \"%s\", for option `--%s' (`-%c')%s\n",
           package_name, (found == -2) ? "ambiguous" : "invalid", value, long_opt, short_opt,
           (additional_error ? additional_error : ""));
       else
-        fprintf (stderr, "%s: %s argument, \"%s\", for option `--%s'%s\n", 
+        fprintf (stderr, "%s: %s argument, \"%s\", for option `--%s'%s\n",
           package_name, (found == -2) ? "ambiguous" : "invalid", value, long_opt,
           (additional_error ? additional_error : ""));
       return 1; /* failure */
     }
-    
+
   if (field_given && *field_given && ! override)
     return 0;
   if (prev_given)
@@ -635,14 +648,14 @@ cmdline_parser_internal (
 
   int error = 0;
   struct gengetopt_args_info local_args_info;
-  
+
   int override;
   int initialize;
   int check_required;
   int check_ambiguity;
-  
+
   package_name = argv[0];
-  
+
   override = params->override;
   initialize = params->initialize;
   check_required = params->check_required;
@@ -702,196 +715,196 @@ cmdline_parser_internal (
           exit (EXIT_SUCCESS);
 
         case 'b':	/* track personal best typing speeds.  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->personal_best_flag), 0, &(args_info->personal_best_given),
               &(local_args_info.personal_best_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "personal-best", 'b',
               additional_error))
             goto failure;
-        
+
           break;
         case 'e':	/* default maximum error percentage; valid values are between 0.0 and 100.0.  */
-        
-        
-          if (update_arg( (void *)&(args_info->max_error_arg), 
+
+
+          if (update_arg( (void *)&(args_info->max_error_arg),
                &(args_info->max_error_orig), &(args_info->max_error_given),
               &(local_args_info.max_error_given), optarg, 0, "3.0", ARG_FLOAT,
               check_ambiguity, override, 0, 0,
               "max-error", 'e',
               additional_error))
             goto failure;
-        
+
           break;
         case 'n':	/* turn off WPM timer in drills.  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->notimer_flag), 0, &(args_info->notimer_given),
               &(local_args_info.notimer_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "notimer", 'n',
               additional_error))
             goto failure;
-        
+
           break;
         case 't':	/* use the terminal's hardware cursor.  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->term_cursor_flag), 0, &(args_info->term_cursor_given),
               &(local_args_info.term_cursor_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "term-cursor", 't',
               additional_error))
             goto failure;
-        
+
           break;
         case 'f':	/* cursor flash period P*.1 sec; valid values are between 0 and 512; this is ignored if -t is specified.  */
-        
-        
-          if (update_arg( (void *)&(args_info->curs_flash_arg), 
+
+
+          if (update_arg( (void *)&(args_info->curs_flash_arg),
                &(args_info->curs_flash_orig), &(args_info->curs_flash_given),
               &(local_args_info.curs_flash_given), optarg, 0, "10", ARG_INT,
               check_ambiguity, override, 0, 0,
               "curs-flash", 'f',
               additional_error))
             goto failure;
-        
+
           break;
         case 'c':	/* set (F)orground and (B)ackground colours, where available.  */
-        
-        
-          if (update_arg( (void *)&(args_info->colours_arg), 
+
+
+          if (update_arg( (void *)&(args_info->colours_arg),
                &(args_info->colours_orig), &(args_info->colours_given),
               &(local_args_info.colours_given), optarg, 0, "7,0", ARG_STRING,
               check_ambiguity, override, 0, 0,
               "colours", 'c',
               additional_error))
             goto failure;
-        
+
           break;
         case 's':	/* don't beep on errors.  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->silent_flag), 0, &(args_info->silent_given),
               &(local_args_info.silent_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "silent", 's',
               additional_error))
             goto failure;
-        
+
           break;
         case 'q':	/* same as --silent.  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->quiet_flag), 0, &(args_info->quiet_given),
               &(local_args_info.quiet_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "quiet", 'q',
               additional_error))
             goto failure;
-        
+
           break;
         case 'l':	/* start the lesson at the given label.  */
-        
-        
-          if (update_arg( (void *)&(args_info->start_label_arg), 
+
+
+          if (update_arg( (void *)&(args_info->start_label_arg),
                &(args_info->start_label_orig), &(args_info->start_label_given),
               &(local_args_info.start_label_given), optarg, 0, 0, ARG_STRING,
               check_ambiguity, override, 0, 0,
               "start-label", 'l',
               additional_error))
             goto failure;
-        
+
           break;
         case 'w':	/* try to mimic word processors.  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->word_processor_flag), 0, &(args_info->word_processor_given),
               &(local_args_info.word_processor_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "word-processor", 'w',
               additional_error))
             goto failure;
-        
+
           break;
         case 'k':	/* forbid the user to skip exercises.  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->no_skip_flag), 0, &(args_info->no_skip_given),
               &(local_args_info.no_skip_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "no-skip", 'k',
               additional_error))
             goto failure;
-        
+
           break;
         case 'i':	/* highlight errors with reverse video.  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->show_errors_flag), 0, &(args_info->show_errors_given),
               &(local_args_info.show_errors_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "show-errors", 'i',
               additional_error))
             goto failure;
-        
+
           break;
         case 'a':	/* try to sync ahead (i.e. h_s if you type hs).  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->sync_ahead_flag), 0, &(args_info->sync_ahead_given),
               &(local_args_info.sync_ahead_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "sync-ahead", 'a',
               additional_error))
             goto failure;
-        
+
           break;
         case 'S':	/* do not ask confirmation questions.  */
-        
-        
+
+
           if (update_arg((void *)&(args_info->always_sure_flag), 0, &(args_info->always_sure_given),
               &(local_args_info.always_sure_given), optarg, 0, 0, ARG_FLAG,
               check_ambiguity, override, 1, 0, "always-sure", 'S',
               additional_error))
             goto failure;
-        
+
           break;
 
         case 0:	/* Long option with no short option */
           /* set top banner colours: (F)oreground, (B)ackground, (P)ackage and (V)ersion.  */
           if (strcmp (long_options[option_index].name, "banner-colors") == 0)
           {
-          
-          
-            if (update_arg( (void *)&(args_info->banner_colors_arg), 
+
+
+            if (update_arg( (void *)&(args_info->banner_colors_arg),
                  &(args_info->banner_colors_orig), &(args_info->banner_colors_given),
                 &(local_args_info.banner_colors_given), optarg, 0, "6,0,5,1", ARG_STRING,
                 check_ambiguity, override, 0, 0,
                 "banner-colors", '-',
                 additional_error))
               goto failure;
-          
+
           }
           /* set scoring mode; valid values are \"wpm\" (words per minute) and \"cpm\" (characters per minute).  */
           else if (strcmp (long_options[option_index].name, "scoring") == 0)
           {
-          
-          
-            if (update_arg( (void *)&(args_info->scoring_arg), 
+
+
+            if (update_arg( (void *)&(args_info->scoring_arg),
                  &(args_info->scoring_orig), &(args_info->scoring_given),
                 &(local_args_info.scoring_given), optarg, cmdline_parser_scoring_values, 0, ARG_ENUM,
                 check_ambiguity, override, 0, 0,
                 "scoring", '-',
                 additional_error))
               goto failure;
-          
+
           }
           /* don't show beginner tutorial message at start-up.  */
           else if (strcmp (long_options[option_index].name, "no-welcome-screen") == 0)
           {
-          
-          
+
+
             if (update_arg((void *)&(args_info->no_welcome_screen_flag), 0, &(args_info->no_welcome_screen_given),
                 &(local_args_info.no_welcome_screen_given), optarg, 0, 0, ARG_FLAG,
                 check_ambiguity, override, 1, 0, "no-welcome-screen", '-',
                 additional_error))
               goto failure;
-          
+
           }
-          
+
           break;
         case '?':	/* Invalid option.  */
           /* `getopt_long' already printed an error message.  */
@@ -938,7 +951,7 @@ cmdline_parser_internal (
   return 0;
 
 failure:
-  
+
   cmdline_parser_release (&local_args_info);
   return (EXIT_FAILURE);
 }
@@ -1101,7 +1114,7 @@ cmdline_parser_configfile (
   params.check_required = check_required;
   params.check_ambiguity = 0;
   params.print_errors = 1;
-  
+
   return cmdline_parser_config_file (filename, args_info, &params);
 }
 
@@ -1152,6 +1165,6 @@ cmdline_parser_config_file (const char *filename,
       cmdline_parser_free (args_info);
       exit (EXIT_FAILURE);
     }
-  
+
   return result;
 }
