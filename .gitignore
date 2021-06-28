@@ -77,3 +77,5 @@ TODO-personal-*
 # ignore IntelliJ project specific settings folder
 .idea
 
+# ignore web folder with csv repo
+web/

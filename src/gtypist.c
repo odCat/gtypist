@@ -142,13 +142,13 @@ static int 	cl_prog_version_colour = 1; /* program version colour */
 static bool	global_resp_flag = TRUE;
 static char	global_prior_command = C_CONT;
 
-static float	global_error_max = -1.0f;
+static float global_error_max = -1.0f;
 static bool	global_error_max_persistent = FALSE;
 
-static struct	label_entry *global_on_failure_label = NULL;
+static struct label_entry *global_on_failure_label = NULL;
 static bool	global_on_failure_label_persistent = FALSE;
 
-static char 	*global_script_filename = NULL;
+static char *global_script_filename = NULL;
 
 static char	*global_home_dir = NULL;
 
@@ -190,7 +190,7 @@ static void catcher( int signal );
 static FILE *open_script( const char *filename );
 static void do_bell();
 static bool get_best_speed( const char *script_filename,
-                    const char *excersise_label, double *adjusted_cpm );
+                            const char *excersise_label, double *adjusted_cpm );
 static void put_best_speed(const char *script_filename,
                            const char *exercise_label, double adjusted_cpm );
 const char *get_bestlog_filename();
@@ -246,7 +246,7 @@ int getch_fl( int cursor_char )
         curs_set( 0 ); refresh();
         move( LINES - 1, COLS - 1 );
         if ( ( cl_args.curs_flash_arg / 2 ) > 0 )
-          {
+        {
             halfdelay( cl_args.curs_flash_arg / 2 );
             while ( get_widech(&return_char) == ERR )
               {
@@ -258,12 +258,10 @@ int getch_fl( int cursor_char )
                 move( LINES - 1, COLS - 1 );
                 alternate = !alternate;
               }
-          }
-        else
-          {
+        } else {
             cbreak();
             get_widech(&return_char);
-          }
+        }
         move( y, x );
         wideaddch(cursor_char);
         move( y, x );
@@ -1233,14 +1231,14 @@ bool do_query_simple ( char *text )
       resp = getch_fl( ASCII_NULL );
 
       if (towideupper (resp) == 'Y' || towideupper (resp) == YN[0])
-	resp = 0;
+        resp = 0;
       else if (towideupper (resp) == 'N' || towideupper (resp) == YN[2])
-	resp = -1;
+        resp = -1;
     /* Some PDCURSES implementations return -1 when no key is pressed
        for a second or so.  So, unless resp is explicitly set to Y/N,
        don't exit! */
       else
-	resp = 2;
+        resp = 2;
     }  while (resp != 0 && resp != -1);
 
   /* clear out the message line */
@@ -1369,23 +1367,23 @@ void do_error_max_set( FILE *script, char *line )
     /* check for incorrect (not so readable) syntax */
     data = data + strlen( data ) - 1;
     if (*data != '%') {
-      /* find out what's wrong */
-      if (star && isspace( *data )) {
-	/* find out whether `line' contains '%' */
-	while (data != SCR_DATA( line ) && isspace( *data ))
-	  {
-	    *data = '\0';
-	    --data;
-	  }
-	if (*data == '%')
-	  /* xgettext: no-c-format */
-	  fatal_error( _("'*' must immediately follow '%'"), copy_of_line );
-	else
-	  /* xgettext: no-c-format */
-	  fatal_error( _("missing '%'"), copy_of_line );
-      } else
-	/* xgettext: no-c-format */
-	fatal_error( _("missing '%'"), copy_of_line );
+        /* find out what's wrong */
+        if (star && isspace( *data )) {
+        /* find out whether `line' contains '%' */
+        while (data != SCR_DATA( line ) && isspace( *data ))
+          {
+            *data = '\0';
+            --data;
+          }
+        if (*data == '%')
+          /* xgettext: no-c-format */
+          fatal_error( _("'*' must immediately follow '%'"), copy_of_line );
+        else
+          /* xgettext: no-c-format */
+          fatal_error( _("missing '%'"), copy_of_line );
+          } else
+        /* xgettext: no-c-format */
+        fatal_error( _("missing '%'"), copy_of_line );
     }
     if (isspace( *(data - 1) ))
       /* xgettext: no-c-format */
@@ -1889,7 +1887,7 @@ void do_bell() {
 }
 
 bool get_best_speed( const char *script_filename,
-		     const char *excersise_label, double *adjusted_cpm )
+                     const char *excersise_label, double *adjusted_cpm )
 {
   FILE *blfile;       				/* bestlog file */
   char *search;			        	/* string to match in bestlog */
@@ -1991,9 +1989,9 @@ void put_best_speed(const char *script_filename,
 
   /* append new score */
   fprintf(blfile, "%04d-%02d-%02d %02d:%02d:%02d %s:%s %g\n",
-	   now->tm_year + 1900, now->tm_mon + 1, now->tm_mday, now->tm_hour,
+          now->tm_year + 1900, now->tm_mon + 1, now->tm_mday, now->tm_hour,
           now->tm_min, now->tm_sec, fixed_script_filename, exercise_label,
-          adjusted_cpm );
+          adjusted_cpm);
 
   /* cleanup */
   free( fixed_script_filename );
