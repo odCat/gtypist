@@ -27,4 +27,4 @@ void do_speed_box( int total_chars, int error_chars,
 				   double cpm, double adjusted_cpm, bool use_cpm,
 				   bool had_best_speed, bool new_best_speed, double best_cpm );
 
-#endif /* INFOVIEW_H */
+#endif /* SPEEDBOX_H */

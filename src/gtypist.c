@@ -154,12 +154,12 @@ static char	*global_home_dir = NULL;
 
 /* a global area for associating function keys with labels */
 #define NFKEYS			12		/* num of function keys */
-static char	*fkey_bindings[ NFKEYS ] =
+static char	*fkey_bindings[NFKEYS] =
   { NULL, NULL, NULL, NULL, NULL, NULL,
     NULL, NULL, NULL, NULL, NULL, NULL };
 /* table of pseudo-function keys, to allow ^Q to double as Fkey1, etc */
 #define	CTRL_OFFSET		0100		/* ctrl keys are 'X' - 0100 */
-static	char	pfkeys[ NFKEYS ] =
+static	char	pfkeys[NFKEYS] =
   { 'Q'-CTRL_OFFSET, 'W'-CTRL_OFFSET, 'E'-CTRL_OFFSET, 'R'-CTRL_OFFSET,
     'T'-CTRL_OFFSET, 'Y'-CTRL_OFFSET, 'U'-CTRL_OFFSET, 'I'-CTRL_OFFSET,
     'O'-CTRL_OFFSET, 'P'-CTRL_OFFSET, 'A'-CTRL_OFFSET, 'S'-CTRL_OFFSET };
@@ -169,7 +169,7 @@ static bool user_is_always_sure = FALSE;
 /* prototypes */
 
 static int getch_fl( int cursor_char );
-static bool wait_user (FILE *script, char *message, char *mode );
+static bool wait_user_input (FILE *script, char *message, char *mode );
 static void display_speed( int total_chars, double elapsed_time,
                           int errcount );
 static void do_keybind( FILE *script, char *line );
@@ -195,18 +195,18 @@ static void put_best_speed(const char *script_filename,
                            const char *exercise_label, double adjusted_cpm );
 const char *get_bestlog_filename();
 
-void bind_F12 (const char *label)
+void bind_F12(const char *label)
 {
   if (!label)
      return;
 
-  if (fkey_bindings [11])
-     free (fkey_bindings [11]);
-  fkey_bindings [11] = strdup (label);
-  if (! fkey_bindings [11])
+  if (fkey_bindings[11])
+     free (fkey_bindings[11]);
+  fkey_bindings[11] = strdup(label);
+  if (!fkey_bindings[11])
   {
-       perror ("strdup");
-       fatal_error (_("internal error: strdup"), label);
+       perror("strdup");
+       fatal_error(_("internal error: strdup"), label);
   }
 }
 
@@ -218,66 +218,62 @@ void bind_F12 (const char *label)
   xterms seem not make the cursor invisible either.
 */
 static
-int getch_fl( int cursor_char )
+int getch_fl(int cursor_char)
 {
-  int	y, x;				/* saved cursor posn */
+  int	y, x;			    	/* cursor position */
   int	return_char;			/* return value */
   bool	alternate = FALSE;		/* flashes control */
 
   /* save the cursor position - we're going to need it */
-  getyx( stdscr, y, x );
+  getyx(stdscr, y, x);
 
   /* if no cursor then do our best not to show one */
-  if ( cursor_char == ASCII_NULL )
-    {
+  if (cursor_char == ASCII_NULL)
+  {
       /* degrade to cursor-less getch */
-      curs_set( 0 ); refresh();
-      move( LINES - 1, COLS - 1 );
+      curs_set(0); refresh();
+      move(LINES - 1, COLS - 1);
       cbreak();
       get_widech(&return_char);
-      move( y, x );
-    }
-  else
-    {
+      move(y, x);
+  } else {
       /* produce a flashing cursor, or not, as requested */
-      if ( !cl_args.term_cursor_flag ) {
-        /* go for the flashing block here */
+      if (!cl_args.term_cursor_flag)
+      { /* go for the flashing block here */
         wideaddch_rev(cursor_char);
-        curs_set( 0 ); refresh();
-        move( LINES - 1, COLS - 1 );
-        if ( ( cl_args.curs_flash_arg / 2 ) > 0 )
+        curs_set(0); refresh();
+        move(LINES - 1, COLS - 1);
+        if ((cl_args.curs_flash_arg / 2) > 0)
         {
-            halfdelay( cl_args.curs_flash_arg / 2 );
-            while ( get_widech(&return_char) == ERR )
-              {
-                move( y, x );
-                if ( alternate )
+            halfdelay(cl_args.curs_flash_arg / 2);
+            while (get_widech(&return_char) == ERR)
+            {
+                move(y, x);
+                if (alternate)
                   wideaddch_rev(cursor_char);
                 else
                   wideaddch(cursor_char);
-                move( LINES - 1, COLS - 1 );
+                move(LINES - 1, COLS - 1);
                 alternate = !alternate;
-              }
+            }
         } else {
             cbreak();
             get_widech(&return_char);
         }
-        move( y, x );
+        move(y, x);
         wideaddch(cursor_char);
-        move( y, x );
-      }
-      else
-        {
+        move(y, x);
+      } else {
           /* just use the terminal's cursor - this is easy */
-          curs_set( 1 ); refresh();
+          curs_set(1); refresh();
           cbreak(); //return_char = getch();
           get_widech(&return_char);
-          curs_set( 0 ); refresh();
+          curs_set(0); refresh();
         }
     }
 
   /* return what key was pressed */
-  return ( return_char );
+  return (return_char);
 }
 
 /*
@@ -285,39 +281,39 @@ int getch_fl( int cursor_char )
   returned if the user pressed escape to indicate that seek_label was called
 */
 static
-bool wait_user (FILE *script, char *message, char *mode)
+bool wait_user_input(FILE *script, char *message, char *mode)
 {
   int	resp;			/* response character */
   bool	seek_done = FALSE;	/* was seek_label called? */
 
   /* move to the message line print a prompt */
-  move( MESSAGE_LINE, 0 ); clrtoeol();
-  move( MESSAGE_LINE, COLS - utf8len( mode ) - 2 );
+  move(MESSAGE_LINE, 0); clrtoeol();
+  move(MESSAGE_LINE, COLS - utf8len(mode) - 2);
   wideaddstr_rev(mode);
-  move( MESSAGE_LINE, 0 );
+  move(MESSAGE_LINE, 0);
   wideaddstr_rev(message);
 
   do {
-    resp = getch_fl (ASCII_NULL);
+    resp = getch_fl(ASCII_NULL);
 
     /* in tutorial mode only, escape has the special purpose that we exit to a
        menu (or quit if there is none) */
     if (resp == ASCII_ESC && mode == MODE_TUTORIAL)
     {
       // Return to the last F12-binded location
-      if( fkey_bindings[ 11 ] && *( fkey_bindings[ 11 ] ) )
+      if (fkey_bindings[11] && *(fkey_bindings[11]))
       {
-          seek_label( script, fkey_bindings[ 11 ], NULL );
+          seek_label(script, fkey_bindings[11], NULL);
           seek_done = TRUE;
       }
       else
-          do_exit( script );
+          do_exit(script);
       break;
     }
   } while (resp != ASCII_NL && resp != ASCII_SPACE && resp != ASCII_ESC);
 
   /* clear the message line */
-  move( MESSAGE_LINE, 0 ); clrtoeol();
+  move(MESSAGE_LINE, 0); clrtoeol();
 
   return seek_done;
 }
@@ -439,10 +435,10 @@ void do_tutorial( FILE *script, char *line )
   /* wait for a return, unless the next command is a query,
      when we can skip it to save the user keystrokes */
   if ( SCR_COMMAND( line ) != C_QUERY )
-    seek_done = wait_user (script, WAIT_MESSAGE, MODE_TUTORIAL);
+    seek_done = wait_user_input(script, WAIT_MESSAGE, MODE_TUTORIAL);
   global_prior_command = C_TUTORIAL;
 
-  /* if seek_label has been called (in wait_user) then we need to read in the
+  /* if seek_label has been called (in wait_user_input) then we need to read in the
      next line of the script in to `line` */
   if (seek_done)
     get_script_line( script, line );
@@ -736,7 +732,7 @@ void do_drill( FILE *script, char *line )
               is_error_too_high(chars_typed, errors))
           {
             sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-            wait_user (script, message, MODE_DRILL);
+              wait_user_input(script, message, MODE_DRILL);
 
             /* check for F-command */
             if (global_on_failure_label != NULL)
@@ -752,7 +748,7 @@ void do_drill( FILE *script, char *line )
               /* reset value unless persistent */
               if (!global_on_failure_label_persistent)
                 global_on_failure_label = NULL;
-              wait_user (script, message, MODE_DRILL);
+                wait_user_input(script, message, MODE_DRILL);
               seek_done = TRUE;
               break;
             }
@@ -1043,8 +1039,8 @@ void do_speedtest( FILE *script, char *line )
         if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&
             is_error_too_high(chars_typed, errors))
         {
-          sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-          wait_user (script, message, MODE_SPEEDTEST);
+          sprintf(message, ERROR_TOO_HIGH_MSG, global_error_max);
+          wait_user_input(script, message, MODE_SPEEDTEST);
 
           /* check for F-command */
           if (global_on_failure_label != NULL)
@@ -1052,7 +1048,7 @@ void do_speedtest( FILE *script, char *line )
             /* move to the label position in the file */
             if (fseek(script, global_on_failure_label->offset, SEEK_SET )
                 == -1)
-              fatal_error( _("internal error: fseek"), NULL );
+              fatal_error(_("internal error: fseek"), NULL);
             global_line_counter = global_on_failure_label->line_count;
             /* tell the user about the misery :) */
             sprintf(message,SKIPBACK_VIA_F_MSG,
@@ -1060,7 +1056,7 @@ void do_speedtest( FILE *script, char *line )
             /* reset value unless persistent */
             if (!global_on_failure_label_persistent)
                 global_on_failure_label = NULL;
-            wait_user (script, message, MODE_SPEEDTEST);
+            wait_user_input(script, message, MODE_SPEEDTEST);
             seek_done = TRUE;
             break;
           }

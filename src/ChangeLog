@@ -1,3 +1,7 @@
+2021-06-30 Mihai Gătejescu <gus666xe@gmail.com>
+
+    * gtypist.c: Rename wait_user to wait_user_input
+
 2021-05-01 Mihai Gătejescu <gus666xe@gmail.com>
 
     * cmdline.c: Update copyright in version string
@@ -213,7 +217,7 @@
 	* gtypist.c: fixed a bug where pressing escape during wait_user()
 	  caused seek_label() to be called, but get_script_line() was never re-
 	  called. This meant that the previously buffered next script line
-	  (from before the seek) would still get executed. wait_user() now
+	  (from before the seek) would still get executed. wait_user_input() now
 	  treats escape as a "continue" character for all but tutorial prompts,
 	  which now handle the seek properly by calling get_script_line().
 

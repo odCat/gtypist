@@ -319,12 +319,12 @@ void seek_label( FILE *script, char *label, char *ref_line )
 /*
   exit from the program (implied on eof)
 */
-void do_exit( FILE *script )
+void do_exit(FILE *script)
 {
   /* close up all files, reset the screen stuff, and exit */
-  fclose( script );
+  fclose(script);
   /* if ( cl_colour && has_colors() )*/
-  wbkgdset( stdscr, 0 );
+  wbkgdset(stdscr, 0);
   clear(); refresh(); endwin();
   if (isUTF8Locale)
   {
@@ -332,7 +332,7 @@ void do_exit( FILE *script )
   } else {
       printf("%s", convertUTF8ToCurrentEncoding(_("Happy Typing!\n\n")));
   }
-  exit( 0 );
+  exit(0);
 }
 
 /*

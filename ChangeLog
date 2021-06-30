@@ -682,7 +682,7 @@
 
 2001-09-07  Felix Natter  <fnatter@gmx.net>
 
-	* gtypist.c: add macro ASCII_ENTER which is used in wait_user
+	* gtypist.c: add macro ASCII_ENTER which is used in wait_user_input
 	(necessary because pdcurs-2.4 returns 0x0D for Enter if raw() is used)
 	* gtypist.c (do_drill, do_speedtest): translate 0x0D (DOS newline)
 	to ASCII_NL
