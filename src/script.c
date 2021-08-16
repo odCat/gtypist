@@ -37,7 +37,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include <utf8.h>
+#include "utf8.h"
 
 #include "gettext.h"
 #define _(String) gettext (String)
@@ -160,7 +160,7 @@ void build_label_index( FILE *script ) {
         if( *line_iterator == ' ' )
           fatal_error( _("label contains space"), line );
         ++line_iterator;
-      }
+}
 
       /* make some space for the label string */
       new_label->label =
@@ -204,41 +204,37 @@ void build_label_index( FILE *script ) {
   get the next non-comment, non-blank line from the script file
   and check its basic format
 */
-void get_script_line( FILE *script, char *line )
+void get_script_line(FILE *script, char *line)
 {
   /* get lines until not empty/comment, or eof found */
-  fgets(line, MAX_SCR_LINE, script);
-  global_line_counter++;
-  while (! feof (script) &&
-	   (line_is_empty (line) ||
-	    SCR_COMMAND (line) == C_COMMENT ||
-	    SCR_COMMAND (line) == C_ALT_COMMENT))
-  {
-    fgets(line, MAX_SCR_LINE, script);
-    global_line_counter++;
-  }
+  do {
+      if (NULL == fgets(line, MAX_SCR_LINE, script) && ferror(script))
+          fatal_error(_("Error while reading file"), line);
+      ++global_line_counter;
+  } while (!feof(script) &&
+              (line_is_empty(line) || SCR_COMMAND(line) == C_COMMENT ||
+               SCR_COMMAND(line) == C_ALT_COMMENT)
+          );
 
   /* if a line was read then check it */
-  if ( ! feof( script ))
+  if (!feof(script))
   {
     /* Get rid of trailing spaces and newline */
-    while( *line && isspace( line[strlen( line )-1] ) )
-      line [strlen (line) - 1] = ASCII_NULL;
+    while(*line && isspace(line[strlen(line)-1]))
+      line[strlen(line) - 1] = ASCII_NULL;
 
     // input is UTF-8 !!
     int numChars = utf8len(line);
     if (numChars == -1)
-      fatal_error( _("Invalid multibyte sequence (wrong encoding?)"), line);
-    if ( numChars < MIN_SCR_LINE )
-      fatal_error( _("data shortage"), line );
-    if ( SCR_SEP( line ) != C_SEP )
-      fatal_error( _("missing ':'"), line );
-    if ( SCR_COMMAND( line ) != C_LABEL
-         && SCR_COMMAND( line ) != C_GOTO
-         && SCR_COMMAND( line ) != C_YGOTO
-         && SCR_COMMAND( line ) != C_NGOTO
-         && utf8len(SCR_DATA( line )) > COLS )
-      fatal_error( _("line too long for screen"), line );
+      fatal_error(_("Invalid multibyte sequence (wrong encoding?)"), line);
+    if (numChars < MIN_SCR_LINE)
+      fatal_error(_("data shortage"), line);
+    if (SCR_SEP(line) != C_SEP)
+      fatal_error(_("missing ':'"), line);
+    if (SCR_COMMAND(line) != C_LABEL && SCR_COMMAND(line) != C_GOTO &&
+         SCR_COMMAND(line) != C_YGOTO && SCR_COMMAND(line) != C_NGOTO &&
+         utf8len(SCR_DATA(line)) > COLS)
+      fatal_error(_("line too long for screen"), line);
   }
 }
 
@@ -287,7 +283,7 @@ void seek_label( FILE *script, char *label, char *ref_line )
   int    hash;                 			/* hash index */
   char   err[MAX_SCR_LINE];             /* error message string */
 
-  if (!label) do_exit (script);
+  if (!label) do_exit(script);
 
   __update_last_label (label);
 

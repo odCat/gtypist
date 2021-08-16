@@ -1,3 +1,8 @@
+2021-08-16 Mihai Gătejescu <gus666xe@gmail.com>
+
+    * script.c, script.h: Solve a compiler warning by user the value
+    returned by fget
+
 2021-06-30 Mihai Gătejescu <gus666xe@gmail.com>
 
     * gtypist.c: Rename wait_user to wait_user_input
