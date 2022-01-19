@@ -271,7 +271,11 @@ int do_beginner_infoview()
                    firstLine, lastLine, numMsgLines);
     mvwideaddstr(LINES - 1, 0,
                  _("Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"));
-    get_widech(&ch);
+
+    if (ERR == get_widech(&ch))
+    {
+        fatal_error("internal error: get_widech", NULL);
+    }
   }
 
   /* free resources */

@@ -1,3 +1,7 @@
+2022-01-19 Mihai Gătejescu <gus666xe@gmail.com>
+
+    * cursmenu.c, infoview.c: Add an error checks for get_widech
+
 2021-08-16 Mihai Gătejescu <gus666xe@gmail.com>
 
     * script.c, script.h: Solve a compiler warning by user the value

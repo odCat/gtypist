@@ -356,7 +356,10 @@ char *do_menu (FILE *script, char *line)
 
     wattroff (stdscr, A_REVERSE);
 
-    get_widech( &ch );
+    if (ERR == get_widech(&ch))
+    {
+        fatal_error("internal error: get_widech", NULL);
+    }
     switch (ch)
     {
       case KEY_UP:
@@ -440,7 +443,6 @@ char *do_menu (FILE *script, char *line)
         goto cleanup;
 
       default:
-        // printf ("libncurses think that it's key \\%o\n", ch);
         break;
     }
 

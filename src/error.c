@@ -53,8 +53,8 @@ void fatal_error (const char *message, const char *line)
   clear(); refresh(); endwin();
 
   /* print out the error message and stop */
-  fprintf( stderr, "%s: %s %d: %s", argv0, _("line"), global_line_counter,
-          message );
+  fprintf( stderr, "%s: %s %d: %s", argv0, _("line"),
+          global_line_counter, message );
   if ( line != NULL )
     fprintf( stderr, ":\n%s\n", line );
   else
