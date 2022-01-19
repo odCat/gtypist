@@ -5,7 +5,7 @@
 ##               2017, 2018, 2019, 2020
 ##               Michael Opdenacker, Hynek Hanke, Paul Goins, Tim Marston,
 ##               Mihai Gătejescu
-## Copyright (C) 2021 Felix Natter, Mihai Gătejescu
+## Copyright (C) 2021, 2022 Felix Natter, Mihai Gătejescu
 ##
 ## GNU Typist is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by

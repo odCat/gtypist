@@ -5,7 +5,7 @@
 #               2017, 2018, 2019, 2020
 #               Felix Natter, Paul Goins, Tim Marston,
 #               clutton, Mihai Gătejescu
-# Copyright (C) 2021 Felix Natter, Mihai Gătejescu
+# Copyright (C) 2021, 2022 Felix Natter, Mihai Gătejescu
 #
 # This file is a part of GNU Typist
 #

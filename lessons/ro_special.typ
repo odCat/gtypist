@@ -1,6 +1,6 @@
 # Romanian special letters course for GNU Typist
 #
-# Copyright (C) 2018, 2019, 2020, 2021 Mihai Gătejescu
+# Copyright (C) 2018, 2019, 2020, 2021, 2022 Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -31,10 +31,10 @@ B:		Lecții pentru folosirea caracterelor speciale din limba Română
 T:
  :Bine a-ți venit
  :
- :Aceste lecții se concentrează pe acomodarea utilizatorul cu folosirea 
+ :Aceste lecții se concentrează pe acomodarea utilizatorul cu folosirea
  :caracterelor speciale ă, â, î, ș și ț.
  :
- :Este recomandat să se parcurgă, în prealabil, lecții care acoperă 
+ :Este recomandat să se parcurgă, în prealabil, lecții care acoperă
  :tehnicile de bază și tastele standard.
  :
  :GNU Typist oferă astfel de lecții în limba engleză.

@@ -1,7 +1,7 @@
 # GNU Typist - improved typing tutor program for UNIX systems
 #
 # Copyright (C) 2018, 2019, 2020  Daniel Long Sockwell, Mihai Gătejescu
-# Copyright (C) 2021 Mihai Gătejescu
+# Copyright (C) 2021, 2022 Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -37,8 +37,8 @@ M: "The P series contains the following 11 lessons"
 # Lesson P1—Special Characters Review
 *:SPECIAL_NUMS_REVIEW
 B:Lesson P1
-T:In the P series of lessons we work on special characters with an 
- :emphasis on characters that are used when writing code in programming 
+T:In the P series of lessons we work on special characters with an
+ :emphasis on characters that are used when writing code in programming
  :or markup languages.
  :
  :We will start by reviewing the special characters that share keys with
@@ -60,11 +60,11 @@ D:&&&& **** (((( )))) &*() )(*&
  :(()) &&** *&*& (&&) (**) (())
 
 I:(4) Practice with these characters
-D:)!(@ #*$& %^%^ @@)) $$&& *$*$ 
- :(@@) ##)( %^%^ !#*& )!)! @*@* 
+D:)!(@ #*$& %^%^ @@)) $$&& *$*$
+ :(@@) ##)( %^%^ !#*& )!)! @*@*
 
 I:(5) Try some sentences
-S:It is hard to believe, but 230 minus 220 times one half equals 5! 
+S:It is hard to believe, but 230 minus 220 times one half equals 5!
  :(And 5!, of course, equals 5 * 4 * 3 * 2 * 1.)
  :
  :username@domainname.com is the #1 most common format for email addresses.
@@ -102,7 +102,7 @@ S:# Hello world in Python 2
  :% Hello world in MATLAB
  :disp('Hello World!');
 
-Q:Do you want to continue to lesson P2 [Y/N] ? 
+Q:Do you want to continue to lesson P2 [Y/N] ?
 N:MENU
 
 
@@ -147,7 +147,7 @@ S:// Hello world in JavaScript
  :# Hello world in Perl 6
  :say 'Hello, World!';
  :
- :// Hello world in TypeScript 
+ :// Hello world in TypeScript
  :alert('Hello, World!');
  :
  :'Hello world in Visual Basic .NET
@@ -161,7 +161,7 @@ S:// Hello world in JavaScript
  :
  :End Class
 
-Q:Do you want to continue to lesson P3 [Y/N] ? 
+Q:Do you want to continue to lesson P3 [Y/N] ?
 N:MENU
 
 
@@ -194,11 +194,11 @@ D:'__' +/-= "--" ::++ ?__?
 I:(6) Try some sentences
 S:The hyphen ("-") is used for compound words; the en dash,
  :which is longer than a hyphen, is used to indicate a range.
- :If you cannot use a true en dash, some people accept two 
+ :If you cannot use a true en dash, some people accept two
  :hyphens ("--") instead.  The em dash is even longer than an
  :en dash, and is used to indicate a break in a sentence.  If
- :you cannot use a true em dash, some people accept three 
- :hyphens ("---") instead. 
+ :you cannot use a true em dash, some people accept three
+ :hyphens ("---") instead.
  :
  :If you cannot emphasise text by setting it in italic or by
  :underlining it, you can show emphasis with underscores ("like
@@ -215,11 +215,11 @@ S:int first_number = 7;
  :
  :let a = 'string';
  :let b = 'string';
- :if (a === b) console.log('"a" and "b" are equal'); 
+ :if (a === b) console.log('"a" and "b" are equal');
  :
  :if ((10 / 10) === 5 % 4) console.log('Yep, that is how math works');
 
-Q:Do you want to continue to lesson P4 [Y/N] ? 
+Q:Do you want to continue to lesson P4 [Y/N] ?
 N:MENU
 
 
@@ -231,7 +231,7 @@ D:Glib jocks quiz nymph to vex dwarf.
  :Sphinx of black quartz, judge my vow!
  :Two driven jocks help fax my big quiz.
 
-I:(2) Hit the < key with your k finger 
+I:(2) Hit the < key with your k finger
 D:kkkk <<<< kk<< ,,<< ,k<K K,,K <kk<
  :kkKK <<,, ,<<, k<<k <KK< ,k<K ,<k<
 
@@ -275,12 +275,12 @@ S:<!DOCTYPE html>
  :  </footer>
  :</body>
  :</html>
-Q:Do you want to continue to lesson P5 [Y/N] ? 
+Q:Do you want to continue to lesson P5 [Y/N] ?
 N:MENU
 
 
 # Lesson P5—Curly Braces
-*:BRACES 
+*:BRACES
 B:Lesson P5
 I:(1) Warm up
 D:Five quacking zephyrs jolt my wax bed.
@@ -299,7 +299,7 @@ I:(4) Practice these characters together
 D:{{}} }}{{ ;;;; {{{{ }}}} }};;
  :{{:: "{}" {00} {ll} }}{{ :{}:
 
-I:(5) Try some coding 
+I:(5) Try some coding
 S:/* Hello world in C, K&R style */
  :main()
  :{
@@ -307,7 +307,7 @@ S:/* Hello world in C, K&R style */
  :  return 0;
  :}
  :
- :// Hello world in C++ 
+ :// Hello world in C++
  :#include <iostream.h>
  :
  :main()
@@ -339,7 +339,7 @@ S:/* Hello world in C, K&R style */
  :  WriteLn('Hello, World!');
  :End.
 
-Q:Do you want to continue to lesson P7 [Y/N] ? 
+Q:Do you want to continue to lesson P7 [Y/N] ?
 N:MENU
 
 
@@ -347,7 +347,7 @@ N:MENU
 *:SQUARE_BRACKETS
 B:Lesson P6
 
-I:(1) Review 
+I:(1) Review
 D:;;;; ;';' ;p;p ;-;- ;";" ;/;/ ;?;? ;:;: ;_;_
  :;;PP ;p-/ :;:; ;;;; _P?p "PP" p-p; P/P? --??
 
@@ -361,7 +361,7 @@ D:;;;; ]]]] ;];] ;;]] ]];; ];];
  :]]]] ];]; ]']' ]p]p ]-]- ]/]/
  :]]]] ]:]: ]"]" ]P]P ]_]_ ]?]?
 
-I:(4) Practice the ] and [ keys 
+I:(4) Practice the ] and [ keys
 D:;[]; ];[; ;;][ ];;[ [];; ][;;
  :[;'] [p-] [-/] [:"] [P_] [_?]
 
@@ -371,7 +371,7 @@ S:Hello [name]!  How are you this [time_of_day]?
  :And how about [spouse]? [Is he/Is she/Are they] doing well?
  :How about those [local_sports_team], eh?
 
-I:(6) The [- and ]-keys are frequently used when working with arrays 
+I:(6) The [- and ]-keys are frequently used when working with arrays
 S:int array[10];
  :int array_one[];
  :double array_two[];
@@ -386,7 +386,7 @@ S:int array[10];
  :  [E1, E2, E3, E4, E5],
  :];
 
-Q:Do you want to continue to lesson P7 [Y/N] ? 
+Q:Do you want to continue to lesson P7 [Y/N] ?
 N:MENU
 
 
@@ -410,8 +410,8 @@ D:~~`` `~~` `!!` ``QQ zz`` ~~11
  :``~~ ~``~ ~!!~ ~~ZZ qq~~ ``11
  :`~~` `ZZ` QQ~~ aa~~ `11` ~!!~
 
-I:(5) Try some terminal commands 
-S:cd ~/Documents 
+I:(5) Try some terminal commands
+S:cd ~/Documents
  :cp ~/Documents/resume.txt ~/Documents/resume.txt.bk
  :mv ~/Documents/resume.md ~/Documents/resume.html
  :rm ~/Documents/resume.md
@@ -420,7 +420,7 @@ I:(6) Try some programing with template literals
 S:let greeting = 'Hello';
  :console.log(`${greeting}, world`);
  :
- :`${variable}` 
+ :`${variable}`
  :
  :`Hello, ${name}, how are you?`
  :
@@ -432,10 +432,10 @@ S:let greeting = 'Hello';
  :console.log(`Fifteen is ${a + b} and
  :not ${2 * (a + b)}`);
  :
- :const classes = `header ${ isLargeScreen() ? '' : 
+ :const classes = `header ${ isLargeScreen() ? '' :
  :  `icon-${item.isCollapsed ? 'expander' : 'collapser'}` }`;
  :
- :sudo chown `id -u` /somedir 
+ :sudo chown `id -u` /somedir
 
 Q:Do you want to continue to lesson P8 [Y/N] ?
 N:MENU
@@ -444,7 +444,7 @@ N:MENU
 # Lesson P8—Pipe
 *:PIPE
 B:Lesson P8
-I:(1) Review 
+I:(1) Review
 D:2030 5946 1411 4062 8077 8786 2534 9640
  :@)#) %($^ !$!! $)^@ *)&& *&*^ @%#$ (^$)
  :<;;> "//" {''} [+-] `qq` ({[< >]}) -_~~
@@ -497,7 +497,7 @@ S:// match a valid phone number
  :// match an HTML tag
  :/^<([A-Za-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
 
-Q:Do you want to continue to lesson P9 [Y/N] ? 
+Q:Do you want to continue to lesson P9 [Y/N] ?
 N:MENU
 
 
@@ -505,10 +505,10 @@ N:MENU
 *:PRACTICE_1
 B:Lesson P9
 I:(1/9) Practice with simple programs.  Try a palindrome finder in Python
-S:# function to check string is 
- :# palindrome or not 
+S:# function to check string is
+ :# palindrome or not
  :def isPalindrome(str):
- :    for i in xrange(0, len(str)/2): 
+ :    for i in xrange(0, len(str)/2):
  :        if str[i] != str[len(str)-i-1]:
  :            return False
  :    return True
@@ -546,28 +546,28 @@ S:bool IsPalindrome(const char* psz)
 
 I:(4/9) Try the same problem in C, using functions and pointers (part 1)
 S:#include <stdio.h>
- : 
+ :
  :int is_palindrome(char*);
  :void copy_string(char*, char*);
  :void reverse_string(char*);
  :int string_length(char*);
  :int compare_string(char*, char*);
- : 
+ :
  :int main()
  :{
  :   char string[100];
  :   int result;
- : 
+ :
  :   printf("Input a string\n");
  :   gets(string);
- : 
+ :
  :   result = is_palindrome(string);
- : 
+ :
  :   if (result == 1)
  :      printf("\"%s\" is a palindrome string.\n", string);
  :   else
- :      printf("\"%s\" isn't a palindrome string.\n", string); 
- : 
+ :      printf("\"%s\" isn't a palindrome string.\n", string);
+ :
  :   return 0;
  :}
 
@@ -576,17 +576,17 @@ S:int is_palindrome(char *string)
  :{
  :   int check, length;
  :   char *reverse;
- : 
- :   length = string_length(string);    
- :   reverse = (char*)malloc(length+1);    
- : 
+ :
+ :   length = string_length(string);
+ :   reverse = (char*)malloc(length+1);
+ :
  :   copy_string(reverse, string);
  :   reverse_string(reverse);
- : 
+ :
  :   check = compare_string(string, reverse);
- : 
+ :
  :   free(reverse);
- : 
+ :
  :   if (check == 0)
  :      return 1;
  :   else
@@ -596,14 +596,14 @@ S:int is_palindrome(char *string)
 I:(6/9) Try the same problem in C, continued
 S:int string_length(char *string)
  :{
- :   int length = 0;  
- : 
+ :   int length = 0;
+ :
  :   while(*string)
  :   {
  :      length++;
  :      string++;
  :   }
- : 
+ :
  :   return length;
  :}
 
@@ -620,23 +620,23 @@ S:void copy_string(char *target, char *source)
  :}
 
 I:(8/9) Try the same problem in C, continued
-S:void reverse_string(char *string) 
+S:void reverse_string(char *string)
  :{
  :   int length, c;
  :   char *begin, *end, temp;
- : 
+ :
  :   length = string_length(string);
  :   begin = string;
  :   end = string;
- : 
+ :
  :   for (c = 0; c < (length - 1); c++)
  :       end++;
- : 
+ :
  :   for (c = 0; c < length/2; c++) {
  :      temp = *end;
  :      *end = *begin;
  :      *begin = temp;
- : 
+ :
  :      begin++;
  :      end--;
  :   }
@@ -658,7 +658,7 @@ S:int compare_string(char *first, char *second)
  :      return -1;
  :}
 
-Q:Do you want to continue to lesson P10 [Y/N] ? 
+Q:Do you want to continue to lesson P10 [Y/N] ?
 N:MENU
 
 
@@ -790,7 +790,7 @@ S:      if (released != 0) {
  :  return (released != 0) ? 1 : 0;
  :}
 
-Q:Do you want to continue to lesson P11 [Y/N] ? 
+Q:Do you want to continue to lesson P11 [Y/N] ?
 N:MENU
 
 
@@ -1016,7 +1016,7 @@ S:function codeGenerator(node) {
  :    case 'ExpressionStatement':
  :      return (
  :        codeGenerator(node.expression) +
- :        ';' 
+ :        ';'
  :      );
  :    case 'CallExpression':
  :      return (

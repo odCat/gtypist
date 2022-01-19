@@ -7,7 +7,7 @@
  *               2017, 2018, 2019, 2020
  *               Hynek Hanke, Dmitry Rutsky, Paul Goins, Felix Natter,
  *               Tim Marston, clutton, Mihai Gătejescu
- * Copyright (C) 2021 Felix Natter, Mihai Gătejescu
+ * Copyright (C) 2021, 2022 Felix Natter, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -292,7 +292,7 @@ void seek_label( FILE *script, char *label, char *ref_line )
 
   /* search the linked list for the label */
   for ( check_label = global_label_list[ hash ]; check_label != NULL;
-	check_label = check_label->next )
+        check_label = check_label->next )
   {
     /* see if this is our label */
     if ( strcmp( check_label->label, label ) == 0 )

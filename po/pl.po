@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtypist 2.10dev\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2021-04-04 03:49+0300\n"
+"POT-Creation-Date: 2021-08-16 22:07+0300\n"
 "PO-Revision-Date: 2019-01-03 17:35+0000\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
@@ -20,158 +20,158 @@ msgstr ""
 msgid "internal error: strdup"
 msgstr "błąd wewnętrzny: strdup"
 
-#: src/gtypist.c:391
+#: src/gtypist.c:385
 msgid "invalid key binding"
 msgstr "błędne przypisanie klawisza"
 
-#: src/gtypist.c:393
+#: src/gtypist.c:387
 msgid "invalid function key number"
 msgstr "błędny numer klawisza funkcyjnego"
 
-#: src/gtypist.c:432 src/gtypist.c:542 src/gtypist.c:850
+#: src/gtypist.c:426 src/gtypist.c:536 src/gtypist.c:844
 msgid "data exceeds screen length"
 msgstr "dane przekraczają długość ekranu"
 
-#: src/gtypist.c:475
+#: src/gtypist.c:469
 msgid "instructions are limited to two lines"
 msgstr "instrukcje są ograniczone do dwóch linii"
 
-#: src/gtypist.c:749 src/gtypist.c:1057 src/script.c:315
+#: src/gtypist.c:743 src/gtypist.c:1051 src/script.c:311
 msgid "internal error: fseek"
 msgstr "błąd wewnętrzny: fseek"
 
-#: src/gtypist.c:831 src/gtypist.c:1915 src/gtypist.c:1931 src/gtypist.c:1978
-#: src/gtypist.c:2015 src/gtypist.c:2035 src/script.c:145 src/script.c:169
-#: src/script.c:260
+#: src/gtypist.c:825 src/gtypist.c:1909 src/gtypist.c:1925 src/gtypist.c:1972
+#: src/gtypist.c:2009 src/gtypist.c:2029 src/script.c:145 src/script.c:169
+#: src/script.c:256
 msgid "internal error: malloc"
 msgstr "błąd wewnętrzny: malloc"
 
-#: src/gtypist.c:1382
+#: src/gtypist.c:1376
 #, no-c-format
 msgid "'*' must immediately follow '%'"
 msgstr "'*' musi być bezpośrednio po '%'"
 
-#: src/gtypist.c:1385 src/gtypist.c:1388
+#: src/gtypist.c:1379 src/gtypist.c:1382
 #, no-c-format
 msgid "missing '%'"
 msgstr "brak '%'"
 
-#: src/gtypist.c:1392
+#: src/gtypist.c:1386
 #, no-c-format
 msgid "'%' must immediately follow value"
 msgstr "'%' musi być bezpośrednio po wartości"
 
-#: src/gtypist.c:1401
+#: src/gtypist.c:1395
 msgid "overflow in do_error_max_set"
 msgstr "przepełnienie w do_error_max_set"
 
-#: src/gtypist.c:1421
+#: src/gtypist.c:1415
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "Błędna wartość dla \"E:\" (spoza zakresu)"
 
-#: src/gtypist.c:1474 src/script.c:309
+#: src/gtypist.c:1468 src/script.c:305
 #, c-format
 msgid "label '%s' not found"
 msgstr "nie znaleziono etykiety '%s'"
 
-#: src/gtypist.c:1541
+#: src/gtypist.c:1535
 msgid "unknown command"
 msgstr "nieznane polecenie"
 
-#: src/gtypist.c:1575
+#: src/gtypist.c:1569
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Polecenie '%s --help' poda więcej informacji.\n"
 
-#: src/gtypist.c:1582
+#: src/gtypist.c:1576
 #, c-format
 msgid "%s: invalid max-error value\n"
 msgstr "%s: błędna wartość max-error\n"
 
-#: src/gtypist.c:1589
+#: src/gtypist.c:1583
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: błędna wartość curs-flash\n"
 
-#: src/gtypist.c:1599
+#: src/gtypist.c:1593
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: błędna wartość kolorów\n"
 
-#: src/gtypist.c:1612
+#: src/gtypist.c:1606
 #, c-format
 msgid "%s: invalid banner-colours value\n"
 msgstr "%s: błędna wartość banner-colours\n"
 
-#: src/gtypist.c:1693
+#: src/gtypist.c:1687
 msgid " Tutorial "
 msgstr " Nauka "
 
-#: src/gtypist.c:1695
+#: src/gtypist.c:1689
 msgid "  Query   "
 msgstr " Pytanie "
 
-#: src/gtypist.c:1697
+#: src/gtypist.c:1691
 msgid "  Drill   "
 msgstr " Ćwiczenie "
 
-#: src/gtypist.c:1699
+#: src/gtypist.c:1693
 msgid "Speed test"
 msgstr "Test szybkości"
 
-#: src/gtypist.c:1701
+#: src/gtypist.c:1695
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr " RETURN lub SPACE oznacza kontynuację, ESC powrót do menu "
 
-#: src/gtypist.c:1704
+#: src/gtypist.c:1698
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr " Współczynnik błędów jest zbyt duży. Trzeba osiągnąć %.1f%%. "
 
-#: src/gtypist.c:1708
+#: src/gtypist.c:1702
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr " Test nie powiódł się, trzeba wrócić do %s. "
 
-#: src/gtypist.c:1712
+#: src/gtypist.c:1706
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr " P - powtórzenie, N - następne ćwiczenie, K - koniec ćwiczeń "
 
-#: src/gtypist.c:1716
+#: src/gtypist.c:1710
 msgid " Press R to repeat or E to exit "
 msgstr " P - powtórzenie, K - koniec ćwiczeń "
 
-#: src/gtypist.c:1719
+#: src/gtypist.c:1713
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr " Na pewno zakończyć tę lekcję? [T/N] "
 
-#: src/gtypist.c:1723
+#: src/gtypist.c:1717
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr ""
 " gtypist jest skonfigurowany tak, by nie pozwalał na pomijanie ćwiczeń. "
 
-#: src/gtypist.c:1728
+#: src/gtypist.c:1722
 msgid "Y/N"
 msgstr "T/N"
 
-#: src/gtypist.c:1738
+#: src/gtypist.c:1732
 msgid "R/N/E"
 msgstr "P/N/K"
 
-#: src/gtypist.c:1759
+#: src/gtypist.c:1753
 #, c-format
 msgid "%s: %s environment variable not set\n"
 msgstr "%s: zmienna środowiskowa %s nie ustawiona\n"
 
-#: src/gtypist.c:1806
+#: src/gtypist.c:1800
 msgid "can't find or open file"
 msgstr "nie można znaleźć lub otworzyć pliku"
 
-#: src/gtypist.c:1860
+#: src/gtypist.c:1854
 msgid "Loading the script..."
 msgstr "Wczytywanie skryptu..."
 
-#: src/gtypist.c:1970
+#: src/gtypist.c:1964
 msgid "internal error: fopen"
 msgstr "błąd wewnętrzny: fopen"
 
@@ -194,23 +194,28 @@ msgstr "etykieta zawiera spację"
 msgid "label redefinition"
 msgstr "ponowna definicja etykiety"
 
-#: src/script.c:231
+#: src/script.c:212
+#, fuzzy
+msgid "Error while reading file"
+msgstr "błąd zapisu pliku konfiguracyjnego!"
+
+#: src/script.c:229
 msgid "Invalid multibyte sequence (wrong encoding?)"
 msgstr "Błędna sekwencja wielobajtowa (niewłaściwe kodowanie?)"
 
-#: src/script.c:233
+#: src/script.c:231
 msgid "data shortage"
 msgstr "brak danych"
 
-#: src/script.c:235
+#: src/script.c:233
 msgid "missing ':'"
 msgstr "brak ':'"
 
-#: src/script.c:241
+#: src/script.c:237
 msgid "line too long for screen"
 msgstr "linia zbyt długa dla ekranu"
 
-#: src/script.c:331 src/script.c:333
+#: src/script.c:327 src/script.c:329
 #, c-format
 msgid ""
 "Happy Typing!\n"
