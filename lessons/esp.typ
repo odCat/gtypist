@@ -1628,7 +1628,7 @@ B:Evaluación de precisión
 I:En está evaluación se espera por lo menos 30wpm y a lo sumo 1% de error
 E:1%
 F:MENU_PRECISION
-S:Fragmento del prologo a "POR LO QUE HE VIVIDO"
+S:Fragmento del prólogo a "POR LO QUE HE VIVIDO"
  :
  :Tres pasiones, simples pero increíblemente fuertes, han gobernado mi vida:
  :las ansias del amor, la búsqueda del conocimiento, y una insoportable
@@ -1647,7 +1647,7 @@ S:Fragmento del prologo a "POR LO QUE HE VIVIDO"
  :parecer demasiado bueno para la vida humana, esto es lo que, al fin
  :he encontrado.
  :
- :                         Bertrand Russel
+ :                         Bertrand Russell
 G:PRECISION
 
 *:FINAL
