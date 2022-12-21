@@ -383,7 +383,7 @@ S:A fost odată ca-n povești,
  :
  :Privea în zare cum pe mări
  : Răsare și străluce,
- :Pe mișcătoareale cărări
+ :Pe mișcătoarele cărări
  : Corăbii negre duce.
 
 *:_RO_S_EM07
