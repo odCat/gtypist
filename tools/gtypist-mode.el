@@ -4,13 +4,13 @@
 ;; Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
 ;;               2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019,
 ;;               2020 Felix Natter, Paul Goins
-;; Copyright (C) 2021, 2022 Felix Natter, Mihai Gătejescu
+;; Copyright (C) 2021, 2022, 2023 Felix Natter, Mihai Gătejescu
 
 ;; Author: Felix Natter <fnatter@gmx.net>
 ;; Created: June 30th 2001
 ;; Keywords: gtypist major mode
 
-;; This file is past of GNU Typist
+;; This file is part of GNU Typist
 
 ;; GNU Typist is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
