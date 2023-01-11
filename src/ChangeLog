@@ -1,3 +1,7 @@
+2023-01-11 Mihai Gătejescu <gus666xe@gmail.com>
+
+    * all files: Update copyright years
+
 2022-01-19 Mihai Gătejescu <gus666xe@gmail.com>
 
     * cursmenu.c, infoview.c: Add an error checks for get_widech
