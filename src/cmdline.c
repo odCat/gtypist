@@ -32,7 +32,7 @@ const char *gengetopt_args_info_purpose =
 const char *gengetopt_args_info_usage = "Usage: " CMDLINE_PARSER_PACKAGE " [OPTIONS]... [SCRIPT]...";
 
 const char *gengetopt_args_info_versiontext =
-"Copyright (C) 2021, 2022 Felix Natter, Mihai Gătejescu\n"
+"Copyright (C) 2021, 2022, 2023 Felix Natter, Mihai Gătejescu\n"
 "Created by Simon Baldwin\n"
 "License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>\n"
 "This is free software: you are free to change and redistribute it.\n"
