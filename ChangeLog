@@ -1,3 +1,7 @@
+2022-01-26  Mihai Gătejescu <gus666xe@gmail.com>
+
+    * all files: Update license years
+
 2022-01-19  Mihai Gătejescu <gus666xe@gmail.com>
 
     * all files: Update license years
@@ -889,7 +893,7 @@
                 2017, 2018, 2019, 2020
                 Felix Natter, Michael Opdenacker, Hynek Hanke, Dmitry Rutsky,
                 Rob Leslie, Paul Goins, Tim Marston, Mihai Gătejescu
-  Copyright (C) 2021, 2022 Felix Natter, Mihai Gătejescu
+  Copyright (C) 2021, 2022, 2023 Felix Natter, Mihai Gătejescu
 
   This file is a part of GNU Typist
 
