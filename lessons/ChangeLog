@@ -1,3 +1,7 @@
+2023-01-27 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* all files except ktouch: Update copyright
+
 2022-12-21 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* ro_special.typ: Fix a typo
@@ -367,7 +371,7 @@
                 2017, 2018, 2019, 2020
                 Felix Natter, Michael Opdenacker, Hynek Hanke, Dmitry Rutsky,
                 Rob Leslie, Paul Goins, Tim Marston, Mihai Gătejescu
-  Copyright (C) 2021, 2022 Felix Natter, Mihai Gătejescu
+  Copyright (C) 2021, 2022, 2023 Felix Natter, Mihai Gătejescu
 
   This file is a part of GNU Typist
 
