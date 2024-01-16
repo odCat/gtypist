@@ -437,6 +437,7 @@ S:There be some sports are painful, and their labour
  :Most busy lest, when I do it.
 
 I:The Tempest, Act IV, Scene I (Before Prospero's cell)
+*:_SR_L42
 S:You do look, my son, in a moved sort,
  :As if you were dismay'd: be cheerful, sir.
  :Our revels now are ended. These our actors,
@@ -457,6 +458,7 @@ S:You do look, my son, in a moved sort,
  :To still my beating mind.
 
 I:The Tempest, Act V, Scene I (Before Prospero's cell)
+*:_SR_L43
 S:But this rough magic
  :I here abjure; and, when I have required
  :Some heavenly music,--which even now I do,--
@@ -467,6 +469,7 @@ S:But this rough magic
  :I'll drown my book.
 
 I:Hamlet, Act III, Scene I, (A room in the castle 1/3)
+*:_SR_L44
 S:To be, or not to be, that is the question:
  :Whether 'tis nobler in the mind to suffer
  :The slings and arrows of outrageous fortune,
@@ -483,6 +486,7 @@ S:To be, or not to be, that is the question:
  :That makes calamity of so long life;
 
 I:Hamlet, Act III, Scene I, (A room in the castle 2/3)
+*:_SR_L45
 S:For who would bear the whips and scorns of time,
  :The oppressor's wrong, the proud man's contumely,
  :The pangs of despised love, the law's delay,
@@ -498,6 +502,7 @@ S:For who would bear the whips and scorns of time,
  :Than fly to others that we know not of?
 
 I:Hamlet, Act III, Scene I, (A room in the castle 3/3)
+*:_SR_L46
 S:Thus, conscience does make cowards of us all;
  :And thus, the native hue of resolution
  :Is sicklied o'er with the pale cast of thought;
