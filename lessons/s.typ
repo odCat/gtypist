@@ -320,7 +320,7 @@ T:
  :Shakespeare's plays.  The spelling and punctuation are
  :quite hard.  Take your time and type them carefully.
 
-I:Romeo and Juliet, Act II, Scene II (Capulet's Garden).
+I:Romeo and Juliet, Act II, Scene II (Capulet's Garden 1/2)
 *:_S_R_L34
 S:But, soft! what light through yonder window breaks?
  :It is the east, and Juliet is the sun!--
@@ -336,6 +336,7 @@ S:But, soft! what light through yonder window breaks?
  :Her eye discourses, I will answer it.--
  :I am too bold, 'tis not to me she speaks:
 
+I:Romeo and Juliet, Act II, Scene II (Capulet's Garden 2/2)
 *:_S_R_L35
 S:Two of the fairest stars in all the heaven,
  :Having some business, do entreat her eyes
@@ -349,7 +350,7 @@ S:Two of the fairest stars in all the heaven,
  :O, that I were a glove upon that hand,
  :That I might touch that cheek!
 
-I:Julius Caesar, Act III, Scene II (The Forum).
+I:Julius Caesar, Act III, Scene II (The Forum 1/3)
 *:_S_R_L36
 S:Friends, Romans, countrymen, lend me your ears;
  :I come to bury Caesar, not to praise him.
@@ -367,6 +368,7 @@ S:Friends, Romans, countrymen, lend me your ears;
  :But Brutus says he was ambitious;
  :And Brutus is an honourable man.
 
+I:Julius Caesar, Act III, Scene II (The Forum 2/3)
 *:_S_R_L37
 S:He hath brought many captives home to Rome.
  :Whose ransoms did the general coffers fill:
@@ -381,6 +383,7 @@ S:He hath brought many captives home to Rome.
  :Yet Brutus says he was ambitious;
  :And, sure, he is an honourable man.
 
+I:Julius Caesar, Act III, Scene II (The Forum 3/3)
 *:_S_R_L38
 S:I speak not to disprove what Brutus spoke,
  :But here I am to speak what I do know.
@@ -391,7 +394,7 @@ S:I speak not to disprove what Brutus spoke,
  :My heart is in the coffin there with Caesar,
  :And I must pause till it come back to me.
 
-I:The Merchant of Venice, Act IV, Scene I (A Court of Justice).
+I:The Merchant of Venice, Act IV, Scene I (A Court of Justice 1/2)
 *:_S_R_L39
 S:The quality of mercy is not strain'd;
  :It droppeth as the gentle rain from heaven
@@ -403,6 +406,7 @@ S:The quality of mercy is not strain'd;
  :The attribute to awe and majesty,
  :Wherein doth sit the dread and fear of kings;
 
+I:The Merchant of Venice, Act IV, Scene I (A Court of Justice 2/2)
 *:_S_R_L40
 S:But mercy is above this scepter'd sway,--
  :It is enthroned in the heart of kings,
