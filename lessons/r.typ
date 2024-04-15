@@ -4,7 +4,7 @@
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
 #               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Michael Opdenacker, Paul Goins, Tim Marston
-# Copyright (C) 2021, 2022, 2023 Felix Natter, Mihai Gătejescu
+# Copyright (C) 2021, 2022, 2023, 2024 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -748,7 +748,7 @@ I:(5)
 *:_R_R_L96
 D:To begin with, the same old auto will bear us to the beach
  :where a good-sized boat floats easily in the blue water.
- :Our boat is build for room.  Her cabin has a busy table.
+ :Our boat is built for room.  Her cabin has a busy table.
 
 I:(6)
 *:_R_R_L97
@@ -830,7 +830,7 @@ D:To buy an air-mail stamp I save 1, 2, 4, and at last 6 cents.
 I:(4)
 *:_R_R_L107
 D:In two years my dollar earns 1, 3, 5, 7, and perhaps 8 cents.
- :Buy at once:  4 candy balls,9 bars, 6 or 8 of gum, 2 cakes.
+ :Buy at once:  4 candy balls, 9 bars, 6 or 8 of gum, 2 cakes.
 
 I:(5)
 *:_R_R_L108

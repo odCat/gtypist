@@ -4,7 +4,7 @@
 # Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
 #               2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020
 #               Felix Natter, Paul Goins, Tim Marston
-# Copyright (C) 2021, 2022, 2023 Felix Natter, Mihai Gătejescu
+# Copyright (C) 2021, 2022, 2023, 2024 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -1098,7 +1098,7 @@ S:If we want to catch the 6:15 flight to Phoenix (which is the
  :case we run into traffic).  Otherwise, we will have to take
  :the 6:45 flight (which makes 5 stops).
 
-I:Use the main keyboard keys.  Don't cheat and use the auxilliary keypad!
+I:Use the main keyboard keys.  Don't cheat and use the auxiliary keypad!
  :Try entering straight numbers:
 *:_T_R_L186
 D:423 475 925 235 295 175 650

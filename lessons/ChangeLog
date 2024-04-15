@@ -1,3 +1,8 @@
+2024-04-15 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* r.typ, t.typ: Fix a few spelling errors and
+	update copyright. Patch from Debian
+
 2024-01-14 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* s.typ: Tag and count the Shakespeare lessons
