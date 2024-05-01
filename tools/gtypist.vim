@@ -63,9 +63,7 @@
 " 2001-10-20: initial version
 " 2001-10-21: use "Error" for gtypistExitCmd
 " 2024-05-01: fix - scrolling up will properly highlight drill text
-
-" TODO:
-" - E: color number in Float
+" 2024-05-02: use "Float" for the error-rate value in the E command
 
 " For version 5.x: Clear all syntax-items
 " For version 6.x: Quit when a syntax-file was already loaded
@@ -84,6 +82,8 @@ syn match gtypistComment "^[#!].*" contains=gtypistTODO
 syn match gtypistCmdSeparator ":" contained
 syn match gtypistCmd "^[A-Za-z]:" contains=gtypistCmdSeparator
 syn match gtypistExitCmd "^X:" contains=gtypistCmdSeparator
+syn match percentChar "%" contained
+syn match gtypistSetErrorPer "^E:[0-9]*%" contains=gtypistCmd, percentChar
 syn match gtypistSetLabelCmd "^\*:" contains=gtypistCmdSeparator
 syn match gtypistString "^ :.*" contains=gtypistCmdSeparator
 syn region gtypistDrillContent start="^[DdSsMm]:" skip="^ :" end="^" contains=gtypistCmd,gtypistString
@@ -101,6 +101,7 @@ if !exists("did_gtypist_syntax_inits")
   highlight link gtypistKeyword Keyword
   highlight link gtypistCmd SpecialChar
   highlight link gtypistExitCmd Error
+  highlight link gtypistSetErrorPer Float
   highlight link gtypistString String
   highlight link gtypistDrillContent String
   highlight link gtypistComment Comment
