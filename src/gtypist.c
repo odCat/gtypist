@@ -7,7 +7,7 @@
  *               2017, 2018, 2019, 2020
  *               Hynek Hanke, Dmitry Rutsky, Paul Goins, Tim Marston,
  *               Felix Natter, clutton, Mihai Gătejescu
- * Copyright (C) 2021, 2022, 2023 Felix Natter, Mihai Gătejescu
+ * Copyright (C) 2021, 2022, 2023, 2024 Felix Natter, Mihai Gătejescu
  *
  * GNU Typist is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -1760,7 +1760,7 @@ int main( int argc, char **argv )
   /* figure out what script file to use */
   if ( cl_args.inputs_num == 1 )
   {
-    /* try and open scipr file from command line */
+    /* try to open the script file from command line */
     strcpy( script_file, cl_args.inputs[ 0 ] );
     script = open_script( script_file );
 

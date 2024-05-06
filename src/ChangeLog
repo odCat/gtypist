@@ -1,3 +1,7 @@
+2024-05-06 Mihai Gătejescu <gus666xe@gmail.com>
+
+    * gtypist.c: Fix a typo in a comment
+
 2024-04-29 Mihai Gătejescu <gus666xe@gmail.com>
 
     * script.h: Add the external keyword to function declaration
