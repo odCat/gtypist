@@ -1,3 +1,7 @@
+2024-05-08 Mihai Gătejescu <gus666xe@gmail.com>
+
+    * gtypist.c: Update indentation
+
 2024-05-06 Mihai Gătejescu <gus666xe@gmail.com>
 
     * gtypist.c: Fix a typo in a comment

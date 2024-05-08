@@ -119,10 +119,10 @@ wchar_t *RNE;
 
 
 /* some colour definitions */
-static short	colour_array[] = {
+static short colour_array[] = {
   COLOR_BLACK, COLOR_RED, COLOR_GREEN, COLOR_YELLOW,
   COLOR_BLUE, COLOR_MAGENTA, COLOR_CYAN, COLOR_WHITE };
-#define	NUM_COLOURS		(sizeof( colour_array ) / sizeof( short ))
+#define	NUM_COLOURS (sizeof( colour_array ) / sizeof( short ))
 
 #ifdef MINGW
 #define MIN( a, b ) ( ( a ) < ( b )? ( a ) : ( b ) )
@@ -1831,8 +1831,8 @@ int main( int argc, char **argv )
     start_color ();
 
     init_pair (C_NORMAL,
-    colour_array [cl_fgcolour],
-    colour_array [cl_bgcolour]);
+        colour_array [cl_fgcolour],
+        colour_array [cl_bgcolour]);
     wbkgdset (stdscr, COLOR_PAIR (C_NORMAL));
 
     init_pair (C_BANNER,
