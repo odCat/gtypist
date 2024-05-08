@@ -1,0 +1,5 @@
+addon: gtypist
+description: allow syntax highlighting and autodetection for gtypist files
+files:
+  - syntax/gytpist.vim
+  - ftdetect/gtypist_filetype.vim
