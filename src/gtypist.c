@@ -1649,10 +1649,10 @@ FILE *open_script( const char *filename )
 */
 int main( int argc, char **argv )
 {
-  WINDOW	*scr;		  	/* curses window */
-  FILE	*script;			/* script file handle */
-  char	*p, filepath[FILENAME_MAX];	/* file paths */
-  char	script_file[FILENAME_MAX];	/* more file paths */
+  WINDOW *scr;                    /* curses standard screen - default window */
+  FILE *script;                         /* script file handle */
+  char *p, filepath[FILENAME_MAX];      /* file paths */
+  char script_file[FILENAME_MAX];       /* more file paths */
 
   /* get our program name */
   argv0 = argv[0] + strlen( argv[0] );
@@ -1885,13 +1885,13 @@ void do_bell() {
 bool get_best_speed( const char *script_filename,
                      const char *excersise_label, double *adjusted_cpm )
 {
-  FILE *blfile;       				/* bestlog file */
-  char *search;			        	/* string to match in bestlog */
-  char line[FILENAME_MAX];		/* single line from bestlog */
-  int search_len;		        	/* length of search string */
-  bool found = FALSE;		    	/* did we find it? */
+  FILE *blfile;                 /* bestlog file */
+  char *search;                 /* string to match in bestlog */
+  char line[FILENAME_MAX];      /* single line from bestlog */
+  int search_len;               /* length of search string */
+  bool found = FALSE;           /* did we find it? */
   int a;
-  char *fixed_script_filename;		/* fixed-up script filename */
+  char *fixed_script_filename;  /* fixed-up script filename */
   char *p;
 
   /* open best speeds file */
