@@ -59,12 +59,12 @@ if ($drill_type eq "D:" || $drill_type eq "d:") {
 
 if ($#ARGV != 0)
 {
-    printf "Usage: $0 <*.ktouch.xml>\n";
+    printf "Usage: $0 <*.xml>\n";
     exit 1;
 }
 
 my $ktouchfilename = shift(@ARGV);
-if ($ktouchfilename !~ /^.*\.ktouch\.xml$/ || ! (-f $ktouchfilename)) {
+if ($ktouchfilename !~ /^.*\.xml$/ || ! (-f $ktouchfilename)) { 
     die "Invalid ktouch lesson filename: $ktouchfilename.\n";
 }
 
@@ -88,7 +88,7 @@ my $handler = KTouchParser->new();
 
 my $parser = XML::Parser::PerlSAX->new(Handler => $handler);
 
-$parser->parse(Source => {
+$parser->parse(Source => { 
     'SystemId' => $ktouchfilename,
     'Encoding' => 'utf-8'
                });
@@ -103,6 +103,13 @@ sub trim($)
     $string =~ s/^\s+//;
     $string =~ s/\s+$//;
     return $string;
+}
+
+sub removenl($)
+{
+    my $text = shift;
+    $text =~ s/\R//g;
+    return $text;
 }
 
 sub writeLesson($$)
@@ -137,7 +144,7 @@ sub writeLesson($$)
 	} else {
 	    print TYPFILE " :$line\n";
 	}
-
+        
 	++$lineCounter;
 	if ($lineCounter == $lines_per_drill) {
 	    $lineCounter = 0;
@@ -159,13 +166,13 @@ sub start_element {
     $current_element = $element->{Name};
     $inside_element = 1;
 
-    if ($current_element eq 'Levels')
+    if ($current_element eq 'lessons')
     {
         # start of lessons, write out header
-        print TYPFILE "# created by ktouch2typ.pl from " .
+        print TYPFILE "# created by ktouch2typ.pl from " . 
             getAbsoluteFilename($ktouchfilename) . "\n# on " . `date`;
-        my $FileTitle = $converter->convert($tagContent{'Title'});
-        my $FileComment = $converter->convert($tagContent{'Comment'});
+        my $FileTitle = $converter->convert($tagContent{'title'});
+        my $FileComment = $converter->convert($tagContent{'description'});
         print TYPFILE "# ktouch title: $FileTitle\n";
         if (defined($FileComment))
         {
@@ -185,7 +192,7 @@ sub start_element {
         print TYPFILE "# cc to bug-gtypist\@gnu.org\n\n";
         print TYPFILE "G:MENU\n\n";
     }
-    elsif ($current_element eq 'Level')
+    elsif ($current_element eq 'lesson')
     {
         # initialize lesson vars
         @lessonLines = ();
@@ -200,15 +207,31 @@ sub end_element {
 
     my $elementName = $element->{Name};
 
-    if ($elementName eq 'Line')
+    if ($elementName eq 'text')
     {
-        push @lessonLines, trim($tagContent{'Line'});
+    	my $max_line_length = 76;
+    	my $text = trim($tagContent{'text'});
+    	my @words = split /\s+/, $text;
+    	while (scalar(@words) > 0) 
+    	{
+    	    # build one line:
+    	    my $line = "";
+    	    while (scalar(@words) > 0)
+    	    {
+    	    	if (length($line) + 1 + length($words[0]) > $max_line_length) {
+    	    		last;
+    	    	} 
+    	    	$line .= " " unless length($line) == 0;
+    	    	$line .= shift @ words;
+    	    }
+	    push @lessonLines, $line;
+    	}
     }
-    elsif ($elementName eq 'Level')
+    elsif ($elementName eq 'lesson')
     {
         # write out lesson
-        my $levelComment = trim($tagContent{'LevelComment'});
-        my $newCharacters = trim($tagContent{'NewCharacters'});
+        my $levelComment = trim($tagContent{'title'});
+        my $newCharacters = trim($tagContent{'newCharacters'});
         #printf("newChars='%s', levelComment='%s'\n", $newCharacters, $levelComment);
         my $title;
         if (defined($levelComment) and $levelComment !~ /^\s*$/ and length($levelComment) < 40) {
@@ -227,10 +250,10 @@ sub end_element {
         @lessonLines = ();
         $lessonCounter++;
     }
-    elsif ($elementName eq 'Levels')
+    elsif ($elementName eq 'lessons')
     {
         generate_jump_table($lessonCounter - 1, \*TYPFILE);
-        generate_menu("ktouch lesson: " . $tagContent{'Title'},
+        generate_menu("ktouch lesson: " . $tagContent{'title'},
                       $lessonCounter - 1, \*TYPFILE, @lessonNames);
     }
     #print "End element: $element->{Name}, line=$tagContent{Line}\n";
@@ -243,15 +266,15 @@ sub characters {
 
     return '' unless $text;
 
-    # do not collect characters that are outside the element:
+    # do not collect characters that are outside the element: 
     # <Level>
     #   <LevelComment>2 und Anführungszeichen</LevelComment>XXX
     # </Level>
     # do not collect XXX
-    return if $inside_element == 0;
+    return if $inside_element == 0; 
 
     #printf "text='$text'";
-
+    
     $tagContent{$current_element} .= $converter->convert($text);
     if (!defined($converter->retval))
     {
