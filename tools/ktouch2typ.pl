@@ -70,6 +70,15 @@ if ($ktouchfilename !~ /^.*\.xml$/ || ! (-f $ktouchfilename)) {
 
 my $typfilename = $ktouchfilename;
 substr($typfilename, rindex($typfilename, ".")) = ".typ";
+if (index($typfilename, "/") == -1)
+{
+    $typfilename = "kt" . $typfilename;
+}
+else
+{
+    substr($typfilename, rindex($typfilename, "/"), 1) = "/kt";
+}
+
 print "Converting $ktouchfilename to $typfilename...\n";
 
 my $current_element = '';
@@ -90,7 +99,7 @@ my $parser = XML::Parser::PerlSAX->new(Handler => $handler);
 
 $parser->parse(Source => { 
     'SystemId' => $ktouchfilename,
-    'Encoding' => 'utf-8'
+        'Encoding' => 'utf-8'
                });
 
 sub trim($)
@@ -185,9 +194,9 @@ sub start_element {
             }
         }
         print TYPFILE "# ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)\n";
-        print TYPFILE "# ktouch can be found at http://edu.kde.org/applications/school/ktouch\n";
+        print TYPFILE "# ktouch can be found at https://apps.kde.org/de/ktouch/\n";
         print TYPFILE "# If you have suggestions about these lessons,\n";
-        print TYPFILE "# please send mail to haavard\@users.sourceforge.net\n";
+        print TYPFILE "# please send mail to kde-edu\@kde.org\n";
         print TYPFILE "# (or whoever is the current ktouch maintainer), with\n";
         print TYPFILE "# cc to bug-gtypist\@gnu.org\n\n";
         print TYPFILE "G:MENU\n\n";
@@ -219,8 +228,8 @@ sub end_element {
     	    while (scalar(@words) > 0)
     	    {
     	    	if (length($line) + 1 + length($words[0]) > $max_line_length) {
-    	    		last;
-    	    	} 
+                    last;
+                }
     	    	$line .= " " unless length($line) == 0;
     	    	$line .= shift @ words;
     	    }
@@ -266,7 +275,8 @@ sub characters {
 
     return '' unless $text;
 
-    # do not collect characters that are outside the element: 
+    # do not collect characters that are outside the element:
+    # NOTE: not really necessary with 2024 ktouch .xml!
     # <Level>
     #   <LevelComment>2 und Anführungszeichen</LevelComment>XXX
     # </Level>
