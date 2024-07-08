@@ -1,3 +1,7 @@
+2024-07-08  Mihai Gătejescu <mgatejescu@pm.me.com>
+
+    * typefortune.1: Fix warnings for help2man generated man pages
+
 2022-01-26  Mihai Gătejescu <gus666xe@gmail.com>
 
     * all files: Update license years

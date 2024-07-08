@@ -18,31 +18,47 @@
 
 .TH TYPEFORTUNE "1" "March 2002" "typefortune" FSF
 .SH NAME
-typefortune \- manual page for typefortune (part of gtypist)
+typefortune \- generate a .typ file and call gtypist to run it
 .SH SYNOPSIS
 .B typefortune
 [ \fIOptions\fR... ]
 .SH DESCRIPTION
-typefortune creates a gtypist lesson-file from `fortune' and runs `gtypist' on
-it.
+\fBtypefortune\fR creates a \fBgtypist\fR lesson-file from
+\fBfortune\fR and runs \fBgtypist\fR on it.
 .SH OPTIONS
 .TP
-\fB\-d\fR                   use D: (instead of S:)
+\fB\-d\fR
+use D: (drill) instead of S: (speed)
 .TP
-\fB\-s\fR                   use `fortune -s'
+\fB\-s\fR
+run \fBfortune\fR \fB\-s\fR
 .TP
-\fB\-l\fR                   use `fortune -l'
+\fB\-l\fR
+run \fBfortune\fR \fB\-l\fR
 .TP
-\fB\-n\fR <count>           practice <count> fortunes (default=1)
+\fB\-n <\fIcount\fB>\fR
+practice \fI<count>\fR fortunes (default=1)
 .TP
-\fB\-o\fR <gtypist_options> pass options to gtypist
+\fB\-o <\fIgtypist_options\fB>\fR
+pass options to \fBgtypist\fR
 .SH EXAMPLE
+.PP
+To practice 3 fortunes and run gtypist as \-\-silent \-e 5 \-\-word-processor:
 .IP
-To practice 3 fortunes and run gtypist as --silent -e 5 --word-processor:
+.B
+typefortune \-n 3 \-o \(aqsilent e,5 word-processor\(aq
+.SH "DIANOSTICS"
+If
+.B typefortune
+quits with the following message
 .IP
-`typefortune -n 3 -o 'silent e,5 word-processor'
-.IP
+No fortunes found
+.PP
+then you are missing fortune cookies.
 .SH "SEE ALSO"
+.BR gtypist (1),
+.BR fortune (6)
+.PP
 The full documentation for
 .B gtypist (and typefortune)
 is maintained as a Texinfo manual.  If the
