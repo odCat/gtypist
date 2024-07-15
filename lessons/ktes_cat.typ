@@ -1,7 +1,6 @@
 # GNU Typist - improved typing tutor program for UNIX systems
 #
-# Copyright (C) 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020
-#               Felix Natter
+# Copyright (C) 2024 Felix Natter, Mihai Gătejescu
 #
 # GNU Typist is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,15 +16,16 @@
 # along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-# created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/catalan.ktouch.xml
-# on Sa 1. Jun 12:32:30 CEST 2013
-# ktouch title: Catalan (auto-generated)
-# ktouch comment: KTouch training file generated Sat Aug 23 21:40:00 2003
-# Perl Script written by Steinar Theigmann & Håvard Frøiland.
+# created by ktouch2typ.pl from /home/umbra/repos/lessons/cat.xml
+# on Mon 15 Jul 2024 08:35:48 PM EEST
+# ktouch title: Català (autogenerat)
+# ktouch comment: Fitxer de formació del KTouch, generat el dissabte 23
+# d'agost a les 21:40:00 de 2003 amb un script en Perl escrit per en
+# Steinar Theigmann i en Håvard Frøiland.
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
-# ktouch can be found at http://edu.kde.org/applications/school/ktouch
+# ktouch can be found at https://apps.kde.org/de/ktouch/
 # If you have suggestions about these lessons,
-# please send mail to haavard@users.sourceforge.net
+# please send mail to kde-edu@kde.org
 # (or whoever is the current ktouch maintainer), with
 # cc to bug-gtypist@gnu.org
 
@@ -33,317 +33,207 @@ G:MENU
 
 *:S_LESSON1
 K:12:MENU
-B:                           Lesson 1: jf
+B:                        Lesson 1: Lliçó 1
 *:LESSON1_D1
 I:(1)
-D:ff jfjf fj jjj ff ffjf
- :fjjj jjff ff fjj j fj ff
- :jf fjjj ff j jjj ff j j
- :ffjjf fj fjj fjjj fjjj j fjjj
-*:LESSON1_D2
-I:(2)
-D:fjj fff j fjj j jf jj ff
- :ff ff fj jj jf j ff ffjf
- :fj fj jf fff jf fff jf
- :jf fj jf ff j jf jjff jfjf
-*:LESSON1_D3
-I:(3)
-D:fjj jfjf j jf ffj fj jj
- :ffffj jjf fff fjjj ffjf ff
+D:ff jfjf fj jjj ff ffjf fjjj jjff ff fjj j fj ff jf fjjj ff j jjj ff j j
+ :ffjjf fj fjj fjjj fjjj j fjjj fjj fff j fjj j jf jj ff ff ff fj jj jf j ff
+ :ffjf fj fj jf fff jf fff jf jf fj jf ff j jf jjff jfjf fjj jfjf j jf ffj fj
+ :jj ffffj jjf fff fjjj ffjf ff
 G:E_LESSON1
 
 *:S_LESSON2
 K:12:MENU
-B:                           Lesson 2: kd
+B:                        Lesson 2: Lliçó 2
 *:LESSON2_D1
 I:(1)
-D:jkj k d kd jd jd fdf jkj
- :kd kf jd fd jkj fdj jd
- :dd dd fk fdk jfkj jd jkj
- :kdj ffk kf ffk jkj jkkdf
-*:LESSON2_D2
-I:(2)
-D:jd ddfkd fd jd dk dd jd
- :kdj jfkj dd jd dk jkkdf
- :djd kf fdk ddfkd jkkdf jd
- :jfk dk fk fk ddfkd fdj jkj
-*:LESSON2_D3
-I:(3)
-D:k kdj dk fdjd jd djd jkj
- :jk fdj jfkj fd fdjd k jkkdf
+D:jkj k d kd jd jd fdf jkj kd kf jd fd jkj fdj jd dd dd fk fdk jfkj jd jkj kdj
+ :ffk kf ffk jkj jkkdf jd ddfkd fd jd dk dd jd kdj jfkj dd jd dk jkkdf djd kf
+ :fdk ddfkd jkkdf jd jfk dk fk fk ddfkd fdj jkj k kdj dk fdjd jd djd jkj jk
+ :fdj jfkj fd fdj
 G:E_LESSON2
 
 *:S_LESSON3
 K:12:MENU
-B:                         Lesson 3: laesç
+B:                        Lesson 3: Lliçó 3
 *:LESSON3_D1
 I:(1)
-D:deses sedesses sedada dese
- :efes sedada jaça sella llas
- :sedes alesses e lassesses
- :desllaçada allejada alleja llaçada
-*:LESSON3_D2
-I:(2)
-D:fase alejades ells salses
- :jaç falles sedasses dallades
- :dessal alfes salda sedal alleja
- :ajaçades fes fesa dallades all
-*:LESSON3_D3
-I:(3)
-D:faç lesa e fallades falsada
- :llaçada alleja faldades ells
+D:deses sedesses sedada dese efes sedada jaça sella llas sedes alesses e
+ :lassesses desllaçada allejada alleja llaçada fase alejades ells salses
+ :jaç falles sedasses dallades dessal alfes salda sedal alleja ajaçades fes
+ :fesa dallades all faç lesa e fallades falsada llaçada alleja faldades ells
 G:E_LESSON3
 
 *:S_LESSON4
 K:12:MENU
-B:                          Lesson 4: coss
+B:                        Lesson 4: Lliçó 4
 *:LESSON4_D1
 I:(1)
-D:alfalsos falles caldejades collesses
- :lesos cossesses fosses sassolada
- :assolda sedes defeco salles
- :assolelles aflacada focs llocs
+D:alfalsos falles caldejades collesses lesos cossesses fosses sassolada
+ :assolda sedes defeco salles assolelles aflacada focs llocs aclofesses
+ :follejada escada escodole escasseja celles sassolades ells acloca dessolcada
+ :solaçada desllaça esclafada locals flaca cesses assolada deso salla
 *:LESSON4_D2
 I:(2)
-D:aclofesses follejada escada escodole
- :escasseja celles sassolades ells
- :acloca dessolcada solaçada
- :desllaça esclafada locals flaca
-*:LESSON4_D3
-I:(3)
-D:cesses assolada deso salla
- :assolades ecs callols colcada
+D:assolades ecs callols colcada
 G:E_LESSON4
 
 *:S_LESSON5
 K:12:MENU
-B:                        Lesson 5: ntàèé
+B:                        Lesson 5: Lliçó 5
 *:LESSON5_D1
 I:(1)
-D:encasant flotà llastesses sotalades
- :faldejat desenastes tonants sadollà
- :encastés onejants estassant escalena
- :socons defensessen ajocant
+D:encasant flotà llastesses sotalades faldejat desenastes tonants sadollà
+ :encastés onejants estassant escalena socons defensessen ajocant entenc
+ :desset fosfatant escandesc tascàs lesenes desdono acanalesses cassanells
+ :desencastessen assestà estacades esfèns telà asson delatessen descloent
 *:LESSON5_D2
 I:(2)
-D:entenc desset fosfatant escandesc
- :tascàs lesenes desdono acanalesses
- :cassanells desencastessen assestà
- :estacades esfèns telà asson delatessen
-*:LESSON5_D3
-I:(3)
-D:descloent tantejat sedàs desolessen
- :assesto descontentats atans
+D:tantejat sedàs desolessen assesto descontentats atans
 G:E_LESSON5
 
 *:S_LESSON6
 K:12:MENU
-B:                          Lesson 6: ívrr
+B:                        Lesson 6: Lliçó 6
 *:LESSON6_D1
 I:(1)
-D:florada acontentar arrosarà
- :estotara escaloní acatarrares
- :enverdescades corallejaran versessen
- :desvalorara centellejara cavallares
+D:florada acontentar arrosarà estotara escaloní acatarrares enverdescades
+ :corallejaran versessen desvalorara centellejara cavallares desfasar
+ :afrontares relaten estavellaren desenrola destacaràs entretocaran
+ :afalconarà enveraven safraneres concerní trastocàs rosos covaré
 *:LESSON6_D2
 I:(2)
-D:desfasar afrontares relaten estavellaren
- :desenrola destacaràs entretocaran
- :afalconarà enveraven safraneres
- :concerní trastocàs rosos covaré
-*:LESSON6_D3
-I:(3)
-D:enrastelle concentrats escodarà
- :alforres casí descolorar corredores
+D:enrastelle concentrats escodarà alforres casí descolorar corredores
 G:E_LESSON6
 
 *:S_LESSON7
 K:12:MENU
-B:                          Lesson 7: meó
+B:                        Lesson 7: Lliçó 7
 *:LESSON7_D1
 I:(1)
-D:somortes falsejaríem mort amanollí
- :cerví entravessat escalafons
- :ensofrant retrec masera forjaves
- :comeses estotjaríem amom reforcéssem
+D:somortes falsejaríem mort amanollí cerví entravessat escalafons ensofrant
+ :retrec masera forjaves comeses estotjaríem amom reforcéssem recosíem
+ :esfèn telecomandam destorçara atendaves amorteràrem envejàvem avolesa
+ :soterrat entotsolar retardarem asserenament venerarà desossés malmesclant
 *:LESSON7_D2
 I:(2)
-D:recosíem esfèn telecomandam destorçara
- :atendaves amorteràrem envejàvem
- :avolesa soterrat entotsolar
- :retardarem asserenament venerarà
-*:LESSON7_D3
-I:(3)
-D:desossés malmesclant llefardaríem
- :armoll declamares terçades
+D:llefardaríem armoll declamares terçades
 G:E_LESSON7
 
 *:S_LESSON8
 K:12:MENU
-B:                          Lesson 8: hrü
+B:                        Lesson 8: Lliçó 8
 *:LESSON8_D1
 I:(1)
-D:rastellesses desenfarcellar forçat
- :anhelant lletreres remara decoloraràs
- :desarraconara tercers defenestrà electromotor
- :mofaran amorejar desencrosta
+D:rastellesses desenfarcellar forçat anhelant lletreres remara decoloraràs
+ :desarraconara tercers defenestrà electromotor mofaran amorejar desencrosta
+ :torcejarà trontollí encercolàs esfondrades falcar recomanaríem raso
+ :francmaçones assamarrarem fondejares rondara entrenàrem marradejava
 *:LESSON8_D2
 I:(2)
-D:torcejarà trontollí encercolàs
- :esfondrades falcar recomanaríem
- :raso francmaçones assamarrarem
- :fondejares rondara entrenàrem marradejava
-*:LESSON8_D3
-I:(3)
-D:malserví emmerletem amorfes afartesses
- :desacorralen feren remarcàs assamarrades
+D:malserví emmerletem amorfes afartesses desacorralen feren remarcàs
+ :assamarrades
 G:E_LESSON8
 
 *:S_LESSON9
 K:12:MENU
-B:                          Lesson 9: goï
+B:                        Lesson 9: Lliçó 9
 *:LESSON9_D1
 I:(1)
-D:rotífer maregés colltorcerà
- :desgravat vagassegés torcejam
- :conhortades honorares comarcans
- :escassegesses clatellejo afetgegares
+D:rotífer maregés colltorcerà desgravat vagassegés torcejam conhortades
+ :honorares comarcans escassegesses clatellejo afetgegares deshonrívol
+ :lladrons atemoríssem astoraments remodela moradís tascones realegrarem
+ :coratge ondegí assessoressen correlant enjogassadament escaroten
 *:LESSON9_D2
 I:(2)
-D:deshonrívol lladrons atemoríssem
- :astoraments remodela moradís tascones
- :realegrarem coratge ondegí assessoressen
- :correlant enjogassadament escaroten
-*:LESSON9_D3
-I:(3)
-D:conversegéssem canonéssem marcegem
- :desgleve desassossego torcada
+D:conversegéssem canonéssem marcegem desgleve desassossego torcada
 G:E_LESSON9
 
 *:S_LESSON10
 K:12:MENU
-B:                         Lesson 10: bpl·l
+B:                       Lesson 10: Lliçó 10
 *:LESSON10_D1
 I:(1)
-D:desenrojolaran clamoregí debategar
- :aborronarem encrespàvem engolfem
- :capejat desemmerletara coralets
- :peonarà llocota apressats espentejada
+D:desenrojolaran clamoregí debategar aborronarem encrespàvem engolfem
+ :capejat desemmerletara coralets peonarà llocota apressats espentejada
+ :espantàvem desmesclà bregares embascat deportesses desborrats celebrador
+ :escarpís esparpallats gansallant premsat abalançaríem solvataràs
 *:LESSON10_D2
 I:(2)
-D:espantàvem desmesclà bregares embascat
- :deportesses desborrats celebrador
- :escarpís esparpallats gansallant
- :premsat abalançaríem solvataràs
-*:LESSON10_D3
-I:(3)
-D:desempotés ponderàs angolesos anteposant
- :ensellarà enllaçaves sorollarem
+D:desempotés ponderàs angolesos anteposant ensellarà enllaçaves sorollarem
 G:E_LESSON10
 
 *:S_LESSON11
 K:12:MENU
-B:                          Lesson 11: quny
+B:                       Lesson 11: Lliçó 11
 *:LESSON11_D1
 I:(1)
-D:cadascuna esbrotonàrem enfadaríem
- :falsejàreu endolau condolgué arrengàveu
- :envellutaves nannaran tondosaré esbarrejaren
- :duraren mullena atapeísseu negrós
+D:cadascuna esbrotonàrem enfadaríem falsejàreu endolau condolgué
+ :arrengàveu envellutaves nannaran tondosaré esbarrejaren duraren mullena
+ :atapeísseu negrós embrearan cananeu esbatuda camandulejàreu
+ :pampalluguegesses empaquetàrem trafeguegesses rafegut descabdellaríeu
 *:LESSON11_D2
 I:(2)
-D:embrearan cananeu esbatuda camandulejàreu
- :pampalluguegesses empaquetàrem trafeguegesses
- :rafegut descabdellaríeu tufejat
- :destrenant assuaujares malmetent
-*:LESSON11_D3
-I:(3)
-D:conjuréssem ultratgésseu destrempaven
- :gallofejaren desoleu caçaven confessarem
+D:tufejat destrenant assuaujares malmetent conjuréssem ultratgésseu
+ :destrempaven gallofejaren desoleu caçaven confessarem
 G:E_LESSON11
 
 *:S_LESSON12
 K:12:MENU
-B:                          Lesson 12: wncc
+B:                       Lesson 12: Lliçó 12
 *:LESSON12_D1
 I:(1)
-D:esbatanésseu ensangonem embargaments
- :contraforadí emmorcarem acamussades
- :desatrac desencarregara provaven
- :asserenaràs regentats escopetejà
+D:esbatanésseu ensangonem embargaments contraforadí emmorcarem acamussades
+ :desatrac desencarregara provaven asserenaràs regentats escopetejà
+ :desaccentuarem entrava asserenaran transsudeu acorralares rascladors
+ :ulceraràs desempresonar octants cèmbal copejament recalçar catenes
 *:LESSON12_D2
 I:(2)
-D:desaccentuarem entrava asserenaran
- :transsudeu acorralares rascladors
- :ulceraràs desempresonar octants
- :cèmbal copejament recalçar
-*:LESSON12_D3
-I:(3)
-D:catenes desenllosàveu enforno
- :vencereu cessa bastonera promoguessen
+D:desenllosàveu enforno vencereu cessa bastonera promoguessen
 G:E_LESSON12
 
 *:S_LESSON13
 K:12:MENU
-B:                           Lesson 13: cx
+B:                       Lesson 13: Lliçó 13
 *:LESSON13_D1
 I:(1)
-D:cuafí contrapassar desencerclades
- :escarufejau clatrats camuflau crestejaríeu
- :entretancarà gronxolàvem dutxaré
- :penedesc coneguem enxarxant corcares
+D:cuafí contrapassar desencerclades escarufejau clatrats camuflau
+ :crestejaríeu entretancarà gronxolàvem dutxaré penedesc coneguem
+ :enxarxant corcares escorçaràs cornésseu carburares percaçàrem garfesc
+ :covers malencertam encomanés recomencesses caganer corejat falconers
 *:LESSON13_D2
 I:(2)
-D:escorçaràs cornésseu carburares
- :percaçàrem garfesc covers malencertam
- :encomanés recomencesses caganer
- :corejat falconers afermancéssem
-*:LESSON13_D3
-I:(3)
-D:educo malmesclaran escarxàveu
- :entrebancaven cabestro rebec desencastaren
+D:afermancéssem educo malmesclaran escarxàveu entrebancaven cabestro rebec
+ :desencastaren
 G:E_LESSON13
 
 *:S_LESSON14
 K:12:MENU
-B:                           Lesson 14: yz
+B:                       Lesson 14: Lliçó 14
 *:LESSON14_D1
 I:(1)
-D:anyenca escanyoten grunya muntanyosos
- :embotzegam zumzejades enlleganyaren
- :embotzegàs esmorzades complanyesses
- :allenyats escanyussàs ressenyéssem
+D:anyenca escanyoten grunya muntanyosos embotzegam zumzejades enlleganyaren
+ :embotzegàs esmorzades complanyesses allenyats escanyussàs ressenyéssem
+ :desentranyau benzofurans manyucléssem brunzo besunyareu assenyaléssem
+ :menyscabaven desenfonyara embotzegaríeu magatzemera escarcanyada areny
 *:LESSON14_D2
 I:(2)
-D:desentranyau benzofurans manyucléssem
- :brunzo besunyareu assenyaléssem
- :menyscabaven desenfonyara embotzegaríeu
- :magatzemera escarcanyada areny pertanys
-*:LESSON14_D3
-I:(3)
-D:despanyades estrenyereu embanyat
- :empenyalats desenyoraràs polzejàveu
+D:pertanys despanyades estrenyereu embanyat empenyalats desenyoraràs
+ :polzejàveu
 G:E_LESSON14
 
 *:S_LESSON15
 K:12:MENU
-B:               Lesson 15: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+B:                       Lesson 15: Lliçó 15
 *:LESSON15_D1
 I:(1)
-D:Sorells Masos Campdevànol Montenegro
- :Iraq Cabanelles Camarasa
- :Macra Bompàs Laurentí Ix Salamanca
- :Urgell Armenter Justa Agatocles
+D:Sorells Masos Campdevànol Montenegro Iraq Cabanelles Camarasa Macra Bompàs
+ :Laurentí Ix Salamanca Urgell Armenter Justa Agatocles Marçà Catral
+ :Massalfassar Alda Paulí Anselm ESE Montlluís Alfafar Sorollera Bolonya
+ :Leandre Oxford Valença Sagàs Esdres Isaura UPV Roger Aneto Corbera Esteve
 *:LESSON15_D2
 I:(2)
-D:Marçà Catral Massalfassar
- :Alda Paulí Anselm ESE Montlluís
- :Alfafar Sorollera Bolonya Leandre
- :Oxford Valença Sagàs Esdres
-*:LESSON15_D3
-I:(3)
-D:Isaura UPV Roger Aneto Corbera
- :Esteve Bulaternera Conflent
+D:Bulaternera Conflent
 G:E_LESSON15
 
 
@@ -408,19 +298,19 @@ G:S_LESSON15
 G:MENU
 
 *:MENU
-M: "ktouch lesson: Catalan (auto-generated)"
- :S_LESSON1 "jf"
- :S_LESSON2 "kd"
- :S_LESSON3 "laesç"
- :S_LESSON4 "coss"
- :S_LESSON5 "ntàèé"
- :S_LESSON6 "ívrr"
- :S_LESSON7 "meó"
- :S_LESSON8 "hrü"
- :S_LESSON9 "goï"
- :S_LESSON10 "bpl·l"
- :S_LESSON11 "quny"
- :S_LESSON12 "wncc"
- :S_LESSON13 "cx"
- :S_LESSON14 "yz"
- :S_LESSON15 "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+M: "ktouch lesson: Lliçó 15"
+ :S_LESSON1 "Lliçó 1"
+ :S_LESSON2 "Lliçó 2"
+ :S_LESSON3 "Lliçó 3"
+ :S_LESSON4 "Lliçó 4"
+ :S_LESSON5 "Lliçó 5"
+ :S_LESSON6 "Lliçó 6"
+ :S_LESSON7 "Lliçó 7"
+ :S_LESSON8 "Lliçó 8"
+ :S_LESSON9 "Lliçó 9"
+ :S_LESSON10 "Lliçó 10"
+ :S_LESSON11 "Lliçó 11"
+ :S_LESSON12 "Lliçó 12"
+ :S_LESSON13 "Lliçó 13"
+ :S_LESSON14 "Lliçó 14"
+ :S_LESSON15 "Lliçó 15"
