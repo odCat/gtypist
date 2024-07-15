@@ -1,5 +1,9 @@
 2024-04-15 Mihai Gătejescu <gus666xe@gmail.com>
 
+	* ttde.typ: Remove lesson due to copyright reasons
+
+2024-04-15 Mihai Gătejescu <gus666xe@gmail.com>
+
 	* r.typ, t.typ: Fix a few spelling errors and
 	update copyright. Patch from Debian
 
