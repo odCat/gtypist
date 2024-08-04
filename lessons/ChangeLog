@@ -1,3 +1,8 @@
+2024-08-04 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* ktbg_long.typ, ktfi_kids.typ, kthu.typ,
+	kthu_expert.typ, ktno.typ: Remove old lessons
+
 2024-07-15 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* kt*.typ: Remove and replace KTouch lessons
