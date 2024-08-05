@@ -4,7 +4,7 @@
 ## Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2016,
 ##               2017, 2018, 2019
 ##               Felix Natter, Dmitry Rutsky, Tim Marston, Mihai Gătejescu
-## Copyright (C)  2020, 2021, 2022, 2023 Felix Natter, Mihai Gătejescu
+## Copyright (C)  2020, 2021, 2022, 2023, 2024 Felix Natter, Mihai Gătejescu
 ##
 ## GNU Typist is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
@@ -37,37 +37,27 @@ pkgdata_DATA =  gtypist.typ \
 		esp.typ \
 		cs.typ \
 		ru.typ \
-		ttde.typ \
 		demo.typ \
 		ktbg.typ \
-		ktbg_long.typ \
+		ktbr.typ \
+		ktcz.typ \
 		ktde.typ \
-		ktde2.typ \
-		ktde_neo.typ \
-		ktde_number.typ \
-		ktdk.typ \
-		ktdk2.typ \
 		ktdvorak.typ \
-		ktdvorak_abcd.typ \
-		ktdvorak_es.typ \
-		kten.typ \
-		ktes.typ \
+		kten_gb.typ \
+		kten_us.typ \
+		ktes1.typ \
+		ktes2.typ \
+		ktes3.typ \
 		ktes_cat.typ \
 		ktfi.typ \
-		ktfi_kids.typ \
 		ktfr.typ \
-		ktfr2.typ \
-		kthu.typ \
-		kthu_expert.typ \
+		ktgr.typ \
 		ktit.typ \
 		ktnl.typ \
 		ktnl_junior.typ \
 		ktno.typ \
-		ktpl.typ \
 		ktru.typ \
 		ktru_long.typ \
-		ktru_slava.typ \
-		ktsi.typ \
 		kttr.typ
 
 EXTRA_DIST= $(pkgdata_DATA)
