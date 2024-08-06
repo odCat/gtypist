@@ -4,21 +4,27 @@
 # If /usr/bin/awk doesn't work, you can call this script by:
 # gawk -f typcombine
 #
-# Typist v2.2 - improved typing tutor program for UNIX systems
-# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+## This file is part of GNU Typist
+##
+## Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+## Copyright (C) 2001, 2003, 2008, 2009, 2011, 2018, 2019
+##               Felix Natter, Dmitry Rutsky, Tim Marston, Mihai Gătejescu
+## Copyright (C) 2020, 2024 Felix Natter, Mihai Gătejescu
+##
+## GNU Typist is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+##
+## GNU Typist is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.
+
+## Process this file with automake to produce Makefile.in
 #
 #
 # awk script to combine several typ files into a single large one
@@ -75,7 +81,7 @@ FILENAME != cur_filename	{
   cur_filename = FILENAME;
   cur_series = FILENAME;
   gsub( /\..*/, "", cur_series );
-  
+
 # we like the series names to be uppercase - I can't help
 # but feel that there must be a better way to accomplish
 # this, but I can't find it
@@ -84,7 +90,7 @@ FILENAME != cur_filename	{
   split( "Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M", uc,/,/ );
   for ( i = 1; i <= 26; i++ )
   gsub( lc[i], uc[i], cur_series );
-  
+
 # stash the series name
   scount++;
   series[scount] = cur_series;
@@ -126,11 +132,9 @@ END	{
   }
 
 # TODO:
-# - ttde.typ before kt*.de.typ
 # - kt*.typ sorted alphabetically, look at manual, look at comment on top for source info
 # - about 20 lines per T:
 # - if you want to write lessons, see the manual, it's simple!
-# - 
 
 # build the T: commands for the "more lessons" and "help"/"manual" menu items
   printf("*:__MORE_LESSONS\n");
@@ -144,43 +148,32 @@ END	{
   printf(" : ro_special.typ    -  Romanian diacritic characters lessons\n");
   printf(" : ru.typ            -  Russian lessons\n");
   printf(" : p.typ             -  Special characters for programming\n");
-  printf(" : ttde.typ          -  German lessons from tipptrainer 0.6.0\n");
-  printf(" : ktbg.typ          -  Bulgarian lessons from KTouch 1.6\n");
-  printf(" : ktbg_long.typ     -  Bulgarian lessons (longer) from KTouch 1.6\n");
-  printf(" : ktde.typ          -  German lessons I from KTouch 1.6\n");
-  printf(" : ktde2.typ         -  German lessons II from KTouch 1.6\n");
-  printf(" : ktde_neo.typ      -  German lessons with NEO layout from KTouch 1.6\n");
-  printf(" :  (see http://pebbles.schattenlauf.de/layout.php?language=de)\n");
-  printf(" : ktde_number.typ   -  German number keypad lessons from KTouch 1.6\n");
-  printf(" : ktdk.typ          -  Danish lessons I from KTouch 1.6\n");
-  printf(" : ktdk2.typ         -  Danish lessons II from KTouch 1.6\n");
-  printf(" : ktdvorak.typ      -  Dvorak lessons from KTouch 1.6\n");
+  printf(" : ktbg.typ          -  Bulgarian lessons from KTouch 24.05.2\n");
+  printf(" : ktbr.typ          -  Brazilian Portugese lessons from KTouch 24.05.2\n");
+  printf(" : ktcz.typ          -  Czech lessonsfrom KTouch 24.05.2\n");
+  printf(" : ktde.typ          -  German lessons from KTouch 24.05.2\n");
+  printf(" : ktdvorak.typ      -  Dvorak lessons from KTouch 24.05.2\n");
   printf(" :  (see http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard)\n");
-  printf(" : ktdvorak_es.typ   -  Spanish Dvorak lessons from KTouch 1.6\n");
-  printf(" : ktdvorak_abcd.typ -  Dvorak lessons (basic) from KTouch 1.6\n");
-  
+  printf(" : kten_gb.typ       -  British English lessons from KTouch 24.05.2\n");
+  printf(" : kten_us.typ       -  US English lessons from KTouch 24.05.2\n");
+
   printf("T:\n");
   printf(" :... and even more lessons:\n");
   printf(" :\n");
-  printf(" : kten.typ          -  English lessons from KTouch 1.6\n");
-  printf(" : ktes.typ          -  Spanish lessons from KTouch 1.6\n");
-  printf(" : ktes_cat.typ      -  Catalan lessons from KTouch 1.6\n");
-  printf(" : ktfi.typ          -  Finnish lessons from KTouch 1.6\n");
-  printf(" : ktfi_kids.typ     -  Finnish lessons for kids from KTouch 1.6\n");
-  printf(" : ktfr.typ          -  French lessons I from KTouch 1.6\n");
-  printf(" : ktfr2.typ         -  French lessons II from KTouch 1.6\n");
-  printf(" : kthu.typ          -  Hungarian lessons I from KTouch 1.6\n");
-  printf(" : kthu_expert.typ   -  Hungarian lessons II from KTouch 1.6\n");
-  printf(" : ktit.typ          -  Italian lessons from KTouch 1.6\n");
-  printf(" : ktnl.typ          -  Dutch lessons from KTouch 1.6\n");
-  printf(" : ktnl_junior.typ   -  Dutch lessons for kids from KTouch 1.6\n");
-  printf(" : ktno.typ          -  Norwegian lessons from KTouch 1.6\n");
-  printf(" : ktpl.typ          -  Polish lessons from KTouch 1.6\n");
-  printf(" : ktru.typ          -  Russian lessons from KTouch 1.6\n");
-  printf(" : ktru_long.typ     -  Russian lessons (longer) from KTouch 1.6\n");
-  printf(" : ktru_slava.typ    -  Russian lessons (hand-made) from KTouch 1.6\n");
-  printf(" : ktsi.typ          -  Slovenian lessons from KTouch 1.6\n");
-  printf(" : kttr.typ          -  Turkish lessons from KTouch 1.6\n");
+  printf(" : ktes1.typ         -  Spanish lessons I from KTouch 24.05.2\n");
+  printf(" : ktes2.typ         -  Spanish lessons II from KTouch 24.05.2\n");
+  printf(" : ktes3.typ         -  Spanish lessons III from KTouch 24.05.2\n");
+  printf(" : ktes_cat.typ      -  Catalan lessons from KTouch 24.05.2\n");
+  printf(" : ktfi.typ          -  Finnish lessons from KTouch 24.05.2\n");
+  printf(" : ktfr.typ          -  French lessons from KTouch 24.05.2\n");
+  printf(" : ktgr.typ          -  Greek lessons from KTouch 24.05.2\n");
+  printf(" : ktit.typ          -  Italian lessons from KTouch 24.05.2\n");
+  printf(" : ktnl.typ          -  Dutch lessons from KTouch 24.05.2\n");
+  printf(" : ktnl_junior.typ   -  Dutch lessons for kids from KTouch 24.05.2\n");
+  printf(" : ktno.typ          -  Norwegian lessons from KTouch 24.05.2\n");
+  printf(" : ktru.typ          -  Russian lessons from KTouch 24.05.2\n");
+  printf(" : ktru_long.typ     -  Russian lessons (longer) from KTouch 24.05.2\n");
+  printf(" : kttr.typ          -  Turkish lessons from KTouch 24.05.2\n");
 
   printf("T:\n");
   printf(" :\n");
@@ -263,7 +256,7 @@ END	{
       else # TODO: find sth like "abort"
 	exit 1;
       # output 1 menu-item
-      printf( " :__S_%s_SERIES \"Series %s     %s\"\n", 
+      printf( " :__S_%s_SERIES \"Series %s     %s\"\n",
 	      series[i], series[i], series_description);
 #      printf( " :        Fkey%2d - Series %s     %s\n", i,
 #	      series[i], series_description );
