@@ -228,7 +228,7 @@ blue, magenta, cyan, and white respectively. The default colours
 string is 7,0 - white on black. The option is ignored if the terminal
 does not support colours.
 
-@item -s, --silent 
+@item -s, --silent
 When gtypist detects a typing error, it will beep the terminal. Use
 this option to silence the beep.
 
@@ -351,7 +351,7 @@ window that appears.
 
 The following lessons are supplied with GNU Typist :
 @table @file
-@item q.typ 
+@item q.typ
 Quick QWERTY course in English
 @item r.typ
 Long QWERTY course in English
@@ -383,51 +383,33 @@ Lessons in Russian
 Special characters course for programmers
 @item kt*.typ
 These lessons are the standard lessons from
-@uref{http://ktouch.sourceforge.net/, Ktouch 1.6}, which have been
+@uref{https://invent.kde.org/education/ktouch, KTouch 24.05.2}, which have been
 converted to gtypist's file format with the included script,
 @file{tools/ktouch2typ.pl}.
 
 The files are:
 @file{ktbg.typ} (@file{bulgarian.ktouch.xml}),
-@file{ktbg_long.typ} (@file{bulgarian_long.ktouch.xml}),
+@file{ktbr.typ} (@file{blazilian.ktouch.xml}),
+@file{ktcz.typ} (@file{czech.ktouch.xml}),
 @file{ktde.typ} (@file{german.ktouch.xml}),
-@file{ktde2.typ} (@file{german3.ktouch.xml}),
-@file{ktde_neo.typ} (@file{german.neo.ktouch.xml}),
-@file{ktde_number.typ} (@file{german.number.ktouch.xml}),
-@file{ktdk.typ} (@file{danish.ktouch.xml}),
-@file{ktdk2.typ} (@file{danish2.ktouch.xml}),
 @file{ktdvorak.typ} (@file{dvorak.ktouch.xml}),
-@file{ktdvorak_es.typ} (@file{dvorak_es.ktouch.xml}),
-@file{ktdvorak_abcd.typ} (@file{dvorak_ABCD.ktouch.xml}),
-@file{kten.typ} (@file{english.ktouch.xml}),
-@file{ktes.typ} (@file{spanish.ktouch.xml}),
+@file{kten_gb.typ} (@file{british_english.ktouch.xml}),
+@file{kten_us.typ} (@file{us_english.ktouch.xml}),
+@file{ktes1.typ} (@file{spanish1.ktouch.xml}),
+@file{ktes2.typ} (@file{spanish2.ktouch.xml}),
+@file{ktes3.typ} (@file{spanish3.ktouch.xml}),
 @file{ktes_cat.typ} (@file{catalan.ktouch.xml}),
 @file{ktfi.typ} (@file{finnish.ktouch.xml}),
-@file{ktfi_kids.typ} (@file{finnish_for_kids.ktouch.xml}),
 @file{ktfr.typ} (@file{french.ktouch.xml}),
-@file{ktfr2.typ} (@file{french2.ktouch.xml}),
-@file{kthu.typ} (@file{hungarian.ktouch.xml}),
-@file{kthu_expert.typ} (@file{hungarian_expert.ktouch.xml}),
+@file{ktgr.typ} (@file{greek.ktouch.xml}),
 @file{ktit.typ} (@file{italian.ktouch.xml}),
 @file{ktnl.typ} (@file{nederlands.ktouch.xml}),
 @file{ktnl_junior.typ} (@file{nederlands_junior.ktouch.xml}),
 @file{ktno.typ} (@file{norwegian.ktouch.xml}),
-@file{ktpl.typ} (@file{polish.ktouch.xml}),
 @file{ktru.typ} (@file{russian.ktouch.xml}),
 @file{ktru_long.typ} (@file{russian_long.ktouch.xml}),
-@file{ktru_slava.typ} (@file{russian_slava.ktouch.xml}),
-@file{ktsi.typ} (@file{slovenian.ktouch.xml}),
-@file{kttr.typ} (@file{tr.ktouch.xml}),
+@file{kttr.typ} (@file{turkish.ktouch.xml}),
 
-@file{german2.ktouch.xml} has not been included because it is from the
-same source as @file{ttde.typ} and @file{ttde.typ} contains more
-information.
-    
-@item ttde.typ
-This is the German lesson of
-@uref{http://www.pingos.schulnetz.org/tipptrainer/, tipptrainer
-0.6.0}, which has been converted using @file{tools/tt2typ.pl}. It is
-quite extensive and has good explanations along the way.
 @end table
 
 @noindent
@@ -670,20 +652,20 @@ Here is a tiny example script to demonstrate the available commands
 (@file{tinydemo.typ} lesson file):
 
 @example
-# Minimal demonstration 
-B: Typing tutor demonstration 
+# Minimal demonstration
+B: Typing tutor demonstration
 *:LOOP
 K:1:QDONE
 T:This is a small example tutor script. A better
  :example may be found in the demo.typ file that
  :accompanies GNU Typist
-I:Here is an example of a drill: 
+I:Here is an example of a drill:
 D:asdf ghjkl;
-I:And here is an example of a speed test: 
+I:And here is an example of a speed test:
 S:qwe rt yu iop
 *:QDONE
-Q:Seen enough yet? [Y/N] 
-N:LOOP 
+Q:Seen enough yet? [Y/N]
+N:LOOP
 X:
 @end example
 
@@ -869,7 +851,7 @@ In the above, LG means ISO language code (eg. `en', `fr', `cs') and
 LANGUAGE means name of the database in /usr/lib/aspell
 (eg. `english.multi', `french', `czech').
 
-You can try if it works by typing: 
+You can try if it works by typing:
 @example
         aspell dump master | less
 @end example
@@ -925,7 +907,7 @@ package, it installs it here for you) and use this instead:
 @strong{and} add this to your @file{~/.emacs}:
 
 @lisp
-(setq auto-mode-alist       
+(setq auto-mode-alist
       (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
 @end lisp
 
@@ -999,7 +981,7 @@ file to where the syntax-files go (for example
 fails you can search for e.g. @file{xml.vim}) and add this to
 @file{~/.vimrc} (@file{$HOME/_vimrc} on Windows):
 @example
-autocmd BufNewFile,BufRead *.typ set ft=gtypist 
+autocmd BufNewFile,BufRead *.typ set ft=gtypist
 @end example
 
 Installation for Vim >= 6.x is simpler: first create @file{~/.vim/syntax/}:

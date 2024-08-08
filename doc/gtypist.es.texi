@@ -247,7 +247,7 @@ blanco, respectivamente.  La cadena de colores predeterminada es 7,0
 (blanco sobre negro).  Se ignora esta opción si la terminal no admite
 colores.
 
-@item -s, --silent 
+@item -s, --silent
 Cuando gtypist detecta un error mecanográfico, sonará la terminal.
 Esta opción se usa para silenciarla.
 
@@ -323,7 +323,7 @@ directorio no estándar @file{/home/foo}: @*
 @noindent
 Para ejecutar las lecciones del fichero @file{test.typ} del directorio
 @file{/tmp}, comenzando con la etiqueta @code{TEST1} y empleando el
-cursor de la terminal de manera silenciosa:@* 
+cursor de la terminal de manera silenciosa:@*
 @code{gtypist -t -q -l TEST1 /tmp/test.typ}
 
 @node Lecciones suministradas, Uso de typefortune, Invocacion, Top
@@ -331,7 +331,7 @@ cursor de la terminal de manera silenciosa:@*
 
 GNU Typist viene con las siguientes lecciones:
 @table @file
-@item q.typ 
+@item q.typ
 Curso rápido de QWERTY en inglés.
 @item r.typ
 Curso largo de QWERTY en inglés.
@@ -359,22 +359,32 @@ Lecciones en checo.
 Lecciones en ruso.
 @item kt*.typ
 Estas lecciones son las estándares de
-@uref{http://ktouch.sourceforge.net/, Ktouch 1.0}, convertidas a
-formato de fichero gtypist mediante @file{tools/ktouch2typ.pl}.
+@uref{https://invent.kde.org/education/ktouch, KTouch 24.05.2}, convertidas
+a formato de fichero gtypist mediante @file{tools/ktouch2typ.pl}.
 
-Los ficheros se llaman @file{ktde.typ} (@file{german.ktouch}),
-@file{kten.typ} (@file{english.ktouch}),
-@file{ktfr.typ} (@file{french.ktouch}),
-@file{ktfr2.typ} (@file{french-2.ktouch}),
-@file{ktno.typ} (@file{norwegian.ktouch})
-@file{ktdk.typ} (@file{danish.ktouch}),
-@file{ktdk2.typ} (@file{danish-2.ktouch}),
-@file{ktdvorak.typ} (@file{dvorak.ktouch})
-and @file{ktnumber.typ} (@file{number.ktouch}).
-@item ttde.typ
-Se trata de la lección en alemán de
-@uref{http://www.pingos.schulnetz.org/tipptrainer/, tipptrainer},
-convertida mediante @file{tools/tt2typ.pl}.
+Los ficheros se llaman:
+@file{ktbg.typ} (@file{bulgarian.ktouch.xml}),
+@file{ktbr.typ} (@file{blazilian.ktouch.xml}),
+@file{ktcz.typ} (@file{czech.ktouch.xml}),
+@file{ktde.typ} (@file{german.ktouch.xml}),
+@file{ktdvorak.typ} (@file{dvorak.ktouch.xml}),
+@file{kten_gb.typ} (@file{british_english.ktouch.xml}),
+@file{kten_us.typ} (@file{us_english.ktouch.xml}),
+@file{ktes1.typ} (@file{spanish1.ktouch.xml}),
+@file{ktes2.typ} (@file{spanish2.ktouch.xml}),
+@file{ktes3.typ} (@file{spanish3.ktouch.xml}),
+@file{ktes_cat.typ} (@file{catalan.ktouch.xml}),
+@file{ktfi.typ} (@file{finnish.ktouch.xml}),
+@file{ktfr.typ} (@file{french.ktouch.xml}),
+@file{ktgr.typ} (@file{greek.ktouch.xml}),
+@file{ktit.typ} (@file{italian.ktouch.xml}),
+@file{ktnl.typ} (@file{nederlands.ktouch.xml}),
+@file{ktnl_junior.typ} (@file{nederlands_junior.ktouch.xml}),
+@file{ktno.typ} (@file{norwegian.ktouch.xml}),
+@file{ktru.typ} (@file{russian.ktouch.xml}),
+@file{ktru_long.typ} (@file{russian_long.ktouch.xml}),
+@file{kttr.typ} (@file{turkish.ktouch.xml}),
+
 @end table
 
 @noindent
@@ -636,20 +646,20 @@ Este es un script de ejemplo para mostrar los comandos disponibles en
 el fichero de lección (@file{tinydemo.typ}):
 
 @example
-# Demostración mínima 
-B: Demostración del tutor mecanográfico 
+# Demostración mínima
+B: Demostración del tutor mecanográfico
 *:LOOP
 K:1:QDONE
 T:Este es un pequeño ejemplo de tutoría. Un ejemplo
  :mejor se encuentra en el fichero demo.typ que
  :acompaña a GNU Typist
-I:Este es un ejemplo de un ejercicio: 
+I:Este es un ejemplo de un ejercicio:
 D:asdf ghjkl;
-I:Y este lo es de una prueba de velocidad: 
+I:Y este lo es de una prueba de velocidad:
 S:qwe rt yu iop
 *:QDONE
-Q:¿Ha visto suficiente? [Y/N] 
-N:LOOP 
+Q:¿Ha visto suficiente? [Y/N]
+N:LOOP
 X:
 @end example
 
@@ -808,7 +818,7 @@ configuración para que el banco de datos maestro de aspell sea el del
 idioma elegido.  Esto se puede hacer por dos vías:
 
 @enumerate
-@item En el directorio personal se crea el fichero 
+@item En el directorio personal se crea el fichero
 @file{.aspell.conf} y se le añade esta línea: @* @code{master
 LANGUAGE}
 
@@ -880,7 +890,7 @@ el paquete Debian, que ya lo hace solo) y se usa esto:
 @strong{y} se añade esto al @file{~/.emacs}:
 
 @lisp
-(setq auto-mode-alist       
+(setq auto-mode-alist
       (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
 @end lisp
 

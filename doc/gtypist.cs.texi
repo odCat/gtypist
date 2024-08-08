@@ -83,7 +83,7 @@ spustíte lekce v češtině zaměřené na českou klávesnici.
 @unnumbered Distribuce
 
 GNU Typist (či gtypist) je @dfn{svobodný software}; to znamená, že
-jej může za určitých podmínek každý svobodně používat a 
+jej může za určitých podmínek každý svobodně používat a
 dále redistribuovat. Přesné podmínky můžete nalézt v GNU
 General Public Lincense, kterou jste obdrželi s tímto programem
 a která následuje tuto sekci.
@@ -125,7 +125,7 @@ testy. Program je určen pro používání na terminálech bez grafiky.
 Byl zkompilován na GNU/Linuxu, Unixech (Aix, OpenBSD) a také
 na DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
-Program načítá lekce vytvořené ve snadno pochopitelném 
+Program načítá lekce vytvořené ve snadno pochopitelném
 skritpovacím jazyku. Je distribuován spolu s několika
 dobrými a kompletními lekcemi, které můžete používat,
 modifikovat, nebo psát nové. (@pxref{Vytvořte nové lekce}
@@ -144,11 +144,11 @@ V programu jsou dva typy cvičení: drilové a rychlostní testy.
 
 V drilových vám gtypist zobrazí text v každé druhé řádce obrazovky
 a počká, až uživatel správně opíše text do zbývajících prázdných
-řádek. 
+řádek.
 @c TODO: intention is ``Griff-Übung'' (finger exercise)
 Chybně zadaná písmena jsou indikována obráceným @code{^},
 nebo @code{>}, pokud je špatně zadaným znakem konec řádky.
-Na konci cvičení program spočítá skutečnou a užitečnou 
+Na konci cvičení program spočítá skutečnou a užitečnou
 rychlost v jednotkách slov za minutu. Pokud jste udělali příliš mnoho
 chyb, cvičení se spustí znova.
 
@@ -161,10 +161,10 @@ a na konci testu se spočítá opravdová a užitečná rychlost ve
 WPM (words per minute -- slova za minutu).
 @c TODO: what is it used for ?
 Pokud se vyskytlo příliš mnoho chyb, test se spustí znovu.
-Opravování chyb je povoleno, ale takto opravené chyby budou stejně 
+Opravování chyb je povoleno, ale takto opravené chyby budou stejně
 započítány do hodnocení.
 
-Jestli jste již udělali příliš mnoho chyb, můžete použít @key{ESC} 
+Jestli jste již udělali příliš mnoho chyb, můžete použít @key{ESC}
 a test se spustí znovu. Kdykoliv dokončíte lekci, butete dotázáni,
 zda ji chcete opakovat.
 
@@ -192,7 +192,7 @@ vás, takže se stejně budete muset snažit, jak nejlépe umíte ;-)
 
 @c @item D
 @c This creates an ordinary typing drill. It is a multi-line command;
-@c as many lines may be used as available on the screen. 
+@c as many lines may be used as available on the screen.
 @c The text is displayed  alternate screen lines, and prompts
 @c you to type the same text in on the intermediate lines.  Typing errors
 @c are indicated with an inverse @code{^}, or @code{>} if the character is a newline.
@@ -237,11 +237,11 @@ pokud je zadané číslo menší. Pro procvičovací lekce je tato
 hodnota ale ignorována.
 
 @item -n, --notimer
-Normálně GNU Typist zobrazuje rychlost ve WPM (slova za minutu) jak 
-po drilových cvičeních, tak po rychlostních zkouškách. Lekce jsou ale 
-zřejmě napsané pro program, který zobrazoval rychlost pouze při rychlostních 
+Normálně GNU Typist zobrazuje rychlost ve WPM (slova za minutu) jak
+po drilových cvičeních, tak po rychlostních zkouškách. Lekce jsou ale
+zřejmě napsané pro program, který zobrazoval rychlost pouze při rychlostních
 testech. Abyste gtypist přinutili k takovémuto chování odpovídajícímu
-lekcím, tedy aby nezobrazoval počet slov za minutu u drilových testů, 
+lekcím, tedy aby nezobrazoval počet slov za minutu u drilových testů,
 použijte tento parametr.
 
 @item -t, --term-cursor
@@ -253,7 +253,7 @@ používat standardní kurzor terminálu.
 @item -f, --curs-flash
 Hodnota tohoto parametru nastavuje blikání obdélníkového kurzoru
 v desetinách sekund. Hodnota 0 znamená, že kurzor nebude blikat.
-Standardní hodnota je 10, maximální 512. Toto je ignorováno, pokud 
+Standardní hodnota je 10, maximální 512. Toto je ignorováno, pokud
 bylo nastaveno -t nebo --term-cursor.
 
 @item -c, --colo[u]rs
@@ -266,7 +266,7 @@ mezi 0 a 7. Kódy barev od 0 do 7 znamenají barvu černou,
 a bílou. Defalutní nastavení je 7,0 -- bílá na černém pozadí.
 Toto nastavení je ignorováno pokud terminál nepodporuje barvy.
 
-@item -s, --silent 
+@item -s, --silent
 Kdykoliv narazí gtypist na chybu, zapípá. Tímto nastavením
 můžete zvukový signál potlačit.
 
@@ -284,7 +284,7 @@ Vícenádobné mezery stlačí na jedinou a bude přeskakovat rozdělovací
 @item -l, --start-label
 Tento parametr udává návěstí ve skriptovém souboru, kde
 gtyping začne (pro informace o návěstí
-viz níže skriptovací jazyk). Pokud není start_label definováno, začne 
+viz níže skriptovací jazyk). Pokud není start_label definováno, začne
 se od začátku souboru.
 
 @item -k, --no-skip
@@ -295,7 +295,7 @@ Zakáže uživateli přeskakovat lekce nebo z nich utíkat pomocí
 
 @noindent
 Pokud chcete spouštět gtypist ve svém rodném jazyce, musíte
-také vhodně nastavit proměnnou prostředí @env{LANG} 
+také vhodně nastavit proměnnou prostředí @env{LANG}
 @xref{Proměnné prostředí}.
 
 @strong{Příklady:}
@@ -311,7 +311,7 @@ Ke spuštění českých lekcí: @*
 
 
 @noindent
-Donutíme gtypist, aby hledal lekci bar.typ v nestandardním 
+Donutíme gtypist, aby hledal lekci bar.typ v nestandardním
 adresáři @file{/home/foo}: @*
 @code{export GTYPIST_PATH="/home/foo"}
 @code{gtypist bar.typ}
@@ -353,18 +353,33 @@ Soubor všech předchozích anglických lekcí
 @item esp.typ
 Kurz QWERTY ve španělštině
 @item kt*.typ
-Toto jsou standardní lekce z Ktouch 1.0
-(@url{http://ktouch.sourceforge.net}), které byly
+Toto jsou standardní lekce z Ktouch 24.05.2
+(@url{https://invent.kde.org/education/ktouch}), které byly
 do formátu gtypistu zkonvertovány s použitím
 @file{tools/ktouch2typ.pl}.
 
-Tyto soubory jsou ktde.typ (german.ktouch), kten.typ (english.ktouch),
-ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
-(norwegian.ktouch) and ktnumber.typ (number.ktouch).
-@item ttde.typ
-To je německá lekce pro tipptrainer
-(@url{http://www.pingos.schulnetz.org/tipptrainer}), která byla
-zkonvertována s pomocí @file{tools/tt2typ.pl}.
+Lekce jsou:
+@file{ktbg.typ} (@file{bulgarian.ktouch.xml}),
+@file{ktbr.typ} (@file{blazilian.ktouch.xml}),
+@file{ktcz.typ} (@file{czech.ktouch.xml}),
+@file{ktde.typ} (@file{german.ktouch.xml}),
+@file{ktdvorak.typ} (@file{dvorak.ktouch.xml}),
+@file{kten_gb.typ} (@file{british_english.ktouch.xml}),
+@file{kten_us.typ} (@file{us_english.ktouch.xml}),
+@file{ktes1.typ} (@file{spanish1.ktouch.xml}),
+@file{ktes2.typ} (@file{spanish2.ktouch.xml}),
+@file{ktes3.typ} (@file{spanish3.ktouch.xml}),
+@file{ktes_cat.typ} (@file{catalan.ktouch.xml}),
+@file{ktfi.typ} (@file{finnish.ktouch.xml}),
+@file{ktfr.typ} (@file{french.ktouch.xml}),
+@file{ktgr.typ} (@file{greek.ktouch.xml}),
+@file{ktit.typ} (@file{italian.ktouch.xml}),
+@file{ktnl.typ} (@file{nederlands.ktouch.xml}),
+@file{ktnl_junior.typ} (@file{nederlands_junior.ktouch.xml}),
+@file{ktno.typ} (@file{norwegian.ktouch.xml}),
+@file{ktru.typ} (@file{russian.ktouch.xml}),
+@file{ktru_long.typ} (@file{russian_long.ktouch.xml}),
+@file{kttr.typ} (@file{turkish.ktouch.xml}),
 @end table
 
 @noindent
@@ -396,7 +411,7 @@ Cvičení <počet> fortunes.
 
 @item -o <gtypist_options>
 Předej gtypistu nastavení ve formě @option{option} (nastavení přepínače,
-např. @code{-o word-processor}), @option{option,value} (nastavení hodnoty, 
+např. @code{-o word-processor}), @option{option,value} (nastavení hodnoty,
 např. @code{-o e,1.0}) kde @code{option} je jméno nastavení
 (zkrácené či dlouhé) s tím, že všechny úvodní pomlčky jsou odstraněny.
 Pokud uvádíte více než jeden parametr, musíte je uvést v apostrofech:
@@ -432,9 +447,9 @@ Následující výčet je seznamem platných hodnot @code{znaků_příkazu}:
 
 @table @code
 @item B
-Tento příkaz smaže celou obrazovku. Pokud má nějaká 
+Tento příkaz smaže celou obrazovku. Pokud má nějaká
 @code{data_příkazu}, ta jsou zobrazena v horním jednořádkovém
-banneru a zůstanou tam až do zavolání následujícího příkazu @code{B}. 
+banneru a zůstanou tam až do zavolání následujícího příkazu @code{B}.
 Tento příkaz nesmí pokračovat na následující řádce.
 
 @item T
@@ -448,12 +463,12 @@ využíváno pro tisk položek menu.
 @item *
 Hvědička znamená návěstí v souboru. Návěstí může být cílem pro
 příkazy @code{G}, @code{Y}, @code{N} nebo @code{F}. Návěstí
-mohou zahrnovat jakékoliv znaky včetně mezer a jsou 
+mohou zahrnovat jakékoliv znaky včetně mezer a jsou
 jednořádkovým příkazem. Mezery na konci návěstí jsou ignorovány.
 
 @item I
 Tento příkaz zobrazí stručné instrukce k drilovému či rychlostnímu
-testu. Je dovoleno použít pouze dvou řádek. Narozdíl od příkazu @code{T} 
+testu. Je dovoleno použít pouze dvou řádek. Narozdíl od příkazu @code{T}
 se před pokračováním nečeká na stisk klávesy. Značka by tedy
 měla být vždy následována cvičením. Maže plochu obrazovky
 pro cvičení, v tomto ohledu se chová jako dvouřádkové @code{T}.
@@ -534,12 +549,12 @@ raději příkaz M).
 
 @item Y
 Y Je podobné @code{G}, s výjimkou toho, že příkaz skoku
-je vyvolán pouze pokud odpověď na předchozí otázku @code{Q} 
+je vyvolán pouze pokud odpověď na předchozí otázku @code{Q}
 byla @key{Y}.
 
 @item N
 N je podobné @code{G}, s výjimkou toho, že příkaz skoku
-je vyvolán pouze pokud odpověď na předchozí otázku @code{Q} 
+je vyvolán pouze pokud odpověď na předchozí otázku @code{Q}
 byla @key{N}.
 
 @item K
@@ -555,9 +570,9 @@ mohou být místo jich použity klávesy
 @key{1} až @key{9} pro @key{F1} až @key{F9}, @key{0} pro
 @key{F10}, @key{A} pro @key{F11} a @key{S} pro @key{F12}.
 
-Jinou alternativou pro @key{F1} až @key{F12} jsou kombinace: 
-@key{Ctrl-Q}, @key{Ctrl-W}, @key{Ctrl-E}, @key{Ctrl-R}, 
-@key{Ctrl-T}, @key{Ctrl-Z}, @key{Ctrl-U}, @key{Ctrl-I}, 
+Jinou alternativou pro @key{F1} až @key{F12} jsou kombinace:
+@key{Ctrl-Q}, @key{Ctrl-W}, @key{Ctrl-E}, @key{Ctrl-R},
+@key{Ctrl-T}, @key{Ctrl-Z}, @key{Ctrl-U}, @key{Ctrl-I},
 @key{Ctrl-O}, @key{Ctrl-P}, @key{Ctrl-A} a @key{Ctrl-S}.
 
 To je také užitečné, pokud jsou funkční klávesy odchytávány
@@ -570,18 +585,18 @@ chyb dovoleného pro úspěšné absolvování následující lekce
 (E:<value>%*).
 
 Pokud je nastaveno @option{--max-error/-e}, tak bute tento
-příkaz platit pouze tehdy, pokud je @emph{přísnější} 
+příkaz platit pouze tehdy, pokud je @emph{přísnější}
 než hodnota specifikovaná na příkazové řádce.
 
 @code{data_příkazu} se skládají z hodnoty (mezi 0.0 a 100.0)
 následované znakem '%' (toto je požadováno, aby byly skripty
-lépe čitelné). Existuje speciální hodnota @code{default} 
+lépe čitelné). Existuje speciální hodnota @code{default}
 nebo @code{Default}, která nastavuje maximální procento chyb
 zpět na defaultní hodnotu.
 
 @item F
-Tento příkaz může být použit k nastavení návěstí 
-(v @code{data_příkazu}), kam bude uživatel muset 
+Tento příkaz může být použit k nastavení návěstí
+(v @code{data_příkazu}), kam bude uživatel muset
 jít, pokud úspěšně neprojde cvičením.
 
 Tento příkaz se většinou vztahuje pouze k následujícímu
@@ -592,7 +607,7 @@ Pokud je návěstí NULL, pak příkaz návěstí resetuje.
 
 @item X
 Tento příkaz přinutí gtypist vyskočit. Je to jednořádkový
-příkaz. Jakékoliv @code{data_příkazu} jsou ignorována. 
+příkaz. Jakékoliv @code{data_příkazu} jsou ignorována.
 Jiný způsob, jakým může dojít k opuštění programu,
 je když gtypist dojde na konec souboru (takže tam můžete
 také umístit návěstí a odkazovat na něj příkazem @code{G})
@@ -612,13 +627,13 @@ K:1:QDONE
 T:Zde je malý příklad skriptu pro lekci.
  :Lepší příklad můžete nalézt v souboru
  :demo.typ, který je dodáván s GNU Typist.
-I:Tady je drilové cvičení: 
+I:Tady je drilové cvičení:
 D:asdf ghjkl;
-I:A tady je zas rychlostní test: 
+I:A tady je zas rychlostní test:
 S:qwe rt yu iop
 *:QDONE
-Q:Stačilo to již? [Y/N] 
-N:LOOP 
+Q:Stačilo to již? [Y/N]
+N:LOOP
 X:
 @end example
 
@@ -698,7 +713,7 @@ from the program @command{fortune} (or the emacs-internal
 @command{yow} if @command{fortune} isn't available, as is usually the
 case on Windows).
 
-Once you installed @file{gtypist-mode.el} 
+Once you installed @file{gtypist-mode.el}
 (@pxref{Mód Emacsu}), you can open a file
 with it ``.typ'' extension and run @kbd{C-c C-f} to create a drill
 (@code{D:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
@@ -740,8 +755,8 @@ syntax-highlighting, indentation and has some convenient commands for
 counting labels, a goto-label-command, inserting properly centered
 banners, special comments and a bit more.
 
-Copy this file from @file{tools/gtypist-mode.el} to wherever you put 
-your local elisp files (e.g.  @file{~/elisp}) and put this in your 
+Copy this file from @file{tools/gtypist-mode.el} to wherever you put
+your local elisp files (e.g.  @file{~/elisp}) and put this in your
 @file{~/.emacs} (adapt path!):
 
 @lisp
@@ -760,7 +775,7 @@ and use this instead:
 @strong{and} add this to your @file{~/.emacs}:
 
 @lisp
-(setq auto-mode-alist       
+(setq auto-mode-alist
       (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
 @end lisp
 
@@ -834,7 +849,7 @@ knihovny gettext. To znamená, že pokud to váš systém podoruje,
 můžete si vybrat jazyk, ve kterém chcete zobrazovat hlášky gtypistu.
 Momentálně jsou k dispozici angličtina, španělština, němčina,
 finština a čeština. K použití konkrétní NLS je třeba nastavit
-proměnnou prostředí LANG na odpovídající LL_CC kombinaci, 
+proměnnou prostředí LANG na odpovídající LL_CC kombinaci,
 kde LL je dvouznakový kód jazyka podle ISO 639 a CC je dvoupísmenný
 znak země podle ISO 3166 (např. es_ES pro Španělsko nebo de_DE
 pro Německo). Na některých systémech budete muset asi nastavit
@@ -862,7 +877,7 @@ Tento parametr budete muset změnit, pokud jsou adresáře s
  @code{terminfo} rozdílné na systému, kde byl gtypist kompilován
 a na systému, kde má fungovat. Například na starších
 distribucích Slackware je terminfo umístěno v
-@file{/usr/lib/terminfo}. Na RedHat Linuxu je v 
+@file{/usr/lib/terminfo}. Na RedHat Linuxu je v
 @file{/usr/share/terminfo}. Pokud si program stěžuje
 na typ terminálu a má správně nastavenou hodnotu
 @code{TERM}, zkuste toto.
@@ -880,7 +895,7 @@ V rychlostních testech není možné používat backspace a delete
 za začátkem nové řádky nebo po klávese TAB. To je kvůli zjednodušení
 aktualizace obrazovky.
 
-Barevné módy zřejmě nepracují dobře s UnixWare. Někdy 
+Barevné módy zřejmě nepracují dobře s UnixWare. Někdy
 nejsou správně zobrazeny převrácené barvy. To se týká některých
 typů terminálů a xterminálů.
 
@@ -900,29 +915,29 @@ Simon Baldwin @email{simonb@@sco.com} přepsal verzi D. Jason Penneyho,
 jeho vylepšení jsou popsána v souboru NEWS (mezi verzí 2.2 a 2.2b).
 On je také držitelem copyrightu na GNU Typist
 (gtypist je distribuovaný pod podmínkami GNU GPL).
-Simon také napsal verzi Typistu v Javě, kterou původně nazýval 
+Simon také napsal verzi Typistu v Javě, kterou původně nazýval
 JTypist, ale nyní se jmenuje Typist:
 @url{http://www.geocities.com/simon_baldwin/typist/}
 @item
-Since 1997, Ben Armstrong @email{synrg@@sanctuary.nslug.ns.ca} 
+Since 1997, Ben Armstrong @email{synrg@@sanctuary.nslug.ns.ca}
 pomohl opravováním chyb a udržování balíčku pro Debian
 (podívejte se na
 @url{http://packages.debian.org/gtypist}).
 @item
 V roce 2000 se Vladimir Támara @email{vtamara@@users.sourceforge.net} a
-Igor Támara @email{ikks@@users.sourceforge.net} stali maintainery verze 
+Igor Támara @email{ikks@@users.sourceforge.net} stali maintainery verze
 v C. Před listopadem 2000 byl GNU Typist spravován jako součást
 projektu Structio.
 @item
 Listopad 2000, program byl přijat do GNU! Byl přejmenován na GNU Typist
 (také gtypist).
-@item V květnu 2001 se stal novým maintainerem 
+@item V květnu 2001 se stal novým maintainerem
 Michael Opdenacker @email{michaelo@@gnu.org},
 který se také naučil psát na klávesnici s gtypistem.
 Vývoj projektu nyní probíhá na
 @url{http://savannah.gnu.org/projects/gtypist/}.
-@item V červnu 2001 se k projektu připojil 
-Felix Natter @email{fnatter@@gmx.net} 
+@item V červnu 2001 se k projektu připojil
+Felix Natter @email{fnatter@@gmx.net}
 a výrazně mu přispěl portováním
 lekcí z jiných tutoriálů, vylepšením pomocných utilit,
 nových možností tutoriálů a módem pro Emacs.
