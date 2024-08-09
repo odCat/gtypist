@@ -384,7 +384,6 @@ Los ficheros se llaman:
 @file{ktru.typ} (@file{russian.ktouch.xml}),
 @file{ktru_long.typ} (@file{russian_long.ktouch.xml}),
 @file{kttr.typ} (@file{turkish.ktouch.xml}),
-
 @end table
 
 @noindent

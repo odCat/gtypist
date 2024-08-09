@@ -1,3 +1,8 @@
+2024-08-09 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* symq.typ, symt.typ, Makefile.am: Add the lessons
+	using the symmetric system
+
 2024-08-04 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* Makefile.am: Update the lessons list

@@ -381,6 +381,9 @@ QWERTY course in Spanish
 Lessons in Russian
 @item p.typ
 Special characters course for programmers
+@item sym*.typ
+Lessons base on Q and T series using a symmetric system.
+For more info please see @uref{https://kennetchaz.github.io/symmetric-typing/}
 @item kt*.typ
 These lessons are the standard lessons from
 @uref{https://invent.kde.org/education/ktouch, KTouch 24.05.2}, which have been
@@ -409,7 +412,6 @@ The files are:
 @file{ktru.typ} (@file{russian.ktouch.xml}),
 @file{ktru_long.typ} (@file{russian_long.ktouch.xml}),
 @file{kttr.typ} (@file{turkish.ktouch.xml}),
-
 @end table
 
 @noindent

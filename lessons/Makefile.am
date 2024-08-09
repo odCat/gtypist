@@ -4,7 +4,7 @@
 ## Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2016,
 ##               2017, 2018, 2019
 ##               Felix Natter, Dmitry Rutsky, Tim Marston, Mihai Gătejescu
-## Copyright (C)  2020, 2021, 2022, 2023, 2024 Felix Natter, Mihai Gătejescu
+## Copyright (C) 2020, 2021, 2022, 2023, 2024 Felix Natter, Mihai Gătejescu
 ##
 ## GNU Typist is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
@@ -31,6 +31,8 @@ pkgdata_DATA =  gtypist.typ \
 		q.typ \
 		r.typ \
 		s.typ \
+		symq.typ \
+		symt.typ \
 		t.typ \
 		u.typ \
 		v.typ \
