@@ -377,10 +377,12 @@ Compendium of all previous lessons in English
 Lessons in Czech
 @item esp.typ
 QWERTY course in Spanish
-@item ru.typ
-Lessons in Russian
 @item p.typ
 Special characters course for programmers
+@item ro_special.typ
+Romanian lesson focusing on the diacritic characters
+@item ru.typ
+Lessons in Russian
 @item sym*.typ
 Lessons base on Q and T series using a symmetric system.
 For more info please see @uref{https://kennetchaz.github.io/symmetric-typing/}
