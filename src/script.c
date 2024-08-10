@@ -180,8 +180,8 @@ void build_label_index( FILE *script ) {
       /* search the linked list for the label, to
          see if it's already there - nice to check */
       for ( check_label = global_label_list[ hash ];
-      check_label != NULL;
-      check_label = check_label->next )
+              check_label != NULL;
+              check_label = check_label->next )
       {
         if ( strcmp( check_label->label, SCR_DATA( line )) == 0 )
           fatal_error( _("label redefinition"), line );

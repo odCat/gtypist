@@ -1480,7 +1480,7 @@ void do_on_failure_label_set( FILE *script, char *line )
 static
 void parse_file( FILE *script, char *label )
 {
-  char	line[MAX_SCR_LINE];		/* line buffer */
+  char	line[MAX_SCR_LINE];     /* line buffer */
   char	command;          /* current command */
 
   /* if label given then start running there */
@@ -1501,26 +1501,19 @@ void parse_file( FILE *script, char *label )
     command = SCR_COMMAND( line );
     switch( command )
     {
-      case C_TUTORIAL:
-        do_tutorial( script, line ); break;
-      case C_INSTRUCTION:
-        do_instruction( script, line ); break;
+      case C_TUTORIAL:  do_tutorial( script, line ); break;
+      case C_INSTRUCTION: do_instruction( script, line ); break;
       case C_CLEAR:	do_clear( script, line ); break;
       case C_GOTO:	do_goto( script, line, TRUE ); break;
       case C_EXIT:	do_exit( script ); break;
       case C_QUERY:	do_query( script, line ); break;
-      case C_YGOTO:	do_goto( script, line, global_resp_flag );
-        break;
-      case C_NGOTO:	do_goto( script, line, !global_resp_flag );
-        break;
+      case C_YGOTO:	do_goto( script, line, global_resp_flag ); break;
+      case C_NGOTO:	do_goto( script, line, !global_resp_flag ); break;
       case C_DRILL:
-      case C_DRILL_PRACTICE_ONLY:
-        do_drill( script, line ); break;
+      case C_DRILL_PRACTICE_ONLY: do_drill( script, line ); break;
       case C_SPEEDTEST:
-      case C_SPEEDTEST_PRACTICE_ONLY:
-        do_speedtest( script, line ); break;
+      case C_SPEEDTEST_PRACTICE_ONLY: do_speedtest( script, line ); break;
       case C_KEYBIND:	do_keybind( script, line ); break;
-
       case C_LABEL:
          __update_last_label (SCR_DATA (line));
          get_script_line (script, line);
