@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.6\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2021-08-16 22:07+0300\n"
+"POT-Creation-Date: 2024-08-11 13:45+0200\n"
 "PO-Revision-Date: 2012-02-06 17:40+0000\n"
 "Last-Translator: Wei Mingzhi <whistler@openoffice.org>\n"
 "Language-Team: Simplified Chinese\n"
@@ -40,8 +40,8 @@ msgstr "指令只限二行"
 msgid "internal error: fseek"
 msgstr "内部错误: fseek"
 
-#: src/gtypist.c:825 src/gtypist.c:1909 src/gtypist.c:1925 src/gtypist.c:1972
-#: src/gtypist.c:2009 src/gtypist.c:2029 src/script.c:145 src/script.c:169
+#: src/gtypist.c:825 src/gtypist.c:1902 src/gtypist.c:1918 src/gtypist.c:1965
+#: src/gtypist.c:2002 src/gtypist.c:2022 src/script.c:145 src/script.c:169
 #: src/script.c:256
 msgid "internal error: malloc"
 msgstr "内部错误: malloc"
@@ -74,104 +74,104 @@ msgstr "\"E:\" 的值无效 (超出范围)"
 msgid "label '%s' not found"
 msgstr "标签 '%s' 没找到"
 
-#: src/gtypist.c:1535
+#: src/gtypist.c:1528
 msgid "unknown command"
 msgstr "未知的命令"
 
-#: src/gtypist.c:1569
+#: src/gtypist.c:1562
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "打 '%s --help' 可得到更多的信息.\n"
 
-#: src/gtypist.c:1576
+#: src/gtypist.c:1569
 #, fuzzy, c-format
 msgid "%s: invalid max-error value\n"
 msgstr "%s: 无效的 error-max 值\n"
 
-#: src/gtypist.c:1583
+#: src/gtypist.c:1576
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: 无效的 curs-flash 值\n"
 
-#: src/gtypist.c:1593
+#: src/gtypist.c:1586
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: 不正确的颜色值\n"
 
-#: src/gtypist.c:1606
+#: src/gtypist.c:1599
 #, fuzzy, c-format
 msgid "%s: invalid banner-colours value\n"
 msgstr "%s: 不正确的颜色值\n"
 
-#: src/gtypist.c:1687
+#: src/gtypist.c:1680
 msgid " Tutorial "
 msgstr "   教程   "
 
-#: src/gtypist.c:1689
+#: src/gtypist.c:1682
 msgid "  Query   "
 msgstr "   查询   "
 
-#: src/gtypist.c:1691
+#: src/gtypist.c:1684
 msgid "  Drill   "
 msgstr "   操练   "
 
-#: src/gtypist.c:1693
+#: src/gtypist.c:1686
 msgid "Speed test"
 msgstr "速度测验"
 
-#: src/gtypist.c:1695
+#: src/gtypist.c:1688
 #, fuzzy
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr " 按回车键或空格键继续。ESC 键返回至菜单。"
 
-#: src/gtypist.c:1698
+#: src/gtypist.c:1691
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr "您的错误率太高了. 您必须达到 %.1f%%."
 
-#: src/gtypist.c:1702
+#: src/gtypist.c:1695
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr "您没有通过此次测验, 所以您必须回到 %s"
 
-#: src/gtypist.c:1706
+#: src/gtypist.c:1699
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr "按 R 重复一次, 按 N 进入下一个练习或按 E 退出"
 
-#: src/gtypist.c:1710
+#: src/gtypist.c:1703
 msgid " Press R to repeat or E to exit "
 msgstr "按 R 重复一次或按 E 退出"
 
-#: src/gtypist.c:1713
+#: src/gtypist.c:1706
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr "您确定要退出此课程吗? [Y/N]"
 
-#: src/gtypist.c:1717
+#: src/gtypist.c:1710
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr "抱歉, gtypist 目前设定为禁止跳过课程。"
 
-#: src/gtypist.c:1722
+#: src/gtypist.c:1715
 msgid "Y/N"
 msgstr "Y/N"
 
-#: src/gtypist.c:1732
+#: src/gtypist.c:1725
 msgid "R/N/E"
 msgstr "R/N/E"
 
-#: src/gtypist.c:1753
+#: src/gtypist.c:1746
 #, c-format
 msgid "%s: %s environment variable not set\n"
 msgstr "%s: %s 环境变量未设置\n"
 
-#: src/gtypist.c:1800
+#: src/gtypist.c:1793
 msgid "can't find or open file"
 msgstr "找不到或无法打开文件"
 
-#: src/gtypist.c:1854
+#: src/gtypist.c:1847
 msgid "Loading the script..."
 msgstr "正在调入脚本文件"
 
-#: src/gtypist.c:1964
+#: src/gtypist.c:1957
 #, fuzzy
 msgid "internal error: fopen"
 msgstr "内部错误: fopen"
@@ -244,8 +244,8 @@ msgid ""
 "Welcome to GNU Typist!\n"
 "\n"
 "This message is meant to get you started using gtypist. Please read the\n"
-"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist"
-"\")\n"
+"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info "
+"gtypist\")\n"
 "for more in-depth information!\n"
 "\n"
 "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
@@ -266,8 +266,7 @@ msgid ""
 "too difficult you can change it by running gtypist with the \"-e <maxpct>\"\n"
 "command-line option.\n"
 "\n"
-"On most X11-based terminal emulators you can use Ctrl--/Ctrl-+ to resize "
-"the\n"
+"On most terminal emulators you can use Ctrl--/Ctrl-+ to resize the\n"
 "terminal window. For Mac OS X, Command--/Command-+ serve this purpose.\n"
 "On Windows, change the properties of the terminal window by clicking on\n"
 "the top left corner of the window and choosing 'Properties'.\n"
@@ -280,7 +279,7 @@ msgid ""
 "\"More lessons...\" from the main menu.\n"
 "To use one of these other lessons, run gtypist with the name of the lesson\n"
 "file (including .typ) as a command-line argument. See the comments at the\n"
-"top of each file for more information about the source and the au7thor of\n"
+"top of each file for more information about the source and the author of\n"
 "the lessons. If you want to write your own lessons, look at gtypist's\n"
 "manual, it's really simple!\n"
 "\n"

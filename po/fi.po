@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.6\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2021-08-16 22:07+0300\n"
+"POT-Creation-Date: 2024-08-11 13:45+0200\n"
 "PO-Revision-Date: 2012-02-06 17:17+0000\n"
 "Last-Translator: Kimmo Surakka <kusti@iki.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -38,8 +38,8 @@ msgstr "ohjeita saa olla enintään kaksi riviä"
 msgid "internal error: fseek"
 msgstr "sisäinen virhe: fseek"
 
-#: src/gtypist.c:825 src/gtypist.c:1909 src/gtypist.c:1925 src/gtypist.c:1972
-#: src/gtypist.c:2009 src/gtypist.c:2029 src/script.c:145 src/script.c:169
+#: src/gtypist.c:825 src/gtypist.c:1902 src/gtypist.c:1918 src/gtypist.c:1965
+#: src/gtypist.c:2002 src/gtypist.c:2022 src/script.c:145 src/script.c:169
 #: src/script.c:256
 msgid "internal error: malloc"
 msgstr "sisäinen virhe: malloc"
@@ -72,103 +72,103 @@ msgstr "Virheellinen arvo parametrille \"E:\" (alueen ulkopuolella)"
 msgid "label '%s' not found"
 msgstr "tunnistetta '%s' ei löydy"
 
-#: src/gtypist.c:1535
+#: src/gtypist.c:1528
 msgid "unknown command"
 msgstr "tuntematon komento"
 
-#: src/gtypist.c:1569
+#: src/gtypist.c:1562
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Kirjoita '%s --help' saadaksesi lisätietoja.\n"
 
-#: src/gtypist.c:1576
+#: src/gtypist.c:1569
 #, fuzzy, c-format
 msgid "%s: invalid max-error value\n"
 msgstr "%s: virheellinen arvo parametrilla error-max\n"
 
-#: src/gtypist.c:1583
+#: src/gtypist.c:1576
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: virheellinen kohdistimen vilkkumisjakson arvo\n"
 
-#: src/gtypist.c:1593
+#: src/gtypist.c:1586
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: virheelinen värimääritysparametrin arvo\n"
 
-#: src/gtypist.c:1606
+#: src/gtypist.c:1599
 #, fuzzy, c-format
 msgid "%s: invalid banner-colours value\n"
 msgstr "%s: virheelinen värimääritysparametrin arvo\n"
 
-#: src/gtypist.c:1687
+#: src/gtypist.c:1680
 msgid " Tutorial "
 msgstr " Opastus  "
 
-#: src/gtypist.c:1689
+#: src/gtypist.c:1682
 msgid "  Query   "
 msgstr "  Kysely  "
 
-#: src/gtypist.c:1691
+#: src/gtypist.c:1684
 msgid "  Drill   "
 msgstr "Harjoitus "
 
-#: src/gtypist.c:1693
+#: src/gtypist.c:1686
 msgid "Speed test"
 msgstr "Nopeuskoe "
 
-#: src/gtypist.c:1695
+#: src/gtypist.c:1688
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr " Paina Return tai välilyönti jatkaaksesi, Esc palataksesi valikkoon "
 
-#: src/gtypist.c:1698
+#: src/gtypist.c:1691
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr " Virhetiheytesi on liian suuri. Virheitä saa olla enintään %.1f%%. "
 
-#: src/gtypist.c:1702
+#: src/gtypist.c:1695
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr " Et läpäissyt koetta, sinun on palattava kohtaan %s. "
 
-#: src/gtypist.c:1706
+#: src/gtypist.c:1699
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr " Paina T toistaaksesi, J jatkaaksesi tai L lopettaaksesi "
 
-#: src/gtypist.c:1710
+#: src/gtypist.c:1703
 msgid " Press R to repeat or E to exit "
 msgstr " Paina T toistaaksesi tai L lopettaaksesi "
 
-#: src/gtypist.c:1713
+#: src/gtypist.c:1706
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr " Haluatko varmasti lopettaa tämän harjoituksen? [K/E] "
 
-#: src/gtypist.c:1717
+#: src/gtypist.c:1710
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr " Valitan, asetuksissa kielletään harjoitusten ohittaminen. "
 
-#: src/gtypist.c:1722
+#: src/gtypist.c:1715
 msgid "Y/N"
 msgstr "K/E"
 
-#: src/gtypist.c:1732
+#: src/gtypist.c:1725
 msgid "R/N/E"
 msgstr "T/J/L"
 
-#: src/gtypist.c:1753
+#: src/gtypist.c:1746
 #, c-format
 msgid "%s: %s environment variable not set\n"
 msgstr ""
 
-#: src/gtypist.c:1800
+#: src/gtypist.c:1793
 msgid "can't find or open file"
 msgstr "ei löydä tai voi avata tiedostoa"
 
-#: src/gtypist.c:1854
+#: src/gtypist.c:1847
 msgid "Loading the script..."
 msgstr "Lataa skriptitiedostoa..."
 
-#: src/gtypist.c:1964
+#: src/gtypist.c:1957
 msgid "internal error: fopen"
 msgstr "sisäinen virhe: fopen"
 
@@ -241,8 +241,8 @@ msgid ""
 "Welcome to GNU Typist!\n"
 "\n"
 "This message is meant to get you started using gtypist. Please read the\n"
-"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist"
-"\")\n"
+"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info "
+"gtypist\")\n"
 "for more in-depth information!\n"
 "\n"
 "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
@@ -263,8 +263,7 @@ msgid ""
 "too difficult you can change it by running gtypist with the \"-e <maxpct>\"\n"
 "command-line option.\n"
 "\n"
-"On most X11-based terminal emulators you can use Ctrl--/Ctrl-+ to resize "
-"the\n"
+"On most terminal emulators you can use Ctrl--/Ctrl-+ to resize the\n"
 "terminal window. For Mac OS X, Command--/Command-+ serve this purpose.\n"
 "On Windows, change the properties of the terminal window by clicking on\n"
 "the top left corner of the window and choosing 'Properties'.\n"
@@ -277,7 +276,7 @@ msgid ""
 "\"More lessons...\" from the main menu.\n"
 "To use one of these other lessons, run gtypist with the name of the lesson\n"
 "file (including .typ) as a command-line argument. See the comments at the\n"
-"top of each file for more information about the source and the au7thor of\n"
+"top of each file for more information about the source and the author of\n"
 "the lessons. If you want to write your own lessons, look at gtypist's\n"
 "manual, it's really simple!\n"
 "\n"

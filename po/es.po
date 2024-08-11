@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.7\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2021-08-16 22:07+0300\n"
+"POT-Creation-Date: 2024-08-11 13:45+0200\n"
 "PO-Revision-Date: 2012-02-06 17:21+0000\n"
 "Last-Translator: José Pelegrín <josepl@acm.org>\n"
 "Language-Team: Spanish/Spain <es@li.org>\n"
@@ -39,8 +39,8 @@ msgstr "las instrucciones están limitadas a dos líneas"
 msgid "internal error: fseek"
 msgstr "error interno: 'fseek'"
 
-#: src/gtypist.c:825 src/gtypist.c:1909 src/gtypist.c:1925 src/gtypist.c:1972
-#: src/gtypist.c:2009 src/gtypist.c:2029 src/script.c:145 src/script.c:169
+#: src/gtypist.c:825 src/gtypist.c:1902 src/gtypist.c:1918 src/gtypist.c:1965
+#: src/gtypist.c:2002 src/gtypist.c:2022 src/script.c:145 src/script.c:169
 #: src/script.c:256
 msgid "internal error: malloc"
 msgstr "error interno: 'malloc'"
@@ -73,106 +73,106 @@ msgstr "Valor incorrecto para \"E:\" (fuera de rango)"
 msgid "label '%s' not found"
 msgstr "etiqueta '%s' no encontrada"
 
-#: src/gtypist.c:1535
+#: src/gtypist.c:1528
 msgid "unknown command"
 msgstr "comando desconocido"
 
-#: src/gtypist.c:1569
+#: src/gtypist.c:1562
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Pruebe con '%s --help' para obtener más información.\n"
 
-#: src/gtypist.c:1576
+#: src/gtypist.c:1569
 #, fuzzy, c-format
 msgid "%s: invalid max-error value\n"
 msgstr "%s: valor incorrecto de 'error-max'\n"
 
-#: src/gtypist.c:1583
+#: src/gtypist.c:1576
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: valor incorrecto de 'curs-flash'\n"
 
-#: src/gtypist.c:1593
+#: src/gtypist.c:1586
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: valor incorrecto de 'colours'\n"
 
-#: src/gtypist.c:1606
+#: src/gtypist.c:1599
 #, fuzzy, c-format
 msgid "%s: invalid banner-colours value\n"
 msgstr "%s: valor incorrecto de 'colours'\n"
 
-#: src/gtypist.c:1687
+#: src/gtypist.c:1680
 msgid " Tutorial "
 msgstr " Tutorial "
 
-#: src/gtypist.c:1689
+#: src/gtypist.c:1682
 msgid "  Query   "
 msgstr "  Consulta   "
 
-#: src/gtypist.c:1691
+#: src/gtypist.c:1684
 msgid "  Drill   "
 msgstr "  Rutina  "
 
-#: src/gtypist.c:1693
+#: src/gtypist.c:1686
 msgid "Speed test"
 msgstr "Test de velocidad"
 
-#: src/gtypist.c:1695
+#: src/gtypist.c:1688
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr " Pulse 'RETURN' o 'SPACE' para continuar, 'ESC' para volver al menu "
 
-#: src/gtypist.c:1698
+#: src/gtypist.c:1691
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr " Tu tasa de error es demasiado alta. Debes obtener %.1f%%. "
 
-#: src/gtypist.c:1702
+#: src/gtypist.c:1695
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr " Has fallado esta prueba, por lo que debes ir de nuevo a '%s'. "
 
-#: src/gtypist.c:1706
+#: src/gtypist.c:1699
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr ""
 " Pulsa 'R' para repetir, 'N' para el siguiente ejercicio o 'E' para salir "
 
-#: src/gtypist.c:1710
+#: src/gtypist.c:1703
 msgid " Press R to repeat or E to exit "
 msgstr " Pulsa 'R' para repetir o 'E' para finalizar "
 
-#: src/gtypist.c:1713
+#: src/gtypist.c:1706
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr " ¿Estás seguro de querer concluir esta lección? [Y/N] "
 
-#: src/gtypist.c:1717
+#: src/gtypist.c:1710
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr ""
 " Lo siento, 'gtypist' está configurado para no permitir saltarse las "
 "lecciones. "
 
-#: src/gtypist.c:1722
+#: src/gtypist.c:1715
 msgid "Y/N"
 msgstr "Y/N"
 
-#: src/gtypist.c:1732
+#: src/gtypist.c:1725
 msgid "R/N/E"
 msgstr "R/N/E"
 
-#: src/gtypist.c:1753
+#: src/gtypist.c:1746
 #, c-format
 msgid "%s: %s environment variable not set\n"
 msgstr ""
 
-#: src/gtypist.c:1800
+#: src/gtypist.c:1793
 msgid "can't find or open file"
 msgstr "el archivo no se ha encontrado o no ha podido ser abierto"
 
-#: src/gtypist.c:1854
+#: src/gtypist.c:1847
 msgid "Loading the script..."
 msgstr "Cargando el 'script'..."
 
-#: src/gtypist.c:1964
+#: src/gtypist.c:1957
 msgid "internal error: fopen"
 msgstr "error interno: 'fopen'"
 
@@ -245,8 +245,8 @@ msgid ""
 "Welcome to GNU Typist!\n"
 "\n"
 "This message is meant to get you started using gtypist. Please read the\n"
-"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist"
-"\")\n"
+"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info "
+"gtypist\")\n"
 "for more in-depth information!\n"
 "\n"
 "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
@@ -267,8 +267,7 @@ msgid ""
 "too difficult you can change it by running gtypist with the \"-e <maxpct>\"\n"
 "command-line option.\n"
 "\n"
-"On most X11-based terminal emulators you can use Ctrl--/Ctrl-+ to resize "
-"the\n"
+"On most terminal emulators you can use Ctrl--/Ctrl-+ to resize the\n"
 "terminal window. For Mac OS X, Command--/Command-+ serve this purpose.\n"
 "On Windows, change the properties of the terminal window by clicking on\n"
 "the top left corner of the window and choosing 'Properties'.\n"
@@ -281,7 +280,7 @@ msgid ""
 "\"More lessons...\" from the main menu.\n"
 "To use one of these other lessons, run gtypist with the name of the lesson\n"
 "file (including .typ) as a command-line argument. See the comments at the\n"
-"top of each file for more information about the source and the au7thor of\n"
+"top of each file for more information about the source and the author of\n"
 "the lessons. If you want to write your own lessons, look at gtypist's\n"
 "manual, it's really simple!\n"
 "\n"
