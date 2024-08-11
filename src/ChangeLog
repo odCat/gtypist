@@ -1,3 +1,9 @@
+2024-08-11  Felix Natter <fnatter@gmx.net>
+
+	* infoview.c: Fix typo in welcome screen and remove "X11-based"
+	from sentence with "terminal emulators" in order to account for
+	Wayland
+
 2024-05-15 Mihai Gătejescu <gus666xe@gmail.com>
 
     * gtypist.c: Update a few comments
