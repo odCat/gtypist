@@ -1,3 +1,8 @@
+2024-08-16  Mihai Gătejescu <gus666xe@gmail.com>
+
+	* ro.po: Update the Romanian translation to accommodate
+	for the welcome screen fix
+
 2021-04-07  Mihai Gătejescu <gus666xe@gmail.com>
 
 	* *.po, Changelog, Makevars: Update copyright years

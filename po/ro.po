@@ -1,12 +1,12 @@
 # Romanian translations for gtypist package.
-# Copyright (C) 2018 Mihai Gătejescu
+# Copyright (C) 2018, 2024 Mihai Gătejescu
 # This file is distributed under the same license as the gtypist package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gtypist 2.10dev\n"
+"Project-Id-Version: gtypist 2.10\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2024-08-11 13:45+0200\n"
+"POT-Creation-Date: 2024-08-16 14:41+0300\n"
 "PO-Revision-Date: 2018-10-31 11:46+0200\n"
 "Last-Translator: Mihai Gătejescu <gus666xe@gmail.com>\n"
 "Language-Team: Romanian\n"
@@ -317,8 +317,8 @@ msgstr ""
 "opțiunea\n"
 "\"-e <maxpct>\"\n"
 "\n"
-"În cele mai multe emulatore de terminale, bazate pe X11, folosește Ctrl--/\n"
-"Ctrl++ pentru a schimba mărimea ferestrei terminalului. Pentru Mac OS X,\n"
+"În cele mai multe emulatore de terminale se pot folosi Ctrl--/Ctrl++\n"
+"pentru a schimba mărimea ferestrei terminalului. Pentru Mac OS X,\n"
 "Command--/Commnand-+ îndeplinesc aceași funcție. Pe Windows, pentru a\n"
 "schimba proprietățiile ferestrei dă click în stânga sus și alege\n"
 "'Properties'.\n"
