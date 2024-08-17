@@ -85,9 +85,9 @@ msgid "Try '%s --help' for more information.\n"
 msgstr "Încearcă '%s --help' pentru mai multe informații\n"
 
 #: src/gtypist.c:1569
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid max-error value\n"
-msgstr "%s: valoare max-error invalidă\n"
+msgstr "%s: valoare invalidă pentru eroarea maximă\n"
 
 #: src/gtypist.c:1576
 #, c-format
@@ -198,9 +198,8 @@ msgid "label redefinition"
 msgstr "redefinire etichetă"
 
 #: src/script.c:212
-#, fuzzy
 msgid "Error while reading file"
-msgstr "eroare la scrierea fișirului de configurație"
+msgstr "Eroare la citirea fișirului"
 
 #: src/script.c:229
 msgid "Invalid multibyte sequence (wrong encoding?)"
@@ -243,13 +242,12 @@ msgstr "eroare la scrierea fișirului de configurație"
 #. points, actually) or it will display incorrectly on an 80-character
 #. wide terminal.
 #: src/infoview.c:124
-#, fuzzy
 msgid ""
 "Welcome to GNU Typist!\n"
 "\n"
 "This message is meant to get you started using gtypist. Please read the\n"
-"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info "
-"gtypist\")\n"
+"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist"
+"\")\n"
 "for more in-depth information!\n"
 "\n"
 "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
@@ -326,7 +324,7 @@ msgstr ""
 "Multiple cursuri sunt accesibile din meniul principal. Odată cu lecțiile\n"
 "\"QWERTY\", sunt disponibile și lecții pentru alte configurații de "
 "tastaturi,\n"
-"cum ar fi Dvorak, Colemak și pentru tastaturi numerice. Sunt și lecții\n"
+"cum ar fi Dvorak, Colemak și pentru tastaturile numerice. Sunt și lecții\n"
 "disponibile în afara meniului principal (cum ar fi noua lecție pentru\n"
 "programatori). Pentru a vedea o lista a acestora selectați \"More lessons..."
 "\"\n"
