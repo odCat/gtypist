@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: GNU Typist 2.10\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
 "POT-Creation-Date: 2024-08-11 13:45+0200\n"
-"PO-Revision-Date: 2024-08-11 13:47+0200\n"
+"PO-Revision-Date: 2024-08-24 15:40+0200\n"
 "Last-Translator: Felix Natter <fnatter@gmx.net>\n"
 "Language-Team: German <de@li.org>\n"
 "Language: de\n"
@@ -196,9 +196,8 @@ msgid "label redefinition"
 msgstr "Neudefinition von Bezeichnern"
 
 #: src/script.c:212
-#, fuzzy
 msgid "Error while reading file"
-msgstr "Fehler beim Schreiben der Konfigurationsdatei"
+msgstr "Fehler beim Schreiben der Datei"
 
 #: src/script.c:229
 msgid "Invalid multibyte sequence (wrong encoding?)"
@@ -241,7 +240,6 @@ msgstr "Fehler beim Schreiben der Konfigurationsdatei"
 #. points, actually) or it will display incorrectly on an 80-character
 #. wide terminal.
 #: src/infoview.c:124
-#, fuzzy
 msgid ""
 "Welcome to GNU Typist!\n"
 "\n"
