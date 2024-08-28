@@ -1,3 +1,7 @@
+2024-08-28  Mihai Gătejescu <mgatejescu@pm.me.com>
+
+    * .gitignore: Add the clang compile database file
+
 2024-08-08  Mihai Gătejescu <mgatejescu@pm.me.com>
 
     * TODO: Add two new requests

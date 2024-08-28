@@ -79,3 +79,6 @@ TODO-personal-*
 
 # ignore web folder with csv repo
 web/
+
+# ignore clang compile database file
+compile_commands.json
