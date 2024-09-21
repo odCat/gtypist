@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.10\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2024-09-07 17:53+0300\n"
+"POT-Creation-Date: 2024-09-09 17:21+0200\n"
 "PO-Revision-Date: 2024-09-09 17:35+0200\n"
 "Last-Translator: Felix Natter <fnatter@gmx.net>\n"
 "Language-Team: German <de@li.org>\n"
@@ -39,9 +39,7 @@ msgstr "Einführungen sind auf zwei Zeilen beschränkt"
 msgid "internal error: fseek"
 msgstr "interner Fehler: fseek"
 
-#: src/gtypist.c:825 src/gtypist.c:1902 src/gtypist.c:1918 src/gtypist.c:1965
-#: src/gtypist.c:2002 src/gtypist.c:2022 src/script.c:145 src/script.c:169
-#: src/script.c:256
+#: src/gtypist.c:825 src/gtypist.c:1902 src/gtypist.c:1918 src/gtypist.c:1965 src/gtypist.c:2002 src/gtypist.c:2022 src/script.c:145 src/script.c:169 src/script.c:256
 msgid "internal error: malloc"
 msgstr "interner Fehler: malloc"
 
@@ -178,9 +176,7 @@ msgid "internal error: fopen"
 msgstr "interner Fehler: fopen"
 
 #: src/cursmenu.c:326
-msgid ""
-"Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go "
-"back"
+msgid "Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go back"
 msgstr "Pfeiltasten: Bewegen, ENTER/LEERTASTE: Auswählen, ESCAPE: Zurückgehen"
 
 #: src/error.c:56
@@ -244,25 +240,20 @@ msgid ""
 "Welcome to GNU Typist!\n"
 "\n"
 "This message is meant to get you started using gtypist. Please read the\n"
-"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist"
-"\")\n"
+"manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist\")\n"
 "for more in-depth information!\n"
 "\n"
 "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
 "using gtypist, or 'D' to use gtypist and never show this dialog again.\n"
 "\n"
-"There are two types of typing exercises: \"drills\" and \"speed tests\". In "
-"a\n"
-"\"drill\", gtypist displays text in every other line on the screen and "
-"waits\n"
+"There are two types of typing exercises: \"drills\" and \"speed tests\". In a\n"
+"\"drill\", gtypist displays text in every other line on the screen and waits\n"
 "for the user to correctly type the exact same text in the intermediate\n"
 "lines. In a \"speed test\", gtypist displays text on the screen and waits\n"
 "for the user to correctly type the exact same text over the top.\n"
 "\n"
-"In both exercise types, you have to repeat the test if your error "
-"percentage\n"
-"is higher than a maximum error percentage. The default is 3%, but if this "
-"is\n"
+"In both exercise types, you have to repeat the test if your error percentage\n"
+"is higher than a maximum error percentage. The default is 3%, but if this is\n"
 "too difficult you can change it by running gtypist with the \"-e <maxpct>\"\n"
 "command-line option.\n"
 "\n"
@@ -339,11 +330,8 @@ msgstr "Willkommensbildschirm"
 
 # Drücke 
 #: src/infoview.c:273
-msgid ""
-"Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"
-msgstr ""
-"Drücke LEERTASTE/ENTER/ESC um zu starten, oder 'D' um diesen Dialog "
-"abzustellen"
+msgid "Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"
+msgstr "Drücke LEERTASTE/ENTER/ESC um zu starten, oder 'D' um diesen Dialog abzustellen"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
