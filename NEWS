@@ -4,6 +4,25 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
+version 2.10 - December 2024
+  - new welcome screen
+  - new P lesson series for programmers
+  - fixes for various lessons
+  - new Romanian lessons
+  - expand the S lesson series with a new quotation and a few more passages
+    from Shakespeare
+  - jump over whitespace characters at the beginning of lines in lessons
+  - fix the terminal resize bug
+  - fix a few compilation warnings
+  - add the Romanian translation
+  - updates to a few translations
+  - few updates to the documentation
+  - update the project license to GPL3+
+  - remove or update the lessons incompatible with the new license
+  - update the KTouch lesson import script
+  - fix warnings from help2man generated manual pages
+  - fix a few comments
+
 version 2.9.5 - August 2014
   - improved CPM/WPM calculation precision
   - fix for Colemak lesson, thanks to Ashley Whetter <ashley@awhetter.co.uk>
