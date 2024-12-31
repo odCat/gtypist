@@ -1,27 +1,30 @@
 # ESPAÑOL
 # Vladimir Támara Patiño <vtamara@gnu.org>, 2000.
 # Copyright (C) 2001-2003 José Pelegrín <josepl@acm.org>
-#
+# Copyright (C) 2024 victorhck <victorhck@mailbox.org>
+
 msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.7\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
 "POT-Creation-Date: 2024-09-09 17:21+0200\n"
-"PO-Revision-Date: 2012-02-06 17:21+0000\n"
-"Last-Translator: José Pelegrín <josepl@acm.org>\n"
-"Language-Team: Spanish/Spain <es@li.org>\n"
+"PO-Revision-Date: 2024-12-26 11:30+0100\n"
+"Last-Translator: victorhck <victorhck@mailbox.org>\n"
+"Language-Team: Spanish <kde-i18n-doc@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: src/gtypist.c:209 src/script.c:61
 msgid "internal error: strdup"
-msgstr "error interno: strdup"
+msgstr "error interno: 'strdup'"
 
 #: src/gtypist.c:385
 msgid "invalid key binding"
-msgstr "asociación incorrecta de teclas"
+msgstr "atajo de teclado incorrecto"
 
 #: src/gtypist.c:387
 msgid "invalid function key number"
@@ -81,7 +84,7 @@ msgid "Try '%s --help' for more information.\n"
 msgstr "Pruebe con '%s --help' para obtener más información.\n"
 
 #: src/gtypist.c:1569
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid max-error value\n"
 msgstr "%s: valor incorrecto de 'error-max'\n"
 
@@ -96,9 +99,9 @@ msgid "%s: invalid colours value\n"
 msgstr "%s: valor incorrecto de 'colours'\n"
 
 #: src/gtypist.c:1599
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid banner-colours value\n"
-msgstr "%s: valor incorrecto de 'colours'\n"
+msgstr "%s: valor incorrecto de 'banner-colours'\n"
 
 #: src/gtypist.c:1680
 msgid " Tutorial "
@@ -118,7 +121,7 @@ msgstr "Test de velocidad"
 
 #: src/gtypist.c:1688
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
-msgstr " Pulse 'RETURN' o 'SPACE' para continuar, 'ESC' para volver al menu "
+msgstr " Pulse 'ENTER' o 'ESPACIO' para continuar, 'ESC' para volver al menú "
 
 #: src/gtypist.c:1691
 #, c-format
@@ -128,15 +131,16 @@ msgstr " Tu tasa de error es demasiado alta. Debes obtener %.1f%%. "
 #: src/gtypist.c:1695
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
-msgstr " Has fallado esta prueba, por lo que debes ir de nuevo a '%s'. "
+msgstr " Has fallado esta prueba, por lo que debes regresar a '%s'. "
 
 #: src/gtypist.c:1699
 msgid " Press R to repeat, N for next exercise or E to exit "
-msgstr " Pulsa 'R' para repetir, 'N' para el siguiente ejercicio o 'E' para salir "
+msgstr ""
+" Pulsa 'R' para repetir, 'N' para el siguiente ejercicio o 'E' para salir "
 
 #: src/gtypist.c:1703
 msgid " Press R to repeat or E to exit "
-msgstr " Pulsa 'R' para repetir o 'E' para finalizar "
+msgstr " Pulsa 'R' para repetir o 'E' para salir "
 
 #: src/gtypist.c:1706
 msgid " Are you sure you want to exit this lesson? [Y/N] "
@@ -144,7 +148,8 @@ msgstr " ¿Estás seguro de querer concluir esta lección? [Y/N] "
 
 #: src/gtypist.c:1710
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
-msgstr " Lo siento, 'gtypist' está configurado para no permitir saltarse las lecciones. "
+msgstr ""
+" Lo siento, 'gtypist' está configurado para no permitir saltarse las lecciones. "
 
 #: src/gtypist.c:1715
 msgid "Y/N"
@@ -157,11 +162,11 @@ msgstr "R/N/E"
 #: src/gtypist.c:1746
 #, c-format
 msgid "%s: %s environment variable not set\n"
-msgstr ""
+msgstr "%s: %s variable de entorno no establecida\n"
 
 #: src/gtypist.c:1793
 msgid "can't find or open file"
-msgstr "el archivo no se ha encontrado o no ha podido ser abierto"
+msgstr "No se puede encontrar o abrir el archivo"
 
 #: src/gtypist.c:1847
 msgid "Loading the script..."
@@ -172,8 +177,12 @@ msgid "internal error: fopen"
 msgstr "error interno: 'fopen'"
 
 #: src/cursmenu.c:326
-msgid "Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go back"
-msgstr "Usa las teclas de flecha para moverte, 'SPACE' o 'RETURN' para seleccionar y 'ESCAPE' para volver atrás"
+msgid ""
+"Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go "
+"back"
+msgstr ""
+"Usa las teclas de flecha para moverte, 'SPACE' o 'RETURN' para seleccionar y "
+"'ESCAPE' para volver atrás"
 
 #: src/error.c:56
 msgid "line"
@@ -181,7 +190,7 @@ msgstr "línea"
 
 #: src/script.c:161
 msgid "label contains space"
-msgstr ""
+msgstr "la etiqueta contiene espacios"
 
 #: src/script.c:187
 msgid "label redefinition"
@@ -189,11 +198,11 @@ msgstr "redefinición de etiqueta"
 
 #: src/script.c:212
 msgid "Error while reading file"
-msgstr ""
+msgstr "Error al leer el archivo"
 
 #: src/script.c:229
 msgid "Invalid multibyte sequence (wrong encoding?)"
-msgstr ""
+msgstr "Secuencia multibyte no válida (¿codificación incorrecta?)"
 
 #: src/script.c:231
 msgid "data shortage"
@@ -213,20 +222,20 @@ msgid ""
 "Happy Typing!\n"
 "\n"
 msgstr ""
-"¡Feliz Tecleo!\n"
+"¡Feliz tecleo!\n"
 "\n"
 
 #: src/utf8.c:64
 msgid "couldn't convert UTF-8 to wide characters"
-msgstr ""
+msgstr "no se pudo convertir UTF-8 a caracteres anchos"
 
 #: src/utf8.c:175
 msgid "error in setcchar()"
-msgstr ""
+msgstr "error en 'setcchar()'"
 
 #: src/infoview.c:112
 msgid "error writing config file!"
-msgstr ""
+msgstr "¡Error al escribir el archivo de configuración!"
 
 #. TRANSLATORS: This message must not exceed 76 characters (UTF-8 code
 #. points, actually) or it will display incorrectly on an 80-character
@@ -275,69 +284,122 @@ msgid ""
 "\n"
 "Happy Typing!"
 msgstr ""
+"¡Bienvenido a GNU Typist!\n"
+"\n"
+"Este mensaje está destinado para iniciarte a usar gtypist. Por favor, lee\n"
+"el manual (en https://www.gnu.org/software/gtypist/doc/,\n"
+"o escribe \"info gtypist\") para obtener información más detallada!\n"
+"\n"
+"Utiliza las teclas de flecha o PGUP/PGDN para desplazarte por esta ventana,\n"
+"ESPACIO/ENTER para comenzar a utilizar gtypist,\n"
+"o 'D' para usar gtypist y no volver a mostrar esta pantalla.\n"
+"\n"
+"Hay dos tipos de ejercicios de mecanografía:\n"
+"\"rutinas\" y \"pruebas de velocidad\".\n"
+"En una \"rutina\", gtypist muestra texto cada dos líneas de la pantalla\n"
+"y espera que el usuario escriba correctamente exactamente el mismo texto\n"
+"en las líneas intermedias\n"
+"En una \"prueba de velocidad\", gtypist muestra texto en la pantalla\n"
+"y espera que el usuario escriba correctamente exactamente el mismo texto\n"
+"en la parte superior.\n"
+"\n"
+"En ambos tipos de ejercicios, tienes que repetir la prueba\n"
+"si tu porcentaje de error es superior a un porcentaje de error máximo.\n"
+"El valor predeterminado es 3%, pero si es demasiado difícil,\n"
+"puedes cambiarlo ejecutando gtypist con la opción \"-e <maxpct>\"\n"
+"en la línea de comandos.\n"
+"\n"
+"En la mayoría de emuladores de terminal puedes utilizar Ctrl -/Ctrl +\n"
+"para redimensionar la ventana de la terminal.\n"
+"En Mac OS X, Command -/Command + hace ese cometido.\n"
+"En Windows, cambia las propiedades de la ventana de la terminal haciendo\n"
+"clic en la esquina superior izquierda de la ventana\n"
+"y escogiendo 'Propiedades'.\n"
+"\n"
+"Hay varios cursos de mecanografía disponibles en el menú principal.\n"
+"Al igual que en cursos \"QWERTY\", también hay lecciones disponibles\n"
+"para otros diseños de teclado, como Dvorak, Colemak y teclados numéricos.\n"
+"También hay otras lecciones, además de las disponibles en el menú principal\n"
+"(como la nueva lección para programadores).\n"
+"Para ver una lista de las otras lecciones, selecciona \"Más lecciones...\"\n"
+"desde el menú principal.\n"
+"Para usar una de estas otras lecciones, ejecuta gtypist con el nombre de la\n"
+"lección (incluido.typ) como argumento de línea de comandos.\n"
+"Puedes ver los comentarios en la parte superior de cada archivo\n"
+"para obtener más información sobre la fuente y el autor de las lecciones.\n"
+"Si quieres escribir tus propias lecciones, mira la página de manual de gtypist\n"
+"¡es muy sencillo!\n"
+"\n"
+"Si tienes alguna pregunta sobre GNU Typist, por favor escribe a la lista\n"
+"de correo en esta dirección <bug-gtypist@gnu.org>.\n"
+"\n"
+"¡Feliz tecleo!"
 
 #: src/infoview.c:217
 msgid "Welcome screen"
-msgstr ""
+msgstr "Pantalla de bienvenida"
 
 #: src/infoview.c:273
-msgid "Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"
+msgid ""
+"Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"
 msgstr ""
+"Pulsa ESPACIO o ENTER para iniciar gtypist, o 'D' para no mostrar esta pantall"
+"a"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
 #: src/speedbox.c:72
 #, c-format
 msgid "Raw speed|= %6.2f wpm"
-msgstr "Velocidad en bruto|= %6.2f wpm"
+msgstr "Velocidad en bruto|= %6.2f ppm"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
 #: src/speedbox.c:75
 #, c-format
 msgid "Raw speed|= %7.2f cpm"
-msgstr ""
+msgstr "Velocidad en bruto|= %7.2f cpm"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
 #: src/speedbox.c:78
 #, c-format
 msgid "Adjusted speed|= %6.2f wpm"
-msgstr "Velocidad neta|= %6.2f wpm"
+msgstr "Velocidad neta|= %6.2f ppm"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
 #: src/speedbox.c:81
 #, c-format
 msgid "Adjusted speed|= %7.2f cpm"
-msgstr ""
+msgstr "Velocidad neta|= %7.2f cpm"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
 #: src/speedbox.c:84
 #, c-format
 msgid "|with %.1f%% errors"
-msgstr "|con %3.0f%% errores"
+msgstr "|con %.1f%% errores"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
 #: src/speedbox.c:87
 #, c-format
 msgid "Personal best|= %6.2f wpm"
-msgstr ""
+msgstr "Mejor marca personal|= %6.2f ppm"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
 #: src/speedbox.c:90
 #, c-format
 msgid "Personal best|= %7.2f cpm"
-msgstr ""
+msgstr "Mejor marca personal|= %7.2f cpm"
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
 #. * halves, which are aligned to the left and right sides of the dialog
 #: src/speedbox.c:93
 msgid "|new personal best"
-msgstr ""
+msgstr "| nueva mejor marca personal"
 
 #, fuzzy
 #~ msgid "Happy Typing!"
