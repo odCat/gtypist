@@ -259,7 +259,7 @@ END	{
       else # TODO: find sth like "abort"
 	exit 1;
       # output 1 menu-item
-      printf( " :__S_%s_SERIES \"Series %s     %s\"\n",
+      printf( " :_%s_MENU \"Series %s     %s\"\n",
 	      series[i], series[i], series_description);
 #      printf( " :        Fkey%2d - Series %s     %s\n", i,
 #	      series[i], series_description );

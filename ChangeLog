@@ -1,3 +1,7 @@
+2025-01-19  Felix Nattter <fnatter@gmx.net>
+
+    * tools/typcombine: fix: call lesson menus from global menu
+
 2024-08-28  Mihai Gătejescu <mgatejescu@pm.me.com>
 
     * .gitignore: Add the clang compile database file
