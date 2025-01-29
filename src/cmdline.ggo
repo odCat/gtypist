@@ -52,15 +52,12 @@ text "\nExamples:
 
 text "\nReport bugs to <bug-gtypist@gnu.org>."
 
-versiontext "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.
-Copyright (C) 2003, 2004, 2008, 2011, 2012 GNU Typist Development Team.
-This program comes with ABSOLUTELY NO WARRANTY; for details
-please see the file 'COPYING' supplied with the source code.
-This is free software, and you are welcome to redistribute it
-under certain conditions; again, see 'COPYING' for details.
-This program is released under the GNU General Public License.
-
-Written by Simon Baldwin"
+versiontext
+"Copyright (C) 2021, 2022, 2023, 2024, 2025 Felix Natter, Mihai Gătejescu
+Created by Simon Baldwin
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law."
 
 
 
