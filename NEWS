@@ -4,6 +4,11 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
+version 2.10.1 - January 2025
+  - update the Spanish translation
+  - fix in gtypits.typ, to jump from the global menu to the menus of the
+    individual lessons
+
 version 2.10 - December 2024
   - new welcome screen
   - new P lesson series for programmers
