@@ -8,6 +8,7 @@ version 2.10.1 - January 2025
   - update the Spanish translation
   - fix in gtypits.typ, to jump from the global menu to the menus of the
     individual lessons
+  - small fix to u.typ lesson
 
 version 2.10 - December 2024
   - new welcome screen
