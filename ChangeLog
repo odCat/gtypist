@@ -1,3 +1,10 @@
+2025-02-02  Mihai Gătejescu <gus666xe@gmail.com>
+
+    * configure.ac: Include the version.sh file, so autoconf
+    can always see when the project version updates
+    * version.sh: Update to the correct new version
+    * NEWS: Update the news for the new version
+
 2025-01-31  Mihai Gătejescu <gus666xe@gmail.com>
 
     * README.git: Update the requirements to include gengetopt

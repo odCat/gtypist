@@ -4,11 +4,17 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
-version 2.10.1 - January 2025
+version 2.10.1 - February 2025
   - update the Spanish translation
   - fix in gtypits.typ, to jump from the global menu to the menus of the
     individual lessons
   - small fix to u.typ lesson
+  - remove cmdline.c and cmdline.h files from the git repo; this will
+    only affect those who build from git sources; dependency to gengetopt
+    added to README.git
+  - update copyright message in cmdline.ggo
+  - include the version.sh file, so autoconf can always update project
+    version
 
 version 2.10 - December 2024
   - new welcome screen
