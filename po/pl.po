@@ -1,14 +1,14 @@
 # Polish messages for gtypist.
-# Copyright (C) 2002-2020 Mihai Gătejescu
+# Copyright (C) 2002-2020, 2025 Mihai Gătejescu
 # This file is distributed under the same license as the gtypist package.
-# Jakub Bogusz <qboosh@pld-linux.org>, 2002-2019.
+# Jakub Bogusz <qboosh@pld-linux.org>, 2002-2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gtypist 2.10dev\n"
+"Project-Id-Version: gtypist 2.10.1\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
 "POT-Creation-Date: 2024-09-09 17:21+0200\n"
-"PO-Revision-Date: 2019-01-03 17:35+0000\n"
+"PO-Revision-Date: 2025-02-08 10:39+0100\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "Language: pl\n"
@@ -189,9 +189,8 @@ msgid "label redefinition"
 msgstr "ponowna definicja etykiety"
 
 #: src/script.c:212
-#, fuzzy
 msgid "Error while reading file"
-msgstr "błąd zapisu pliku konfiguracyjnego!"
+msgstr "Błąd podczas odczytu pliku"
 
 #: src/script.c:229
 msgid "Invalid multibyte sequence (wrong encoding?)"
@@ -234,7 +233,6 @@ msgstr "błąd zapisu pliku konfiguracyjnego!"
 #. points, actually) or it will display incorrectly on an 80-character
 #. wide terminal.
 #: src/infoview.c:124
-#, fuzzy
 msgid ""
 "Welcome to GNU Typist!\n"
 "\n"
@@ -296,7 +294,7 @@ msgstr ""
 "\n"
 "W obu rodzajach zadań trzeba powtarzać test, jeśli procent błędów jest\n"
 "większy od maksymalnego. Domyślnie jest to 3%, ale jeśli to zbyt trudne,\n"
-"można tę wartość zmienić, uruchamiając gtypista z opcję linii poleceń\n"
+"można tę wartość zmienić, uruchamiając gtypista z opcją linii poleceń\n"
 "\"-e <maksproc>\".\n"
 "\n"
 "W większości emulatorów terminali opartych na X11 można użyć Ctrl--/Ctrl-+,\n"
@@ -311,8 +309,8 @@ msgstr ""
 "listę pozostałych lekcji, należy z głównego menu wybrać \"Więcej lekcji...\".\n"
 "Aby użyć jednej z pozostałych lekcji, należy uruchomić gtypista z nazwą\n"
 "pliku lekcji (włączając .typ) jako argumentem linii poleceń. Informacje o\n"
-"źródle i autorze lekcji można znaleźć na początku pliku. Aby stworzyć własne\n"
-"lekcje, proszę spojrzeć do podręcznika, to naprawdę proste!\n"
+"źródle i autorze lekcji można znaleźć w komentarzach na początku pliku. Aby\n"
+"stworzyć własne lekcje, proszę spojrzeć do podręcznika, to naprawdę proste!\n"
 "\n"
 "W przypadku pytań dotyczących GNU Typista, można napisać na listę dyskusyjną\n"
 "gtypista pod adresem <bug-gtypist@gnu.org>.\n"
