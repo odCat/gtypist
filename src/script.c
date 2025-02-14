@@ -160,7 +160,7 @@ void build_label_index( FILE *script ) {
         if( *line_iterator == ' ' )
           fatal_error( _("label contains space"), line );
         ++line_iterator;
-}
+      }
 
       /* make some space for the label string */
       new_label->label =

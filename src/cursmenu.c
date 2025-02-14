@@ -112,15 +112,14 @@ static void append_menu_history (const char *label)
       }
 
       mn = (mn -> next);
-  }
+    }
     while (mn);
   }
 
   // Ok, append it to the history
   if (!last_node)
     start_node = last_node = node_new ();
-  else
-  {
+  else {
     (last_node -> next) = node_new ();
     last_node = (last_node -> next);
   }
