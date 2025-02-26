@@ -22,9 +22,13 @@
 # You should have received a copy of the GNU General Public License
 # along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.
 
+m4_define([gtypist_VERSION],
+        m4_bregexp(m4_include([version.sh]), [[0-9]+\.[0-9]+\.[0-9]+], [\&]))
 AC_INIT([GNU Typist],
-        m4_bregexp(m4_include([version.sh]), [[0-9]+\.[0-9]+\.[0-9]+], [\&]),
-        [bug-gtypist@gnu.org], [gtypist], [https://www.gnu.org/software/gtypist/])
+        m4_defn([gtypist_VERSION]),
+        [bug-gtypist@gnu.org],
+        [gtypist],
+        [https://www.gnu.org/software/gtypist/])
 AM_INIT_AUTOMAKE([1.8.2 gnu dist-xz])
 AC_CONFIG_SRCDIR([src/gtypist.c])
 AM_CONFIG_HEADER([config.h])
