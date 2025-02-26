@@ -31,7 +31,7 @@
 
 #if defined(HAVE_PDCURSES) || defined(OS_BSD)
     #include <curses.h>
-#elif defined(HAVE_CURSES)
+#elif defined(HAVE_NCURSES)
     #include <ncurses.h>
 #else
     #include <ncursesw/ncurses.h>
