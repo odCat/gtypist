@@ -24,7 +24,7 @@
 
 AC_INIT([GNU Typist],
         m4_bregexp(m4_include([version.sh]), [[0-9]+\.[0-9]+\.[0-9]+], [\&]),
-        [bug-gtypist@gnu.org], [gtypist])
+        [bug-gtypist@gnu.org], [gtypist], [https://www.gnu.org/software/gtypist/])
 AM_INIT_AUTOMAKE([1.8.2 gnu dist-xz])
 AC_CONFIG_SRCDIR([src/gtypist.c])
 AM_CONFIG_HEADER([config.h])
@@ -69,7 +69,8 @@ AC_TYPE_SIGNAL
 AC_FUNC_STRTOD
 AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify dcgettext getcwd getwd mempcpy memset munmap nl_langinfo setlocale stpcpy strcasecmp strchr strcspn strdup strstr strtoul])
 
-# check for libncurses
+# Check for libncurses
+
 case $host_os in
   *bsd* | darwin*)
     AC_DEFINE([OS_BSD], [1], [OS BSD's curses includes ncursesw])
