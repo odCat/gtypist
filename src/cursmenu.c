@@ -26,9 +26,11 @@
 #include "utf8.h"
 
 #if defined(HAVE_PDCURSES) || defined(OS_BSD)
-#include <curses.h>
+    #include <curses.h>
+#elif defined(HAVE_CURSES)
+    #include <ncurses.h>
 #else
-#include <ncurses.h>
+    #include <ncursesw/ncurses.h>
 #endif
 
 #include "error.h"

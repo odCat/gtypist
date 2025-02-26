@@ -83,13 +83,19 @@ case $host_os in
         AC_CHECK_LIB(ncursesw, add_wch, [], [AC_MSG_ERROR(
             [ncursesw library is missing: See INSTALL file for further information])])
         ;;
-    *)
-        AC_CHECK_HEADER(ncurses.h, HAVE_NCURSESW_H=1)
+    * )
+        AC_CHECK_HEADER(ncursesw/ncurses.h, HAVE_NCURSESW_H=1)
+        AC_CHECK_HEADER(ncurses.h, HAVE_NCURSES_H=1)
+        AC_CHECK_LIB(ncursesw, add_wch, HAVE_LIBNCURSESW=1)
         AC_CHECK_LIB(ncurses, add_wch, HAVE_LIBNCURSESW=1)
+
         if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
-           LIBS="-lncurses $LIBS"
+            LIBS="-lncursesw $LIBS"
+        elif test -n "$HAVE_NCURSES_H" -a -n "$HAVE_LIBNCURSESW"; then
+            AC_DEFINE([HAVE_NCURSES], [1], [The ncurses include ncursesw])
+            LIBS="-lncurses $LIBS"
         else
-           echo -e "Error:  both library and header files for the ncurses library\n"\
+            echo -e "Error:  both library and header files for the ncursesw library\n"\
                "are required to build this package.  See INSTALL file for"\
                "further information. On Debian/Ubuntu you need to install libncursesw5-dev."
            exit 1;
