@@ -22,6 +22,7 @@
 # You should have received a copy of the GNU General Public License
 # along with GNU Typist.  If not, see <http://www.gnu.org/licenses/>.
 
+
 m4_define([gtypist_VERSION],
         m4_bregexp(m4_include([version.sh]), [[0-9]+\.[0-9]+\.[0-9]+], [\&]))
 AC_INIT([GNU Typist],
@@ -76,6 +77,7 @@ AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify dcgettext getcwd getwd
 # Check for libncurses
 
 case $host_os in
+
     *bsd* | darwin* )
         AC_DEFINE([OS_BSD], [1], [The BSD curses includes ncursesw])
         AC_CHECK_HEADER(curses.h, [], [AC_MSG_ERROR(
@@ -83,10 +85,13 @@ case $host_os in
         AC_CHECK_LIB(ncursesw, add_wch, [], [AC_MSG_ERROR(
             [ncursesw library is missing: See INSTALL file for further information])])
         ;;
+
     * )
         AC_CHECK_HEADER(ncursesw/ncurses.h, HAVE_NCURSESW_H=1)
-        AC_CHECK_HEADER(ncurses.h, HAVE_NCURSES_H=1)
         AC_CHECK_LIB(ncursesw, add_wch, HAVE_LIBNCURSESW=1)
+
+        # On Arch the ncurses includes the wide char support
+        AC_CHECK_HEADER(ncurses.h, HAVE_NCURSES_H=1)
         AC_CHECK_LIB(ncurses, add_wch, HAVE_LIBNCURSESW=1)
 
         if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
@@ -95,10 +100,11 @@ case $host_os in
             AC_DEFINE([HAVE_NCURSES], [1], [The ncurses include ncursesw])
             LIBS="-lncurses $LIBS"
         else
-            echo -e "Error:  both library and header files for the ncursesw library\n"\
-               "are required to build this package.  See INSTALL file for"\
-               "further information. On Debian/Ubuntu you need to install libncursesw5-dev."
-           exit 1;
+            echo -e "Error:  both library and header files for the ncursesw "\
+                    "library\nare required to build this package.  See INSTALL "\
+                    "file for further information. On Debian/Ubuntu you need " \
+                    "to install libncursesw5-dev."
+            exit 1;
         fi
         ;;
 esac
@@ -128,5 +134,5 @@ AM_PATH_LISPDIR
 # Generate files
 
 AC_CONFIG_FILES([lessons/Makefile tools/Makefile doc/Makefile src/Makefile
-		Makefile po/Makefile.in m4/Makefile])
+		 Makefile po/Makefile.in m4/Makefile])
 AC_OUTPUT
