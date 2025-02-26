@@ -76,14 +76,12 @@ AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify dcgettext getcwd getwd
 # Check for libncurses
 
 case $host_os in
-    *bsd* | darwin*)
-        AC_DEFINE([OS_BSD], [1], [OS BSD's curses includes ncursesw])
-        # check for courses.h
+    *bsd* | darwin* )
+        AC_DEFINE([OS_BSD], [1], [The BSD curses includes ncursesw])
         AC_CHECK_HEADER(curses.h, [], [AC_MSG_ERROR(
-          [curses.h header is missing: See INSTALL file for further information])])
-        # check for libncurses
+            [curses.h header is missing: See INSTALL file for further information])])
         AC_CHECK_LIB(ncursesw, add_wch, [], [AC_MSG_ERROR(
-          [ncursesw library is missing: See INSTALL file for further information])])
+            [ncursesw library is missing: See INSTALL file for further information])])
         ;;
     *)
         AC_CHECK_HEADER(ncurses.h, HAVE_NCURSESW_H=1)
