@@ -24,6 +24,9 @@ are welcome too!
 
 NEW FEATURE REQUESTS:
 
+* Provide session/section statistics (start, end, duration etc.) and save this
+    information somewhere locally.
+
 * Provide the means to randomize lesson from a script
 
 * Provide support for Arch distros
