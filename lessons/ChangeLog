@@ -1,3 +1,8 @@
+2026-07-07 Mihai Gătejescu <gus666xe@gmail.com>
+
+	* esp.typ: User L instead of one, when appropriate,
+	thanks to Carlos Arjona <carlos.arjona.carrillo@gmail.com>
+
 2024-08-09 Mihai Gătejescu <gus666xe@gmail.com>
 
 	* symq.typ, symt.typ, Makefile.am: Add the lessons

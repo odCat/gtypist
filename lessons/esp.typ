@@ -501,7 +501,7 @@ B:Lección 6
 I:Práctica con nuevas teclas
 s:jmj mj m mmm jj m mas me m mes mi j eme
  :fgf gg f gfg gf g gas ga g gas go g gol
- :1.1.1. . Dr. Sr. l.l. f. a lll l. l Sra.
+ :l.l.l. . Dr. Sr. l.l. f. a lll l. l Sra.
  :j jm mas masa mes meses manos maja mente
  :g fg gas gasa gente grato gran gol golfoe
  :Esa frase es larga.  Ana ha de ir lejos.
@@ -524,8 +524,8 @@ S:jmj mj m mmm jj m mas me m mes mi j eme
  :jmj mj m mmm jj m mas me m mes mi j eme
  :fgf gg f gfg gf g gas ga g gas go g gol
  :fgf gg f gfg gf g gas ga g gas go g gol
- :1.1.1. . Dr. Sr. l.l. f. a lll l. l Sra.
- :1.1.1. . Dr. Sr. l.l. f. a lll l. l Sra.
+ :l.l.l. . Dr. Sr. l.l. f. a lll l. l Sra.
+ :l.l.l. . Dr. Sr. l.l. f. a lll l. l Sra.
  :j jm mas masa mes meses manos maja mente
  :j jm mas masa mes meses manos maja mente
  :g fg gas gasa gente grato gran gol golfoe
