@@ -3,7 +3,7 @@ Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012, 2013, 2014, 2016,
               2017, 2018, 2019, 2020
               Felix Natter, Michael Opdenacker, Dmitry Rutsky,
               Paul Goins, Tim Marston, Mihai Gătejescu
-Copyright (C) 2021, 2022, 2023, 2024 Felix Natter, Mihai Gătejescu
+Copyright (C) 2021, 2022, 2023, 2024, 2026 Felix Natter, Mihai Gătejescu
 
 See the end of the file for license conditions
 
@@ -23,6 +23,10 @@ are welcome too!
 -------------------------------------------------------------------------
 
 NEW FEATURE REQUESTS:
+
+* Provide a scrolling/paging capability
+   Right now gtypist throws an error and exits when a lessons exceeds screen
+   length.  This was broght to our attention especially by mobile students.
 
 * Provide the means to randomize lesson from a script
 

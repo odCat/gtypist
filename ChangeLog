@@ -1,3 +1,6 @@
+2026-08-13  Mihai Gătejescu <gus666xe@gmail.com>
+    * TODO: Add a scrolling/paging feature to the TODO list
+
 2025-02-02  Mihai Gătejescu <gus666xe@gmail.com>
 
     * configure.ac: Include the version.sh file, so autoconf
@@ -920,7 +923,8 @@
                 2017, 2018, 2019, 2020
                 Felix Natter, Michael Opdenacker, Hynek Hanke, Dmitry Rutsky,
                 Rob Leslie, Paul Goins, Tim Marston, Mihai Gătejescu
-  Copyright (C) 2021, 2022, 2023 Felix Natter, Mihai Gătejescu
+  Copyright (C) 2021, 2022, 2023, 2024, 2025, 2026
+		Felix Natter, Mihai Gătejescu
 
   This file is a part of GNU Typist
 
